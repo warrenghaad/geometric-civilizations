@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometric Thinking Through Civilizations - Home</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      
+      body {
+          font-family: 'Arial', sans-serif;
+          background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+          color: white;
+          min-height: 100vh;
+          overflow-x: hidden;
+      }
+      
+      .hero-section {
+          text-align: center;
+          padding: 60px 20px;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          margin-bottom: 40px;
+      }
+      
+      .hero-title {
+          font-size: 3.5em;
+          color: #FFD700;
+          margin-bottom: 20px;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+          animation: glow 2s ease-in-out infinite alternate;
+      }
+      
+      @keyframes glow {
+          from { text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 10px #FFD700; }
+          to { text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 20px #FFD700, 0 0 30px #FFD700; }
+      }
+      
+      .hero-subtitle {
+          font-size: 1.3em;
+          color: #87CEEB;
+          max-width: 800px;
+          margin: 0 auto 30px;
+      }
+      
+      .container {
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 20px;
+      }
+      
+      .section-header {
+          text-align: center;
+          margin: 50px 0 30px;
+      }
+      
+      .section-title {
+          font-size: 2.5em;
+          color: #FFD700;
+          margin-bottom: 15px;
+      }
+      
+      .section-subtitle {
+          font-size: 1.1em;
+          color: #87CEEB;
+      }
+      
+      .presentations-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 25px;
+          margin: 30px 0;
+      }
+      
+      .presentation-card {
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border-radius: 20px;
+          padding: 25px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          transition: all 0.3s ease;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+      }
+      
+      .presentation-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+      }
+      
+      .presentation-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+          transition: left 0.5s;
+      }
+      
+      .presentation-card:hover::before {
+          left: 100%;
+      }
+      
+      .card-icon {
+          font-size: 3em;
+          text-align: center;
+          margin-bottom: 15px;
+      }
+      
+      .card-title {
+          font-size: 1.4em;
+          color: #FFD700;
+          text-align: center;
+          margin-bottom: 10px;
+      }
+      
+      .card-description {
+          color: #E0E0E0;
+          text-align: center;
+          font-size: 0.9em;
+          margin-bottom: 15px;
+      }
+      
+      .card-button {
+          background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+          color: white;
+          border: none;
+          padding: 12px 20px;
+          border-radius: 25px;
+          font-weight: bold;
+          cursor: pointer;
+          width: 100%;
+          transition: all 0.3s ease;
+      }
+      
+      .card-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+      }
+      
+      .puzzles-section {
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 20px;
+          padding: 40px;
+          margin: 40px 0;
+      }
+      
+      .puzzle-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 25px;
+          margin: 30px 0;
+      }
+      
+      .puzzle-card {
+          background: rgba(135, 206, 235, 0.2);
+          border-radius: 15px;
+          padding: 25px;
+          border: 2px solid rgba(135, 206, 235, 0.3);
+          transition: all 0.3s ease;
+      }
+      
+      .puzzle-card:hover {
+          border-color: #87CEEB;
+          box-shadow: 0 5px 20px rgba(135, 206, 235, 0.3);
+      }
+      
+      .puzzle-title {
+          color: #87CEEB;
+          font-size: 1.3em;
+          margin-bottom: 15px;
+          text-align: center;
+      }
+      
+      .puzzle-content {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          padding: 20px;
+          margin: 15px 0;
+      }
+      
+      .shape-matcher {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
+          margin: 15px 0;
+      }
+      
+      .shape-item {
+          background: rgba(255, 215, 0, 0.2);
+          border: 2px solid transparent;
+          border-radius: 8px;
+          padding: 15px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+      }
+      
+      .shape-item:hover {
+          border-color: #FFD700;
+          background: rgba(255, 215, 0, 0.3);
+      }
+      
+      .shape-item.selected {
+          border-color: #FFD700;
+          background: rgba(255, 215, 0, 0.4);
+      }
+      
+      .civilization-options {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+          margin: 15px 0;
+      }
+      
+      .civ-option {
+          background: rgba(255, 107, 107, 0.2);
+          border: 2px solid transparent;
+          border-radius: 8px;
+          padding: 10px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-size: 0.9em;
+      }
+      
+      .civ-option:hover {
+          border-color: #FF6B6B;
+          background: rgba(255, 107, 107, 0.3);
+      }
+      
+      .timeline-puzzle {
+          position: relative;
+          height: 100px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          margin: 15px 0;
+          overflow: hidden;
+      }
+      
+      .timeline-track {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          right: 10px;
+          height: 4px;
+          background: #87CEEB;
+          transform: translateY(-50%);
+      }
+      
+      .timeline-marker {
+          position: absolute;
+          top: 50%;
+          width: 20px;
+          height: 20px;
+          background: #FFD700;
+          border-radius: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          transition: all 0.3s ease;
+      }
+      
+      .timeline-marker:hover {
+          transform: translateY(-50%) scale(1.2);
+          box-shadow: 0 0 10px #FFD700;
+      }
+      
+      .drag-item {
+          background: rgba(255, 215, 0, 0.3);
+          border: 2px dashed #FFD700;
+          border-radius: 8px;
+          padding: 10px;
+          margin: 5px;
+          cursor: move;
+          text-align: center;
+          font-size: 0.9em;
+      }
+      
+      .drop-zone {
+          background: rgba(135, 206, 235, 0.2);
+          border: 2px dashed #87CEEB;
+          border-radius: 8px;
+          padding: 20px;
+          margin: 10px 0;
+          text-align: center;
+          min-height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .drop-zone.drag-over {
+          background: rgba(135, 206, 235, 0.4);
+          border-color: #87CEEB;
+      }
+      
+      .quiz-question {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          padding: 20px;
+          margin: 15px 0;
+      }
+      
+      .quiz-options {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 10px;
+          margin: 15px 0;
+      }
+      
+      .quiz-option {
+          background: rgba(255, 255, 255, 0.1);
+          border: 2px solid transparent;
+          border-radius: 8px;
+          padding: 12px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+      }
+      
+      .quiz-option:hover {
+          border-color: #87CEEB;
+          background: rgba(135, 206, 235, 0.2);
+      }
+      
+      .quiz-option.correct {
+          border-color: #4ECDC4;
+          background: rgba(78, 205, 196, 0.3);
+      }
+      
+      .quiz-option.incorrect {
+          border-color: #FF6B6B;
+          background: rgba(255, 107, 107, 0.3);
+      }
+      
+      .score-display {
+          text-align: center;
+          font-size: 1.2em;
+          color: #FFD700;
+          margin: 15px 0;
+      }
+      
+      .reset-button {
+          background: linear-gradient(45deg, #4ECDC4, #44A08D);
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 20px;
+          cursor: pointer;
+          font-weight: bold;
+          transition: all 0.3s ease;
+      }
+      
+      .reset-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+      }
+  </style>
+</head>
+<body>
+  <div class="hero-section">
+      <div class="hero-title">🔺 GEOMETRIC THINKING THROUGH CIVILIZATIONS 🔺</div>
+      <div class="hero-subtitle">
+          Discover how four fundamental shapes evolved across seven great civilizations to create the cognitive tools that built our world
+      </div>
+  </div>
+
+  <div class="container">
+      <!-- PRESENTATIONS SECTION -->
+      <div class="section-header">
+          <div class="section-title">📚 EXPLORE THE PRESENTATIONS</div>
+          <div class="section-subtitle">Journey through shape evolution across civilizations</div>
+      </div>
+
+      <div class="presentations-grid">
+          <div class="presentation-card" onclick="openPresentation('master')">
+              <div class="card-icon">🌍</div>
+              <div class="card-title">MASTER OVERVIEW</div>
+              <div class="card-description">Complete civilization-shape integration framework</div>
+              <button class="card-button">EXPLORE OVERVIEW</button>
+          </div>
+
+          <div class="presentation-card" onclick="openPresentation('circle')">
+              <div class="card-icon">🔵</div>
+              <div class="card-title">CIRCLE THROUGHLINE</div>
+              <div class="card-description">From wheels to networks: circular thinking evolution</div>
+              <button class="card-button">FOLLOW CIRCLES</button>
+          </div>
+
+          <div class="presentation-card" onclick="openPresentation('line')">
+              <div class="card-icon">📏</div>
+              <div class="card-title">LINE THROUGHLINE</div>
+              <div class="card-description">From cuneiform to fractals: linear thinking development</div>
+              <button class="card-button">TRACE LINES</button>
+          </div>
+
+          <div class="presentation-card" onclick="openPresentation('square')">
+              <div class="card-icon">⬜</div>
+              <div class="card-title">SQUARE THROUGHLINE</div>
+              <div class="card-description">From grids to pixels: systematic thinking growth</div>
+              <button class="card-button">BUILD SQUARES</button>
+          </div>
+
+          <div class="presentation-card" onclick="openPresentation('spiral')">
+              <div class="card-icon">🌀</div>
+              <div class="card-title">SPIRAL THROUGHLINE</div>
+              <div class="card-description">From seals to algorithms: cyclical thinking advancement</div>
+              <button class="card-button">SPIRAL THROUGH TIME</button>
+          </div>
+
+          <div class="presentation-card" onclick="openPresentation('civilizations')">
+              <div class="card-icon">🏛️</div>
+              <div class="card-title">CIVILIZATION FOCUS</div>
+              <div class="card-description">Deep dive into each civilization's geometric contributions</div>
+              <button class="card-button">EXPLORE CIVILIZATIONS</button>
+          </div>
+
+          <div class="presentation-card" onclick="openPresentation('cognitive')">
+              <div class="card-icon">🧠</div>
+              <div class="card-title">COGNITIVE TOOLS</div>
+              <div class="card-description">How geometric thinking created mental frameworks</div>
+              <button class="card-button">DISCOVER TOOLS</button>
+          </div>
+
+          <div class="presentation-card" onclick="openPresentation('assessment')">
+              <div class="card-icon">📊</div>
+              <div class="card-title">ASSESSMENTS</div>
+              <div class="card-description">Rubrics and evaluation tools for geometric-historical thinking</div>
+              <button class="card-button">VIEW ASSESSMENTS</button>
+          </div>
+      </div>
+
+      <!-- INTERACTIVE PUZZLES SECTION -->
+      <div class="puzzles-section">
+          <div class="section-header">
+              <div class="section-title">🧩 INTERACTIVE PUZZLES</div>
+              <div class="section-subtitle">Test your understanding with hands-on activities</div>
+          </div>
+
+          <div class="puzzle-grid">
+              <!-- SHAPE-CIVILIZATION MATCHER -->
+              <div class="puzzle-card">
+                  <div class="puzzle-title">🎯 SHAPE-CIVILIZATION MATCHER</div>
+                  <div class="puzzle-content">
+                      <p>Match each shape with its most significant civilization development:</p>
+                      <div class="shape-matcher">
+                          <div class="shape-item" data-shape="circle" onclick="selectShape(this)">
+                              <div style="font-size: 2em;">🔵</div>
+                              <div>Circle</div>
+                          </div>
+                          <div class="shape-item" data-shape="line" onclick="selectShape(this)">
+                              <div style="font-size: 2em;">📏</div>
+                              <div>Line</div>
+                          </div>
+                          <div class="shape-item" data-shape="square" onclick="selectShape(this)">
+                              <div style="font-size: 2em;">⬜</div>
+                              <div>Square</div>
+                          </div>
+                          <div class="shape-item" data-shape="spiral" onclick="selectShape(this)">
+                              <div style="font-size: 2em;">🌀</div>
+                              <div>Spiral</div>
+                          </div>
+                      </div>
+                      <div class="civilization-options">
+                          <div class="civ-option" data-civ="mesopotamia" onclick="matchCivilization(this)">🏛️ Mesopotamia<br><small>Wheel invention</small></div>
+                          <div class="civ-option" data-civ="egypt" onclick="matchCivilization(this)">🔺 Egypt<br><small>Pyramid geometry</small></div>
+                          <div class="civ-option" data-civ="greece" onclick="matchCivilization(this)">🏛️ Greece<br><small>Mathematical proofs</small></div>
+                          <div class="civ-option" data-civ="india" onclick="matchCivilization(this)">🕉️ India<br><small>Mandala meditation</small></div>
+                      </div>
+                      <div class="score-display" id="matcher-score">Score: 0/4</div>
+                      <button class="reset-button" onclick="resetMatcher()">RESET PUZZLE</button>
+                  </div>
+              </div>
+
+              <!-- TIMELINE SEQUENCER -->
+              <div class="puzzle-card">
+                  <div class="puzzle-title">⏰ TIMELINE SEQUENCER</div>
+                  <div class="puzzle-content">
+                      <p>Drag the geometric developments to their correct historical positions:</p>
+                      <div class="timeline-puzzle">
+                          <div class="timeline-track"></div>
+                          <div class="timeline-marker" style="left: 10%;" data-period="mesopotamia"></div>
+                          <div class="timeline-marker" style="left: 25%;" data-period="egypt"></div>
+                          <div class="timeline-marker" style="left: 45%;" data-period="greece"></div>
+                          <div class="timeline-marker" style="left: 60%;" data-period="islamic"></div>
+                          <div class="timeline-marker" style="left: 80%;" data-period="renaissance"></div>
+                      </div>
+                      <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                          <div class="drag-item" draggable="true" data-development="wheel">🔵 Wheel</div>
+                          <div class="drag-item" draggable="true" data-development="pyramid">📏 Pyramid</div>
+                          <div class="drag-item" draggable="true" data-development="pi">🔵 π Discovery</div>
+                          <div class="drag-item" draggable="true" data-development="algebra">⬜ Algebra</div>
+                          <div class="drag-item" draggable="true" data-development="perspective">📏 Perspective</div>
+                      </div>
+                      <div class="score-display" id="timeline-score">Correct Placements: 0/5</div>
+                      <button class="reset-button" onclick="resetTimeline()">RESET TIMELINE</button>
+                  </div>
+              </div>
+
+              <!-- COGNITIVE TOOLS QUIZ -->
+              <div class="puzzle-card">
+                  <div class="puzzle-title">🧠 COGNITIVE TOOLS QUIZ</div>
+                  <div class="puzzle-content">
+                      <div class="quiz-question">
+                          <p><strong>Question 1:</strong> Which civilization first used circular thinking for transportation networks?</p>
+                          <div class="quiz-options">
+                              <div class="quiz-option" onclick="answerQuiz(this, false)">Egypt - Solar disk worship</div>
+                              <div class="quiz-option" onclick="answerQuiz(this, true)">Mesopotamia - Wheel invention</div>
+                              <div class="quiz-option" onclick="answerQuiz(this, false)">Greece - Mathematical circles</div>
+                              <div class="quiz-option" onclick="answerQuiz(this, false)">India - Mandala meditation</div>
+                          </div>
+                      </div>
+                      <div class="quiz-question" style="display: none;" id="question2">
+                          <p><strong>Question 2:</strong> Linear perspective was a major breakthrough of which period?</p>
+                          <div class="quiz-options">
+                              <div class="quiz-option" onclick="answerQuiz(this, false)">Islamic Golden Age</div>
+                              <div class="quiz-option" onclick="answerQuiz(this, true)">European Renaissance</div>
+                              <div class="quiz-option" onclick="answerQuiz(this, false)">Classical Greece</div>
+                              <div class="quiz-option" onclick="answerQuiz(this, false)">Ancient Egypt</div>
+                          </div>
+                      </div>
+                      <div class="score-display" id="quiz-score">Quiz Progress: 0/2</div>
+                      <button class="reset-button" onclick="resetQuiz()">RESTART QUIZ</button>
+                  </div>
+              </div>
+
+              <!-- PATTERN RECOGNITION GAME -->
+              <div class="puzzle-card">
+                  <div class="puzzle-title">🔍 PATTERN RECOGNITION</div>
+                  <div class="puzzle-content">
+                      <p>Identify the geometric pattern and its civilization origin:</p>
+                      <div style="text-align: center; font-size: 3em; margin: 20px 0;" id="pattern-display">
+                          🔵📏⬜🌀
+                      </div>
+                      <div class="civilization-options">
+                          <div class="civ-option" onclick="guessPattern(this, 'islamic')">☪️ Islamic<br><small>Tessellation</small></div>
+                          <div class="civ-option" onclick="guessPattern(this, 'greece')">🏛️ Greek<br><small>Golden Ratio</small></div>
+                          <div class="civ-option" onclick="guessPattern(this, 'india')">🕉️ Indian<br><small>Mandala</small></div>
+                          <div class="civ-option" onclick="guessPattern(this, 'egypt')">🔺 Egyptian<br><small>Sacred Geometry</small></div>
+                      </div>
+                      <div class="score-display" id="pattern-score">Pattern Score: 0</div>
+                      <button class="reset-button" onclick="nextPattern()">NEXT PATTERN</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      // Shape-Civilization Matcher Logic
+      let selectedShape = null;
+      let matcherScore = 0;
+      const correctMatches = {
+          'circle': 'mesopotamia',
+          'line': 'egypt', 
+          'square': 'greece',
+          'spiral': 'india'
+      };
+
+      function selectShape(element) {
+          document.querySelectorAll('.shape-item').forEach(item => item.classList.remove('selected'));
+          element.classList.add('selected');
+          selectedShape = element.dataset.shape;
+      }
+
+      function matchCivilization(element) {
+          if (!selectedShape) {
+              alert('Please select a shape first!');
+              return;
+          }
+          
+          if (correctMatches[selectedShape] === element.dataset.civ) {
+              element.style.background = 'rgba(78, 205, 196, 0.4)';
+              element.style.borderColor = '#4ECDC4';
+              matcherScore++;
+          } else {
+              element.style.background = 'rgba(255, 107, 107, 0.4)';
+              element.style.borderColor = '#FF6B6B';
+          }
+          
+          document.getElementById('matcher-score').textContent = `Score: ${matcherScore}/4`;
+          selectedShape = null;
+          document.querySelectorAll('.shape-item').forEach(item => item.classList.remove('selected'));
+      }
+
+      function resetMatcher() {
+          matcherScore = 0;
+          selectedShape = null;
+          document.getElementById('matcher-score').textContent = 'Score: 0/4';
+          document.querySelectorAll('.shape-item').forEach(item => item.classList.remove('selected'));
+          document.querySelectorAll('.civ-option').forEach(item => {
+              item.style.background = 'rgba(255, 107, 107, 0.2)';
+              item.style.borderColor = 'transparent';
+          });
+      }
+
+      // Quiz Logic
+      let quizProgress = 0;
+      let currentQuestion = 1;
+
+      function answerQuiz(element, isCorrect) {
+          const options = element.parentElement.querySelectorAll('.quiz-option');
+          options.forEach(option => {
+              option.onclick = null;
+              if (option === element) {
+                  option.classList.add(isCorrect ? 'correct' : 'incorrect');
+              } else if (option.onclick === null) {
+                  // Show correct answer
+                  const correctOption = Array.from(options).find(opt => 
+                      opt.getAttribute('onclick') && opt.getAttribute('onclick').includes('true')
+                  );
+                  if (correctOption && correctOption !== element) {
+                      correctOption.classList.add('correct');
+                  }
+              }
+          });
+
+          if (isCorrect) quizProgress++;
+          
+          setTimeout(() => {
+              if (currentQuestion < 2) {
+                  document.getElementById('question2').style.display = 'block';
+                  currentQuestion++;
+              }
+              document.getElementById('quiz-score').textContent = `Quiz Progress: ${quizProgress}/2`;
+          }, 1500);
+      }
+
+      function resetQuiz() {
+          quizProgress = 0;
+          currentQuestion = 1;
+          document.getElementById('quiz-score').textContent = 'Quiz Progress: 0/2';
+          document.getElementById('question2').style.display = 'none';
+          document.querySelectorAll('.quiz-option').forEach(option => {
+              option.classList.remove('correct', 'incorrect');
+              option.onclick = function() { answerQuiz(this, option.textContent.includes('Mesopotamia') || option.textContent.includes('Renaissance')); };
+          });
+      }
+
+      // Pattern Recognition Logic
+      let patternScore = 0;
+      const patterns = [
+          { display: '🔵📏⬜🌀', answer: 'islamic', name: 'Tessellation Sequence' },
+          { display: '⬜🔵⬜🔵', answer: 'greece', name: 'Golden Ratio Pattern' },
+          { display: '🌀🔵🌀🔵', answer: 'india', name: 'Mandala Spiral' },
+          { display: '📏🔺📏🔺', answer: 'egypt', name: 'Pyramid Geometry' }
+      ];
+      let currentPattern = 0;
+
+      function guessPattern(element, guess) {
+          const correct = patterns[currentPattern].answer === guess;
+          if (correct) {
+              patternScore++;
+              element.style.background = 'rgba(78, 205, 196, 0.4)';
+              element.style.borderColor = '#4ECDC4';
+          } else {
+              element.style.background = 'rgba(255, 107, 107, 0.4)';
+              element.style.borderColor = '#FF6B6B';
+          }
+          document.getElementById('pattern-score').textContent = `Pattern Score: ${patternScore}`;
+      }
+
+      function nextPattern() {
+          currentPattern = (currentPattern + 1) % patterns.length;
+          document.getElementById('pattern-display').textContent = patterns[currentPattern].display;
+          document.querySelectorAll('.civ-option').forEach(option => {
+              option.style.background = 'rgba(255, 107, 107, 0.2)';
+              option.style.borderColor = 'transparent';
+          });
+      }
+
+      // Timeline Logic
+      let timelineScore = 0;
+
+      function resetTimeline() {
+          timelineScore = 0;
+          document.getElementById('timeline-score').textContent = 'Correct Placements: 0/5';
+      }
+
+      // Presentation Navigation
+      function openPresentation(type) {
+          // This would link to your actual presentations
+          alert(`Opening ${type.toUpperCase()} presentation...\n\nThis would link to your actual presentation files.`);
+      }
+
+      // Initialize drag and drop for timeline
+      document.addEventListener('DOMContentLoaded', function() {
+          const dragItems = document.querySelectorAll('.drag-item');
+          const timelineMarkers = document.querySelectorAll('.timeline-marker');
+
+          dragItems.forEach(item => {
+              item.addEventListener('dragstart', function(e) {
+                  e.dataTransfer.setData('text/plain', item.dataset.development);
+              });
+          });
+
+          timelineMarkers.forEach(marker => {
+              marker.addEventListener('dragover', function(e) {
+                  e.preventDefault();
+                  marker.style.transform = 'translateY(-50%) scale(1.2)';
+              });
+
+              marker.addEventListener('dragleave', function(e) {
+                  marker.style.transform = 'translateY(-50%) scale(1)';
+              });
+
+              marker.addEventListener('drop', function(e) {
+                  e.preventDefault();
+                  const development = e.dataTransfer.getData('text/plain');
+                  const period = marker.dataset.period;
+                  
+                  // Check if correct match
+                  const correct
