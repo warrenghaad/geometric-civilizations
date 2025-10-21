@@ -1,4 +1,10 @@
 {
-  "nodes": {},
+  "nodes": {
+    "Test Course": {
+      "type": "Course",
+      "description": "This is a test course description",
+      "images": []
+    }
+  },
   "edges": []
 }
