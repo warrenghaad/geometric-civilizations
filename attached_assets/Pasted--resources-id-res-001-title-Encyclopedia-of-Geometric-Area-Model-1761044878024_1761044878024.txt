@@ -1,0 +1,257 @@
+{
+  "resources": [
+    {
+      "id": "res-001",
+      "title": "Encyclopedia of Geometric Area Models",
+      "description": "Research compilation with diagrams, cross-linked lessons, and historical context.",
+      "file_url": "/files/geometry/area_models.pdf",
+      "type": "pdf",
+      "uploadedAt": "2025-10-21T12:00:00Z",
+      "tags": {
+        "gradeLevels": [3, 4, 5],
+        "concepts": ["area models", "geometry", "visualization"],
+        "contentTypes": ["reference", "visual"],
+        "custom": ["math-art", "imported-batch1"]
+      },
+      "snippets": ["snip-001", "snip-002"],
+      "images": ["img-001", "img-002"],
+      "relatedLessons": ["lesson-001", "lesson-004"],
+      "annotations": [
+        {
+          "id": "note-001",
+          "userId": "dev-01",
+          "page": 20,
+          "comment": "Ideal for visual learners. Assign to week 3."
+        }
+      ],
+      "relatedResources": ["res-005"]
+    },
+    {
+      "id": "res-002",
+      "title": "Multiplication Games—Interactive",
+      "description": "Activity book in epub format, designed for hands-on learning with dice and cards.",
+      "file_url": "/files/multiplication/games.epub",
+      "type": "epub",
+      "tags": {
+        "gradeLevels": [3],
+        "concepts": ["multiplication", "games", "number sense"],
+        "contentTypes": ["activity", "interactive"]
+      },
+      "snippets": ["snip-003"],
+      "images": ["img-003"],
+      "relatedLessons": ["lesson-002"],
+      "annotations": []
+    }
+  ],
+  "snippets": [
+    {
+      "id": "snip-001",
+      "resourceId": "res-001",
+      "page": 18,
+      "text": "Demonstration of area models for multiplication.",
+      "purpose": ["slide", "visual explainer"],
+      "tags": ["geometry", "area models", "visual"],
+      "linkedLessons": ["lesson-001", "lesson-004"],
+      "linkedImages": ["img-001"],
+      "suggestedEdits": [
+        {
+          "editorId": "dev-02",
+          "timestamp": "2025-10-21T14:00:00Z",
+          "proposedText": "Add real-world objects as models."
+        }
+      ]
+    },
+    {
+      "id": "snip-002",
+      "resourceId": "res-001",
+      "page": 23,
+      "text": "Area context for rectangles and composite shapes.",
+      "purpose": ["activity", "reference"],
+      "tags": ["geometry", "area relationships"],
+      "linkedLessons": ["lesson-005"],
+      "linkedImages": ["img-002"]
+    },
+    {
+      "id": "snip-003",
+      "resourceId": "res-002",
+      "text": "Instructions: Use dice to generate arrays for games.",
+      "purpose": ["hands-on", "assessment"],
+      "tags": ["multiplication", "games", "interactive"],
+      "linkedLessons": ["lesson-002"]
+    }
+  ],
+  "images": [
+    {
+      "id": "img-001",
+      "resourceId": "res-001",
+      "file_url": "/images/area_model_diagram.png",
+      "page": 18,
+      "tags": ["diagram", "visual aid"],
+      "suggestedFor": ["lesson-001", "activity-003"],
+      "usedInLessons": ["lesson-001"],
+      "altText": "Colorful diagram of an area model decomposing a rectangle into components."
+    },
+    {
+      "id": "img-002",
+      "resourceId": "res-001",
+      "file_url": "/images/rectangle_context.png",
+      "page": 23,
+      "tags": ["real-world", "photo reference"],
+      "usedInLessons": ["lesson-005"]
+    },
+    {
+      "id": "img-003",
+      "resourceId": "res-002",
+      "file_url": "/images/game_board.png",
+      "tags": ["game board", "activity"]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson-001",
+      "title": "Understanding Area through Visual Models",
+      "plannedDate": "2025-10-28",
+      "gradeLevel": 3,
+      "curriculumUnit": "Geometry: Introduction",
+      "standards": ["CCSS.MATH.CONTENT.3.MD.C.5", "CCSS.MATH.PRACTICE.MP4"],
+      "snippetsUsed": ["snip-001"],
+      "imagesUsed": ["img-001"],
+      "lessonType": ["slide", "activity"],
+      "contentBlocks": [
+        {
+          "type": "intro",
+          "text": "Let’s explore the concept of area by working with visual models."
+        },
+        {
+          "type": "activity",
+          "referenceSnippets": ["snip-001"],
+          "instructions": "Construct your own area model on graph paper."
+        },
+        {
+          "type": "image",
+          "imageId": "img-001"
+        }
+      ],
+      "linkedStandards": ["stand-001", "stand-002"],
+      "tasks": [
+        {
+          "taskId": "task-001",
+          "description": "Have students build and compare area models for different rectangles."
+        }
+      ]
+    },
+    {
+      "id": "lesson-002",
+      "title": "Multiplication Games for Mastery",
+      "plannedDate": "2025-10-30",
+      "gradeLevel": 3,
+      "curriculumUnit": "Multiplication Foundations",
+      "standards": ["CCSS.MATH.CONTENT.3.OA.A.1"],
+      "snippetsUsed": ["snip-003"],
+      "imagesUsed": ["img-003"],
+      "lessonType": ["activity", "game"],
+      "contentBlocks": [
+        {
+          "type": "gameIntro",
+          "text": "Today we’ll strengthen multiplication using games with arrays and dice."
+        }  ,
+        {
+          "type": "activity",
+          "referenceSnippets": ["snip-003"],
+          "instructions": "Follow the ebook’s rules and challenge classmates."
+        },
+        {
+          "type": "image",
+          "imageId": "img-003"
+        }
+      ],
+      "tasks": [
+        {
+          "taskId": "task-002",
+          "description": "Score games and log which strategies help most."
+        }
+      ]
+    }
+  ],
+  "standards": [
+    {
+      "id": "stand-001",
+      "code": "CCSS.MATH.CONTENT.3.MD.C.5",
+      "description": "Recognize area as an attribute—measure by counting squares.",
+      "linkedLessons": ["lesson-001"]
+    },
+    {
+      "id": "stand-002",
+      "code": "CCSS.MATH.PRACTICE.MP4",
+      "description": "Model with mathematics—use models to solve real-world problems.",
+      "linkedLessons": ["lesson-001"]
+    },
+    {
+      "id": "stand-003",
+      "code": "CCSS.MATH.CONTENT.3.OA.A.1",
+      "description": "Interpret products of whole numbers (array, objects, equations).",
+      "linkedLessons": ["lesson-002"]
+    }
+  ],
+  "calendar": [
+    {
+      "date": "2025-10-28",
+      "lessonsScheduled": ["lesson-001"],
+      "notes": "Emphasize manipulative use and visual thinking."
+    },
+    {
+      "date": "2025-10-30",
+      "lessonsScheduled": ["lesson-002"],
+      "notes": "Use games for formative assessment data."
+    }
+  ],
+  "users": [
+    {
+      "userId": "dev-01",
+      "name": "CurriculumDev",
+      "role": "admin",
+      "email": "dev01@school.edu",
+      "profileImg": "/users/dev01.png",
+      "permissions": ["edit", "plan", "assign"]
+    },
+    {
+      "userId": "teacher-01",
+      "name": "Ms. Smith",
+      "role": "teacher",
+      "email": "msmith@school.edu",
+      "profileImg": "/users/msmith.png",
+      "permissions": ["view", "assign"]
+    }
+  ],
+  "tagVocabularies": {
+    "gradeLevels": ["K", 1, 2, 3, 4, 5, 6],
+    "concepts": ["area models", "geometry", "multiplication", "games", "visualization"],
+    "contentTypes": ["lesson", "activity", "reference", "game"],
+    "custom": ["math-art connection", "imported batch"]
+  },
+  "automation": {
+    "ingestQueue": ["res-003", "res-006"],
+    "autoStatus": {
+      "res-003": "pending",
+      "res-006": "processing"
+    },
+    "pendingTags": ["res-001", "snip-002"]
+  },
+  "backup": {
+    "lastSynced": "2025-10-21T16:00:00Z",
+    "strategy": "cloud-and-local",
+    "versionHistory": [
+      {
+        "versionId": "v20251021.1",
+        "syncedBy": "dev-01",
+        "timestamp": "2025-10-21T16:00:00Z"
+      }
+    ]
+  },
+  "systemMetadata": {
+    "createdBy": "dev-01",
+    "createdOn": "2025-09-15T10:00:00Z",
+    "lastUpdated": "2025-10-21T18:00:00Z",
+    "systemVersion": "1.2.0"
+  }
+}
