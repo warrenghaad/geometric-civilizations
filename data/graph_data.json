@@ -1,10 +1,426 @@
 {
   "nodes": {
-    "Test Course": {
+    "Attention": {
+      "type": "Database",
+      "description": "Selecting and maintaining focus on relevant information, shifting focus when needed, and dividing attention across tasks.",
+      "images": []
+    },
+    "Memory": {
+      "type": "Database",
+      "description": "Encoding, storing, and retrieving information; includes short-term/working memory, episodic memory (events), semantic memory (facts), and procedural memory (skills).",
+      "images": []
+    },
+    "Executive Functions": {
+      "type": "Database",
+      "description": "Higher-order control processes such as planning, problem solving, cognitive flexibility, inhibition (self-control), reasoning, and decision-making.",
+      "images": []
+    },
+    "Language": {
+      "type": "Database",
+      "description": "Understanding and producing spoken and written language; includes vocabulary, grammar, syntax, pragmatics, and discourse.",
+      "images": []
+    },
+    "Learning": {
+      "type": "Database",
+      "description": "Acquiring new knowledge or skills through experience, practice, and feedback; includes associative learning and skill acquisition.",
+      "images": []
+    },
+    "Visuospatial Processing": {
+      "type": "Database",
+      "description": "Understanding spatial relationships, mental rotation, navigation, and constructional abilities.",
+      "images": []
+    },
+    "Social Cognition": {
+      "type": "Database",
+      "description": "Recognizing and interpreting others' emotions, intentions, and perspectives; theory of mind and empathy.",
+      "images": []
+    },
+    "Emotional Processing": {
+      "type": "Database",
+      "description": "Identifying, regulating, and integrating emotions; how emotion influences attention, memory, and decisions.",
+      "images": []
+    },
+    "Metacognition": {
+      "type": "Database",
+      "description": "Awareness and regulation of one's own thinking; self-monitoring, strategy selection, and reflection.",
+      "images": []
+    },
+    "Math/Geometry": {
       "type": "Course",
-      "description": "This is a test course description",
+      "description": "Mathematical thinking, geometric patterns, spatial reasoning, and formal proof structures.",
+      "images": []
+    },
+    "Art/Architecture": {
+      "type": "Course",
+      "description": "Visual design, cultural aesthetics, pattern creation, and architectural elements across civilizations.",
+      "images": []
+    },
+    "Inventions/Innovation": {
+      "type": "Course",
+      "description": "Problem-solving through design, technological evolution, and creative adaptation of ideas.",
+      "images": []
+    },
+    "Myths/Culture": {
+      "type": "Course",
+      "description": "Storytelling traditions, cultural identity, narrative structures, and symbolic meaning-making.",
+      "images": []
+    },
+    "Power/Society": {
+      "type": "Course",
+      "description": "Social structures, governance systems, community organization, and ethical decision-making.",
+      "images": []
+    },
+    "SEL Skills": {
+      "type": "Course",
+      "description": "Social-emotional learning: self-awareness, self-regulation, relationship skills, and responsible choices.",
+      "images": []
+    },
+    "9x6 Curriculum Template": {
+      "type": "Schema",
+      "description": "The core 9\u00d76 matrix structure: 9 Cognitive Domains \u00d7 6 Content Areas = 54-cell framework that applies across all 982 lessons. Each lesson activates specific cognitive domains while addressing content areas.",
+      "images": []
+    },
+    "D0: Bits (Facts)": {
+      "type": "Concept",
+      "description": "Dimension 0/1: Individual facts and concepts (e.g., '5', 'circle', 'hero'). Foundation-level discrete information.",
+      "images": []
+    },
+    "D1: Bytes (Operations)": {
+      "type": "Concept",
+      "description": "Dimension 1: Operations and transformations (e.g., 'multiply by 5', 'rotate shape', 'hero's journey'). Single-strand processes.",
+      "images": []
+    },
+    "D2: Networks (Interactions)": {
+      "type": "Concept",
+      "description": "Dimension 2: Interactions across strands (e.g., '5 across arithmetic operations', 'patterns across cultures'). How elements combine and relate.",
+      "images": []
+    },
+    "D3: Algebra (Emergent)": {
+      "type": "Concept",
+      "description": "Dimension 3: Emergent unknowns from network interactions (e.g., algebraic thinking, symbolic representation). The third dimension creates abstraction.",
+      "images": []
+    },
+    "D4: Calculus (Meta)": {
+      "type": "Concept",
+      "description": "Dimension 4: Meta-level 'what if' thinking (e.g., Newton finding algebra incomplete, inventing calculus). Questioning and transcending existing frameworks.",
+      "images": []
+    },
+    "Pattern Recognition \u2192 Proof": {
+      "type": "Module",
+      "description": "K-2: identify & describe patterns | 3-5: classify & transform | 6-8: generalize & justify with formal proof",
+      "images": []
+    },
+    "Myth Structure \u2192 Analytical Writing": {
+      "type": "Module",
+      "description": "Oral retell \u2192 compare motifs \u2192 structural analysis \u2192 thematic synthesis and critical writing",
+      "images": []
+    },
+    "Symbol \u2192 Model": {
+      "type": "Module",
+      "description": "Draw \u2192 label \u2192 encode \u2192 abstract into variable/formula representation",
+      "images": []
+    },
+    "Global Motifs & Equity": {
+      "type": "Module",
+      "description": "Hear diverse stories \u2192 respect perspectives \u2192 connect across cultures \u2192 critique representation & bias",
+      "images": []
+    },
+    "Creative Remix \u2192 Innovation": {
+      "type": "Module",
+      "description": "Combine shapes + myths \u2192 adapt culturally responsibly \u2192 prototype explanatory artifacts",
+      "images": []
+    },
+    "Mindful Metacognition": {
+      "type": "Module",
+      "description": "Name feelings \u2192 regulate focus \u2192 select strategies \u2192 reflect & refine thinking processes",
+      "images": []
+    },
+    "Common Core Standards": {
+      "type": "Schema",
+      "description": "Foundation educational standards framework covering Math and ELA. The curriculum builds on and extends Common Core with spatial complexity, arts integration, and SEL layers.",
       "images": []
     }
   },
-  "edges": []
+  "edges": [
+    [
+      "Attention",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Memory",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Executive Functions",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Language",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Learning",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Visuospatial Processing",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Social Cognition",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Emotional Processing",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "Metacognition",
+      "9x6 Curriculum Template",
+      "domain-of"
+    ],
+    [
+      "9x6 Curriculum Template",
+      "Math/Geometry",
+      "applies-to"
+    ],
+    [
+      "9x6 Curriculum Template",
+      "Art/Architecture",
+      "applies-to"
+    ],
+    [
+      "9x6 Curriculum Template",
+      "Inventions/Innovation",
+      "applies-to"
+    ],
+    [
+      "9x6 Curriculum Template",
+      "Myths/Culture",
+      "applies-to"
+    ],
+    [
+      "9x6 Curriculum Template",
+      "Power/Society",
+      "applies-to"
+    ],
+    [
+      "9x6 Curriculum Template",
+      "SEL Skills",
+      "applies-to"
+    ],
+    [
+      "D0: Bits (Facts)",
+      "D1: Bytes (Operations)",
+      "progresses-to"
+    ],
+    [
+      "D1: Bytes (Operations)",
+      "D2: Networks (Interactions)",
+      "progresses-to"
+    ],
+    [
+      "D2: Networks (Interactions)",
+      "D3: Algebra (Emergent)",
+      "progresses-to"
+    ],
+    [
+      "D3: Algebra (Emergent)",
+      "D4: Calculus (Meta)",
+      "progresses-to"
+    ],
+    [
+      "Pattern Recognition \u2192 Proof",
+      "Math/Geometry",
+      "develops-across"
+    ],
+    [
+      "Pattern Recognition \u2192 Proof",
+      "Art/Architecture",
+      "develops-across"
+    ],
+    [
+      "Pattern Recognition \u2192 Proof",
+      "Inventions/Innovation",
+      "develops-across"
+    ],
+    [
+      "Pattern Recognition \u2192 Proof",
+      "Myths/Culture",
+      "develops-across"
+    ],
+    [
+      "Pattern Recognition \u2192 Proof",
+      "Power/Society",
+      "develops-across"
+    ],
+    [
+      "Pattern Recognition \u2192 Proof",
+      "SEL Skills",
+      "develops-across"
+    ],
+    [
+      "Myth Structure \u2192 Analytical Writing",
+      "Math/Geometry",
+      "develops-across"
+    ],
+    [
+      "Myth Structure \u2192 Analytical Writing",
+      "Art/Architecture",
+      "develops-across"
+    ],
+    [
+      "Myth Structure \u2192 Analytical Writing",
+      "Inventions/Innovation",
+      "develops-across"
+    ],
+    [
+      "Myth Structure \u2192 Analytical Writing",
+      "Myths/Culture",
+      "develops-across"
+    ],
+    [
+      "Myth Structure \u2192 Analytical Writing",
+      "Power/Society",
+      "develops-across"
+    ],
+    [
+      "Myth Structure \u2192 Analytical Writing",
+      "SEL Skills",
+      "develops-across"
+    ],
+    [
+      "Symbol \u2192 Model",
+      "Math/Geometry",
+      "develops-across"
+    ],
+    [
+      "Symbol \u2192 Model",
+      "Art/Architecture",
+      "develops-across"
+    ],
+    [
+      "Symbol \u2192 Model",
+      "Inventions/Innovation",
+      "develops-across"
+    ],
+    [
+      "Symbol \u2192 Model",
+      "Myths/Culture",
+      "develops-across"
+    ],
+    [
+      "Symbol \u2192 Model",
+      "Power/Society",
+      "develops-across"
+    ],
+    [
+      "Symbol \u2192 Model",
+      "SEL Skills",
+      "develops-across"
+    ],
+    [
+      "Global Motifs & Equity",
+      "Math/Geometry",
+      "develops-across"
+    ],
+    [
+      "Global Motifs & Equity",
+      "Art/Architecture",
+      "develops-across"
+    ],
+    [
+      "Global Motifs & Equity",
+      "Inventions/Innovation",
+      "develops-across"
+    ],
+    [
+      "Global Motifs & Equity",
+      "Myths/Culture",
+      "develops-across"
+    ],
+    [
+      "Global Motifs & Equity",
+      "Power/Society",
+      "develops-across"
+    ],
+    [
+      "Global Motifs & Equity",
+      "SEL Skills",
+      "develops-across"
+    ],
+    [
+      "Creative Remix \u2192 Innovation",
+      "Math/Geometry",
+      "develops-across"
+    ],
+    [
+      "Creative Remix \u2192 Innovation",
+      "Art/Architecture",
+      "develops-across"
+    ],
+    [
+      "Creative Remix \u2192 Innovation",
+      "Inventions/Innovation",
+      "develops-across"
+    ],
+    [
+      "Creative Remix \u2192 Innovation",
+      "Myths/Culture",
+      "develops-across"
+    ],
+    [
+      "Creative Remix \u2192 Innovation",
+      "Power/Society",
+      "develops-across"
+    ],
+    [
+      "Creative Remix \u2192 Innovation",
+      "SEL Skills",
+      "develops-across"
+    ],
+    [
+      "Mindful Metacognition",
+      "Math/Geometry",
+      "develops-across"
+    ],
+    [
+      "Mindful Metacognition",
+      "Art/Architecture",
+      "develops-across"
+    ],
+    [
+      "Mindful Metacognition",
+      "Inventions/Innovation",
+      "develops-across"
+    ],
+    [
+      "Mindful Metacognition",
+      "Myths/Culture",
+      "develops-across"
+    ],
+    [
+      "Mindful Metacognition",
+      "Power/Society",
+      "develops-across"
+    ],
+    [
+      "Mindful Metacognition",
+      "SEL Skills",
+      "develops-across"
+    ],
+    [
+      "Common Core Standards",
+      "9x6 Curriculum Template",
+      "foundational-for"
+    ]
+  ]
 }
