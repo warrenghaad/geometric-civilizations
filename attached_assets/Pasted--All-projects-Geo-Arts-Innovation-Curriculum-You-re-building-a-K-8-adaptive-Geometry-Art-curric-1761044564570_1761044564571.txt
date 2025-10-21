@@ -1,0 +1,894 @@
+
+All projects
+Geo Arts = Innovation Curriculum
+
+You’re building a K–8 adaptive Geometry + Art curriculum that: Integrates math, art, science, cultural identity, and myths. Emphasizes geometric elements, Islamic patterns, ornamentation, and step-by-step drawing. Uses RPG-style badges and caricatures for motivation (but quests come later, after the curriculum, myths, puzzles, and geometric elements are fully digitized) and as assessment tools for hyperpersonalized Connects learning to four societal drivers: math/structure, art/design, ideology/myths, and power/institutions. Should be jargon-free, detailed, and differentiated.
+Show more
+
+
+
+
+
+
+
+
+
+
+
+
+		Math and art learning activities Last message 13 seconds ago   
+		Comprehensive project learning guide Last message 5 hours ago   
+		Mesopotamia detective curriculum materials Last message 6 hours ago   
+		Research bot curriculum design Last message 18 hours ago   
+		K-8 curriculum framework research Last message 19 hours ago   
+		Mind map research and images Last message 1 day ago   
+		SEL integration and behavioral archetypes Last message 3 days ago   
+		Adaptive learning lesson design tool Last message 4 days ago   
+		Mythology and historical artifacts Last message 5 days ago   
+		Historical inventions timeline visualization Last message 5 days ago   
+		Project textbook design review Last message 6 days ago   
+		Single source of truth strategy Last message 7 days ago   
+		Remix of 4th_grade_mesopotamian_canva_complete.md Last message 7 days ago   
+		Architectural patterns curriculum for K-8 Last message 8 days ago   
+		Presentation creation Last message 8 days ago   
+		Helping tech-averse users open HTML files Last message 8 days ago   
+		Project file documentation workflow Last message 8 days ago   
+		Builders of Babylon curriculum project Last message 8 days ago   
+		Time detective quest design Last message 8 days ago   
+		Elementary lesson planning Last message 9 days ago   
+		Elementary curriculum lesson planning Last message 10 days ago   
+		Project file review Last message 10 days ago   
+		Research timeline and standards mapping Last message 10 days ago   
+		Unfinished research task Last message 10 days ago   
+		Curriculum design and visualization Last message 10 days ago   
+		Indexing and cataloguing system setup Last message 11 days ago   
+		Cataloguing and Database Last message 11 days ago   
+		AI curriculum assistant design Last message 11 days ago   
+		Curriculum design and visualization Last message 13 days ago   
+		RPG project documentation Last message 13 days ago   
+Instructions
+You are an educational content developer tasked with creating comprehensive teaching materials. You will be given curriculum information and a specific chapter topic, and you need to create a complete set of interactive educational materials. The Curriculum is a novel Geometry and Arts Curriculum. The curriculum uses history, given immerse context through mythology, to study geometric thinking and problem solving in both a broad mathematic and scientific based thinking by learning famous inventions and the thinking required for them and artistic/design based thinking by studying different civilization's material objectis on which sit geometric elements and a cultural aesthetic, an psychologically internationalized template for viewing the world. The combination of both types of thinking determines the understanding, problem identification, and solution designing by creating understanding of cause and effect, object/element functioning, combined object functioning, novel combinations and deconstructions and reconstructions that solve problems. Your task is to create a comprehensive educational package based on the curriculum information and chapter topic provided. This package should include four main components: 1. **Interactive Slides**: Create highly engaging, interactive slide content that presents the chapter material in a dynamic way. Include: - Clear learning objectives - Interactive elements (polls, questions, multimedia suggestions) - Visual aids and graphics descriptions obtained from free use sources Like museums wiki commons Provide information provide - Progressive disclosure of information. In clear ways that are visibly comprehensive of what is being auditorily stated. - Engagement hooks and attention-grabbers 2. B Teacher and student etextbook chapters. Teacher Edition: a detailed summary + a full overly comprehensive chapter description of the entire lesson cycle. It should break up into five sections myth focus inside historic context of art, ie material objects, cultural aesthetics, math, ie STEM invention and discoveries, and the government and class structure. Day focuses on art, the chapter detailing all the material objects and cultural aesthetic components that each period possessed. This should be placed inside the math, power structure context and should open with a 10minute opener of a short story of a god, an anecdote, or some SEL point discussion that is represented through the periods mythology, belief system, or anecdotes. The fourth day presents a problem these time detectives must solve. They don’t know what but they know they are suppose have been gathering evidence all week for solving this problem. The solution is some invention decomposed into what tjeu learned in art and math focused days. Day 5 is revelation. Student Worksheets**: Design worksheets that reinforce learning through: - dossier styled etextbook chapters - Varied question types (multiple choice, short answer, problem-solving) - Real-world applications - Critical thinking exercises - Collaborative activities - Self-assessment opportunities 3. **Teacher Instructions**: Provide comprehensive guidance including: - Lesson timing and pacing - Differentiation strategies - Assessment rubrics - Common misconceptions to address - Extension activities for advanced learners - Support strategies for struggling students 4. **Teacher Script**: Write a detailed script that includes: - Exact wording for key explanations - Transition phrases between activities - Questions to ask students - Anticipated student responses - Timing cues - Notes for emphasis and tone Assist with the development of a no prep lesson creator, differentiator, and script for the next lesson. The no prep analyzer uses multiple assessments on a students proficiency, students' in-class behavior, and developing bell curve of student archetype. Student archetype puts onus of on/off task behavior on the ability of the lesson to aptly provide role based functioning for students. rchetypes should not be limiting, in fact, it should the archetypes are designed to find the best role a student plays based off studies of evolutionary psychology and consisten roles developed homo sapien societies. Proficiency is based on the students performance "standards" curricular mapping. By using a series of logic relationships a long term assessment of student ability can be ascertained and used to provide a truly adaptive learning program that does not simply adaptive based off combined performance but this students' performance and the relationships that make up learning of the standards possible, probable, and by necessity. The combination of proficiency and archetype, with data input in real time daily creates loose script for the teacher for the next day. This script allows for real time data to amend ensures that each student plays a part in their and others' learning. Learning is only positively reinforced through reward systems, or negatively reinforced through problem solving. The solution is then positively reinforced. Your job will be to assist the creation of both the novel curriculum, its components, the research of anything related, attendant, as simply as directed by user. - Age-appropriate for the specified grade level - Aligned with the curriculum mapping provided - Designed to be completed within the specified time period - Engaging and interactive - Educationally sound with clear learning outcomes. - amply detailed with multiple facts. Any output should minimize use of words or characters so user can stay within the chat for each subject.
+
+
+
+￼
+
+
+
+￼
+￼
+Some tools are missing
+·
+Connect
+
+Files
+
+
+
+28% of project capacity used
+
+Retrieving
+
+		Hands-on Math and Art Integration Across Cultures: A K-8 Guide.md143 linesMD       visual_curriculum_guide.html994 linesHTML       curriculum_research_visualization.html801 linesHTML       curriculum_research_visualization.html801 linesHTML       Geometric Elements Through History: Licensed Image Resource Guide for 6-Dimension Geometry Curriculum.md621 linesMD       geometric_elements_slideshow.html981 linesHTML       geometric_elements_with_images.html1,020 linesHTML       Comprehensive K-8 Interdisciplinary Curriculum Framework: Mathematical Discoveries, STEM Inventions, Art and Architecture, Mythology and Key Figures.md1,230 linesMD       LESSON-PLANNING-GUIDE-DIRECTIONS.md1,288 linesMD       Opening Stories for 5-Day Discovery Curriculum: Teaching Powerful Lessons Through Human Moments in History.md101 linesMD       Geometry + Arts = Innovation.html184 linesHTML       Builders of Babylon: Complete Curriculum Overview.html947 linesHTML       Film Noir Slides - Fixed Download.html308 linesHTML       The Babylon Case Files: Time Detective Training.html1,006 linesHTML       Comprehensive K-8 Interdisciplinary Curriculum Framework: Mathematical Discoveries, STEM Inventions, Art and Architecture, Mythology and Key Figures.md1,230 linesMD       Old curriculum + new standards =191 linesTEXT       Complete Worksheet & E-Textbook Package - Teacher & Student Editions.html607 linesHTML       4th_grade_mesopotamian_canva_complete.md.md638 linesMD       The Babylon Case Files: Time Detective Training.html1,006 linesHTML       Advanced Mission: Islamic Pattern Design - Teacher & Student Views.html955 linesHTML       SSOTv2.099 linesTEXT       00_START_HERE.md267 linesMD       mesopotamia_detective_curriculum_complete.md2,309 linesMD       Film Noir Slides - Fixed Download.html308 linesHTML       comprehensive-curriculum-framework.html1,927 linesHTML       Complete Guide to Bulk Downloading Mythology, Geometry, and Cultural Art Images.md1,278 linesMD       -->ON10825 .THIS<-- IS THE SHIT COMPREHENSIVE.md1,270 linesMD       ORganized Curriculum + RPG516 linesTEXT       The Classroom Mismatch: How Traditional Education Systematically Disadvantages Students With Essential Human Traits.md165 linesMD       Builders of Babylon: Complete Curriculum Overview.html947 linesHTML       Comprehensive K-8 Interdisciplinary Curriculum Framework: Mathematical Discoveries, STEM Inventions, Art and Architecture, Mythology and Key Figures.md1,230 linesMD       Master_Brief_Curriculum_Project.md389 linesMD       comprehensive-historical-learning-resource.html1,591 linesHTML       comprehensive_standards_k8.md2,103 linesMD       visual_curriculum_explorer.html1,574 linesHTML       Integrated Curriculum Planning System.tsx825 linesTSX       Practical Implementation Guide: Ready-to-Use Lessons.md1,056 linesMD       symbolic_divergence_civilizations.md470 linesMD       curriculum_standards_framework.md480 linesMD       geometric_elements_with_images.html1,020 linesHTML       Grade4_Curriculum_Presentation.md423 linesMD       External Sources444 linesTEXT       Image extraction57 linesTEXT       Comprehensive Curriculum Research Index: Integrating Educational Standards with Historical Timelines.md65 linesMD       setup_database.py378 linesPY       Complete_External_Resources_Integration.md447 linesMD       rapid_curriculum_builder.html415 linesHTML       Cataloguing and Indexing content82 linesTEXT       Pyramedic Pattern Evolution Curriculum Website.html465 linesHTML       Mesopotamia Week 2: Grade 4-5 Teacher Dashboard.html978 linesHTML       Geometric Elements by Period176 linesTEXT       Pyramedic Curriculum - Implementation To-Do List.html826 linesHTML       Website Design Front and Backend Incomplete3,784 linesTEXT       Pyramedic Pattern Evolution Curriculum Website.html687 linesHTML       pyramedic-creator-dashboard.html1,070 linesHTML       pyramedic-lesson-cycle.html786 linesHTML       Mythology encyclopedia1,242 linesTEXT      
+
+
+
+￼
+
+
+
+
+
+
+
+
+Explain
+
+
+
+curriculum_research_visualization.html
+31.48 KB •801 lines
+Formatting may be inconsistent from source
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Curriculum Research Index - Historical Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            color: #5a67d8;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .controls {
+            background: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .filter-btn.math { background: #4CAF50; color: white; }
+        .filter-btn.art { background: #FF9800; color: white; }
+        .filter-btn.invention { background: #2196F3; color: white; }
+        .filter-btn.myth { background: #9C27B0; color: white; }
+        .filter-btn.power { background: #F44336; color: white; }
+        .filter-btn.sel { background: #00BCD4; color: white; }
+        .filter-btn.active { transform: scale(1.1); box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        
+        .grade-selector {
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 2px solid #5a67d8;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        
+        .timeline-container {
+            position: relative;
+            padding: 50px 0;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px;
+            min-width: 2000px;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: translateY(-50%);
+        }
+        
+        .era {
+            position: absolute;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 250px;
+            transition: all 0.3s;
+        }
+        
+        .era:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .era h3 {
+            color: #5a67d8;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .era-date {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .era-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .category {
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        
+        .category.math { background: rgba(76, 175, 80, 0.1); }
+        .category.art { background: rgba(255, 152, 0, 0.1); }
+        .category.invention { background: rgba(33, 150, 243, 0.1); }
+        .category.myth { background: rgba(156, 39, 176, 0.1); }
+        .category.power { background: rgba(244, 67, 54, 0.1); }
+        .category.sel { background: rgba(0, 188, 212, 0.1); }
+        
+        .category h4 {
+            font-size: 0.85em;
+            margin-bottom: 5px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .item {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+        
+        .standards-panel {
+            background: white;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .standards-panel h2 {
+            color: #5a67d8;
+            margin-bottom: 20px;
+        }
+        
+        .standards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .standard-card {
+            padding: 15px;
+            border-left: 4px solid #5a67d8;
+            background: #f8f9fa;
+        }
+        
+        .lesson-suggestions {
+            background: white;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .lesson-card {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 5px solid #00BCD4;
+        }
+        
+        .lesson-card h3 {
+            color: #5a67d8;
+            margin-bottom: 10px;
+        }
+        
+        .lesson-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .detail-item {
+            padding: 8px;
+            background: white;
+            border-radius: 5px;
+        }
+        
+        .detail-item strong {
+            color: #5a67d8;
+            display: block;
+            font-size: 0.85em;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ðŸŽ¨ðŸ“š Comprehensive Curriculum Research Index</h1>
+        <p>Interactive Historical Timeline: Mathematics, Art, Inventions & Cultural Evolution</p>
+        <p style="margin-top: 10px; font-size: 0.9em; color: #888;">Grades 2/3 and 4/5 Curriculum Framework</p>
+    </div>
+    
+    <div class="controls">
+        <select class="grade-selector" id="gradeSelect">
+            <option value="all">All Grades</option>
+            <option value="23">Grades 2-3</option>
+            <option value="45">Grades 4-5</option>
+        </select>
+        <button class="filter-btn math active" data-category="math" onclick="toggleFilter(this)">Mathematics</button>
+        <button class="filter-btn art active" data-category="art" onclick="toggleFilter(this)">Art & Architecture</button>
+        <button class="filter-btn invention active" data-category="invention" onclick="toggleFilter(this)">Inventions</button>
+        <button class="filter-btn myth active" data-category="myth" onclick="toggleFilter(this)">Myths & Culture</button>
+        <button class="filter-btn power active" data-category="power" onclick="toggleFilter(this)">Power Structures</button>
+        <button class="filter-btn sel active" data-category="sel" onclick="toggleFilter(this)">SEL Skills</button>
+    </div>
+    
+    <div class="timeline-container">
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            
+            <!-- Prehistory -->
+            <div class="era" style="left: 0px; top: 20px;" data-grades="23,45">
+                <h3>ðŸ¦´ Prehistory</h3>
+                <div class="era-date">70,000 - 3,500 BCE</div>
+                <div class="era-content">
+                    <div class="category math">
+                        <h4>Mathematics</h4>
+                        <div class="items">
+                            <span class="item">Tally marks</span>
+                            <span class="item">Basic counting</span>
+                            <span class="item">Lunar cycles</span>
+                        </div>
+                    </div>
+                    <div class="category art">
+                        <h4>Art</h4>
+                        <div class="items">
+                            <span class="item">Cave paintings</span>
+                            <span class="item">Hand stencils</span>
+                            <span class="item">Natural pigments</span>
+                        </div>
+                    </div>
+                    <div class="category power">
+                        <h4>Power Structure</h4>
+                        <div class="items">
+                            <span class="item">Hunter-gatherer bands</span>
+                            <span class="item">Tribal elders</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mesopotamia -->
+            <div class="era" style="left: 280px; top: 100px;" data-grades="23,45">
+                <h3>ðŸº Mesopotamia</h3>
+                <div class="era-date">3,500 - 539 BCE</div>
+                <div class="era-content">
+                    <div class="category math">
+                        <h4>Mathematics</h4>
+                        <div class="items">
+                            <span class="item">Base-60 system</span>
+                            <span class="item">Place value</span>
+                            <span class="item">Geometry for land</span>
+                        </div>
+                    </div>
+                    <div class="category invention">
+                        <h4>Inventions</h4>
+                        <div class="items">
+                            <span class="item">Wheel</span>
+                            <span class="item">Writing (cuneiform)</span>
+                            <span class="item">Irrigation</span>
+                            <span class="item">Bronze tools</span>
+                        </div>
+                    </div>
+                    <div class="category myth">
+                        <h4>Myths</h4>
+                        <div class="items">
+                            <span class="item">Gilgamesh</span>
+                            <span class="item">Creation myths</span>
+                            <span class="item">Flood story</span>
+                        </div>
+                    </div>
+                    <div class="category power">
+                        <h4>Power Structure</h4>
+                        <div class="items">
+                            <span class="item">City-states</span>
+                            <span class="item">Priest-kings</span>
+                            <span class="item">Code of Hammurabi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ancient Egypt -->
+            <div class="era" style="left: 560px; top: 20px;" data-grades="23,45">
+                <h3>ðŸ”º Ancient Egypt</h3>
+                <div class="era-date">3,100 - 30 BCE</div>
+                <div class="era-content">
+                    <div class="category math">
+                        <h4>Mathematics</h4>
+                        <div class="items">
+                            <span class="item">Fractions</span>
+                            <span class="item">Pyramid geometry</span>
+                            <span class="item">Calendar system</span>
+                        </div>
+                    </div>
+                    <div class="category art">
+                        <h4>Art & Architecture</h4>
+                        <div class="items">
+                            <span class="item">Pyramids</span>
+                            <span class="item">Hieroglyphics</span>
+                            <span class="item">Golden ratio</span>
+                        </div>
+                    </div>
+                    <div class="category invention">
+                        <h4>Inventions</h4>
+                        <div class="items">
+                            <span class="item">Papyrus</span>
+                            <span class="item">Sundial</span>
+                            <span class="item">Makeup</span>
+                        </div>
+                    </div>
+                    <div class="category power">
+                        <h4>Power Structure</h4>
+                        <div class="items">
+                            <span class="item">Pharaoh (god-king)</span>
+                            <span class="item">Theocracy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ancient Greece -->
+            <div class="era" style="left: 840px; top: 100px;" data-grades="45">
+                <h3>ðŸ›ï¸ Ancient Greece</h3>
+                <div class="era-date">800 - 146 BCE</div>
+                <div class="era-content">
+                    <div class="category math">
+                        <h4>Mathematics</h4>
+                        <div class="items">
+                            <span class="item">Pythagorean theorem</span>
+                            <span class="item">Euclidean geometry</span>
+                            <span class="item">Pi calculation</span>
+                        </div>
+                    </div>
+                    <div class="category art">
+                        <h4>Art & Architecture</h4>
+                        <div class="items">
+                            <span class="item">Parthenon</span>
+                            <span class="item">Golden ratio</span>
+                            <span class="item">Sculpture</span>
+                        </div>
+                    </div>
+                    <div class="category invention">
+                        <h4>Inventions</h4>
+                        <div class="items">
+                            <span class="item">Archimedes' screw</span>
+                            <span class="item">Antikythera mechanism</span>
+                            <span class="item">Lighthouse</span>
+                        </div>
+                    </div>
+                    <div class="category myth">
+                        <h4>Myths</h4>
+                        <div class="items">
+                            <span class="item">Olympian gods</span>
+                            <span class="item">Odyssey</span>
+                            <span class="item">Icarus</span>
+                        </div>
+                    </div>
+                    <div class="category power">
+                        <h4>Power Structure</h4>
+                        <div class="items">
+                            <span class="item">Democracy (Athens)</span>
+                            <span class="item">City-states</span>
+                        </div>
+                    </div>
+                    <div class="category sel">
+                        <h4>SEL Skills</h4>
+                        <div class="items">
+                            <span class="item">Logic & debate</span>
+                            <span class="item">Perseverance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ancient Rome -->
+            <div class="era" style="left: 1120px; top: 20px;" data-grades="45">
+                <h3>ðŸ¦… Ancient Rome</h3>
+                <div class="era-date">753 BCE - 476 CE</div>
+                <div class="era-content">
+                    <div class="category math">
+                        <h4>Mathematics</h4>
+                        <div class="items">
+                            <span class="item">Roman numerals</span>
+                            <span class="item">Engineering math</span>
+                        </div>
+                    </div>
+                    <div class="category art">
+                        <h4>Architecture</h4>
+                        <div class="items">
+                            <span class="item">Aqueducts</span>
+                            <span class="item">Colosseum</span>
+                            <span class="item">Arches & domes</span>
+                        </div>
+                    </div>
+                    <div class="category invention">
+                        <h4>Inventions</h4>
+                        <div class="items">
+                            <span class="item">Concrete</span>
+                            <span class="item">Roads network</span>
+                            <span class="item">Central heating</span>
+                        </div>
+                    </div>
+                    <div class="category power">
+                        <h4>Power Structure</h4>
+                        <div class="items">
+                            <span class="item">Republic â†’ Empire</span>
+                            <span class="item">Senate</span>
+                            <span class="item">Caesar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Islamic Golden Age -->
+            <div class="era" style="left: 1400px; top: 100px;" data-grades="45">
+                <h3>ðŸŒ™ Islamic Golden Age</h3>
+                <div class="era-date">8th - 13th century CE</div>
+                <div class="era-content">
+                    <div class="category math">
+                        <h4>Mathematics</h4>
+                        <div class="items">
+                            <span class="item">Algebra (Al-Khwarizmi)</span>
+                            <span class="item">Algorithms</span>
+                            <span class="item">Trigonometry</span>
+                        </div>
+                    </div>
+                    <div class="category art">
+                        <h4>Art & Architecture</h4>
+                        <div class="items">
+                            <span class="item">Geometric patterns</span>
+                            <span class="item">Arabesques</span>
+                            <span class="item">Calligraphy</span>
+                        </div>
+                    </div>
+                    <div class="category invention">
+                        <h4>Inventions</h4>
+                        <div class="items">
+                            <span class="item">Astrolabe</span>
+                            <span class="item">Camera obscura</span>
+                            <span class="item">Surgical tools</span>
+                        </div>
+                    </div>
+                    <div class="category power">
+                        <h4>Power Structure</h4>
+                        <div class="items">
+                            <span class="item">Caliphate</span>
+                            <span class="item">House of Wisdom</span>
+                        </div>
+                    </div>
+                    <div class="category sel">
+                        <h4>SEL Skills</h4>
+                        <div class="items">
+                            <span class="item">Scholarly pursuit</span>
+                            <span class="item">Cultural exchange</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Renaissance -->
+            <div class="era" style="left: 1680px; top: 20px;" data-grades="45">
+                <h3>ðŸŽ¨ Renaissance</h3>
+                <div class="era-date">14th - 17th century</div>
+                <div class="era-content">
+                    <div class="category math">
+                        <h4>Mathematics</h4>
+                        <div class="items">
+                            <span class="item">Perspective geometry</span>
+                            <span class="item">Fibonacci sequence</span>
+                        </div>
+                    </div>
+                    <div class="category art">
+                        <h4>Art</h4>
+                        <div class="items">
+                            <span class="item">Leonardo da Vinci</span>
+                            <span class="item">Michelangelo</span>
+                            <span class="item">Linear perspective</span>
+                        </div>
+                    </div>
+                    <div class="category invention">
+                        <h4>Inventions</h4>
+                        <div class="items">
+                            <span class="item">Printing press</span>
+                            <span class="item">Telescope</span>
+                            <span class="item">Flying machine designs</span>
+                        </div>
+                    </div>
+                    <div class="category power">
+                        <h4>Power Structure</h4>
+                        <div class="items">
+                            <span class="item">City-states</span>
+                            <span class="item">Patron system</span>
+                            <span class="item">Medici family</span>
+                        </div>
+                    </div>
+                    <div class="category sel">
+                        <h4>SEL Skills</h4>
+                        <div class="items">
+                            <span class="item">Curiosity</span>
+                            <span class="item">Innovation</span>
+                            <span class="item">Humanism</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="standards-panel">
+        <h2>ðŸ“‹ Educational Standards Alignment</h2>
+        <div class="standards-grid">
+            <div class="standard-card">
+                <h4>Mathematics Standards (Grades 2-3)</h4>
+                <ul>
+                    <li>Number sense and place value</li>
+                    <li>Basic geometric shapes and patterns</li>
+                    <li>Measurement and data</li>
+                    <li>Problem-solving with real-world contexts</li>
+                </ul>
+            </div>
+            <div class="standard-card">
+                <h4>Mathematics Standards (Grades 4-5)</h4>
+                <ul>
+                    <li>Fractions and decimals</li>
+                    <li>Advanced geometric concepts</li>
+                    <li>Algebraic thinking</li>
+                    <li>Data analysis and graphing</li>
+                </ul>
+            </div>
+            <div class="standard-card">
+                <h4>Art & Cultural Standards</h4>
+                <ul>
+                    <li>Understanding art in historical context</li>
+                    <li>Creating art using historical techniques</li>
+                    <li>Analyzing cultural symbols and patterns</li>
+                    <li>Connecting art to mathematics</li>
+                </ul>
+            </div>
+            <div class="standard-card">
+                <h4>SEL Standards</h4>
+                <ul>
+                    <li>Self-awareness through historical examples</li>
+                    <li>Social awareness across cultures</li>
+                    <li>Responsible decision-making</li>
+                    <li>Perseverance and growth mindset</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lesson-suggestions">
+        <h2>ðŸ’¡ Sample Lesson Directions</h2>
+        
+        <div class="lesson-card" data-grade="23">
+            <h3>Mesopotamian Mathematics: The Wheel & Counting</h3>
+            <p>Explore the invention of the wheel through hands-on activities with clay tablets and circular measurements.</p>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <strong>Grade Level:</strong> 2-3
+                </div>
+                <div class="detail-item">
+                    <strong>Duration:</strong> 45 minutes
+                </div>
+                <div class="detail-item">
+                    <strong>Materials:</strong> Clay, circular objects, measuring tools
+                </div>
+                <div class="detail-item">
+                    <strong>Standards:</strong> Geometry, Measurement, Cultural History
+                </div>
+                <div class="detail-item">
+                    <strong>SEL Focus:</strong> Perseverance, Problem-solving
+                </div>
+            </div>
+        </div>
+        
+        <div class="lesson-card" data-grade="23">
+            <h3>Egyptian Pyramids: Shapes & Patterns</h3>
+            <p>Build miniature pyramids while learning about triangular numbers, patterns, and ancient engineering.</p>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <strong>Grade Level:</strong> 2-3
+                </div>
+                <div class="detail-item">
+                    <strong>Duration:</strong> 60 minutes
+                </div>
+                <div class="detail-item">
+                    <strong>Materials:</strong> Building blocks, grid paper, rulers
+                </div>
+                <div class="detail-item">
+                    <strong>Standards:</strong> Geometry, Patterns, Engineering
+                </div>
+                <div class="detail-item">
+                    <strong>SEL Focus:</strong> Collaboration, Planning
+                </div>
+            </div>
+        </div>
+        
+        <div class="lesson-card" data-grade="45">
+            <h3>Greek Mathematics: Pythagorean Theorem Art</h3>
+            <p>Create geometric art while discovering the Pythagorean theorem through visual proofs and tessellations.</p>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <strong>Grade Level:</strong> 4-5
+                </div>
+                <div class="detail-item">
+                    <strong>Duration:</strong> 90 minutes
+                </div>
+                <div class="detail-item">
+                    <strong>Materials:</strong> Graph paper, colored pencils, rulers, calculators
+                </div>
+                <div class="detail-item">
+                    <strong>Standards:</strong> Advanced Geometry, Algebraic Thinking
+                </div>
+                <div class="detail-item">
+                    <strong>SEL Focus:</strong> Abstract thinking, Attention to detail
+                </div>
+            </div>
+        </div>
+        
+        <div class="lesson-card" data-grade="45">
+            <h3>Islamic Geometric Patterns: Algebra in Art</h3>
+            <p>Design intricate Islamic geometric patterns while exploring symmetry, transformations, and algebraic relationships.</p>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <strong>Grade Level:</strong> 4-5
+                </div>
+                <div class="detail-item">
+                    <strong>Duration:</strong> 120 minutes (2 sessions)
+                </div>
+                <div class="detail-item">
+                    <strong>Materials:</strong> Compass, protractor, colored paper, templates
+                </div>
+                <div class="detail-item">
+                    <strong>Standards:</strong> Transformations, Symmetry, Cultural Art
+                </div>
+                <div class="detail-item">
+                    <strong>SEL Focus:</strong> Patience, Cultural appreciation, Precision
+                </div>
+            </div>
+        </div>
+        
+        <div class="lesson-card" data-grade="45">
+            <h3>Renaissance Perspective: Math Meets Art</h3>
+            <p>Learn Leonardo da Vinci's mathematical techniques for creating realistic perspective drawings.</p>
+            <div class="lesson-details">
+                <div class="detail-item">
+                    <strong>Grade Level:</strong> 4-5
+                </div>
+                <div class="detail-item">
+                    <strong>Duration:</strong> 90 minutes
+                </div>
+                <div class="detail-item">
+                    <strong>Materials:</strong> Drawing paper, rulers, vanishing point guides
+                </div>
+                <div class="detail-item">
+                    <strong>Standards:</strong> Ratios, Proportions, Visual Arts
+                </div>
+                <div class="detail-item">
+                    <strong>SEL Focus:</strong> Observation skills, Innovation
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let activeFilters = ['math', 'art', 'invention', 'myth', 'power', 'sel'];
+        
+        function toggleFilter(btn) {
+            const category = btn.dataset.category;
+            btn.classList.toggle('active');
+            
+            if (activeFilters.includes(category)) {
+                activeFilters = activeFilters.filter(f => f !== category);
+            } else {
+                activeFilters.push(category);
+            }
+            
+            updateDisplay();
+        }
+        
+        function updateDisplay() {
+            const gradeFilter = document.getElementById('gradeSelect').value;
+            
+            // Update timeline eras
+            document.querySelectorAll('.era').forEach(era => {
+                const grades = era.dataset.grades ? era.dataset.grades.split(',') : ['all'];
+                const gradeMatch = gradeFilter === 'all' || grades.includes(gradeFilter);
+                
+                if (gradeMatch) {
+                    era.style.opacity = '1';
+                    era.style.pointerEvents = 'auto';
+                    
+                    // Update categories within era
+                    era.querySelectorAll('.category').forEach(cat => {
+                        const catType = Array.from(cat.classList).find(c => 
+                            ['math', 'art', 'invention', 'myth', 'power', 'sel'].includes(c)
+                        );
+                        cat.style.display = activeFilters.includes(catType) ? 'block' : 'none';
+                    });
+                } else {
+                    era.style.opacity = '0.3';
+                    era.style.pointerEvents = 'none';
+                }
+            });
+            
+            // Update lesson cards
+            document.querySelectorAll('.lesson-card').forEach(card => {
+                const cardGrade = card.dataset.grade;
+                if (gradeFilter === 'all' || cardGrade === gradeFilter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        // Grade selector event listener
+        document.getElementById('gradeSelect').addEventListener('change', updateDisplay);
+        
+        // Initialize display
+        updateDisplay();
+        
+        // Add smooth scrolling to timeline
+        const timeline = document.querySelector('.timeline-container');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        
+        timeline.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - timeline.offsetLeft;
+            scrollLeft = timeline.scrollLeft;
+            timeline.style.cursor = 'grabbing';
+        });
+        
+        timeline.addEventListener('mouseleave', () => {
+            isDown = false;
+            timeline.style.cursor = 'grab';
+        });
+        
+        timeline.addEventListener('mouseup', () => {
+            isDown = false;
+            timeline.style.cursor = 'grab';
+        });
+        
+        timeline.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - timeline.offsetLeft;
+            const walk = (x - startX) * 2;
+            timeline.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+</body>
+</html>
+
+

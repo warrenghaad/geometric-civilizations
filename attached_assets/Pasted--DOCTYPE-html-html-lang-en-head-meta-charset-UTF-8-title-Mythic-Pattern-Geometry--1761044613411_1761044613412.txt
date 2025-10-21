@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Mythic Pattern Geometry & ELA – K–8 Curriculum Bundle</title>
+  <style>
+    :root {
+      --bg:#0e1015; --panel:#181d24; --bdr:#25303a; --accent:#5ab4ff; --accent2:#ffb347;
+      --text:#e9eef3; --muted:#94a2b2; --good:#5bcf91; --warn:#ff914d; --danger:#ff5d5d;
+      --mono:'SFMono-Regular',ui-monospace,monospace; --radius:14px;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Inter,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.4; }
+    header { padding:1.6rem 2.1rem 1rem; }
+    h1 { margin:0 0 .4rem; font-size:1.9rem; letter-spacing:.5px; }
+    h2 { margin:1.2rem 0 .6rem; font-size:1.2rem; letter-spacing:.5px; }
+    h3 { margin:.9rem 0 .45rem; font-size:1rem; letter-spacing:.4px; }
+    p { margin:.45rem 0 .6rem; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    nav { background:#12161b; padding:.9rem 2rem 1rem; display:flex; flex-wrap:wrap; gap:.55rem; border-top:1px solid #1f252c; border-bottom:1px solid #1f252c; }
+    nav a { font-size:.72rem; padding:.45rem .7rem; background:#1c242c; border:1px solid #28323b; border-radius:9px; letter-spacing:.5px; font-weight:600; }
+    nav a:hover { background:#23303a; }
+    section { padding:1rem 2rem 1.2rem; border-bottom:1px solid #1b2229; }
+    .panel { background:var(--panel); border:1px solid var(--bdr); padding:.85rem 1rem 1rem; border-radius:var(--radius); margin:.6rem 0 1rem; }
+    .grid { display:grid; gap:.75rem; }
+    .g2 { grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+    .g3 { grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+    .pill { display:inline-block; background:#202a33; padding:.28rem .6rem; border:1px solid #2d3842; border-radius:999px; font-size:.62rem; letter-spacing:.8px; margin:.15rem .25rem .15rem 0; }
+    code { background:#11171c; padding:.15rem .4rem; border-radius:6px; font-size:.72rem; border:1px solid #1e262e; font-family:var(--mono); }
+    .objective { background:#1d242c; border:1px solid #27323c; padding:.55rem .6rem .6rem; border-radius:10px; font-size:.7rem; line-height:1.35; }
+    .objective strong { font-size:.72rem; letter-spacing:.6px; }
+    .stride { border-left:4px solid var(--accent); padding-left:.75rem; margin:.55rem 0 .8rem; }
+    .vertical-thread { background:#1a2027; border:1px solid #2a353f; padding:.55rem .7rem; border-radius:8px; font-size:.68rem; }
+    .tagline { font-size:1.05rem; font-weight:600; background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; color:transparent; }
+    .role { background:#212a33; border:1px solid #2c3742; padding:.7rem .75rem .75rem; border-radius:10px; font-size:.7rem; }
+    .archetype { background:#202830; border:1px solid #2c3743; padding:.55rem .6rem .65rem; border-radius:9px; font-size:.65rem; }
+    .slide-deck { background:#0c0f13; border-top:2px solid #222b34; }
+    .slides { display:flex; flex-direction:column; gap:1.5rem; padding:2rem; }
+    .slide { background:#161b22; border:1px solid #27323c; padding:1.1rem 1.2rem 1.25rem; border-radius:16px; }
+    .slide h2 { margin:.2rem 0 .7rem; font-size:1.15rem; }
+    .mini { font-size:.58rem; color:var(--muted); letter-spacing:.6px; text-transform:uppercase; }
+    details { margin:.5rem 0 .4rem; }
+    details summary { cursor:pointer; font-weight:600; font-size:.75rem; list-style:none; }
+    footer { padding:2rem 2rem 3rem; font-size:.6rem; color:var(--muted); text-align:center; }
+    .json-box { background:#11171c; border:1px solid #27313a; padding:.8rem; border-radius:12px; font-family:var(--mono); font-size:.63rem; max-height:420px; overflow:auto; white-space:pre; }
+    button { background:#23313c; border:1px solid #2f3e49; color:var(--text); padding:.45rem .8rem; border-radius:7px; font-size:.65rem; cursor:pointer; }
+    button:hover { background:#2b3a46; }
+    .legend { font-size:.62rem; opacity:.7; margin-top:.3rem; }
+    .inline { display:inline-block; }
+    .emph { color:var(--accent2); font-weight:600; }
+    .accent { color:var(--accent); }
+    .good { color:var(--good); }
+    .warn { color:var(--warn); }
+    .divider { height:1px; background:#1d242b; margin:1.4rem 0 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mythic Pattern Geometry & Language Integration (K–8)</h1>
+    <p class="tagline">From Shape to Story to Symbol to Invention to Proof – Students Travel the World’s Myths While Building Formal Reasoning & Expressive Literacy.</p>
+    <p><strong>Thesis (Inspirational):</strong> When children see that geometric patterns, narrative arcs, cultural symbols, and scientific structures all echo the same deep designs, they become designers of meaning—capable of reasoning, storytelling, invention, and compassionate choice.</p>
+  </header>
+
+  <nav>
+    <a href="#thesis-voices">Stakeholder Voices</a>
+    <a href="#vertical-threads">Vertical Threads</a>
+    <a href="#objectives">108 Objectives</a>
+    <a href="#units">Units by Grade Bands</a>
+    <a href="#alignment">ELA + Geometry Alignment</a>
+    <a href="#assessment">Assessment & Proficiency</a>
+    <a href="#behavior">Behavior & Mindfulness</a>
+    <a href="#enrichment">Enrichment & Acceleration</a>
+    <a href="#integration">McGraw Hill Integration</a>
+    <a href="#azmerit">AZMerit / AASA Rationale</a>
+    <a href="#json">Raw JSON</a>
+    <a href="#slides">Slide Deck</a>
+  </nav>
+
+  <section id="thesis-voices">
+    <h2>Stakeholder Thesis Voices</h2>
+    <div class="grid g3">
+      <div class="role"><strong>Student (K–2):</strong> “I can see shapes in stories and make my own pattern tales.”</div>
+      <div class="role"><strong>Student (3–5):</strong> “I remix old myths with math patterns to explain ideas clearly.”</div>
+      <div class="role"><strong>Student (6–8):</strong> “I prove why patterns work, adapt myths to new problems, and explain my design choices.”</div>
+      <div class="role"><strong>Teacher:</strong> “I facilitate cross-domain pattern noticing that deepens literacy and reasoning simultaneously.”</div>
+      <div class="role"><strong>Administrator:</strong> “We see measurable gains in ELA comprehension and math reasoning because students practice transfer daily.”</div>
+      <div class="role"><strong>Family:</strong> “My child connects cultural stories to science and math and explains their thinking respectfully.”</div>
+    </div>
+  </section>
+
+  <section id="vertical-threads">
+    <h2>Vertical Threads (K–8 Longitudinal Concepts)</h2>
+    <div class="grid g3">
+      <div class="vertical-thread"><strong>Pattern Recognition → Proof:</strong> K–2 identify & describe; 3–5 classify & transform; 6–8 generalize & justify.</div>
+      <div class="vertical-thread"><strong>Myth Structure → Analytical Writing:</strong> Oral retell → compare motif → structural analysis → thematic synthesis.</div>
+      <div class="vertical-thread"><strong>Symbol → Model:</strong> Draw → label → encode → abstract into variable/formula representation.</div>
+      <div class="vertical-thread"><strong>Global Motifs & Equity:</strong> Hear → respect → connect → critique representation & bias.</div>
+      <div class="vertical-thread"><strong>Creative Remix → Innovation:</strong> Combine shapes + myth → adapt culturally responsibly → prototype explanatory artifact.</div>
+      <div class="vertical-thread"><strong>Mindful Meta-Cognition:</strong> Name feeling → regulate focus → select strategy → reflect & refine.</div>
+    </div>
+  </section>
+
+  <section id="objectives">
+    <h2>108 Learning Objectives (12 per Grade)</h2>
+    <p><em>Format:</em> ID | Student Voice | Adult Framing | Linked Strands (ELA + Math/Art). All myths used are public-domain or generic cultural motifs (e.g., Hero’s Journey, trickster tales, cosmic egg, flood, creation cycles) with culturally respectful summaries.</p>
+    <details open>
+      <summary><strong>Kindergarten (K.O1–K.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>K.O1</strong><br/>I can spot repeating shape patterns in a story cloth.<br/><em>Adult:</em> Identify AB/ABC visual patterns in narrative artifacts.<br/>RL.K.7 | MP7 | Art Pattern</div>
+        <div class="objective"><strong>K.O2</strong><br/>I can retell a simple myth with beginning, middle, end.<br/><em>Adult:</em> Retell sequence using temporal words.<br/>RL.K.2 | SL.K.4</div>
+        <div class="objective"><strong>K.O3</strong><br/>I can name circle, triangle, square in objects.<br/>K.G.A.2 | L.K.5</div>
+        <div class="objective"><strong>K.O4</strong><br/>I can draw a shape pattern to show a hero’s path.<br/>RL.K.3 | K.G.A.1</div>
+        <div class="objective"><strong>K.O5</strong><br/>I can clap syllable rhythms from a myth name list.<br/>RF.K.2 | Music Rhythm</div>
+        <div class="objective"><strong>K.O6</strong><br/>I can sort story tokens by shape or color rule.<br/>K.MD.B.3 | L.K.1</div>
+        <div class="objective"><strong>K.O7</strong><br/>I can listen and name a feeling a character has.<br/>RL.K.4 | SEL Awareness</div>
+        <div class="objective"><strong>K.O8</strong><br/>I can build a shape hero using 2 shapes together.<br/>K.G.B.6 | Creativity</div>
+        <div class="objective"><strong>K.O9</strong><br/>I can notice symmetry in a mask picture.<br/>K.G.A | Art Symmetry Intro</div>
+        <div class="objective"><strong>K.O10</strong><br/>I can use “because” to tell why a hero changes.<br/>RL.K.3 | SL.K.6</div>
+        <div class="objective"><strong>K.O11</strong><br/>I can stay calm with a breathing bubble exercise.<br/>SEL Regulation</div>
+        <div class="objective"><strong>K.O12</strong><br/>I can choose a story I like and say one pattern in it.<br/>RL.K.10 | Choice Motivation</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 1 (1.O1–1.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>1.O1</strong><br/>I can extend a pattern I see in a myth border.<br/>1.OA | RL.1.7</div>
+        <div class="objective"><strong>1.O2</strong><br/>I can tell how two trickster tales are alike/different.<br/>RL.1.9</div>
+        <div class="objective"><strong>1.O3</strong><br/>I can build a composite shape from 2–3 shapes.<br/>1.G.A.2</div>
+        <div class="objective"><strong>1.O4</strong><br/>I can label a character’s problem and solution.<br/>RL.1.2</div>
+        <div class="objective"><strong>1.O5</strong><br/>I can write a 3-sentence mini-myth with pattern words.<br/>W.1.3</div>
+        <div class="objective"><strong>1.O6</strong><br/>I can identify symmetry by folding paper art.<br/>1.G | Art Fold Symmetry</div>
+        <div class="objective"><strong>1.O7</strong><br/>I can describe a setting using at least 2 senses.<br/>RL.1.7 | L.1.1</div>
+        <div class="objective"><strong>1.O8</strong><br/>I can use calm counting when I feel stuck.<br/>SEL Strategy</div>
+        <div class="objective"><strong>1.O9</strong><br/>I can classify shapes by sides or corners.<br/>1.G.A.1</div>
+        <div class="objective"><strong>1.O10</strong><br/>I can present my drawing and speak clearly.<br/>SL.1.4</div>
+        <div class="objective"><strong>1.O11</strong><br/>I can choose a respectful word to describe a culture.<br/>L.1.5 | SEL Respect</div>
+        <div class="objective"><strong>1.O12</strong><br/>I can find a repeating sound pattern (alliteration).<br/>RL.1.4</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 2 (2.O1–2.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>2.O1</strong><br/>I can map events in order with a shape timeline.<br/>RL.2.5</div>
+        <div class="objective"><strong>2.O2</strong><br/>I can partition a rectangle into equal squares.<br/>2.G.A.2</div>
+        <div class="objective"><strong>2.O3</strong><br/>I can compare myth openings from 2 cultures.<br/>RL.2.9</div>
+        <div class="objective"><strong>2.O4</strong><br/>I can write a topic sentence about a hero’s choice.<br/>W.2.2</div>
+        <div class="objective"><strong>2.O5</strong><br/>I can explain why a pattern rule works (AAB vs ABB).<br/>MP3 | RL.2.1</div>
+        <div class="objective"><strong>2.O6</strong><br/>I can find lines of symmetry in simple figures.<br/>2.G | Visual Arts</div>
+        <div class="objective"><strong>2.O7</strong><br/>I can use a calm script when I’m frustrated.<br/>SEL Regulation</div>
+        <div class="objective"><strong>2.O8</strong><br/>I can ask a clarifying presentation question.<br/>SL.2.3</div>
+        <div class="objective"><strong>2.O9</strong><br/>I can measure using informal units to compare lengths in a myth artifact sketch.<br/>2.MD.A</div>
+        <div class="objective"><strong>2.O10</strong><br/>I can revise a sentence to add a vivid verb.<br/>W.2.5 | L.2.1</div>
+        <div class="objective"><strong>2.O11</strong><br/>I can create a mirrored pattern border for my retelling page.<br/>Art | 2.G</div>
+        <div class="objective"><strong>2.O12</strong><br/>I can paraphrase a helper character’s role.<br/>RL.2.7</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 3 (3.O1–3.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>3.O1</strong><br/>I can classify quadrilaterals by shared attributes.<br/>3.G.A | MP7</div>
+        <div class="objective"><strong>3.O2</strong><br/>I can extract the moral/theme from a myth and justify with 2 details.<br/>RL.3.2</div>
+        <div class="objective"><strong>3.O3</strong><br/>I can describe transformation (flip/slide/turn) informally.<br/>3.G | W.3.2</div>
+        <div class="objective"><strong>3.O4</strong><br/>I can compare two myth heroes’ responses to conflict.<br/>RL.3.3</div>
+        <div class="objective"><strong>3.O5</strong><br/>I can write a myth remix adding a geometry clue.<br/>W.3.3 | 3.G.A</div>
+        <div class="objective"><strong>3.O6</strong><br/>I can plan a breathing + stretch routine before presenting.<br/>SEL</div>
+        <div class="objective"><strong>3.O7</strong><br/>I can explain a pattern using numbers (3,6,9).<br/>3.OA.D</div>
+        <div class="objective"><strong>3.O8</strong><br/>I can cite text sentences when answering a question.<br/>RL.3.1</div>
+          <div class="objective"><strong>3.O9</strong><br/>I can create a tessellation-based shield motif.<br/>Art | 3.G</div>
+        <div class="objective"><strong>3.O10</strong><br/>I can distinguish literal vs nonliteral language in myth lines.<br/>L.3.5</div>
+        <div class="objective"><strong>3.O11</strong><br/>I can respectfully identify cultural origin of a motif.<br/>RL.3.9</div>
+        <div class="objective"><strong>3.O12</strong><br/>I can summarize a chapter in 3 bullet points.<br/>RL.3.2</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 4 (4.O1–4.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>4.O1</strong><br/>I can measure and classify angles in an artifact design.<br/>4.G.A.1</div>
+        <div class="objective"><strong>4.O2</strong><br/>I can analyze myth structure (exposition → resolution).<br/>RL.4.5</div>
+        <div class="objective"><strong>4.O3</strong><br/>I can write a compare/contrast of two flood myths.<br/>RL.4.9 | W.4.2</div>
+        <div class="objective"><strong>4.O4</strong><br/>I can decompose a composite area in a temple floor plan.<br/>4.MD.A | MP4</div>
+        <div class="objective"><strong>4.O5</strong><br/>I can support an inference with two textual details.<br/>RL.4.1</div>
+        <div class="objective"><strong>4.O6</strong><br/>I can construct a symmetry-based logo with rotational description.<br/>4.G | Art</div>
+        <div class="objective"><strong>4.O7</strong><br/>I can use mindful labeling (name emotion + need) during group work.<br/>SEL</div>
+        <div class="objective"><strong>4.O8</strong><br/>I can paraphrase a primary vs secondary source snippet.<br/>RI.4.6</div>
+        <div class="objective"><strong>4.O9</strong><br/>I can revise for sentence variety (combine/expand).<br/>W.4.5</div>
+        <div class="objective"><strong>4.O10</strong><br/>I can justify a classification choice in a hierarchy chart.<br/>4.G.A | MP3</div>
+        <div class="objective"><strong>4.O11</strong><br/>I can present a storyboard with matching geometry annotations.<br/>SL.4.4</div>
+        <div class="objective"><strong>4.O12</strong><br/>I can evaluate respectful cultural representation in my remix.<br/>RL.4.9 | SEL</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 5 (5.O1–5.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>5.O1</strong><br/>I can compute area of irregular shapes via decomposition.<br/>5.MD.C</div>
+        <div class="objective"><strong>5.O2</strong><br/>I can analyze narrator point of view difference.<br/>RL.5.6</div>
+        <div class="objective"><strong>5.O3</strong><br/>I can construct a tessellated border explaining angle sums.<br/>5.G | MP7</div>
+        <div class="objective"><strong>5.O4</strong><br/>I can write an explanatory piece linking myth metaphor to natural phenomenon.<br/>W.5.2</div>
+        <div class="objective"><strong>5.O5</strong><br/>I can summarize multi-chapter myth concisely.<br/>RL.5.2</div>
+        <div class="objective"><strong>5.O6</strong><br/>I can evaluate credibility of two informational passages.<br/>RI.5.8</div>
+        <div class="objective"><strong>5.O7</strong><br/>I can model coordinate plane points to map journey stages.<br/>5.G.A</div>
+        <div class="objective"><strong>5.O8</strong><br/>I can use mindfulness journaling to reflect on learning focus.<br/>SEL</div>
+        <div class="objective"><strong>5.O9</strong><br/>I can identify and explain figurative language types (simile, personification).<br/>L.5.5</div>
+        <div class="objective"><strong>5.O10</strong><br/>I can assemble a research mini-bibliography (3 sources).<br/>W.5.8</div>
+        <div class="objective"><strong>5.O11</strong><br/>I can argue for a thematic interpretation with textual and geometric visual evidence.<br/>W.5.1 | SL.5.4</div>
+        <div class="objective"><strong>5.O12</strong><br/>I can critique cultural remix for accuracy & avoid stereotypes.<br/>RI.5.6 | SEL</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 6 (6.O1–6.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>6.O1</strong><br/>I can use ratio reasoning to scale a pattern border.<br/>6.RP.A</div>
+        <div class="objective"><strong>6.O2</strong><br/>I can analyze how a myth’s theme develops across scenes.<br/>RL.6.2</div>
+        <div class="objective"><strong>6.O3</strong><br/>I can write a concise objective summary (no opinion).<br/>RL.6.2</div>
+        <div class="objective"><strong>6.O4</strong><br/>I can describe rotation/reflection/translation using coordinate notation.<br/>6.G.A</div>
+        <div class="objective"><strong>6.O5</strong><br/>I can compare primary vs secondary myth commentary.<br/>RH.6-8.1</div>
+        <div class="objective"><strong>6.O6</strong><br/>I can build a remix that retains core motif while altering perspective ethically.<br/>W.6.3 | SEL</div>
+        <div class="objective"><strong>6.O7</strong><br/>I can explain proportional change in a symbol scaling scenario.<br/>6.RP.A | MP3</div>
+        <div class="objective"><strong>6.O8</strong><br/>I can annotate figurative & connotative meanings.<br/>RL.6.4</div>
+        <div class="objective"><strong>6.O9</strong><br/>I can plan and deliver a 3-minute explanatory talk with visual support.<br/>SL.6.4</div>
+        <div class="objective"><strong>6.O10</strong><br/>I can use mindfulness (breath + reframe) before revision.<br/>SEL</div>
+        <div class="objective"><strong>6.O11</strong><br/>I can identify bias or omission in a retelling source.<br/>RI.6.6</div>
+        <div class="objective"><strong>6.O12</strong><br/>I can justify transformation sequence producing congruent figure.<br/>6.G | MP6</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 7 (7.O1–7.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>7.O1</strong><br/>I can apply similarity & scale factor to redesign motif.<br/>7.G.A</div>
+        <div class="objective"><strong>7.O2</strong><br/>I can trace thematic evolution across multiple myths to craft synthesis claim.<br/>RL.7.2</div>
+        <div class="objective"><strong>7.O3</strong><br/>I can analyze how perspective shapes reliability.<br/>RL.7.6</div>
+        <div class="objective"><strong>7.O4</strong><br/>I can integrate quantitative data into explanatory writing.<br/>W.7.2 | MP4</div>
+        <div class="objective"><strong>7.O5</strong><br/>I can construct argument evaluating adaptation authenticity.<br/>W.7.1</div>
+        <div class="objective"><strong>7.O6</strong><br/>I can model geometric construction underlying decorative pattern.<br/>7.G | MP5</div>
+        <div class="objective"><strong>7.O7</strong><br/>I can explain proportional reasoning in myth cartography map scale.<br/>7.RP.A</div>
+        <div class="objective"><strong>7.O8</strong><br/>I can evaluate word choice’s tone effect.<br/>RL.7.4</div>
+        <div class="objective"><strong>7.O9</strong><br/>I can facilitate a collaborative dialogue with accountable stems.<br/>SL.7.1</div>
+        <div class="objective"><strong>7.O10</strong><br/>I can use layered mindfulness (breath + somatic + focus cue).<br/>SEL</div>
+        <div class="objective"><strong>7.O11</strong><br/>I can categorize motif diffusion across regions using research logs.<br/>RI.7.1</div>
+        <div class="objective"><strong>7.O12</strong><br/>I can justify similarity claim with ratio evidence and notation.<br/>7.G | MP3</div>
+      </div>
+    </details>
+    <details>
+      <summary><strong>Grade 8 (8.O1–8.O12)</strong></summary>
+      <div class="grid g3">
+        <div class="objective"><strong>8.O1</strong><br/>I can prove angle relationships in transformation sequences.<br/>8.G.A | MP3</div>
+        <div class="objective"><strong>8.O2</strong><br/>I can analyze how contrasting myths shape universal theme interpretations.<br/>RL.8.9</div>
+        <div class="objective"><strong>8.O3</strong><br/>I can craft sustained argument integrating symbolic geometry model.<br/>W.8.1</div>
+        <div class="objective"><strong>8.O4</strong><br/>I can evaluate sources for credibility, bias, and corroboration.<br/>RI.8.8</div>
+        <div class="objective"><strong>8.O5</strong><br/>I can model dilation on coordinate plane and justify scale reasoning.<br/>8.G.A</div>
+        <div class="objective"><strong>8.O6</strong><br/>I can adapt myth to explain a contemporary scientific or ethical issue.<br/>W.8.2 | SEL</div>
+        <div class="objective"><strong>8.O7</strong><br/>I can create a layered symbolic system (legend) mapping narrative arc to geometric changes.<br/>8.G | RL.8.5</div>
+        <div class="objective"><strong>8.O8</strong><br/>I can analyze figurative density & how it shifts tone over sections.<br/>RL.8.4</div>
+        <div class="objective"><strong>8.O9</strong><br/>I can guide peer feedback using criteria referencing form & content.<br/>SL.8.1</div>
+        <div class="objective"><strong>8.O10</strong><br/>I can use metacognitive journaling tracking regulation strategies.<br/>SEL</div>
+        <div class="objective"><strong>8.O11</strong><br/>I can produce multimodal presentation synthesizing myth origins + mathematical model + real-world application.<br/>SL.8.5</div>
+        <div class="objective"><strong>8.O12</strong><br/>I can construct a concise proof-style justification for pattern generalization.<br/>8.EE | MP3</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="units">
+    <h2>Units by Grade Bands (4 Units Each, Horizontally & Vertically Aligned)</h2>
+    <p><strong>Grade Bands:</strong> K–1 | 2–3 | 4–5 | 6–8. Each unit title is internal; student-facing phrasing = “I can…” objectives woven inside quests.</p>
+    <div class="panel">
+      <h3>K–1 Units</h3>
+      <ol>
+        <li><strong>Unit 1: Pattern Stories</strong> (K.O1–K.O4, 1.O1–1.O3) – Recognize & build repeating shape + story sequence.</li>
+        <li><strong>Unit 2: Shape Characters & Symmetry</strong> (K.O5–K.O9, 1.O6, 1.O9) – Compose / decompose shapes, early symmetry noticing.</li>
+        <li><strong>Unit 3: Feelings & Heroes</strong> (K.O7, K.O10–K.O12, 1.O4–1.O5, 1.O8, 1.O11–1.O12) – Emotional literacy + narrative structure.</li>
+        <li><strong>Unit 4: Remix Mini-Myth</strong> (Integration & review) – Students create simple patterned retell with labeled shapes.</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h3>Grades 2–3 Units</h3>
+      <ol>
+        <li><strong>Unit 1: Mapping Story Patterns</strong> (2.O1–2.O4, 3.O2–3.O4, 3.O8) – Sequencing, comparing, transformation intro.</li>
+        <li><strong>Unit 2: Symmetry & Tessellation Narratives</strong> (2.O5–2.O12, 3.O1, 3.O9) – Visual pattern justification & motif analysis.</li>
+        <li><strong>Unit 3: Figurative & Geometric Expression</strong> (3.O5–3.O12, 2.O6) – Writing enriched by geometry metaphors.</li>
+        <li><strong>Unit 4: Cultural Pattern Portfolio</strong> – Multi-myth comparative mini anthology w/ shape motifs.</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h3>Grades 4–5 Units</h3>
+      <ol>
+        <li><strong>Unit 1: Structure & Space</strong> (4.O1–4.O5, 5.O1–5.O5) – Angle, area, structural narrative/hierarchy.</li>
+        <li><strong>Unit 2: Evidence & Representation</strong> (4.O6–4.O9, 5.O6–5.O8) – Source discrimination, geometry design evidence.</li>
+        <li><strong>Unit 3: Argument & Theme Modeling</strong> (4.O10–4.O12, 5.O9–5.O12) – Thematic argument + coordinate modeling.</li>
+        <li><strong>Unit 4: Ethical Remix Exhibition</strong> – Public gallery of myth-informed math-art expository pieces.</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h3>Grades 6–8 Units</h3>
+      <ol>
+        <li><strong>Unit 1: Transformation & Source Integrity</strong> (6.O1–6.O6, 7.O1–7.O6, 8.O1–8.O3) – Ratios → similarity → proof seeds.</li>
+        <li><strong>Unit 2: Perspective, Bias & Scale</strong> (6.O7–6.O12, 7.O7–7.O12) – Bias analysis + proportional modeling.</li>
+        <li><strong>Unit 3: Synthesis & Symbolic Systems</strong> (8.O2–8.O9) – Layered symbolic mapping and multimodal argument.</li>
+        <li><strong>Unit 4: Proof & Innovation Showcase</strong> (8.O10–8.O12 + spiral) – Culminating “Myth Model Proof” pitch.</li>
+      </ol>
+    </div>
+    <p><strong>Horizontal Cohesion:</strong> Within a band, each unit reuses prior representational forms (timeline → transformation map → thematic matrix). <strong>Vertical Progression:</strong> Representation complexity grows (icon → labeled → coordinate → proof + synthesis).</p>
+  </section>
+
+  <section id="alignment">
+    <h2>ELA + Geometry + Myth Alignment Strategy</h2>
+    <div class="grid g2">
+      <div class="panel">
+        <h3>Core Alignment Principles</h3>
+        <ul>
+          <li>Every narrative task includes a spatial or symbolic pattern corollary.</li>
+          <li>Every geometry model has an explanatory writing or oral articulation component.</li>
+          <li>Vocabulary introduced via story context first; formal math term second.</li>
+          <li>Myth selection = culturally diverse, public-domain, neutral language, avoids exoticizing.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Strand Embedding</h3>
+        <ul>
+          <li><strong>RL / RI:</strong> Comparative motif analysis tied to pattern classification.</li>
+          <li><strong>W:</strong> Explanatory + argumentative writing anchored by geometric or structural evidence.</li>
+          <li><strong>SL:</strong> Structured dialogue using accountable stems + diagram reference.</li>
+          <li><strong>L:</strong> Morphology + figurative language tied to conceptual modeling.</li>
+          <li><strong>Math (G / RP / MD):</strong> Spatial reasoning contextualized by narrative structure.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="assessment">
+    <h2>Assessment & Proficiency Model</h2>
+    <div class="grid g2">
+      <div class="panel">
+        <h3>Mastery Bands</h3>
+        <ul>
+          <li><strong>Emerging:</strong> Needs scaffold; partial recognition; inaccurate vocabulary.</li>
+          <li><strong>Developing:</strong> Executes with prompts; partial evidence citation.</li>
+          <li><strong>Proficient:</strong> Independent execution; correct evidence & explanation linkage.</li>
+          <li><strong>Extending:</strong> Transfers across domains; introduces justified variation.</li>
+        </ul>
+        <p><strong>Data Sources:</strong> Auto-collected (pattern tasks, transformation logs), rubric-coded (writing, presentations), SEL reflection frequency, voluntary revision events.</p>
+      </div>
+      <div class="panel">
+        <h3>Intervention Triggers</h3>
+        <ul>
+          <li>No growth in pattern accuracy over 3 tasks → micro-intervention (visual manipulatives).</li>
+          <li>Writing lacks evidence 2 consecutive tasks → explicit citation mini-lesson.</li>
+          <li>High cognitive score + low engagement → enrichment branch unlock.</li>
+          <li>Repeated off-task flagged → mindfulness reset + choice board.</li>
+        </ul>
+        <p><strong>Reporting:</strong> Weekly objective matrix export (CSV / API) with color-coded thresholds.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="behavior">
+    <h2>Behavior Archetypes & Mindfulness Integration</h2>
+    <div class="grid g3">
+      <div class="archetype"><strong>Explorer</strong><br/>Curious diversions → Provide open “pattern quest.”</div>
+      <div class="archetype"><strong>Connector</strong><br/>Links domains quickly → Channel into cross-bridge rubric.</div>
+      <div class="archetype"><strong>Maker</strong><br/>Prefers building to writing → Use build-first, caption-after routine.</div>
+      <div class="archetype"><strong>Strategist</strong><br/>Optimizes points → Hide points; emphasize narrative unlock.</div>
+      <div class="archetype"><strong>Storyteller</strong><br/>Rich narrative, weak precision → Pair with evidence stems.</div>
+      <div class="archetype"><strong>Supporter</strong><br/>Helps peers silently → Recognize via reflective prompt.</div>
+      <div class="archetype"><strong>Overwhelmed</strong><br/>Task initiation barrier → Mindful breathing + micro-chunking.</div>
+      <div class="archetype"><strong>Perfectionist</strong><br/>Stalls in revision loop → “Good enough checkpoint” protocol.</div>
+      <div class="archetype"><strong>Rapid Responder</strong><br/>Shallow quick answers → Enforce wait + reflection timer.</div>
+      <div class="archetype"><strong>Quiet Analyst</strong><br/>High internal processing → Offer written discussion entry.</div>
+    </div>
+    <p><strong>Mindfulness Layer:</strong> Pre-task (centering breath), mid-task (check-in tag), post-task (micro reflection: “What pattern did I shift?”). <strong>Outcome:</strong> Reduced stress reactivity → improved working memory & comprehension scores.</p>
+  </section>
+
+  <section id="enrichment">
+    <h2>Enrichment & Acceleration Examples</h2>
+    <div class="panel">
+      <h3>Enriched Tasks</h3>
+      <ul>
+        <li><strong>K–2:</strong> Build “hero path” using symmetry blocks → narrate route with temporal words.</li>
+        <li><strong>3–5:</strong> Compose dual-format: story + coordinate plot of key events with scaled axes.</li>
+        <li><strong>6–8:</strong> Formalize motif recurrence as transformation composition; defend minimal generating set.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Acceleration Pathways</h3>
+      <ul>
+        <li><strong>Early Proof Seeds (Gr 5):</strong> Students generalize interior angle sum using decomposition diagram.</li>
+        <li><strong>Symbolic Remix (Gr 6–7):</strong> Encode myth arc phases into function-like stage labels.</li>
+        <li><strong>Proof Narrative (Gr 8):</strong> Blend formal justification with rhetorical framing for authentic audience.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Explaining College-Level Concept to Young Learners (Example: Math & Science of Bubbles)</h3>
+      <p><strong>Advanced Idea:</strong> Minimal surface + surface tension optimization.</p>
+      <p><strong>5-year-old Translation:</strong> “A bubble is soap water stretched like a tiny skin. It always tries to make the smallest outside it can—like you making a ball by hugging in tight.”</p>
+      <ul>
+        <li><strong>Concrete:</strong> Pipe cleaner + dish film → shape forms bubble film.</li>
+        <li><strong>Visual Bridge:</strong> Show different frames → bubble picks “easiest” shape (introduces optimization intuition).</li>
+        <li><strong>Later (Gr 6–8):</strong> Connect to minimizing surface area; analogy to efficient myth structure (no wasted scenes).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="integration">
+    <h2>McGraw Hill Integration (Grading & Data Flow)</h2>
+    <ol>
+      <li><strong>Standards Mapping:</strong> Each objective tagged with local code + CCSS ELA/Math code (JSON field: standards).</li>
+      <li><strong>API Sync:</strong> Weekly push: objective mastery states (enum: E, D, P, X).</li>
+      <li><strong>Grade Derivation:</strong> Weighted aggregation: Argument Writing (30%), Pattern Reasoning (25%), Source Analysis (15%), Creative Remix (15%), Presentation & Discussion (10%), Reflection & Regulation (5%).</li>
+      <li><strong>Feedback Loop:</strong> Low mastery cluster triggers assignable McGraw Hill reinforcement module (e.g., citing textual evidence).</li>
+      <li><strong>Data Governance:</strong> Only aggregated objective mastery; no raw behavioral logs transmitted.</li>
+    </ol>
+  </section>
+
+  <section id="azmerit">
+    <h2>AZMerit / AASA Performance Rationale</h2>
+    <ul>
+      <li><strong>Close Reading Practice:</strong> Daily motif comparison builds inference + evidence citing (RL. & RI.).</li>
+      <li><strong>Explanatory + Argument Writing:</strong> Geometry justification doubles as structured explanatory writing rehearsal.</li>
+      <li><strong>Vocabulary Depth:</strong> Figurative and domain-specific interleaving improves lexical flexibility.</li>
+      <li><strong>Multi-Step Reasoning:</strong> Transformation sequences + narrative structural mapping parallel multi-step math problems.</li>
+      <li><strong>Metacognition & Mindfulness:</strong> Reduced test anxiety → improved working memory retrieval.</li>
+      <li><strong>Transfer Conditioning:</strong> Constant cross-domain bridging trains far transfer—mirrors novel assessment contexts.</li>
+    </ul>
+    <p><strong>Expected Indicators:</strong> Increase in constructed response rubric scores (evidence, clarity), improvement in geometry performance (transformations, similarity), and stable growth in reading synthesis tasks.</p>
+  </section>
+
+  <section id="json">
+    <h2>Raw JSON (Curriculum Data Bundle)</h2>
+    <p><button onclick="copyJSON()">Copy JSON</button></p>
+    <div id="jsonBox" class="json-box" aria-label="Curriculum JSON"></div>
+    <p class="legend">Note: JSON includes: thesis, vertical threads, objectives, units, alignment map, assessment model, behavior archetypes, enrichment, integration, azmerit rationale.</p>
+    <script type="application/json" id="curriculum-data">
+    {
+      "thesis": {
+        "inspirational": "Students discover that geometry, myth, art, and language share deep patterns they can analyze, remix, justify, and ethically apply.",
+        "student_voice_tiers": {
+          "K2": "I find shapes in stories and make my own pattern tales.",
+          "35": "I remix myths using math patterns to explain ideas.",
+          "68": "I prove pattern ideas and adapt myths responsibly."
+        }
+      },
+      "vertical_threads": [
+        "Pattern Recognition to Proof",
+        "Myth Structure to Analytical Writing",
+        "Symbol to Model Abstraction",
+        "Global Motifs & Equity",
+        "Creative Remix to Innovation",
+        "Mindful Metacognition"
+      ],
+      "objectives": {
+        "K": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": []
+      },
+      "objectives_flat": [],
+      "units": {
+        "K1": [
+          { "name_internal": "Pattern Stories", "focus_objectives": ["K.O1","K.O2","K.O3","K.O4","1.O1","1.O2","1.O3"] },
+          { "name_internal": "Shape Characters & Symmetry", "focus_objectives": ["K.O5","K.O6","K.O7","K.O8","K.O9","1.O6","1.O9"] },
+          { "name_internal": "Feelings & Heroes", "focus_objectives": ["K.O7","K.O10","K.O11","K.O12","1.O4","1.O5","1.O8","1.O11","1.O12"] },
+          { "name_internal": "Remix Mini-Myth", "focus_objectives": ["K.O1","K.O8","K.O9","1.O2","1.O5","1.O10"] }
+        ],
+        "23": [
+          { "name_internal": "Mapping Story Patterns", "focus_objectives": ["2.O1","2.O2","2.O3","2.O4","3.O2","3.O3","3.O4","3.O8"] },
+          { "name_internal": "Symmetry & Tessellation Narratives", "focus_objectives": ["2.O5","2.O6","2.O7","2.O8","2.O9","2.O10","2.O11","2.O12","3.O1","3.O9"] },
+          { "name_internal": "Figurative & Geometric Expression", "focus_objectives": ["3.O5","3.O6","3.O7","3.O10","3.O11","3.O12","2.O6"] },
+          { "name_internal": "Cultural Pattern Portfolio", "focus_objectives": ["2.O1","2.O3","2.O5","3.O2","3.O5","3.O9"] }
+        ],
+        "45": [
+          { "name_internal": "Structure & Space", "focus_objectives": ["4.O1","4.O2","4.O3","4.O4","4.O5","5.O1","5.O2","5.O3","5.O4","5.O5"] },
+          { "name_internal": "Evidence & Representation", "focus_objectives": ["4.O6","4.O7","4.O8","4.O9","5.O6","5.O7","5.O8"] },
+          { "name_internal": "Argument & Theme Modeling", "focus_objectives": ["4.O10","4.O11","4.O12","5.O9","5.O10","5.O11","5.O12"] },
+          { "name_internal": "Ethical Remix Exhibition", "focus_objectives": ["4.O2","4.O6","4.O12","5.O3","5.O4","5.O11"] }
+        ],
+          "68": [
+          { "name_internal": "Transformation & Source Integrity", "focus_objectives": ["6.O1","6.O2","6.O3","6.O4","6.O5","6.O6","7.O1","7.O2","7.O3","7.O4","7.O5","7.O6","8.O1","8.O2","8.O3"] },
+          { "name_internal": "Perspective, Bias & Scale", "focus_objectives": ["6.O7","6.O8","6.O9","6.O10","6.O11","6.O12","7.O7","7.O8","7.O9","7.O10","7.O11","7.O12"] },
+          { "name_internal": "Synthesis & Symbolic Systems", "focus_objectives": ["8.O2","8.O3","8.O4","8.O5","8.O6","8.O7","8.O8","8.O9"] },
+          { "name_internal": "Proof & Innovation Showcase", "focus_objectives": ["8.O1","8.O2","8.O3","8.O10","8.O11","8.O12"] }
+        ]
+      },
+      "alignment_strategy": {
+        "principles": [
+          "Narrative tasks pair with geometric or symbolic representation",
+          "Vocabulary introduced contextually before formal definition",
+          "Every model explained in writing or speech",
+          "Cultural myths curated for respect and public-domain availability"
+        ],
+        "ELA_to_Math_link_types": [
+          "Structural mapping → transformation sequencing",
+          "Theme synthesis → pattern generalization",
+          "Evidence citation → geometric property justification"
+        ]
+      },
+      "assessment_model": {
+        "bands": ["Emerging","Developing","Proficient","Extending"],
+        "aggregation_weights": {
+          "argument_writing": 0.30,
+          "pattern_reasoning": 0.25,
+          "source_analysis": 0.15,
+          "creative_remix": 0.15,
+          "presentation": 0.10,
+          "reflection_regulation": 0.05
+        },
+        "intervention_triggers": [
+          "No pattern accuracy growth in 3 attempts",
+          "Repeated missing evidence in writing",
+          "High reasoning + low engagement",
+          "Repeated disengagement flags"
+        ],
+        "data_sources": ["Auto pattern tasks","Writing rubrics","Presentation rubrics","SEL reflections","Revision logs"]
+      },
+      "behavior_archetypes": [
+        "Explorer","Connector","Maker","Strategist","Storyteller","Supporter","Overwhelmed","Perfectionist","Rapid Responder","Quiet Analyst"
+      ],
+      "mindfulness_protocols": {
+        "pre_task": "Centering breath + intention label",
+        "mid_task": "Feel + focus check tag",
+        "post_task": "Reflection: pattern shift or strategy"
+      },
+      "enrichment_examples": {
+        "k2": "Hero path shape board with narrated retell",
+        "35": "Dual-format coordinate mapped story",
+        "45": "Angle justification woven into thematic essay",
+        "68": "Transformation algebraic notation within narrative synthesis"
+      },
+      "acceleration_examples": {
+        "proof_seed": "Decompose polygon to justify interior angles",
+        "symbolic_encoding": "Stage labels as reusable function-like forms",
+        "proof_narrative": "Formal geometric justification embedded in rhetorical argument"
+      },
+      "early_college_translation": {
+        "concept": "Minimal surface optimization via bubble film",
+        "child_friendly": "Bubble skin makes smallest outside it can—like hugging small.",
+        "bridge": "Later connect to surface area minimization"
+      },
+      "integration_mcgrawhill": {
+        "mastery_export": "Weekly API push object_mastery",
+        "grade_passback": "Weighted aggregation to LMS grade categories",
+        "standards_link": "Objective IDs map to CCSS codes",
+        "privacy": "No raw behavioral event sharing"
+      },
+      "azmerit_alignment": {
+        "drivers": [
+          "Close reading via motif comparison",
+          "Structured evidence writing",
+          "Multi-step pattern → reasoning mapping",
+          "Math modeling articulation",
+          "Mindfulness reduces anxiety"
+        ],
+        "expected_outcomes": [
+          "Higher constructed response rubric scores",
+          "Improved geometry & transformation items",
+          "Enhanced synthesis & bias evaluation"
+        ]
+      }
+    }
+    </script>
+    <script>
+      // Populate objectives arrays in JSON programmatically to reduce manual duplication
+      const raw = document.getElementById('curriculum-data').textContent;
+      const data = JSON.parse(raw);
+      // Pre-collected objective text pulled from DOM earlier would be ideal; simplified placeholder
+      // For transparency, we replicate objective IDs only (full text exists above in HTML)
+      const gradeObjectiveMap = {
+        "K":["K.O1","K.O2","K.O3","K.O4","K.O5","K.O6","K.O7","K.O8","K.O9","K.O10","K.O11","K.O12"],
+        "1":["1.O1","1.O2","1.O3","1.O4","1.O5","1.O6","1.O7","1.O8","1.O9","1.O10","1.O11","1.O12"],
+        "2":["2.O1","2.O2","2.O3","2.O4","2.O5","2.O6","2.O7","2.O8","2.O9","2.O10","2.O11","2.O12"],
+        "3":["3.O1","3.O2","3.O3","3.O4","3.O5","3.O6","3.O7","3.O8","3.O9","3.O10","3.O11","3.O12"],
+        "4":["4.O1","4.O2","4.O3","4.O4","4.O5","4.O6","4.O7","4.O8","4.O9","4.O10","4.O11","4.O12"],
+        "5":["5.O1","5.O2","5.O3","5.O4","5.O5","5.O6","5.O7","5.O8","5.O9","5.O10","5.O11","5.O12"],
+        "6":["6.O1","6.O2","6.O3","6.O4","6.O5","6.O6","6.O7","6.O8","6.O9","6.O10","6.O11","6.O12"],
+        "7":["7.O1","7.O2","7.O3","7.O4","7.O5","7.O6","7.O7","7.O8","7.O9","7.O10","7.O11","7.O12"],
+        "8":["8.O1","8.O2","8.O3","8.O4","8.O5","8.O6","8.O7","8.O8","8.O9","8.O10","8.O11","8.O12"]
+      };
+      data.objectives = gradeObjectiveMap;
+      data.objectives_flat = Object.values(gradeObjectiveMap).flat();
+      const formatted = JSON.stringify(data, null, 2);
+      document.getElementById('jsonBox').textContent = formatted;
+      function copyJSON(){
+        navigator.clipboard.writeText(formatted).then(()=>{
+          const jb=document.getElementById('jsonBox');
+          jb.style.borderColor='#5ab4ff';
+          setTimeout(()=>jb.style.borderColor='#27313a',700);
+        });
+      }
+    </script>
+  </section>
+
+  <section id="slides" class="slide-deck">
+    <h2 style="padding:1rem 2rem 0;">Slide Deck (Inline)</h2>
+    <div class="slides">
+      <div class="slide">
+        <div class="mini">Slide 1</div>
+        <h2>Mythic Pattern Geometry & Language</h2>
+        <p class="accent"><strong>Thesis:</strong> Patterns across story, shape, symbol, and science empower every learner to reason, create, and care.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 2</div>
+        <h2>Why This Matters</h2>
+        <ul>
+          <li>Bridges ELA comprehension + math reasoning.</li>
+          <li>Global myth motifs create inclusive entry points.</li>
+          <li>Mindfulness lowers anxiety, improves focus.</li>
+          <li>Transfer training → assessment resilience.</li>
+        </ul>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 3</div>
+        <h2>Vertical Threads (K–8)</h2>
+          <p>Pattern → Symbol → Model → Proof; Story → Structure → Synthesis; Emotion → Regulation → Reflection.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 4</div>
+        <h2>Sample Objective Progression</h2>
+        <p>K: “I can find a repeating pattern.” → 4: “I decompose area & justify choice.” → 8: “I prove transformation angle relations.”</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 5</div>
+        <h2>Units (Bands)</h2>
+        <p>K–1: Pattern → Symbols; 2–3: Mapping → Tessellation; 4–5: Structure → Argument; 6–8: Transformation → Proof & Innovation.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 6</div>
+        <h2>Assessment Model</h2>
+        <p>Objective mastery matrix + narrative feedback; Extending = transfer & justified variation.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 7</div>
+        <h2>Mindfulness & Behavior</h2>
+        <p>Pre-task centering → Mid-task check → Reflection. Archetype-informed supports prevent escalation.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 8</div>
+        <h2>Enrichment & Acceleration</h2>
+        <p>Coordinate myth maps, symbolic encodings, narrative proofs, minimal surface bubble analogy.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 9</div>
+        <h2>McGraw Hill Integration</h2>
+        <p>API mastery sync → Weighted categories → Standards crosswalk → Privacy-protective export.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 10</div>
+        <h2>AZMerit / AASA Impact</h2>
+        <p>Evidence citing, multi-step reasoning, bias evaluation, anxiety reduction = score uplift.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 11</div>
+        <h2>Equity & Cultural Care</h2>
+        <p>Public-domain source curation + stereotype screening + reflective remix rubric.</p>
+      </div>
+      <div class="slide">
+        <div class="mini">Slide 12</div>
+        <h2>Call to Action</h2>
+        <p>Adopt pilot band → Gather comparative ELA/Math growth → Scale with iterative refinement.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Mythic Pattern Curriculum Bundle • v1.0 • All myth references generic / public-domain aligned • Expand or prune on request.
+  </footer>
+</body>
+</html>
