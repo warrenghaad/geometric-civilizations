@@ -139,6 +139,546 @@
       "type": "Schema",
       "description": "Foundation educational standards framework covering Math and ELA. The curriculum builds on and extends Common Core with spatial complexity, arts integration, and SEL layers.",
       "images": []
+    },
+    "K.O1: Spot repeating shape patterns in story c...": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Spot repeating shape patterns in story cloth\n\nStandards Alignment: RL.K.7 | MP7 | Art Pattern\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O2: Retell simple myth with beginning, middl...": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Retell simple myth with beginning, middle, end\n\nStandards Alignment: RL.K.2 | SL.K.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O3: Name circle, triangle, square in objects": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Name circle, triangle, square in objects\n\nStandards Alignment: K.G.A.2 | L.K.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O4: Draw shape pattern to show hero's path": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Draw shape pattern to show hero's path\n\nStandards Alignment: RL.K.3 | K.G.A.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O5: Clap syllable rhythms from myth name lis...": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Clap syllable rhythms from myth name list\n\nStandards Alignment: RF.K.2 | Music Rhythm\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O6: Sort story tokens by shape or color rule": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Sort story tokens by shape or color rule\n\nStandards Alignment: K.MD.B.3 | L.K.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O7: Listen and name feeling a character has": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Listen and name feeling a character has\n\nStandards Alignment: RL.K.4 | SEL Awareness\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O8: Build shape hero using 2 shapes together": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Build shape hero using 2 shapes together\n\nStandards Alignment: K.G.B.6 | Creativity\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O9: Notice symmetry in mask picture": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Notice symmetry in mask picture\n\nStandards Alignment: K.G.A | Art Symmetry\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O10: Use \"because\" to tell why hero changes": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Use \"because\" to tell why hero changes\n\nStandards Alignment: RL.K.3 | SL.K.6\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O11: Stay calm with breathing bubble exercise": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Stay calm with breathing bubble exercise\n\nStandards Alignment: SEL Regulation\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "K.O12: Choose story and say one pattern in it": {
+      "type": "Table",
+      "description": "Grade: Kindergarten\n\nStudent Objective: I can Choose story and say one pattern in it\n\nStandards Alignment: RL.K.10 | Choice Motivation\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O1: Extend pattern seen in myth border": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Extend pattern seen in myth border\n\nStandards Alignment: 1.OA | RL.1.7\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O2: Tell how two trickster tales are alike/d...": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Tell how two trickster tales are alike/different\n\nStandards Alignment: RL.1.9\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O3: Build composite shape from 2-3 shapes": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Build composite shape from 2-3 shapes\n\nStandards Alignment: 1.G.A.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O4: Label character's problem and solution": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Label character's problem and solution\n\nStandards Alignment: RL.1.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O5: Write 3-sentence mini-myth with pattern ...": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Write 3-sentence mini-myth with pattern words\n\nStandards Alignment: W.1.3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O6: Identify symmetry by folding paper art": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Identify symmetry by folding paper art\n\nStandards Alignment: 1.G | Art Fold Symmetry\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O7: Describe setting using at least 2 senses": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Describe setting using at least 2 senses\n\nStandards Alignment: RL.1.7 | L.1.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O8: Use calm counting when feeling stuck": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Use calm counting when feeling stuck\n\nStandards Alignment: SEL Strategy\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O9: Classify shapes by sides or corners": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Classify shapes by sides or corners\n\nStandards Alignment: 1.G.A.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O10: Present drawing and speak clearly": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Present drawing and speak clearly\n\nStandards Alignment: SL.1.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O11: Choose respectful word to describe cultu...": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Choose respectful word to describe culture\n\nStandards Alignment: L.1.5 | SEL Respect\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "1.O12: Find repeating sound pattern (alliterati...": {
+      "type": "Table",
+      "description": "Grade: Grade 1\n\nStudent Objective: I can Find repeating sound pattern (alliteration)\n\nStandards Alignment: RL.1.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O1: Map events in order with shape timeline": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Map events in order with shape timeline\n\nStandards Alignment: RL.2.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O2: Partition rectangle into equal squares": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Partition rectangle into equal squares\n\nStandards Alignment: 2.G.A.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O3: Compare myth openings from 2 cultures": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Compare myth openings from 2 cultures\n\nStandards Alignment: RL.2.9\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O4: Write topic sentence about hero's choice": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Write topic sentence about hero's choice\n\nStandards Alignment: W.2.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O5: Explain why pattern rule works (AAB vs A...": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Explain why pattern rule works (AAB vs ABB)\n\nStandards Alignment: MP3 | RL.2.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O6: Find lines of symmetry in simple figures": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Find lines of symmetry in simple figures\n\nStandards Alignment: 2.G | Visual Arts\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O7: Use calm script when frustrated": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Use calm script when frustrated\n\nStandards Alignment: SEL Regulation\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O8: Ask clarifying presentation question": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Ask clarifying presentation question\n\nStandards Alignment: SL.2.3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O9: Measure using informal units for myth ar...": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Measure using informal units for myth artifact\n\nStandards Alignment: 2.MD.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O10: Revise sentence to add vivid verb": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Revise sentence to add vivid verb\n\nStandards Alignment: W.2.5 | L.2.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O11: Create mirrored pattern border for retel...": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Create mirrored pattern border for retelling\n\nStandards Alignment: Art | 2.G\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "2.O12: Paraphrase helper character's role": {
+      "type": "Table",
+      "description": "Grade: Grade 2\n\nStudent Objective: I can Paraphrase helper character's role\n\nStandards Alignment: RL.2.7\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O1: Classify quadrilaterals by shared attrib...": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Classify quadrilaterals by shared attributes\n\nStandards Alignment: 3.G.A | MP7\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O2: Extract moral/theme from myth with 2 det...": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Extract moral/theme from myth with 2 details\n\nStandards Alignment: RL.3.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O3: Describe transformation (flip/slide/turn...": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Describe transformation (flip/slide/turn)\n\nStandards Alignment: 3.G | W.3.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O4: Compare two myth heroes' responses to co...": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Compare two myth heroes' responses to conflict\n\nStandards Alignment: RL.3.3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O5: Write myth remix adding geometry clue": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Write myth remix adding geometry clue\n\nStandards Alignment: W.3.3 | 3.G.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O6: Plan breathing + stretch routine before ...": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Plan breathing + stretch routine before presenting\n\nStandards Alignment: SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O7: Explain pattern using numbers (3,6,9)": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Explain pattern using numbers (3,6,9)\n\nStandards Alignment: 3.OA.D\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O8: Cite text sentences when answering": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Cite text sentences when answering\n\nStandards Alignment: RL.3.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O9: Create tessellation-based shield motif": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Create tessellation-based shield motif\n\nStandards Alignment: Art | 3.G\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O10: Distinguish literal vs nonliteral langua...": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Distinguish literal vs nonliteral language\n\nStandards Alignment: L.3.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O11: Respectfully identify cultural origin of...": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Respectfully identify cultural origin of motif\n\nStandards Alignment: RL.3.9\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "3.O12: Summarize chapter in 3 bullet points": {
+      "type": "Table",
+      "description": "Grade: Grade 3\n\nStudent Objective: I can Summarize chapter in 3 bullet points\n\nStandards Alignment: RL.3.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O1: Measure and classify angles in artifact ...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Measure and classify angles in artifact design\n\nStandards Alignment: 4.G.A.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O2: Analyze myth structure (exposition \u2192 res...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Analyze myth structure (exposition \u2192 resolution)\n\nStandards Alignment: RL.4.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O3: Write compare/contrast of two flood myth...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Write compare/contrast of two flood myths\n\nStandards Alignment: RL.4.9 | W.4.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O4: Decompose composite area in temple floor...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Decompose composite area in temple floor plan\n\nStandards Alignment: 4.MD.A | MP4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O5: Support inference with two textual detai...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Support inference with two textual details\n\nStandards Alignment: RL.4.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O6: Construct symmetry-based logo with rotat...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Construct symmetry-based logo with rotation\n\nStandards Alignment: 4.G | Art\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O7: Use mindful labeling (emotion + need) in...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Use mindful labeling (emotion + need) in groups\n\nStandards Alignment: SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O8: Paraphrase primary vs secondary source": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Paraphrase primary vs secondary source\n\nStandards Alignment: RI.4.6\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O9: Revise for sentence variety (combine/exp...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Revise for sentence variety (combine/expand)\n\nStandards Alignment: W.4.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O10: Justify classification choice in hierarc...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Justify classification choice in hierarchy chart\n\nStandards Alignment: 4.G.A | MP3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O11: Present storyboard with geometry annotat...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Present storyboard with geometry annotations\n\nStandards Alignment: SL.4.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "4.O12: Evaluate respectful cultural representat...": {
+      "type": "Table",
+      "description": "Grade: Grade 4\n\nStudent Objective: I can Evaluate respectful cultural representation\n\nStandards Alignment: RL.4.9 | SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O1: Compute area of irregular shapes via dec...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Compute area of irregular shapes via decomposition\n\nStandards Alignment: 5.MD.C\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O2: Analyze narrator point of view differenc...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Analyze narrator point of view difference\n\nStandards Alignment: RL.5.6\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O3: Construct tessellated border explaining ...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Construct tessellated border explaining angle sums\n\nStandards Alignment: 5.G | MP7\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O4: Write explanatory piece linking myth to ...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Write explanatory piece linking myth to phenomenon\n\nStandards Alignment: W.5.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O5: Summarize multi-chapter myth concisely": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Summarize multi-chapter myth concisely\n\nStandards Alignment: RL.5.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O6: Evaluate credibility of informational pa...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Evaluate credibility of informational passages\n\nStandards Alignment: RI.5.8\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O7: Model coordinate plane points to map jou...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Model coordinate plane points to map journey\n\nStandards Alignment: 5.G.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O8: Use mindfulness journaling to reflect on...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Use mindfulness journaling to reflect on focus\n\nStandards Alignment: SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O9: Identify figurative language (simile, pe...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Identify figurative language (simile, personification)\n\nStandards Alignment: L.5.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O10: Assemble research mini-bibliography (3 s...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Assemble research mini-bibliography (3 sources)\n\nStandards Alignment: W.5.8\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O11: Argue thematic interpretation with textu...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Argue thematic interpretation with textual evidence\n\nStandards Alignment: W.5.1 | SL.5.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "5.O12: Critique cultural remix for accuracy/ste...": {
+      "type": "Table",
+      "description": "Grade: Grade 5\n\nStudent Objective: I can Critique cultural remix for accuracy/stereotypes\n\nStandards Alignment: RI.5.6 | SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O1: Use ratio reasoning to scale pattern bor...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Use ratio reasoning to scale pattern border\n\nStandards Alignment: 6.RP.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O2: Analyze how myth theme develops across s...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Analyze how myth theme develops across scenes\n\nStandards Alignment: RL.6.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O3: Write concise objective summary (no opin...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Write concise objective summary (no opinion)\n\nStandards Alignment: RL.6.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O4: Describe transformation using coordinate...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Describe transformation using coordinate notation\n\nStandards Alignment: 6.G.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O5: Compare primary vs secondary myth commen...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Compare primary vs secondary myth commentary\n\nStandards Alignment: RH.6-8.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O6: Build ethical remix retaining core motif": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Build ethical remix retaining core motif\n\nStandards Alignment: W.6.3 | SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O7: Explain proportional change in symbol sc...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Explain proportional change in symbol scaling\n\nStandards Alignment: 6.RP.A | MP3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O8: Annotate figurative & connotative meanin...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Annotate figurative & connotative meanings\n\nStandards Alignment: RL.6.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O9: Plan 3-minute explanatory talk with visu...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Plan 3-minute explanatory talk with visuals\n\nStandards Alignment: SL.6.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O10: Use mindfulness (breath + reframe) befor...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Use mindfulness (breath + reframe) before revision\n\nStandards Alignment: SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O11: Identify bias or omission in retelling s...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Identify bias or omission in retelling source\n\nStandards Alignment: RI.6.6\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "6.O12: Justify transformation sequence for cong...": {
+      "type": "Table",
+      "description": "Grade: Grade 6\n\nStudent Objective: I can Justify transformation sequence for congruence\n\nStandards Alignment: 6.G | MP6\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O1: Apply similarity & scale factor to redes...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Apply similarity & scale factor to redesign motif\n\nStandards Alignment: 7.G.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O2: Trace thematic evolution to craft synthe...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Trace thematic evolution to craft synthesis claim\n\nStandards Alignment: RL.7.2\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O3: Analyze how perspective shapes reliabili...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Analyze how perspective shapes reliability\n\nStandards Alignment: RL.7.6\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O4: Integrate quantitative data into explana...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Integrate quantitative data into explanatory writing\n\nStandards Alignment: W.7.2 | MP4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O5: Construct argument evaluating adaptation...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Construct argument evaluating adaptation authenticity\n\nStandards Alignment: W.7.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O6: Model geometric construction of decorati...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Model geometric construction of decorative pattern\n\nStandards Alignment: 7.G | MP5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O7: Explain proportional reasoning in map sc...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Explain proportional reasoning in map scale\n\nStandards Alignment: 7.RP.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O8: Evaluate word choice's tone effect": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Evaluate word choice's tone effect\n\nStandards Alignment: RL.7.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O9: Facilitate collaborative dialogue with s...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Facilitate collaborative dialogue with stems\n\nStandards Alignment: SL.7.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O10: Use layered mindfulness (breath + somati...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Use layered mindfulness (breath + somatic + focus)\n\nStandards Alignment: SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O11: Categorize motif diffusion using researc...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Categorize motif diffusion using research logs\n\nStandards Alignment: RI.7.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "7.O12: Justify similarity claim with ratio evid...": {
+      "type": "Table",
+      "description": "Grade: Grade 7\n\nStudent Objective: I can Justify similarity claim with ratio evidence\n\nStandards Alignment: 7.G | MP3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O1: Prove angle relationships in transformat...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Prove angle relationships in transformations\n\nStandards Alignment: 8.G.A | MP3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O2: Analyze how contrasting myths shape them...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Analyze how contrasting myths shape themes\n\nStandards Alignment: RL.8.9\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O3: Craft argument integrating symbolic geom...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Craft argument integrating symbolic geometry model\n\nStandards Alignment: W.8.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O4: Evaluate sources for credibility, bias, ...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Evaluate sources for credibility, bias, corroboration\n\nStandards Alignment: RI.8.8\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O5: Model dilation on coordinate plane with ...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Model dilation on coordinate plane with scale reasoning\n\nStandards Alignment: 8.G.A\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O6: Adapt myth to explain contemporary issue": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Adapt myth to explain contemporary issue\n\nStandards Alignment: W.8.2 | SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O7: Create layered symbolic system mapping a...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Create layered symbolic system mapping arc to geometry\n\nStandards Alignment: 8.G | RL.8.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O8: Analyze figurative density & tone shifts": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Analyze figurative density & tone shifts\n\nStandards Alignment: RL.8.4\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O9: Guide peer feedback using criteria": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Guide peer feedback using criteria\n\nStandards Alignment: SL.8.1\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O10: Use metacognitive journaling tracking st...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Use metacognitive journaling tracking strategies\n\nStandards Alignment: SEL\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O11: Produce multimodal presentation synthesi...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Produce multimodal presentation synthesis\n\nStandards Alignment: SL.8.5\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
+    },
+    "8.O12: Construct proof-style justification for ...": {
+      "type": "Table",
+      "description": "Grade: Grade 8\n\nStudent Objective: I can Construct proof-style justification for pattern\n\nStandards Alignment: 8.EE | MP3\n\nThis objective is part of the Mythic Pattern Geometry integrated curriculum.",
+      "images": []
     }
   },
   "edges": [
@@ -421,6 +961,1086 @@
       "Common Core Standards",
       "9x6 Curriculum Template",
       "foundational-for"
+    ],
+    [
+      "K.O1: Spot repeating shape patterns in story c...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O1: Spot repeating shape patterns in story c...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O2: Retell simple myth with beginning, middl...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O2: Retell simple myth with beginning, middl...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O3: Name circle, triangle, square in objects",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O3: Name circle, triangle, square in objects",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O4: Draw shape pattern to show hero's path",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O4: Draw shape pattern to show hero's path",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O5: Clap syllable rhythms from myth name lis...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O5: Clap syllable rhythms from myth name lis...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O6: Sort story tokens by shape or color rule",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O6: Sort story tokens by shape or color rule",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O7: Listen and name feeling a character has",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O7: Listen and name feeling a character has",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O8: Build shape hero using 2 shapes together",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O8: Build shape hero using 2 shapes together",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O9: Notice symmetry in mask picture",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O9: Notice symmetry in mask picture",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O10: Use \"because\" to tell why hero changes",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O10: Use \"because\" to tell why hero changes",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O11: Stay calm with breathing bubble exercise",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O11: Stay calm with breathing bubble exercise",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "K.O12: Choose story and say one pattern in it",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "K.O12: Choose story and say one pattern in it",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O1: Extend pattern seen in myth border",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O1: Extend pattern seen in myth border",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O2: Tell how two trickster tales are alike/d...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O2: Tell how two trickster tales are alike/d...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O3: Build composite shape from 2-3 shapes",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O3: Build composite shape from 2-3 shapes",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O4: Label character's problem and solution",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O4: Label character's problem and solution",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O5: Write 3-sentence mini-myth with pattern ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O5: Write 3-sentence mini-myth with pattern ...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O6: Identify symmetry by folding paper art",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O6: Identify symmetry by folding paper art",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O7: Describe setting using at least 2 senses",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O7: Describe setting using at least 2 senses",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O8: Use calm counting when feeling stuck",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O8: Use calm counting when feeling stuck",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O9: Classify shapes by sides or corners",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O9: Classify shapes by sides or corners",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O10: Present drawing and speak clearly",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O10: Present drawing and speak clearly",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O11: Choose respectful word to describe cultu...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O11: Choose respectful word to describe cultu...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "1.O12: Find repeating sound pattern (alliterati...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "1.O12: Find repeating sound pattern (alliterati...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O1: Map events in order with shape timeline",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O1: Map events in order with shape timeline",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O2: Partition rectangle into equal squares",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O2: Partition rectangle into equal squares",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O3: Compare myth openings from 2 cultures",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O3: Compare myth openings from 2 cultures",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O4: Write topic sentence about hero's choice",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O4: Write topic sentence about hero's choice",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O5: Explain why pattern rule works (AAB vs A...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O5: Explain why pattern rule works (AAB vs A...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O6: Find lines of symmetry in simple figures",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O6: Find lines of symmetry in simple figures",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O7: Use calm script when frustrated",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O7: Use calm script when frustrated",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O8: Ask clarifying presentation question",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O8: Ask clarifying presentation question",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O9: Measure using informal units for myth ar...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O9: Measure using informal units for myth ar...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O10: Revise sentence to add vivid verb",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O10: Revise sentence to add vivid verb",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O11: Create mirrored pattern border for retel...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O11: Create mirrored pattern border for retel...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "2.O12: Paraphrase helper character's role",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "2.O12: Paraphrase helper character's role",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O1: Classify quadrilaterals by shared attrib...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O1: Classify quadrilaterals by shared attrib...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O2: Extract moral/theme from myth with 2 det...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O2: Extract moral/theme from myth with 2 det...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O3: Describe transformation (flip/slide/turn...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O3: Describe transformation (flip/slide/turn...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O4: Compare two myth heroes' responses to co...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O4: Compare two myth heroes' responses to co...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O5: Write myth remix adding geometry clue",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O5: Write myth remix adding geometry clue",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O6: Plan breathing + stretch routine before ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O6: Plan breathing + stretch routine before ...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O7: Explain pattern using numbers (3,6,9)",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O7: Explain pattern using numbers (3,6,9)",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O8: Cite text sentences when answering",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O8: Cite text sentences when answering",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O9: Create tessellation-based shield motif",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O9: Create tessellation-based shield motif",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O10: Distinguish literal vs nonliteral langua...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O10: Distinguish literal vs nonliteral langua...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O11: Respectfully identify cultural origin of...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O11: Respectfully identify cultural origin of...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "3.O12: Summarize chapter in 3 bullet points",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "3.O12: Summarize chapter in 3 bullet points",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O1: Measure and classify angles in artifact ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O1: Measure and classify angles in artifact ...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O2: Analyze myth structure (exposition \u2192 res...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O2: Analyze myth structure (exposition \u2192 res...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O3: Write compare/contrast of two flood myth...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O3: Write compare/contrast of two flood myth...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O4: Decompose composite area in temple floor...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O4: Decompose composite area in temple floor...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O5: Support inference with two textual detai...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O5: Support inference with two textual detai...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O6: Construct symmetry-based logo with rotat...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O6: Construct symmetry-based logo with rotat...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O7: Use mindful labeling (emotion + need) in...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O7: Use mindful labeling (emotion + need) in...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O8: Paraphrase primary vs secondary source",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O8: Paraphrase primary vs secondary source",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O9: Revise for sentence variety (combine/exp...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O9: Revise for sentence variety (combine/exp...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O10: Justify classification choice in hierarc...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O10: Justify classification choice in hierarc...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O11: Present storyboard with geometry annotat...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O11: Present storyboard with geometry annotat...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "4.O12: Evaluate respectful cultural representat...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "4.O12: Evaluate respectful cultural representat...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O1: Compute area of irregular shapes via dec...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O1: Compute area of irregular shapes via dec...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O2: Analyze narrator point of view differenc...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O2: Analyze narrator point of view differenc...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O3: Construct tessellated border explaining ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O3: Construct tessellated border explaining ...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O4: Write explanatory piece linking myth to ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O4: Write explanatory piece linking myth to ...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O5: Summarize multi-chapter myth concisely",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O5: Summarize multi-chapter myth concisely",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O6: Evaluate credibility of informational pa...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O6: Evaluate credibility of informational pa...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O7: Model coordinate plane points to map jou...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O7: Model coordinate plane points to map jou...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O8: Use mindfulness journaling to reflect on...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O8: Use mindfulness journaling to reflect on...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O9: Identify figurative language (simile, pe...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O9: Identify figurative language (simile, pe...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O10: Assemble research mini-bibliography (3 s...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O10: Assemble research mini-bibliography (3 s...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O11: Argue thematic interpretation with textu...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O11: Argue thematic interpretation with textu...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "5.O12: Critique cultural remix for accuracy/ste...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "5.O12: Critique cultural remix for accuracy/ste...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O1: Use ratio reasoning to scale pattern bor...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O1: Use ratio reasoning to scale pattern bor...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O2: Analyze how myth theme develops across s...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O2: Analyze how myth theme develops across s...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O3: Write concise objective summary (no opin...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O3: Write concise objective summary (no opin...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O4: Describe transformation using coordinate...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O4: Describe transformation using coordinate...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O5: Compare primary vs secondary myth commen...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O5: Compare primary vs secondary myth commen...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O6: Build ethical remix retaining core motif",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O6: Build ethical remix retaining core motif",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O7: Explain proportional change in symbol sc...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O7: Explain proportional change in symbol sc...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O8: Annotate figurative & connotative meanin...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O8: Annotate figurative & connotative meanin...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O9: Plan 3-minute explanatory talk with visu...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O9: Plan 3-minute explanatory talk with visu...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O10: Use mindfulness (breath + reframe) befor...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O10: Use mindfulness (breath + reframe) befor...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O11: Identify bias or omission in retelling s...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O11: Identify bias or omission in retelling s...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "6.O12: Justify transformation sequence for cong...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "6.O12: Justify transformation sequence for cong...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O1: Apply similarity & scale factor to redes...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O1: Apply similarity & scale factor to redes...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O2: Trace thematic evolution to craft synthe...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O2: Trace thematic evolution to craft synthe...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O3: Analyze how perspective shapes reliabili...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O3: Analyze how perspective shapes reliabili...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O4: Integrate quantitative data into explana...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O4: Integrate quantitative data into explana...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O5: Construct argument evaluating adaptation...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O5: Construct argument evaluating adaptation...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O6: Model geometric construction of decorati...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O6: Model geometric construction of decorati...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O7: Explain proportional reasoning in map sc...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O7: Explain proportional reasoning in map sc...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O8: Evaluate word choice's tone effect",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O8: Evaluate word choice's tone effect",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O9: Facilitate collaborative dialogue with s...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O9: Facilitate collaborative dialogue with s...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O10: Use layered mindfulness (breath + somati...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O10: Use layered mindfulness (breath + somati...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O11: Categorize motif diffusion using researc...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O11: Categorize motif diffusion using researc...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "7.O12: Justify similarity claim with ratio evid...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "7.O12: Justify similarity claim with ratio evid...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O1: Prove angle relationships in transformat...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O1: Prove angle relationships in transformat...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O2: Analyze how contrasting myths shape them...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O2: Analyze how contrasting myths shape them...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O3: Craft argument integrating symbolic geom...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O3: Craft argument integrating symbolic geom...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O4: Evaluate sources for credibility, bias, ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O4: Evaluate sources for credibility, bias, ...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O5: Model dilation on coordinate plane with ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O5: Model dilation on coordinate plane with ...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O6: Adapt myth to explain contemporary issue",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O6: Adapt myth to explain contemporary issue",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O7: Create layered symbolic system mapping a...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O7: Create layered symbolic system mapping a...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O8: Analyze figurative density & tone shifts",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O8: Analyze figurative density & tone shifts",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O9: Guide peer feedback using criteria",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O9: Guide peer feedback using criteria",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O10: Use metacognitive journaling tracking st...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O10: Use metacognitive journaling tracking st...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O11: Produce multimodal presentation synthesi...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O11: Produce multimodal presentation synthesi...",
+      "9x6 Curriculum Template",
+      "implements"
+    ],
+    [
+      "8.O12: Construct proof-style justification for ...",
+      "Common Core Standards",
+      "aligned-to"
+    ],
+    [
+      "8.O12: Construct proof-style justification for ...",
+      "9x6 Curriculum Template",
+      "implements"
     ]
   ]
 }
