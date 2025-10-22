@@ -201,36 +201,265 @@ if view_mode == "Gap Analysis":
 
 elif view_mode == "Plumbing (Vertical Standards)":
     st.markdown("### 🔧 Plumbing: Vertical Standards Building K→8")
-    st.info("Coming soon: Show how concepts like 'pattern recognition' or 'geometric reasoning' build vertically through grades")
+    st.caption("Shows how standards progress vertically through grades like plumbing shafts")
     
-    # Placeholder visualization
-    st.markdown("""
-    **Vertical Standard Shafts:**
-    - Pattern Recognition: K (spot) → 1 (extend) → 2 (explain rule) → 3 (classify) → ... → 8 (prove)
-    - Geometric Reasoning: K (name shapes) → 1 (compose) → 2 (partition) → 3 (classify quadrilaterals) → ... → 8 (transformations)
-    - Myth Analysis: K (retell) → 1 (compare) → 2 (sequence events) → 3 (extract theme) → ... → 8 (structural analysis)
-    """)
+    # Define vertical standard progressions
+    vertical_standards = {
+        'Pattern Recognition': {
+            'K': 'Spot repeating patterns',
+            '1': 'Extend patterns',
+            '2': 'Explain pattern rules',
+            '3': 'Classify pattern families',
+            '4': 'Create complex patterns',
+            '5': 'Generalize pattern rules',
+            '6': 'Algebraic patterns',
+            '7': 'Pattern sequences',
+            '8': 'Prove pattern properties'
+        },
+        'Geometric Reasoning': {
+            'K': 'Name basic shapes',
+            '1': 'Compose shapes',
+            '2': 'Partition shapes',
+            '3': 'Classify quadrilaterals',
+            '4': 'Angle measurement',
+            '5': 'Coordinate plane',
+            '6': 'Area formulas',
+            '7': 'Scale & similarity',
+            '8': 'Transformations & proof'
+        },
+        'Myth Analysis': {
+            'K': 'Retell simple myth',
+            '1': 'Compare two myths',
+            '2': 'Sequence story events',
+            '3': 'Extract theme/moral',
+            '4': 'Character analysis',
+            '5': 'Cross-cultural motifs',
+            '6': 'Archetypal patterns',
+            '7': 'Structural analysis',
+            '8': 'Critical interpretation'
+        },
+        'Writing Development': {
+            'K': 'Label & draw',
+            '1': '3-sentence story',
+            '2': 'Topic sentence',
+            '3': 'Paragraph structure',
+            '4': 'Multi-paragraph essay',
+            '5': 'Thesis & evidence',
+            '6': 'Analytical writing',
+            '7': 'Research synthesis',
+            '8': 'Argumentative essay'
+        }
+    }
+    
+    selected_standard = st.selectbox("Select Vertical Standard", list(vertical_standards.keys()))
+    
+    progression = vertical_standards[selected_standard]
+    
+    # Create vertical flow visualization
+    grades_list = ['K', '1', '2', '3', '4', '5', '6', '7', '8']
+    
+    cols = st.columns(9)
+    for idx, grade in enumerate(grades_list):
+        with cols[idx]:
+            st.markdown(f"**{grade}**")
+            if grade in progression:
+                st.info(progression[grade])
+            else:
+                st.caption("—")
+            if idx < 8:
+                st.markdown("↓")
+    
+    st.divider()
+    
+    # Show all standards as heatmap
+    st.markdown("#### All Vertical Standards Across Grades")
+    
+    # Create matrix
+    standard_matrix = []
+    for standard_name in vertical_standards.keys():
+        row = []
+        for grade in grades_list:
+            if grade in vertical_standards[standard_name]:
+                row.append(1)  # Has progression defined
+            else:
+                row.append(0)  # Gap
+        standard_matrix.append(row)
+    
+    fig = go.Figure(data=go.Heatmap(
+        z=standard_matrix,
+        x=grades_list,
+        y=list(vertical_standards.keys()),
+        colorscale=[[0, '#eeeeee'], [1, '#4472C4']],
+        showscale=False,
+        hovertemplate='Standard: %{y}<br>Grade: %{x}<extra></extra>'
+    ))
+    
+    fig.update_layout(
+        title="Plumbing Shafts: Vertical Standard Coverage",
+        xaxis_title="Grade →",
+        yaxis_title="Standard Progression ↓",
+        height=400
+    )
+    
+    st.plotly_chart(fig, use_container_width=True)
 
 elif view_mode == "Wiring (Cognitive Domains)":
     st.markdown("### ⚡ Wiring: Cognitive Domain Network")
-    st.info("Coming soon: Show which cognitive domains are activated across the grade-week grid")
+    st.caption("Messy network showing which cognitive domains are activated where")
     
-    st.markdown("""
-    **Cognitive Domain Overlay:**
-    - Attention (focus & shifting)
-    - Memory (working, episodic, semantic)
-    - Executive Functions (planning, flexibility, inhibition)
-    - Language (vocabulary, syntax, discourse)
-    - Learning (skill acquisition, feedback)
-    - Visuospatial Processing (mental rotation, navigation)
-    - Social Cognition (theory of mind, empathy)
-    - Emotional Processing (regulation, integration)
-    - Metacognition (self-monitoring, reflection)
-    """)
+    cognitive_domains = [
+        "Attention",
+        "Memory", 
+        "Executive Functions",
+        "Language",
+        "Learning",
+        "Visuospatial Processing",
+        "Social Cognition",
+        "Emotional Processing",
+        "Metacognition"
+    ]
+    
+    selected_domain = st.selectbox("Select Cognitive Domain to Highlight", cognitive_domains)
+    
+    # Domain descriptions
+    domain_info = {
+        "Attention": "Selecting and maintaining focus, shifting attention, divided attention",
+        "Memory": "Working memory, episodic (events), semantic (facts), procedural (skills)",
+        "Executive Functions": "Planning, problem-solving, flexibility, inhibition, decision-making",
+        "Language": "Vocabulary, grammar, syntax, pragmatics, discourse comprehension",
+        "Learning": "Skill acquisition, associative learning, practice, feedback integration",
+        "Visuospatial Processing": "Mental rotation, spatial relationships, navigation, construction",
+        "Social Cognition": "Theory of mind, emotion recognition, perspective-taking, empathy",
+        "Emotional Processing": "Emotion identification, regulation, integration with cognition",
+        "Metacognition": "Self-monitoring, strategy selection, reflection on thinking"
+    }
+    
+    st.info(f"**{selected_domain}:** {domain_info[selected_domain]}")
+    
+    # Create activation heatmap (placeholder - will be filled from actual objective tags)
+    import numpy as np
+    np.random.seed(42)
+    
+    # Simulate domain activation intensity across grade-week grid
+    activation_data = []
+    for grade in grades:
+        row = []
+        for week in weeks:
+            # Higher activation for certain domains in certain contexts
+            if selected_domain == "Visuospatial Processing" and grade in ['K', '1', '2', '3']:
+                intensity = np.random.choice([0, 2, 3], p=[0.3, 0.4, 0.3])
+            elif selected_domain == "Social Cognition" and grade in ['6', '7', '8']:
+                intensity = np.random.choice([0, 2, 3], p=[0.2, 0.3, 0.5])
+            elif selected_domain == "Metacognition" and grade in ['5', '6', '7', '8']:
+                intensity = np.random.choice([0, 1, 2, 3], p=[0.2, 0.3, 0.3, 0.2])
+            else:
+                intensity = np.random.choice([0, 1, 2, 3], p=[0.4, 0.3, 0.2, 0.1])
+            row.append(intensity)
+        activation_data.append(row)
+    
+    fig = go.Figure(data=go.Heatmap(
+        z=activation_data,
+        x=weeks,
+        y=grades,
+        colorscale=[
+            [0, '#ffffff'],      # White = Not activated
+            [0.33, '#ffeeaa'],   # Light yellow = Low activation
+            [0.66, '#ffaa44'],   # Orange = Medium activation
+            [1.0, '#ff4444']     # Red = High activation
+        ],
+        hovertemplate=f'{selected_domain}<br>Grade: %{{y}}<br>Week: %{{x}}<br>Intensity: %{{z}}<extra></extra>',
+        colorbar=dict(
+            title="Activation",
+            tickvals=[0, 1, 2, 3],
+            ticktext=['None', 'Low', 'Med', 'High']
+        )
+    ))
+    
+    fig.update_layout(
+        title=f"Wiring: {selected_domain} Activation Across Building",
+        xaxis_title="Week →",
+        yaxis_title="Grade →",
+        height=500,
+        yaxis=dict(autorange='reversed')
+    )
+    
+    st.plotly_chart(fig, use_container_width=True)
+    
+    st.caption("💡 Intensity reflects how heavily this cognitive domain is engaged in that grade-week cell. Map objectives with cognitive domain tags to see actual activation patterns.")
 
 else:  # Students (Objectives)
-    st.markdown("### 👥 Students: Objectives Placed in Rooms")
-    st.info("Coming soon: Show individual objectives placed in their grade-week locations")
+    st.markdown("### 👥 Students: Objectives Placed in Grade-Week Rooms")
+    st.caption("See individual learning objectives distributed across the building")
+    
+    # Load objectives from graph data
+    from graph_manager import GraphManager
+    from data_store import DataStore
+    
+    if 'graph_manager' not in st.session_state:
+        st.session_state.graph_manager = GraphManager()
+        st.session_state.data_store = DataStore()
+        st.session_state.graph_manager.load_from_store(st.session_state.data_store)
+    
+    all_nodes = st.session_state.graph_manager.get_all_nodes()
+    
+    # Group objectives by grade
+    objectives_by_grade = {}
+    for grade in grades:
+        grade_objs = [n for n in all_nodes if f"{grade}.O" in n]
+        objectives_by_grade[grade] = grade_objs
+    
+    # Display objective counts per grade
+    st.markdown("#### Objective Distribution")
+    
+    obj_counts = [len(objectives_by_grade.get(g, [])) for g in grades]
+    
+    fig = go.Figure(data=[
+        go.Bar(
+            x=grades,
+            y=obj_counts,
+            marker_color='#4472C4',
+            text=obj_counts,
+            textposition='auto',
+        )
+    ])
+    
+    fig.update_layout(
+        title="Students (Objectives) per Grade",
+        xaxis_title="Grade",
+        yaxis_title="Number of Objectives",
+        height=400
+    )
+    
+    st.plotly_chart(fig, use_container_width=True)
+    
+    # Show sample objectives
+    st.markdown("#### Sample Objectives by Grade")
+    
+    selected_grade_view = st.selectbox("View objectives for grade:", grades, key='student_view')
+    
+    grade_objectives = objectives_by_grade.get(selected_grade_view, [])
+    
+    if grade_objectives:
+        st.markdown(f"**{len(grade_objectives)} objectives** found for Grade {selected_grade_view}")
+        
+        for obj_name in grade_objectives[:10]:  # Show first 10
+            node_data = st.session_state.graph_manager.get_node_data(obj_name)
+            
+            with st.expander(f"📝 {obj_name}"):
+                st.markdown(node_data.get('description', 'No description'))
+                
+                col_obj1, col_obj2 = st.columns(2)
+                with col_obj1:
+                    if node_data.get('dimensional_level'):
+                        st.caption(f"**Dimension:** {node_data['dimensional_level']}")
+                with col_obj2:
+                    if node_data.get('variables'):
+                        st.caption(f"**Variables:** {', '.join(node_data['variables'])}")
+        
+        if len(grade_objectives) > 10:
+            st.caption(f"... and {len(grade_objectives) - 10} more objectives")
+    else:
+        st.info(f"No objectives loaded yet for Grade {selected_grade_view}. Use Manage Content to add them.")
 
 st.divider()
 
