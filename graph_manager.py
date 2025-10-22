@@ -8,8 +8,11 @@ class GraphManager:
         self.graph = nx.DiGraph()
         self.node_attributes = {}
         
-    def add_node(self, node_name: str, node_type: str, description: str = "") -> bool:
-        """Add a new node to the graph"""
+    def add_node(self, node_name: str, node_type: str, description: str = "", 
+                 variables: List[str] = None, dimensional_level: str = None,
+                 historical_era: str = None, cognitive_domains: Dict[str, str] = None,
+                 verbs: List[str] = None, grade_level: str = None) -> bool:
+        """Add a new node to the graph with extended pyramidic metadata"""
         if node_name in self.graph:
             return False
         
@@ -17,7 +20,16 @@ class GraphManager:
         self.node_attributes[node_name] = {
             'type': node_type,
             'description': description,
-            'images': []
+            'images': [],
+            'variables': variables or [],  # Math, Arts, Mythology, Power
+            'dimensional_level': dimensional_level or '',  # D1a, D1b, D2, D3, D4
+            'historical_era': historical_era or '',  # Egyptian, Babylonian, Greek, Islamic, etc.
+            'cognitive_domains': cognitive_domains or {},  # {domain: weight} e.g., {"Attention": "high", "Memory": "medium"}
+            'verbs': verbs or [],  # spot, analyze, create, compare, etc.
+            'grade_level': grade_level or '',  # K, 1, 2, ..., 8
+            'status': 'not-started',  # complete, in-progress, planned, not-started
+            'priority': 'medium',  # high, medium, low
+            'notes': ''
         }
         return True
     
@@ -31,15 +43,15 @@ class GraphManager:
             del self.node_attributes[node_name]
         return True
     
-    def update_node(self, node_name: str, node_type: str = None, description: str = None) -> bool:
-        """Update node attributes"""
+    def update_node(self, node_name: str, **kwargs) -> bool:
+        """Update node attributes flexibly"""
         if node_name not in self.node_attributes:
             return False
         
-        if node_type is not None:
-            self.node_attributes[node_name]['type'] = node_type
-        if description is not None:
-            self.node_attributes[node_name]['description'] = description
+        # Update any provided attributes
+        for key, value in kwargs.items():
+            if value is not None:
+                self.node_attributes[node_name][key] = value
         return True
     
     def add_edge(self, source: str, target: str, relationship_type: str = "") -> bool:
@@ -116,6 +128,46 @@ class GraphManager:
     def get_edge_count(self) -> int:
         """Get total number of edges"""
         return self.graph.number_of_edges()
+    
+    def filter_nodes_by(self, **criteria) -> List[str]:
+        """Filter nodes by various criteria"""
+        filtered = []
+        for node_name, attrs in self.node_attributes.items():
+            match = True
+            for key, value in criteria.items():
+                if key == 'variables':
+                    # Check if any of the requested variables are present
+                    if not any(v in attrs.get('variables', []) for v in value):
+                        match = False
+                elif key == 'verbs':
+                    # Check if any of the requested verbs are present
+                    if not any(v in attrs.get('verbs', []) for v in value):
+                        match = False
+                elif key == 'cognitive_domains':
+                    # Check if any of the requested domains are present
+                    if not any(d in attrs.get('cognitive_domains', {}) for d in value):
+                        match = False
+                else:
+                    # Exact match for other fields
+                    if attrs.get(key) != value:
+                        match = False
+            if match:
+                filtered.append(node_name)
+        return filtered
+    
+    def get_unique_values(self, field: str) -> List[str]:
+        """Get all unique values for a given field"""
+        values = set()
+        for attrs in self.node_attributes.values():
+            if field in attrs:
+                value = attrs[field]
+                if isinstance(value, list):
+                    values.update(value)
+                elif isinstance(value, dict):
+                    values.update(value.keys())
+                elif value:
+                    values.add(value)
+        return sorted(list(values))
     
     def get_graph_data(self) -> Dict[str, Any]:
         """Export graph data for visualization"""
