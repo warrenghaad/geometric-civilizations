@@ -32,12 +32,12 @@ st.divider()
 
 # Define the library structure based on grade bands
 grade_bands = {
-    "K-1": ["Kindergarten", "Grade 1"],
-    "2-3": ["Grade 2", "Grade 3"],
-    "4-5": ["Grade 4", "Grade 5"],
-    "6": ["Grade 6"],
-    "7": ["Grade 7"],
-    "8": ["Grade 8"]
+    "K-1": ["K", "1"],
+    "2-3": ["2", "3"],
+    "4-5": ["4", "5"],
+    "6": ["6"],
+    "7": ["7"],
+    "8": ["8"]
 }
 
 variables = ["History/Mythology", "Geometry/Math", "Art", "SEL"]
@@ -52,7 +52,8 @@ for shelf_name, grades in grade_bands.items():
         # Get objectives for this grade band
         shelf_objectives = []
         for grade in grades:
-            grade_nodes = [n for n in all_nodes if grade in n]
+            # Match objectives like "K.O1", "1.O2", "2.O3" etc.
+            grade_nodes = [n for n in all_nodes if n.startswith(f"{grade}.O")]
             shelf_objectives.extend(grade_nodes)
         
         if search_term:
