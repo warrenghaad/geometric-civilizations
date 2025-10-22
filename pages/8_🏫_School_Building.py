@@ -39,7 +39,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     view_mode = st.selectbox(
         "View Mode",
-        ["Gap Analysis", "Plumbing (Vertical Standards)", "Wiring (Cognitive Domains)", "Students (Objectives)"]
+        ["Standards Map (by Subject)", "Standards Map (by Coverage)", "Vertical Progression", "Cognitive Activation"]
     )
 
 with col2:
@@ -118,7 +118,7 @@ for grade in grades:
 
 grid_df = pd.DataFrame(grid_data)
 
-if view_mode == "Gap Analysis":
+if view_mode == "Standards Map (by Subject)":
     st.markdown("### 📊 Open Floor Plan: Color by Subject")
     st.caption("Math = Blue | Arts = Purple | Mythology = Orange | Power = Red | Mixed = Green | Empty = Gray")
     
@@ -199,9 +199,9 @@ if view_mode == "Gap Analysis":
         complete_cells = len(grid_df[grid_df['status'] == 'Complete'])
         st.metric("Complete Cells", complete_cells)
 
-elif view_mode == "Plumbing (Vertical Standards)":
-    st.markdown("### 🔧 Plumbing: Vertical Standards Building K→8")
-    st.caption("Shows how standards progress vertically through grades like plumbing shafts")
+elif view_mode == "Standards Map (by Coverage)":
+    st.markdown("### 📋 2D Standards Coverage Map")
+    st.caption("Shows which grade-week cells have standards mapped (Green = Complete, Yellow = Partial, Red = Empty)")
     
     # Define vertical standard progressions
     vertical_standards = {
@@ -303,9 +303,9 @@ elif view_mode == "Plumbing (Vertical Standards)":
     
     st.plotly_chart(fig, use_container_width=True)
 
-elif view_mode == "Wiring (Cognitive Domains)":
-    st.markdown("### ⚡ Wiring: Cognitive Domain Network")
-    st.caption("Messy network showing which cognitive domains are activated where")
+elif view_mode == "Vertical Progression":
+    st.markdown("### 📈 2D Vertical Standard Progression")
+    st.caption("Shows how each standard builds vertically through grades K→8")
     
     cognitive_domains = [
         "Attention",
@@ -387,7 +387,7 @@ elif view_mode == "Wiring (Cognitive Domains)":
     
     st.caption("💡 Intensity reflects how heavily this cognitive domain is engaged in that grade-week cell. Map objectives with cognitive domain tags to see actual activation patterns.")
 
-else:  # Students (Objectives)
+elif view_mode == "Cognitive Activation":
     st.markdown("### 👥 Students: Objectives Placed in Grade-Week Rooms")
     st.caption("See individual learning objectives distributed across the building")
     
