@@ -1,0 +1,99 @@
+Got it. Here is your clarified dimensional model, exactly as you specify, and a clean way to implement it in your curriculum, prompts, and assessment. I keep Dimension 1 as the only split level, with 1a and 1b, and position How (Dimension 2) as cross-application that can operate on either the atom or the molecule.
+
+Your dimensional model, precisely defined
+- Dimension 1: Knowledge within a single concept family
+  - 1a Atomic unit
+    - Example: 5×1 = 5; a single symmetry rule; one SEL skill name; one symbol–meaning link.
+  - 1b Molecular unit (the whole “line” within-domain)
+    - Example: Mastery of the entire fives table (5×n), skip-counting by 5s; executing a single geometric rule across all placements; applying one SEL strategy reliably across the same type of situations.
+  - Note: Only Dimension 1 has subparts 1a and 1b, as you require.
+
+- Dimension 2: How (cross-application)
+  - Definition: Applying the concept (atom or molecule) across other concepts within or adjacent to the domain, including multi-step procedures, word problems, constraint coordination, or mixing families.
+  - Examples:
+    - Math: Use 5×n with other tables, decompositions, or arrays; solve word problems combining 5×n with place value or ratio structures.
+    - Art/geometry: Combine one transformation rule with another (rotation + reflection; rotation + color inversion); integrate perspective with proportional spacing.
+    - SEL: Combine one regulation strategy with planning, opposite action, or attention routines.
+  - Key: How can attach to either the atom (How does 5×1 work in a situation?) or the molecule (How do the fives apply with 3×n, arrays, or word problems?).
+
+- Dimension 3: Why/Why not (systems reasoning, rationale, trade-offs)
+  - Preconditions: Sufficient coverage of How so that the learner understands how things are built and combined.
+  - Definition: Justify choices among multiple Hows; analyze trade-offs, efficiency, and purpose-fit.
+  - Examples: Why choose 5×n via 10s-and-halves; why rotational symmetry over reflection to express balance; why this SEL strategy here and not another.
+
+- Dimension 4: What if (transfer across domains, time, or constraints)
+  - Definition: Move the system into novel contexts, counterfactuals, resource limits, or cross-domain fusion; forecast and adapt.
+  - Examples: Apply 5×n rhythmically in music or budgeting; redesign a tessellation without a compass; transfer a knot continuity principle to an Oceanic navigation chart; build a future plan using calendar cycles.
+
+How to implement this exactly in your K–8 curriculum
+Journal/page layout per task
+- Top row:
+  - D1a What: one atom only (single fact/rule/symbol/skill).
+  - D1b Line: demonstrate the entire family within-domain (e.g., 5×n across several n; one symmetry rule applied around all placements).
+- Middle row:
+  - D2 How: apply the atom or the molecule to other structures (mix tables/rules; combine constraints; word problems).
+- Bottom row:
+  - D3 Why/Why not: written or oral rationale with trade-offs.
+  - D4 What if: a transfer/adaptation scenario and a brief plan.
+
+Prompt stems aligned to your definition
+- Dimension 1a (Atomic)
+  - Math: What is 5×1? What is a 60° rotation? What is a horizon line?  
+  - Art/geometry: What symmetry is here?  
+  - SEL/symbol: What is the name of this skill? What does this symbol mean?[^1,^5]
+
+- Dimension 1b (Molecular, the whole line)
+  - Math: Show 5×n across multiple n; skip-count by 5s; apply 5×n in several direct facts.  
+  - Art/geometry: Apply the same transformation rule across all positions in the motif; repeat the knot segment flawlessly around the loop.  
+  - SEL: Use the same strategy multiple times in the same class period and note outcomes[^3,^7].
+
+- Dimension 2 (How)
+  - Math: How do the fives combine with 3×n or arrays? How do you solve this word problem mixing 5×n and place value?  
+  - Art/geometry: How do you coordinate rotation with color inversion? How do you build perspective with both vanishing points and proportional spacing?  
+  - SEL: How do you combine opposite action with a focus routine to complete a complex piece?[^3,^6,^12]
+
+- Dimension 3 (Why/Why not)
+  - Why pick this combination of rules/strategies? Why is this method more efficient or better aligned to your intended meaning? Why not an alternative?[^3,^12]
+
+- Dimension 4 (What if)
+  - What if a tool/time/resource is removed—how adapt while preserving intent? What if this pattern reappears next month—how will your calendar plan guide action? What if you fuse cultural principles X and Y—what stays invariant?[^10,^11,^14,^15]
+
+Assessment that respects your structure
+- Complexity Ledger line for each artifact
+  - Record D1a and D1b separately.  
+  - Record the highest D2 achieved that day (atom-How or molecule-How).  
+  - Record D3 and D4 if demonstrated.  
+  - This yields a precise profile of growth from atom → line → cross-application → rationale → transfer[^12,^15].
+
+Evidence collection examples
+- D1a: a single labeled fact, rule, or clean single-instance execution.  
+- D1b: multiple varied instances of the same rule or fact family; rhythm/automaticity visible.  
+- D2: plan sketch plus a correctly executed multi-constraint segment or mixed-table word problem.  
+- D3: a short rationale explaining choice and trade-offs; a marked revision aligned to that rationale.  
+- D4: a transfer artifact or scenario write-up with constraints, plus later reuse to verify retention[^3,^12,^14,^15].
+
+Concrete examples inside your weeks
+- Week 6 Islamic tessellations
+  - D1a: Define 60° rotation.  
+  - D1b: Apply 60° rotation around all sectors; consistent adjacency rule.  
+  - D2: Combine rotation with a color inversion schedule.  
+  - D3: Explain why rotation suits “balance” better than reflection for your design.  
+  - D4: Without a compass, approximate construction preserving perceived symmetry and explain adjustments[^3].
+
+- Week 12 Renaissance perspective/emblems
+  - D1a: Identify horizon line or one vanishing point.  
+  - D1b: Place multiple orthogonals and equal-ratio spacing properly.  
+  - D2: Combine perspective rules with emblem semantics.  
+  - D3: Defend proportion choices and emblem placement for intended meaning.  
+  - D4: If the audience misreads the emblem, redesign symbols while keeping math consistent[^12].
+
+Teacher workflow to honor your D1a/1b → D2 logic
+- Sequence each lesson: 3–5 min D1a → 7–10 min D1b → 10–20 min D2 → 5–7 min D3 reflection → optional D4 extension.  
+- Only move to D2 after students show stable D1b. This maintains your principle that Why emerges only after sufficient How.
+
+How this maps to your curriculum’s goals
+- Your Week 1–2 focus builds D1a and D1b for symbols, attention, and dialectical elements[^1,^2].  
+- Weeks 6–7 and 12 build strong D2 by coordinating geometric and aesthetic rules with SEL strategies[^3,^6,^7,^12].  
+- Weeks 12–14 elevate D3 and D4 through perspective reasoning and cultural synthesis, culminating in Week 15 portfolios that evidence transfer[^12,^14,^15].
+
+Would you like me to generate printable journal templates that show D1a/D1b as separate boxes and include week-specific D2, D3, D4 prompt banks tied to your activities and projects[^1,^3,^6,^12,^14,^15]?

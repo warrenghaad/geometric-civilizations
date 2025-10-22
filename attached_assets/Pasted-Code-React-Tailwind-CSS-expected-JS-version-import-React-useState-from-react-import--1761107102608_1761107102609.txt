@@ -1,0 +1,829 @@
+Code (React + Tailwind CSS expected, JS version):import React, { useState } from 'react';
+import {
+  Plus, Upload, FileText, Image, Video, CheckCircle, Circle, AlertCircle, Search,
+  Download, Book, Lightbulb, Target, Layers, Cube, X
+} from 'lucide-react';const CurriculumWorkspace = () => {
+  const [activeTab, setActiveTab] = useState('overview');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filterStatus, setFilterStatus] = useState('all');
+  const [notes, setNotes] = useState({});
+  const [uploadedFiles, setUploadedFiles] = useState([]);// ---------------- Year Mapping (Full 36 Weeks) ----------------
+  const yearMapping = {
+    quarter1: {
+      name: "Quarter 1: Foundations",
+      weeks: [
+        { id: 1, title: "Nature's Patterns (Atomic to Galactic)", status: "complete",     priority: "high",   lessons: 5, resources: 12, notes: "Need more local Phoenix images" },
+        { id: 2, title: "Maya Number Systems",                    status: "in-progress",  priority: "high",   lessons: 3, resources: 8,  notes: "Working on interactive number builder" },
+        { id: 3, title: "Calendar Mathematics",                    status: "planned",      priority: "medium", lessons: 0, resources: 2,  notes: "Research Maya calendar accuracy" },
+        { id: 4, title: "Geometric Patterns in Architecture",      status: "not-started",  priority: "medium", lessons: 0, resources: 0,  notes: "" },
+        { id: 5, title: "Phoenix Desert Mathematics",              status: "half-done",    priority: "high",   lessons: 2, resources: 15, notes: "Field trip to Desert Botanical Garden planned" },
+        { id: 6, title: "Indigenous Knowledge Systems",            status: "not-started",  priority: "low",    lessons: 0, resources: 3,  notes: "Contact Heard Museum educator" },
+        { id: 7, title: "Fibonacci in Nature Deep Dive",           status: "planned",      priority: "medium", lessons: 1, resources: 6,  notes: "" },
+        { id: 8, title: "Fractals and Self-Similarity",            status: "not-started",  priority: "medium", lessons: 0, resources: 0,  notes: "" },
+        { id: 9, title: "Quarter 1 Assessment & Reflection",       status: "not-started",  priority: "high",   lessons: 0, resources: 0,  notes: "Design portfolio assessment" }
+      ]
+    },
+    quarter2: {
+      name: "Quarter 2: Cultural Mathematics",
+      weeks: [
+        { id: 10, title: "Egyptian Geometry & Pyramids",               status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 11, title: "Islamic Geometric Patterns",                 status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 12, title: "Chinese Mathematical Innovations",           status: "not-started", priority: "low",    lessons: 0, resources: 0, notes: "" },
+        { id: 13, title: "Native American Star Knowledge",             status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "Phoenix astronomy connections" },
+        { id: 14, title: "African Mathematical Traditions",            status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 15, title: "European Renaissance Mathematics",           status: "not-started", priority: "low",    lessons: 0, resources: 0, notes: "" },
+        { id: 16, title: "Modern Mathematical Art",                    status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 17, title: "Technology & Mathematical Visualization",    status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" },
+        { id: 18, title: "Quarter 2 Synthesis Project",                status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" }
+      ]
+    },
+    quarter3: {
+      name: "Quarter 3: Applied Mathematics",
+      weeks: [
+        { id: 19, title: "Architecture & Engineering",          status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 20, title: "Music & Mathematical Ratios",         status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 21, title: "Sports Statistics & Probability",     status: "not-started", priority: "low",    lessons: 0, resources: 0, notes: "" },
+        { id: 22, title: "Environmental Mathematics",           status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "Desert ecosystem modeling" },
+        { id: 23, title: "Economics & Financial Literacy",      status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 24, title: "Medical Mathematics",                 status: "not-started", priority: "low",    lessons: 0, resources: 0, notes: "" },
+        { id: 25, title: "Space Exploration Mathematics",       status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 26, title: "Artificial Intelligence Basics",      status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" },
+        { id: 27, title: "Quarter 3 Capstone Project",          status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" }
+      ]
+    },
+    quarter4: {
+      name: "Quarter 4: Future Mathematics",
+      weeks: [
+        { id: 28, title: "Climate Change Modeling",          status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" },
+        { id: 29, title: "Quantum Mathematics Intro",        status: "not-started", priority: "low",    lessons: 0, resources: 0, notes: "" },
+        { id: 30, title: "Biotechnology & Genetics",         status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 31, title: "Robotics & Programming",           status: "not-started", priority: "medium", lessons: 0, resources: 0, notes: "" },
+        { id: 32, title: "Virtual Reality Mathematics",      status: "not-started", priority: "low",    lessons: 0, resources: 0, notes: "" },
+        { id: 33, title: "Student-Led Research Projects",    status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" },
+        { id: 34, title: "Community Problem Solving",        status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "Partner with local organizations" },
+        { id: 35, title: "Portfolio Presentations",          status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" },
+        { id: 36, title: "Year Reflection & Celebration",    status: "not-started", priority: "high",   lessons: 0, resources: 0, notes: "" }
+      ]
+    }
+  };// ---------------- 3D Library Data Structure ----------------
+  const initialLibrary = [
+    {
+      shelf: "K-1",
+      rows: [
+        { theme: "History",  contentTypes: [{ type: "Lessons",       desc: "Basic human history (e.g., early tools)", link: "#" }] },
+        { theme: "Geometry", contentTypes: [{ type: "Activities",    desc: "Simple shapes in nature",                 link: "#" }] },
+        { theme: "Art",      contentTypes: [{ type: "Assessments",   desc: "Drawing basic motifs",                    link: "#" }] },
+        { theme: "SEL",      contentTypes: [{ type: "Integration Points", desc: "Sharing and empathy through art",    link: "#" }] }
+      ]
+    },
+    {
+      shelf: "2-3",
+      rows: [
+        { theme: "History",  contentTypes: [{ type: "Lessons",     desc: "Ancient civilizations (e.g., Egypt)",     link: "#" }] },
+        { theme: "Geometry", contentTypes: [{ type: "Activities",  desc: "Symmetry in everyday objects",            link: "#" }] },
+        { theme: "Art",      contentTypes: [{ type: "Assessments", desc: "Patterns in cultural artifacts",          link: "#" }] },
+        { theme: "SEL",      contentTypes: [{ type: "Integration Points", desc: "Teamwork in creating group art",   link: "#" }] }
+      ]
+    },
+    {
+      shelf: "4-5",
+      rows: [
+        { theme: "History",  contentTypes: [{ type: "Lessons",     desc: "Medieval and Renaissance eras",            link: "#" }] },
+        { theme: "Geometry", contentTypes: [{ type: "Activities",  desc: "Tessellations and mosaics",                link: "#" }] },
+        { theme: "Art",      contentTypes: [{ type: "Assessments", desc: "Designing complex patterns",               link: "#" }] },
+        { theme: "SEL",      contentTypes: [{ type: "Integration Points", desc: "Self-expression through geometric art", link: "#" }] }
+      ]
+    },
+    {
+      shelf: "6",
+      rows: [
+        { theme: "History",  contentTypes: [{ type: "Lessons",     desc: "Industrial Revolution impacts",            link: "#" }] },
+        { theme: "Geometry", contentTypes: [{ type: "Activities",  desc: "3D shapes in architecture",                link: "#" }] },
+        { theme: "Art",      contentTypes: [{ type: "Assessments", desc: "Modern geometric designs",                 link: "#" }] },
+        { theme: "SEL",      contentTypes: [{ type: "Integration Points", desc: "Managing frustration in complex projects", link: "#" }] }
+      ]
+    },
+    {
+      shelf: "7",
+      rows: [
+        { theme: "History",  contentTypes: [{ type: "Lessons",     desc: "20th-century global changes",              link: "#" }] },
+        { theme: "Geometry", contentTypes: [{ type: "Activities",  desc: "Pi and circles in technology",             link: "#" }] },
+        { theme: "Art",      contentTypes: [{ type: "Assessments", desc: "Art Deco influences",                      link: "#" }] },
+        { theme: "SEL",      contentTypes: [{ type: "Integration Points", desc: "Peer feedback and critique",        link: "#" }] }
+      ]
+    },
+    {
+      shelf: "8",
+      rows: [
+        { theme: "History",  contentTypes: [{ type: "Lessons",     desc: "Digital age and future predictions",       link: "#" }] },
+        { theme: "Geometry", contentTypes: [{ type: "Activities",  desc: "Advanced fractals and patterns",           link: "#" }] },
+        { theme: "Art",      contentTypes: [{ type: "Assessments", desc: "Digital geometric art creation",           link: "#" }] },
+        { theme: "SEL",      contentTypes: [{ type: "Integration Points", desc: "Decision-making in creative innovation", link: "#" }] }
+      ]
+    }
+  ];const [libraryData, setLibraryData] = useState(initialLibrary);
+  const [expandedShelves, setExpandedShelves] = useState({});
+  const [expandedRows, setExpandedRows] = useState({});
+  const [librarySearch, setLibrarySearch] = useState('');
+  const [showAddContentModal, setShowAddContentModal] = useState(false);
+  const [showAddShelfModal, setShowAddShelfModal] = useState(false);
+  const [showAddRowModal, setShowAddRowModal] = useState(false);
+  const [contentForm, setContentForm] = useState({ shelfIndex: 0, rowIndex: 0, type: '', desc: '', link: '' });
+  const [shelfForm, setShelfForm] = useState({ shelf: '' });
+  const [rowForm, setRowForm] = useState({ shelfIndex: 0, theme: '' });// ---------------- Utility Functions ----------------
+  const getStatusColor = (status) => {
+    switch (status) {
+      case 'complete': return 'text-green-600 bg-green-100';
+      case 'in-progress': return 'text-blue-600 bg-blue-100';
+      case 'half-done': return 'text-yellow-600 bg-yellow-100';
+      case 'planned': return 'text-purple-600 bg-purple-100';
+      case 'not-started': return 'text-gray-600 bg-gray-100';
+      default: return 'text-gray-600 bg-gray-100';
+    }
+  };const getStatusIcon = (status) => {
+    switch (status) {
+      case 'complete': return <CheckCircle size={16} className="text-green-600" />;
+      case 'in-progress': return <AlertCircle size={16} className="text-blue-600" />;
+      case 'half-done': return <Circle size={16} className="text-yellow-600" />;
+      default: return <Circle size={16} className="text-gray-400" />;
+    }
+  };const allWeeks = Object.values(yearMapping).flatMap(q => q.weeks);
+  const filteredWeeks = allWeeks.filter(week => {
+    const matchesSearch = week.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      week.notes.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesFilter = filterStatus === 'all' || week.status === filterStatus;
+    return matchesSearch && matchesFilter;
+  });const stats = {
+    total: allWeeks.length,
+    complete: allWeeks.filter(w => w.status === 'complete').length,
+    inProgress: allWeeks.filter(w => w.status === 'in-progress' || w.status === 'half-done').length,
+    notStarted: allWeeks.filter(w => w.status === 'not-started').length,
+    totalLessons: allWeeks.reduce((sum, w) => sum + w.lessons, 0),
+    totalResources: allWeeks.reduce((sum, w) => sum + w.resources, 0)
+  };// ---------------- 3D Library Filtering ----------------
+  const filteredLibrary = libraryData.map((shelfObj, sIdx) => {
+    if (!librarySearch.trim()) return shelfObj;
+    const shelfMatch = shelfObj.shelf.toLowerCase().includes(librarySearch.toLowerCase());
+    const filteredRows = shelfObj.rows
+      .map((row, rIdx) => {
+        const rowText = (row.theme + ' ' + row.contentTypes.map(c => c.type + ' ' + c.desc).join(' ')).toLowerCase();
+        if (rowText.includes(librarySearch.toLowerCase())) return row;
+        return null;
+      })
+      .filter(Boolean);
+    if (shelfMatch || filteredRows.length) {
+      return { ...shelfObj, rows: shelfMatch ? shelfObj.rows : filteredRows };
+    }
+    return null;
+  }).filter(Boolean);// ---------------- 3D Library Actions ----------------
+  const toggleShelf = (index) => {
+    setExpandedShelves(prev => ({ ...prev, [index]: !prev[index] }));
+  };const toggleRow = (shelfIndex, rowIndex) => {
+    const key = ${shelfIndex}-${rowIndex};
+    setExpandedRows(prev => ({ ...prev, [key]: !prev[key] }));
+  };const openAddContent = (shelfIndex = 0, rowIndex = 0) => {
+    setContentForm({ shelfIndex, rowIndex, type: '', desc: '', link: '' });
+    setShowAddContentModal(true);
+  };const submitAddContent = (e) => {
+    e.preventDefault();
+    setLibraryData(prev => {
+      const clone = [...prev];
+      const { shelfIndex, rowIndex, type, desc, link } = contentForm;
+      clone[shelfIndex].rows[rowIndex].contentTypes.push({ type, desc, link: link || '#' });
+      return clone;
+    });
+    setShowAddContentModal(false);
+  };const submitAddShelf = (e) => {
+    e.preventDefault();
+    if (!shelfForm.shelf.trim()) return;
+    setLibraryData(prev => [...prev, { shelf: shelfForm.shelf.trim(), rows: [] }]);
+    setShelfForm({ shelf: '' });
+    setShowAddShelfModal(false);
+  };const submitAddRow = (e) => {
+    e.preventDefault();
+    if (!rowForm.theme.trim()) return;
+    setLibraryData(prev => {
+      const clone = [...prev];
+      clone[rowForm.shelfIndex].rows.push({ theme: rowForm.theme.trim(), contentTypes: [] });
+      return clone;
+    });
+    setRowForm({ shelfIndex: 0, theme: '' });
+    setShowAddRowModal(false);
+  };// ---------------- Modal Component ----------------
+  const Modal = ({ title, onClose, children }) => (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+      <div className="bg-white rounded-lg shadow-xl w-full max-w-lg">
+        <div className="flex items-center justify-between border-b px-5 py-3">
+            <h3 className="font-semibold text-lg">{title}</h3>
+            <button onClick={onClose} className="p-1 hover:bg-gray-100 rounded">
+              <X size={18} />
+            </button>
+        </div>
+        <div className="p-5">
+          {children}
+        </div>
+      </div>
+    </div>
+  );return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <div className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">Curriculum Development Workspace</h1>
+              <p className="text-gray-600">36-Week Mathematics & Culture Curriculum</p>
+            </div>
+            <div className="flex space-x-3">
+              <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                <Upload size={16} className="mr-2" />
+                Upload Resources
+              </button>
+              <button className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                <Book size={16} className="mr-2" />
+                Generate E-Textbook
+              </button>
+              <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+                <Download size={16} className="mr-2" />
+                Export All
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>  {/* Stats */}
+  <div className="max-w-7xl mx-auto px-4 py-6">
+    <div className="grid grid-cols-6 gap-4 mb-6">
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <div className="text-2xl font-bold text-gray-900">{stats.total}</div>
+        <div className="text-sm text-gray-600">Total Weeks</div>
+      </div>
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <div className="text-2xl font-bold text-green-600">{stats.complete}</div>
+        <div className="text-sm text-gray-600">Complete</div>
+      </div>
+        <div className="bg-white p-4 rounded-lg shadow-sm">
+        <div className="text-2xl font-bold text-blue-600">{stats.inProgress}</div>
+        <div className="text-sm text-gray-600">In Progress</div>
+      </div>
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <div className="text-2xl font-bold text-gray-600">{stats.notStarted}</div>
+        <div className="text-sm text-gray-600">Not Started</div>
+      </div>
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <div className="text-2xl font-bold text-purple-600">{stats.totalLessons}</div>
+        <div className="text-sm text-gray-600">Total Lessons</div>
+      </div>
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <div className="text-2xl font-bold text-orange-600">{stats.totalResources}</div>
+        <div className="text-sm text-gray-600">Resources</div>
+      </div>
+    </div>
+
+    {/* Tabs */}
+    <div className="bg-white rounded-lg shadow-sm mb-6">
+      <div className="border-b">
+        <nav className="flex space-x-8 px-6 overflow-x-auto">
+          {['overview','quarter1','quarter2','quarter3','quarter4','resources','notes','library'].map(tab => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`py-4 px-2 border-b-2 font-medium text-sm whitespace-nowrap ${
+                activeTab === tab
+                  ? 'border-blue-500 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              {tab === 'overview' ? 'Overview'
+                : tab.startsWith('quarter') ? yearMapping[tab].name
+                : tab === 'library' ? '3D Library'
+                : tab.charAt(0).toUpperCase() + tab.slice(1)}
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      {/* Shared Search for Week Lists (not used on Library tab) */}
+      {activeTab !== 'library' && (
+        <div className="p-6 border-b bg-gray-50">
+          <div className="flex space-x-4">
+            <div className="flex-1 relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+              <input
+                type="text"
+                placeholder="Search weeks, topics, or notes..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <select
+              value={filterStatus}
+              onChange={(e) => setFilterStatus(e.target.value)}
+              className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="all">All Status</option>
+              <option value="complete">Complete</option>
+              <option value="in-progress">In Progress</option>
+              <option value="half-done">Half Done</option>
+              <option value="planned">Planned</option>
+              <option value="not-started">Not Started</option>
+            </select>
+          </div>
+        </div>
+      )}
+
+      {/* Content Area */}
+      <div className="p-6">
+
+        {activeTab === 'overview' && (
+          <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {filteredWeeks.slice(0, 9).map(week => (
+                <div key={week.id} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex items-center space-x-2">
+                      {getStatusIcon(week.status)}
+                      <span className="font-medium text-sm">Week {week.id}</span>
+                    </div>
+                    <span className={`px-2 py-1 rounded-full text-xs ${getStatusColor(week.status)}`}>
+                      {week.status.replace('-', ' ')}
+                    </span>
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-2">{week.title}</h3>
+                  <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 mb-3">
+                    <div>📚 {week.lessons} lessons</div>
+                    <div>📁 {week.resources} resources</div>
+                  </div>
+                  {week.notes && (
+                    <div className="bg-yellow-50 p-2 rounded text-xs text-yellow-800 mb-3">
+                      <Lightbulb size={12} className="inline mr-1" />
+                      {week.notes}
+                    </div>
+                  )}
+                  <div className="flex space-x-2">
+                    <button className="flex-1 px-3 py-1 bg-blue-100 text-blue-700 rounded text-xs hover:bg-blue-200">
+                      Edit
+                    </button>
+                    <button className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-xs hover:bg-gray-200">
+                      <Plus size={12} />
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="text-center">
+              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                View All {allWeeks.length} Weeks
+              </button>
+            </div>
+          </div>
+        )}
+
+        {activeTab.startsWith('quarter') && (
+          <div className="space-y-4">
+            <h2 className="text-xl font-bold">{yearMapping[activeTab].name}</h2>
+            <div className="space-y-3">
+              {yearMapping[activeTab].weeks.map(week => (
+                <div key={week.id} className="bg-gray-50 rounded-lg p-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-3">
+                      {getStatusIcon(week.status)}
+                      <div>
+                        <h3 className="font-semibold">Week {week.id}: {week.title}</h3>
+                        <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+                          <span>📚 {week.lessons} lessons</span>
+                          <span>📁 {week.resources} resources</span>
+                          <span className={`px-2 py-1 rounded-full text-xs ${getStatusColor(week.status)}`}>
+                            {week.status.replace('-', ' ')}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex space-x-2">
+                      <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                        Work on This
+                      </button>
+                      <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300">
+                        <FileText size={16} />
+                      </button>
+                    </div>
+                  </div>
+                  {week.notes && (
+                    <div className="mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">
+                      <div className="flex items-start space-x-2">
+                        <Lightbulb size={16} className="text-yellow-600 mt-0.5" />
+                        <div>
+                          <div className="font-medium text-yellow-800">Notes:</div>
+                          <div className="text-yellow-700">{week.notes}</div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'resources' && (
+          <div>
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-xl font-bold">Resource Library</h2>
+              <button className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                <Upload size={16} className="mr-2" />
+                Upload New Resource
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+              <div className="bg-blue-50 p-4 rounded-lg text-center">
+                <Image className="mx-auto mb-2 text-blue-600" size={32} />
+                <div className="font-semibold">Images</div>
+                <div className="text-2xl font-bold text-blue-600">247</div>
+              </div>
+              <div className="bg-green-50 p-4 rounded-lg text-center">
+                <Video className="mx-auto mb-2 text-green-600" size={32} />
+                <div className="font-semibold">Videos</div>
+                <div className="text-2xl font-bold text-green-600">18</div>
+              </div>
+              <div className="bg-purple-50 p-4 rounded-lg text-center">
+                <FileText className="mx-auto mb-2 text-purple-600" size={32} />
+                <div className="font-semibold">Documents</div>
+                <div className="text-2xl font-bold text-purple-600">89</div>
+              </div>
+              <div className="bg-orange-50 p-4 rounded-lg text-center">
+                <Target className="mx-auto mb-2 text-orange-600" size={32} />
+                <div className="font-semibold">Activities</div>
+                <div className="text-2xl font-bold text-orange-600">156</div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-lg text-center border-dashed border-2 border-gray-300">
+              <Upload className="mx-auto mb-4 text-gray-400" size={48} />
+              <h3 className="text-lg font-semibold text-gray-700 mb-2">Drag and Drop Resources Here</h3>
+              <p className="text-gray-500">Or click to browse and upload images, videos, documents, and activities</p>
+              <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                Browse Files
+              </button>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'notes' && (
+          <div>
+            <h2 className="text-xl font-bold mb-6">Development Notes & Ideas</h2>
+            <div className="space-y-4">
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                <div className="flex items-start space-x-3">
+                  <Lightbulb className="text-yellow-600 mt-1" size={20} />
+                  <div>
+                    <h3 className="font-semibold text-yellow-800">Idea: Phoenix Desert Field Trip</h3>
+                    <p className="text-yellow-700">Connect Week 5 with actual desert botanical garden visit. Students can photograph Fibonacci spirals in cacti.</p>
+                    <div className="text-xs text-yellow-600 mt-2">Added 2 days ago</div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
+                <div className="flex items-start space-x-3">
+                  <AlertCircle className="text-blue-600 mt-1" size={20} />
+                  <div>
+                    <h3 className="font-semibold text-blue-800">Need: Interactive Maya Number Builder</h3>
+                    <p className="text-blue-700">Week 2 needs a hands-on digital tool for students to build Maya numbers. Consider coding this as a React component.</p>
+                    <div className="text-xs text-blue-600 mt-2">Priority: High</div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white border rounded-lg p-4">
+                <h3 className="font-semibold mb-3">Quick Note</h3>
+                <textarea
+                  placeholder="Add a new note or idea..."
+                  className="w-full p-3 border rounded-lg resize-none focus:ring-2 focus:ring-blue-500"
+                  rows={3}
+                />
+                <button className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                  Save Note
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'library' && (
+          <div className="space-y-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <h2 className="text-xl font-bold flex items-center space-x-2">
+                <Cube size={20} className="text-blue-600" />
+                <span>3D Curriculum Library</span>
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setShowAddShelfModal(true)}
+                  className="flex items-center px-3 py-2 bg-gray-100 text-gray-800 rounded hover:bg-gray-200 text-sm"
+                >
+                  <Layers size={14} className="mr-1" /> Add Shelf
+                </button>
+                <button
+                  onClick={() => setShowAddRowModal(true)}
+                  className="flex items-center px-3 py-2 bg-gray-100 text-gray-800 rounded hover:bg-gray-200 text-sm"
+                >
+                  <Plus size={14} className="mr-1" /> Add Row
+                </button>
+                <button
+                  onClick={() => openAddContent(0,0)}
+                  className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm"
+                >
+                  <Plus size={16} className="mr-2" />
+                  Add Content
+                </button>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <div className="relative flex-1">
+                <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <input
+                  value={librarySearch}
+                  onChange={(e) => setLibrarySearch(e.target.value)}
+                  placeholder="Search shelves, themes, or content..."
+                  className="w-full pl-9 pr-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              {librarySearch && (
+                <button
+                  onClick={() => setLibrarySearch('')}
+                  className="px-3 py-2 text-sm bg-gray-100 rounded hover:bg-gray-200"
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+
+            <div className="space-y-6">
+              {filteredLibrary.length === 0 && (
+                <div className="p-6 text-center border rounded-lg bg-gray-50 text-gray-600">
+                  No matches in the 3D Library. Try a different search.
+                </div>
+              )}
+
+              {filteredLibrary.map((shelfObj, shelfIndex) => {
+                const sExpanded = expandedShelves[shelfIndex];
+                return (
+                  <div key={shelfIndex} className="border rounded-lg shadow-sm bg-white">
+                    <div
+                      className="flex items-center justify-between px-5 py-3 cursor-pointer hover:bg-gray-50"
+                      onClick={() => toggleShelf(shelfIndex)}
+                    >
+                      <div className="flex items-center space-x-3">
+                        <Layers size={18} className="text-blue-600" />
+                        <h3 className="text-lg font-semibold">
+                          Shelf: Grade Band {shelfObj.shelf}
+                        </h3>
+                        <span className="text-xs px-2 py-1 rounded-full bg-blue-50 text-blue-700">
+                          {shelfObj.rows.length} rows
+                        </span>
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {sExpanded ? 'Collapse ▲' : 'Expand ▼'}
+                      </div>
+                    </div>
+
+                    {sExpanded && (
+                      <div className="px-5 pb-5 pt-2 space-y-4">
+                        {shelfObj.rows.length === 0 && (
+                          <div className="p-4 bg-gray-50 rounded text-sm text-gray-600">
+                            No rows yet. Add one with "Add Row".
+                          </div>
+                        )}
+                        {shelfObj.rows.map((row, rowIndex) => {
+                          const key = `${shelfIndex}-${rowIndex}`;
+                          const rExpanded = expandedRows[key];
+                          return (
+                            <div key={rowIndex} className="border rounded-lg">
+                              <div
+                                onClick={() => toggleRow(shelfIndex, rowIndex)}
+                                className="flex items-center justify-between px-4 py-3 bg-gray-50 cursor-pointer hover:bg-gray-100 rounded-t-lg"
+                              >
+                                <div className="flex items-center space-x-3">
+                                  <Cube size={16} className="text-purple-600" />
+                                  <h4 className="font-medium text-gray-900">
+                                    Row: {row.theme}
+                                  </h4>
+                                  <span className="text-xs px-2 py-1 rounded-full bg-purple-50 text-purple-700">
+                                    {row.contentTypes.length} items
+                                  </span>
+                                </div>
+                                <div className="text-xs text-gray-500">
+                                  {rExpanded ? 'Hide ▲' : 'Show ▼'}
+                                </div>
+                              </div>
+                              {rExpanded && (
+                                <div className="p-4 space-y-3 bg-white rounded-b-lg">
+                                  {row.contentTypes.length === 0 && (
+                                    <div className="text-sm text-gray-500">
+                                      No content yet. Add one.
+                                    </div>
+                                  )}
+                                  {row.contentTypes.map((content, cIdx) => (
+                                    <div
+                                      key={cIdx}
+                                      className="flex flex-col md:flex-row md:items-center md:justify-between border rounded-lg p-3 hover:shadow-sm transition"
+                                    >
+                                      <div className="text-sm">
+                                        <span className="font-semibold">{content.type}</span>: {content.desc}
+                                      </div>
+                                      <div className="flex items-center space-x-2 mt-2 md:mt-0">
+                                        <a
+                                          href={content.link}
+                                          className="text-blue-600 text-sm hover:underline"
+                                        >
+                                          View
+                                        </a>
+                                        <button
+                                          onClick={() => openAddContent(shelfIndex, rowIndex)}
+                                          className="text-xs px-2 py-1 bg-gray-100 rounded hover:bg-gray-200"
+                                        >
+                                          + Add More
+                                        </button>
+                                      </div>
+                                    </div>
+                                  ))}
+                                  <div>
+                                    <button
+                                      onClick={() => openAddContent(shelfIndex, rowIndex)}
+                                      className="mt-1 inline-flex items-center px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded hover:bg-blue-200"
+                                    >
+                                      <Plus size={12} className="mr-1" />
+                                      Add Content Item
+                                    </button>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+      </div>
+    </div>
+  </div>
+
+  {/* Modals */}
+  {showAddContentModal && (
+    <Modal title="Add Content Item" onClose={() => setShowAddContentModal(false)}>
+      <form onSubmit={submitAddContent} className="space-y-4">
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label className="text-xs font-semibold text-gray-600 block mb-1">Shelf</label>
+            <select
+              value={contentForm.shelfIndex}
+              onChange={(e) => setContentForm(f => ({ ...f, shelfIndex: Number(e.target.value), rowIndex: 0 }))}
+              className="w-full border rounded px-3 py-2"
+            >
+              {libraryData.map((s, i) => (
+                <option key={i} value={i}>{s.shelf}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className="text-xs font-semibold text-gray-600 block mb-1">Row (Theme)</label>
+            <select
+              value={contentForm.rowIndex}
+              onChange={(e) => setContentForm(f => ({ ...f, rowIndex: Number(e.target.value) }))}
+              className="w-full border rounded px-3 py-2"
+            >
+              {libraryData[contentForm.shelfIndex].rows.map((r, i) => (
+                <option key={i} value={i}>{r.theme}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+        <div>
+          <label className="text-xs font-semibold text-gray-600 block mb-1">Type</label>
+          <input
+            value={contentForm.type}
+            onChange={(e) => setContentForm(f => ({ ...f, type: e.target.value }))}
+            placeholder="e.g., Lesson, Activity, Assessment"
+            required
+            className="w-full border rounded px-3 py-2"
+          />
+        </div>
+        <div>
+          <label className="text-xs font-semibold text-gray-600 block mb-1">Description</label>
+          <textarea
+            value={contentForm.desc}
+            onChange={(e) => setContentForm(f => ({ ...f, desc: e.target.value }))}
+            required
+            rows={3}
+            className="w-full border rounded px-3 py-2 resize-none"
+            placeholder="Short description"
+          />
+        </div>
+        <div>
+          <label className="text-xs font-semibold text-gray-600 block mb-1">Link (optional)</label>
+          <input
+            value={contentForm.link}
+            onChange={(e) => setContentForm(f => ({ ...f, link: e.target.value }))}
+            placeholder="https://..."
+            className="w-full border rounded px-3 py-2"
+          />
+        </div>
+        <div className="flex justify-end space-x-2 pt-2">
+          <button
+            type="button"
+            onClick={() => setShowAddContentModal(false)}
+            className="px-4 py-2 text-sm bg-gray-100 rounded hover:bg-gray-200"
+          >
+            Cancel
+          </button>
+          <button
+            type="submit"
+            className="px-5 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700"
+          >
+            Add Content
+          </button>
+        </div>
+      </form>
+    </Modal>
+  )}
+
+  {showAddShelfModal && (
+    <Modal title="Add Shelf (Grade Band)" onClose={() => setShowAddShelfModal(false)}>
+      <form onSubmit={submitAddShelf} className="space-y-4">
+        <div>
+          <label className="text-xs font-semibold text-gray-600 block mb-1">Shelf Label</label>
+          <input
+            value={shelfForm.shelf}
+            onChange={(e) => setShelfForm({ shelf: e.target.value })}
+            placeholder="e.g., 9-10 or PreK"
+            required
+            className="w-full border rounded px-3 py-2"
+          />
+        </div>
+        <div className="flex justify-end space-x-2 pt-2">
+          <button
+            type="button"
+            onClick={() => setShowAddShelfModal(false)}
+            className="px-4 py-2 text-sm bg-gray-100 rounded hover:bg-gray-200"
+          >
+            Cancel
+          </button>
+          <button type="submit" className="px-5 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700">
+            Add Shelf
+          </button>
+        </div>
+      </form>
+    </Modal>
+  )}
+
+  {showAddRowModal && (
+    <Modal title="Add Row (Theme)" onClose={() => setShowAddRowModal(false)}>
+      <form onSubmit={submitAddRow} className="space-y-4">
+        <div>
+          <label className="text-xs font-semibold text-gray-600 block mb-1">Shelf</label>
+          <select
+            value={rowForm.shelfIndex}
+            onChange={(e) => setRowForm(r => ({ ...r, shelfIndex: Number(e.target.value) }))}
+            className="w-full border rounded px-3 py-2"
+          >
+            {libraryData.map((s, i) => (
+              <option key={i} value={i}>{s.shelf}</option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <label className="text-xs font-semibold text-gray-600 block mb-1">Theme</label>
+          <input
+            value={rowForm.theme}
+            onChange={(e) => setRowForm(r => ({ ...r, theme: e.target.value }))}
+            placeholder="e.g., Probability, Cultural Patterns"
+            required
+            className="w-full border rounded px-3 py-2"
+          />
+        </div>
+        <div className="flex justify-end space-x-2 pt-2">
+          <button
+            type="button"
+            onClick={() => setShowAddRowModal(false)}
+            className="px-4 py-2 text-sm bg-gray-100 rounded hover:bg-gray-200"
+          >
+            Cancel
+          </button>
+          <button type="submit" className="px-5 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700">
+            Add Row
+          </button>
+        </div>
+      </form>
+    </Modal>
+  )}
+
+</div>
+);
+};export default CurriculumWorkspace;How to integrate:1.Replace your existing CurriculumWorkspace component file with the above code (or merge if you already added other custom logic).2.Ensure lucide-react and Tailwind (or equivalent styling) are installed/configured.
+npm install lucide-react3.(Optional) Add persistence by saving libraryData changes to localStorage in a useEffect.4.(Optional) Connect to a backend API to load/save library content.Next enhancement ideas:Add drag-and-drop reordering for shelves/rows/content items.Link content items to actual resource entities in your resources tab.Add tagging (e.g., skills, standards alignment) and filter by tags.Add export (JSON) of the 3D Library.Integrate a 3D visualization (e.g., Three.js) later to render shelves as spatial objects.Let me know if you’d like a TypeScript version, persistence layer, or integration with a database.
