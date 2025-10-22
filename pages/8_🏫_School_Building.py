@@ -119,35 +119,59 @@ for grade in grades:
 grid_df = pd.DataFrame(grid_data)
 
 if view_mode == "Gap Analysis":
-    st.markdown("### 📊 Curriculum Coverage: Gaps Highlighted")
+    st.markdown("### 📊 Open Floor Plan: Color by Subject")
+    st.caption("Math = Blue | Arts = Purple | Mythology = Orange | Power = Red | Mixed = Green | Empty = Gray")
     
-    # Create heatmap showing gaps
-    pivot_completion = grid_df.pivot(index='grade', columns='week', values='completion_score')
+    # For now, assign subjects randomly (you'll map this from actual objectives)
+    # This is placeholder - replace with actual variable mapping from objectives
+    import random
+    random.seed(42)
     
-    # Create 3D bar chart or heatmap
+    subject_colors = {
+        'Empty': 0,
+        'Math': 1,
+        'Arts': 2, 
+        'Mythology': 3,
+        'Power': 4,
+        'Mixed': 5
+    }
+    
+    # Assign subjects to grid (placeholder logic)
+    grid_df['primary_subject'] = grid_df.apply(
+        lambda row: 'Empty' if row['status'] == 'Empty (Gap)' 
+        else random.choice(['Math', 'Arts', 'Mythology', 'Power', 'Mixed']),
+        axis=1
+    )
+    grid_df['subject_code'] = grid_df['primary_subject'].map(subject_colors)
+    
+    # Create heatmap colored by subject
+    pivot_subjects = grid_df.pivot(index='grade', columns='week', values='subject_code')
+    
     fig = go.Figure(data=go.Heatmap(
-        z=pivot_completion.values,
-        x=pivot_completion.columns,
-        y=pivot_completion.index,
+        z=pivot_subjects.values,
+        x=pivot_subjects.columns,
+        y=pivot_subjects.index,
         colorscale=[
-            [0, '#ff4444'],      # Red = Empty gap
-            [0.25, '#ffaa44'],   # Orange = Partial
-            [0.5, '#ffff44'],    # Yellow = AZ CC fill
-            [0.75, '#44ff44'],   # Green = SDA mapped
-            [1.0, '#4444ff']     # Blue = Complete
+            [0, '#cccccc'],      # Gray = Empty
+            [0.2, '#4472C4'],    # Blue = Math
+            [0.4, '#9966CC'],    # Purple = Arts
+            [0.6, '#FF8C42'],    # Orange = Mythology
+            [0.8, '#E74C3C'],    # Red = Power
+            [1.0, '#52C41A']     # Green = Mixed variables
         ],
-        hovertemplate='Grade: %{y}<br>Week: %{x}<br>Completion: %{z:.0f}%<extra></extra>',
+        hovertemplate='Grade: %{y}<br>Week: %{x}<br>Subject: %{z}<extra></extra>',
         colorbar=dict(
-            title="Completion %",
-            tickvals=[0, 25, 50, 75, 100],
-            ticktext=['Empty', 'Partial', 'AZ CC', 'SDA', 'Complete']
-        )
+            title="Subject",
+            tickvals=[0, 1, 2, 3, 4, 5],
+            ticktext=['Empty', 'Math', 'Arts', 'Mythology', 'Power', 'Mixed']
+        ),
+        showscale=True
     ))
     
     fig.update_layout(
-        title="Open Floor Plan: Grade-Week Grid (Red = Gaps to Fill)",
-        xaxis_title="Week Number →",
-        yaxis_title="Grade →",
+        title="Open Floor Plan: No Walls - See All Subjects Across Grades & Weeks",
+        xaxis_title="Week Number (Hallway) →",
+        yaxis_title="Grade (Floor) →",
         height=600,
         xaxis=dict(side='bottom'),
         yaxis=dict(autorange='reversed')
