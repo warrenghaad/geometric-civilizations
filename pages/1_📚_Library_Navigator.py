@@ -26,6 +26,9 @@ Browse organized curriculum materials:
 - **Combined Content** - Mythology, Art, Math, History General, Innovation
 """)
 
+# Get all nodes first
+all_nodes = st.session_state.graph_manager.get_all_nodes()
+
 # Search and filter controls
 col1, col2 = st.columns([3, 1])
 with col1:
@@ -34,9 +37,6 @@ with col2:
     show_all = st.checkbox("Show all details", value=False)
 
 st.divider()
-
-# Get all nodes first
-all_nodes = st.session_state.graph_manager.get_all_nodes()
 
 # Download button
 import json

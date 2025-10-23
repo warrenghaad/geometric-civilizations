@@ -59,7 +59,7 @@ with col_nav1:
 with col_nav2:
     view_mode = st.radio(
         "View Mode",
-        ["All Days", "Teaching Days Only", "By Week", "By Month"],
+        ["All Days", "Teaching Days Only", "By Week", "By Month", "SDA Weekly + AZ CC Daily"],
         horizontal=True
     )
 
@@ -91,6 +91,8 @@ elif view_mode == "By Month":
         format_func=lambda x: months[x]['name']
     )
     display_calendar = months[selected_month]['days']
+elif view_mode == "SDA Weekly + AZ CC Daily":
+    display_calendar = calendar
 else:
     display_calendar = calendar
 
@@ -101,6 +103,8 @@ if view_mode == "By Month":
         ["Monthly Overview", "Full Mapping Table"],
         horizontal=True
     )
+elif view_mode == "SDA Weekly + AZ CC Daily":
+    display_type = "Weekly/Daily Mapping"
 else:
     display_type = st.radio(
         "Display Type",
@@ -179,6 +183,66 @@ if view_mode == "By Month" and display_type == "Monthly Overview":
         file_name=f"mapping_{selected_month}.json",
         mime="application/json"
     )
+
+elif display_type == "Weekly/Daily Mapping":
+    st.markdown("### 📅 SDA Standards (Weekly) + AZ Common Core (Daily)")
+    st.caption("SDA standards map to entire week | AZ CC standards map to individual teaching days")
+    
+    # Group calendar by week
+    weeks = {}
+    for day in calendar:
+        week_num = day['week_number']
+        if week_num not in weeks:
+            weeks[week_num] = []
+        weeks[week_num].append(day)
+    
+    # Display each week
+    for week_num in sorted(weeks.keys()):
+        week_days = weeks[week_num]
+        teaching_days = [d for d in week_days if d['is_teaching_day']]
+        
+        if not teaching_days:
+            continue
+        
+        with st.expander(f"📅 Week {week_num} ({week_days[0]['date_display']} to {week_days[-1]['date_display']})", expanded=(week_num <= 5)):
+            
+            # Show SDA standard for entire week (once)
+            st.markdown("### 🔵 SDA Standard (applies to entire week)")
+            sda_for_week = teaching_days[0].get('sda_standard', '') if teaching_days else ''
+            
+            if sda_for_week:
+                st.info(f"**{sda_for_week}**")
+            else:
+                st.warning("_No SDA standard mapped for this week yet_")
+            
+            st.divider()
+            
+            # Show AZ CC standards for each teaching day
+            st.markdown("### 🟠 AZ Common Core Standards (daily)")
+            
+            for day in teaching_days:
+                col_day, col_standard, col_content = st.columns([1, 2, 2])
+                
+                with col_day:
+                    st.markdown(f"**{day['date_display']}**")
+                    day_name = datetime.strptime(day['date_display'], '%Y-%m-%d').strftime('%A')
+                    st.caption(f"{day_name} (Day {day['day_number']})")
+                
+                with col_standard:
+                    az_cc = day.get('az_cc_standard', '')
+                    if az_cc:
+                        st.success(f"📝 {az_cc}")
+                    else:
+                        st.caption("_No AZ CC standard mapped_")
+                
+                with col_content:
+                    curriculum_obj = day.get('curriculum_objective', '')
+                    if curriculum_obj:
+                        st.markdown(f"📚 {curriculum_obj}")
+                    else:
+                        st.caption("_No curriculum objective_")
+            
+            st.markdown("")
 
 elif display_type == "Table View" or display_type == "Full Mapping Table":
     # Convert to DataFrame for display
