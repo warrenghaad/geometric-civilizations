@@ -11,14 +11,19 @@ if 'graph_manager' not in st.session_state:
     st.session_state.graph_manager.load_from_store(st.session_state.data_store)
 
 st.title("📚 Curriculum Library Navigator")
-st.markdown("### Drill down: Shelf → Row → Book → Page")
+st.markdown("### Browse curriculum resources by category")
 
 st.markdown("""
-Explore your curriculum like a library:
-- **Shelves** = Grade Bands (K-1, 2-3, 4-5, 6, 7, 8)
-- **Rows** = The 4 Variables (History/Mythology, Geometry/Math, Art, SEL)
-- **Books** = Content Types (Lessons, Activities, Assessments, Integration Points)
-- **Pages** = Individual objectives with dimensional depth
+Browse organized curriculum materials:
+- **Lessons** - Daily lesson plans and instructional materials
+- **Research** - Background research and theoretical foundations
+- **Slides** - Presentation materials for instruction
+- **Mapping** - Standards alignment and curriculum maps
+- **Implementation Guides** - How-to guides for teachers
+- **Assessments** - Evaluation tools and rubrics
+- **Hands on Activities** - Physical and interactive projects
+- **Images** - Visual resources and references
+- **Combined Content** - Mythology, Art, Math, History General, Innovation
 """)
 
 # Search and filter controls
@@ -30,93 +35,126 @@ with col2:
 
 st.divider()
 
-# Define the library structure based on grade bands
-grade_bands = {
-    "K-1": ["K", "1"],
-    "2-3": ["2", "3"],
-    "4-5": ["4", "5"],
-    "6": ["6"],
-    "7": ["7"],
-    "8": ["8"]
-}
-
-variables = ["History/Mythology", "Geometry/Math", "Art", "SEL"]
-
-# Get all nodes
+# Get all nodes first
 all_nodes = st.session_state.graph_manager.get_all_nodes()
 
-# Organize nodes by grade and variable
-for shelf_name, grades in grade_bands.items():
-    with st.expander(f"📚 **Shelf: {shelf_name}**", expanded=(shelf_name == "K-1")):
+# Download button
+import json
+mapping_data = {
+    "objectives": {},
+    "standards": {},
+    "calendar": {}
+}
+
+# Collect all objectives
+for node in all_nodes:
+    if ".O" in node:
+        node_data = st.session_state.graph_manager.get_node_data(node)
+        mapping_data["objectives"][node] = node_data
+
+# Create downloadable JSON
+json_str = json.dumps(mapping_data, indent=2)
+st.download_button(
+    label="📥 Download Mapping",
+    data=json_str,
+    file_name="curriculum_mapping.json",
+    mime="application/json",
+    type="primary"
+)
+
+st.divider()
+
+# Define curriculum categories
+curriculum_categories = {
+    "📖 Lessons": "lesson",
+    "🔬 Research": "research", 
+    "📊 Slides": "slides",
+    "🗺️ Mapping": "mapping",
+    "📋 Implementation Guides": "guide",
+    "📝 Assessments": "assessment",
+    "🎨 Hands on Activities": "activity",
+    "🖼️ Images": "image",
+    "🌍 Combined: Mythology": "mythology",
+    "🎭 Combined: Art": "art",
+    "📐 Combined: Math": "math",
+    "📚 Combined: History General": "history",
+    "💡 Combined: Innovation": "innovation"
+}
+
+# Get all objectives
+all_objectives = [n for n in all_nodes if ".O" in n]
+
+if search_term:
+    all_objectives = [n for n in all_objectives 
+                      if search_term.lower() in n.lower() or 
+                      search_term.lower() in st.session_state.graph_manager.get_node_data(n).get('description', '').lower()]
+
+st.markdown(f"**{len(all_objectives)} total objectives** in library")
+st.divider()
+
+# Organize by category
+for category_name, category_key in curriculum_categories.items():
+    with st.expander(f"{category_name}", expanded=False):
         
-        # Get objectives for this grade band
-        shelf_objectives = []
-        for grade in grades:
-            # Match objectives like "K.O1", "1.O2", "2.O3" etc.
-            grade_nodes = [n for n in all_nodes if n.startswith(f"{grade}.O")]
-            shelf_objectives.extend(grade_nodes)
+        # Filter objectives by category keywords
+        category_objectives = []
         
-        if search_term:
-            shelf_objectives = [n for n in shelf_objectives 
-                              if search_term.lower() in n.lower() or 
-                              search_term.lower() in st.session_state.graph_manager.get_node_data(n).get('description', '').lower()]
+        for obj_name in all_objectives:
+            node_data = st.session_state.graph_manager.get_node_data(obj_name)
+            description = node_data.get('description', '').lower()
+            obj_type = node_data.get('type', '').lower()
+            
+            # Match based on category
+            if category_key in ["mythology", "art", "math", "history", "innovation"]:
+                # Subject-based filtering
+                if category_key == "mythology" and any(kw in description for kw in ["myth", "story", "hero", "culture", "retell"]):
+                    category_objectives.append(obj_name)
+                elif category_key == "art" and any(kw in description for kw in ["draw", "create", "design", "visual", "border", "motif"]):
+                    category_objectives.append(obj_name)
+                elif category_key == "math" and any(kw in description for kw in ["shape", "pattern", "symmetry", "angle", "measure", "classify"]):
+                    category_objectives.append(obj_name)
+                elif category_key == "history" and any(kw in description for kw in ["civilization", "timeline", "era", "period"]):
+                    category_objectives.append(obj_name)
+                elif category_key == "innovation" and any(kw in description for kw in ["invent", "create", "design", "problem", "solution"]):
+                    category_objectives.append(obj_name)
+            else:
+                # Resource type filtering (placeholder - could be enhanced with actual tags)
+                category_objectives.append(obj_name)
         
-        if not shelf_objectives:
-            st.info(f"No objectives found for {shelf_name}")
+        if not category_objectives:
+            st.info(f"No content yet in this category")
             continue
         
-        st.markdown(f"**{len(shelf_objectives)} objectives** in this shelf")
+        st.markdown(f"**{len(category_objectives)} items** in this category")
         
-        # Organize by variable (rows)
-        for variable in variables:
-            st.markdown(f"#### 📖 Row: {variable}")
+        # Display objectives grouped by grade
+        grades = ['K', '1', '2', '3', '4', '5', '6', '7', '8']
+        for grade in grades:
+            grade_objs = [o for o in category_objectives if o.startswith(f"{grade}.O")]
             
-            # Filter objectives by variable
-            if variable == "History/Mythology":
-                var_keywords = ["myth", "retell", "story", "culture", "hero", "character"]
-            elif variable == "Geometry/Math":
-                var_keywords = ["shape", "pattern", "symmetry", "angle", "measure", "classify", 
-                               "quadrilateral", "tessellation", "coordinate", "ratio"]
-            elif variable == "Art":
-                var_keywords = ["draw", "create", "design", "border", "motif", "visual"]
-            else:  # SEL
-                var_keywords = ["calm", "breathing", "feeling", "mindful", "emotion", "respectful"]
-            
-            row_objectives = [n for n in shelf_objectives 
-                            if any(kw in n.lower() or 
-                                  kw in st.session_state.graph_manager.get_node_data(n).get('description', '').lower()
-                                  for kw in var_keywords)]
-            
-            if row_objectives:
-                # Group by content type (simulated - could be enhanced with actual tags)
-                for obj_name in row_objectives[:10]:  # Limit display
+            if grade_objs:
+                st.markdown(f"#### Grade {grade}")
+                
+                for obj_name in grade_objs[:5]:  # Show first 5 per grade
                     node_data = st.session_state.graph_manager.get_node_data(obj_name)
                     
                     col_a, col_b, col_c = st.columns([3, 1, 1])
                     with col_a:
-                        st.markdown(f"**📄 {obj_name}**")
+                        st.markdown(f"**{obj_name}**")
                         if show_all:
-                            st.caption(node_data.get('description', '')[:200])
+                            st.caption(node_data.get('description', '')[:150])
                     with col_b:
-                        dim_level = node_data.get('dimensional_level', 'Not set')
+                        dim_level = node_data.get('dimensional_level', '')
                         if dim_level:
-                            st.badge(dim_level, type="secondary")
+                            st.caption(f"📊 {dim_level}")
                     with col_c:
-                        status = node_data.get('status', 'not-started')
-                        status_colors = {
-                            'complete': '🟢',
-                            'in-progress': '🟡',
-                            'planned': '🔵',
-                            'not-started': '⚪'
-                        }
-                        st.markdown(f"{status_colors.get(status, '⚪')} {status}")
+                        if node_data.get('variables'):
+                            st.caption(f"🏷️ {', '.join(node_data['variables'][:2])}")
                 
-                if len(row_objectives) > 10:
-                    st.caption(f"... and {len(row_objectives) - 10} more")
-            else:
-                st.caption(f"_No {variable} objectives yet_")
-            
-            st.markdown("")  # Spacing
+                if len(grade_objs) > 5:
+                    st.caption(f"... and {len(grade_objs) - 5} more for Grade {grade}")
+                
+                st.markdown("")
 
 st.divider()
 st.caption("💡 Use the Manage Content page to add more objectives and tag them with variables, dimensions, and eras.")
