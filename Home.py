@@ -5,8 +5,8 @@ from data_store import DataStore
 
 # Must be the first Streamlit command
 st.set_page_config(
-    page_title="Pyramidic Curriculum Ziggurat",
-    page_icon="🏛️",
+    page_title="SDA Mesa/Phoenix Curriculum Mapper",
+    page_icon="🏫",
     layout="wide"
 )
 
@@ -17,42 +17,36 @@ if 'graph_manager' not in st.session_state:
     st.session_state.selected_node = None
     st.session_state.graph_manager.load_from_store(st.session_state.data_store)
 
-st.title("🏛️ Pyramidic Curriculum Ziggurat")
-st.markdown("### Multi-Dimensional K-8 Integrated Curriculum Design System")
+st.title("🏫 SDA Mesa/Phoenix K-8 Curriculum Mapper")
+st.markdown("### 2025-2026 School Year • 180 Days • Twice Weekly (72 Teaching Days)")
 
 st.markdown("""
-Welcome to your curriculum design ziggurat—a multi-layered visualization and planning tool 
-that maps **Standards**, **Variables** (Math, Arts, Mythology, Power), **Cognitive Domains**, 
-**Historical Eras**, and **Dimensional Complexity** across 9 grades.
+This is your curriculum mapping and visualization tool for the SDA Mesa/Phoenix integrated K-8 program.
+
+Map **SDA Standards** and **AZ Common Core** to a **180-day calendar**, organized across:
+- **4 Variables**: Math, Arts, Mythology, Power
+- **9 Cognitive Domains**: Neuroscience-based learning targets
+- **Dimensional Levels**: D1a → D4 complexity assessment
+- **School Building Metaphor**: Open floor plan showing horizontal (weekly) and vertical (K-8) alignment
 
 ### Navigation
 
-Use the sidebar to explore different views of your curriculum:
+Use the sidebar to explore:
 
-- **🏛️ Ziggurat View (3D)**: See the full pyramid structure with all layers stacked
-- **📚 Library Navigator**: Drill down shelf → row → content (grade → variable → lesson type)
-- **🔍 Layer Slicer**: View horizontal slices (just standards, just D4 peaks, etc.)
-- **🔗 Verb Network**: Search by cognitive verb to see connections
-- **📅 Timeline Calendar**: Twice-weekly schedule with historical eras
-- **⚙️ Variables Dashboard**: Explore Math, Arts, Mythology, Power interactions
-- **✏️ Manage Content**: Add/edit nodes and relationships
+- **📚 Library Navigator**: Browse curriculum by category (Lessons, Research, Slides, Mapping, etc.)
+- **📆 School Calendar**: Map standards to the 180-day calendar (view by week, month, or SDA/AZ CC)
+- **🏫 School Building**: 2D grid views showing standards coverage across grade-week cells
+- **⚙️ Variables Dashboard**: Explore the 4 Variables and their intersections
+- **✏️ Manage Content**: Add/edit objectives, standards, and relationships
 
-### The Pyramid Structure
+### School Building Metaphor
 
-**Foundation (Bottom)**  
-Arizona Common Core + SDA School Standards — 72 twice-weekly lessons per grade
-
-**Layer 2: The 4 Variables**  
-Math • Arts • Mythology • Power (woven as context/gatekeeping)
-
-**Layer 3: 2D Work Squares**  
-Variable pairs creating "area of work" (Math+Arts, Myth+Power, etc.)
-
-**Layer 4: Truncated Pyramids**  
-Incremental improvements stacking (smaller work squares)
-
-**Peak: Invention**  
-Where all 4 variables align → breakthrough insight
+Think of curriculum as an **open floor plan school building**:
+- **Grades = Rooms** (K through 8)
+- **Weeks = Hallways** (horizontal alignment)
+- **Standards = Plumbing** (vertical progression K→8)
+- **Cognitive Domains = Wiring** (neural activation patterns)
+- **Students = Objectives** (placed in grade-week rooms)
 
 ### Cross-Cutting Networks
 

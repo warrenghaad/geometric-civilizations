@@ -1,12 +1,14 @@
-# 3D Curriculum & Database Relationship Mapper
+# SDA Mesa/Phoenix K-8 Curriculum Mapper
 
 ## Overview
 
-This is a Streamlit-based web application that creates interactive 3D visualizations of curriculum structures and database relationships. Users can build and explore knowledge graphs by adding nodes (courses, modules, concepts, databases, tables, schemas), defining relationships between them, and attaching images for reference. The application uses NetworkX for graph management and Plotly for 3D visualization, with persistent storage of graph data in JSON format.
+This is a Streamlit-based web application for mapping and visualizing the SDA Mesa/Phoenix integrated K-8 curriculum for the 2025-2026 school year (180 days, 72 teaching days on Tue/Thu). The system maps SDA standards and AZ Common Core standards to a school calendar, organizing content across 4 Variables (Math, Arts, Mythology, Power), 9 cognitive neuroscience domains, and dimensional assessment levels (D1a-D4). Visualization uses a "school building" metaphor with open floor plan showing horizontal (cross-grade weekly alignment) and vertical (K-8 progression) standards mapping through 2D grid interfaces.
 
 ## User Preferences
 
-Preferred communication style: Simple, everyday language.
+- Preferred communication style: Simple, everyday language
+- **Important:** NO pyramid/ziggurat metaphor - it interferes with curriculum design philosophy
+- Use "school building" metaphor instead (open floor plan, grades=rooms, weeks=hallways, standards=plumbing, cognitive domains=wiring)
 
 ## System Architecture
 

@@ -16,10 +16,10 @@ st.markdown("### The 4 Forces of Cultural Innovation")
 st.markdown("""
 Explore how **Math**, **Arts**, **Mythology**, and **Power** interact across your curriculum.
 
-**The Pyramidic Principle:**  
+**Variable Interactions:**  
 - **2 variables** interact → create a 2D Work Square (area = labor required)
-- **Small discoveries** → stack as truncated pyramid layers
-- **All 4 variables align** → emergent insight → INVENTION (new pyramid rises)
+- **Incremental discoveries** → build understanding over time
+- **All 4 variables align** → emergent insight → INVENTION moment
 """)
 
 # Variable selector
@@ -78,7 +78,7 @@ with variable_tabs[2]:  # Mythology
     - Reveals culture's values, hierarchies, cosmic order
     - Connected to SEL (emotions, ethics, meaning)
     
-    *Why build a pyramid? Why perfect astronomy? Why create cathedrals?*
+    *Why build monuments? Why perfect astronomy? Why create cathedrals?*
     """)
     
     myth_nodes = [n for n in all_nodes if 'Myth' in n or 'Culture' in n or 'SEL' in n]
@@ -132,7 +132,7 @@ with variable_tabs[4]:  # Work Squares
     
     Examples:
     - **Math + Arts:** Potter learns circular motion → symmetrical vessels
-    - **Mythology + Power:** Divine kingship belief → pharaoh organizes pyramid labor
+    - **Mythology + Power:** Divine kingship belief → pharaoh organizes monumental labor
     - **Arts + Power:** Fashion/textiles → reinforce class hierarchies
     """)
     
@@ -154,7 +154,7 @@ with variable_tabs[4]:  # Work Squares
 st.divider()
 st.markdown("### Next Steps")
 st.info("""
-**To build your pyramidic curriculum:**
+**To build your curriculum:**
 1. Tag objectives with the variables they engage (use Manage Content page)
 2. Look for moments where all 4 variables align → mark as D4 (What-if/Invention)
 3. Map historical eras where each variable was particularly strong
