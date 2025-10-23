@@ -59,7 +59,7 @@ with col_nav1:
 with col_nav2:
     view_mode = st.radio(
         "View Mode",
-        ["All Days", "Teaching Days Only", "By Week"],
+        ["All Days", "Teaching Days Only", "By Week", "By Month"],
         horizontal=True
     )
 
@@ -74,17 +74,113 @@ if view_mode == "Teaching Days Only":
     display_calendar = [d for d in calendar if d['is_teaching_day']]
 elif view_mode == "By Week":
     display_calendar = [d for d in calendar if d['week_number'] == selected_week]
+elif view_mode == "By Month":
+    # Group by month
+    months = {}
+    for day in calendar:
+        date_obj = datetime.strptime(day['date_display'], '%Y-%m-%d')
+        month_key = date_obj.strftime('%Y-%m')
+        month_name = date_obj.strftime('%B %Y')
+        if month_key not in months:
+            months[month_key] = {'name': month_name, 'days': []}
+        months[month_key]['days'].append(day)
+    
+    selected_month = st.selectbox(
+        "Select Month",
+        options=list(months.keys()),
+        format_func=lambda x: months[x]['name']
+    )
+    display_calendar = months[selected_month]['days']
 else:
     display_calendar = calendar
 
 # Display mode selector
-display_type = st.radio(
-    "Display Type",
-    ["Table View", "Edit Mode (Week by Week)"],
-    horizontal=True
-)
+if view_mode == "By Month":
+    display_type = st.radio(
+        "Display Type",
+        ["Monthly Overview", "Full Mapping Table"],
+        horizontal=True
+    )
+else:
+    display_type = st.radio(
+        "Display Type",
+        ["Table View", "Edit Mode (Week by Week)"],
+        horizontal=True
+    )
 
-if display_type == "Table View":
+if view_mode == "By Month" and display_type == "Monthly Overview":
+    # Monthly overview with complete mapping
+    st.markdown(f"### {months[selected_month]['name']} - Complete Curriculum Mapping")
+    
+    # Group by week within the month
+    weeks_in_month = {}
+    for day in display_calendar:
+        week_num = day['week_number']
+        if week_num not in weeks_in_month:
+            weeks_in_month[week_num] = []
+        weeks_in_month[week_num].append(day)
+    
+    # Display each week
+    for week_num in sorted(weeks_in_month.keys()):
+        week_days = weeks_in_month[week_num]
+        teaching_days = [d for d in week_days if d['is_teaching_day']]
+        
+        with st.expander(f"📅 **Week {week_num}** ({week_days[0]['date_display']} to {week_days[-1]['date_display']}) - {len(teaching_days)} teaching days", expanded=True):
+            
+            if not teaching_days:
+                st.info("No teaching days this week")
+                continue
+            
+            # Show teaching days with full mapping
+            for day in teaching_days:
+                col_date, col_standards, col_content = st.columns([1, 2, 2])
+                
+                with col_date:
+                    st.markdown(f"**{day['date_display']}**")
+                    st.caption(f"Day {day['day_number']}")
+                
+                with col_standards:
+                    st.markdown("**Standards Mapped:**")
+                    if day.get('sda_standard'):
+                        st.markdown(f"🔵 SDA: {day['sda_standard']}")
+                    if day.get('az_cc_standard'):
+                        st.markdown(f"🟠 AZ CC: {day['az_cc_standard']}")
+                    if not day.get('sda_standard') and not day.get('az_cc_standard'):
+                        st.caption("_No standards mapped yet_")
+                
+                with col_content:
+                    st.markdown("**Content:**")
+                    if day.get('curriculum_objective'):
+                        st.markdown(f"📚 {day['curriculum_objective']}")
+                    if day.get('historical_content'):
+                        st.markdown(f"🏛️ {day['historical_content']}")
+                    if not day.get('curriculum_objective') and not day.get('historical_content'):
+                        st.caption("_No content mapped yet_")
+                
+                st.divider()
+    
+    # Download monthly mapping
+    st.divider()
+    import json
+    month_mapping = {
+        'month': months[selected_month]['name'],
+        'teaching_days': len([d for d in display_calendar if d['is_teaching_day']]),
+        'weeks': {}
+    }
+    
+    for week_num in sorted(weeks_in_month.keys()):
+        week_days = [d for d in weeks_in_month[week_num] if d['is_teaching_day']]
+        month_mapping['weeks'][f'Week_{week_num}'] = week_days
+    
+    json_str = json.dumps(month_mapping, indent=2)
+    st.download_button(
+        label=f"📥 Download {months[selected_month]['name']} Mapping",
+        data=json_str,
+        file_name=f"mapping_{selected_month}.json",
+        mime="application/json"
+    )
+
+elif display_type == "Table View" or display_type == "Full Mapping Table":
     # Convert to DataFrame for display
     df = pd.DataFrame(display_calendar)
     
