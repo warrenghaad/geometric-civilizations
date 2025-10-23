@@ -1,6 +1,7 @@
 import streamlit as st
 from graph_manager import GraphManager
 from data_store import DataStore
+import os
 
 st.set_page_config(page_title="Library Navigator", page_icon="📚", layout="wide")
 
@@ -96,6 +97,62 @@ st.divider()
 for category_name, category_key in curriculum_categories.items():
     with st.expander(f"{category_name}", expanded=False):
         
+        # Special handling for Images category
+        if category_key == "image":
+            st.markdown("### Visual Resources Gallery")
+            
+            # Get all images from both directories
+            all_image_files = []
+            images_dir = "data/images"
+            stock_images_dir = "attached_assets/stock_images"
+            
+            if os.path.exists(images_dir):
+                for filename in os.listdir(images_dir):
+                    if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):
+                        all_image_files.append(os.path.join(images_dir, filename))
+            
+            if os.path.exists(stock_images_dir):
+                for filename in os.listdir(stock_images_dir):
+                    if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):
+                        all_image_files.append(os.path.join(stock_images_dir, filename))
+            
+            if not all_image_files:
+                st.info("No images yet. Visit the 🖼️ Image Library page to find historical design motifs.")
+            else:
+                st.markdown(f"**{len(all_image_files)} images** in library")
+                
+                # Display in grid
+                cols_per_row = 4
+                for i in range(0, min(12, len(all_image_files)), cols_per_row):
+                    cols = st.columns(cols_per_row)
+                    
+                    for j, col in enumerate(cols):
+                        if i + j < len(all_image_files):
+                            img_path = all_image_files[i + j]
+                            filename = os.path.basename(img_path)
+                            
+                            with col:
+                                try:
+                                    st.image(img_path, use_container_width=True)
+                                    st.caption(filename[:30])
+                                    
+                                    # Show linked objectives
+                                    linked = []
+                                    for node in all_objectives:
+                                        node_data = st.session_state.graph_manager.get_node_data(node)
+                                        if img_path in node_data.get('images', []):
+                                            linked.append(node)
+                                    
+                                    if linked:
+                                        st.caption(f"🔗 {linked[0]}")
+                                except:
+                                    st.caption(f"⚠️ {filename}")
+                
+                if len(all_image_files) > 12:
+                    st.caption(f"... and {len(all_image_files) - 12} more images. Visit 🖼️ Image Library to browse all.")
+            
+            continue
+        
         # Filter objectives by category keywords
         category_objectives = []
         
@@ -143,6 +200,18 @@ for category_name, category_key in curriculum_categories.items():
                         st.markdown(f"**{obj_name}**")
                         if show_all:
                             st.caption(node_data.get('description', '')[:150])
+                        
+                        # Show image thumbnails if any
+                        if node_data.get('images'):
+                            img_count = len(node_data['images'])
+                            st.caption(f"🖼️ {img_count} image{'s' if img_count > 1 else ''}")
+                            
+                            if show_all and img_count > 0:
+                                try:
+                                    st.image(node_data['images'][0], width=100)
+                                except:
+                                    pass
+                    
                     with col_b:
                         dim_level = node_data.get('dimensional_level', '')
                         if dim_level:
