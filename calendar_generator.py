@@ -85,7 +85,8 @@ class SchoolCalendar:
             school_day_count += 1
             days_in_current_week += 1
             
-            # Determine if this is a teaching day (twice weekly - let's say Tuesday and Thursday)
+            # SDA teaching days are Tuesday and Thursday (twice weekly)
+            # But AZ CC standards can map to any day (everyday)
             is_teaching_day = current_date.weekday() in [1, 3]  # 1=Tuesday, 3=Thursday
             
             calendar.append({
@@ -117,7 +118,7 @@ class SchoolCalendar:
         return [day for day in calendar if day['week_number'] == week_num]
     
     def get_teaching_days_only(self, calendar: List[Dict]) -> List[Dict]:
-        """Filter to only teaching days (twice weekly)"""
+        """Filter to only SDA teaching days (Tue/Thu - twice weekly)"""
         return [day for day in calendar if day['is_teaching_day']]
     
     def find_current_week(self, calendar: List[Dict]) -> int:

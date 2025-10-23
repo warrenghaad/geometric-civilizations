@@ -18,7 +18,7 @@ if 'graph_manager' not in st.session_state:
     st.session_state.graph_manager.load_from_store(st.session_state.data_store)
 
 st.title("🏫 SDA Mesa/Phoenix K-8 Curriculum Mapper")
-st.markdown("### 2025-2026 School Year • 180 Days • Twice Weekly (72 Teaching Days)")
+st.markdown("### 2025-2026 School Year • SDA Twice Weekly • AZ CC Everyday")
 
 st.markdown("""
 This is your curriculum mapping and visualization tool for the SDA Mesa/Phoenix integrated K-8 program.

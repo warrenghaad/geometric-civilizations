@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a Streamlit-based web application for mapping and visualizing the SDA Mesa/Phoenix integrated K-8 curriculum for the 2025-2026 school year (180 days, 72 teaching days on Tue/Thu). The system maps SDA standards and AZ Common Core standards to a school calendar, organizing content across 4 Variables (Math, Arts, Mythology, Power), 9 cognitive neuroscience domains, and dimensional assessment levels (D1a-D4). Visualization uses a "school building" metaphor with open floor plan showing horizontal (cross-grade weekly alignment) and vertical (K-8 progression) standards mapping through 2D grid interfaces.
+This is a Streamlit-based web application for mapping and visualizing the SDA Mesa/Phoenix integrated K-8 curriculum for the 2025-2026 school year (180 school days). SDA curriculum is taught twice weekly (Tue/Thu, ~72 lessons per year), while AZ Common Core standards map to everyday instruction. The system organizes content across 4 Variables (Math, Arts, Mythology, Power), 9 cognitive neuroscience domains, and dimensional assessment levels (D1a-D4). Visualization uses a "school building" metaphor with open floor plan showing horizontal (cross-grade weekly alignment) and vertical (K-8 progression) standards mapping through 2D grid interfaces.
 
 ## User Preferences
 

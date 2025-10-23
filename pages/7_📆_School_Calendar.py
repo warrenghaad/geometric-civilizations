@@ -6,7 +6,7 @@ from datetime import datetime
 st.set_page_config(page_title="School Calendar", page_icon="📆", layout="wide")
 
 st.title("📆 2025-2026 School Calendar")
-st.markdown("### 180 School Days • SDA & AZ CC Standards Mapping")
+st.markdown("### 180 School Days • SDA (Tue/Thu) • AZ CC (Everyday)")
 
 # Initialize calendar
 if 'school_calendar' not in st.session_state:
@@ -32,7 +32,7 @@ with col1:
     st.metric("Total School Days", len(calendar))
 with col2:
     teaching_days = [d for d in calendar if d['is_teaching_day']]
-    st.metric("Teaching Days (Tue/Thu)", len(teaching_days))
+    st.metric("SDA Days (Tue/Thu)", len(teaching_days))
 with col3:
     mapped_days = [d for d in calendar if d.get('sda_standard') or d.get('az_cc_standard')]
     st.metric("Days Mapped", len(mapped_days))
