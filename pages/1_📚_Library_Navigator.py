@@ -116,40 +116,115 @@ for category_name, category_key in curriculum_categories.items():
                     if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):
                         all_image_files.append(os.path.join(stock_images_dir, filename))
             
-            if not all_image_files:
-                st.info("No images yet. Visit the 🖼️ Image Library page to find historical design motifs.")
-            else:
-                st.markdown(f"**{len(all_image_files)} images** in library")
+            # Always show search and filter controls (even if no images yet)
+            if True:
+                # Search and filter controls for images
+                col_img_search, col_img_filter = st.columns([3, 1])
                 
-                # Display in grid
-                cols_per_row = 4
-                for i in range(0, min(12, len(all_image_files)), cols_per_row):
-                    cols = st.columns(cols_per_row)
-                    
-                    for j, col in enumerate(cols):
-                        if i + j < len(all_image_files):
-                            img_path = all_image_files[i + j]
-                            filename = os.path.basename(img_path)
-                            
-                            with col:
-                                try:
-                                    st.image(img_path, use_container_width=True)
-                                    st.caption(filename[:30])
-                                    
-                                    # Show linked objectives
-                                    linked = []
-                                    for node in all_objectives:
-                                        node_data = st.session_state.graph_manager.get_node_data(node)
-                                        if img_path in node_data.get('images', []):
-                                            linked.append(node)
-                                    
-                                    if linked:
-                                        st.caption(f"🔗 {linked[0]}")
-                                except:
-                                    st.caption(f"⚠️ {filename}")
+                with col_img_search:
+                    img_search = st.text_input(
+                        "🔍 Search images by filename or motif",
+                        key="img_search",
+                        placeholder="e.g., 'greek', 'lotus', 'arabesque', 'gothic'"
+                    )
                 
-                if len(all_image_files) > 12:
-                    st.caption(f"... and {len(all_image_files) - 12} more images. Visit 🖼️ Image Library to browse all.")
+                with col_img_filter:
+                    show_linked_only = st.checkbox("Linked only", key="img_linked_only")
+                
+                # Filter images based on search term
+                filtered_images = all_image_files
+                
+                if img_search:
+                    filtered_images = [img for img in all_image_files 
+                                     if img_search.lower() in os.path.basename(img).lower()]
+                
+                # Filter by linked status
+                if show_linked_only:
+                    linked_images = []
+                    for img_path in filtered_images:
+                        for node in all_objectives:
+                            node_data = st.session_state.graph_manager.get_node_data(node)
+                            if img_path in node_data.get('images', []):
+                                linked_images.append(img_path)
+                                break
+                    filtered_images = linked_images
+                
+                st.markdown(f"**{len(filtered_images)} of {len(all_image_files)} images** displayed")
+                
+                if len(all_image_files) == 0:
+                    st.info("No images yet. Visit the 🖼️ Image Library page to find historical design motifs.")
+                elif not filtered_images:
+                    st.info("No images match your search criteria.")
+                else:
+                    # Display in grid (show all matching images)
+                    cols_per_row = 4
+                    for i in range(0, len(filtered_images), cols_per_row):
+                        cols = st.columns(cols_per_row)
+                        
+                        for j, col in enumerate(cols):
+                            if i + j < len(filtered_images):
+                                img_path = filtered_images[i + j]
+                                filename = os.path.basename(img_path)
+                                
+                                with col:
+                                    try:
+                                        st.image(img_path, use_container_width=True)
+                                        st.caption(filename[:30])
+                                        
+                                        # Show linked objectives with details
+                                        linked = []
+                                        for node in all_objectives:
+                                            node_data = st.session_state.graph_manager.get_node_data(node)
+                                            if img_path in node_data.get('images', []):
+                                                linked.append(node)
+                                        
+                                        if linked:
+                                            st.caption(f"🔗 {len(linked)} objective{'s' if len(linked) > 1 else ''}")
+                                            for link_node in linked[:2]:
+                                                st.caption(f"  • {link_node}")
+                                            if len(linked) > 2:
+                                                st.caption(f"  • +{len(linked) - 2} more")
+                                        else:
+                                            st.caption("📌 Not linked")
+                                    except:
+                                        st.caption(f"⚠️ {filename}")
+                
+                # Quick motif category filters
+                st.markdown("---")
+                st.markdown("**Quick Filters by Historical Period:**")
+                
+                col_f1, col_f2, col_f3, col_f4 = st.columns(4)
+                with col_f1:
+                    if st.button("🏛️ Egyptian", key="filter_egyptian"):
+                        st.session_state.img_search = "egyptian"
+                        st.rerun()
+                    if st.button("🏺 Greek", key="filter_greek"):
+                        st.session_state.img_search = "greek"
+                        st.rerun()
+                
+                with col_f2:
+                    if st.button("🏟️ Roman", key="filter_roman"):
+                        st.session_state.img_search = "roman"
+                        st.rerun()
+                    if st.button("✨ Byzantine", key="filter_byzantine"):
+                        st.session_state.img_search = "byzantine"
+                        st.rerun()
+                
+                with col_f3:
+                    if st.button("🕌 Islamic", key="filter_islamic"):
+                        st.session_state.img_search = "islamic"
+                        st.rerun()
+                    if st.button("⛪ Gothic", key="filter_gothic"):
+                        st.session_state.img_search = "gothic"
+                        st.rerun()
+                
+                with col_f4:
+                    if st.button("🎨 Renaissance", key="filter_renaissance"):
+                        st.session_state.img_search = "renaissance"
+                        st.rerun()
+                    if st.button("🔄 Clear", key="filter_clear"):
+                        st.session_state.img_search = ""
+                        st.rerun()
             
             continue
         
