@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandala of Pattern Development - Viewer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      color: #FFD700;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .header p {
+      font-size: 1.1em;
+      color: #87CEEB;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .svg-container {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .svg-container svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .controls {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .button {
+      background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 5px;
+      font-size: 1em;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+    }
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .info-box h2 {
+      color: #FFD700;
+      margin-bottom: 15px;
+    }
+
+    .info-box ul {
+      color: #E0E0E0;
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    .info-box ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🔺 Mandala of Pattern Development 🔺</h1>
+    <p>A visual journey through geometric pattern evolution across civilizations and time</p>
+  </div>
+
+  <div class="svg-container">
+    <object data="mandala-pattern-visualization.svg" type="image/svg+xml" style="width: 100%; height: auto;">
+      Your browser does not support SVG
+    </object>
+  </div>
+
+  <div class="controls">
+    <button class="button" onclick="downloadSVG()">💾 Download SVG</button>
+    <button class="button" onclick="viewRaw()">📄 View Raw SVG</button>
+    <button class="button" onclick="window.location.href='Geometric Civilizations - Interactive Home Page (1).html'">🏠 Back to Home</button>
+  </div>
+
+  <div class="info-box">
+    <h2>About This Visualization</h2>
+    <ul>
+      <li><strong>Structure:</strong> Concentric rings represent historical eras from prehistory (center) to modern computational age (outer)</li>
+      <li><strong>Sectors:</strong> Different radial sections represent various civilizations and their contributions</li>
+      <li><strong>Icons:</strong> Geometric motifs characteristic of each civilization and era</li>
+      <li><strong>Arrow:</strong> Indicates the progression from observational patterns to formal and generative systems</li>
+      <li><strong>Layers:</strong> The visualization uses proper SVG layering to ensure all elements are visible:
+        <ul style="margin-top: 10px;">
+          <li>Layer 1: Background gradient</li>
+          <li>Layer 2: Title and subtitle text</li>
+          <li>Layer 3: Concentric ring circles</li>
+          <li>Layer 4: Radial arrow (semi-transparent)</li>
+          <li>Layer 5: Cultural and historical icons</li>
+          <li>Layer 6: Text labels (always on top)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    function downloadSVG() {
+      const link = document.createElement('a');
+      link.href = 'mandala-pattern-visualization.svg';
+      link.download = 'mandala-pattern-visualization.svg';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function viewRaw() {
+      window.open('mandala-pattern-visualization.svg', '_blank');
+    }
+  </script>
+</body>
+</html>
