@@ -6,20 +6,20 @@
     "lessonNumber": 5,
     "duration": 50,
     "mathConcept": "Solve ratio problems",
-    "geometricConcept": "Muqarnas tiers",
-    "civilization": "Islamic",
+    "geometricConcept": "Ziggurat tier ratios",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "solve ratio problems",
-      "muqarnas tiers",
-      "islamic"
+      "ziggurat tier ratios",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Design a symbol using Muqarnas to represent a challenge you've overcome. What does the geometry reveal?",
+    "prompt": "Design a symbol using Ziggurat to represent a challenge you've overcome. What does the geometry reveal?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Fatima the Tiler",
-      "role": "Pattern master",
-      "imageUrl": "assets/characters/islamic-character.png",
-      "biography": "Fatima the Tiler uses muqarnas to solve problems about solve ratio problems."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses ziggurat to solve problems about solve ratio problems."
     },
-    "narrative": "Follow Fatima the Tiler as they discover how muqarnas tiers helps them understand solve ratio problems. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how ziggurat tier ratios helps them understand solve ratio problems. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does muqarnas help us think about solve ratio problems?"
+    "questionPrompt": "How does ziggurat help us think about solve ratio problems?"
   },
   "myth": {
-    "title": "TBD: Myth for Islamic",
-    "civilization": "Islamic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Muqarnas honeycomb vaults",
-      "civilization": "Islamic",
+      "title": "Ziggurat tier calculations",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-5-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals muqarnas structure in Muqarnas honeycomb vaults"
+          "description": "Overlay reveals ziggurat structure in Ziggurat tier calculations"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the muqarnas tiers visible in this artifact."
+      "teachingNotes": "Highlight the ziggurat tier ratios visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "7-tier proportion systems",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-5-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals ziggurat structure in 7-tier proportion systems"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the ziggurat tier ratios visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Solve ratio problems with Muqarnas tiers",
-    "objective": "Students will apply solve ratio problems using muqarnas tiers.",
+    "title": "Solve ratio problems with Ziggurat tier ratios",
+    "objective": "Students will apply solve ratio problems using ziggurat tier ratios.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Cell rhythm",
+    "title": "Step height proportions",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Muqarnas tiers",
+    "title": "Ziggurat tier ratios",
     "concept": "Tier scaling",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Solve ratio problems to Muqarnas tiers",
-    "mathToArt": "Math concept solve ratio problems illuminates artistic thinking in cell rhythm.",
-    "artToGeometry": "Artistic expression reveals geometric structure: muqarnas tiers.",
-    "synthesis": "Tier scaling and cell rhythm are two views of the same cognitive tool.",
+    "title": "Connecting Solve ratio problems to Ziggurat tier ratios",
+    "mathToArt": "Math concept solve ratio problems illuminates artistic thinking in step height proportions.",
+    "artToGeometry": "Artistic expression reveals geometric structure: ziggurat tier ratios.",
+    "synthesis": "Tier scaling and step height proportions are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-5-bridge.svg"
   },
   "exit": {
-    "prompt": "How does muqarnas help you think about solve ratio problems?",
+    "prompt": "How does ziggurat help you think about solve ratio problems?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Islamic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

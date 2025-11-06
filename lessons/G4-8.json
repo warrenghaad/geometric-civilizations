@@ -6,20 +6,20 @@
     "lessonNumber": 8,
     "duration": 50,
     "mathConcept": "Fractions to decimals",
-    "geometricConcept": "Foils/tracery",
-    "civilization": "Gothic",
+    "geometricConcept": "Multi-petal rosettes",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "fractions to decimals",
-      "foils/tracery",
-      "gothic"
+      "multi-petal rosettes",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Create a geometric design that represents something you're proud of. How does Foils/tracery help tell your story?",
+    "prompt": "Create a geometric design that represents something you're proud of. How does Multi-petal help tell your story?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Pierre the Mason",
-      "role": "Cathedral builder",
-      "imageUrl": "assets/characters/gothic-character.png",
-      "biography": "Pierre the Mason uses foils/tracery to solve problems about fractions to decimals."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses multi-petal to solve problems about fractions to decimals."
     },
-    "narrative": "Follow Pierre the Mason as they discover how foils/tracery helps them understand fractions to decimals. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how multi-petal rosettes helps them understand fractions to decimals. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does foils/tracery help us think about fractions to decimals?"
+    "questionPrompt": "How does multi-petal help us think about fractions to decimals?"
   },
   "myth": {
-    "title": "TBD: Myth for Gothic",
-    "civilization": "Gothic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Quatrefoil from circles",
-      "civilization": "Gothic",
+      "title": "6-fold and 12-fold seals",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-8-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals foils/tracery structure in Quatrefoil from circles"
+          "description": "Overlay reveals multi-petal structure in 6-fold and 12-fold seals"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the foils/tracery visible in this artifact."
+      "teachingNotes": "Highlight the multi-petal rosettes visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Petal division studies",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-8-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals multi-petal structure in Petal division studies"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the multi-petal rosettes visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Fractions to decimals with Foils/tracery",
-    "objective": "Students will apply fractions to decimals using foils/tracery.",
+    "title": "Fractions to decimals with Multi-petal rosettes",
+    "objective": "Students will apply fractions to decimals using multi-petal rosettes.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Lobed composition",
+    "title": "6-petal to 12-petal",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Foils/tracery",
+    "title": "Multi-petal rosettes",
     "concept": "Chord geometry",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Fractions to decimals to Foils/tracery",
-    "mathToArt": "Math concept fractions to decimals illuminates artistic thinking in lobed composition.",
-    "artToGeometry": "Artistic expression reveals geometric structure: foils/tracery.",
-    "synthesis": "Chord geometry and lobed composition are two views of the same cognitive tool.",
+    "title": "Connecting Fractions to decimals to Multi-petal rosettes",
+    "mathToArt": "Math concept fractions to decimals illuminates artistic thinking in 6-petal to 12-petal.",
+    "artToGeometry": "Artistic expression reveals geometric structure: multi-petal rosettes.",
+    "synthesis": "Chord geometry and 6-petal to 12-petal are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-8-bridge.svg"
   },
   "exit": {
-    "prompt": "How does foils/tracery help you think about fractions to decimals?",
+    "prompt": "How does multi-petal help you think about fractions to decimals?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Gothic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

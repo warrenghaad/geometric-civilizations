@@ -6,16 +6,16 @@
     "lessonNumber": 11,
     "duration": 50,
     "mathConcept": "Tables revisit",
-    "geometricConcept": "Wallpaper densities",
-    "civilization": "Cross-cultural",
+    "geometricConcept": "Wallpaper pattern density",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "tables revisit",
-      "wallpaper densities",
-      "cross-cultural"
+      "wallpaper pattern density",
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/cross-cultural-character.png",
-      "biography": "Kira the Cave Keeper uses wallpaper to solve problems about tables revisit."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses wallpaper to solve problems about tables revisit."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how wallpaper densities helps them understand tables revisit. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how wallpaper pattern density helps them understand tables revisit. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does wallpaper help us think about tables revisit?"
   },
   "myth": {
-    "title": "TBD: Myth for Cross-cultural",
-    "civilization": "Cross-cultural",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Roman vs Islamic tiling",
-      "civilization": "Cross-cultural",
+      "title": "Palace wall pattern density",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-11-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals wallpaper structure in Roman vs Islamic tiling"
+          "description": "Overlay reveals wallpaper structure in Palace wall pattern density"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the wallpaper densities visible in this artifact."
+      "teachingNotes": "Highlight the wallpaper pattern density visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Repeat unit analysis",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-11-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals wallpaper structure in Repeat unit analysis"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the wallpaper pattern density visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Tables revisit with Wallpaper densities",
-    "objective": "Students will apply tables revisit using wallpaper densities.",
+    "title": "Tables revisit with Wallpaper pattern density",
+    "objective": "Students will apply tables revisit using wallpaper pattern density.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Texture feel",
+    "title": "Texture variation",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Wallpaper densities",
+    "title": "Wallpaper pattern density",
     "concept": "Repeats/unit",
     "procedure": [
       "Define key geometric concepts",
@@ -135,10 +169,10 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Tables revisit to Wallpaper densities",
-    "mathToArt": "Math concept tables revisit illuminates artistic thinking in texture feel.",
-    "artToGeometry": "Artistic expression reveals geometric structure: wallpaper densities.",
-    "synthesis": "Repeats/unit and texture feel are two views of the same cognitive tool.",
+    "title": "Connecting Tables revisit to Wallpaper pattern density",
+    "mathToArt": "Math concept tables revisit illuminates artistic thinking in texture variation.",
+    "artToGeometry": "Artistic expression reveals geometric structure: wallpaper pattern density.",
+    "synthesis": "Repeats/unit and texture variation are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-11-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

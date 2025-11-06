@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Shapes and perimeter",
     "geometricConcept": "Frieze borders",
-    "civilization": "Rome",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "shapes and perimeter",
       "frieze borders",
-      "rome"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Marcus the Builder",
-      "role": "Engineering master",
-      "imageUrl": "assets/characters/rome-character.png",
-      "biography": "Marcus the Builder uses frieze to solve problems about shapes and perimeter."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses frieze to solve problems about shapes and perimeter."
     },
-    "narrative": "Follow Marcus the Builder as they discover how frieze borders helps them understand shapes and perimeter. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how frieze borders helps them understand shapes and perimeter. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does frieze help us think about shapes and perimeter?"
   },
   "myth": {
-    "title": "TBD: Myth for Rome",
-    "civilization": "Rome",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Roman mosaic bands",
-      "civilization": "Rome",
+      "title": "Ishtar Gate glazed brick friezes",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-5-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals frieze structure in Roman mosaic bands"
+          "description": "Overlay reveals frieze structure in Ishtar Gate glazed brick friezes"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the frieze borders visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Lion frieze bands",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-5-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals frieze structure in Lion frieze bands"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the frieze borders visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Meander border variations",
+    "title": "Palace frieze patterns",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Shapes and perimeter to Frieze borders",
-    "mathToArt": "Math concept shapes and perimeter illuminates artistic thinking in meander border variations.",
+    "mathToArt": "Math concept shapes and perimeter illuminates artistic thinking in palace frieze patterns.",
     "artToGeometry": "Artistic expression reveals geometric structure: frieze borders.",
-    "synthesis": "Perimeter along rule path and meander border variations are two views of the same cognitive tool.",
+    "synthesis": "Perimeter along rule path and palace frieze patterns are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-5-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Rome cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

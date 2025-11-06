@@ -6,16 +6,16 @@
     "lessonNumber": 17,
     "duration": 50,
     "mathConcept": "Review",
-    "geometricConcept": "Explain parameters",
-    "civilization": "Cross-cultural",
+    "geometricConcept": "Explain Mesopotamian geometry",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "review",
-      "explain parameters",
-      "cross-cultural"
+      "explain mesopotamian geometry",
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/cross-cultural-character.png",
-      "biography": "Kira the Cave Keeper uses explain to solve problems about review."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses explain to solve problems about review."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how explain parameters helps them understand review. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how explain mesopotamian geometry helps them understand review. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does explain help us think about review?"
   },
   "myth": {
-    "title": "TBD: Myth for Cross-cultural",
-    "civilization": "Cross-cultural",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Design logbooks",
-      "civilization": "Cross-cultural",
+      "title": "Comprehensive pattern logbooks",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-17-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals explain structure in Design logbooks"
+          "description": "Overlay reveals explain structure in Comprehensive pattern logbooks"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the explain parameters visible in this artifact."
+      "teachingNotes": "Highlight the explain mesopotamian geometry visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Mathematical documentation",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-17-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals explain structure in Mathematical documentation"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the explain mesopotamian geometry visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Review with Explain parameters",
-    "objective": "Students will apply review using explain parameters.",
+    "title": "Review with Explain Mesopotamian geometry",
+    "objective": "Students will apply review using explain mesopotamian geometry.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Style statement",
+    "title": "Design logbook",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Explain parameters",
+    "title": "Explain Mesopotamian geometry",
     "concept": "Tables/graphs",
     "procedure": [
       "Define key geometric concepts",
@@ -135,10 +169,10 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Review to Explain parameters",
-    "mathToArt": "Math concept review illuminates artistic thinking in style statement.",
-    "artToGeometry": "Artistic expression reveals geometric structure: explain parameters.",
-    "synthesis": "Tables/graphs and style statement are two views of the same cognitive tool.",
+    "title": "Connecting Review to Explain Mesopotamian geometry",
+    "mathToArt": "Math concept review illuminates artistic thinking in design logbook.",
+    "artToGeometry": "Artistic expression reveals geometric structure: explain mesopotamian geometry.",
+    "synthesis": "Tables/graphs and design logbook are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-17-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

@@ -6,20 +6,20 @@
     "lessonNumber": 13,
     "duration": 50,
     "mathConcept": "Solve ratio sets",
-    "geometricConcept": "Calendar sectors",
-    "civilization": "Mesoamerican",
+    "geometricConcept": "360\u00b0 circle divisions",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "solve ratio sets",
-      "calendar sectors",
-      "mesoamerican"
+      "360\u00b0 circle divisions",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Design a symbol using Calendar to represent a challenge you've overcome. What does the geometry reveal?",
+    "prompt": "Design a symbol using 360\u00b0 to represent a challenge you've overcome. What does the geometry reveal?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Itzamna the Astronomer",
-      "role": "Sky watcher",
-      "imageUrl": "assets/characters/mesoamerican-character.png",
-      "biography": "Itzamna the Astronomer uses calendar to solve problems about solve ratio sets."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses 360\u00b0 to solve problems about solve ratio sets."
     },
-    "narrative": "Follow Itzamna the Astronomer as they discover how calendar sectors helps them understand solve ratio sets. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how 360\u00b0 circle divisions helps them understand solve ratio sets. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does calendar help us think about solve ratio sets?"
+    "questionPrompt": "How does 360\u00b0 help us think about solve ratio sets?"
   },
   "myth": {
-    "title": "TBD: Myth for Mesoamerican",
-    "civilization": "Mesoamerican",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Aztec/Maya radial calendars",
-      "civilization": "Mesoamerican",
+      "title": "Babylonian 360\u00b0 system",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-13-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals calendar structure in Aztec/Maya radial calendars"
+          "description": "Overlay reveals 360\u00b0 structure in Babylonian 360\u00b0 system"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the calendar sectors visible in this artifact."
+      "teachingNotes": "Highlight the 360\u00b0 circle divisions visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Base-60 angle divisions",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-13-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals 360\u00b0 structure in Base-60 angle divisions"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the 360\u00b0 circle divisions visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Solve ratio sets with Calendar sectors",
-    "objective": "Students will apply solve ratio sets using calendar sectors.",
+    "title": "Solve ratio sets with 360\u00b0 circle divisions",
+    "objective": "Students will apply solve ratio sets using 360\u00b0 circle divisions.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Glyph design",
+    "title": "Sexagesimal system",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Calendar sectors",
+    "title": "360\u00b0 circle divisions",
     "concept": "Angle allocation",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Solve ratio sets to Calendar sectors",
-    "mathToArt": "Math concept solve ratio sets illuminates artistic thinking in glyph design.",
-    "artToGeometry": "Artistic expression reveals geometric structure: calendar sectors.",
-    "synthesis": "Angle allocation and glyph design are two views of the same cognitive tool.",
+    "title": "Connecting Solve ratio sets to 360\u00b0 circle divisions",
+    "mathToArt": "Math concept solve ratio sets illuminates artistic thinking in sexagesimal system.",
+    "artToGeometry": "Artistic expression reveals geometric structure: 360\u00b0 circle divisions.",
+    "synthesis": "Angle allocation and sexagesimal system are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-13-bridge.svg"
   },
   "exit": {
-    "prompt": "How does calendar help you think about solve ratio sets?",
+    "prompt": "How does 360\u00b0 help you think about solve ratio sets?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Mesoamerican cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

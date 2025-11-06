@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Rounding",
     "geometricConcept": "Nearest ring/sector",
-    "civilization": "Egypt",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "rounding",
       "nearest ring/sector",
-      "egypt"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Ahmose the Scribe",
-      "role": "Royal architect",
-      "imageUrl": "assets/characters/egypt-character.png",
-      "biography": "Ahmose the Scribe uses nearest to solve problems about rounding."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses nearest to solve problems about rounding."
     },
-    "narrative": "Follow Ahmose the Scribe as they discover how nearest ring/sector helps them understand rounding. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how nearest ring/sector helps them understand rounding. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does nearest help us think about rounding?"
   },
   "myth": {
-    "title": "TBD: Myth for Egypt",
-    "civilization": "Egypt",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Karnak lotus capitals",
-      "civilization": "Egypt",
+      "title": "Shamash disk rings",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-2-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals nearest structure in Karnak lotus capitals"
+          "description": "Overlay reveals nearest structure in Shamash disk rings"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the nearest ring/sector visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Clay token counting systems",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-2-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals nearest structure in Clay token counting systems"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the nearest ring/sector visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Rosette ring design",
+    "title": "Concentric rosette rings",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Rounding to Nearest ring/sector",
-    "mathToArt": "Math concept rounding illuminates artistic thinking in rosette ring design.",
+    "mathToArt": "Math concept rounding illuminates artistic thinking in concentric rosette rings.",
     "artToGeometry": "Artistic expression reveals geometric structure: nearest ring/sector.",
-    "synthesis": "Thresholds to nearest multiple and rosette ring design are two views of the same cognitive tool.",
+    "synthesis": "Thresholds to nearest multiple and concentric rosette rings are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-2-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Egypt cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

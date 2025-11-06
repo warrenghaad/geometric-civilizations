@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Place value millions",
     "geometricConcept": "Coordinate grids",
-    "civilization": "Egypt",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "place value millions",
       "coordinate grids",
-      "egypt"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Ahmose the Scribe",
-      "role": "Royal architect",
-      "imageUrl": "assets/characters/egypt-character.png",
-      "biography": "Ahmose the Scribe uses coordinate to solve problems about place value millions."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses coordinate to solve problems about place value millions."
     },
-    "narrative": "Follow Ahmose the Scribe as they discover how coordinate grids helps them understand place value millions. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how coordinate grids helps them understand place value millions. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does coordinate help us think about place value millions?"
   },
   "myth": {
-    "title": "TBD: Myth for Egypt",
-    "civilization": "Egypt",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Temple axes; gridded figures",
-      "civilization": "Egypt",
+      "title": "Ziggurat architectural plans",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-1-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals coordinate structure in Temple axes; gridded figures"
+          "description": "Overlay reveals coordinate structure in Ziggurat architectural plans"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the coordinate grids visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Temple grid layouts",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-1-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals coordinate structure in Temple grid layouts"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the coordinate grids visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Plan drawings",
+    "title": "Ziggurat plan drawings",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Place value millions to Coordinate grids",
-    "mathToArt": "Math concept place value millions illuminates artistic thinking in plan drawings.",
+    "mathToArt": "Math concept place value millions illuminates artistic thinking in ziggurat plan drawings.",
     "artToGeometry": "Artistic expression reveals geometric structure: coordinate grids.",
-    "synthesis": "Axes scaling and plan drawings are two views of the same cognitive tool.",
+    "synthesis": "Axes scaling and ziggurat plan drawings are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-1-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Egypt cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

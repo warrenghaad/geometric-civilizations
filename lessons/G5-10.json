@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Review ratios",
     "geometricConcept": "Equal-area rings",
-    "civilization": "Rome",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "review ratios",
       "equal-area rings",
-      "rome"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Marcus the Builder",
-      "role": "Engineering master",
-      "imageUrl": "assets/characters/rome-character.png",
-      "biography": "Marcus the Builder uses equal-area to solve problems about review ratios."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses equal-area to solve problems about review ratios."
     },
-    "narrative": "Follow Marcus the Builder as they discover how equal-area rings helps them understand review ratios. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how equal-area rings helps them understand review ratios. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does equal-area help us think about review ratios?"
   },
   "myth": {
-    "title": "TBD: Myth for Rome",
-    "civilization": "Rome",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Pantheon coffer analysis",
-      "civilization": "Rome",
+      "title": "Shamash disk ring analysis",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-10-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals equal-area structure in Pantheon coffer analysis"
+          "description": "Overlay reveals equal-area structure in Shamash disk ring analysis"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the equal-area rings visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Equal-area divisions",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-10-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals equal-area structure in Equal-area divisions"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the equal-area rings visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Visual balance",
+    "title": "Visual ring balance",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Review ratios to Equal-area rings",
-    "mathToArt": "Math concept review ratios illuminates artistic thinking in visual balance.",
+    "mathToArt": "Math concept review ratios illuminates artistic thinking in visual ring balance.",
     "artToGeometry": "Artistic expression reveals geometric structure: equal-area rings.",
-    "synthesis": "\u03c0-free proportional and visual balance are two views of the same cognitive tool.",
+    "synthesis": "\u03c0-free proportional and visual ring balance are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-10-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Rome cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

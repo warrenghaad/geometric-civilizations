@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Measurement",
     "geometricConcept": "Arch spans/rise",
-    "civilization": "Rome",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "measurement",
       "arch spans/rise",
-      "rome"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Marcus the Builder",
-      "role": "Engineering master",
-      "imageUrl": "assets/characters/rome-character.png",
-      "biography": "Marcus the Builder uses arch to solve problems about measurement."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses arch to solve problems about measurement."
     },
-    "narrative": "Follow Marcus the Builder as they discover how arch spans/rise helps them understand measurement. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how arch spans/rise helps them understand measurement. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does arch help us think about measurement?"
   },
   "myth": {
-    "title": "TBD: Myth for Rome",
-    "civilization": "Rome",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Roman arch sections; Pantheon",
-      "civilization": "Rome",
+      "title": "Barrel vault arches",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-7-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals arch structure in Roman arch sections; Pantheon"
+          "description": "Overlay reveals arch structure in Barrel vault arches"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the arch spans/rise visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Ishtar Gate arches",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-7-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals arch structure in Ishtar Gate arches"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the arch spans/rise visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Profile aesthetics",
+    "title": "Arch profile calculations",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Measurement to Arch spans/rise",
-    "mathToArt": "Math concept measurement illuminates artistic thinking in profile aesthetics.",
+    "mathToArt": "Math concept measurement illuminates artistic thinking in arch profile calculations.",
     "artToGeometry": "Artistic expression reveals geometric structure: arch spans/rise.",
-    "synthesis": "Radius/segment and profile aesthetics are two views of the same cognitive tool.",
+    "synthesis": "Radius/segment and arch profile calculations are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-7-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Rome cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

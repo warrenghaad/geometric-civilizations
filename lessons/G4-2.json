@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Compare/order",
     "geometricConcept": "Symmetry ranking",
-    "civilization": "Greece",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "compare/order",
       "symmetry ranking",
-      "greece"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Sophia the Geometer",
-      "role": "Mathematical philosopher",
-      "imageUrl": "assets/characters/greece-character.png",
-      "biography": "Sophia the Geometer uses symmetry to solve problems about compare/order."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses symmetry to solve problems about compare/order."
     },
-    "narrative": "Follow Sophia the Geometer as they discover how symmetry ranking helps them understand compare/order. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how symmetry ranking helps them understand compare/order. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does symmetry help us think about compare/order?"
   },
   "myth": {
-    "title": "TBD: Myth for Greece",
-    "civilization": "Greece",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Greek architectural orders",
-      "civilization": "Greece",
+      "title": "Cylinder seals ranked by symmetry",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-2-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals symmetry structure in Greek architectural orders"
+          "description": "Overlay reveals symmetry structure in Cylinder seals ranked by symmetry"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the symmetry ranking visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "D2-D8 examples",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-2-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals symmetry structure in D2-D8 examples"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the symmetry ranking visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Design choices",
+    "title": "Seal symmetry analysis",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Compare/order to Symmetry ranking",
-    "mathToArt": "Math concept compare/order illuminates artistic thinking in design choices.",
+    "mathToArt": "Math concept compare/order illuminates artistic thinking in seal symmetry analysis.",
     "artToGeometry": "Artistic expression reveals geometric structure: symmetry ranking.",
-    "synthesis": "More/less symmetry and design choices are two views of the same cognitive tool.",
+    "synthesis": "More/less symmetry and seal symmetry analysis are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-2-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Greece cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

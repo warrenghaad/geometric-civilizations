@@ -6,20 +6,20 @@
     "lessonNumber": 15,
     "duration": 50,
     "mathConcept": "Measurement review",
-    "geometricConcept": "Chord vs arc",
-    "civilization": "Gothic",
+    "geometricConcept": "Arc construction",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "measurement review",
-      "chord vs arc",
-      "gothic"
+      "arc construction",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Create a geometric design that represents something you're proud of. How does Chord help tell your story?",
+    "prompt": "Create a geometric design that represents something you're proud of. How does Arc help tell your story?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Pierre the Mason",
-      "role": "Cathedral builder",
-      "imageUrl": "assets/characters/gothic-character.png",
-      "biography": "Pierre the Mason uses chord to solve problems about measurement review."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses arc to solve problems about measurement review."
     },
-    "narrative": "Follow Pierre the Mason as they discover how chord vs arc helps them understand measurement review. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how arc construction helps them understand measurement review. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does chord help us think about measurement review?"
+    "questionPrompt": "How does arc help us think about measurement review?"
   },
   "myth": {
-    "title": "TBD: Myth for Gothic",
-    "civilization": "Gothic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Pointed arch types",
-      "civilization": "Gothic",
+      "title": "Pointed vs round arches",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-15-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals chord structure in Pointed arch types"
+          "description": "Overlay reveals arc structure in Pointed vs round arches"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the chord vs arc visible in this artifact."
+      "teachingNotes": "Highlight the arc construction visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Mesopotamian vaults",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-15-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals arc structure in Mesopotamian vaults"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the arc construction visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Measurement review with Chord vs arc",
-    "objective": "Students will apply measurement review using chord vs arc.",
+    "title": "Measurement review with Arc construction",
+    "objective": "Students will apply measurement review using arc construction.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Profile tuning",
+    "title": "Vault arch types",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Chord vs arc",
+    "title": "Arc construction",
     "concept": "Approx arcs",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Measurement review to Chord vs arc",
-    "mathToArt": "Math concept measurement review illuminates artistic thinking in profile tuning.",
-    "artToGeometry": "Artistic expression reveals geometric structure: chord vs arc.",
-    "synthesis": "Approx arcs and profile tuning are two views of the same cognitive tool.",
+    "title": "Connecting Measurement review to Arc construction",
+    "mathToArt": "Math concept measurement review illuminates artistic thinking in vault arch types.",
+    "artToGeometry": "Artistic expression reveals geometric structure: arc construction.",
+    "synthesis": "Approx arcs and vault arch types are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-15-bridge.svg"
   },
   "exit": {
-    "prompt": "How does chord help you think about measurement review?",
+    "prompt": "How does arc help you think about measurement review?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Gothic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

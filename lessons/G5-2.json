@@ -6,20 +6,20 @@
     "lessonNumber": 2,
     "duration": 50,
     "mathConcept": "Equivalent ratios tables",
-    "geometricConcept": "Tessellation repeats",
-    "civilization": "Islamic",
+    "geometricConcept": "Star tessellation repeats",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "equivalent ratios tables",
-      "tessellation repeats",
-      "islamic"
+      "star tessellation repeats",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Design a symbol using Tessellation to represent a challenge you've overcome. What does the geometry reveal?",
+    "prompt": "Design a symbol using Star to represent a challenge you've overcome. What does the geometry reveal?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Fatima the Tiler",
-      "role": "Pattern master",
-      "imageUrl": "assets/characters/islamic-character.png",
-      "biography": "Fatima the Tiler uses tessellation to solve problems about equivalent ratios tables."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses star to solve problems about equivalent ratios tables."
     },
-    "narrative": "Follow Fatima the Tiler as they discover how tessellation repeats helps them understand equivalent ratios tables. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how star tessellation repeats helps them understand equivalent ratios tables. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does tessellation help us think about equivalent ratios tables?"
+    "questionPrompt": "How does star help us think about equivalent ratios tables?"
   },
   "myth": {
-    "title": "TBD: Myth for Islamic",
-    "civilization": "Islamic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Zellige 8/10-point modules",
-      "civilization": "Islamic",
+      "title": "8-pointed star tile patterns",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-2-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals tessellation structure in Zellige 8/10-point modules"
+          "description": "Overlay reveals star structure in 8-pointed star tile patterns"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the tessellation repeats visible in this artifact."
+      "teachingNotes": "Highlight the star tessellation repeats visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Repeat module counts",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-2-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals star structure in Repeat module counts"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the star tessellation repeats visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Equivalent ratios tables with Tessellation repeats",
-    "objective": "Students will apply equivalent ratios tables using tessellation repeats.",
+    "title": "Equivalent ratios tables with Star tessellation repeats",
+    "objective": "Students will apply equivalent ratios tables using star tessellation repeats.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Pattern tiling",
+    "title": "8-point star tiling",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Tessellation repeats",
+    "title": "Star tessellation repeats",
     "concept": "Scale tile counts",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Equivalent ratios tables to Tessellation repeats",
-    "mathToArt": "Math concept equivalent ratios tables illuminates artistic thinking in pattern tiling.",
-    "artToGeometry": "Artistic expression reveals geometric structure: tessellation repeats.",
-    "synthesis": "Scale tile counts and pattern tiling are two views of the same cognitive tool.",
+    "title": "Connecting Equivalent ratios tables to Star tessellation repeats",
+    "mathToArt": "Math concept equivalent ratios tables illuminates artistic thinking in 8-point star tiling.",
+    "artToGeometry": "Artistic expression reveals geometric structure: star tessellation repeats.",
+    "synthesis": "Scale tile counts and 8-point star tiling are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-2-bridge.svg"
   },
   "exit": {
-    "prompt": "How does tessellation help you think about equivalent ratios tables?",
+    "prompt": "How does star help you think about equivalent ratios tables?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Islamic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

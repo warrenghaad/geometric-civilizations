@@ -6,16 +6,16 @@
     "lessonNumber": 14,
     "duration": 50,
     "mathConcept": "Unit rates apps",
-    "geometricConcept": "Lattice aperture",
-    "civilization": "China",
+    "geometricConcept": "Lattice aperture %",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "unit rates apps",
-      "lattice aperture",
-      "china"
+      "lattice aperture %",
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Li Wei the Craftsperson",
-      "role": "Lattice designer",
-      "imageUrl": "assets/characters/china-character.png",
-      "biography": "Li Wei the Craftsperson uses lattice to solve problems about unit rates apps."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses lattice to solve problems about unit rates apps."
     },
-    "narrative": "Follow Li Wei the Craftsperson as they discover how lattice aperture helps them understand unit rates apps. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how lattice aperture % helps them understand unit rates apps. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does lattice help us think about unit rates apps?"
   },
   "myth": {
-    "title": "TBD: Myth for China",
-    "civilization": "China",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Chinese lattice airflow design",
-      "civilization": "China",
+      "title": "Palace screen lattices",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-14-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals lattice structure in Chinese lattice airflow design"
+          "description": "Overlay reveals lattice structure in Palace screen lattices"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the lattice aperture visible in this artifact."
+      "teachingNotes": "Highlight the lattice aperture % visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Light/shadow calculations",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-14-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals lattice structure in Light/shadow calculations"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the lattice aperture % visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Unit rates apps with Lattice aperture",
-    "objective": "Students will apply unit rates apps using lattice aperture.",
+    "title": "Unit rates apps with Lattice aperture %",
+    "objective": "Students will apply unit rates apps using lattice aperture %.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Screen mood",
+    "title": "Screen light transmission",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,8 +154,8 @@
     ]
   },
   "geometryActivity": {
-    "title": "Lattice aperture",
-    "concept": "% open",
+    "title": "Lattice aperture %",
+    "concept": "% open area",
     "procedure": [
       "Define key geometric concepts",
       "Explore with hands-on tools",
@@ -135,10 +169,10 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Unit rates apps to Lattice aperture",
-    "mathToArt": "Math concept unit rates apps illuminates artistic thinking in screen mood.",
-    "artToGeometry": "Artistic expression reveals geometric structure: lattice aperture.",
-    "synthesis": "% open and screen mood are two views of the same cognitive tool.",
+    "title": "Connecting Unit rates apps to Lattice aperture %",
+    "mathToArt": "Math concept unit rates apps illuminates artistic thinking in screen light transmission.",
+    "artToGeometry": "Artistic expression reveals geometric structure: lattice aperture %.",
+    "synthesis": "% open area and screen light transmission are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-14-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present China cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

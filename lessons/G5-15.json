@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Conversions apps",
     "geometricConcept": "Module scaling",
-    "civilization": "West African",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "conversions apps",
       "module scaling",
-      "west african"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Amara the Weaver",
-      "role": "Kente master",
-      "imageUrl": "assets/characters/west-african-character.png",
-      "biography": "Amara the Weaver uses module to solve problems about conversions apps."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses module to solve problems about conversions apps."
     },
-    "narrative": "Follow Amara the Weaver as they discover how module scaling helps them understand conversions apps. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how module scaling helps them understand conversions apps. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does module help us think about conversions apps?"
   },
   "myth": {
-    "title": "TBD: Myth for West African",
-    "civilization": "West African",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Kente strip scaled mockups",
-      "civilization": "West African",
+      "title": "Cylinder seal scaled reproductions",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-15-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals module structure in Kente strip scaled mockups"
+          "description": "Overlay reveals module structure in Cylinder seal scaled reproductions"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the module scaling visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Size conversions",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-15-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals module structure in Size conversions"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the module scaling visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Craft transfer",
+    "title": "Seal reproduction scaling",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -121,7 +155,7 @@
   },
   "geometryActivity": {
     "title": "Module scaling",
-    "concept": "mm to in",
+    "concept": "Ancient to modern units",
     "procedure": [
       "Define key geometric concepts",
       "Explore with hands-on tools",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Conversions apps to Module scaling",
-    "mathToArt": "Math concept conversions apps illuminates artistic thinking in craft transfer.",
+    "mathToArt": "Math concept conversions apps illuminates artistic thinking in seal reproduction scaling.",
     "artToGeometry": "Artistic expression reveals geometric structure: module scaling.",
-    "synthesis": "mm to in and craft transfer are two views of the same cognitive tool.",
+    "synthesis": "Ancient to modern units and seal reproduction scaling are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-15-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present West African cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

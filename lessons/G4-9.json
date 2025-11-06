@@ -6,20 +6,20 @@
     "lessonNumber": 9,
     "duration": 50,
     "mathConcept": "Review + mini project",
-    "geometricConcept": "Light path maps",
-    "civilization": "Gothic",
+    "geometricConcept": "Star pattern maps",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "review + mini project",
-      "light path maps",
-      "gothic"
+      "star pattern maps",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Create a geometric design that represents something you're proud of. How does Light help tell your story?",
+    "prompt": "Create a geometric design that represents something you're proud of. How does Star help tell your story?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Pierre the Mason",
-      "role": "Cathedral builder",
-      "imageUrl": "assets/characters/gothic-character.png",
-      "biography": "Pierre the Mason uses light to solve problems about review + mini project."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses star to solve problems about review + mini project."
     },
-    "narrative": "Follow Pierre the Mason as they discover how light path maps helps them understand review + mini project. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how star pattern maps helps them understand review + mini project. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does light help us think about review + mini project?"
+    "questionPrompt": "How does star help us think about review + mini project?"
   },
   "myth": {
-    "title": "TBD: Myth for Gothic",
-    "civilization": "Gothic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Rose window spec sheet",
-      "civilization": "Gothic",
+      "title": "Star of Ishtar construction",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-9-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals light structure in Rose window spec sheet"
+          "description": "Overlay reveals star structure in Star of Ishtar construction"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the light path maps visible in this artifact."
+      "teachingNotes": "Highlight the star pattern maps visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "8-point geometry",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-9-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals star structure in 8-point geometry"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the star pattern maps visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Review + mini project with Light path maps",
-    "objective": "Students will apply review + mini project using light path maps.",
+    "title": "Review + mini project with Star pattern maps",
+    "objective": "Students will apply review + mini project using star pattern maps.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Glass color plan",
+    "title": "8-pointed star design",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,8 +154,8 @@
     ]
   },
   "geometryActivity": {
-    "title": "Light path maps",
-    "concept": "Angle of segments",
+    "title": "Star pattern maps",
+    "concept": "Angle of star points",
     "procedure": [
       "Define key geometric concepts",
       "Explore with hands-on tools",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Review + mini project to Light path maps",
-    "mathToArt": "Math concept review + mini project illuminates artistic thinking in glass color plan.",
-    "artToGeometry": "Artistic expression reveals geometric structure: light path maps.",
-    "synthesis": "Angle of segments and glass color plan are two views of the same cognitive tool.",
+    "title": "Connecting Review + mini project to Star pattern maps",
+    "mathToArt": "Math concept review + mini project illuminates artistic thinking in 8-pointed star design.",
+    "artToGeometry": "Artistic expression reveals geometric structure: star pattern maps.",
+    "synthesis": "Angle of star points and 8-pointed star design are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-9-bridge.svg"
   },
   "exit": {
-    "prompt": "How does light help you think about review + mini project?",
+    "prompt": "How does star help you think about review + mini project?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Gothic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

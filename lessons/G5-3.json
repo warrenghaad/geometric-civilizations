@@ -6,16 +6,16 @@
     "lessonNumber": 3,
     "duration": 50,
     "mathConcept": "Graphs of equivalent ratios",
-    "geometricConcept": "Star polygons {n/k}",
-    "civilization": "Islamic",
+    "geometricConcept": "Star polygons {8/3}",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "graphs of equivalent ratios",
-      "star polygons {n/k}",
-      "islamic"
+      "star polygons {8/3}",
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Fatima the Tiler",
-      "role": "Pattern master",
-      "imageUrl": "assets/characters/islamic-character.png",
-      "biography": "Fatima the Tiler uses star to solve problems about graphs of equivalent ratios."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses star to solve problems about graphs of equivalent ratios."
     },
-    "narrative": "Follow Fatima the Tiler as they discover how star polygons {n/k} helps them understand graphs of equivalent ratios. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how star polygons {8/3} helps them understand graphs of equivalent ratios. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does star help us think about graphs of equivalent ratios?"
   },
   "myth": {
-    "title": "TBD: Myth for Islamic",
-    "civilization": "Islamic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Topkapi scroll constructions",
-      "civilization": "Islamic",
+      "title": "8-point star variations",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-3-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals star structure in Topkapi scroll constructions"
+          "description": "Overlay reveals star structure in 8-point star variations"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the star polygons {n/k} visible in this artifact."
+      "teachingNotes": "Highlight the star polygons {8/3} visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "{8/1} {8/2} {8/3} constructions",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-3-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals star structure in {8/1} {8/2} {8/3} constructions"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the star polygons {8/3} visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Graphs of equivalent ratios with Star polygons {n/k}",
-    "objective": "Students will apply graphs of equivalent ratios using star polygons {n/k}.",
+    "title": "Graphs of equivalent ratios with Star polygons {8/3}",
+    "objective": "Students will apply graphs of equivalent ratios using star polygons {8/3}.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Star families",
+    "title": "Star construction families",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Star polygons {n/k}",
+    "title": "Star polygons {8/3}",
     "concept": "Angle graphs",
     "procedure": [
       "Define key geometric concepts",
@@ -135,10 +169,10 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Graphs of equivalent ratios to Star polygons {n/k}",
-    "mathToArt": "Math concept graphs of equivalent ratios illuminates artistic thinking in star families.",
-    "artToGeometry": "Artistic expression reveals geometric structure: star polygons {n/k}.",
-    "synthesis": "Angle graphs and star families are two views of the same cognitive tool.",
+    "title": "Connecting Graphs of equivalent ratios to Star polygons {8/3}",
+    "mathToArt": "Math concept graphs of equivalent ratios illuminates artistic thinking in star construction families.",
+    "artToGeometry": "Artistic expression reveals geometric structure: star polygons {8/3}.",
+    "synthesis": "Angle graphs and star construction families are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-3-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Islamic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

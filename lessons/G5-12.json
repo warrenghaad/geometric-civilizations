@@ -6,20 +6,20 @@
     "lessonNumber": 12,
     "duration": 50,
     "mathConcept": "Graphs revisit",
-    "geometricConcept": "Chord families",
-    "civilization": "Cross-cultural",
+    "geometricConcept": "Arch chord families",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "graphs revisit",
-      "chord families",
-      "cross-cultural"
+      "arch chord families",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Design a symbol using Chord to represent a challenge you've overcome. What does the geometry reveal?",
+    "prompt": "Design a symbol using Arch to represent a challenge you've overcome. What does the geometry reveal?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/cross-cultural-character.png",
-      "biography": "Kira the Cave Keeper uses chord to solve problems about graphs revisit."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses arch to solve problems about graphs revisit."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how chord families helps them understand graphs revisit. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how arch chord families helps them understand graphs revisit. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does chord help us think about graphs revisit?"
+    "questionPrompt": "How does arch help us think about graphs revisit?"
   },
   "myth": {
-    "title": "TBD: Myth for Cross-cultural",
-    "civilization": "Cross-cultural",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Arch type comparison",
-      "civilization": "Cross-cultural",
+      "title": "Mesopotamian arch types",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-12-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals chord structure in Arch type comparison"
+          "description": "Overlay reveals arch structure in Mesopotamian arch types"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the chord families visible in this artifact."
+      "teachingNotes": "Highlight the arch chord families visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Chord-to-span graphs",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-12-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals arch structure in Chord-to-span graphs"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the arch chord families visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Graphs revisit with Chord families",
-    "objective": "Students will apply graphs revisit using chord families.",
+    "title": "Graphs revisit with Arch chord families",
+    "objective": "Students will apply graphs revisit using arch chord families.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Arches gallery",
+    "title": "Arch profile comparison",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Chord families",
+    "title": "Arch chord families",
     "concept": "y vs \u03b8 plots",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Graphs revisit to Chord families",
-    "mathToArt": "Math concept graphs revisit illuminates artistic thinking in arches gallery.",
-    "artToGeometry": "Artistic expression reveals geometric structure: chord families.",
-    "synthesis": "y vs \u03b8 plots and arches gallery are two views of the same cognitive tool.",
+    "title": "Connecting Graphs revisit to Arch chord families",
+    "mathToArt": "Math concept graphs revisit illuminates artistic thinking in arch profile comparison.",
+    "artToGeometry": "Artistic expression reveals geometric structure: arch chord families.",
+    "synthesis": "y vs \u03b8 plots and arch profile comparison are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-12-bridge.svg"
   },
   "exit": {
-    "prompt": "How does chord help you think about graphs revisit?",
+    "prompt": "How does arch help you think about graphs revisit?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

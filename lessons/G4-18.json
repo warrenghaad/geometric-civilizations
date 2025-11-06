@@ -6,16 +6,16 @@
     "lessonNumber": 18,
     "duration": 50,
     "mathConcept": "Assessment",
-    "geometricConcept": "Explain designs",
-    "civilization": "Cross-cultural",
+    "geometricConcept": "Explain seal designs",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "assessment",
-      "explain designs",
-      "cross-cultural"
+      "explain seal designs",
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/cross-cultural-character.png",
-      "biography": "Kira the Cave Keeper uses explain to solve problems about assessment."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses explain to solve problems about assessment."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how explain designs helps them understand assessment. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how explain seal designs helps them understand assessment. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does explain help us think about assessment?"
   },
   "myth": {
-    "title": "TBD: Myth for Cross-cultural",
-    "civilization": "Cross-cultural",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Student presentations",
-      "civilization": "Cross-cultural",
+      "title": "Student seal presentations",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-18-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals explain structure in Student presentations"
+          "description": "Overlay reveals explain structure in Student seal presentations"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the explain designs visible in this artifact."
+      "teachingNotes": "Highlight the explain seal designs visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Geometric explanations",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-18-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals explain structure in Geometric explanations"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the explain seal designs visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Assessment with Explain designs",
-    "objective": "Students will apply assessment using explain designs.",
+    "title": "Assessment with Explain seal designs",
+    "objective": "Students will apply assessment using explain seal designs.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Artist statement",
+    "title": "Seal statement",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Explain designs",
+    "title": "Explain seal designs",
     "concept": "Proof by construct",
     "procedure": [
       "Define key geometric concepts",
@@ -135,10 +169,10 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Assessment to Explain designs",
-    "mathToArt": "Math concept assessment illuminates artistic thinking in artist statement.",
-    "artToGeometry": "Artistic expression reveals geometric structure: explain designs.",
-    "synthesis": "Proof by construct and artist statement are two views of the same cognitive tool.",
+    "title": "Connecting Assessment to Explain seal designs",
+    "mathToArt": "Math concept assessment illuminates artistic thinking in seal statement.",
+    "artToGeometry": "Artistic expression reveals geometric structure: explain seal designs.",
+    "synthesis": "Proof by construct and seal statement are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-18-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

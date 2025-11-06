@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Represent decimals",
     "geometricConcept": "Ring thickness spec",
-    "civilization": "Gothic",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "represent decimals",
       "ring thickness spec",
-      "gothic"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Pierre the Mason",
-      "role": "Cathedral builder",
-      "imageUrl": "assets/characters/gothic-character.png",
-      "biography": "Pierre the Mason uses ring to solve problems about represent decimals."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses ring to solve problems about represent decimals."
     },
-    "narrative": "Follow Pierre the Mason as they discover how ring thickness spec helps them understand represent decimals. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how ring thickness spec helps them understand represent decimals. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does ring help us think about represent decimals?"
   },
   "myth": {
-    "title": "TBD: Myth for Gothic",
-    "civilization": "Gothic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Gothic tracery bills",
-      "civilization": "Gothic",
+      "title": "Shamash disk ring measurements",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-4-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals ring structure in Gothic tracery bills"
+          "description": "Overlay reveals ring structure in Shamash disk ring measurements"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the ring thickness spec visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Nested circles",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-4-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals ring structure in Nested circles"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the ring thickness spec visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Glass-to-stone ratio",
+    "title": "Shamash ring specifications",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Represent decimals to Ring thickness spec",
-    "mathToArt": "Math concept represent decimals illuminates artistic thinking in glass-to-stone ratio.",
+    "mathToArt": "Math concept represent decimals illuminates artistic thinking in shamash ring specifications.",
     "artToGeometry": "Artistic expression reveals geometric structure: ring thickness spec.",
-    "synthesis": "Tenths/hundredths and glass-to-stone ratio are two views of the same cognitive tool.",
+    "synthesis": "Tenths/hundredths and shamash ring specifications are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-4-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Gothic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

@@ -53,7 +53,7 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Shamash disks; ring calculations",
+      "title": "Shamash sun disk analysis",
       "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-1-artifact-01.jpg",
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals r:d structure in Shamash disks; ring calculations"
+          "description": "Overlay reveals r:d structure in Shamash sun disk analysis"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the r:d and ring ratios visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Ring area ratios",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-1-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals r:d structure in Ring area ratios"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the r:d and ring ratios visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Rosette spec",
+    "title": "Shamash disk proportions",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Ratios to r:d and ring ratios",
-    "mathToArt": "Math concept ratios illuminates artistic thinking in rosette spec.",
+    "mathToArt": "Math concept ratios illuminates artistic thinking in shamash disk proportions.",
     "artToGeometry": "Artistic expression reveals geometric structure: r:d and ring ratios.",
-    "synthesis": "d=2r; ring area and rosette spec are two views of the same cognitive tool.",
+    "synthesis": "d=2r; ring area and shamash disk proportions are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-1-bridge.svg"
   },
   "exit": {

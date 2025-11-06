@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Decimals applications",
     "geometricConcept": "Scale drawings",
-    "civilization": "Byzantine",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "decimals applications",
       "scale drawings",
-      "byzantine"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Theodora the Mosaic Artist",
-      "role": "Cathedral designer",
-      "imageUrl": "assets/characters/byzantine-character.png",
-      "biography": "Theodora the Mosaic Artist uses scale to solve problems about decimals applications."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses scale to solve problems about decimals applications."
     },
-    "narrative": "Follow Theodora the Mosaic Artist as they discover how scale drawings helps them understand decimals applications. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how scale drawings helps them understand decimals applications. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does scale help us think about decimals applications?"
   },
   "myth": {
-    "title": "TBD: Myth for Byzantine",
-    "civilization": "Byzantine",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Roman/Byzantine plans",
-      "civilization": "Byzantine",
+      "title": "Temple of Marduk plans",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-14-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals scale structure in Roman/Byzantine plans"
+          "description": "Overlay reveals scale structure in Temple of Marduk plans"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the scale drawings visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Scaled architectural drawings",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-14-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals scale structure in Scaled architectural drawings"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the scale drawings visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Fa\u00e7ade layout",
+    "title": "Temple scale plans",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Decimals applications to Scale drawings",
-    "mathToArt": "Math concept decimals applications illuminates artistic thinking in fa\u00e7ade layout.",
+    "mathToArt": "Math concept decimals applications illuminates artistic thinking in temple scale plans.",
     "artToGeometry": "Artistic expression reveals geometric structure: scale drawings.",
-    "synthesis": "Ratios in plan and fa\u00e7ade layout are two views of the same cognitive tool.",
+    "synthesis": "Ratios in plan and temple scale plans are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-14-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Byzantine cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

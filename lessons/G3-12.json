@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Arrays to area",
     "geometricConcept": "Tile counts",
-    "civilization": "Rome",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "arrays to area",
       "tile counts",
-      "rome"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Marcus the Builder",
-      "role": "Engineering master",
-      "imageUrl": "assets/characters/rome-character.png",
-      "biography": "Marcus the Builder uses tile to solve problems about arrays to area."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses tile to solve problems about arrays to area."
     },
-    "narrative": "Follow Marcus the Builder as they discover how tile counts helps them understand arrays to area. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how tile counts helps them understand arrays to area. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does tile help us think about arrays to area?"
   },
   "myth": {
-    "title": "TBD: Myth for Rome",
-    "civilization": "Rome",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Roman tesserae",
-      "civilization": "Rome",
+      "title": "Ishtar Gate brick patterns",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-12-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals tile structure in Roman tesserae"
+          "description": "Overlay reveals tile structure in Ishtar Gate brick patterns"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the tile counts visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Palace tile mosaics",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-12-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals tile structure in Palace tile mosaics"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the tile counts visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Mosaic design",
+    "title": "Glazed brick arrays",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Arrays to area to Tile counts",
-    "mathToArt": "Math concept arrays to area illuminates artistic thinking in mosaic design.",
+    "mathToArt": "Math concept arrays to area illuminates artistic thinking in glazed brick arrays.",
     "artToGeometry": "Artistic expression reveals geometric structure: tile counts.",
-    "synthesis": "n\u00d7m proofs and mosaic design are two views of the same cognitive tool.",
+    "synthesis": "n\u00d7m proofs and glazed brick arrays are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-12-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Rome cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

@@ -6,20 +6,20 @@
     "lessonNumber": 13,
     "duration": 50,
     "mathConcept": "Fractions applications",
-    "geometricConcept": "Rib networks",
-    "civilization": "Gothic",
+    "geometricConcept": "Ziggurat tier ratios",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "fractions applications",
-      "rib networks",
-      "gothic"
+      "ziggurat tier ratios",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Create a geometric design that represents something you're proud of. How does Rib help tell your story?",
+    "prompt": "Create a geometric design that represents something you're proud of. How does Ziggurat help tell your story?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Pierre the Mason",
-      "role": "Cathedral builder",
-      "imageUrl": "assets/characters/gothic-character.png",
-      "biography": "Pierre the Mason uses rib to solve problems about fractions applications."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses ziggurat to solve problems about fractions applications."
     },
-    "narrative": "Follow Pierre the Mason as they discover how rib networks helps them understand fractions applications. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how ziggurat tier ratios helps them understand fractions applications. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does rib help us think about fractions applications?"
+    "questionPrompt": "How does ziggurat help us think about fractions applications?"
   },
   "myth": {
-    "title": "TBD: Myth for Gothic",
-    "civilization": "Gothic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Gothic rib vault diagrams",
-      "civilization": "Gothic",
+      "title": "Ziggurat elevation diagrams",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-13-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals rib structure in Gothic rib vault diagrams"
+          "description": "Overlay reveals ziggurat structure in Ziggurat elevation diagrams"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the rib networks visible in this artifact."
+      "teachingNotes": "Highlight the ziggurat tier ratios visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Tier proportions",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-13-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals ziggurat structure in Tier proportions"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the ziggurat tier ratios visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Fractions applications with Rib networks",
-    "objective": "Students will apply fractions applications using rib networks.",
+    "title": "Fractions applications with Ziggurat tier ratios",
+    "objective": "Students will apply fractions applications using ziggurat tier ratios.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Vault aesthetics",
+    "title": "Step height calculations",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Rib networks",
+    "title": "Ziggurat tier ratios",
     "concept": "Triangulation",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Fractions applications to Rib networks",
-    "mathToArt": "Math concept fractions applications illuminates artistic thinking in vault aesthetics.",
-    "artToGeometry": "Artistic expression reveals geometric structure: rib networks.",
-    "synthesis": "Triangulation and vault aesthetics are two views of the same cognitive tool.",
+    "title": "Connecting Fractions applications to Ziggurat tier ratios",
+    "mathToArt": "Math concept fractions applications illuminates artistic thinking in step height calculations.",
+    "artToGeometry": "Artistic expression reveals geometric structure: ziggurat tier ratios.",
+    "synthesis": "Triangulation and step height calculations are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-13-bridge.svg"
   },
   "exit": {
-    "prompt": "How does rib help you think about fractions applications?",
+    "prompt": "How does ziggurat help you think about fractions applications?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Gothic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

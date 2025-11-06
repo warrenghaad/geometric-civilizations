@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Model fractions/decimals",
     "geometricConcept": "Sector partitions",
-    "civilization": "Byzantine",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "model fractions/decimals",
       "sector partitions",
-      "byzantine"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Theodora the Mosaic Artist",
-      "role": "Cathedral designer",
-      "imageUrl": "assets/characters/byzantine-character.png",
-      "biography": "Theodora the Mosaic Artist uses sector to solve problems about model fractions/decimals."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses sector to solve problems about model fractions/decimals."
     },
-    "narrative": "Follow Theodora the Mosaic Artist as they discover how sector partitions helps them understand model fractions/decimals. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how sector partitions helps them understand model fractions/decimals. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does sector help us think about model fractions/decimals?"
   },
   "myth": {
-    "title": "TBD: Myth for Byzantine",
-    "civilization": "Byzantine",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Cross-in-square; rose windows",
-      "civilization": "Byzantine",
+      "title": "Multi-color glazed rosettes",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-3-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals sector structure in Cross-in-square; rose windows"
+          "description": "Overlay reveals sector structure in Multi-color glazed rosettes"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the sector partitions visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Sectioned disks",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-3-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals sector structure in Sectioned disks"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the sector partitions visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Color balance",
+    "title": "Rosette color fractions",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Model fractions/decimals to Sector partitions",
-    "mathToArt": "Math concept model fractions/decimals illuminates artistic thinking in color balance.",
+    "mathToArt": "Math concept model fractions/decimals illuminates artistic thinking in rosette color fractions.",
     "artToGeometry": "Artistic expression reveals geometric structure: sector partitions.",
-    "synthesis": "n/360 mapping and color balance are two views of the same cognitive tool.",
+    "synthesis": "n/360 mapping and rosette color fractions are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-3-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Byzantine cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

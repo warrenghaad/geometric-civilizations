@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Assessment + gallery",
     "geometricConcept": "Explain rules",
-    "civilization": "Cross-cultural",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "assessment + gallery",
       "explain rules",
-      "cross-cultural"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/cross-cultural-character.png",
-      "biography": "Kira the Cave Keeper uses explain to solve problems about assessment + gallery."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses explain to solve problems about assessment + gallery."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how explain rules helps them understand assessment + gallery. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how explain rules helps them understand assessment + gallery. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does explain help us think about assessment + gallery?"
   },
   "myth": {
-    "title": "TBD: Myth for Cross-cultural",
-    "civilization": "Cross-cultural",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Student portfolios",
-      "civilization": "Cross-cultural",
+      "title": "Student seal portfolios",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-18-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals explain structure in Student portfolios"
+          "description": "Overlay reveals explain structure in Student seal portfolios"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the explain rules visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Clay impressions",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-18-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals explain structure in Clay impressions"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the explain rules visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Artist talk",
+    "title": "Seal presentation",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Assessment + gallery to Explain rules",
-    "mathToArt": "Math concept assessment + gallery illuminates artistic thinking in artist talk.",
+    "mathToArt": "Math concept assessment + gallery illuminates artistic thinking in seal presentation.",
     "artToGeometry": "Artistic expression reveals geometric structure: explain rules.",
-    "synthesis": "Math talk and artist talk are two views of the same cognitive tool.",
+    "synthesis": "Math talk and seal presentation are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-18-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

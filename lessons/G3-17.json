@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Review",
     "geometricConcept": "Decompose/compose",
-    "civilization": "Cross-cultural",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "review",
       "decompose/compose",
-      "cross-cultural"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/cross-cultural-character.png",
-      "biography": "Kira the Cave Keeper uses decompose/compose to solve problems about review."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses decompose/compose to solve problems about review."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how decompose/compose helps them understand review. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how decompose/compose helps them understand review. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does decompose/compose help us think about review?"
   },
   "myth": {
-    "title": "TBD: Myth for Cross-cultural",
-    "civilization": "Cross-cultural",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Comparative cultures board",
-      "civilization": "Cross-cultural",
+      "title": "Collection of seal impressions",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-17-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals decompose/compose structure in Comparative cultures board"
+          "description": "Overlay reveals decompose/compose structure in Collection of seal impressions"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the decompose/compose visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Pattern library",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-17-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals decompose/compose structure in Pattern library"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the decompose/compose visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Portfolio curation",
+    "title": "Portfolio of seals",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Review to Decompose/compose",
-    "mathToArt": "Math concept review illuminates artistic thinking in portfolio curation.",
+    "mathToArt": "Math concept review illuminates artistic thinking in portfolio of seals.",
     "artToGeometry": "Artistic expression reveals geometric structure: decompose/compose.",
-    "synthesis": "From shapes to sums and portfolio curation are two views of the same cognitive tool.",
+    "synthesis": "From shapes to sums and portfolio of seals are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-17-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

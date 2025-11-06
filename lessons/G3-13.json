@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Equal shares",
     "geometricConcept": "Quatrefoil 4 shares",
-    "civilization": "Gothic",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "equal shares",
       "quatrefoil 4 shares",
-      "gothic"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Pierre the Mason",
-      "role": "Cathedral builder",
-      "imageUrl": "assets/characters/gothic-character.png",
-      "biography": "Pierre the Mason uses quatrefoil to solve problems about equal shares."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses quatrefoil to solve problems about equal shares."
     },
-    "narrative": "Follow Pierre the Mason as they discover how quatrefoil 4 shares helps them understand equal shares. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how quatrefoil 4 shares helps them understand equal shares. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does quatrefoil help us think about equal shares?"
   },
   "myth": {
-    "title": "TBD: Myth for Gothic",
-    "civilization": "Gothic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Gothic quatrefoils",
-      "civilization": "Gothic",
+      "title": "Four-fold cylinder seals",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-13-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals quatrefoil structure in Gothic quatrefoils"
+          "description": "Overlay reveals quatrefoil structure in Four-fold cylinder seals"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the quatrefoil 4 shares visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Quatrefoil motifs",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-13-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals quatrefoil structure in Quatrefoil motifs"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the quatrefoil 4 shares visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Four-petal medallion",
+    "title": "Four-petal rosette",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Equal shares to Quatrefoil 4 shares",
-    "mathToArt": "Math concept equal shares illuminates artistic thinking in four-petal medallion.",
+    "mathToArt": "Math concept equal shares illuminates artistic thinking in four-petal rosette.",
     "artToGeometry": "Artistic expression reveals geometric structure: quatrefoil 4 shares.",
-    "synthesis": "Quartering circle and four-petal medallion are two views of the same cognitive tool.",
+    "synthesis": "Quartering circle and four-petal rosette are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-13-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Gothic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

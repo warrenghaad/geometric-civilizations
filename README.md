@@ -7,11 +7,11 @@
 
 ## 📚 Overview
 
-This project implements a comprehensive interdisciplinary curriculum that integrates:
-- **Mathematics** (place value, fractions, ratios, measurement)
-- **Geometry** (circles, tessellations, symmetry, star polygons)
-- **Mythology** (cross-cultural creation stories and symbolism)
-- **Art** (pattern-making, construction, cultural artifacts)
+This project implements a comprehensive interdisciplinary curriculum **focused entirely on Mesopotamian civilization** that integrates:
+- **Mathematics** (place value, fractions, ratios, measurement through Mesopotamian context)
+- **Geometry** (cylinder seals, rosettes, ziggurats, star patterns, frieze patterns)
+- **Mythology** (Mesopotamian pantheon and creation stories)
+- **Art** (Mesopotamian pattern-making, seal carving, brick patterns, textile designs)
 
 ### Pedagogical Framework
 
@@ -198,9 +198,9 @@ All visual specs are defined in `schemas/design_system.json`:
 
 ### Grade-Specific Palettes
 
-- **Grade 3**: Vibrant Wonder (high contrast, engaging)
-- **Grade 4**: Scholarly Discovery (balanced, precise)
-- **Grade 5**: Mature Inquiry (sophisticated, parametric)
+- **Grade 3**: Vibrant Wonder (rosettes, cylinder seals, basic patterns)
+- **Grade 4**: Scholarly Discovery (frieze patterns, ziggurat geometry, symmetry analysis)
+- **Grade 5**: Mature Inquiry (star polygons, parametric spirals, sexagesimal system)
 
 ---
 
@@ -261,33 +261,33 @@ Assemble video (FFmpeg)
 
 ## 📝 Curriculum Map
 
-### Grade 3 (18 lessons)
+### Grade 3 (18 lessons - All Mesopotamia)
 
-| Week | Math Concept | Geometric Concept | Civilization | Artifacts |
-|------|--------------|-------------------|--------------|-----------|
-| 1 | Place value, compare/order | Circle partitions | Prehistoric | Newgrange triple spiral, Chauvet handprints |
-| 1 | Rounding | Nearest ring/sector | Egypt | Karnak lotus capitals |
-| 2 | Multiplication arrays | Tessellation tiles | Greece | Amphora meander borders |
-| 2 | Division/fair shares | Radial equal shares | Mesopotamia | Rosette cylinder seals |
-| ... | ... | ... | ... | ... |
+| Week | Math Concept | Geometric Concept | Mesopotamian Artifacts |
+|------|--------------|-------------------|------------------------|
+| 1 | Place value, compare/order | Circle partitions | Cylinder seal rosettes, Shamash sun disk |
+| 1 | Rounding | Nearest ring/sector | Shamash disk rings, Clay token counting |
+| 2 | Multiplication arrays | Tessellation tiles | Ziggurat brick patterns, Palace friezes |
+| 2 | Division/fair shares | Radial equal shares | 8-fold rosettes, Star of Ishtar |
+| ... | ... | ... | ... |
 
-### Grade 4 (18 lessons)
+### Grade 4 (18 lessons - All Mesopotamia)
 
-| Week | Math Concept | Geometric Concept | Civilization | Artifacts |
-|------|--------------|-------------------|--------------|-----------|
-| 1 | Place value (millions) | Coordinate grids | Egypt | Temple axes, gridded figures |
-| 1 | Compare/order | Symmetry ranking | Greece | Greek architectural orders |
-| 2 | Model fractions/decimals | Sector partitions | Byzantine | Cross-in-square, rose windows |
-| ... | ... | ... | ... | ... |
+| Week | Math Concept | Geometric Concept | Mesopotamian Artifacts |
+|------|--------------|-------------------|------------------------|
+| 1 | Place value (millions) | Coordinate grids | Ziggurat plans, Temple grid layouts |
+| 1 | Compare/order | Symmetry ranking | Cylinder seals (D2-D8 symmetries) |
+| 2 | Model fractions/decimals | Sector partitions | Multi-color glazed rosettes |
+| ... | ... | ... | ... |
 
-### Grade 5 (18 lessons)
+### Grade 5 (18 lessons - All Mesopotamia)
 
-| Week | Math Concept | Geometric Concept | Civilization | Artifacts |
-|------|--------------|-------------------|--------------|-----------|
-| 1 | Ratios | r:d and ring ratios | Mesopotamia | Shamash disks |
-| 1 | Equivalent ratios (tables) | Tessellation repeats | Islamic | Zellige 8/10-point modules |
-| 2 | Graphs of equivalent ratios | Star polygons {n/k} | Islamic | Topkapi scroll constructions |
-| ... | ... | ... | ... | ... |
+| Week | Math Concept | Geometric Concept | Mesopotamian Artifacts |
+|------|--------------|-------------------|------------------------|
+| 1 | Ratios | r:d and ring ratios | Shamash disk ring analysis |
+| 1 | Equivalent ratios (tables) | Tessellation repeats | 8-pointed star tile patterns |
+| 2 | Graphs of equivalent ratios | Star polygons {8/3} | Star of Ishtar construction families |
+| ... | ... | ... | ... |
 
 **See `curriculum_master.csv` for complete map.**
 

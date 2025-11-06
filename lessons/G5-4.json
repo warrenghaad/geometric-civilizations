@@ -6,20 +6,20 @@
     "lessonNumber": 4,
     "duration": 50,
     "mathConcept": "Compare ratio relationships",
-    "geometricConcept": "Strip permutations",
-    "civilization": "West African",
+    "geometricConcept": "Frieze strip patterns",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "compare ratio relationships",
-      "strip permutations",
-      "west african"
+      "frieze strip patterns",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Design a symbol using Strip to represent a challenge you've overcome. What does the geometry reveal?",
+    "prompt": "Design a symbol using Frieze to represent a challenge you've overcome. What does the geometry reveal?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Amara the Weaver",
-      "role": "Kente master",
-      "imageUrl": "assets/characters/west-african-character.png",
-      "biography": "Amara the Weaver uses strip to solve problems about compare ratio relationships."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses frieze to solve problems about compare ratio relationships."
     },
-    "narrative": "Follow Amara the Weaver as they discover how strip permutations helps them understand compare ratio relationships. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how frieze strip patterns helps them understand compare ratio relationships. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does strip help us think about compare ratio relationships?"
+    "questionPrompt": "How does frieze help us think about compare ratio relationships?"
   },
   "myth": {
-    "title": "TBD: Myth for West African",
-    "civilization": "West African",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Adinkra + Kente analysis",
-      "civilization": "West African",
+      "title": "Frieze pattern permutations",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-4-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals strip structure in Adinkra + Kente analysis"
+          "description": "Overlay reveals frieze structure in Frieze pattern permutations"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the strip permutations visible in this artifact."
+      "teachingNotes": "Highlight the frieze strip patterns visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Palace wall variations",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-4-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals frieze structure in Palace wall variations"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the frieze strip patterns visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Compare ratio relationships with Strip permutations",
-    "objective": "Students will apply compare ratio relationships using strip permutations.",
+    "title": "Compare ratio relationships with Frieze strip patterns",
+    "objective": "Students will apply compare ratio relationships using frieze strip patterns.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Kente rhythm",
+    "title": "Rhythm variations",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Strip permutations",
+    "title": "Frieze strip patterns",
     "concept": "Permute orders",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Compare ratio relationships to Strip permutations",
-    "mathToArt": "Math concept compare ratio relationships illuminates artistic thinking in kente rhythm.",
-    "artToGeometry": "Artistic expression reveals geometric structure: strip permutations.",
-    "synthesis": "Permute orders and kente rhythm are two views of the same cognitive tool.",
+    "title": "Connecting Compare ratio relationships to Frieze strip patterns",
+    "mathToArt": "Math concept compare ratio relationships illuminates artistic thinking in rhythm variations.",
+    "artToGeometry": "Artistic expression reveals geometric structure: frieze strip patterns.",
+    "synthesis": "Permute orders and rhythm variations are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-4-bridge.svg"
   },
   "exit": {
-    "prompt": "How does strip help you think about compare ratio relationships?",
+    "prompt": "How does frieze help you think about compare ratio relationships?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present West African cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

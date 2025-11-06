@@ -6,20 +6,20 @@
     "lessonNumber": 12,
     "duration": 50,
     "mathConcept": "Comparisons",
-    "geometricConcept": "Wallpaper groups",
-    "civilization": "Islamic",
+    "geometricConcept": "Frieze symmetry groups",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "comparisons",
-      "wallpaper groups",
-      "islamic"
+      "frieze symmetry groups",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Create a geometric design that represents something you're proud of. How does Wallpaper help tell your story?",
+    "prompt": "Create a geometric design that represents something you're proud of. How does Frieze help tell your story?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Fatima the Tiler",
-      "role": "Pattern master",
-      "imageUrl": "assets/characters/islamic-character.png",
-      "biography": "Fatima the Tiler uses wallpaper to solve problems about comparisons."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses frieze to solve problems about comparisons."
     },
-    "narrative": "Follow Fatima the Tiler as they discover how wallpaper groups helps them understand comparisons. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how frieze symmetry groups helps them understand comparisons. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does wallpaper help us think about comparisons?"
+    "questionPrompt": "How does frieze help us think about comparisons?"
   },
   "myth": {
-    "title": "TBD: Myth for Islamic",
-    "civilization": "Islamic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Islamic tiling walls",
-      "civilization": "Islamic",
+      "title": "p1 p2 pm pg frieze types",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-12-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals wallpaper structure in Islamic tiling walls"
+          "description": "Overlay reveals frieze structure in p1 p2 pm pg frieze types"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the wallpaper groups visible in this artifact."
+      "teachingNotes": "Highlight the frieze symmetry groups visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Ishtar Gate patterns",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-12-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals frieze structure in Ishtar Gate patterns"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the frieze symmetry groups visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Comparisons with Wallpaper groups",
-    "objective": "Students will apply comparisons using wallpaper groups.",
+    "title": "Comparisons with Frieze symmetry groups",
+    "objective": "Students will apply comparisons using frieze symmetry groups.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Style dialects",
+    "title": "Palace frieze analysis",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Wallpaper groups",
+    "title": "Frieze symmetry groups",
     "concept": "Classify symmetry",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Comparisons to Wallpaper groups",
-    "mathToArt": "Math concept comparisons illuminates artistic thinking in style dialects.",
-    "artToGeometry": "Artistic expression reveals geometric structure: wallpaper groups.",
-    "synthesis": "Classify symmetry and style dialects are two views of the same cognitive tool.",
+    "title": "Connecting Comparisons to Frieze symmetry groups",
+    "mathToArt": "Math concept comparisons illuminates artistic thinking in palace frieze analysis.",
+    "artToGeometry": "Artistic expression reveals geometric structure: frieze symmetry groups.",
+    "synthesis": "Classify symmetry and palace frieze analysis are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-12-bridge.svg"
   },
   "exit": {
-    "prompt": "How does wallpaper help you think about comparisons?",
+    "prompt": "How does frieze help you think about comparisons?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Islamic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

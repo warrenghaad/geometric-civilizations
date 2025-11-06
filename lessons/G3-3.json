@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Multiplication arrays",
     "geometricConcept": "Tessellation tiles",
-    "civilization": "Greece",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "multiplication arrays",
       "tessellation tiles",
-      "greece"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Sophia the Geometer",
-      "role": "Mathematical philosopher",
-      "imageUrl": "assets/characters/greece-character.png",
-      "biography": "Sophia the Geometer uses tessellation to solve problems about multiplication arrays."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses tessellation to solve problems about multiplication arrays."
     },
-    "narrative": "Follow Sophia the Geometer as they discover how tessellation tiles helps them understand multiplication arrays. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how tessellation tiles helps them understand multiplication arrays. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does tessellation help us think about multiplication arrays?"
   },
   "myth": {
-    "title": "TBD: Myth for Greece",
-    "civilization": "Greece",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Amphora meander borders",
-      "civilization": "Greece",
+      "title": "Ziggurat brick patterns",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-3-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals tessellation structure in Amphora meander borders"
+          "description": "Overlay reveals tessellation structure in Ziggurat brick patterns"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the tessellation tiles visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Palace wall friezes",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-3-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals tessellation structure in Palace wall friezes"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the tessellation tiles visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Stamp borders",
+    "title": "Brick pattern stamping",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Multiplication arrays to Tessellation tiles",
-    "mathToArt": "Math concept multiplication arrays illuminates artistic thinking in stamp borders.",
+    "mathToArt": "Math concept multiplication arrays illuminates artistic thinking in brick pattern stamping.",
     "artToGeometry": "Artistic expression reveals geometric structure: tessellation tiles.",
-    "synthesis": "m\u00d7n tiling; area as count and stamp borders are two views of the same cognitive tool.",
+    "synthesis": "m\u00d7n tiling; area as count and brick pattern stamping are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-3-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Greece cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

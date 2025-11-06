@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Compare/order spiral",
     "geometricConcept": "Spiral growth steps",
-    "civilization": "Celtic",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "compare/order spiral",
       "spiral growth steps",
-      "celtic"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Brigid the Scribe",
-      "role": "Spiral carver",
-      "imageUrl": "assets/characters/celtic-character.png",
-      "biography": "Brigid the Scribe uses spiral to solve problems about compare/order spiral."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses spiral to solve problems about compare/order spiral."
     },
-    "narrative": "Follow Brigid the Scribe as they discover how spiral growth steps helps them understand compare/order spiral. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how spiral growth steps helps them understand compare/order spiral. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does spiral help us think about compare/order spiral?"
   },
   "myth": {
-    "title": "TBD: Myth for Celtic",
-    "civilization": "Celtic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "M\u0101ori koru; Celtic triskele",
-      "civilization": "Celtic",
+      "title": "Spiral cylinder seals",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-10-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals spiral structure in M\u0101ori koru; Celtic triskele"
+          "description": "Overlay reveals spiral structure in Spiral cylinder seals"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the spiral growth steps visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Vase decorations",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-10-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals spiral structure in Vase decorations"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the spiral growth steps visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Spiral storyboard",
+    "title": "Spiral seal motifs",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Compare/order spiral to Spiral growth steps",
-    "mathToArt": "Math concept compare/order spiral illuminates artistic thinking in spiral storyboard.",
+    "mathToArt": "Math concept compare/order spiral illuminates artistic thinking in spiral seal motifs.",
     "artToGeometry": "Artistic expression reveals geometric structure: spiral growth steps.",
-    "synthesis": "Turns per ring and spiral storyboard are two views of the same cognitive tool.",
+    "synthesis": "Turns per ring and spiral seal motifs are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-10-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Celtic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

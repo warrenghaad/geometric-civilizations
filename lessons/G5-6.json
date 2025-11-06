@@ -6,20 +6,20 @@
     "lessonNumber": 6,
     "duration": 50,
     "mathConcept": "Unit rates",
-    "geometricConcept": "Voronoi density",
-    "civilization": "Contemporary",
+    "geometricConcept": "Brick density patterns",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "unit rates",
-      "voronoi density",
-      "contemporary"
+      "brick density patterns",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Design a symbol using Voronoi to represent a challenge you've overcome. What does the geometry reveal?",
+    "prompt": "Design a symbol using Brick to represent a challenge you've overcome. What does the geometry reveal?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Zara the Parametric Designer",
-      "role": "Digital architect",
-      "imageUrl": "assets/characters/contemporary-character.png",
-      "biography": "Zara the Parametric Designer uses voronoi to solve problems about unit rates."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses brick to solve problems about unit rates."
     },
-    "narrative": "Follow Zara the Parametric Designer as they discover how voronoi density helps them understand unit rates. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how brick density patterns helps them understand unit rates. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does voronoi help us think about unit rates?"
+    "questionPrompt": "How does brick help us think about unit rates?"
   },
   "myth": {
-    "title": "TBD: Myth for Contemporary",
-    "civilization": "Contemporary",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Voronoi fa\u00e7ades/screens",
-      "civilization": "Contemporary",
+      "title": "Brick count per wall section",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-6-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals voronoi structure in Voronoi fa\u00e7ades/screens"
+          "description": "Overlay reveals brick structure in Brick count per wall section"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the voronoi density visible in this artifact."
+      "teachingNotes": "Highlight the brick density patterns visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Construction efficiency",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-6-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals brick structure in Construction efficiency"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the brick density patterns visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Unit rates with Voronoi density",
-    "objective": "Students will apply unit rates using voronoi density.",
+    "title": "Unit rates with Brick density patterns",
+    "objective": "Students will apply unit rates using brick density patterns.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Shading balance",
+    "title": "Wall construction rates",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,8 +154,8 @@
     ]
   },
   "geometryActivity": {
-    "title": "Voronoi density",
-    "concept": "Seeds per area",
+    "title": "Brick density patterns",
+    "concept": "Bricks per area",
     "procedure": [
       "Define key geometric concepts",
       "Explore with hands-on tools",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Unit rates to Voronoi density",
-    "mathToArt": "Math concept unit rates illuminates artistic thinking in shading balance.",
-    "artToGeometry": "Artistic expression reveals geometric structure: voronoi density.",
-    "synthesis": "Seeds per area and shading balance are two views of the same cognitive tool.",
+    "title": "Connecting Unit rates to Brick density patterns",
+    "mathToArt": "Math concept unit rates illuminates artistic thinking in wall construction rates.",
+    "artToGeometry": "Artistic expression reveals geometric structure: brick density patterns.",
+    "synthesis": "Bricks per area and wall construction rates are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-6-bridge.svg"
   },
   "exit": {
-    "prompt": "How does voronoi help you think about unit rates?",
+    "prompt": "How does brick help you think about unit rates?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Contemporary cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

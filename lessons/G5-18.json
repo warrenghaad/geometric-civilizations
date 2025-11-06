@@ -6,20 +6,20 @@
     "lessonNumber": 18,
     "duration": 50,
     "mathConcept": "Assessment",
-    "geometricConcept": "Cross-era compare",
-    "civilization": "Cross-cultural",
+    "geometricConcept": "Mesopotamian geometry synthesis",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "assessment",
-      "cross-era compare",
-      "cross-cultural"
+      "mesopotamian geometry synthesis",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Design a symbol using Cross-era to represent a challenge you've overcome. What does the geometry reveal?",
+    "prompt": "Design a symbol using Mesopotamian to represent a challenge you've overcome. What does the geometry reveal?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/cross-cultural-character.png",
-      "biography": "Kira the Cave Keeper uses cross-era to solve problems about assessment."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses mesopotamian to solve problems about assessment."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how cross-era compare helps them understand assessment. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how mesopotamian geometry synthesis helps them understand assessment. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does cross-era help us think about assessment?"
+    "questionPrompt": "How does mesopotamian help us think about assessment?"
   },
   "myth": {
-    "title": "TBD: Myth for Cross-cultural",
-    "civilization": "Cross-cultural",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Exhibition with notes",
-      "civilization": "Cross-cultural",
+      "title": "Final exhibition: Mesopotamian geometric thinking",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-18-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals cross-era structure in Exhibition with notes"
+          "description": "Overlay reveals mesopotamian structure in Final exhibition: Mesopotamian geometric thinking"
         }
       ],
       "metadata": {
@@ -83,12 +83,12 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the cross-era compare visible in this artifact."
+      "teachingNotes": "Highlight the mesopotamian geometry synthesis visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Assessment with Cross-era compare",
-    "objective": "Students will apply assessment using cross-era compare.",
+    "title": "Assessment with Mesopotamian geometry synthesis",
+    "objective": "Students will apply assessment using mesopotamian geometry synthesis.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +105,7 @@
     ]
   },
   "artActivity": {
-    "title": "Curate series",
+    "title": "Exhibition curation",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +120,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Cross-era compare",
+    "title": "Mesopotamian geometry synthesis",
     "concept": "Generalize rules",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +135,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Assessment to Cross-era compare",
-    "mathToArt": "Math concept assessment illuminates artistic thinking in curate series.",
-    "artToGeometry": "Artistic expression reveals geometric structure: cross-era compare.",
-    "synthesis": "Generalize rules and curate series are two views of the same cognitive tool.",
+    "title": "Connecting Assessment to Mesopotamian geometry synthesis",
+    "mathToArt": "Math concept assessment illuminates artistic thinking in exhibition curation.",
+    "artToGeometry": "Artistic expression reveals geometric structure: mesopotamian geometry synthesis.",
+    "synthesis": "Generalize rules and exhibition curation are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-18-bridge.svg"
   },
   "exit": {
-    "prompt": "How does cross-era help you think about assessment?",
+    "prompt": "How does mesopotamian help you think about assessment?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +175,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

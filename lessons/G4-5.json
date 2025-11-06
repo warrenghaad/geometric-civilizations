@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Rounding/estimation",
     "geometricConcept": "Nearest chord",
-    "civilization": "Gothic",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "rounding/estimation",
       "nearest chord",
-      "gothic"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Pierre the Mason",
-      "role": "Cathedral builder",
-      "imageUrl": "assets/characters/gothic-character.png",
-      "biography": "Pierre the Mason uses nearest to solve problems about rounding/estimation."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses nearest to solve problems about rounding/estimation."
     },
-    "narrative": "Follow Pierre the Mason as they discover how nearest chord helps them understand rounding/estimation. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how nearest chord helps them understand rounding/estimation. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does nearest help us think about rounding/estimation?"
   },
   "myth": {
-    "title": "TBD: Myth for Gothic",
-    "civilization": "Gothic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Cathedral mason's marks",
-      "civilization": "Gothic",
+      "title": "Seal carving guides",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-5-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals nearest structure in Cathedral mason's marks"
+          "description": "Overlay reveals nearest structure in Seal carving guides"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the nearest chord visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Compass construction marks",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-5-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals nearest structure in Compass construction marks"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the nearest chord visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Layout marks",
+    "title": "Layout compass marks",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Rounding/estimation to Nearest chord",
-    "mathToArt": "Math concept rounding/estimation illuminates artistic thinking in layout marks.",
+    "mathToArt": "Math concept rounding/estimation illuminates artistic thinking in layout compass marks.",
     "artToGeometry": "Artistic expression reveals geometric structure: nearest chord.",
-    "synthesis": "Approx degrees and layout marks are two views of the same cognitive tool.",
+    "synthesis": "Approx degrees and layout compass marks are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-5-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Gothic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

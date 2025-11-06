@@ -6,16 +6,16 @@
     "lessonNumber": 9,
     "duration": 50,
     "mathConcept": "Project synthesis",
-    "geometricConcept": "Hybrid revival",
-    "civilization": "Contemporary",
+    "geometricConcept": "Hybrid palace design",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "project synthesis",
-      "hybrid revival",
-      "contemporary"
+      "hybrid palace design",
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Zara the Parametric Designer",
-      "role": "Digital architect",
-      "imageUrl": "assets/characters/contemporary-character.png",
-      "biography": "Zara the Parametric Designer uses hybrid to solve problems about project synthesis."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses hybrid to solve problems about project synthesis."
     },
-    "narrative": "Follow Zara the Parametric Designer as they discover how hybrid revival helps them understand project synthesis. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how hybrid palace design helps them understand project synthesis. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does hybrid help us think about project synthesis?"
   },
   "myth": {
-    "title": "TBD: Myth for Contemporary",
-    "civilization": "Contemporary",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Star + Voronoi + rosette",
-      "civilization": "Contemporary",
+      "title": "Combined rosette + star + frieze designs",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G5-9-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals hybrid structure in Star + Voronoi + rosette"
+          "description": "Overlay reveals hybrid structure in Combined rosette + star + frieze designs"
         }
       ],
       "metadata": {
@@ -83,12 +83,12 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the hybrid revival visible in this artifact."
+      "teachingNotes": "Highlight the hybrid palace design visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Project synthesis with Hybrid revival",
-    "objective": "Students will apply project synthesis using hybrid revival.",
+    "title": "Project synthesis with Hybrid palace design",
+    "objective": "Students will apply project synthesis using hybrid palace design.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +105,7 @@
     ]
   },
   "artActivity": {
-    "title": "Design brief",
+    "title": "Multi-pattern composition",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +120,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Hybrid revival",
+    "title": "Hybrid palace design",
     "concept": "Parameter tables",
     "procedure": [
       "Define key geometric concepts",
@@ -135,10 +135,10 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Project synthesis to Hybrid revival",
-    "mathToArt": "Math concept project synthesis illuminates artistic thinking in design brief.",
-    "artToGeometry": "Artistic expression reveals geometric structure: hybrid revival.",
-    "synthesis": "Parameter tables and design brief are two views of the same cognitive tool.",
+    "title": "Connecting Project synthesis to Hybrid palace design",
+    "mathToArt": "Math concept project synthesis illuminates artistic thinking in multi-pattern composition.",
+    "artToGeometry": "Artistic expression reveals geometric structure: hybrid palace design.",
+    "synthesis": "Parameter tables and multi-pattern composition are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G5-9-bridge.svg"
   },
   "exit": {
@@ -175,6 +175,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Contemporary cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

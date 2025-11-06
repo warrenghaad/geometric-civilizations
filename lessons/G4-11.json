@@ -6,20 +6,20 @@
     "lessonNumber": 11,
     "duration": 50,
     "mathConcept": "Place value refinement",
-    "geometricConcept": "Module sizes",
-    "civilization": "Islamic",
+    "geometricConcept": "Brick module sizes",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "place value refinement",
-      "module sizes",
-      "islamic"
+      "brick module sizes",
+      "mesopotamia"
     ]
   },
   "sel": {
-    "prompt": "Create a geometric design that represents something you're proud of. How does Module help tell your story?",
+    "prompt": "Create a geometric design that represents something you're proud of. How does Brick help tell your story?",
     "duration": 5,
     "materials": [
       "Paper",
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Fatima the Tiler",
-      "role": "Pattern master",
-      "imageUrl": "assets/characters/islamic-character.png",
-      "biography": "Fatima the Tiler uses module to solve problems about place value refinement."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses brick to solve problems about place value refinement."
     },
-    "narrative": "Follow Fatima the Tiler as they discover how module sizes helps them understand place value refinement. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how brick module sizes helps them understand place value refinement. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
-    "questionPrompt": "How does module help us think about place value refinement?"
+    "questionPrompt": "How does brick help us think about place value refinement?"
   },
   "myth": {
-    "title": "TBD: Myth for Islamic",
-    "civilization": "Islamic",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Zellige modular stars",
-      "civilization": "Islamic",
+      "title": "Standard brick dimensions",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-11-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals module structure in Zellige modular stars"
+          "description": "Overlay reveals brick structure in Standard brick dimensions"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the module sizes visible in this artifact."
+      "teachingNotes": "Highlight the brick module sizes visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Module systems",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-11-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals brick structure in Module systems"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the brick module sizes visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Place value refinement with Module sizes",
-    "objective": "Students will apply place value refinement using module sizes.",
+    "title": "Place value refinement with Brick module sizes",
+    "objective": "Students will apply place value refinement using brick module sizes.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Panel repeats",
+    "title": "Ziggurat brick repeats",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Module sizes",
+    "title": "Brick module sizes",
     "concept": "Unit to whole",
     "procedure": [
       "Define key geometric concepts",
@@ -135,14 +169,14 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Place value refinement to Module sizes",
-    "mathToArt": "Math concept place value refinement illuminates artistic thinking in panel repeats.",
-    "artToGeometry": "Artistic expression reveals geometric structure: module sizes.",
-    "synthesis": "Unit to whole and panel repeats are two views of the same cognitive tool.",
+    "title": "Connecting Place value refinement to Brick module sizes",
+    "mathToArt": "Math concept place value refinement illuminates artistic thinking in ziggurat brick repeats.",
+    "artToGeometry": "Artistic expression reveals geometric structure: brick module sizes.",
+    "synthesis": "Unit to whole and ziggurat brick repeats are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-11-bridge.svg"
   },
   "exit": {
-    "prompt": "How does module help you think about place value refinement?",
+    "prompt": "How does brick help you think about place value refinement?",
     "format": "verbal",
     "expectedResponses": [
       "Sample response 1",
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Islamic cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

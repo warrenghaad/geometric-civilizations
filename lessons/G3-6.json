@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Area of rectangles intro",
     "geometricConcept": "Grid fields",
-    "civilization": "Polynesia",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "area of rectangles intro",
       "grid fields",
-      "polynesia"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Koa the Navigator",
-      "role": "Ocean voyager",
-      "imageUrl": "assets/characters/polynesia-character.png",
-      "biography": "Koa the Navigator uses grid to solve problems about area of rectangles intro."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses grid to solve problems about area of rectangles intro."
     },
-    "narrative": "Follow Koa the Navigator as they discover how grid fields helps them understand area of rectangles intro. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how grid fields helps them understand area of rectangles intro. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does grid help us think about area of rectangles intro?"
   },
   "myth": {
-    "title": "TBD: Myth for Polynesia",
-    "civilization": "Polynesia",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Polynesian tapa panels",
-      "civilization": "Polynesia",
+      "title": "Cuneiform tablet grids",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-6-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals grid structure in Polynesian tapa panels"
+          "description": "Overlay reveals grid structure in Cuneiform tablet grids"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the grid fields visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Land survey tablets",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-6-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals grid structure in Land survey tablets"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the grid fields visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Quilt/tapa layouts",
+    "title": "Clay tablet grids",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Area of rectangles intro to Grid fields",
-    "mathToArt": "Math concept area of rectangles intro illuminates artistic thinking in quilt/tapa layouts.",
+    "mathToArt": "Math concept area of rectangles intro illuminates artistic thinking in clay tablet grids.",
     "artToGeometry": "Artistic expression reveals geometric structure: grid fields.",
-    "synthesis": "Area via unit squares and quilt/tapa layouts are two views of the same cognitive tool.",
+    "synthesis": "Area via unit squares and clay tablet grids are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-6-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Polynesia cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

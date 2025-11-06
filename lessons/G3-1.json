@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Place value compare/order",
     "geometricConcept": "Circle partitions; equal grouping",
-    "civilization": "Prehistoric",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "place value compare/order",
       "circle partitions; equal grouping",
-      "prehistoric"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Kira the Cave Keeper",
-      "role": "Stone age counter",
-      "imageUrl": "assets/characters/prehistoric-character.png",
-      "biography": "Kira the Cave Keeper uses circle to solve problems about place value compare/order."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses circle to solve problems about place value compare/order."
     },
-    "narrative": "Follow Kira the Cave Keeper as they discover how circle partitions; equal grouping helps them understand place value compare/order. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how circle partitions; equal grouping helps them understand place value compare/order. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does circle help us think about place value compare/order?"
   },
   "myth": {
-    "title": "TBD: Myth for Prehistoric",
-    "civilization": "Prehistoric",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Newgrange triple spiral",
-      "civilization": "Prehistoric",
+      "title": "Cylinder seal rosettes",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-1-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals circle structure in Newgrange triple spiral"
+          "description": "Overlay reveals circle structure in Cylinder seal rosettes"
         }
       ],
       "metadata": {
@@ -87,8 +87,8 @@
     },
     {
       "artifactId": "artifact-02",
-      "title": "Chauvet handprints",
-      "civilization": "Prehistoric",
+      "title": "Shamash sun disk",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-1-artifact-02.jpg",
       "overlays": [
@@ -107,7 +107,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals circle structure in Chauvet handprints"
+          "description": "Overlay reveals circle structure in Shamash sun disk"
         }
       ],
       "metadata": {
@@ -139,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Petal composition; color symmetry",
+    "title": "Rosette petal composition",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -170,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Place value compare/order to Circle partitions; equal grouping",
-    "mathToArt": "Math concept place value compare/order illuminates artistic thinking in petal composition; color symmetry.",
+    "mathToArt": "Math concept place value compare/order illuminates artistic thinking in rosette petal composition.",
     "artToGeometry": "Artistic expression reveals geometric structure: circle partitions; equal grouping.",
-    "synthesis": "360\u00b0/n idea; count-by groups and petal composition; color symmetry are two views of the same cognitive tool.",
+    "synthesis": "360\u00b0/n idea; count-by groups and rosette petal composition are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-1-bridge.svg"
   },
   "exit": {
@@ -209,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Prehistoric cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

@@ -6,16 +6,16 @@
     "lessonNumber": 16,
     "duration": 50,
     "mathConcept": "Problem solving",
-    "geometricConcept": "Sequenced builds",
-    "civilization": "Greece",
+    "geometricConcept": "Sequenced construction",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
     },
     "keywords": [
       "problem solving",
-      "sequenced builds",
-      "greece"
+      "sequenced construction",
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Sophia the Geometer",
-      "role": "Mathematical philosopher",
-      "imageUrl": "assets/characters/greece-character.png",
-      "biography": "Sophia the Geometer uses sequenced to solve problems about problem solving."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses sequenced to solve problems about problem solving."
     },
-    "narrative": "Follow Sophia the Geometer as they discover how sequenced builds helps them understand problem solving. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how sequenced construction helps them understand problem solving. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does sequenced help us think about problem solving?"
   },
   "myth": {
-    "title": "TBD: Myth for Greece",
-    "civilization": "Greece",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Volute to tracery sequence",
-      "civilization": "Greece",
+      "title": "Step-by-step ziggurat building",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G4-16-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals sequenced structure in Volute to tracery sequence"
+          "description": "Overlay reveals sequenced structure in Step-by-step ziggurat building"
         }
       ],
       "metadata": {
@@ -83,12 +83,46 @@
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
       },
-      "teachingNotes": "Highlight the sequenced builds visible in this artifact."
+      "teachingNotes": "Highlight the sequenced construction visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Construction phases",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-16-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals sequenced structure in Construction phases"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the sequenced construction visible in this artifact."
     }
   ],
   "mathActivity": {
-    "title": "Problem solving with Sequenced builds",
-    "objective": "Students will apply problem solving using sequenced builds.",
+    "title": "Problem solving with Sequenced construction",
+    "objective": "Students will apply problem solving using sequenced construction.",
     "procedure": [
       "Review prior knowledge",
       "Introduce geometric model",
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Shop drawings",
+    "title": "Ziggurat build sequence",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -120,7 +154,7 @@
     ]
   },
   "geometryActivity": {
-    "title": "Sequenced builds",
+    "title": "Sequenced construction",
     "concept": "Checkpoints",
     "procedure": [
       "Define key geometric concepts",
@@ -135,10 +169,10 @@
     "vocabulary": []
   },
   "bridge": {
-    "title": "Connecting Problem solving to Sequenced builds",
-    "mathToArt": "Math concept problem solving illuminates artistic thinking in shop drawings.",
-    "artToGeometry": "Artistic expression reveals geometric structure: sequenced builds.",
-    "synthesis": "Checkpoints and shop drawings are two views of the same cognitive tool.",
+    "title": "Connecting Problem solving to Sequenced construction",
+    "mathToArt": "Math concept problem solving illuminates artistic thinking in ziggurat build sequence.",
+    "artToGeometry": "Artistic expression reveals geometric structure: sequenced construction.",
+    "synthesis": "Checkpoints and ziggurat build sequence are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G4-16-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Greece cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }

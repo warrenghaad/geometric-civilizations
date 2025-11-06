@@ -7,7 +7,7 @@
     "duration": 50,
     "mathConcept": "Measurement time",
     "geometricConcept": "Circle clock",
-    "civilization": "Egypt",
+    "civilization": "Mesopotamia",
     "standards": {
       "ccss": [],
       "ncas": []
@@ -15,7 +15,7 @@
     "keywords": [
       "measurement time",
       "circle clock",
-      "egypt"
+      "mesopotamia"
     ]
   },
   "sel": {
@@ -33,19 +33,19 @@
   },
   "hook": {
     "character": {
-      "name": "Ahmose the Scribe",
-      "role": "Royal architect",
-      "imageUrl": "assets/characters/egypt-character.png",
-      "biography": "Ahmose the Scribe uses circle to solve problems about measurement time."
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses circle to solve problems about measurement time."
     },
-    "narrative": "Follow Ahmose the Scribe as they discover how circle clock helps them understand measurement time. Their journey reveals the hidden mathematics in everyday patterns.",
+    "narrative": "Follow Enlil the Seal Maker as they discover how circle clock helps them understand measurement time. Their journey reveals the hidden mathematics in everyday patterns.",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "How does circle help us think about measurement time?"
   },
   "myth": {
-    "title": "TBD: Myth for Egypt",
-    "civilization": "Egypt",
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
     "summary": "To be researched and written",
     "scenes": [],
     "sources": []
@@ -53,8 +53,8 @@
   "artifacts": [
     {
       "artifactId": "artifact-01",
-      "title": "Egyptian shadow clocks",
-      "civilization": "Egypt",
+      "title": "Babylonian sundials",
+      "civilization": "Mesopotamia",
       "period": "TBD - Research needed",
       "imageUrl": "assets/artifacts/G3-16-artifact-01.jpg",
       "overlays": [
@@ -73,7 +73,7 @@
               "style": {}
             }
           ],
-          "description": "Overlay reveals circle structure in Egyptian shadow clocks"
+          "description": "Overlay reveals circle structure in Babylonian sundials"
         }
       ],
       "metadata": {
@@ -82,6 +82,40 @@
         "accessionNumber": "TBD",
         "license": "CC0 1.0",
         "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the circle clock visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Water clock sectors",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-16-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals circle structure in Water clock sectors"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
       },
       "teachingNotes": "Highlight the circle clock visible in this artifact."
     }
@@ -105,7 +139,7 @@
     ]
   },
   "artActivity": {
-    "title": "Sun path dial",
+    "title": "Sundial divisions",
     "technique": "To be specified",
     "procedure": [
       "Examine cultural artifacts",
@@ -136,9 +170,9 @@
   },
   "bridge": {
     "title": "Connecting Measurement time to Circle clock",
-    "mathToArt": "Math concept measurement time illuminates artistic thinking in sun path dial.",
+    "mathToArt": "Math concept measurement time illuminates artistic thinking in sundial divisions.",
     "artToGeometry": "Artistic expression reveals geometric structure: circle clock.",
-    "synthesis": "Angle per hour and sun path dial are two views of the same cognitive tool.",
+    "synthesis": "Angle per hour and sundial divisions are two views of the same cognitive tool.",
     "visualDiagram": "assets/diagrams/G3-16-bridge.svg"
   },
   "exit": {
@@ -175,6 +209,6 @@
     ],
     "commonMisconceptions": [],
     "timingTips": [],
-    "culturalNotes": "Respectfully present Egypt cultural context."
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
   }
 }
