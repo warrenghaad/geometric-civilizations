@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-11",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 6,
+    "lessonNumber": 11,
+    "duration": 50,
+    "mathConcept": "Tables revisit",
+    "geometricConcept": "Wallpaper densities",
+    "civilization": "Cross-cultural",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "tables revisit",
+      "wallpaper densities",
+      "cross-cultural"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Wallpaper to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Kira the Cave Keeper",
+      "role": "Stone age counter",
+      "imageUrl": "assets/characters/cross-cultural-character.png",
+      "biography": "Kira the Cave Keeper uses wallpaper to solve problems about tables revisit."
+    },
+    "narrative": "Follow Kira the Cave Keeper as they discover how wallpaper densities helps them understand tables revisit. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does wallpaper help us think about tables revisit?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Cross-cultural",
+    "civilization": "Cross-cultural",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Roman vs Islamic tiling",
+      "civilization": "Cross-cultural",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-11-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals wallpaper structure in Roman vs Islamic tiling"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the wallpaper densities visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Tables revisit with Wallpaper densities",
+    "objective": "Students will apply tables revisit using wallpaper densities.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Texture feel",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Wallpaper densities",
+    "concept": "Repeats/unit",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Tables revisit to Wallpaper densities",
+    "mathToArt": "Math concept tables revisit illuminates artistic thinking in texture feel.",
+    "artToGeometry": "Artistic expression reveals geometric structure: wallpaper densities.",
+    "synthesis": "Repeats/unit and texture feel are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-11-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does wallpaper help you think about tables revisit?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-11-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+  }
+}

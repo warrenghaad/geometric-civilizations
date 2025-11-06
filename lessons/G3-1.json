@@ -1,0 +1,214 @@
+{
+  "lessonId": "G3-1",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 1,
+    "lessonNumber": 1,
+    "duration": 50,
+    "mathConcept": "Place value compare/order",
+    "geometricConcept": "Circle partitions; equal grouping",
+    "civilization": "Prehistoric",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "place value compare/order",
+      "circle partitions; equal grouping",
+      "prehistoric"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a circle in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Kira the Cave Keeper",
+      "role": "Stone age counter",
+      "imageUrl": "assets/characters/prehistoric-character.png",
+      "biography": "Kira the Cave Keeper uses circle to solve problems about place value compare/order."
+    },
+    "narrative": "Follow Kira the Cave Keeper as they discover how circle partitions; equal grouping helps them understand place value compare/order. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does circle help us think about place value compare/order?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Prehistoric",
+    "civilization": "Prehistoric",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Newgrange triple spiral",
+      "civilization": "Prehistoric",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-1-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals circle structure in Newgrange triple spiral"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the circle partitions; equal grouping visible in this artifact."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Chauvet handprints",
+      "civilization": "Prehistoric",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-1-artifact-02.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals circle structure in Chauvet handprints"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-2"
+      },
+      "teachingNotes": "Highlight the circle partitions; equal grouping visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Place value compare/order with Circle partitions; equal grouping",
+    "objective": "Students will apply place value compare/order using circle partitions; equal grouping.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Petal composition; color symmetry",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Circle partitions; equal grouping",
+    "concept": "360\u00b0/n idea; count-by groups",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Place value compare/order to Circle partitions; equal grouping",
+    "mathToArt": "Math concept place value compare/order illuminates artistic thinking in petal composition; color symmetry.",
+    "artToGeometry": "Artistic expression reveals geometric structure: circle partitions; equal grouping.",
+    "synthesis": "360\u00b0/n idea; count-by groups and petal composition; color symmetry are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-1-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does circle help you think about place value compare/order?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-1-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Prehistoric cultural context."
+  }
+}

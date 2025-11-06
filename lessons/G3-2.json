@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-2",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 1,
+    "lessonNumber": 2,
+    "duration": 50,
+    "mathConcept": "Rounding",
+    "geometricConcept": "Nearest ring/sector",
+    "civilization": "Egypt",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "rounding",
+      "nearest ring/sector",
+      "egypt"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a nearest in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Ahmose the Scribe",
+      "role": "Royal architect",
+      "imageUrl": "assets/characters/egypt-character.png",
+      "biography": "Ahmose the Scribe uses nearest to solve problems about rounding."
+    },
+    "narrative": "Follow Ahmose the Scribe as they discover how nearest ring/sector helps them understand rounding. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does nearest help us think about rounding?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Egypt",
+    "civilization": "Egypt",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Karnak lotus capitals",
+      "civilization": "Egypt",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-2-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals nearest structure in Karnak lotus capitals"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the nearest ring/sector visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Rounding with Nearest ring/sector",
+    "objective": "Students will apply rounding using nearest ring/sector.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Rosette ring design",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Nearest ring/sector",
+    "concept": "Thresholds to nearest multiple",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Rounding to Nearest ring/sector",
+    "mathToArt": "Math concept rounding illuminates artistic thinking in rosette ring design.",
+    "artToGeometry": "Artistic expression reveals geometric structure: nearest ring/sector.",
+    "synthesis": "Thresholds to nearest multiple and rosette ring design are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-2-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does nearest help you think about rounding?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-2-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Egypt cultural context."
+  }
+}

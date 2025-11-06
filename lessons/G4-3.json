@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-3",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 2,
+    "lessonNumber": 3,
+    "duration": 50,
+    "mathConcept": "Model fractions/decimals",
+    "geometricConcept": "Sector partitions",
+    "civilization": "Byzantine",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "model fractions/decimals",
+      "sector partitions",
+      "byzantine"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Sector help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Theodora the Mosaic Artist",
+      "role": "Cathedral designer",
+      "imageUrl": "assets/characters/byzantine-character.png",
+      "biography": "Theodora the Mosaic Artist uses sector to solve problems about model fractions/decimals."
+    },
+    "narrative": "Follow Theodora the Mosaic Artist as they discover how sector partitions helps them understand model fractions/decimals. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does sector help us think about model fractions/decimals?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Byzantine",
+    "civilization": "Byzantine",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Cross-in-square; rose windows",
+      "civilization": "Byzantine",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-3-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals sector structure in Cross-in-square; rose windows"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the sector partitions visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Model fractions/decimals with Sector partitions",
+    "objective": "Students will apply model fractions/decimals using sector partitions.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Color balance",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Sector partitions",
+    "concept": "n/360 mapping",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Model fractions/decimals to Sector partitions",
+    "mathToArt": "Math concept model fractions/decimals illuminates artistic thinking in color balance.",
+    "artToGeometry": "Artistic expression reveals geometric structure: sector partitions.",
+    "synthesis": "n/360 mapping and color balance are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-3-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does sector help you think about model fractions/decimals?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-3-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Byzantine cultural context."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-12",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 6,
+    "lessonNumber": 12,
+    "duration": 50,
+    "mathConcept": "Graphs revisit",
+    "geometricConcept": "Chord families",
+    "civilization": "Cross-cultural",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "graphs revisit",
+      "chord families",
+      "cross-cultural"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Chord to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Kira the Cave Keeper",
+      "role": "Stone age counter",
+      "imageUrl": "assets/characters/cross-cultural-character.png",
+      "biography": "Kira the Cave Keeper uses chord to solve problems about graphs revisit."
+    },
+    "narrative": "Follow Kira the Cave Keeper as they discover how chord families helps them understand graphs revisit. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does chord help us think about graphs revisit?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Cross-cultural",
+    "civilization": "Cross-cultural",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Arch type comparison",
+      "civilization": "Cross-cultural",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-12-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals chord structure in Arch type comparison"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the chord families visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Graphs revisit with Chord families",
+    "objective": "Students will apply graphs revisit using chord families.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Arches gallery",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Chord families",
+    "concept": "y vs \u03b8 plots",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Graphs revisit to Chord families",
+    "mathToArt": "Math concept graphs revisit illuminates artistic thinking in arches gallery.",
+    "artToGeometry": "Artistic expression reveals geometric structure: chord families.",
+    "synthesis": "y vs \u03b8 plots and arches gallery are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-12-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does chord help you think about graphs revisit?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-12-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-17",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 9,
+    "lessonNumber": 17,
+    "duration": 50,
+    "mathConcept": "Review",
+    "geometricConcept": "Explain parameters",
+    "civilization": "Cross-cultural",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "review",
+      "explain parameters",
+      "cross-cultural"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Explain to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Kira the Cave Keeper",
+      "role": "Stone age counter",
+      "imageUrl": "assets/characters/cross-cultural-character.png",
+      "biography": "Kira the Cave Keeper uses explain to solve problems about review."
+    },
+    "narrative": "Follow Kira the Cave Keeper as they discover how explain parameters helps them understand review. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does explain help us think about review?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Cross-cultural",
+    "civilization": "Cross-cultural",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Design logbooks",
+      "civilization": "Cross-cultural",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-17-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals explain structure in Design logbooks"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the explain parameters visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Review with Explain parameters",
+    "objective": "Students will apply review using explain parameters.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Style statement",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Explain parameters",
+    "concept": "Tables/graphs",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Review to Explain parameters",
+    "mathToArt": "Math concept review illuminates artistic thinking in style statement.",
+    "artToGeometry": "Artistic expression reveals geometric structure: explain parameters.",
+    "synthesis": "Tables/graphs and style statement are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-17-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does explain help you think about review?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-17-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Cross-cultural cultural context."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-9",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 5,
+    "lessonNumber": 9,
+    "duration": 50,
+    "mathConcept": "Review + mini project",
+    "geometricConcept": "Light path maps",
+    "civilization": "Gothic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "review + mini project",
+      "light path maps",
+      "gothic"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Light help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Pierre the Mason",
+      "role": "Cathedral builder",
+      "imageUrl": "assets/characters/gothic-character.png",
+      "biography": "Pierre the Mason uses light to solve problems about review + mini project."
+    },
+    "narrative": "Follow Pierre the Mason as they discover how light path maps helps them understand review + mini project. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does light help us think about review + mini project?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Gothic",
+    "civilization": "Gothic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Rose window spec sheet",
+      "civilization": "Gothic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-9-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals light structure in Rose window spec sheet"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the light path maps visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Review + mini project with Light path maps",
+    "objective": "Students will apply review + mini project using light path maps.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Glass color plan",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Light path maps",
+    "concept": "Angle of segments",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Review + mini project to Light path maps",
+    "mathToArt": "Math concept review + mini project illuminates artistic thinking in glass color plan.",
+    "artToGeometry": "Artistic expression reveals geometric structure: light path maps.",
+    "synthesis": "Angle of segments and glass color plan are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-9-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does light help you think about review + mini project?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-9-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Gothic cultural context."
+  }
+}

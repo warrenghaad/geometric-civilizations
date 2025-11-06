@@ -1,0 +1,374 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Geometric Civilizations Design System",
+  "version": "1.0.0",
+  "description": "Master design specifications for all curriculum content types",
+
+  "typography": {
+    "fontFamilies": {
+      "primary": "Inter, system-ui, sans-serif",
+      "headings": "Poppins, sans-serif",
+      "display": "Playfair Display, serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scales": {
+      "grade3": {
+        "body": "18px",
+        "heading1": "48px",
+        "heading2": "36px",
+        "heading3": "28px",
+        "caption": "14px"
+      },
+      "grade4": {
+        "body": "16px",
+        "heading1": "44px",
+        "heading2": "32px",
+        "heading3": "24px",
+        "caption": "13px"
+      },
+      "grade5": {
+        "body": "15px",
+        "heading1": "40px",
+        "heading2": "30px",
+        "heading3": "22px",
+        "caption": "12px"
+      }
+    },
+    "lineHeights": {
+      "tight": 1.2,
+      "normal": 1.5,
+      "relaxed": 1.8
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+
+  "colorPalettes": {
+    "grade3": {
+      "name": "Vibrant Wonder",
+      "primary": "#FF6B6B",
+      "secondary": "#4ECDC4",
+      "accent": "#FFD93D",
+      "background": "#F7F9FC",
+      "surface": "#FFFFFF",
+      "textPrimary": "#2C3E50",
+      "textSecondary": "#7F8C8D",
+      "geometric": {
+        "circle": "#3498DB",
+        "line": "#E74C3C",
+        "square": "#2ECC71",
+        "spiral": "#9B59B6"
+      }
+    },
+    "grade4": {
+      "name": "Scholarly Discovery",
+      "primary": "#2B6CB0",
+      "secondary": "#68D391",
+      "accent": "#ED8936",
+      "background": "#F7FAFC",
+      "surface": "#FFFFFF",
+      "textPrimary": "#1A202C",
+      "textSecondary": "#4A5568",
+      "geometric": {
+        "circle": "#3182CE",
+        "line": "#C53030",
+        "square": "#38A169",
+        "spiral": "#805AD5"
+      }
+    },
+    "grade5": {
+      "name": "Mature Inquiry",
+      "primary": "#1A365D",
+      "secondary": "#48BB78",
+      "accent": "#DD6B20",
+      "background": "#F9FAFB",
+      "surface": "#FFFFFF",
+      "textPrimary": "#111827",
+      "textSecondary": "#374151",
+      "geometric": {
+        "circle": "#2563EB",
+        "line": "#DC2626",
+        "square": "#059669",
+        "spiral": "#7C3AED"
+      }
+    },
+    "civilization": {
+      "mesopotamia": "#8B4513",
+      "egypt": "#D4AF37",
+      "greece": "#4169E1",
+      "india": "#FF6347",
+      "islamic": "#00CED1",
+      "china": "#DC143C",
+      "renaissance": "#9370DB"
+    }
+  },
+
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px",
+    "2xl": "48px",
+    "3xl": "64px"
+  },
+
+  "borderRadius": {
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "full": "9999px"
+  },
+
+  "slideLayouts": {
+    "titleSlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "title": {"x": "10%", "y": "30%", "width": "80%", "height": "20%"},
+        "subtitle": {"x": "10%", "y": "55%", "width": "80%", "height": "10%"},
+        "visual": {"x": "35%", "y": "70%", "width": "30%", "height": "20%"}
+      }
+    },
+    "selSlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "prompt": {"x": "10%", "y": "20%", "width": "80%", "height": "25%"},
+        "illustration": {"x": "20%", "y": "50%", "width": "60%", "height": "40%"}
+      }
+    },
+    "hookSlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "character": {"x": "10%", "y": "20%", "width": "30%", "height": "60%"},
+        "narrative": {"x": "45%", "y": "20%", "width": "50%", "height": "60%"}
+      }
+    },
+    "mythSlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "image": {"x": "5%", "y": "10%", "width": "50%", "height": "70%"},
+        "text": {"x": "60%", "y": "10%", "width": "35%", "height": "70%"},
+        "caption": {"x": "5%", "y": "85%", "width": "90%", "height": "10%"}
+      }
+    },
+    "artifactSlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "artifact": {"x": "10%", "y": "10%", "width": "45%", "height": "60%"},
+        "overlay": {"x": "60%", "y": "10%", "width": "35%", "height": "60%"},
+        "metadata": {"x": "10%", "y": "75%", "width": "85%", "height": "20%"}
+      }
+    },
+    "activitySlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "instructions": {"x": "10%", "y": "10%", "width": "40%", "height": "30%"},
+        "workspace": {"x": "10%", "y": "45%", "width": "85%", "height": "45%"},
+        "tools": {"x": "55%", "y": "10%", "width": "40%", "height": "30%"}
+      }
+    },
+    "bridgeSlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "leftConcept": {"x": "5%", "y": "20%", "width": "40%", "height": "60%"},
+        "connector": {"x": "45%", "y": "40%", "width": "10%", "height": "20%"},
+        "rightConcept": {"x": "55%", "y": "20%", "width": "40%", "height": "60%"}
+      }
+    },
+    "exitSlide": {
+      "dimensions": "1920x1080",
+      "zones": {
+        "reflection": {"x": "10%", "y": "25%", "width": "80%", "height": "50%"}
+      }
+    }
+  },
+
+  "overlayStyles": {
+    "geometric": {
+      "circles": {
+        "stroke": "#FF0000",
+        "strokeWidth": "3px",
+        "strokeDasharray": "none",
+        "fill": "none",
+        "opacity": 0.8
+      },
+      "lines": {
+        "stroke": "#FF6B00",
+        "strokeWidth": "2px",
+        "strokeDasharray": "none",
+        "opacity": 0.8
+      },
+      "squares": {
+        "stroke": "#00FF00",
+        "strokeWidth": "3px",
+        "strokeDasharray": "none",
+        "fill": "none",
+        "opacity": 0.8
+      },
+      "triangles": {
+        "stroke": "#0000FF",
+        "strokeWidth": "3px",
+        "strokeDasharray": "none",
+        "fill": "none",
+        "opacity": 0.8
+      },
+      "polygons": {
+        "stroke": "#FFFF00",
+        "strokeWidth": "2px",
+        "strokeDasharray": "none",
+        "fill": "none",
+        "opacity": 0.8
+      }
+    },
+    "annotations": {
+      "labels": {
+        "fontFamily": "Inter, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "fill": "#FFFFFF",
+        "stroke": "#000000",
+        "strokeWidth": "2px",
+        "background": "rgba(0, 0, 0, 0.7)",
+        "padding": "4px 8px",
+        "borderRadius": "4px"
+      },
+      "arrows": {
+        "stroke": "#FFD700",
+        "strokeWidth": "2px",
+        "markerEnd": "arrowhead",
+        "opacity": 0.9
+      },
+      "dimensions": {
+        "stroke": "#00FFFF",
+        "strokeWidth": "1px",
+        "strokeDasharray": "5,5",
+        "fontSize": "14px",
+        "fontFamily": "JetBrains Mono, monospace"
+      }
+    }
+  },
+
+  "videoSpecs": {
+    "slideTransitions": {
+      "duration": "0.5s",
+      "default": "fade",
+      "options": ["fade", "slide", "zoom", "wipe"]
+    },
+    "panZoom": {
+      "duration": "3s",
+      "easing": "easeInOutCubic",
+      "maxZoom": 1.5
+    },
+    "overlayAnimation": {
+      "drawDuration": "2s",
+      "fadeDuration": "0.3s",
+      "stagger": "0.2s"
+    },
+    "voiceOver": {
+      "wpm": 150,
+      "pauseAfterSentence": "0.5s",
+      "pauseAfterSlide": "1s"
+    },
+    "backgroundMusic": {
+      "volume": 0.15,
+      "fadeIn": "2s",
+      "fadeOut": "2s"
+    }
+  },
+
+  "exportFormats": {
+    "slides": {
+      "powerpoint": {
+        "extension": ".pptx",
+        "aspectRatio": "16:9",
+        "resolution": "1920x1080"
+      },
+      "pdf": {
+        "extension": ".pdf",
+        "compression": "medium",
+        "embedFonts": true
+      },
+      "images": {
+        "format": "png",
+        "resolution": "1920x1080",
+        "dpi": 150
+      }
+    },
+    "videos": {
+      "web": {
+        "codec": "h264",
+        "resolution": "1920x1080",
+        "framerate": 30,
+        "bitrate": "5mbps"
+      },
+      "classroom": {
+        "codec": "h264",
+        "resolution": "1280x720",
+        "framerate": 30,
+        "bitrate": "3mbps"
+      }
+    },
+    "etextbook": {
+      "html": {
+        "responsive": true,
+        "accessibility": "WCAG 2.1 AA",
+        "interactivity": true
+      },
+      "epub": {
+        "version": "3.0",
+        "flowable": true
+      }
+    }
+  },
+
+  "accessibility": {
+    "contrastRatios": {
+      "normalText": 4.5,
+      "largeText": 3,
+      "uiComponents": 3
+    },
+    "altText": {
+      "required": true,
+      "maxLength": 150,
+      "includeGeometric": true
+    },
+    "captioning": {
+      "required": true,
+      "format": "WebVTT",
+      "language": "en-US"
+    },
+    "navigation": {
+      "keyboardOnly": true,
+      "skipLinks": true,
+      "landmarks": true
+    }
+  },
+
+  "imageRequirements": {
+    "artifacts": {
+      "minResolution": "1600x1200",
+      "preferredFormat": "jpg",
+      "maxFileSize": "2MB",
+      "colorSpace": "sRGB",
+      "sources": ["Met API", "Wikimedia Commons", "British Museum API"]
+    },
+    "diagrams": {
+      "format": "svg",
+      "fallbackFormat": "png",
+      "minResolution": "1920x1080",
+      "vectorPreferred": true
+    },
+    "characters": {
+      "style": "illustrated",
+      "format": "png",
+      "resolution": "1024x1024",
+      "transparentBackground": true
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-1",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 1,
+    "lessonNumber": 1,
+    "duration": 50,
+    "mathConcept": "Place value millions",
+    "geometricConcept": "Coordinate grids",
+    "civilization": "Egypt",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "place value millions",
+      "coordinate grids",
+      "egypt"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Coordinate help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Ahmose the Scribe",
+      "role": "Royal architect",
+      "imageUrl": "assets/characters/egypt-character.png",
+      "biography": "Ahmose the Scribe uses coordinate to solve problems about place value millions."
+    },
+    "narrative": "Follow Ahmose the Scribe as they discover how coordinate grids helps them understand place value millions. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does coordinate help us think about place value millions?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Egypt",
+    "civilization": "Egypt",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Temple axes; gridded figures",
+      "civilization": "Egypt",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-1-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals coordinate structure in Temple axes; gridded figures"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the coordinate grids visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Place value millions with Coordinate grids",
+    "objective": "Students will apply place value millions using coordinate grids.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Plan drawings",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Coordinate grids",
+    "concept": "Axes scaling",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Place value millions to Coordinate grids",
+    "mathToArt": "Math concept place value millions illuminates artistic thinking in plan drawings.",
+    "artToGeometry": "Artistic expression reveals geometric structure: coordinate grids.",
+    "synthesis": "Axes scaling and plan drawings are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-1-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does coordinate help you think about place value millions?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-1-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Egypt cultural context."
+  }
+}

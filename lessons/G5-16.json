@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-16",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 8,
+    "lessonNumber": 16,
+    "duration": 50,
+    "mathConcept": "Rates apps",
+    "geometricConcept": "Spiral parameters",
+    "civilization": "Art Nouveau",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "rates apps",
+      "spiral parameters",
+      "art nouveau"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Spiral to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Alphonse the Designer",
+      "role": "Organic architect",
+      "imageUrl": "assets/characters/art-nouveau-character.png",
+      "biography": "Alphonse the Designer uses spiral to solve problems about rates apps."
+    },
+    "narrative": "Follow Alphonse the Designer as they discover how spiral parameters helps them understand rates apps. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does spiral help us think about rates apps?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Art Nouveau",
+    "civilization": "Art Nouveau",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Art Nouveau curves",
+      "civilization": "Art Nouveau",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-16-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals spiral structure in Art Nouveau curves"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the spiral parameters visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Rates apps with Spiral parameters",
+    "objective": "Students will apply rates apps using spiral parameters.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Whiplash stylization",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Spiral parameters",
+    "concept": "a b k in r(\u03b8)",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Rates apps to Spiral parameters",
+    "mathToArt": "Math concept rates apps illuminates artistic thinking in whiplash stylization.",
+    "artToGeometry": "Artistic expression reveals geometric structure: spiral parameters.",
+    "synthesis": "a b k in r(\u03b8) and whiplash stylization are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-16-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does spiral help you think about rates apps?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-16-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Art Nouveau cultural context."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-13",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 7,
+    "lessonNumber": 13,
+    "duration": 50,
+    "mathConcept": "Fractions applications",
+    "geometricConcept": "Rib networks",
+    "civilization": "Gothic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "fractions applications",
+      "rib networks",
+      "gothic"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Rib help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Pierre the Mason",
+      "role": "Cathedral builder",
+      "imageUrl": "assets/characters/gothic-character.png",
+      "biography": "Pierre the Mason uses rib to solve problems about fractions applications."
+    },
+    "narrative": "Follow Pierre the Mason as they discover how rib networks helps them understand fractions applications. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does rib help us think about fractions applications?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Gothic",
+    "civilization": "Gothic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Gothic rib vault diagrams",
+      "civilization": "Gothic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-13-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals rib structure in Gothic rib vault diagrams"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the rib networks visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Fractions applications with Rib networks",
+    "objective": "Students will apply fractions applications using rib networks.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Vault aesthetics",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Rib networks",
+    "concept": "Triangulation",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Fractions applications to Rib networks",
+    "mathToArt": "Math concept fractions applications illuminates artistic thinking in vault aesthetics.",
+    "artToGeometry": "Artistic expression reveals geometric structure: rib networks.",
+    "synthesis": "Triangulation and vault aesthetics are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-13-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does rib help you think about fractions applications?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-13-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Gothic cultural context."
+  }
+}

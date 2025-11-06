@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-9",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 5,
+    "lessonNumber": 9,
+    "duration": 50,
+    "mathConcept": "Review + project",
+    "geometricConcept": "Compose a myth rosette",
+    "civilization": "Student-created",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "review + project",
+      "compose a myth rosette",
+      "student-created"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a compose in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Kira the Cave Keeper",
+      "role": "Stone age counter",
+      "imageUrl": "assets/characters/student-created-character.png",
+      "biography": "Kira the Cave Keeper uses compose to solve problems about review + project."
+    },
+    "narrative": "Follow Kira the Cave Keeper as they discover how compose a myth rosette helps them understand review + project. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does compose help us think about review + project?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Student-created",
+    "civilization": "Student-created",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Student-authored symbols",
+      "civilization": "Student-created",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-9-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals compose structure in Student-authored symbols"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the compose a myth rosette visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Review + project with Compose a myth rosette",
+    "objective": "Students will apply review + project using compose a myth rosette.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Symbol collage",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Compose a myth rosette",
+    "concept": "Angles add to 360\u00b0 idea",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Review + project to Compose a myth rosette",
+    "mathToArt": "Math concept review + project illuminates artistic thinking in symbol collage.",
+    "artToGeometry": "Artistic expression reveals geometric structure: compose a myth rosette.",
+    "synthesis": "Angles add to 360\u00b0 idea and symbol collage are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-9-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does compose help you think about review + project?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-9-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Student-created cultural context."
+  }
+}

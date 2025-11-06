@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-14",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 7,
+    "lessonNumber": 14,
+    "duration": 50,
+    "mathConcept": "Line plots",
+    "geometricConcept": "Frieze translation",
+    "civilization": "Andean",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "line plots",
+      "frieze translation",
+      "andean"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a frieze in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Qori the Weaver",
+      "role": "Textile master",
+      "imageUrl": "assets/characters/andean-character.png",
+      "biography": "Qori the Weaver uses frieze to solve problems about line plots."
+    },
+    "narrative": "Follow Qori the Weaver as they discover how frieze translation helps them understand line plots. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does frieze help us think about line plots?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Andean",
+    "civilization": "Andean",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Andean chevrons; Kente",
+      "civilization": "Andean",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-14-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals frieze structure in Andean chevrons; Kente"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the frieze translation visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Line plots with Frieze translation",
+    "objective": "Students will apply line plots using frieze translation.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Chevron bands",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Frieze translation",
+    "concept": "Step unit",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Line plots to Frieze translation",
+    "mathToArt": "Math concept line plots illuminates artistic thinking in chevron bands.",
+    "artToGeometry": "Artistic expression reveals geometric structure: frieze translation.",
+    "synthesis": "Step unit and chevron bands are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-14-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does frieze help you think about line plots?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-14-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Andean cultural context."
+  }
+}

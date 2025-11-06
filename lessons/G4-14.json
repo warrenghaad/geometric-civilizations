@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-14",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 7,
+    "lessonNumber": 14,
+    "duration": 50,
+    "mathConcept": "Decimals applications",
+    "geometricConcept": "Scale drawings",
+    "civilization": "Byzantine",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "decimals applications",
+      "scale drawings",
+      "byzantine"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Scale help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Theodora the Mosaic Artist",
+      "role": "Cathedral designer",
+      "imageUrl": "assets/characters/byzantine-character.png",
+      "biography": "Theodora the Mosaic Artist uses scale to solve problems about decimals applications."
+    },
+    "narrative": "Follow Theodora the Mosaic Artist as they discover how scale drawings helps them understand decimals applications. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does scale help us think about decimals applications?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Byzantine",
+    "civilization": "Byzantine",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Roman/Byzantine plans",
+      "civilization": "Byzantine",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-14-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals scale structure in Roman/Byzantine plans"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the scale drawings visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Decimals applications with Scale drawings",
+    "objective": "Students will apply decimals applications using scale drawings.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Fa\u00e7ade layout",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Scale drawings",
+    "concept": "Ratios in plan",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Decimals applications to Scale drawings",
+    "mathToArt": "Math concept decimals applications illuminates artistic thinking in fa\u00e7ade layout.",
+    "artToGeometry": "Artistic expression reveals geometric structure: scale drawings.",
+    "synthesis": "Ratios in plan and fa\u00e7ade layout are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-14-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does scale help you think about decimals applications?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-14-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Byzantine cultural context."
+  }
+}

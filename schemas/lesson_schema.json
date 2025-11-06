@@ -1,0 +1,585 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lesson Schema",
+  "version": "1.0.0",
+  "description": "Complete schema for a single lesson in the Geometric Civilizations curriculum",
+
+  "type": "object",
+  "required": [
+    "lessonId",
+    "metadata",
+    "sel",
+    "hook",
+    "myth",
+    "artifacts",
+    "mathActivity",
+    "artActivity",
+    "geometryActivity",
+    "bridge",
+    "exit",
+    "assessments"
+  ],
+
+  "properties": {
+    "lessonId": {
+      "type": "string",
+      "pattern": "^G[3-5]-[0-9]{1,2}$",
+      "description": "Unique lesson identifier (e.g., G3-1, G4-15, G5-18)",
+      "examples": ["G3-1", "G4-10", "G5-18"]
+    },
+
+    "metadata": {
+      "type": "object",
+      "required": ["grade", "weekNumber", "lessonNumber", "duration", "mathConcept", "geometricConcept", "civilization"],
+      "properties": {
+        "grade": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 5,
+          "description": "Grade level (3, 4, or 5)"
+        },
+        "weekNumber": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Week number in the quarter"
+        },
+        "lessonNumber": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 18,
+          "description": "Lesson sequence number for the grade"
+        },
+        "duration": {
+          "type": "integer",
+          "default": 50,
+          "description": "Lesson duration in minutes"
+        },
+        "mathConcept": {
+          "type": "string",
+          "description": "Primary math standard/concept",
+          "examples": ["Place value", "Fractions", "Ratios"]
+        },
+        "geometricConcept": {
+          "type": "string",
+          "description": "Geometric thinking concept",
+          "examples": ["Circle partitions", "Tessellation", "Star polygons"]
+        },
+        "civilization": {
+          "type": "string",
+          "enum": ["Prehistoric", "Mesopotamia", "Egypt", "Greece", "India", "Islamic", "China", "Renaissance", "Contemporary"],
+          "description": "Primary civilization focus"
+        },
+        "standards": {
+          "type": "object",
+          "properties": {
+            "ccss": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "Common Core State Standards",
+              "examples": [["3.NBT.A.1", "3.MD.C.7"]]
+            },
+            "ngss": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "Next Generation Science Standards"
+            },
+            "ncas": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "National Core Arts Standards"
+            }
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Searchable keywords",
+          "examples": [["circle", "rosette", "symmetry", "mesopotamia"]]
+        }
+      }
+    },
+
+    "sel": {
+      "type": "object",
+      "required": ["prompt", "duration", "materials"],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "description": "Social-emotional learning prompt",
+          "examples": ["Sketch a shape that matches your mood today. Why that shape?"]
+        },
+        "duration": {
+          "type": "integer",
+          "default": 5,
+          "description": "Duration in minutes"
+        },
+        "materials": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Required materials",
+          "examples": [["Paper", "Pencil", "Color pencils"]]
+        },
+        "reflectionQuestions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Optional follow-up questions"
+        }
+      }
+    },
+
+    "hook": {
+      "type": "object",
+      "required": ["character", "narrative", "duration", "visualType"],
+      "properties": {
+        "character": {
+          "type": "object",
+          "required": ["name", "role", "imageUrl"],
+          "properties": {
+            "name": {"type": "string", "examples": ["Maya the Mason"]},
+            "role": {"type": "string", "examples": ["Ancient architect"]},
+            "imageUrl": {"type": "string", "format": "uri"},
+            "biography": {"type": "string", "maxLength": 200}
+          }
+        },
+        "narrative": {
+          "type": "string",
+          "minLength": 50,
+          "maxLength": 300,
+          "description": "30-45 second narrative hook"
+        },
+        "duration": {
+          "type": "integer",
+          "default": 5,
+          "description": "Duration in minutes"
+        },
+        "visualType": {
+          "type": "string",
+          "enum": ["illustration", "animation", "photo"],
+          "description": "Type of visual support"
+        },
+        "questionPrompt": {
+          "type": "string",
+          "description": "Question to bridge to main content"
+        }
+      }
+    },
+
+    "myth": {
+      "type": "object",
+      "required": ["title", "civilization", "scenes", "sources"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Myth or story title",
+          "examples": ["The Lotus of Creation", "The Wheel of Shamash"]
+        },
+        "civilization": {
+          "type": "string",
+          "description": "Origin civilization"
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Brief myth summary"
+        },
+        "scenes": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "required": ["sceneId", "imageUrl", "caption", "narration"],
+            "properties": {
+              "sceneId": {
+                "type": "string",
+                "pattern": "^scene-[0-9]{2}$"
+              },
+              "imageUrl": {
+                "type": "string",
+                "format": "uri",
+                "description": "Generated or sourced image URL"
+              },
+              "caption": {
+                "type": "string",
+                "maxLength": 150
+              },
+              "narration": {
+                "type": "string",
+                "maxLength": 300,
+                "description": "Narration text for video"
+              },
+              "geometricFocus": {
+                "type": "string",
+                "description": "Geometric element highlighted in this scene"
+              }
+            }
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"type": "string"},
+              "author": {"type": "string"},
+              "url": {"type": "string", "format": "uri"},
+              "citation": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+
+    "artifacts": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["artifactId", "title", "civilization", "imageUrl", "overlays", "metadata"],
+        "properties": {
+          "artifactId": {
+            "type": "string",
+            "pattern": "^artifact-[0-9]{2}$"
+          },
+          "title": {
+            "type": "string",
+            "description": "Artifact name",
+            "examples": ["Karnak Lotus Capital", "Shamash Sun Disk"]
+          },
+          "civilization": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string",
+            "description": "Historical period",
+            "examples": ["New Kingdom, ca. 1400 BCE"]
+          },
+          "imageUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "High-resolution artifact image"
+          },
+          "overlays": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["overlayId", "type", "elements"],
+              "properties": {
+                "overlayId": {
+                  "type": "string",
+                  "pattern": "^overlay-[0-9]{2}$"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["circles", "lines", "squares", "triangles", "polygons", "annotations"]
+                },
+                "elements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["shape", "coordinates"],
+                    "properties": {
+                      "shape": {
+                        "type": "string",
+                        "enum": ["circle", "line", "rectangle", "polygon", "arc", "arrow", "label"]
+                      },
+                      "coordinates": {
+                        "type": "object",
+                        "description": "SVG coordinates or path data"
+                      },
+                      "label": {
+                        "type": "string",
+                        "description": "Optional text label"
+                      },
+                      "style": {
+                        "type": "object",
+                        "description": "Override default styling"
+                      }
+                    }
+                  }
+                },
+                "description": {
+                  "type": "string",
+                  "description": "What this overlay reveals"
+                }
+              }
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "required": ["source", "museum", "accessionNumber"],
+            "properties": {
+              "source": {
+                "type": "string",
+                "enum": ["Met", "BritishMuseum", "Wikimedia", "Louvre", "Custom"],
+                "description": "Image source"
+              },
+              "museum": {"type": "string"},
+              "accessionNumber": {"type": "string"},
+              "photographer": {"type": "string"},
+              "license": {
+                "type": "string",
+                "enum": ["CC0 1.0", "CC BY 4.0", "CC BY-SA 4.0", "Public Domain"],
+                "default": "CC0 1.0"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "Source page URL"
+              }
+            }
+          },
+          "teachingNotes": {
+            "type": "string",
+            "description": "Key geometric features to highlight"
+          }
+        }
+      }
+    },
+
+    "mathActivity": {
+      "type": "object",
+      "required": ["title", "objective", "procedure", "duration", "materials"],
+      "properties": {
+        "title": {"type": "string"},
+        "objective": {"type": "string"},
+        "procedure": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Step-by-step instructions"
+        },
+        "duration": {"type": "integer", "description": "Minutes"},
+        "materials": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "differentiation": {
+          "type": "object",
+          "properties": {
+            "support": {"type": "string"},
+            "extension": {"type": "string"}
+          }
+        },
+        "worksheet": {
+          "type": "object",
+          "properties": {
+            "templateUrl": {"type": "string", "format": "uri"},
+            "answerKeyUrl": {"type": "string", "format": "uri"}
+          }
+        }
+      }
+    },
+
+    "artActivity": {
+      "type": "object",
+      "required": ["title", "technique", "procedure", "duration", "materials"],
+      "properties": {
+        "title": {"type": "string"},
+        "technique": {
+          "type": "string",
+          "description": "Primary art technique",
+          "examples": ["Stamping", "Collage", "Compass construction"]
+        },
+        "procedure": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "duration": {"type": "integer"},
+        "materials": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "exampleImages": {
+          "type": "array",
+          "items": {"type": "string", "format": "uri"}
+        },
+        "rubric": {
+          "type": "object",
+          "properties": {
+            "criteria": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "criterion": {"type": "string"},
+                  "levels": {
+                    "type": "object",
+                    "properties": {
+                      "developing": {"type": "string"},
+                      "proficient": {"type": "string"},
+                      "advanced": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "geometryActivity": {
+      "type": "object",
+      "required": ["title", "concept", "procedure", "duration"],
+      "properties": {
+        "title": {"type": "string"},
+        "concept": {
+          "type": "string",
+          "description": "Geometric concept explored"
+        },
+        "procedure": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "duration": {"type": "integer"},
+        "materials": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "vocabulary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "term": {"type": "string"},
+              "definition": {"type": "string"},
+              "visual": {"type": "string", "format": "uri"}
+            }
+          }
+        }
+      }
+    },
+
+    "bridge": {
+      "type": "object",
+      "required": ["title", "mathToArt", "artToGeometry", "synthesis"],
+      "properties": {
+        "title": {"type": "string"},
+        "mathToArt": {
+          "type": "string",
+          "description": "Connection: How math illuminates art"
+        },
+        "artToGeometry": {
+          "type": "string",
+          "description": "Connection: How art reveals geometry"
+        },
+        "synthesis": {
+          "type": "string",
+          "description": "Unified insight"
+        },
+        "visualDiagram": {
+          "type": "string",
+          "format": "uri",
+          "description": "Bridge diagram SVG"
+        }
+      }
+    },
+
+    "exit": {
+      "type": "object",
+      "required": ["prompt", "expectedResponses"],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "description": "Exit reflection question"
+        },
+        "format": {
+          "type": "string",
+          "enum": ["verbal", "written", "sketch", "demonstration"],
+          "default": "verbal"
+        },
+        "expectedResponses": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Sample student responses showing understanding"
+        },
+        "duration": {"type": "integer", "default": 5}
+      }
+    },
+
+    "assessments": {
+      "type": "object",
+      "properties": {
+        "formative": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "string", "examples": ["observation", "discussion", "exit ticket"]},
+              "criteria": {"type": "string"}
+            }
+          }
+        },
+        "summative": {
+          "type": "object",
+          "properties": {
+            "type": {"type": "string", "examples": ["project", "presentation", "portfolio"]},
+            "rubricUrl": {"type": "string", "format": "uri"}
+          }
+        },
+        "standardsAlignment": {
+          "type": "object",
+          "description": "Map assessment to standards"
+        }
+      }
+    },
+
+    "extensions": {
+      "type": "object",
+      "properties": {
+        "homeConnections": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Activities for families"
+        },
+        "literatureLinks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"type": "string"},
+              "author": {"type": "string"},
+              "connection": {"type": "string"}
+            }
+          }
+        },
+        "digitalTools": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "url": {"type": "string", "format": "uri"},
+              "purpose": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+
+    "teacherNotes": {
+      "type": "object",
+      "properties": {
+        "preparation": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Pre-lesson prep steps"
+        },
+        "commonMisconceptions": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "timingTips": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "culturalNotes": {
+          "type": "string",
+          "description": "Cultural sensitivity and context"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-10",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 5,
+    "lessonNumber": 10,
+    "duration": 50,
+    "mathConcept": "Review ratios",
+    "geometricConcept": "Equal-area rings",
+    "civilization": "Rome",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "review ratios",
+      "equal-area rings",
+      "rome"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Equal-area to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Marcus the Builder",
+      "role": "Engineering master",
+      "imageUrl": "assets/characters/rome-character.png",
+      "biography": "Marcus the Builder uses equal-area to solve problems about review ratios."
+    },
+    "narrative": "Follow Marcus the Builder as they discover how equal-area rings helps them understand review ratios. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does equal-area help us think about review ratios?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Rome",
+    "civilization": "Rome",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Pantheon coffer analysis",
+      "civilization": "Rome",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-10-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals equal-area structure in Pantheon coffer analysis"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the equal-area rings visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Review ratios with Equal-area rings",
+    "objective": "Students will apply review ratios using equal-area rings.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Visual balance",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Equal-area rings",
+    "concept": "\u03c0-free proportional",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Review ratios to Equal-area rings",
+    "mathToArt": "Math concept review ratios illuminates artistic thinking in visual balance.",
+    "artToGeometry": "Artistic expression reveals geometric structure: equal-area rings.",
+    "synthesis": "\u03c0-free proportional and visual balance are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-10-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does equal-area help you think about review ratios?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-10-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Rome cultural context."
+  }
+}

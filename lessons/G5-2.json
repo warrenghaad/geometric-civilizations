@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-2",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 1,
+    "lessonNumber": 2,
+    "duration": 50,
+    "mathConcept": "Equivalent ratios tables",
+    "geometricConcept": "Tessellation repeats",
+    "civilization": "Islamic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "equivalent ratios tables",
+      "tessellation repeats",
+      "islamic"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Tessellation to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Fatima the Tiler",
+      "role": "Pattern master",
+      "imageUrl": "assets/characters/islamic-character.png",
+      "biography": "Fatima the Tiler uses tessellation to solve problems about equivalent ratios tables."
+    },
+    "narrative": "Follow Fatima the Tiler as they discover how tessellation repeats helps them understand equivalent ratios tables. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does tessellation help us think about equivalent ratios tables?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Islamic",
+    "civilization": "Islamic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Zellige 8/10-point modules",
+      "civilization": "Islamic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-2-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals tessellation structure in Zellige 8/10-point modules"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the tessellation repeats visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Equivalent ratios tables with Tessellation repeats",
+    "objective": "Students will apply equivalent ratios tables using tessellation repeats.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Pattern tiling",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Tessellation repeats",
+    "concept": "Scale tile counts",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Equivalent ratios tables to Tessellation repeats",
+    "mathToArt": "Math concept equivalent ratios tables illuminates artistic thinking in pattern tiling.",
+    "artToGeometry": "Artistic expression reveals geometric structure: tessellation repeats.",
+    "synthesis": "Scale tile counts and pattern tiling are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-2-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does tessellation help you think about equivalent ratios tables?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-2-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Islamic cultural context."
+  }
+}

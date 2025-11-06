@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-12",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 6,
+    "lessonNumber": 12,
+    "duration": 50,
+    "mathConcept": "Arrays to area",
+    "geometricConcept": "Tile counts",
+    "civilization": "Rome",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "arrays to area",
+      "tile counts",
+      "rome"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a tile in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Marcus the Builder",
+      "role": "Engineering master",
+      "imageUrl": "assets/characters/rome-character.png",
+      "biography": "Marcus the Builder uses tile to solve problems about arrays to area."
+    },
+    "narrative": "Follow Marcus the Builder as they discover how tile counts helps them understand arrays to area. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does tile help us think about arrays to area?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Rome",
+    "civilization": "Rome",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Roman tesserae",
+      "civilization": "Rome",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-12-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals tile structure in Roman tesserae"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the tile counts visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Arrays to area with Tile counts",
+    "objective": "Students will apply arrays to area using tile counts.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Mosaic design",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Tile counts",
+    "concept": "n\u00d7m proofs",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Arrays to area to Tile counts",
+    "mathToArt": "Math concept arrays to area illuminates artistic thinking in mosaic design.",
+    "artToGeometry": "Artistic expression reveals geometric structure: tile counts.",
+    "synthesis": "n\u00d7m proofs and mosaic design are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-12-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does tile help you think about arrays to area?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-12-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Rome cultural context."
+  }
+}

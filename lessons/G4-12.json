@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-12",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 6,
+    "lessonNumber": 12,
+    "duration": 50,
+    "mathConcept": "Comparisons",
+    "geometricConcept": "Wallpaper groups",
+    "civilization": "Islamic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "comparisons",
+      "wallpaper groups",
+      "islamic"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Wallpaper help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Fatima the Tiler",
+      "role": "Pattern master",
+      "imageUrl": "assets/characters/islamic-character.png",
+      "biography": "Fatima the Tiler uses wallpaper to solve problems about comparisons."
+    },
+    "narrative": "Follow Fatima the Tiler as they discover how wallpaper groups helps them understand comparisons. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does wallpaper help us think about comparisons?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Islamic",
+    "civilization": "Islamic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Islamic tiling walls",
+      "civilization": "Islamic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-12-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals wallpaper structure in Islamic tiling walls"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the wallpaper groups visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Comparisons with Wallpaper groups",
+    "objective": "Students will apply comparisons using wallpaper groups.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Style dialects",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Wallpaper groups",
+    "concept": "Classify symmetry",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Comparisons to Wallpaper groups",
+    "mathToArt": "Math concept comparisons illuminates artistic thinking in style dialects.",
+    "artToGeometry": "Artistic expression reveals geometric structure: wallpaper groups.",
+    "synthesis": "Classify symmetry and style dialects are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-12-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does wallpaper help you think about comparisons?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-12-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Islamic cultural context."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-11",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 6,
+    "lessonNumber": 11,
+    "duration": 50,
+    "mathConcept": "Rounding revisited",
+    "geometricConcept": "Nearest gridline",
+    "civilization": "Egypt",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "rounding revisited",
+      "nearest gridline",
+      "egypt"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a nearest in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Ahmose the Scribe",
+      "role": "Royal architect",
+      "imageUrl": "assets/characters/egypt-character.png",
+      "biography": "Ahmose the Scribe uses nearest to solve problems about rounding revisited."
+    },
+    "narrative": "Follow Ahmose the Scribe as they discover how nearest gridline helps them understand rounding revisited. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does nearest help us think about rounding revisited?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Egypt",
+    "civilization": "Egypt",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Egyptian canon grids",
+      "civilization": "Egypt",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-11-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals nearest structure in Egyptian canon grids"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the nearest gridline visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Rounding revisited with Nearest gridline",
+    "objective": "Students will apply rounding revisited using nearest gridline.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Border alignment",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Nearest gridline",
+    "concept": "Number line to grid",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Rounding revisited to Nearest gridline",
+    "mathToArt": "Math concept rounding revisited illuminates artistic thinking in border alignment.",
+    "artToGeometry": "Artistic expression reveals geometric structure: nearest gridline.",
+    "synthesis": "Number line to grid and border alignment are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-11-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does nearest help you think about rounding revisited?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-11-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Egypt cultural context."
+  }
+}

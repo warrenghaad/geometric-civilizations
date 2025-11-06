@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-9",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 5,
+    "lessonNumber": 9,
+    "duration": 50,
+    "mathConcept": "Project synthesis",
+    "geometricConcept": "Hybrid revival",
+    "civilization": "Contemporary",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "project synthesis",
+      "hybrid revival",
+      "contemporary"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Hybrid to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Zara the Parametric Designer",
+      "role": "Digital architect",
+      "imageUrl": "assets/characters/contemporary-character.png",
+      "biography": "Zara the Parametric Designer uses hybrid to solve problems about project synthesis."
+    },
+    "narrative": "Follow Zara the Parametric Designer as they discover how hybrid revival helps them understand project synthesis. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does hybrid help us think about project synthesis?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Contemporary",
+    "civilization": "Contemporary",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Star + Voronoi + rosette",
+      "civilization": "Contemporary",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-9-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals hybrid structure in Star + Voronoi + rosette"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the hybrid revival visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Project synthesis with Hybrid revival",
+    "objective": "Students will apply project synthesis using hybrid revival.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Design brief",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Hybrid revival",
+    "concept": "Parameter tables",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Project synthesis to Hybrid revival",
+    "mathToArt": "Math concept project synthesis illuminates artistic thinking in design brief.",
+    "artToGeometry": "Artistic expression reveals geometric structure: hybrid revival.",
+    "synthesis": "Parameter tables and design brief are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-9-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does hybrid help you think about project synthesis?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-9-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Contemporary cultural context."
+  }
+}

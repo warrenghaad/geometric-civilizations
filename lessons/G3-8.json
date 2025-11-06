@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-8",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 4,
+    "lessonNumber": 8,
+    "duration": 50,
+    "mathConcept": "Measurement length",
+    "geometricConcept": "Radius/diameter intuition",
+    "civilization": "Mesopotamia",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "measurement length",
+      "radius/diameter intuition",
+      "mesopotamia"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a radius/diameter in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses radius/diameter to solve problems about measurement length."
+    },
+    "narrative": "Follow Enlil the Seal Maker as they discover how radius/diameter intuition helps them understand measurement length. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does radius/diameter help us think about measurement length?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Shamash sun disks",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-8-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals radius/diameter structure in Shamash sun disks"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the radius/diameter intuition visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Measurement length with Radius/diameter intuition",
+    "objective": "Students will apply measurement length using radius/diameter intuition.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Rosette ruler design",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Radius/diameter intuition",
+    "concept": "d\u22482r",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Measurement length to Radius/diameter intuition",
+    "mathToArt": "Math concept measurement length illuminates artistic thinking in rosette ruler design.",
+    "artToGeometry": "Artistic expression reveals geometric structure: radius/diameter intuition.",
+    "synthesis": "d\u22482r and rosette ruler design are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-8-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does radius/diameter help you think about measurement length?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-8-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
+  }
+}

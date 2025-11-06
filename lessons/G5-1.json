@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-1",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 1,
+    "lessonNumber": 1,
+    "duration": 50,
+    "mathConcept": "Ratios",
+    "geometricConcept": "r:d and ring ratios",
+    "civilization": "Mesopotamia",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "ratios",
+      "r:d and ring ratios",
+      "mesopotamia"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using r:d to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Enlil the Seal Maker",
+      "role": "Master craftsperson",
+      "imageUrl": "assets/characters/mesopotamia-character.png",
+      "biography": "Enlil the Seal Maker uses r:d to solve problems about ratios."
+    },
+    "narrative": "Follow Enlil the Seal Maker as they discover how r:d and ring ratios helps them understand ratios. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does r:d help us think about ratios?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Mesopotamia",
+    "civilization": "Mesopotamia",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Shamash disks; ring calculations",
+      "civilization": "Mesopotamia",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-1-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals r:d structure in Shamash disks; ring calculations"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the r:d and ring ratios visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Ratios with r:d and ring ratios",
+    "objective": "Students will apply ratios using r:d and ring ratios.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Rosette spec",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "r:d and ring ratios",
+    "concept": "d=2r; ring area",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Ratios to r:d and ring ratios",
+    "mathToArt": "Math concept ratios illuminates artistic thinking in rosette spec.",
+    "artToGeometry": "Artistic expression reveals geometric structure: r:d and ring ratios.",
+    "synthesis": "d=2r; ring area and rosette spec are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-1-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does r:d help you think about ratios?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-1-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Mesopotamia cultural context."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-15",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 8,
+    "lessonNumber": 15,
+    "duration": 50,
+    "mathConcept": "Measurement review",
+    "geometricConcept": "Chord vs arc",
+    "civilization": "Gothic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "measurement review",
+      "chord vs arc",
+      "gothic"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Chord help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Pierre the Mason",
+      "role": "Cathedral builder",
+      "imageUrl": "assets/characters/gothic-character.png",
+      "biography": "Pierre the Mason uses chord to solve problems about measurement review."
+    },
+    "narrative": "Follow Pierre the Mason as they discover how chord vs arc helps them understand measurement review. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does chord help us think about measurement review?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Gothic",
+    "civilization": "Gothic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Pointed arch types",
+      "civilization": "Gothic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-15-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals chord structure in Pointed arch types"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the chord vs arc visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Measurement review with Chord vs arc",
+    "objective": "Students will apply measurement review using chord vs arc.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Profile tuning",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Chord vs arc",
+    "concept": "Approx arcs",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Measurement review to Chord vs arc",
+    "mathToArt": "Math concept measurement review illuminates artistic thinking in profile tuning.",
+    "artToGeometry": "Artistic expression reveals geometric structure: chord vs arc.",
+    "synthesis": "Approx arcs and profile tuning are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-15-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does chord help you think about measurement review?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-15-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Gothic cultural context."
+  }
+}

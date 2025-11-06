@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-7",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 4,
+    "lessonNumber": 7,
+    "duration": 50,
+    "mathConcept": "Data displays",
+    "geometricConcept": "Radial charts",
+    "civilization": "Aztec",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "data displays",
+      "radial charts",
+      "aztec"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a radial in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Xochitl the Calendar Keeper",
+      "role": "Time tracker",
+      "imageUrl": "assets/characters/aztec-character.png",
+      "biography": "Xochitl the Calendar Keeper uses radial to solve problems about data displays."
+    },
+    "narrative": "Follow Xochitl the Calendar Keeper as they discover how radial charts helps them understand data displays. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does radial help us think about data displays?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Aztec",
+    "civilization": "Aztec",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Aztec Sun Stone outer rings",
+      "civilization": "Aztec",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-7-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals radial structure in Aztec Sun Stone outer rings"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the radial charts visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Data displays with Radial charts",
+    "objective": "Students will apply data displays using radial charts.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Calendar flower",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Radial charts",
+    "concept": "Bar to sector mapping",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Data displays to Radial charts",
+    "mathToArt": "Math concept data displays illuminates artistic thinking in calendar flower.",
+    "artToGeometry": "Artistic expression reveals geometric structure: radial charts.",
+    "synthesis": "Bar to sector mapping and calendar flower are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-7-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does radial help you think about data displays?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-7-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Aztec cultural context."
+  }
+}

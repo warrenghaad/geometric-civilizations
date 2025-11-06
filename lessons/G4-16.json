@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-16",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 8,
+    "lessonNumber": 16,
+    "duration": 50,
+    "mathConcept": "Problem solving",
+    "geometricConcept": "Sequenced builds",
+    "civilization": "Greece",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "problem solving",
+      "sequenced builds",
+      "greece"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Sequenced help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Sophia the Geometer",
+      "role": "Mathematical philosopher",
+      "imageUrl": "assets/characters/greece-character.png",
+      "biography": "Sophia the Geometer uses sequenced to solve problems about problem solving."
+    },
+    "narrative": "Follow Sophia the Geometer as they discover how sequenced builds helps them understand problem solving. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does sequenced help us think about problem solving?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Greece",
+    "civilization": "Greece",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Volute to tracery sequence",
+      "civilization": "Greece",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-16-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals sequenced structure in Volute to tracery sequence"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the sequenced builds visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Problem solving with Sequenced builds",
+    "objective": "Students will apply problem solving using sequenced builds.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Shop drawings",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Sequenced builds",
+    "concept": "Checkpoints",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Problem solving to Sequenced builds",
+    "mathToArt": "Math concept problem solving illuminates artistic thinking in shop drawings.",
+    "artToGeometry": "Artistic expression reveals geometric structure: sequenced builds.",
+    "synthesis": "Checkpoints and shop drawings are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-16-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does sequenced help you think about problem solving?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-16-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Greece cultural context."
+  }
+}

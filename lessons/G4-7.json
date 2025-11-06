@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-7",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 4,
+    "lessonNumber": 7,
+    "duration": 50,
+    "mathConcept": "Measurement",
+    "geometricConcept": "Arch spans/rise",
+    "civilization": "Rome",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "measurement",
+      "arch spans/rise",
+      "rome"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Arch help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Marcus the Builder",
+      "role": "Engineering master",
+      "imageUrl": "assets/characters/rome-character.png",
+      "biography": "Marcus the Builder uses arch to solve problems about measurement."
+    },
+    "narrative": "Follow Marcus the Builder as they discover how arch spans/rise helps them understand measurement. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does arch help us think about measurement?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Rome",
+    "civilization": "Rome",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Roman arch sections; Pantheon",
+      "civilization": "Rome",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-7-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals arch structure in Roman arch sections; Pantheon"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the arch spans/rise visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Measurement with Arch spans/rise",
+    "objective": "Students will apply measurement using arch spans/rise.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Profile aesthetics",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Arch spans/rise",
+    "concept": "Radius/segment",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Measurement to Arch spans/rise",
+    "mathToArt": "Math concept measurement illuminates artistic thinking in profile aesthetics.",
+    "artToGeometry": "Artistic expression reveals geometric structure: arch spans/rise.",
+    "synthesis": "Radius/segment and profile aesthetics are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-7-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does arch help you think about measurement?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-7-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Rome cultural context."
+  }
+}

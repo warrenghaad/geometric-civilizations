@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-14",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 7,
+    "lessonNumber": 14,
+    "duration": 50,
+    "mathConcept": "Unit rates apps",
+    "geometricConcept": "Lattice aperture",
+    "civilization": "China",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "unit rates apps",
+      "lattice aperture",
+      "china"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Lattice to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Li Wei the Craftsperson",
+      "role": "Lattice designer",
+      "imageUrl": "assets/characters/china-character.png",
+      "biography": "Li Wei the Craftsperson uses lattice to solve problems about unit rates apps."
+    },
+    "narrative": "Follow Li Wei the Craftsperson as they discover how lattice aperture helps them understand unit rates apps. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does lattice help us think about unit rates apps?"
+  },
+  "myth": {
+    "title": "TBD: Myth for China",
+    "civilization": "China",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Chinese lattice airflow design",
+      "civilization": "China",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-14-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals lattice structure in Chinese lattice airflow design"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the lattice aperture visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Unit rates apps with Lattice aperture",
+    "objective": "Students will apply unit rates apps using lattice aperture.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Screen mood",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Lattice aperture",
+    "concept": "% open",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Unit rates apps to Lattice aperture",
+    "mathToArt": "Math concept unit rates apps illuminates artistic thinking in screen mood.",
+    "artToGeometry": "Artistic expression reveals geometric structure: lattice aperture.",
+    "synthesis": "% open and screen mood are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-14-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does lattice help you think about unit rates apps?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-14-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present China cultural context."
+  }
+}

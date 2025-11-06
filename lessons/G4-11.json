@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-11",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 6,
+    "lessonNumber": 11,
+    "duration": 50,
+    "mathConcept": "Place value refinement",
+    "geometricConcept": "Module sizes",
+    "civilization": "Islamic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "place value refinement",
+      "module sizes",
+      "islamic"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Module help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Fatima the Tiler",
+      "role": "Pattern master",
+      "imageUrl": "assets/characters/islamic-character.png",
+      "biography": "Fatima the Tiler uses module to solve problems about place value refinement."
+    },
+    "narrative": "Follow Fatima the Tiler as they discover how module sizes helps them understand place value refinement. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does module help us think about place value refinement?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Islamic",
+    "civilization": "Islamic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Zellige modular stars",
+      "civilization": "Islamic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-11-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals module structure in Zellige modular stars"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the module sizes visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Place value refinement with Module sizes",
+    "objective": "Students will apply place value refinement using module sizes.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Panel repeats",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Module sizes",
+    "concept": "Unit to whole",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Place value refinement to Module sizes",
+    "mathToArt": "Math concept place value refinement illuminates artistic thinking in panel repeats.",
+    "artToGeometry": "Artistic expression reveals geometric structure: module sizes.",
+    "synthesis": "Unit to whole and panel repeats are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-11-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does module help you think about place value refinement?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-11-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Islamic cultural context."
+  }
+}

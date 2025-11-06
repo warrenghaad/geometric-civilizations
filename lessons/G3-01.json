@@ -1,0 +1,419 @@
+{
+  "lessonId": "G3-1",
+
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 1,
+    "lessonNumber": 1,
+    "duration": 50,
+    "mathConcept": "Place value, compare/order numbers",
+    "geometricConcept": "Circle partitions; equal grouping",
+    "civilization": "Prehistoric",
+    "standards": {
+      "ccss": ["3.NBT.A.1", "3.NBT.A.2"],
+      "ncas": ["VA:Cr2.1.3a", "VA:Re7.2.3a"]
+    },
+    "keywords": ["place value", "circle", "partition", "spiral", "prehistoric", "Newgrange", "radial symmetry"]
+  },
+
+  "sel": {
+    "prompt": "Draw a circle and divide it into sections that show how you feel today. How many sections did you make? Why?",
+    "duration": 5,
+    "materials": ["Paper", "Compass or circular template", "Colored pencils"],
+    "reflectionQuestions": [
+      "Did anyone divide their circle the same way you did?",
+      "What would happen if we all divided our circles into exactly 8 parts?"
+    ]
+  },
+
+  "hook": {
+    "character": {
+      "name": "Kira the Cave Keeper",
+      "role": "Prehistoric storyteller who counts days by hand marks",
+      "imageUrl": "assets/characters/kira-cave-keeper.png",
+      "biography": "Kira lives 5,000 years ago and uses spirals and circles to track seasons, moon cycles, and important hunts."
+    },
+    "narrative": "Kira stares at the full moon through the cave opening. She's been marking each moon on a spiral carved into stone—one mark per cycle. But tonight she realizes: if she divides the circle into 12 equal parts, she can predict the seasons! Her tribe will know when to plant, when to hunt, and when to celebrate.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How did Kira turn counting into circle thinking?"
+  },
+
+  "myth": {
+    "title": "The Spiral Path of Memory",
+    "civilization": "Prehistoric (Newgrange, Ireland)",
+    "summary": "Ancient peoples carved triple spirals into stone to mark important cycles: day/night, seasons, life/death. These weren't just decorations—they were early calendars and memory systems.",
+    "scenes": [
+      {
+        "sceneId": "scene-01",
+        "imageUrl": "assets/myth/G3-1-scene-01-spiral-stone.jpg",
+        "caption": "The triple spiral carved at Newgrange, Ireland (ca. 3200 BCE)",
+        "narration": "Five thousand years ago, people in Ireland carved spirals into massive stones. Each spiral turn represented a cycle—the sun's journey, the moon's phases, the seasons' rotation.",
+        "geometricFocus": "Spiral as cyclical path; center point"
+      },
+      {
+        "sceneId": "scene-02",
+        "imageUrl": "assets/myth/G3-1-scene-02-handprints.jpg",
+        "caption": "Cave handprints arranged in patterns (Chauvet Cave, France)",
+        "narration": "In caves across Europe, hunters left handprints arranged in circles and arcs. Were they counting? Marking territory? Creating a calendar of hunts?",
+        "geometricFocus": "Radial arrangement around implied center"
+      },
+      {
+        "sceneId": "scene-03",
+        "imageUrl": "assets/myth/G3-1-scene-03-moon-count.jpg",
+        "caption": "Notched bone showing moon counts (Paleolithic)",
+        "narration": "On a piece of bone, someone scratched 28 marks—exactly one lunar cycle. By arranging these marks in a circle, they created one of humanity's first clocks.",
+        "geometricFocus": "Division of circle into equal sectors"
+      },
+      {
+        "sceneId": "scene-04",
+        "imageUrl": "assets/myth/G3-1-scene-04-seasonal-wheel.jpg",
+        "caption": "Stone circle marking seasonal alignments",
+        "narration": "Standing stones formed giant circles. At sunrise on the winter solstice, light would pass through a specific gap—marking the year's shortest day and the promise of spring's return.",
+        "geometricFocus": "360-degree thinking; angles mark time"
+      },
+      {
+        "sceneId": "scene-05",
+        "imageUrl": "assets/myth/G3-1-scene-05-kira-teaching.jpg",
+        "caption": "Kira shares her circle calendar with the tribe",
+        "narration": "Kira teaches her tribe: 'Divide the circle into 12 parts—one for each moon. When we mark each new moon, we'll know exactly when to prepare for winter.' The circle becomes a tool for survival.",
+        "geometricFocus": "Circle partitioned into 12 equal sectors"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Newgrange: Archaeology, Art and Legend",
+        "author": "Michael J. O'Kelly",
+        "citation": "Thames & Hudson, 1982"
+      },
+      {
+        "title": "The Roots of Civilization",
+        "author": "Alexander Marshack",
+        "url": "https://archive.org/details/rootsofcivilizat00mars"
+      }
+    ]
+  },
+
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Newgrange Triple Spiral",
+      "civilization": "Prehistoric Ireland",
+      "period": "ca. 3200 BCE (Neolithic)",
+      "imageUrl": "assets/artifacts/newgrange-triple-spiral.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "5%"},
+              "label": "Center point",
+              "style": {"stroke": "#FF0000", "strokeWidth": 3}
+            },
+            {
+              "shape": "circle",
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "15%"},
+              "label": "First turn"
+            },
+            {
+              "shape": "circle",
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "25%"},
+              "label": "Second turn"
+            },
+            {
+              "shape": "circle",
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "35%"},
+              "label": "Third turn"
+            }
+          ],
+          "description": "Concentric circles reveal the spiral's expansion pattern—each ring grows by approximately the same amount."
+        },
+        {
+          "overlayId": "overlay-02",
+          "type": "lines",
+          "elements": [
+            {
+              "shape": "line",
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "50%", "y2": "15%"},
+              "label": "Direction markers"
+            },
+            {
+              "shape": "arc",
+              "coordinates": {"startAngle": 0, "endAngle": 360, "turns": 3},
+              "label": "Spiral path"
+            }
+          ],
+          "description": "The spiral moves outward at a constant rate—early understanding of growth patterns."
+        }
+      ],
+      "metadata": {
+        "source": "Wikimedia",
+        "museum": "Brú na Bóinne Visitor Centre",
+        "accessionNumber": "N/A (in situ)",
+        "photographer": "Martin McCarthy",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Newgrange_Triple_Spiral.jpg"
+      },
+      "teachingNotes": "Point out: (1) Center point as origin; (2) Equal spacing of turns; (3) Direction (clockwise); (4) How this relates to equal grouping in place value."
+    },
+    {
+      "artifactId": "artifact-02",
+      "title": "Chauvet Cave Handprints",
+      "civilization": "Prehistoric France",
+      "period": "ca. 30,000 BCE (Upper Paleolithic)",
+      "imageUrl": "assets/artifacts/chauvet-handprints.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {"cx": "45%", "cy": "48%", "r": "30%"},
+              "label": "Implied center",
+              "style": {"strokeDasharray": "5,5"}
+            }
+          ],
+          "description": "Though no circle is drawn, the handprints create a radial pattern around an invisible center."
+        },
+        {
+          "overlayId": "overlay-02",
+          "type": "lines",
+          "elements": [
+            {
+              "shape": "line",
+              "coordinates": {"x1": "45%", "y1": "48%", "x2": "25%", "y2": "30%"},
+              "label": "Radii to each hand"
+            },
+            {
+              "shape": "line",
+              "coordinates": {"x1": "45%", "y1": "48%", "x2": "65%", "y2": "35%"}
+            },
+            {
+              "shape": "line",
+              "coordinates": {"x1": "45%", "y1": "48%", "x2": "50%", "y2": "68%"}
+            },
+            {
+              "shape": "line",
+              "coordinates": {"x1": "45%", "y1": "48%", "x2": "35%", "y2": "60%"}
+            }
+          ],
+          "description": "Lines from center to each handprint show equal grouping—dividing space into sectors."
+        }
+      ],
+      "metadata": {
+        "source": "Wikimedia",
+        "museum": "Chauvet Cave, France",
+        "accessionNumber": "N/A (in situ)",
+        "license": "Public Domain",
+        "url": "https://commons.wikimedia.org/wiki/Chauvet_Cave"
+      },
+      "teachingNotes": "Ask: 'How many handprints? How could we organize them by groups?' Connect to place value grouping (e.g., 2 groups of 5 = 10)."
+    }
+  ],
+
+  "mathActivity": {
+    "title": "Circle Division: Place Value Groups",
+    "objective": "Students will partition circles into equal groups and connect this to place value grouping (tens and ones).",
+    "procedure": [
+      "Distribute pre-printed circles (8 inches diameter) and rulers.",
+      "Review: 'Place value means grouping. 10 ones = 1 ten. But how do we show this visually?'",
+      "Demonstrate: Draw a circle. Mark the center. Divide into 10 equal sectors using a protractor (36° each).",
+      "Students practice: Create a circle divided into 10 parts. Label each sector 1, 2, 3... 10.",
+      "Challenge: 'If each sector represents 10, how many total if we count all sectors?' (100)",
+      "Extension: Divide a second circle into 100 tiny sectors. Compare the two circles. How does grouping by 10s make counting easier?"
+    ],
+    "duration": 15,
+    "materials": [
+      "Pre-printed 8-inch circles (1 per student)",
+      "Rulers",
+      "Protractors (teacher demonstrates; optional for students)",
+      "Colored pencils"
+    ],
+    "differentiation": {
+      "support": "Provide circles pre-divided into 10 sectors; students just color and label.",
+      "extension": "Students create a 'nested place value wheel': outer ring = hundreds, middle = tens, inner = ones."
+    },
+    "worksheet": {
+      "templateUrl": "assets/worksheets/G3-1-circle-place-value.pdf",
+      "answerKeyUrl": "assets/worksheets/G3-1-circle-place-value-key.pdf"
+    }
+  },
+
+  "artActivity": {
+    "title": "Spiral Memory Stamp",
+    "technique": "Relief printing (stamping)",
+    "procedure": [
+      "Show the Newgrange triple spiral. 'Each spiral turn marked a cycle—a season, a year, a memory.'",
+      "Distribute foam sheets, pencils, and scissors.",
+      "Students draw a simple spiral on foam (about 3 inches wide). Cut out the spiral path carefully.",
+      "Glue the foam spiral onto a cardboard backing to create a stamp.",
+      "Use ink pads to stamp the spiral pattern onto paper, creating a 'memory record' of something they want to remember (a season, a birthday, a special day).",
+      "Students label their spiral: 'This spiral marks _______.'"
+    ],
+    "duration": 15,
+    "materials": [
+      "Foam sheets (craft foam, 6x6 inches)",
+      "Cardboard backing (for mounting)",
+      "Glue sticks",
+      "Ink pads (multiple colors)",
+      "Drawing paper"
+    ],
+    "exampleImages": [
+      "assets/examples/G3-1-spiral-stamp-example.jpg"
+    ],
+    "rubric": {
+      "criteria": [
+        {
+          "criterion": "Spiral clarity",
+          "levels": {
+            "developing": "Spiral is uneven or unclear",
+            "proficient": "Spiral is clear and smooth",
+            "advanced": "Spiral shows precise growth pattern"
+          }
+        },
+        {
+          "criterion": "Stamping technique",
+          "levels": {
+            "developing": "Stamps are smudged or incomplete",
+            "proficient": "Stamps are clear and consistent",
+            "advanced": "Stamps create a layered pattern"
+          }
+        },
+        {
+          "criterion": "Personal connection",
+          "levels": {
+            "developing": "Label is incomplete",
+            "proficient": "Label explains what the spiral marks",
+            "advanced": "Label connects spiral to personal cycle or memory"
+          }
+        }
+      ]
+    }
+  },
+
+  "geometryActivity": {
+    "title": "Radial Symmetry: Dividing the Circle",
+    "concept": "Radial symmetry; equal sectors; 360° / n",
+    "procedure": [
+      "Define: 'Radial symmetry means equal parts spreading from a center, like spokes on a wheel.'",
+      "Show Newgrange spiral overlays. Count the 'turns'—each is evenly spaced.",
+      "Hands-on: Students use pre-printed circles and fold them in half, then in half again, then in half once more. Unfold. How many sectors? (8)",
+      "Discuss: 'Why 8? Because we folded 3 times, and 2 × 2 × 2 = 8.'",
+      "Introduce (informally): 'A full circle is 360 degrees. If we divide by 8, each sector is about 45 degrees.'",
+      "Challenge: 'How would you make 12 equal sectors?' (Fold differently, or use a protractor: 360 ÷ 12 = 30°)"
+    ],
+    "duration": 10,
+    "materials": [
+      "Pre-printed circles (8 inches)",
+      "Rulers",
+      "Protractors (optional)"
+    ],
+    "vocabulary": [
+      {
+        "term": "Radial",
+        "definition": "Spreading out from a center point, like rays of the sun",
+        "visual": "assets/vocabulary/radial-diagram.svg"
+      },
+      {
+        "term": "Sector",
+        "definition": "A 'slice' of a circle, like a piece of pie",
+        "visual": "assets/vocabulary/sector-diagram.svg"
+      },
+      {
+        "term": "Symmetry",
+        "definition": "When parts match or balance around a center or line",
+        "visual": "assets/vocabulary/symmetry-diagram.svg"
+      },
+      {
+        "term": "Center",
+        "definition": "The middle point from which a circle or spiral grows",
+        "visual": "assets/vocabulary/center-diagram.svg"
+      }
+    ]
+  },
+
+  "bridge": {
+    "title": "From Counting to Circles: Place Value as Radial Grouping",
+    "mathToArt": "Math teaches us to group by 10s (place value). Art shows us that circles naturally divide into groups—Kira's 12 moons, Newgrange's spiral turns. Both systems organize things to make them easier to understand.",
+    "artToGeometry": "The Newgrange spiral isn't random—it grows in equal steps. That's geometry! And when we divide a circle into equal parts, we're using the same thinking ancient people used to track time.",
+    "synthesis": "Whether you're grouping numbers into tens or dividing a circle into months, you're using the same cognitive tool: organized grouping. This is how humans make sense of chaos—by creating patterns.",
+    "visualDiagram": "assets/diagrams/G3-1-bridge-place-value-circle.svg"
+  },
+
+  "exit": {
+    "prompt": "Turn to a partner: How is dividing a circle like grouping numbers by tens? Give one example.",
+    "format": "verbal",
+    "expectedResponses": [
+      "Both use equal groups to make counting easier.",
+      "A circle with 10 sectors is like 10 ones = 1 ten.",
+      "The spiral at Newgrange used equal turns to track seasons, just like we use place value to track big numbers."
+    ],
+    "duration": 5
+  },
+
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "During art activity, observe: Can students divide circles into equal parts? Do they recognize radial patterns in artifacts?"
+      },
+      {
+        "type": "exit ticket",
+        "criteria": "Students write: 'One way circles and place value are similar is ____.'"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-spiral-portfolio-rubric.pdf"
+    }
+  },
+
+  "extensions": {
+    "homeConnections": [
+      "Find three circular objects at home (clock, plate, wheel). How are they divided? Draw and label them.",
+      "Research: What other ancient cultures used spirals? (Maori koru, Celtic triskele, etc.)"
+    ],
+    "literatureLinks": [
+      {
+        "title": "How Many Stars in the Sky?",
+        "author": "Lenny Hort",
+        "connection": "Counting large numbers; grouping strategies; night sky patterns"
+      },
+      {
+        "title": "One Grain of Rice",
+        "author": "Demi",
+        "connection": "Exponential growth; place value grouping; visual pattern of doubling"
+      }
+    ],
+    "digitalTools": [
+      {
+        "name": "GeoGebra Circle Division",
+        "url": "https://www.geogebra.org/m/circle-division",
+        "purpose": "Interactive tool to divide circles into equal sectors and explore radial symmetry"
+      }
+    ]
+  },
+
+  "teacherNotes": {
+    "preparation": [
+      "Pre-cut foam sheets into 6x6 inch squares (or have students cut).",
+      "Print circle templates (8-inch diameter, 2 per student).",
+      "Cue up Newgrange and Chauvet images on projector.",
+      "Prepare one sample spiral stamp to demonstrate."
+    ],
+    "commonMisconceptions": [
+      "Students may think 'place value' and 'circles' are unrelated. Emphasize: both use equal grouping.",
+      "Some may struggle with 'invisible' centers (Chauvet handprints). Use string to show all radii lead to one point.",
+      "Folding circles to create sectors can be tricky—demonstrate slowly and check for understanding."
+    ],
+    "timingTips": [
+      "SEL + Hook: Keep under 10 minutes total to leave time for hands-on work.",
+      "If running short on time, skip the 100-sector extension in math activity.",
+      "Art activity can extend into a second session if needed."
+    ],
+    "culturalNotes": "Newgrange is a sacred site for many Irish people. Frame it respectfully: 'This is one of humanity's oldest examples of geometric thinking, created by people who observed nature closely.' Avoid speculation about 'mystical' meanings."
+  }
+}

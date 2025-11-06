@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1920 1080"
+     width="1920"
+     height="1080"
+     style="position: absolute; top: 0; left: 0; pointer-events: none;">
+  <line x1="864.0" y1="518.4" x2="480.0" y2="324.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="592.0" y="403.2"
+          width="160" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="672.0" y="421.2"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radii to each hand
+    </text>
+  </g>
+  <line x1="864.0" y1="518.4" x2="1248.0" y2="378.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <line x1="864.0" y1="518.4" x2="960.0" y2="734.4000000000001"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <line x1="864.0" y1="518.4" x2="672.0" y2="648.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+</svg>

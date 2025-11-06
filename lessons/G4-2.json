@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-2",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 1,
+    "lessonNumber": 2,
+    "duration": 50,
+    "mathConcept": "Compare/order",
+    "geometricConcept": "Symmetry ranking",
+    "civilization": "Greece",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "compare/order",
+      "symmetry ranking",
+      "greece"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Symmetry help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Sophia the Geometer",
+      "role": "Mathematical philosopher",
+      "imageUrl": "assets/characters/greece-character.png",
+      "biography": "Sophia the Geometer uses symmetry to solve problems about compare/order."
+    },
+    "narrative": "Follow Sophia the Geometer as they discover how symmetry ranking helps them understand compare/order. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does symmetry help us think about compare/order?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Greece",
+    "civilization": "Greece",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Greek architectural orders",
+      "civilization": "Greece",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-2-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals symmetry structure in Greek architectural orders"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the symmetry ranking visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Compare/order with Symmetry ranking",
+    "objective": "Students will apply compare/order using symmetry ranking.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Design choices",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Symmetry ranking",
+    "concept": "More/less symmetry",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Compare/order to Symmetry ranking",
+    "mathToArt": "Math concept compare/order illuminates artistic thinking in design choices.",
+    "artToGeometry": "Artistic expression reveals geometric structure: symmetry ranking.",
+    "synthesis": "More/less symmetry and design choices are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-2-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does symmetry help you think about compare/order?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-2-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Greece cultural context."
+  }
+}

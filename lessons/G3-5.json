@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-5",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 3,
+    "lessonNumber": 5,
+    "duration": 50,
+    "mathConcept": "Shapes and perimeter",
+    "geometricConcept": "Frieze borders",
+    "civilization": "Rome",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "shapes and perimeter",
+      "frieze borders",
+      "rome"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a frieze in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Marcus the Builder",
+      "role": "Engineering master",
+      "imageUrl": "assets/characters/rome-character.png",
+      "biography": "Marcus the Builder uses frieze to solve problems about shapes and perimeter."
+    },
+    "narrative": "Follow Marcus the Builder as they discover how frieze borders helps them understand shapes and perimeter. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does frieze help us think about shapes and perimeter?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Rome",
+    "civilization": "Rome",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Roman mosaic bands",
+      "civilization": "Rome",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-5-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals frieze structure in Roman mosaic bands"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the frieze borders visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Shapes and perimeter with Frieze borders",
+    "objective": "Students will apply shapes and perimeter using frieze borders.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Meander border variations",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Frieze borders",
+    "concept": "Perimeter along rule path",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Shapes and perimeter to Frieze borders",
+    "mathToArt": "Math concept shapes and perimeter illuminates artistic thinking in meander border variations.",
+    "artToGeometry": "Artistic expression reveals geometric structure: frieze borders.",
+    "synthesis": "Perimeter along rule path and meander border variations are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-5-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does frieze help you think about shapes and perimeter?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-5-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Rome cultural context."
+  }
+}

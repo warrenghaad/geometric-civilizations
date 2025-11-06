@@ -1,0 +1,180 @@
+{
+  "lessonId": "G3-13",
+  "metadata": {
+    "grade": 3,
+    "weekNumber": 7,
+    "lessonNumber": 13,
+    "duration": 50,
+    "mathConcept": "Equal shares",
+    "geometricConcept": "Quatrefoil 4 shares",
+    "civilization": "Gothic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "equal shares",
+      "quatrefoil 4 shares",
+      "gothic"
+    ]
+  },
+  "sel": {
+    "prompt": "Draw a shape that shows how you're feeling today. Can you find a quatrefoil in your shape?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Pierre the Mason",
+      "role": "Cathedral builder",
+      "imageUrl": "assets/characters/gothic-character.png",
+      "biography": "Pierre the Mason uses quatrefoil to solve problems about equal shares."
+    },
+    "narrative": "Follow Pierre the Mason as they discover how quatrefoil 4 shares helps them understand equal shares. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does quatrefoil help us think about equal shares?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Gothic",
+    "civilization": "Gothic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Gothic quatrefoils",
+      "civilization": "Gothic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G3-13-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals quatrefoil structure in Gothic quatrefoils"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the quatrefoil 4 shares visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Equal shares with Quatrefoil 4 shares",
+    "objective": "Students will apply equal shares using quatrefoil 4 shares.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Four-petal medallion",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Quatrefoil 4 shares",
+    "concept": "Quartering circle",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Equal shares to Quatrefoil 4 shares",
+    "mathToArt": "Math concept equal shares illuminates artistic thinking in four-petal medallion.",
+    "artToGeometry": "Artistic expression reveals geometric structure: quatrefoil 4 shares.",
+    "synthesis": "Quartering circle and four-petal medallion are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G3-13-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does quatrefoil help you think about equal shares?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G3-13-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Gothic cultural context."
+  }
+}

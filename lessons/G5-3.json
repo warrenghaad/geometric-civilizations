@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-3",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 2,
+    "lessonNumber": 3,
+    "duration": 50,
+    "mathConcept": "Graphs of equivalent ratios",
+    "geometricConcept": "Star polygons {n/k}",
+    "civilization": "Islamic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "graphs of equivalent ratios",
+      "star polygons {n/k}",
+      "islamic"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Star to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Fatima the Tiler",
+      "role": "Pattern master",
+      "imageUrl": "assets/characters/islamic-character.png",
+      "biography": "Fatima the Tiler uses star to solve problems about graphs of equivalent ratios."
+    },
+    "narrative": "Follow Fatima the Tiler as they discover how star polygons {n/k} helps them understand graphs of equivalent ratios. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does star help us think about graphs of equivalent ratios?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Islamic",
+    "civilization": "Islamic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Topkapi scroll constructions",
+      "civilization": "Islamic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-3-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals star structure in Topkapi scroll constructions"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the star polygons {n/k} visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Graphs of equivalent ratios with Star polygons {n/k}",
+    "objective": "Students will apply graphs of equivalent ratios using star polygons {n/k}.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Star families",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Star polygons {n/k}",
+    "concept": "Angle graphs",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Graphs of equivalent ratios to Star polygons {n/k}",
+    "mathToArt": "Math concept graphs of equivalent ratios illuminates artistic thinking in star families.",
+    "artToGeometry": "Artistic expression reveals geometric structure: star polygons {n/k}.",
+    "synthesis": "Angle graphs and star families are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-3-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does star help you think about graphs of equivalent ratios?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-3-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Islamic cultural context."
+  }
+}

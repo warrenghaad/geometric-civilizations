@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-6",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 3,
+    "lessonNumber": 6,
+    "duration": 50,
+    "mathConcept": "Unit rates",
+    "geometricConcept": "Voronoi density",
+    "civilization": "Contemporary",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "unit rates",
+      "voronoi density",
+      "contemporary"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Voronoi to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Zara the Parametric Designer",
+      "role": "Digital architect",
+      "imageUrl": "assets/characters/contemporary-character.png",
+      "biography": "Zara the Parametric Designer uses voronoi to solve problems about unit rates."
+    },
+    "narrative": "Follow Zara the Parametric Designer as they discover how voronoi density helps them understand unit rates. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does voronoi help us think about unit rates?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Contemporary",
+    "civilization": "Contemporary",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Voronoi fa\u00e7ades/screens",
+      "civilization": "Contemporary",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-6-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals voronoi structure in Voronoi fa\u00e7ades/screens"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the voronoi density visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Unit rates with Voronoi density",
+    "objective": "Students will apply unit rates using voronoi density.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Shading balance",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Voronoi density",
+    "concept": "Seeds per area",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Unit rates to Voronoi density",
+    "mathToArt": "Math concept unit rates illuminates artistic thinking in shading balance.",
+    "artToGeometry": "Artistic expression reveals geometric structure: voronoi density.",
+    "synthesis": "Seeds per area and shading balance are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-6-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does voronoi help you think about unit rates?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-6-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Contemporary cultural context."
+  }
+}

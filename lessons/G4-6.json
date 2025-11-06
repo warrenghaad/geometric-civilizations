@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-6",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 3,
+    "lessonNumber": 6,
+    "duration": 50,
+    "mathConcept": "Problem-solving plan",
+    "geometricConcept": "Construction algorithms",
+    "civilization": "Greece",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "problem-solving plan",
+      "construction algorithms",
+      "greece"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Construction help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Sophia the Geometer",
+      "role": "Mathematical philosopher",
+      "imageUrl": "assets/characters/greece-character.png",
+      "biography": "Sophia the Geometer uses construction to solve problems about problem-solving plan."
+    },
+    "narrative": "Follow Sophia the Geometer as they discover how construction algorithms helps them understand problem-solving plan. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does construction help us think about problem-solving plan?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Greece",
+    "civilization": "Greece",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Ionic volute construction",
+      "civilization": "Greece",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-6-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals construction structure in Ionic volute construction"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the construction algorithms visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Problem-solving plan with Construction algorithms",
+    "objective": "Students will apply problem-solving plan using construction algorithms.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Builder's sketch",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Construction algorithms",
+    "concept": "Sequence steps",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Problem-solving plan to Construction algorithms",
+    "mathToArt": "Math concept problem-solving plan illuminates artistic thinking in builder's sketch.",
+    "artToGeometry": "Artistic expression reveals geometric structure: construction algorithms.",
+    "synthesis": "Sequence steps and builder's sketch are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-6-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does construction help you think about problem-solving plan?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-6-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Greece cultural context."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-10",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 5,
+    "lessonNumber": 10,
+    "duration": 50,
+    "mathConcept": "Decimals in measures",
+    "geometricConcept": "Lattice apertures",
+    "civilization": "China",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "decimals in measures",
+      "lattice apertures",
+      "china"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Lattice help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Li Wei the Craftsperson",
+      "role": "Lattice designer",
+      "imageUrl": "assets/characters/china-character.png",
+      "biography": "Li Wei the Craftsperson uses lattice to solve problems about decimals in measures."
+    },
+    "narrative": "Follow Li Wei the Craftsperson as they discover how lattice apertures helps them understand decimals in measures. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does lattice help us think about decimals in measures?"
+  },
+  "myth": {
+    "title": "TBD: Myth for China",
+    "civilization": "China",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Chinese lattice families",
+      "civilization": "China",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-10-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals lattice structure in Chinese lattice families"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the lattice apertures visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Decimals in measures with Lattice apertures",
+    "objective": "Students will apply decimals in measures using lattice apertures.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Pattern rhythm",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Lattice apertures",
+    "concept": "Percent open area",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Decimals in measures to Lattice apertures",
+    "mathToArt": "Math concept decimals in measures illuminates artistic thinking in pattern rhythm.",
+    "artToGeometry": "Artistic expression reveals geometric structure: lattice apertures.",
+    "synthesis": "Percent open area and pattern rhythm are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-10-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does lattice help you think about decimals in measures?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-10-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present China cultural context."
+  }
+}

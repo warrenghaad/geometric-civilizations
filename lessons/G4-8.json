@@ -1,0 +1,180 @@
+{
+  "lessonId": "G4-8",
+  "metadata": {
+    "grade": 4,
+    "weekNumber": 4,
+    "lessonNumber": 8,
+    "duration": 50,
+    "mathConcept": "Fractions to decimals",
+    "geometricConcept": "Foils/tracery",
+    "civilization": "Gothic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "fractions to decimals",
+      "foils/tracery",
+      "gothic"
+    ]
+  },
+  "sel": {
+    "prompt": "Create a geometric design that represents something you're proud of. How does Foils/tracery help tell your story?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Pierre the Mason",
+      "role": "Cathedral builder",
+      "imageUrl": "assets/characters/gothic-character.png",
+      "biography": "Pierre the Mason uses foils/tracery to solve problems about fractions to decimals."
+    },
+    "narrative": "Follow Pierre the Mason as they discover how foils/tracery helps them understand fractions to decimals. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does foils/tracery help us think about fractions to decimals?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Gothic",
+    "civilization": "Gothic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Quatrefoil from circles",
+      "civilization": "Gothic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G4-8-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals foils/tracery structure in Quatrefoil from circles"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the foils/tracery visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Fractions to decimals with Foils/tracery",
+    "objective": "Students will apply fractions to decimals using foils/tracery.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Lobed composition",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Foils/tracery",
+    "concept": "Chord geometry",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Fractions to decimals to Foils/tracery",
+    "mathToArt": "Math concept fractions to decimals illuminates artistic thinking in lobed composition.",
+    "artToGeometry": "Artistic expression reveals geometric structure: foils/tracery.",
+    "synthesis": "Chord geometry and lobed composition are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G4-8-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does foils/tracery help you think about fractions to decimals?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G4-8-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Gothic cultural context."
+  }
+}

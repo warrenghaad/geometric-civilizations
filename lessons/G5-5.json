@@ -1,0 +1,180 @@
+{
+  "lessonId": "G5-5",
+  "metadata": {
+    "grade": 5,
+    "weekNumber": 3,
+    "lessonNumber": 5,
+    "duration": 50,
+    "mathConcept": "Solve ratio problems",
+    "geometricConcept": "Muqarnas tiers",
+    "civilization": "Islamic",
+    "standards": {
+      "ccss": [],
+      "ncas": []
+    },
+    "keywords": [
+      "solve ratio problems",
+      "muqarnas tiers",
+      "islamic"
+    ]
+  },
+  "sel": {
+    "prompt": "Design a symbol using Muqarnas to represent a challenge you've overcome. What does the geometry reveal?",
+    "duration": 5,
+    "materials": [
+      "Paper",
+      "Pencil",
+      "Colored pencils"
+    ],
+    "reflectionQuestions": [
+      "How did your shape choice reflect your feelings?",
+      "Did the geometry help you express something you couldn't put into words?"
+    ]
+  },
+  "hook": {
+    "character": {
+      "name": "Fatima the Tiler",
+      "role": "Pattern master",
+      "imageUrl": "assets/characters/islamic-character.png",
+      "biography": "Fatima the Tiler uses muqarnas to solve problems about solve ratio problems."
+    },
+    "narrative": "Follow Fatima the Tiler as they discover how muqarnas tiers helps them understand solve ratio problems. Their journey reveals the hidden mathematics in everyday patterns.",
+    "duration": 5,
+    "visualType": "illustration",
+    "questionPrompt": "How does muqarnas help us think about solve ratio problems?"
+  },
+  "myth": {
+    "title": "TBD: Myth for Islamic",
+    "civilization": "Islamic",
+    "summary": "To be researched and written",
+    "scenes": [],
+    "sources": []
+  },
+  "artifacts": [
+    {
+      "artifactId": "artifact-01",
+      "title": "Muqarnas honeycomb vaults",
+      "civilization": "Islamic",
+      "period": "TBD - Research needed",
+      "imageUrl": "assets/artifacts/G5-5-artifact-01.jpg",
+      "overlays": [
+        {
+          "overlayId": "overlay-01",
+          "type": "circles",
+          "elements": [
+            {
+              "shape": "circle",
+              "coordinates": {
+                "cx": "50%",
+                "cy": "50%",
+                "r": "25%"
+              },
+              "label": "Primary geometric feature",
+              "style": {}
+            }
+          ],
+          "description": "Overlay reveals muqarnas structure in Muqarnas honeycomb vaults"
+        }
+      ],
+      "metadata": {
+        "source": "TBD",
+        "museum": "TBD",
+        "accessionNumber": "TBD",
+        "license": "CC0 1.0",
+        "url": "https://example.com/artifact-1"
+      },
+      "teachingNotes": "Highlight the muqarnas tiers visible in this artifact."
+    }
+  ],
+  "mathActivity": {
+    "title": "Solve ratio problems with Muqarnas tiers",
+    "objective": "Students will apply solve ratio problems using muqarnas tiers.",
+    "procedure": [
+      "Review prior knowledge",
+      "Introduce geometric model",
+      "Guided practice",
+      "Independent work",
+      "Share and discuss"
+    ],
+    "duration": 15,
+    "materials": [
+      "Paper",
+      "Pencils",
+      "Rulers",
+      "Protractors"
+    ]
+  },
+  "artActivity": {
+    "title": "Cell rhythm",
+    "technique": "To be specified",
+    "procedure": [
+      "Examine cultural artifacts",
+      "Identify geometric patterns",
+      "Practice technique",
+      "Create original design",
+      "Reflect on process"
+    ],
+    "duration": 15,
+    "materials": [
+      "Art supplies TBD"
+    ]
+  },
+  "geometryActivity": {
+    "title": "Muqarnas tiers",
+    "concept": "Tier scaling",
+    "procedure": [
+      "Define key geometric concepts",
+      "Explore with hands-on tools",
+      "Make connections to artifacts",
+      "Apply to new contexts"
+    ],
+    "duration": 10,
+    "materials": [
+      "Geometric tools TBD"
+    ],
+    "vocabulary": []
+  },
+  "bridge": {
+    "title": "Connecting Solve ratio problems to Muqarnas tiers",
+    "mathToArt": "Math concept solve ratio problems illuminates artistic thinking in cell rhythm.",
+    "artToGeometry": "Artistic expression reveals geometric structure: muqarnas tiers.",
+    "synthesis": "Tier scaling and cell rhythm are two views of the same cognitive tool.",
+    "visualDiagram": "assets/diagrams/G5-5-bridge.svg"
+  },
+  "exit": {
+    "prompt": "How does muqarnas help you think about solve ratio problems?",
+    "format": "verbal",
+    "expectedResponses": [
+      "Sample response 1",
+      "Sample response 2"
+    ],
+    "duration": 5
+  },
+  "assessments": {
+    "formative": [
+      {
+        "type": "observation",
+        "criteria": "Student engagement with geometric concepts"
+      }
+    ],
+    "summative": {
+      "type": "portfolio",
+      "rubricUrl": "assets/rubrics/G5-5-rubric.pdf"
+    }
+  },
+  "extensions": {
+    "homeConnections": [],
+    "literatureLinks": [],
+    "digitalTools": []
+  },
+  "teacherNotes": {
+    "preparation": [
+      "Review lesson materials",
+      "Prepare artifacts",
+      "Set up workstations"
+    ],
+    "commonMisconceptions": [],
+    "timingTips": [],
+    "culturalNotes": "Respectfully present Islamic cultural context."
+  }
+}
