@@ -3,34 +3,292 @@
      width="1920"
      height="1080"
      style="position: absolute; top: 0; left: 0; pointer-events: none;">
-  <line x1="864.0" y1="518.4" x2="480.0" y2="324.0"
+  <line x1="960.0" y1="540.0" x2="960.0" y2="162.0"
           stroke="#FF6B00"
           stroke-width="2px"
           opacity="0.8"/>
   <g>
-    <rect x="592.0" y="403.2"
-          width="160" height="28"
+    <rect x="932.0" y="333.0"
+          width="56" height="28"
           fill="rgba(0,0,0,0.7)" rx="4"/>
-    <text x="672.0" y="421.2"
+    <text x="960.0" y="351.0"
           font-family="Inter, sans-serif"
           font-size="16px"
           font-weight="600"
           fill="#FFFFFF"
           text-anchor="middle"
           dominant-baseline="middle">
-      Radii to each hand
+      Ray 1
     </text>
   </g>
-  <line x1="864.0" y1="518.4" x2="1248.0" y2="378.0"
+  <line x1="960.0" y1="540.0" x2="1209.6" y2="216.0"
           stroke="#FF6B00"
           stroke-width="2px"
           opacity="0.8"/>
-  <line x1="864.0" y1="518.4" x2="960.0" y2="734.4000000000001"
+  <g>
+    <rect x="1056.8" y="360.0"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1084.8" y="378.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 2
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1401.6" y2="291.6"
           stroke="#FF6B00"
           stroke-width="2px"
           opacity="0.8"/>
-  <line x1="864.0" y1="518.4" x2="672.0" y2="648.0"
+  <g>
+    <rect x="1152.8" y="397.8"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1180.8" y="415.8"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 3
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1536.0" y2="399.6"
           stroke="#FF6B00"
           stroke-width="2px"
           opacity="0.8"/>
+  <g>
+    <rect x="1220.0" y="451.8"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1248.0" y="469.8"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 4
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1632.0" y2="540.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="1268.0" y="522.0"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1296.0" y="540.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 5
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1536.0" y2="680.4"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="1220.0" y="592.2"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1248.0" y="610.2"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 6
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1401.6" y2="788.4"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="1152.8" y="646.2"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1180.8" y="664.2"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 7
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1209.6" y2="864.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="1056.8" y="684.0"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1084.8" y="702.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 8
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="960.0" y2="918.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="932.0" y="711.0"
+          width="56" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="960.0" y="729.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 9
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="710.4" y2="864.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="803.2" y="684.0"
+          width="64" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="835.2" y="702.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 10
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="518.4000000000001" y2="788.4"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="707.2" y="646.2"
+          width="64" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="739.2" y="664.2"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 11
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="384.0" y2="680.4"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="640.0" y="592.2"
+          width="64" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="672.0" y="610.2"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 12
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="288.0" y2="540.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="592.0" y="522.0"
+          width="64" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="624.0" y="540.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 13
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="384.0" y2="399.6"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="640.0" y="451.8"
+          width="64" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="672.0" y="469.8"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 14
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="518.4000000000001" y2="291.6"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="707.2" y="397.8"
+          width="64" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="739.2" y="415.8"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 15
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="710.4" y2="216.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="803.2" y="360.0"
+          width="64" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="835.2" y="378.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Ray 16
+    </text>
+  </g>
 </svg>

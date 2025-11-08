@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1920 1080"
+     width="1920"
+     height="1080"
+     style="position: absolute; top: 0; left: 0; pointer-events: none;">
+  <rect x="192.0" y="216.0" width="384.0" height="648.0"
+          stroke="#00FF00"
+          stroke-width="3px"
+          fill="none"
+          opacity="0.8"/>
+  <g>
+    <rect x="304.0" y="188.0"
+          width="160" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="384.0" y="206.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Group 1: 10 tokens
+    </text>
+  </g>
+  <rect x="672.0" y="216.0" width="384.0" height="648.0"
+          stroke="#00FF00"
+          stroke-width="3px"
+          fill="none"
+          opacity="0.8"/>
+  <g>
+    <rect x="784.0" y="188.0"
+          width="160" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="864.0" y="206.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Group 2: 10 tokens
+    </text>
+  </g>
+  <rect x="1152.0" y="216.0" width="384.0" height="648.0"
+          stroke="#00FF00"
+          stroke-width="3px"
+          fill="none"
+          opacity="0.8"/>
+  <g>
+    <rect x="1264.0" y="188.0"
+          width="160" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1344.0" y="206.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Group 3: 10 tokens
+    </text>
+  </g>
+</svg>

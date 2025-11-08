@@ -8,21 +8,10 @@
     "mathConcept": "Place value, compare/order numbers",
     "geometricConcept": "Circle partitions; equal grouping (radial division)",
     "civilization": "Mesopotamia",
-    "periods": [
-      "Akkadian (2334-2154 BCE)",
-      "Old Babylonian (1894-1595 BCE)"
-    ],
+    "periods": ["Akkadian (2334-2154 BCE)", "Old Babylonian (1894-1595 BCE)"],
     "standards": {
-      "ccss": [
-        "3.NBT.A.1",
-        "3.NBT.A.2",
-        "3.G.A.2"
-      ],
-      "ncas": [
-        "VA:Cr2.1.3a",
-        "VA:Re7.2.3a",
-        "VA:Cn10.1.3a"
-      ]
+      "ccss": ["3.NBT.A.1", "3.NBT.A.2", "3.G.A.2"],
+      "ncas": ["VA:Cr2.1.3a", "VA:Re7.2.3a", "VA:Cn10.1.3a"]
     },
     "keywords": [
       "place value",
@@ -35,36 +24,35 @@
       "8-fold division"
     ]
   },
+
   "sel": {
     "prompt": "Draw a circle and divide it into sections that represent different parts of your day (morning, school, play, sleep). How many sections did you create? Do any sections need to be bigger than others?",
     "duration": 5,
-    "materials": [
-      "Paper",
-      "Compass or circular template (4-inch diameter)",
-      "Colored pencils"
-    ],
+    "materials": ["Paper", "Compass or circular template (4-inch diameter)", "Colored pencils"],
     "reflectionQuestions": [
       "How did you decide where to divide your circle?",
       "If we all divided our circles into exactly 8 equal parts, what would change?",
       "Can you think of other things that are divided into equal groups?"
     ]
   },
+
   "hook": {
     "character": {
       "name": "Ninsun the Seal Carver",
       "role": "Master cylinder seal artisan in the city of Ur",
       "imageUrl": "assets/characters/ninsun-seal-carver.png",
-      "biography": "Ninsun carves cylinder seals for merchants and priests in ancient Mesopotamia (c. 2000 BCE). Each seal must have perfect symmetry\u2014if the pattern doesn't divide the circle evenly, the seal won't roll properly and the owner's mark will be crooked. Today, a temple priest has ordered a special seal with 8 flower petals to honor Shamash, the sun god."
+      "biography": "Ninsun carves cylinder seals for merchants and priests in ancient Mesopotamia (c. 2000 BCE). Each seal must have perfect symmetry—if the pattern doesn't divide the circle evenly, the seal won't roll properly and the owner's mark will be crooked. Today, a temple priest has ordered a special seal with 8 flower petals to honor Shamash, the sun god."
     },
-    "narrative": "Ninsun holds a small stone cylinder in her palm. The priest wants exactly 8 petals\u2014no more, no less\u2014arranged perfectly around the center. But how does she know where to carve each petal? If she makes a mistake, the seal is ruined. She remembers her teacher's words: 'The circle contains 360 small angles. Divide evenly, and the gods smile.' Ninsun picks up her copper scribe and begins to calculate...",
+    "narrative": "Ninsun holds a small stone cylinder in her palm. The priest wants exactly 8 petals—no more, no less—arranged perfectly around the center. But how does she know where to carve each petal? If she makes a mistake, the seal is ruined. She remembers her teacher's words: 'The circle contains 360 small angles. Divide evenly, and the gods smile.' Ninsun picks up her copper scribe and begins to calculate...",
     "duration": 5,
     "visualType": "illustration",
     "questionPrompt": "If Ninsun needs 8 equal petals around a circle, how many 'small angles' should each petal take up?"
   },
+
   "myth": {
     "title": "Shamash's Gift of the Divided Circle",
     "civilization": "Mesopotamia (Akkadian/Babylonian)",
-    "summary": "Long ago, the Mesopotamian people had no way to mark time or measure the sky. Shamash, the sun god of justice and light, took pity on humanity and gave them the gift of the divided circle\u2014teaching them to split the sun's path into equal parts. This myth explains why the ancient Babylonians divided circles into 360 parts and why rosette patterns with 6, 8, 12, or 16 petals appear on cylinder seals, temple walls, and sacred objects.",
+    "summary": "Long ago, the Mesopotamian people had no way to mark time or measure the sky. Shamash, the sun god of justice and light, took pity on humanity and gave them the gift of the divided circle—teaching them to split the sun's path into equal parts. This myth explains why the ancient Babylonians divided circles into 360 parts and why rosette patterns with 6, 8, 12, or 16 petals appear on cylinder seals, temple walls, and sacred objects.",
     "scenes": [
       {
         "sceneId": "scene-01",
@@ -77,29 +65,29 @@
         "sceneId": "scene-02",
         "imageUrl": "assets/myth/G3-1-scene-02-shamash-descends.jpg",
         "caption": "Shamash descends from his sky-chariot to speak with the first astronomers",
-        "narration": "Shamash heard their prayers. He descended from his chariot of fire and appeared to the priest-astronomers in the city of Sippar. 'I will teach you the secret of the circle,' Shamash declared. His body glowed with divine light\u201416 rays extending from his shoulders and crown. 'See how my rays divide the circle into equal parts? This is how you will measure time, space, and the movements of the heavens.'",
+        "narration": "Shamash heard their prayers. He descended from his chariot of fire and appeared to the priest-astronomers in the city of Sippar. 'I will teach you the secret of the circle,' Shamash declared. His body glowed with divine light—16 rays extending from his shoulders and crown. 'See how my rays divide the circle into equal parts? This is how you will measure time, space, and the movements of the heavens.'",
         "geometricFocus": "16-ray division of the circle (visible in Shamash iconography); introduction to equal spacing"
       },
       {
         "sceneId": "scene-03",
         "imageUrl": "assets/myth/G3-1-scene-03-priest-draws-circle.jpg",
         "caption": "The high priest draws the first divided circle in wet clay",
-        "narration": "The high priest took a reed and drew a perfect circle in wet clay. 'Divide it,' Shamash commanded. The priest carefully marked 8 points around the edge\u2014one for each direction (north, south, east, west, and the four corners between). Shamash smiled. 'Good. But there is more to learn. The circle contains 360 steps\u2014tiny angles invisible to the eye. Learn to count by groups, and you will unlock the secrets of the cosmos.'",
+        "narration": "The high priest took a reed and drew a perfect circle in wet clay. 'Divide it,' Shamash commanded. The priest carefully marked 8 points around the edge—one for each direction (north, south, east, west, and the four corners between). Shamash smiled. 'Good. But there is more to learn. The circle contains 360 steps—tiny angles invisible to the eye. Learn to count by groups, and you will unlock the secrets of the cosmos.'",
         "geometricFocus": "First introduction to circle division; 8-fold symmetry as fundamental"
       },
       {
         "sceneId": "scene-04",
         "imageUrl": "assets/myth/G3-1-scene-04-rosette-blooms.jpg",
         "caption": "The first rosette blooms from the divided circle",
-        "narration": "As the priest watched, the 8 marks began to glow. Petals of light grew from each point, forming a beautiful flower\u2014a rosette\u2014radiating from the center. 'This is the flower of order,' Shamash explained. '8 petals, each taking 45 of my 360 steps. When you carve this pattern on a cylinder seal, you carry my blessing. When you build a temple with 8 walls, you honor the sacred geometry.'",
-        "geometricFocus": "8-petal rosette as geometric pattern; 360 \u00f7 8 = 45\u00b0 per petal"
+        "narration": "As the priest watched, the 8 marks began to glow. Petals of light grew from each point, forming a beautiful flower—a rosette—radiating from the center. 'This is the flower of order,' Shamash explained. '8 petals, each taking 45 of my 360 steps. When you carve this pattern on a cylinder seal, you carry my blessing. When you build a temple with 8 walls, you honor the sacred geometry.'",
+        "geometricFocus": "8-petal rosette as geometric pattern; 360 ÷ 8 = 45° per petal"
       },
       {
         "sceneId": "scene-05",
         "imageUrl": "assets/myth/G3-1-scene-05-seals-and-temples.jpg",
         "caption": "Craftspeople create cylinder seals and temples using the divided circle",
-        "narration": "From that day forward, the people of Mesopotamia used Shamash's gift. Seal carvers divided circles into 6, 8, 12, or 16 equal parts, creating rosette patterns that rolled perfectly. Architects built ziggurats with walls that faced the sacred directions. Astronomers tracked the stars by dividing the sky into 360 parts\u2014a system we still use today. And every time someone divided a circle into equal groups, they remembered Shamash's teaching: 'Count by groups, and the patterns of the universe reveal themselves.'",
-        "geometricFocus": "Application of circle division across Mesopotamian culture; connection to modern 360\u00b0 system"
+        "narration": "From that day forward, the people of Mesopotamia used Shamash's gift. Seal carvers divided circles into 6, 8, 12, or 16 equal parts, creating rosette patterns that rolled perfectly. Architects built ziggurats with walls that faced the sacred directions. Astronomers tracked the stars by dividing the sky into 360 parts—a system we still use today. And every time someone divided a circle into equal groups, they remembered Shamash's teaching: 'Count by groups, and the patterns of the universe reveal themselves.'",
+        "geometricFocus": "Application of circle division across Mesopotamian culture; connection to modern 360° system"
       }
     ],
     "sources": [
@@ -112,7 +100,7 @@
       {
         "title": "Mathematics in Ancient Mesopotamia",
         "author": "Eleanor Robson",
-        "citation": "Princeton University Press, 2008. Discussion of sexagesimal (base-60) system and 360\u00b0 circle."
+        "citation": "Princeton University Press, 2008. Discussion of sexagesimal (base-60) system and 360° circle."
       },
       {
         "title": "Cylinder Seals and Rosette Patterns",
@@ -121,6 +109,7 @@
       }
     ]
   },
+
   "artifacts": [
     {
       "artifactId": "artifact-01",
@@ -135,32 +124,18 @@
           "elements": [
             {
               "shape": "circle",
-              "coordinates": {
-                "cx": "50%",
-                "cy": "50%",
-                "r": "5%"
-              },
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "5%"},
               "label": "Center point",
-              "style": {
-                "stroke": "#FF0000",
-                "strokeWidth": "3px"
-              }
+              "style": {"stroke": "#FF0000", "strokeWidth": "3px"}
             },
             {
               "shape": "circle",
-              "coordinates": {
-                "cx": "50%",
-                "cy": "50%",
-                "r": "25%"
-              },
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "25%"},
               "label": "Rosette boundary",
-              "style": {
-                "stroke": "#FF0000",
-                "strokeWidth": "2px"
-              }
+              "style": {"stroke": "#FF0000", "strokeWidth": "2px"}
             }
           ],
-          "description": "The rosette has a precisely defined center and radius\u2014fundamental to all circle division."
+          "description": "The rosette has a precisely defined center and radius—fundamental to all circle division."
         },
         {
           "overlayId": "overlay-02",
@@ -168,90 +143,47 @@
           "elements": [
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "50%",
-                "y2": "25%"
-              },
-              "label": "Radius 1 (0\u00b0)",
-              "style": {
-                "stroke": "#FF6B00",
-                "strokeWidth": "2px"
-              }
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "50%", "y2": "25%"},
+              "label": "Radius 1 (0°)",
+              "style": {"stroke": "#FF6B00", "strokeWidth": "2px"}
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "68%",
-                "y2": "32%"
-              },
-              "label": "Radius 2 (45\u00b0)"
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "68%", "y2": "32%"},
+              "label": "Radius 2 (45°)"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "75%",
-                "y2": "50%"
-              },
-              "label": "Radius 3 (90\u00b0)"
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "75%", "y2": "50%"},
+              "label": "Radius 3 (90°)"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "68%",
-                "y2": "68%"
-              },
-              "label": "Radius 4 (135\u00b0)"
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "68%", "y2": "68%"},
+              "label": "Radius 4 (135°)"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "50%",
-                "y2": "75%"
-              },
-              "label": "Radius 5 (180\u00b0)"
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "50%", "y2": "75%"},
+              "label": "Radius 5 (180°)"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "32%",
-                "y2": "68%"
-              },
-              "label": "Radius 6 (225\u00b0)"
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "32%", "y2": "68%"},
+              "label": "Radius 6 (225°)"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "25%",
-                "y2": "50%"
-              },
-              "label": "Radius 7 (270\u00b0)"
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "25%", "y2": "50%"},
+              "label": "Radius 7 (270°)"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "32%",
-                "y2": "32%"
-              },
-              "label": "Radius 8 (315\u00b0)"
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "32%", "y2": "32%"},
+              "label": "Radius 8 (315°)"
             }
           ],
-          "description": "8 radii divide the circle into equal 45\u00b0 sectors. This is 360\u00b0 \u00f7 8 = 45\u00b0 per petal."
+          "description": "8 radii divide the circle into equal 45° sectors. This is 360° ÷ 8 = 45° per petal."
         },
         {
           "overlayId": "overlay-03",
@@ -259,27 +191,15 @@
           "elements": [
             {
               "shape": "label",
-              "coordinates": {
-                "x": "50%",
-                "y": "15%"
-              },
+              "coordinates": {"x": "50%", "y": "15%"},
               "label": "8 petals = 8 equal groups",
-              "style": {
-                "fontSize": "18px",
-                "fill": "#FFD700"
-              }
+              "style": {"fontSize": "18px", "fill": "#FFD700"}
             },
             {
               "shape": "label",
-              "coordinates": {
-                "x": "50%",
-                "y": "85%"
-              },
-              "label": "360\u00b0 \u00f7 8 = 45\u00b0 each",
-              "style": {
-                "fontSize": "16px",
-                "fill": "#FFD700"
-              }
+              "coordinates": {"x": "50%", "y": "85%"},
+              "label": "360° ÷ 8 = 45° each",
+              "style": {"fontSize": "16px", "fill": "#FFD700"}
             }
           ],
           "description": "Labels reinforce the place-value connection: 8 groups of 45 = 360 total"
@@ -293,7 +213,7 @@
         "license": "CC0 1.0",
         "url": "https://www.metmuseum.org/art/collection/search/329255"
       },
-      "teachingNotes": "Point out: (1) Perfect center point\u2014origin of all petals; (2) Equal spacing between petals\u2014this is not random; (3) Connection to counting: 8 groups of 45 steps = 360 steps around the full circle. Ask: 'If each petal represents 10 seeds, how many seeds total?' (80). Connect to place value: 8 groups of 10 = 80."
+      "teachingNotes": "Point out: (1) Perfect center point—origin of all petals; (2) Equal spacing between petals—this is not random; (3) Connection to counting: 8 groups of 45 steps = 360 steps around the full circle. Ask: 'If each petal represents 10 seeds, how many seeds total?' (80). Connect to place value: 8 groups of 10 = 80."
     },
     {
       "artifactId": "artifact-02",
@@ -308,33 +228,18 @@
           "elements": [
             {
               "shape": "circle",
-              "coordinates": {
-                "cx": "50%",
-                "cy": "50%",
-                "r": "8%"
-              },
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "8%"},
               "label": "Inner disk (sun body)",
-              "style": {
-                "stroke": "#FF0000",
-                "strokeWidth": "3px"
-              }
+              "style": {"stroke": "#FF0000", "strokeWidth": "3px"}
             },
             {
               "shape": "circle",
-              "coordinates": {
-                "cx": "50%",
-                "cy": "50%",
-                "r": "35%"
-              },
+              "coordinates": {"cx": "50%", "cy": "50%", "r": "35%"},
               "label": "Outer ray boundary",
-              "style": {
-                "stroke": "#FF0000",
-                "strokeWidth": "2px",
-                "strokeDasharray": "5,5"
-              }
+              "style": {"stroke": "#FF0000", "strokeWidth": "2px", "strokeDasharray": "5,5"}
             }
           ],
-          "description": "Shamash's sun disk has concentric circles\u2014an inner solid sun and outer rays."
+          "description": "Shamash's sun disk has concentric circles—an inner solid sun and outer rays."
         },
         {
           "overlayId": "overlay-02",
@@ -342,166 +247,86 @@
           "elements": [
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "50%",
-                "y2": "15%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "50%", "y2": "15%"},
               "label": "Ray 1"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "63%",
-                "y2": "20%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "63%", "y2": "20%"},
               "label": "Ray 2"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "73%",
-                "y2": "27%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "73%", "y2": "27%"},
               "label": "Ray 3"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "80%",
-                "y2": "37%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "80%", "y2": "37%"},
               "label": "Ray 4"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "85%",
-                "y2": "50%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "85%", "y2": "50%"},
               "label": "Ray 5"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "80%",
-                "y2": "63%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "80%", "y2": "63%"},
               "label": "Ray 6"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "73%",
-                "y2": "73%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "73%", "y2": "73%"},
               "label": "Ray 7"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "63%",
-                "y2": "80%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "63%", "y2": "80%"},
               "label": "Ray 8"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "50%",
-                "y2": "85%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "50%", "y2": "85%"},
               "label": "Ray 9"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "37%",
-                "y2": "80%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "37%", "y2": "80%"},
               "label": "Ray 10"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "27%",
-                "y2": "73%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "27%", "y2": "73%"},
               "label": "Ray 11"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "20%",
-                "y2": "63%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "20%", "y2": "63%"},
               "label": "Ray 12"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "15%",
-                "y2": "50%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "15%", "y2": "50%"},
               "label": "Ray 13"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "20%",
-                "y2": "37%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "20%", "y2": "37%"},
               "label": "Ray 14"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "27%",
-                "y2": "27%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "27%", "y2": "27%"},
               "label": "Ray 15"
             },
             {
               "shape": "line",
-              "coordinates": {
-                "x1": "50%",
-                "y1": "50%",
-                "x2": "37%",
-                "y2": "20%"
-              },
+              "coordinates": {"x1": "50%", "y1": "50%", "x2": "37%", "y2": "20%"},
               "label": "Ray 16"
             }
           ],
-          "description": "Shamash has 16 rays\u2014exactly double the 8-fold rosette. 360\u00b0 \u00f7 16 = 22.5\u00b0 per ray."
+          "description": "Shamash has 16 rays—exactly double the 8-fold rosette. 360° ÷ 16 = 22.5° per ray."
         },
         {
           "overlayId": "overlay-03",
@@ -509,30 +334,18 @@
           "elements": [
             {
               "shape": "label",
-              "coordinates": {
-                "x": "50%",
-                "y": "10%"
-              },
+              "coordinates": {"x": "50%", "y": "10%"},
               "label": "16 rays of Shamash",
-              "style": {
-                "fontSize": "18px",
-                "fill": "#FFD700"
-              }
+              "style": {"fontSize": "18px", "fill": "#FFD700"}
             },
             {
               "shape": "label",
-              "coordinates": {
-                "x": "50%",
-                "y": "90%"
-              },
+              "coordinates": {"x": "50%", "y": "90%"},
               "label": "2 groups of 8 = 16",
-              "style": {
-                "fontSize": "16px",
-                "fill": "#FFD700"
-              }
+              "style": {"fontSize": "16px", "fill": "#FFD700"}
             }
           ],
-          "description": "Connection to doubling: 8 \u00d7 2 = 16; introduction to multiplicative thinking"
+          "description": "Connection to doubling: 8 × 2 = 16; introduction to multiplicative thinking"
         }
       ],
       "metadata": {
@@ -543,7 +356,7 @@
         "license": "CC BY-NC-SA 4.0",
         "url": "https://www.britishmuseum.org/collection/object/W_1881-0706-1"
       },
-      "teachingNotes": "Shamash's 16 rays introduce the idea of doubling groups: 8 \u2192 16. Ask: 'If we count by 8s around the circle, how many times do we count to reach 360?' (45 times). 'What if we count by 16s?' (22.5 times\u2014harder! This is why 8 is easier for Grade 3). Use this to reinforce: larger groups = fewer counts."
+      "teachingNotes": "Shamash's 16 rays introduce the idea of doubling groups: 8 → 16. Ask: 'If we count by 8s around the circle, how many times do we count to reach 360?' (45 times). 'What if we count by 16s?' (22.5 times—harder! This is why 8 is easier for Grade 3). Use this to reinforce: larger groups = fewer counts."
     },
     {
       "artifactId": "artifact-03",
@@ -558,36 +371,18 @@
           "elements": [
             {
               "shape": "rectangle",
-              "coordinates": {
-                "x": "10%",
-                "y": "20%",
-                "width": "20%",
-                "height": "60%"
-              },
+              "coordinates": {"x": "10%", "y": "20%", "width": "20%", "height": "60%"},
               "label": "Group 1: 10 tokens",
-              "style": {
-                "stroke": "#00FF00",
-                "strokeWidth": "3px"
-              }
+              "style": {"stroke": "#00FF00", "strokeWidth": "3px"}
             },
             {
               "shape": "rectangle",
-              "coordinates": {
-                "x": "35%",
-                "y": "20%",
-                "width": "20%",
-                "height": "60%"
-              },
+              "coordinates": {"x": "35%", "y": "20%", "width": "20%", "height": "60%"},
               "label": "Group 2: 10 tokens"
             },
             {
               "shape": "rectangle",
-              "coordinates": {
-                "x": "60%",
-                "y": "20%",
-                "width": "20%",
-                "height": "60%"
-              },
+              "coordinates": {"x": "60%", "y": "20%", "width": "20%", "height": "60%"},
               "label": "Group 3: 10 tokens"
             }
           ],
@@ -596,7 +391,7 @@
       ],
       "metadata": {
         "source": "Louvre",
-        "museum": "Mus\u00e9e du Louvre",
+        "museum": "Musée du Louvre",
         "accessionNumber": "AO 3155",
         "license": "Public Domain",
         "url": "https://collections.louvre.fr"
@@ -604,14 +399,15 @@
       "teachingNotes": "Show how ancient Mesopotamians grouped objects before they invented writing. They used physical tokens, then realized they could *represent* groups with symbols (cuneiform). Connect to place value: instead of drawing 30 individual marks, we write '3' in the tens place. Same idea as grouping 30 tokens into 3 groups of 10."
     }
   ],
+
   "mathActivity": {
     "title": "Circle Division & Place Value Groups",
     "objective": "Students will partition circles into equal groups (8 sectors) and connect this to place value grouping by tens and ones.",
     "procedure": [
       "**Setup (3 min)**: Distribute pre-printed 6-inch circles and colored pencils. Review: 'What is place value? Why do we group by 10s?'",
-      "**Demonstrate (4 min)**: Teacher uses a large circle on board. Mark the center with a dot. 'To divide into 8 equal parts, we need to find where to put 8 marks around the edge.' Show compass method: use a protractor to mark 45\u00b0 intervals (0\u00b0, 45\u00b0, 90\u00b0, 135\u00b0, 180\u00b0, 225\u00b0, 270\u00b0, 315\u00b0). Draw 8 lines from center to each mark. Result: 8 equal 'pie slices'.",
+      "**Demonstrate (4 min)**: Teacher uses a large circle on board. Mark the center with a dot. 'To divide into 8 equal parts, we need to find where to put 8 marks around the edge.' Show compass method: use a protractor to mark 45° intervals (0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°). Draw 8 lines from center to each mark. Result: 8 equal 'pie slices'.",
       "**Guided Practice (6 min)**: Students fold their circles: fold in half, then in half again, then in half once more. Unfold and count the creases. How many sections? (8). Trace each crease with a colored pencil to make the divisions clear.",
-      "**Place Value Connection (4 min)**: 'Each sector represents a GROUP. If each sector holds 10 seeds, how many seeds fill the whole circle?' (80 = 8 groups of 10). Write on the board: 8 \u00d7 10 = 80. 'In place value, we write this as 8 in the tens place, 0 in the ones place: 80.'",
+      "**Place Value Connection (4 min)**: 'Each sector represents a GROUP. If each sector holds 10 seeds, how many seeds fill the whole circle?' (80 = 8 groups of 10). Write on the board: 8 × 10 = 80. 'In place value, we write this as 8 in the tens place, 0 in the ones place: 80.'",
       "**Independent Work (8 min)**: Students create their own 8-sector circles. In each sector, draw or write a different group: 10 stars, 10 dots, 10 triangles, etc. Label the total at the bottom: '8 groups of 10 = 80.'",
       "**Challenge Extension**: 'What if each sector holds 100 seeds? Now we have 8 groups of 100 = 800. That's 8 in the hundreds place!'"
     ],
@@ -624,20 +420,21 @@
     ],
     "differentiation": {
       "support": "Provide circles pre-divided into 8 sectors; students just color and label groups.",
-      "extension": "Students create nested circles: outer ring = hundreds (8 \u00d7 100 = 800), middle ring = tens (8 \u00d7 10 = 80), inner circle = ones (8 \u00d7 1 = 8). Compare the three totals."
+      "extension": "Students create nested circles: outer ring = hundreds (8 × 100 = 800), middle ring = tens (8 × 10 = 80), inner circle = ones (8 × 1 = 8). Compare the three totals."
     },
     "worksheet": {
       "templateUrl": "assets/worksheets/G3-1-circle-place-value.pdf",
       "answerKeyUrl": "assets/worksheets/G3-1-circle-place-value-key.pdf"
     }
   },
+
   "artActivity": {
     "title": "Mesopotamian Rosette Stamp",
     "technique": "Relief stamping with model clay",
     "procedure": [
-      "**Introduction (3 min)**: Show the Akkadian cylinder seal image. 'This 4,000-year-old seal has a perfect 8-petal rosette. Seal carvers used these patterns to mark ownership\u2014like a signature. Today, we'll create our own rosette stamps.'",
-      "**Design Phase (5 min)**: On paper, students sketch an 8-petal rosette: draw a circle (trace a cup), mark the center, lightly draw 8 radii, then add petal shapes between each radius. Keep it simple\u2014petals can be ovals, triangles, or teardrop shapes.",
-      "**Carving Phase (10 min)**: Roll out air-dry clay to 1/2-inch thick. Use a circular cookie cutter (or cup) to cut a 3-inch circle. Transfer the rosette design onto the clay by pressing gently with a pencil. Use a clay carving tool (or toothpick) to carve OUT the background around the petals\u2014the petals should be raised (like a stamp).",
+      "**Introduction (3 min)**: Show the Akkadian cylinder seal image. 'This 4,000-year-old seal has a perfect 8-petal rosette. Seal carvers used these patterns to mark ownership—like a signature. Today, we'll create our own rosette stamps.'",
+      "**Design Phase (5 min)**: On paper, students sketch an 8-petal rosette: draw a circle (trace a cup), mark the center, lightly draw 8 radii, then add petal shapes between each radius. Keep it simple—petals can be ovals, triangles, or teardrop shapes.",
+      "**Carving Phase (10 min)**: Roll out air-dry clay to 1/2-inch thick. Use a circular cookie cutter (or cup) to cut a 3-inch circle. Transfer the rosette design onto the clay by pressing gently with a pencil. Use a clay carving tool (or toothpick) to carve OUT the background around the petals—the petals should be raised (like a stamp).",
       "**Stamping (5 min)**: Press the clay stamp onto an ink pad, then stamp onto paper. The rosette should appear clearly. Make 3-5 stamped impressions.",
       "**Reflection (2 min)**: 'How did dividing the circle into 8 parts help you create a balanced design? What would happen if the petals weren't evenly spaced?'"
     ],
@@ -684,15 +481,16 @@
       ]
     }
   },
+
   "geometryActivity": {
     "title": "Radial Symmetry: Dividing Circles into Equal Groups",
-    "concept": "360\u00b0 / n = angle per sector; radial symmetry (Dn)",
+    "concept": "360° / n = angle per sector; radial symmetry (Dn)",
     "procedure": [
-      "**Vocabulary Introduction (2 min)**: Define RADIAL SYMMETRY: 'Like spokes on a wheel\u2014lines spreading out from a center point.' Show Shamash disk: 'Shamash has 16-fold radial symmetry\u201416 rays evenly spaced.'",
-      "**Hands-On Exploration (5 min)**: Give each student a coffee filter (already circular). Fold it in half, then in half again. Unfold. How many sections? (4). Refold and fold in half once more. Unfold. How many now? (8). 'Each time we fold in half, we DOUBLE the number of sections: 2 \u2192 4 \u2192 8.'",
-      "**The 360\u00b0 Secret (6 min)**: 'Ancient Babylonians discovered that every circle\u2014big or small\u2014contains 360 tiny angles. We call these DEGREES.' Draw on board: 360\u00b0 \u00f7 8 = 45\u00b0. 'So each petal in an 8-fold rosette takes up 45 degrees.'",
-      "**Pattern Hunt (5 min)**: Show examples of different divisions: 6-petal flower (360\u00b0 \u00f7 6 = 60\u00b0 each), 12-hour clock (360\u00b0 \u00f7 12 = 30\u00b0 each), 16-ray Shamash (360\u00b0 \u00f7 16 = 22.5\u00b0 each). Students notice: more petals = smaller angles.",
-      "**Application (2 min)**: 'If you wanted to make a 10-petal rosette, what angle would each petal be?' (360\u00b0 \u00f7 10 = 36\u00b0). Students use calculators to check."
+      "**Vocabulary Introduction (2 min)**: Define RADIAL SYMMETRY: 'Like spokes on a wheel—lines spreading out from a center point.' Show Shamash disk: 'Shamash has 16-fold radial symmetry—16 rays evenly spaced.'",
+      "**Hands-On Exploration (5 min)**: Give each student a coffee filter (already circular). Fold it in half, then in half again. Unfold. How many sections? (4). Refold and fold in half once more. Unfold. How many now? (8). 'Each time we fold in half, we DOUBLE the number of sections: 2 → 4 → 8.'",
+      "**The 360° Secret (6 min)**: 'Ancient Babylonians discovered that every circle—big or small—contains 360 tiny angles. We call these DEGREES.' Draw on board: 360° ÷ 8 = 45°. 'So each petal in an 8-fold rosette takes up 45 degrees.'",
+      "**Pattern Hunt (5 min)**: Show examples of different divisions: 6-petal flower (360° ÷ 6 = 60° each), 12-hour clock (360° ÷ 12 = 30° each), 16-ray Shamash (360° ÷ 16 = 22.5° each). Students notice: more petals = smaller angles.",
+      "**Application (2 min)**: 'If you wanted to make a 10-petal rosette, what angle would each petal be?' (360° ÷ 10 = 36°). Students use calculators to check."
     ],
     "duration": 20,
     "materials": [
@@ -718,7 +516,7 @@
         "visual": "assets/vocabulary/symmetry-diagram.svg"
       },
       {
-        "term": "Degree (\u00b0)",
+        "term": "Degree (°)",
         "definition": "A tiny angle unit. A full circle has 360 degrees.",
         "visual": "assets/vocabulary/degree-diagram.svg"
       },
@@ -729,13 +527,15 @@
       }
     ]
   },
+
   "bridge": {
     "title": "From Counting to Circles: Place Value as Radial Grouping",
     "mathToArt": "In math, we group numbers by 10s to make large quantities manageable (place value). In Mesopotamian art, craftspeople grouped petals by 6s, 8s, or 12s to create balanced, beautiful rosettes. Both systems use EQUAL GROUPING to organize complexity.",
-    "artToGeometry": "The 8-petal rosette isn't just pretty\u2014it's GEOMETRIC. Each petal occupies exactly 45\u00b0 of the 360\u00b0 circle. When ancient seal carvers divided circles evenly, they were doing the same math we use today: 360\u00b0 \u00f7 8 = 45\u00b0.",
-    "synthesis": "Whether you're grouping 80 objects into 8 groups of 10 (place value) or dividing a circle into 8 equal sectors (rosette design), you're using the SAME COGNITIVE TOOL: organized, equal grouping. This is how humans bring order to the world\u2014through patterns and division.",
+    "artToGeometry": "The 8-petal rosette isn't just pretty—it's GEOMETRIC. Each petal occupies exactly 45° of the 360° circle. When ancient seal carvers divided circles evenly, they were doing the same math we use today: 360° ÷ 8 = 45°.",
+    "synthesis": "Whether you're grouping 80 objects into 8 groups of 10 (place value) or dividing a circle into 8 equal sectors (rosette design), you're using the SAME COGNITIVE TOOL: organized, equal grouping. This is how humans bring order to the world—through patterns and division.",
     "visualDiagram": "assets/diagrams/G3-1-bridge-place-value-circle.svg"
   },
+
   "exit": {
     "prompt": "Turn and talk to a partner: How is dividing a circle into 8 equal parts like grouping numbers by tens? Give one specific example from today's lesson.",
     "format": "verbal",
@@ -746,6 +546,7 @@
     ],
     "duration": 5
   },
+
   "assessments": {
     "formative": [
       {
@@ -754,7 +555,7 @@
       },
       {
         "type": "discussion",
-        "criteria": "During geometry activity, listen for: Do students understand that 360\u00b0 \u00f7 8 = 45\u00b0? Can they explain why more petals = smaller angles?"
+        "criteria": "During geometry activity, listen for: Do students understand that 360° ÷ 8 = 45°? Can they explain why more petals = smaller angles?"
       },
       {
         "type": "exit ticket",
@@ -767,6 +568,7 @@
       "description": "By end of Week 9, students compile a portfolio showing: (1) Rosette stamp and impressions; (2) Circle division worksheet; (3) Written reflection connecting Mesopotamian geometry to place value."
     }
   },
+
   "extensions": {
     "homeConnections": [
       "Find 3 circular objects at home (clock, plate, pizza). How are they divided? Draw them and label the number of sections. Bring drawings to share.",
@@ -776,7 +578,7 @@
       {
         "title": "The Librarian Who Measured the Earth",
         "author": "Kathryn Lasky",
-        "connection": "Eratosthenes used circle division (360\u00b0) to calculate Earth's circumference\u2014same concept Mesopotamians used for astronomy."
+        "connection": "Eratosthenes used circle division (360°) to calculate Earth's circumference—same concept Mesopotamians used for astronomy."
       },
       {
         "title": "Math Curse",
@@ -802,17 +604,18 @@
       }
     ]
   },
+
   "teacherNotes": {
     "preparation": [
       "**Materials Prep**: Pre-cut air-dry clay into 4-inch squares (easier for students to roll). Test clay carving tools to ensure they're not too sharp. Print rosette example images in color.",
       "**Tech Setup**: Queue up British Museum website with Shamash tablet (or print high-res image). Have GeoGebra circle division app ready if using digital tools.",
-      "**Historical Context**: Read about Shamash as sun god AND god of justice\u2014his association with light and geometric order is central to Mesopotamian cosmology.",
+      "**Historical Context**: Read about Shamash as sun god AND god of justice—his association with light and geometric order is central to Mesopotamian cosmology.",
       "**Vocabulary Anchor Chart**: Create a poster with: Radial, Sector, Rosette, Degree, Symmetry. Add visual examples from Mesopotamian art."
     ],
     "commonMisconceptions": [
       "**'Rosettes are just decorations'**: Students may not realize rosettes encode mathematical knowledge. Emphasize: ancient artisans were mathematicians. The patterns are functional (seals must roll evenly) AND symbolic (order pleases the gods).",
-      "**'Place value and circles are unrelated'**: Both are about EQUAL GROUPING. Use consistent language: '8 groups of 10' (place value) and '8 groups of 45\u00b0' (circle division).",
-      "**Folding circles is tricky**: Circles don't fold as crisply as squares. Demonstrate SLOWLY. Some students will get 7 or 9 sections instead of 8\u2014that's a learning opportunity! Discuss why precision matters.",
+      "**'Place value and circles are unrelated'**: Both are about EQUAL GROUPING. Use consistent language: '8 groups of 10' (place value) and '8 groups of 45°' (circle division).",
+      "**Folding circles is tricky**: Circles don't fold as crisply as squares. Demonstrate SLOWLY. Some students will get 7 or 9 sections instead of 8—that's a learning opportunity! Discuss why precision matters.",
       "**Confusing radius and diameter**: Use Shamash disk to clarify: rays are RADII (plural of radius), going from center to edge. Diameter goes all the way across, passing through the center."
     ],
     "timingTips": [
@@ -820,6 +623,6 @@
       "**Art activity is the time hog**: Clay carving takes longer than expected. If running short, students can finish carving at home and stamp the next day.",
       "**Skip the protractor demo if needed**: For Grade 3, folding circles is sufficient. Save protractor work for Grade 4."
     ],
-    "culturalNotes": "Mesopotamia is the cradle of civilization (Sumer, Akkad, Babylon, Assyria). Modern Iraq and parts of Syria, Turkey, and Iran. Treat artifacts with reverence\u2014these are among humanity's oldest mathematical records. Avoid 'primitive' language; emphasize sophistication: 'The Babylonians invented the 360\u00b0 circle 4,000 years ago, and we STILL use their system today.' Acknowledge that cylinder seals were not just art\u2014they were legal documents, religious symbols, and mathematical tools. Seal carving was a respected, skilled profession."
+    "culturalNotes": "Mesopotamia is the cradle of civilization (Sumer, Akkad, Babylon, Assyria). Modern Iraq and parts of Syria, Turkey, and Iran. Treat artifacts with reverence—these are among humanity's oldest mathematical records. Avoid 'primitive' language; emphasize sophistication: 'The Babylonians invented the 360° circle 4,000 years ago, and we STILL use their system today.' Acknowledge that cylinder seals were not just art—they were legal documents, religious symbols, and mathematical tools. Seal carving was a respected, skilled profession."
   }
 }

@@ -3,22 +3,148 @@
      width="1920"
      height="1080"
      style="position: absolute; top: 0; left: 0; pointer-events: none;">
-  <line x1="960.0" y1="540.0" x2="960.0" y2="162.0"
+  <line x1="960.0" y1="540.0" x2="960.0" y2="270.0"
           stroke="#FF6B00"
           stroke-width="2px"
           opacity="0.8"/>
   <g>
-    <rect x="884.0" y="333.0"
-          width="152" height="28"
+    <rect x="900.0" y="387.0"
+          width="120" height="28"
           fill="rgba(0,0,0,0.7)" rx="4"/>
-    <text x="960.0" y="351.0"
+    <text x="960.0" y="405.0"
           font-family="Inter, sans-serif"
           font-size="16px"
           font-weight="600"
           fill="#FFFFFF"
           text-anchor="middle"
           dominant-baseline="middle">
-      Direction markers
+      Radius 1 (0°)
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1305.6000000000001" y2="345.6"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="1068.8000000000002" y="424.8"
+          width="128" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1132.8000000000002" y="442.8"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radius 2 (45°)
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1440.0" y2="540.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="1136.0" y="522.0"
+          width="128" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1200.0" y="540.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radius 3 (90°)
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="1305.6000000000001" y2="734.4000000000001"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="1064.8000000000002" y="619.2"
+          width="136" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="1132.8000000000002" y="637.2"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radius 4 (135°)
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="960.0" y2="810.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="892.0" y="657.0"
+          width="136" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="960.0" y="675.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radius 5 (180°)
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="614.4" y2="734.4000000000001"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="719.2" y="619.2"
+          width="136" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="787.2" y="637.2"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radius 6 (225°)
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="480.0" y2="540.0"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="652.0" y="522.0"
+          width="136" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="720.0" y="540.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radius 7 (270°)
+    </text>
+  </g>
+  <line x1="960.0" y1="540.0" x2="614.4" y2="345.6"
+          stroke="#FF6B00"
+          stroke-width="2px"
+          opacity="0.8"/>
+  <g>
+    <rect x="719.2" y="424.8"
+          width="136" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="787.2" y="442.8"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      Radius 8 (315°)
     </text>
   </g>
 </svg>

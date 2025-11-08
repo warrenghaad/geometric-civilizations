@@ -3,42 +3,32 @@
      width="1920"
      height="1080"
      style="position: absolute; top: 0; left: 0; pointer-events: none;">
-  <circle cx="960.0" cy="540.0" r="86.4"
-          stroke="#FF0000"
-          stroke-width="3px"
-          fill="none"
-          opacity="0.8"/>
   <g>
-    <rect x="964.4000000000001" y="522.0"
-          width="184" height="28"
-          fill="rgba(0,0,0,0.7)" rx="4"/>
-    <text x="1056.4" y="540.0"
-          font-family="Inter, sans-serif"
-          font-size="16px"
-          font-weight="600"
-          fill="#FFFFFF"
-          text-anchor="middle"
-          dominant-baseline="middle">
-      Inner disk (sun body)
-    </text>
-  </g>
-  <circle cx="960.0" cy="540.0" r="378.0"
-          stroke="#FF0000"
-          stroke-width="2px"
-          fill="none"
-          opacity="0.8"/>
-  <g>
-    <rect x="1268.0" y="522.0"
+    <rect x="880.0" y="90.0"
           width="160" height="28"
           fill="rgba(0,0,0,0.7)" rx="4"/>
-    <text x="1348.0" y="540.0"
+    <text x="960.0" y="108.0"
           font-family="Inter, sans-serif"
           font-size="16px"
           font-weight="600"
           fill="#FFFFFF"
           text-anchor="middle"
           dominant-baseline="middle">
-      Outer ray boundary
+      16 rays of Shamash
+    </text>
+  </g>
+  <g>
+    <rect x="880.0" y="954.0"
+          width="160" height="28"
+          fill="rgba(0,0,0,0.7)" rx="4"/>
+    <text x="960.0" y="972.0"
+          font-family="Inter, sans-serif"
+          font-size="16px"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          dominant-baseline="middle">
+      2 groups of 8 = 16
     </text>
   </g>
 </svg>
