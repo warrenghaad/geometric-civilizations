@@ -2,6 +2,8 @@
 
 Welcome! This project helps you create an interactive curriculum about geometric thinking through different civilizations, powered by AI bots and an AI tutor to help you learn as you go.
 
+> **🚀 New here?** Check out [GETTING_STARTED.md](GETTING_STARTED.md) for a 10-minute quick setup guide!
+
 ## 🌟 What This Project Does
 
 This system provides:
