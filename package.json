@@ -1,0 +1,41 @@
+{
+  "name": "geometric-civilizations",
+  "version": "1.0.0",
+  "description": "AI-powered curriculum system for teaching geometric thinking through civilizations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "tutor": "node tutor/tutor.js",
+    "bot:content": "node bots/content-generator/index.js",
+    "bot:quiz": "node bots/quiz-generator/index.js",
+    "bot:visualize": "node bots/visualization-generator/index.js",
+    "bot:assess": "node bots/assessment/index.js",
+    "setup": "node scripts/setup.js",
+    "test": "echo 'Tests will be implemented' && exit 0"
+  },
+  "keywords": [
+    "education",
+    "curriculum",
+    "ai",
+    "geometry",
+    "mathematics",
+    "civilizations",
+    "learning",
+    "tutorial"
+  ],
+  "author": "Geometric Civilizations Team",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.20.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^8.2.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
