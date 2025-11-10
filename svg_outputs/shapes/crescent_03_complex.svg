@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <circle cx="200" cy="200" r="100" fill="#FFD700" stroke="#B8860B" stroke-width="3"/>
+  <circle cx="230" cy="200" r="100" fill="white" stroke="none"/>
+  <path d="M 150 170 Q 140 150 145 130" fill="none" stroke="#8B4513" stroke-width="4"/>
+  <path d="M 150 230 Q 140 250 145 270" fill="none" stroke="#8B4513" stroke-width="4"/>
+  <polygon points="270.00,108.00 272.82,116.12 281.41,116.29 274.57,121.48 277.05,129.71 270.00,124.80 262.95,129.71 265.43,121.48 258.59,116.29 267.18,116.12" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="300.00,148.00 302.82,156.12 311.41,156.29 304.57,161.48 307.05,169.71 300.00,164.80 292.95,169.71 295.43,161.48 288.59,156.29 297.18,156.12" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="320.00,188.00 322.82,196.12 331.41,196.29 324.57,201.48 327.05,209.71 320.00,204.80 312.95,209.71 315.43,201.48 308.59,196.29 317.18,196.12" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="300.00,228.00 302.82,236.12 311.41,236.29 304.57,241.48 307.05,249.71 300.00,244.80 292.95,249.71 295.43,241.48 288.59,236.29 297.18,236.12" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="270.00,268.00 272.82,276.12 281.41,276.29 274.57,281.48 277.05,289.71 270.00,284.80 262.95,289.71 265.43,281.48 258.59,276.29 267.18,276.12" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Divine Crescent</text>
+</svg>

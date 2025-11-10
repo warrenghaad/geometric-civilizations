@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <polyline points="50,200 80,120 110,200 140,120 170,200 200,120 230,200 260,120 290,200 320,120 350,200" fill="none" stroke="#1E90FF" stroke-width="3"/>
+  <polyline points="50,280 80,200 110,280 140,200 170,280 200,200 230,280 260,200 290,280 320,200 350,280" fill="none" stroke="#1E90FF" stroke-width="3"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Double Zigzag Band</text>
+</svg>

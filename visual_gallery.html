@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesopotamian Sacred Geometry - Visual Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+            color: #3e2723;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+            color: #f5e6d3;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #654321;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #f5e6d3;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #8B4513;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #8B4513;
+            border-bottom: 3px solid #DAA520;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .section h3 {
+            color: #654321;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            background: #faf8f5;
+            border: 2px solid #d4a574;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(139, 69, 19, 0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 5px;
+            background: white;
+            padding: 1rem;
+        }
+
+        .gallery-item h4 {
+            color: #8B4513;
+            margin: 1rem 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .gallery-item p {
+            color: #5d4037;
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #DAA520;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin: 0.2rem;
+            font-weight: bold;
+        }
+
+        .badge.grade-3 { background: #4CAF50; }
+        .badge.grade-4 { background: #FF9800; }
+        .badge.grade-5 { background: #F44336; }
+        .badge.deity { background: #9C27B0; }
+        .badge.artifact { background: #2196F3; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .stat-box h3 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #FFD700;
+        }
+
+        .stat-box p {
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .artifact-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .artifact-card {
+            background: #faf8f5;
+            border-left: 4px solid #8B4513;
+            padding: 1.5rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .artifact-card:hover {
+            background: #f5f0eb;
+        }
+
+        .artifact-card h4 {
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+        }
+
+        .artifact-card .meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+
+        .artifact-card a {
+            color: #2196F3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .artifact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .deity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .deity-card {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%);
+            border: 3px solid #DAA520;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .deity-card img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        .deity-card h3 {
+            color: #8B4513;
+            margin: 1rem 0;
+        }
+
+        .deity-card p {
+            color: #5d4037;
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background: #654321;
+            color: #f5e6d3;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .filter-bar {
+            background: #f5e6d3;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-bar label {
+            font-weight: bold;
+            color: #654321;
+        }
+
+        .filter-bar select, .filter-bar input {
+            padding: 0.5rem;
+            border: 2px solid #8B4513;
+            border-radius: 5px;
+            background: white;
+            color: #3e2723;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #8B4513;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🏛️ Mesopotamian Sacred Geometry</h1>
+    <p>Complete Visual Gallery & Curriculum Resource</p>
+    <p style="font-size: 0.9rem; margin-top: 1rem;">Grades 3-5 • 40+ Artifacts • 12 Geometric Elements • 7 Deities</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#shapes">Geometric Shapes</a></li>
+        <li><a href="#deities">Deities</a></li>
+        <li><a href="#artifacts">Artifacts</a></li>
+        <li><a href="#patterns">Patterns</a></li>
+        <li><a href="#constructions">Constructions</a></li>
+        <li><a href="#statistics">Statistics</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <section id="overview" class="section">
+        <h2>📚 Curriculum Overview</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            This comprehensive visual gallery contains all geometric elements, deity symbols, artifacts,
+            and educational resources for the <strong>Mesopotamian Sacred Geometry</strong> curriculum.
+            Each element includes simple-to-complex progressions aligned with grades 3-5.
+        </p>
+
+        <div style="background: #fff8e1; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #DAA520;">
+            <h3 style="color: #8B4513; margin-top: 0;">🎯 Learning Framework</h3>
+            <ul style="margin-left: 2rem; color: #5d4037;">
+                <li><strong>HOW:</strong> Construction techniques, measurement methods, material analysis</li>
+                <li><strong>WHY:</strong> Symbolic meanings, cultural significance, divine connections</li>
+                <li><strong>WHAT IF:</strong> Creative applications, cross-cultural comparisons, innovations</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="statistics" class="section">
+        <h2>📊 Content Statistics</h2>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3>12</h3>
+                <p>Major Sections</p>
+            </div>
+            <div class="stat-box">
+                <h3>12</h3>
+                <p>Geometric Elements</p>
+            </div>
+            <div class="stat-box">
+                <h3>41</h3>
+                <p>Museum Artifacts</p>
+            </div>
+            <div class="stat-box">
+                <h3>7</h3>
+                <p>Deities</p>
+            </div>
+            <div class="stat-box">
+                <h3>40+</h3>
+                <p>SVG Graphics</p>
+            </div>
+            <div class="stat-box">
+                <h3>3</h3>
+                <p>Grade Levels</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; background: #f5f0eb; padding: 1.5rem; border-radius: 8px;">
+            <h3>✅ Complete Features</h3>
+            <ul style="margin-left: 2rem; color: #5d4037; line-height: 2;">
+                <li>✓ Simple → Complex progressions for all shapes</li>
+                <li>✓ Mathematical formulas with visual demonstrations</li>
+                <li>✓ Technology connections for each element</li>
+                <li>✓ Grade 3-5 differentiation built in</li>
+                <li>✓ HOW/WHY/WHAT IF framework integrated</li>
+                <li>✓ Museum artifact citations with URLs</li>
+                <li>✓ Deity connections and symbolism</li>
+                <li>✓ Cross-cultural comparisons</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="shapes" class="section">
+        <h2>📐 Geometric Elements</h2>
+        <p>All 12 geometric elements with simple → intermediate → complex progressions</p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/circle_01_simple.svg" alt="Circle" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ECircle%3C/text%3E%3C/svg%3E'">
+                <h4>Circle</h4>
+                <p><strong>Belief:</strong> Eternal cycles, celestial paths</p>
+                <p><strong>Deity:</strong> Shamash, Nanna</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">2 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/triangle_01_simple.svg" alt="Triangle" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ETriangle%3C/text%3E%3C/svg%3E'">
+                <h4>Triangle</h4>
+                <p><strong>Belief:</strong> Cosmic mountain, reaching heaven, divine hierarchy</p>
+                <p><strong>Deity:</strong> Enlil</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/square_01_simple.svg" alt="Square/Rectangle" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ESquare/Rectangle%3C/text%3E%3C/svg%3E'">
+                <h4>Square/Rectangle</h4>
+                <p><strong>Belief:</strong> Four directions, earth, order</p>
+                <p><strong>Deity:</strong> Anu</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/crescent_01_simple.svg" alt="Crescent (Lunar)" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ECrescent (Lunar)%3C/text%3E%3C/svg%3E'">
+                <h4>Crescent (Lunar)</h4>
+                <p><strong>Belief:</strong> Moon phases, wisdom, cycles</p>
+                <p><strong>Deity:</strong> Nanna, Sin</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">2 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/star_8_01_simple.svg" alt="8-Pointed Star" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3E8-Pointed Star%3C/text%3E%3C/svg%3E'">
+                <h4>8-Pointed Star</h4>
+                <p><strong>Belief:</strong> Venus cycle, Ishtar's powers</p>
+                <p><strong>Deity:</strong> Inanna, Ishtar</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">2 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/star_6_01_simple.svg" alt="6-Pointed Star" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3E6-Pointed Star%3C/text%3E%3C/svg%3E'">
+                <h4>6-Pointed Star</h4>
+                <p><strong>Belief:</strong> Hexagonal symmetry, nature</p>
+                <p><strong>Deity:</strong> various nature gods</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/star_12_01_simple.svg" alt="12-Pointed Star" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3E12-Pointed Star%3C/text%3E%3C/svg%3E'">
+                <h4>12-Pointed Star</h4>
+                <p><strong>Belief:</strong> Year cycle, zodiac</p>
+                <p><strong>Deity:</strong> zodiac gods</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/zigzag_01_simple.svg" alt="Zigzag Pattern" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EZigzag Pattern%3C/text%3E%3C/svg%3E'">
+                <h4>Zigzag Pattern</h4>
+                <p><strong>Belief:</strong> Water, rivers, life force, wisdom</p>
+                <p><strong>Deity:</strong> Enki</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/spiral_01_simple.svg" alt="Meander/Spiral" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EMeander/Spiral%3C/text%3E%3C/svg%3E'">
+                <h4>Meander/Spiral</h4>
+                <p><strong>Belief:</strong> Journey, transformation</p>
+                <p><strong>Deity:</strong> Ningishzida</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/cylinder_01_simple.svg" alt="Cylinder" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ECylinder%3C/text%3E%3C/svg%3E'">
+                <h4>Cylinder</h4>
+                <p><strong>Belief:</strong> Eternal rolling, administrative order</p>
+                <p><strong>Deity:</strong> various (seals)</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/cone_01_simple.svg" alt="Cone" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ECone%3C/text%3E%3C/svg%3E'">
+                <h4>Cone</h4>
+                <p><strong>Belief:</strong> Focus point, divine light</p>
+                <p><strong>Deity:</strong> solar deities</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/shapes/composite_01_simple.svg" alt="Composite Symbols" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EComposite Symbols%3C/text%3E%3C/svg%3E'">
+                <h4>Composite Symbols</h4>
+                <p><strong>Belief:</strong> Accumulated powers, multiple attributes</p>
+                <p><strong>Deity:</strong> major gods</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">3 Progressions</span>
+                    <span class="badge deity">1 Deities</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="deities" class="section">
+        <h2>🏛️ Mesopotamian Deities</h2>
+        <p>Seven major deities with their geometric associations and symbols</p>
+
+        <div class="deity-grid">
+
+            <div class="deity-card">
+                <img src="svg_outputs/deities/shamash.svg" alt="Shamash" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23f5e6d3\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%238B4513\' font-family=\'Arial\' font-size=\'20\'%3EShamash%3C/text%3E%3C/svg%3E'">
+                <h3>Shamash</h3>
+                <p><strong>Role:</strong> Sun god, justice</p>
+                <p><strong>Symbols:</strong> solar disc, rays, saw</p>
+                <p><strong>Geometry:</strong> Circle</p>
+                <div style="margin-top: 1rem;">
+                    <span class="badge artifact">2 Image Sources</span>
+                </div>
+            </div>
+
+            <div class="deity-card">
+                <img src="svg_outputs/deities/nanna.svg" alt="Nanna/Sin" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23f5e6d3\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%238B4513\' font-family=\'Arial\' font-size=\'20\'%3ENanna/Sin%3C/text%3E%3C/svg%3E'">
+                <h3>Nanna/Sin</h3>
+                <p><strong>Role:</strong> Moon god, wisdom</p>
+                <p><strong>Symbols:</strong> crescent, bull, horns</p>
+                <p><strong>Geometry:</strong> Crescent</p>
+                <div style="margin-top: 1rem;">
+                    <span class="badge artifact">2 Image Sources</span>
+                </div>
+            </div>
+
+            <div class="deity-card">
+                <img src="svg_outputs/deities/enlil.svg" alt="Enlil" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23f5e6d3\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%238B4513\' font-family=\'Arial\' font-size=\'20\'%3EEnlil%3C/text%3E%3C/svg%3E'">
+                <h3>Enlil</h3>
+                <p><strong>Role:</strong> King of gods, air, storms</p>
+                <p><strong>Symbols:</strong> mountain, horned crown, tablet</p>
+                <p><strong>Geometry:</strong> Triangle</p>
+                <div style="margin-top: 1rem;">
+                    <span class="badge artifact">2 Image Sources</span>
+                </div>
+            </div>
+
+            <div class="deity-card">
+                <img src="svg_outputs/deities/anu.svg" alt="Anu" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23f5e6d3\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%238B4513\' font-family=\'Arial\' font-size=\'20\'%3EAnu%3C/text%3E%3C/svg%3E'">
+                <h3>Anu</h3>
+                <p><strong>Role:</strong> Sky god, supreme deity</p>
+                <p><strong>Symbols:</strong> star, temple, heavenly bull</p>
+                <p><strong>Geometry:</strong> Square</p>
+                <div style="margin-top: 1rem;">
+                    <span class="badge artifact">1 Image Sources</span>
+                </div>
+            </div>
+
+            <div class="deity-card">
+                <img src="svg_outputs/deities/inanna.svg" alt="Inanna/Ishtar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23f5e6d3\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%238B4513\' font-family=\'Arial\' font-size=\'20\'%3EInanna/Ishtar%3C/text%3E%3C/svg%3E'">
+                <h3>Inanna/Ishtar</h3>
+                <p><strong>Role:</strong> Love, war, fertility, Venus</p>
+                <p><strong>Symbols:</strong> 8-pointed star, lion, rosette</p>
+                <p><strong>Geometry:</strong> Star-8</p>
+                <div style="margin-top: 1rem;">
+                    <span class="badge artifact">3 Image Sources</span>
+                </div>
+            </div>
+
+            <div class="deity-card">
+                <img src="svg_outputs/deities/enki.svg" alt="Enki/Ea" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23f5e6d3\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%238B4513\' font-family=\'Arial\' font-size=\'20\'%3EEnki/Ea%3C/text%3E%3C/svg%3E'">
+                <h3>Enki/Ea</h3>
+                <p><strong>Role:</strong> Water, wisdom, creation</p>
+                <p><strong>Symbols:</strong> flowing water, zigzag, goat-fish</p>
+                <p><strong>Geometry:</strong> Zigzag</p>
+                <div style="margin-top: 1rem;">
+                    <span class="badge artifact">2 Image Sources</span>
+                </div>
+            </div>
+
+            <div class="deity-card">
+                <img src="svg_outputs/deities/ningishzida.svg" alt="Ningishzida" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23f5e6d3\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%238B4513\' font-family=\'Arial\' font-size=\'20\'%3ENingishzida%3C/text%3E%3C/svg%3E'">
+                <h3>Ningishzida</h3>
+                <p><strong>Role:</strong> Underworld, vegetation, serpents</p>
+                <p><strong>Symbols:</strong> intertwined serpents, horned crown</p>
+                <p><strong>Geometry:</strong> Spiral</p>
+                <div style="margin-top: 1rem;">
+                    <span class="badge artifact">2 Image Sources</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="artifacts" class="section">
+        <h2>🏺 Museum Artifacts</h2>
+        <p>40+ artifacts from major museums with citations and educational context</p>
+
+        <div class="filter-bar">
+            <label for="museum-filter">Filter by Museum:</label>
+            <select id="museum-filter" onchange="filterArtifacts()">
+                <option value="all">All Museums</option>
+                <option value="Archaeological site (destroyed)">Archaeological site (destroyed)</option>
+                <option value="British Museum">British Museum</option>
+                <option value="British Museum / Penn Museum">British Museum / Penn Museum</option>
+                <option value="Columbia University">Columbia University</option>
+                <option value="In situ">In situ</option>
+                <option value="In situ ruins">In situ ruins</option>
+                <option value="Iraq Museum, Baghdad">Iraq Museum, Baghdad</option>
+                <option value="Louvre">Louvre</option>
+                <option value="Metropolitan Museum">Metropolitan Museum</option>
+                <option value="Pergamon Museum">Pergamon Museum</option>
+                <option value="Pergamon Museum, Berlin">Pergamon Museum, Berlin</option>
+                <option value="Reconstructions from art">Reconstructions from art</option>
+                <option value="Reconstructions in various museums">Reconstructions in various museums</option>
+                <option value="University of Pennsylvania Museum">University of Pennsylvania Museum</option>
+                <option value="Various">Various</option>
+                <option value="Yale Babylonian Collection">Yale Babylonian Collection</option>
+
+            </select>
+
+            <label for="period-filter">Filter by Period:</label>
+            <select id="period-filter" onchange="filterArtifacts()">
+                <option value="all">All Periods</option>
+                <option value="Akkadian (c. 2254-2218 BCE)">Akkadian (c. 2254-2218 BCE)</option>
+                <option value="Akkadian (c. 2300 BCE)">Akkadian (c. 2300 BCE)</option>
+                <option value="Early Dynastic (c. 2500 BCE)">Early Dynastic (c. 2500 BCE)</option>
+                <option value="Early Dynastic (c. 2600 BCE)">Early Dynastic (c. 2600 BCE)</option>
+                <option value="Early Dynastic (c. 3000 BCE)">Early Dynastic (c. 3000 BCE)</option>
+                <option value="Early Dynastic III (c. 2400 BCE)">Early Dynastic III (c. 2400 BCE)</option>
+                <option value="Early Dynastic III (c. 2500 BCE)">Early Dynastic III (c. 2500 BCE)</option>
+                <option value="Early Dynastic III (c. 2600 BCE)">Early Dynastic III (c. 2600 BCE)</option>
+                <option value="Kassite (c. 1186-1172 BCE)">Kassite (c. 1186-1172 BCE)</option>
+                <option value="Kassite (c. 1500 BCE)">Kassite (c. 1500 BCE)</option>
+                <option value="Neo-Assyrian (c. 645 BCE)">Neo-Assyrian (c. 645 BCE)</option>
+                <option value="Neo-Assyrian (c. 700 BCE)">Neo-Assyrian (c. 700 BCE)</option>
+                <option value="Neo-Assyrian (c. 800 BCE)">Neo-Assyrian (c. 800 BCE)</option>
+                <option value="Neo-Babylonian (c. 1100 BCE copy)">Neo-Babylonian (c. 1100 BCE copy)</option>
+                <option value="Neo-Babylonian (c. 400 BCE)">Neo-Babylonian (c. 400 BCE)</option>
+                <option value="Neo-Babylonian (c. 575 BCE)">Neo-Babylonian (c. 575 BCE)</option>
+                <option value="Neo-Babylonian (c. 600 BCE)">Neo-Babylonian (c. 600 BCE)</option>
+                <option value="Neo-Babylonian (c. 650 BCE)">Neo-Babylonian (c. 650 BCE)</option>
+                <option value="Neo-Sumerian (c. 2100 BCE)">Neo-Sumerian (c. 2100 BCE)</option>
+                <option value="Old Babylonian (c. 1750 BCE)">Old Babylonian (c. 1750 BCE)</option>
+                <option value="Old Babylonian (c. 1800 BCE)">Old Babylonian (c. 1800 BCE)</option>
+                <option value="Old Babylonian (c. 1800-1750 BCE)">Old Babylonian (c. 1800-1750 BCE)</option>
+                <option value="Ur III (c. 2100 BCE)">Ur III (c. 2100 BCE)</option>
+                <option value="Uruk period (c. 3100 BCE)">Uruk period (c. 3100 BCE)</option>
+                <option value="Uruk period (c. 3200 BCE)">Uruk period (c. 3200 BCE)</option>
+                <option value="Various">Various</option>
+
+            </select>
+        </div>
+
+        <div class="artifact-list">
+
+            <div class="artifact-card" data-museum="Pergamon Museum, Berlin" data-period="Neo-Babylonian (c. 575 BCE)">
+                <h4>Ishtar Gate</h4>
+                <p class="meta"><strong>Museum:</strong> Pergamon Museum, Berlin • <strong>Accession:</strong> VA Bab 2628</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 575 BCE) • <strong>Location:</strong> Babylon</p>
+                <p style="margin: 0.8rem 0;">Monumental gate with glazed brick decoration featuring 8-pointed star rosettes</p>
+                <p class="meta"><strong>Geometric Elements:</strong> star_8, square, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> inanna</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Shows advanced geometry in architecture and religious symbolism</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.smb.museum/en/museums-institutions/pergamonmuseum/collection/highlights/ishtar-gate/" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Old Babylonian (c. 1750 BCE)">
+                <h4>Code of Hammurabi Stele</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> Sb 8</p>
+                <p class="meta"><strong>Period:</strong> Old Babylonian (c. 1750 BCE) • <strong>Location:</strong> Babylon</p>
+                <p style="margin: 0.8rem 0;">Black basalt stele with law code and relief of Shamash granting laws</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle, triangle</p>
+                <p class="meta"><strong>Deity Connections:</strong> shamash</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Demonstrates divine geometry and cosmic order in law</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr/ark:/53355/cl010174908" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Ur III (c. 2100 BCE)">
+                <h4>Stele of Ur-Nammu</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 118560</p>
+                <p class="meta"><strong>Period:</strong> Ur III (c. 2100 BCE) • <strong>Location:</strong> Ur</p>
+                <p style="margin: 0.8rem 0;">Fragmentary stele showing king making offerings to gods</p>
+                <p class="meta"><strong>Geometric Elements:</strong> crescent, circle</p>
+                <p class="meta"><strong>Deity Connections:</strong> nanna</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Shows lunar symbolism and divine hierarchy</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection/object/W_1924-0920-1" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Early Dynastic III (c. 2600 BCE)">
+                <h4>Standard of Ur</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 121201</p>
+                <p class="meta"><strong>Period:</strong> Early Dynastic III (c. 2600 BCE) • <strong>Location:</strong> Ur</p>
+                <p style="margin: 0.8rem 0;">Double-sided mosaic showing war and peace scenes in geometric registers</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, triangle, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Demonstrates geometric composition and narrative structure</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection/object/W_1928-1010-3" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Akkadian (c. 2300 BCE)">
+                <h4>Cylinder Seal with Contest Scene</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 89115</p>
+                <p class="meta"><strong>Period:</strong> Akkadian (c. 2300 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Seal showing heroes fighting animals with geometric borders</p>
+                <p class="meta"><strong>Geometric Elements:</strong> cylinder, circle, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Shows 3D geometry in functional objects</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection/object/W_1895-0501-437" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Iraq Museum, Baghdad" data-period="Uruk period (c. 3200 BCE)">
+                <h4>Warka Vase</h4>
+                <p class="meta"><strong>Museum:</strong> Iraq Museum, Baghdad • <strong>Accession:</strong> IM 19606</p>
+                <p class="meta"><strong>Period:</strong> Uruk period (c. 3200 BCE) • <strong>Location:</strong> Uruk</p>
+                <p style="margin: 0.8rem 0;">Alabaster vessel with carved registers showing offerings to Inanna</p>
+                <p class="meta"><strong>Geometric Elements:</strong> cylinder, circle, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> inanna</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Early example of geometric registers and divine scenes</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple sources (looted and recovered)" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="In situ" data-period="Ur III (c. 2100 BCE)">
+                <h4>Great Ziggurat of Ur</h4>
+                <p class="meta"><strong>Museum:</strong> In situ • <strong>Accession:</strong> N/A</p>
+                <p class="meta"><strong>Period:</strong> Ur III (c. 2100 BCE) • <strong>Location:</strong> Ur</p>
+                <p style="margin: 0.8rem 0;">Massive stepped pyramid temple dedicated to Nanna</p>
+                <p class="meta"><strong>Geometric Elements:</strong> triangle, square, composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> nanna</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Monumental architecture using geometric principles</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple archaeological sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Neo-Assyrian (c. 645 BCE)">
+                <h4>Lion Hunt of Ashurbanipal</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 124886</p>
+                <p class="meta"><strong>Period:</strong> Neo-Assyrian (c. 645 BCE) • <strong>Location:</strong> Nineveh</p>
+                <p style="margin: 0.8rem 0;">Palace relief showing royal hunt with geometric composition</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, triangle, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Demonstrates dynamic composition using geometric structure</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection/object/W_1856-0909-16" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Early Dynastic III (c. 2500 BCE)">
+                <h4>Bull-Headed Lyre from Ur</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 121198</p>
+                <p class="meta"><strong>Period:</strong> Early Dynastic III (c. 2500 BCE) • <strong>Location:</strong> Ur</p>
+                <p style="margin: 0.8rem 0;">Musical instrument with gold bull's head and geometric inlays</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, triangle, composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Shows geometric design in musical and ceremonial objects</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection/object/W_1929-1020-513" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Early Dynastic III (c. 2400 BCE)">
+                <h4>Silver Vase of Entemena</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> AO 2674</p>
+                <p class="meta"><strong>Period:</strong> Early Dynastic III (c. 2400 BCE) • <strong>Location:</strong> Lagash</p>
+                <p style="margin: 0.8rem 0;">Silver vessel with eagle symbol and geometric patterns</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Metalwork with symbolic geometry</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr/ark:/53355/cl010176453" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Kassite (c. 1186-1172 BCE)">
+                <h4>Kudurru of Melishipak</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> Sb 23</p>
+                <p class="meta"><strong>Period:</strong> Kassite (c. 1186-1172 BCE) • <strong>Location:</strong> Babylon</p>
+                <p style="margin: 0.8rem 0;">Boundary stone with divine symbols including crescents, stars, and celestial geometry</p>
+                <p class="meta"><strong>Geometric Elements:</strong> crescent, star_8, circle</p>
+                <p class="meta"><strong>Deity Connections:</strong> nanna, shamash, inanna</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Complete cosmic geometry showing all major divine symbols</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr/ark:/53355/cl010174911" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Akkadian (c. 2254-2218 BCE)">
+                <h4>Victory Stele of Naram-Sin</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> Sb 4</p>
+                <p class="meta"><strong>Period:</strong> Akkadian (c. 2254-2218 BCE) • <strong>Location:</strong> Sippar</p>
+                <p style="margin: 0.8rem 0;">Pink limestone stele showing king ascending mountain with divine stars</p>
+                <p class="meta"><strong>Geometric Elements:</strong> triangle, star_8, composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> shamash</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Diagonal composition and divine geometry</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr/ark:/53355/cl010174907" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Neo-Assyrian (c. 800 BCE)">
+                <h4>Glazed Rosette Tiles</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 124563</p>
+                <p class="meta"><strong>Period:</strong> Neo-Assyrian (c. 800 BCE) • <strong>Location:</strong> Nimrud</p>
+                <p style="margin: 0.8rem 0;">Colorful glazed tiles with 8-fold rosette patterns</p>
+                <p class="meta"><strong>Geometric Elements:</strong> star_8, circle, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Perfect 8-fold symmetry in architectural decoration</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Neo-Sumerian (c. 2100 BCE)">
+                <h4>Statue of Gudea</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> AO 3293</p>
+                <p class="meta"><strong>Period:</strong> Neo-Sumerian (c. 2100 BCE) • <strong>Location:</strong> Lagash</p>
+                <p style="margin: 0.8rem 0;">Diorite statue of ruler with architectural plans</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, circle</p>
+                <p class="meta"><strong>Deity Connections:</strong> ningishzida</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Shows geometric planning in architecture</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr/ark:/53355/cl010176457" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Old Babylonian (c. 1800-1750 BCE)">
+                <h4>Queen of the Night Relief (Burney Relief)</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 2003,0718.1</p>
+                <p class="meta"><strong>Period:</strong> Old Babylonian (c. 1800-1750 BCE) • <strong>Location:</strong> Unknown</p>
+                <p style="margin: 0.8rem 0;">Terracotta relief of winged goddess with geometric patterns</p>
+                <p class="meta"><strong>Geometric Elements:</strong> star_8, composite, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> inanna</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Divine feminine with star symbolism</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection/object/W_2003-0718-1" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Pergamon Museum" data-period="Neo-Babylonian (c. 575 BCE)">
+                <h4>Processional Way, Babylon</h4>
+                <p class="meta"><strong>Museum:</strong> Pergamon Museum • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 575 BCE) • <strong>Location:</strong> Babylon</p>
+                <p style="margin: 0.8rem 0;">Glazed brick walls with lions and geometric borders</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, pattern, composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Urban geometry and sacred pathways</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.smb.museum/en/museums-institutions/pergamonmuseum" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Neo-Babylonian (c. 1100 BCE copy)">
+                <h4>Enuma Elish Tablet</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> K.3473</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 1100 BCE copy) • <strong>Location:</strong> Nineveh</p>
+                <p style="margin: 0.8rem 0;">Creation myth tablet describing cosmic order</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle, composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> anu, enlil</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Text describing cosmic geometry and divine order</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Neo-Assyrian (c. 700 BCE)">
+                <h4>Lamassu (Human-Headed Winged Bull)</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> AO 19857</p>
+                <p class="meta"><strong>Period:</strong> Neo-Assyrian (c. 700 BCE) • <strong>Location:</strong> Khorsabad</p>
+                <p style="margin: 0.8rem 0;">Monumental guardian figure with geometric composition</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Architectural sculpture using geometric forms</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr/ark:/53355/cl010184406" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Metropolitan Museum" data-period="Old Babylonian (c. 1800 BCE)">
+                <h4>Cylinder Seal with Worship Scene</h4>
+                <p class="meta"><strong>Museum:</strong> Metropolitan Museum • <strong>Accession:</strong> Met 1984.383</p>
+                <p class="meta"><strong>Period:</strong> Old Babylonian (c. 1800 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Seal showing figures before enthroned deity with symbols</p>
+                <p class="meta"><strong>Geometric Elements:</strong> cylinder, crescent, star_8</p>
+                <p class="meta"><strong>Deity Connections:</strong> nanna, shamash</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Miniature art with cosmic symbols</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.metmuseum.org/art/collection/search/329070" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Yale Babylonian Collection" data-period="Old Babylonian (c. 1800 BCE)">
+                <h4>Mathematical Tablet (YBC 7289)</h4>
+                <p class="meta"><strong>Museum:</strong> Yale Babylonian Collection • <strong>Accession:</strong> YBC 7289</p>
+                <p class="meta"><strong>Period:</strong> Old Babylonian (c. 1800 BCE) • <strong>Location:</strong> Unknown</p>
+                <p style="margin: 0.8rem 0;">Clay tablet with square and diagonal showing √2 approximation</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, triangle</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Pure mathematical geometry - Pythagorean theorem</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple academic sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Columbia University" data-period="Old Babylonian (c. 1800 BCE)">
+                <h4>Plimpton 322</h4>
+                <p class="meta"><strong>Museum:</strong> Columbia University • <strong>Accession:</strong> Plimpton 322</p>
+                <p class="meta"><strong>Period:</strong> Old Babylonian (c. 1800 BCE) • <strong>Location:</strong> Larsa</p>
+                <p style="margin: 0.8rem 0;">Mathematical tablet with Pythagorean triples</p>
+                <p class="meta"><strong>Geometric Elements:</strong> triangle</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Advanced trigonometry and geometric calculations</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple academic sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Neo-Babylonian (c. 650 BCE)">
+                <h4>Mesopotamian Astrolabe</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 86378</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 650 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Circular astronomical instrument showing celestial geometry</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle, star_12</p>
+                <p class="meta"><strong>Deity Connections:</strong> shamash</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Applied circular geometry for astronomy</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="University of Pennsylvania Museum" data-period="Kassite (c. 1500 BCE)">
+                <h4>City Plan of Nippur</h4>
+                <p class="meta"><strong>Museum:</strong> University of Pennsylvania Museum • <strong>Accession:</strong> Ni 2282</p>
+                <p class="meta"><strong>Period:</strong> Kassite (c. 1500 BCE) • <strong>Location:</strong> Nippur</p>
+                <p style="margin: 0.8rem 0;">Clay tablet showing city layout with geometric grid</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, rectangle</p>
+                <p class="meta"><strong>Deity Connections:</strong> enlil</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Urban planning and geometric surveying</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.penn.museum/collections" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Neo-Sumerian (c. 2100 BCE)">
+                <h4>Standard Weights</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Neo-Sumerian (c. 2100 BCE) • <strong>Location:</strong> Ur</p>
+                <p style="margin: 0.8rem 0;">Stone weights in geometric shapes for trade</p>
+                <p class="meta"><strong>Geometric Elements:</strong> cylinder, cone, sphere</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Applied geometry in commerce and standardization</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Neo-Babylonian (c. 600 BCE)">
+                <h4>Shadow Clock/Sundial</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 600 BCE) • <strong>Location:</strong> Babylon</p>
+                <p style="margin: 0.8rem 0;">Time-measuring device using circular geometry</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle</p>
+                <p class="meta"><strong>Deity Connections:</strong> shamash</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Circular geometry for timekeeping</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Reconstructions in various museums" data-period="Neo-Babylonian (c. 600 BCE)">
+                <h4>Water Clock (Clepsydra)</h4>
+                <p class="meta"><strong>Museum:</strong> Reconstructions in various museums • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 600 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Cylindrical vessel for measuring time by water flow</p>
+                <p class="meta"><strong>Geometric Elements:</strong> cylinder, cone</p>
+                <p class="meta"><strong>Deity Connections:</strong> enki</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> 3D geometry in timekeeping technology</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Early Dynastic (c. 3000 BCE)">
+                <h4>Sumerian Wheel</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Early Dynastic (c. 3000 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Early wheel representations and artifacts</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Revolutionary application of circular geometry</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="In situ ruins" data-period="Various">
+                <h4>Mesopotamian Arch</h4>
+                <p class="meta"><strong>Museum:</strong> In situ ruins • <strong>Accession:</strong> N/A</p>
+                <p class="meta"><strong>Period:</strong> Various • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Architectural arches showing geometric principles</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle, triangle</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Engineering using curved geometry</p>
+                <p style="margin-top: 0.5rem;"><a href="Archaeological sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Various">
+                <h4>Cuneiform Stylus</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Various • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Wedge-shaped writing tool creating geometric marks</p>
+                <p class="meta"><strong>Geometric Elements:</strong> triangle, cone</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Geometric shapes in writing technology</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple museum collections" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Various">
+                <h4>Brick Molds</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Various • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Rectangular molds for standardized building materials</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, rectangle</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Standardization using geometric forms</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Uruk period (c. 3100 BCE)">
+                <h4>Lapis Lazuli Cylinder Seal</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> AO 6620</p>
+                <p class="meta"><strong>Period:</strong> Uruk period (c. 3100 BCE) • <strong>Location:</strong> Uruk</p>
+                <p style="margin: 0.8rem 0;">Blue stone seal with geometric and figural designs</p>
+                <p class="meta"><strong>Geometric Elements:</strong> cylinder, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Precious materials with geometric carving</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum / Penn Museum" data-period="Early Dynastic (c. 2600 BCE)">
+                <h4>Gold Rosette Jewelry</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum / Penn Museum • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Early Dynastic (c. 2600 BCE) • <strong>Location:</strong> Ur</p>
+                <p style="margin: 0.8rem 0;">Gold ornaments with rosette patterns from Royal Cemetery</p>
+                <p class="meta"><strong>Geometric Elements:</strong> star_8, circle, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> inanna</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Geometric design in metalwork and adornment</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Early Dynastic (c. 2600 BCE)">
+                <h4>Royal Game of Ur</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> BM 120834</p>
+                <p class="meta"><strong>Period:</strong> Early Dynastic (c. 2600 BCE) • <strong>Location:</strong> Ur</p>
+                <p style="margin: 0.8rem 0;">Board game with geometric layout and rosette symbols</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, star_8, pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Geometric design in recreation and strategy</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection/object/W_1928-1009-378" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="British Museum" data-period="Neo-Babylonian (c. 400 BCE)">
+                <h4>Astronomical Diary</h4>
+                <p class="meta"><strong>Museum:</strong> British Museum • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 400 BCE) • <strong>Location:</strong> Babylon</p>
+                <p style="margin: 0.8rem 0;">Cuneiform tablets recording celestial observations</p>
+                <p class="meta"><strong>Geometric Elements:</strong> circle, star_12</p>
+                <p class="meta"><strong>Deity Connections:</strong> zodiac</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Scientific observation using celestial geometry</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.britishmuseum.org/collection" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Louvre" data-period="Neo-Assyrian (c. 800 BCE)">
+                <h4>Pazuzu Amulet</h4>
+                <p class="meta"><strong>Museum:</strong> Louvre • <strong>Accession:</strong> AO 22205</p>
+                <p class="meta"><strong>Period:</strong> Neo-Assyrian (c. 800 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Bronze demon figure with geometric patterns</p>
+                <p class="meta"><strong>Geometric Elements:</strong> composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Protective symbolism using geometric forms</p>
+                <p style="margin-top: 0.5rem;"><a href="https://collections.louvre.fr" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Early Dynastic (c. 2500 BCE)">
+                <h4>Foundation Peg/Cone</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Early Dynastic (c. 2500 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Conical clay pegs with inscriptions for temple foundations</p>
+                <p class="meta"><strong>Geometric Elements:</strong> cone</p>
+                <p class="meta"><strong>Deity Connections:</strong> various</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Conical geometry in architecture and dedication</p>
+                <p style="margin-top: 0.5rem;"><a href="Multiple museum collections" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Old Babylonian (c. 1800 BCE)">
+                <h4>Irrigation Canal Plan</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Old Babylonian (c. 1800 BCE) • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Geometric plans for water management systems</p>
+                <p class="meta"><strong>Geometric Elements:</strong> zigzag, square</p>
+                <p class="meta"><strong>Deity Connections:</strong> enki</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Applied geometry in water engineering</p>
+                <p style="margin-top: 0.5rem;"><a href="Archaeological reconstructions" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Reconstructions from art" data-period="Various">
+                <h4>Textile Patterns</h4>
+                <p class="meta"><strong>Museum:</strong> Reconstructions from art • <strong>Accession:</strong> N/A</p>
+                <p class="meta"><strong>Period:</strong> Various • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Geometric patterns in clothing depicted in art</p>
+                <p class="meta"><strong>Geometric Elements:</strong> zigzag, pattern, square</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Geometric design in textiles and fashion</p>
+                <p style="margin-top: 0.5rem;"><a href="From reliefs and statues" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Old Babylonian (c. 1800 BCE)">
+                <h4>Musical Notation Tablet</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Old Babylonian (c. 1800 BCE) • <strong>Location:</strong> Ugarit</p>
+                <p style="margin: 0.8rem 0;">Early musical notation showing mathematical intervals</p>
+                <p class="meta"><strong>Geometric Elements:</strong> pattern</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Mathematical ratios in music</p>
+                <p style="margin-top: 0.5rem;"><a href="Academic sources" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Various" data-period="Various">
+                <h4>Field Boundary Markers</h4>
+                <p class="meta"><strong>Museum:</strong> Various • <strong>Accession:</strong> Various</p>
+                <p class="meta"><strong>Period:</strong> Various • <strong>Location:</strong> Mesopotamia</p>
+                <p style="margin: 0.8rem 0;">Geometric markers for land division</p>
+                <p class="meta"><strong>Geometric Elements:</strong> square, rectangle</p>
+                <p class="meta"><strong>Deity Connections:</strong> None</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Practical geometry in land measurement</p>
+                <p style="margin-top: 0.5rem;"><a href="Archaeological finds" target="_blank">→ View at Museum</a></p>
+            </div>
+
+            <div class="artifact-card" data-museum="Archaeological site (destroyed)" data-period="Neo-Babylonian (c. 600 BCE)">
+                <h4>Etemenanki (Tower of Babel)</h4>
+                <p class="meta"><strong>Museum:</strong> Archaeological site (destroyed) • <strong>Accession:</strong> N/A</p>
+                <p class="meta"><strong>Period:</strong> Neo-Babylonian (c. 600 BCE) • <strong>Location:</strong> Babylon</p>
+                <p style="margin: 0.8rem 0;">Massive seven-tiered ziggurat, legendary in scale</p>
+                <p class="meta"><strong>Geometric Elements:</strong> triangle, square, composite</p>
+                <p class="meta"><strong>Deity Connections:</strong> marduk</p>
+                <p style="margin-top: 0.8rem;"><strong>Educational Value:</strong> Monumental architecture using stepped geometry</p>
+                <p style="margin-top: 0.5rem;"><a href="Historical reconstructions" target="_blank">→ View at Museum</a></p>
+            </div>
+
+        </div>
+    </section>
+
+<script>
+function filterArtifacts() {
+    const museumFilter = document.getElementById('museum-filter').value;
+    const periodFilter = document.getElementById('period-filter').value;
+    const artifacts = document.querySelectorAll('.artifact-card');
+
+    artifacts.forEach(artifact => {
+        const museum = artifact.getAttribute('data-museum');
+        const period = artifact.getAttribute('data-period');
+
+        const museumMatch = museumFilter === 'all' || museum === museumFilter;
+        const periodMatch = periodFilter === 'all' || period === periodFilter;
+
+        if (museumMatch && periodMatch) {
+            artifact.style.display = 'block';
+        } else {
+            artifact.style.display = 'none';
+        }
+    });
+}
+</script>
+
+    <section id="patterns" class="section">
+        <h2>🎨 Decorative Patterns</h2>
+        <p>Traditional Mesopotamian patterns found on artifacts and architecture</p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/rosette_6.svg" alt="6-Petal Rosette" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3E6-Petal Rosette%3C/text%3E%3C/svg%3E'">
+                <h4>6-Petal Rosette</h4>
+                <p>Hexagonal flower pattern</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Medium</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/rosette_8.svg" alt="8-Petal Rosette" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3E8-Petal Rosette%3C/text%3E%3C/svg%3E'">
+                <h4>8-Petal Rosette</h4>
+                <p>Octagonal flower pattern</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Medium</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/rosette_12.svg" alt="12-Petal Rosette" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3E12-Petal Rosette%3C/text%3E%3C/svg%3E'">
+                <h4>12-Petal Rosette</h4>
+                <p>Dodecagonal flower pattern</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Complex</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/guilloche.svg" alt="Guilloche Pattern" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EGuilloche Pattern%3C/text%3E%3C/svg%3E'">
+                <h4>Guilloche Pattern</h4>
+                <p>Intertwined wavy bands</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Complex</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/meander.svg" alt="Meander Pattern" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EMeander Pattern%3C/text%3E%3C/svg%3E'">
+                <h4>Meander Pattern</h4>
+                <p>Continuous zigzag or spiral border</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Medium</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/double_serpent.svg" alt="Intertwined Serpents" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EIntertwined Serpents%3C/text%3E%3C/svg%3E'">
+                <h4>Intertwined Serpents</h4>
+                <p>Two spiraling snakes</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Complex</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/checkerboard.svg" alt="Checkerboard Pattern" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ECheckerboard Pattern%3C/text%3E%3C/svg%3E'">
+                <h4>Checkerboard Pattern</h4>
+                <p>Alternating squares</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Simple</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/patterns/step_pattern.svg" alt="Step/Crenellation Pattern" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EStep/Crenellation Pattern%3C/text%3E%3C/svg%3E'">
+                <h4>Step/Crenellation Pattern</h4>
+                <p>Stepped rectangular border</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge">Simple</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="constructions" class="section">
+        <h2>🔧 Tools & Technology</h2>
+        <p>Mesopotamian inventions and their geometric principles</p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/wheel.svg" alt="Wheel" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EWheel%3C/text%3E%3C/svg%3E'">
+                <h4>Wheel</h4>
+                <p>Circular device for transportation</p>
+                <p class="meta"><strong>Geometry:</strong> circle</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-3">Grade 3</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/sundial.svg" alt="Sundial" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ESundial%3C/text%3E%3C/svg%3E'">
+                <h4>Sundial</h4>
+                <p>Time-keeping using solar geometry</p>
+                <p class="meta"><strong>Geometry:</strong> circle, angle</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-4">Grade 4</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/water_clock_tool.svg" alt="Water Clock" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EWater Clock%3C/text%3E%3C/svg%3E'">
+                <h4>Water Clock</h4>
+                <p>Cylindrical time-measuring device</p>
+                <p class="meta"><strong>Geometry:</strong> cylinder</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-4">Grade 4</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/cylinder_seal_tool.svg" alt="Cylinder Seal" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ECylinder Seal%3C/text%3E%3C/svg%3E'">
+                <h4>Cylinder Seal</h4>
+                <p>Rolling stamp with geometric patterns</p>
+                <p class="meta"><strong>Geometry:</strong> cylinder, pattern</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-3">Grade 3</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/stylus.svg" alt="Cuneiform Stylus" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3ECuneiform Stylus%3C/text%3E%3C/svg%3E'">
+                <h4>Cuneiform Stylus</h4>
+                <p>Wedge-shaped writing tool</p>
+                <p class="meta"><strong>Geometry:</strong> triangle, cone</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-3">Grade 3</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/brick_mold_tool.svg" alt="Brick Mold" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EBrick Mold%3C/text%3E%3C/svg%3E'">
+                <h4>Brick Mold</h4>
+                <p>Rectangular standardization tool</p>
+                <p class="meta"><strong>Geometry:</strong> rectangle</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-3">Grade 3</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/measuring_rod.svg" alt="Measuring Rod" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EMeasuring Rod%3C/text%3E%3C/svg%3E'">
+                <h4>Measuring Rod</h4>
+                <p>Linear measurement tool</p>
+                <p class="meta"><strong>Geometry:</strong> line, proportion</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-3">Grade 3</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/compass_ancient.svg" alt="Ancient Compass" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EAncient Compass%3C/text%3E%3C/svg%3E'">
+                <h4>Ancient Compass</h4>
+                <p>Circle-drawing tool</p>
+                <p class="meta"><strong>Geometry:</strong> circle</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-4">Grade 4</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/plumb_bob.svg" alt="Plumb Bob" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EPlumb Bob%3C/text%3E%3C/svg%3E'">
+                <h4>Plumb Bob</h4>
+                <p>Vertical alignment tool</p>
+                <p class="meta"><strong>Geometry:</strong> cone, vertical line</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-4">Grade 4</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="svg_outputs/tools/level_tool.svg" alt="Water Level" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'Arial\' font-size=\'14\'%3EWater Level%3C/text%3E%3C/svg%3E'">
+                <h4>Water Level</h4>
+                <p>Horizontal alignment using water</p>
+                <p class="meta"><strong>Geometry:</strong> horizontal line, cylinder</p>
+                <div style="margin-top: 0.5rem;">
+                    <span class="badge grade-4">Grade 4</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p><strong>Mesopotamian Sacred Geometry Curriculum</strong></p>
+    <p>Grades 3-5 Differentiated Learning • HOW/WHY/WHAT IF Framework</p>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">
+        © 2024 • Educational Use • All museum links provided for reference
+    </p>
+</footer>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Gallery item interactions
+    document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', function() {
+            this.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 300);
+        });
+    });
+
+    console.log('Mesopotamian Sacred Geometry Gallery Loaded ✓');
+</script>
+
+</body>
+</html>

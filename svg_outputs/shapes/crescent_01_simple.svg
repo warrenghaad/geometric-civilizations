@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="crescent">
+      <circle cx="200" cy="200" r="120"/>
+    </clipPath>
+  </defs>
+  <circle cx="200" cy="200" r="120" fill="#C0C0C0" stroke="#696969" stroke-width="2"/>
+  <circle cx="230" cy="200" r="120" fill="white" stroke="none"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Lunar Crescent</text>
+</svg>

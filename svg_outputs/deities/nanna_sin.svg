@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <circle cx="200" cy="150" r="100" fill="#C0C0C0" stroke="#696969" stroke-width="4"/>
+  <circle cx="240" cy="150" r="100" fill="white" stroke="none"/>
+  <path d="M 120 120 Q 110 90 115 70" fill="none" stroke="#8B4513" stroke-width="6"/>
+  <path d="M 120 180 Q 110 210 115 230" fill="none" stroke="#8B4513" stroke-width="6"/>
+  <polygon points="280,70 277,77 270,80 277,83 280,90 283,83 290,80 283,77" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="310,120 307,127 300,130 307,133 310,140 313,133 320,130 313,127" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="300,170 297,177 290,180 297,183 300,190 303,183 310,180 303,177" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="280,210 277,217 270,220 277,223 280,230 283,223 290,220 283,217" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <rect x="0" y="350" width="400" height="80" fill="#E6E6FA"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#4B0082">NANNA/SIN</text>
+  <text x="200" y="405" text-anchor="middle" font-family="Arial" font-size="14" fill="#4B0082">Moon God • Wisdom</text>
+  <text x="200" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#4B0082">Crescent • Lunar Cycles</text>
+</svg>

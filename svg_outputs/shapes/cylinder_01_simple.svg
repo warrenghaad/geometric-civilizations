@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <ellipse cx="200" cy="120" rx="80" ry="20" fill="#D3D3D3" stroke="#696969" stroke-width="2"/>
+  <rect x="120" y="120" width="160" height="150" fill="#C0C0C0" stroke="none"/>
+  <line x1="120" y1="120" x2="120" y2="270" stroke="#696969" stroke-width="2"/>
+  <line x1="280" y1="120" x2="280" y2="270" stroke="#696969" stroke-width="2"/>
+  <ellipse cx="200" cy="270" rx="80" ry="20" fill="#A9A9A9" stroke="#696969" stroke-width="2"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cylinder</text>
+</svg>

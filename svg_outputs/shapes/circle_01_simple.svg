@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#2C5F8D" stroke-width="3"/>
+  <circle cx="200" cy="200" r="3" fill="#2C5F8D"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Basic Circle</text>
+</svg>

@@ -1,0 +1,1545 @@
+{
+  "metadata": {
+    "curriculum": "Mesopotamian Sacred Geometry",
+    "total_categories": 8,
+    "total_items": 150,
+    "grade_levels": [3, 4, 5]
+  },
+  "geometric_elements": [
+    {
+      "id": "circle",
+      "name": "Circle",
+      "deity_connections": ["Shamash", "Nanna"],
+      "belief": "Eternal cycles, celestial paths",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Basic circle",
+          "svg_needed": true,
+          "construction_steps": 3
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "6-petal rosette",
+          "svg_needed": true,
+          "construction_steps": 6
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "12-fold rosette",
+          "svg_needed": true,
+          "construction_steps": 12
+        }
+      ],
+      "formulas": [
+        "Circumference: C = 2πr",
+        "Area: A = πr²"
+      ],
+      "technology_connections": ["wheels", "sundials", "water clocks", "celestial navigation"]
+    },
+    {
+      "id": "triangle",
+      "name": "Triangle",
+      "deity_connections": ["Enlil"],
+      "belief": "Cosmic mountain, reaching heaven, divine hierarchy",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Basic triangle",
+          "svg_needed": true,
+          "construction_steps": 3
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "3-level ziggurat",
+          "svg_needed": true,
+          "construction_steps": 6
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "7-level stepped ziggurat",
+          "svg_needed": true,
+          "construction_steps": 12
+        }
+      ],
+      "formulas": [
+        "Area (equilateral): A = (√3/4)a²",
+        "Angles: 60° each"
+      ],
+      "technology_connections": ["ziggurat construction", "bridges", "arch design", "load distribution"]
+    },
+    {
+      "id": "square",
+      "name": "Square/Rectangle",
+      "deity_connections": ["Anu"],
+      "belief": "Four directions, earth, order",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Basic square/rectangle",
+          "svg_needed": true,
+          "construction_steps": 4
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Grid pattern",
+          "svg_needed": true,
+          "construction_steps": 8
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Urban grid plan",
+          "svg_needed": true,
+          "construction_steps": 16
+        }
+      ],
+      "formulas": [
+        "Area: A = l × w",
+        "Perimeter: P = 2(l + w)"
+      ],
+      "technology_connections": ["city planning", "foundations", "grid layouts", "land measurement"]
+    },
+    {
+      "id": "crescent",
+      "name": "Crescent (Lunar)",
+      "deity_connections": ["Nanna", "Sin"],
+      "belief": "Moon phases, wisdom, cycles",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Simple arc",
+          "svg_needed": true,
+          "construction_steps": 2
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Crescent with stars",
+          "svg_needed": true,
+          "construction_steps": 5
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Crescent with horns and celestial symbols",
+          "svg_needed": true,
+          "construction_steps": 10
+        }
+      ],
+      "formulas": [
+        "Arc length: L = rθ (radians)"
+      ],
+      "technology_connections": ["lunar calendars", "moon god symbols", "timekeeping"]
+    },
+    {
+      "id": "star_8",
+      "name": "8-Pointed Star",
+      "deity_connections": ["Inanna", "Ishtar"],
+      "belief": "Venus cycle, Ishtar's powers",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Connect-the-dots 8-point star",
+          "svg_needed": true,
+          "construction_steps": 8
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "8-petal rosette",
+          "svg_needed": true,
+          "construction_steps": 12
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Ornate Venus star with nested patterns",
+          "svg_needed": true,
+          "construction_steps": 20
+        }
+      ],
+      "formulas": [
+        "Internal angle: 45° (360°/8)",
+        "Point angle: calculated from geometry"
+      ],
+      "technology_connections": ["celestial charts", "divine symbols", "astronomical observation"]
+    },
+    {
+      "id": "star_6",
+      "name": "6-Pointed Star",
+      "deity_connections": ["various nature gods"],
+      "belief": "Hexagonal symmetry, nature",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Basic 6-point star",
+          "svg_needed": true,
+          "construction_steps": 6
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Hexagonal rosette",
+          "svg_needed": true,
+          "construction_steps": 10
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Nested hexagonal patterns",
+          "svg_needed": true,
+          "construction_steps": 18
+        }
+      ],
+      "formulas": [
+        "Internal angle: 60° (360°/6)"
+      ],
+      "technology_connections": ["nature observation", "honeycomb patterns"]
+    },
+    {
+      "id": "star_12",
+      "name": "12-Pointed Star",
+      "deity_connections": ["zodiac gods"],
+      "belief": "Year cycle, zodiac",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "12 equal rays",
+          "svg_needed": true,
+          "construction_steps": 12
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Zodiac wheel",
+          "svg_needed": true,
+          "construction_steps": 16
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Full zodiac with symbols",
+          "svg_needed": true,
+          "construction_steps": 24
+        }
+      ],
+      "formulas": [
+        "Internal angle: 30° (360°/12)"
+      ],
+      "technology_connections": ["calendar systems", "astronomical cycles", "agricultural planning"]
+    },
+    {
+      "id": "zigzag",
+      "name": "Zigzag Pattern",
+      "deity_connections": ["Enki"],
+      "belief": "Water, rivers, life force, wisdom",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Simple zigzag line",
+          "svg_needed": true,
+          "construction_steps": 5
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Double zigzag band",
+          "svg_needed": true,
+          "construction_steps": 10
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Intertwined guilloche pattern",
+          "svg_needed": true,
+          "construction_steps": 20
+        }
+      ],
+      "formulas": [
+        "Pattern ratio: based on fractals"
+      ],
+      "technology_connections": ["water flow design", "decorative motifs", "textile patterns"]
+    },
+    {
+      "id": "spiral",
+      "name": "Meander/Spiral",
+      "deity_connections": ["Ningishzida"],
+      "belief": "Journey, transformation",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Simple spiral",
+          "svg_needed": true,
+          "construction_steps": 6
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Double spiral",
+          "svg_needed": true,
+          "construction_steps": 10
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Intertwined serpents",
+          "svg_needed": true,
+          "construction_steps": 20
+        }
+      ],
+      "formulas": [
+        "Growth pattern: logarithmic spiral"
+      ],
+      "technology_connections": ["myth visualization", "decorative arts"]
+    },
+    {
+      "id": "cylinder",
+      "name": "Cylinder",
+      "deity_connections": ["various (seals)"],
+      "belief": "Eternal rolling, administrative order",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Basic cylinder",
+          "svg_needed": true,
+          "construction_steps": 4
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Cylinder with bands",
+          "svg_needed": true,
+          "construction_steps": 8
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Carved narrative seal",
+          "svg_needed": true,
+          "construction_steps": 16
+        }
+      ],
+      "formulas": [
+        "Volume: V = πr²h",
+        "Surface area: A = 2πr(r + h)"
+      ],
+      "technology_connections": ["cylinder seals", "rolling stamps", "administrative tools"]
+    },
+    {
+      "id": "cone",
+      "name": "Cone",
+      "deity_connections": ["solar deities"],
+      "belief": "Focus point, divine light",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Simple cone",
+          "svg_needed": true,
+          "construction_steps": 4
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Cone with bands",
+          "svg_needed": true,
+          "construction_steps": 8
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Conical spire with decorative bands",
+          "svg_needed": true,
+          "construction_steps": 12
+        }
+      ],
+      "formulas": [
+        "Volume: V = (1/3)πr²h",
+        "Slant height: l = √(r² + h²)"
+      ],
+      "technology_connections": ["architectural features", "conical vessels"]
+    },
+    {
+      "id": "composite",
+      "name": "Composite Symbols",
+      "deity_connections": ["major gods"],
+      "belief": "Accumulated powers, multiple attributes",
+      "progressions": [
+        {
+          "level": "simple",
+          "grade": 3,
+          "description": "Two shapes combined",
+          "svg_needed": true,
+          "construction_steps": 6
+        },
+        {
+          "level": "intermediate",
+          "grade": 4,
+          "description": "Three shapes layered",
+          "svg_needed": true,
+          "construction_steps": 12
+        },
+        {
+          "level": "complex",
+          "grade": 5,
+          "description": "Multi-symbol deity badge",
+          "svg_needed": true,
+          "construction_steps": 20
+        }
+      ],
+      "formulas": [
+        "Combined geometric calculations"
+      ],
+      "technology_connections": ["religious symbols", "royal insignia"]
+    }
+  ],
+  "deities": [
+    {
+      "id": "shamash",
+      "name": "Shamash",
+      "role": "Sun god, justice",
+      "symbols": ["solar disc", "rays", "saw"],
+      "geometric_association": "circle",
+      "image_sources": [
+        {
+          "museum": "British Museum",
+          "item": "Shamash Tablet",
+          "accession": "BM 91000",
+          "url": "https://www.britishmuseum.org/collection/object/W_1881-0625-1",
+          "description": "Relief showing Shamash with solar disc"
+        },
+        {
+          "museum": "Louvre",
+          "item": "Code of Hammurabi",
+          "accession": "Sb 8",
+          "url": "https://collections.louvre.fr/ark:/53355/cl010174908",
+          "description": "Shamash granting laws to Hammurabi"
+        }
+      ],
+      "visual_elements": ["solar rays", "throne", "divine symbols"],
+      "svg_needed": true
+    },
+    {
+      "id": "nanna",
+      "name": "Nanna/Sin",
+      "role": "Moon god, wisdom",
+      "symbols": ["crescent", "bull", "horns"],
+      "geometric_association": "crescent",
+      "image_sources": [
+        {
+          "museum": "British Museum",
+          "item": "Stele of Ur-Nammu",
+          "accession": "BM 118560",
+          "url": "https://www.britishmuseum.org/collection/object/W_1924-0920-1",
+          "description": "Moon god receiving offerings"
+        },
+        {
+          "museum": "Metropolitan Museum",
+          "item": "Cylinder Seal with Moon God",
+          "accession": "Met 1984.383",
+          "url": "https://www.metmuseum.org/art/collection/search/329070",
+          "description": "Sin with crescent symbol"
+        }
+      ],
+      "visual_elements": ["crescent moon", "horned crown", "stars"],
+      "svg_needed": true
+    },
+    {
+      "id": "enlil",
+      "name": "Enlil",
+      "role": "King of gods, air, storms",
+      "symbols": ["mountain", "horned crown", "tablet"],
+      "geometric_association": "triangle",
+      "image_sources": [
+        {
+          "museum": "British Museum",
+          "item": "Enlil and Ninlil texts",
+          "accession": "Various",
+          "url": "https://www.britishmuseum.org/collection",
+          "description": "Cuneiform tablets describing Enlil"
+        },
+        {
+          "museum": "Louvre",
+          "item": "Kudurru boundary stones",
+          "accession": "Various",
+          "url": "https://collections.louvre.fr",
+          "description": "Divine symbols including Enlil"
+        }
+      ],
+      "visual_elements": ["ziggurat/mountain", "horned crown", "divine rays"],
+      "svg_needed": true
+    },
+    {
+      "id": "anu",
+      "name": "Anu",
+      "role": "Sky god, supreme deity",
+      "symbols": ["star", "temple", "heavenly bull"],
+      "geometric_association": "square",
+      "image_sources": [
+        {
+          "museum": "British Museum",
+          "item": "Anu Ziggurat materials",
+          "accession": "Various",
+          "url": "https://www.britishmuseum.org/collection",
+          "description": "Architectural elements from Anu temple"
+        }
+      ],
+      "visual_elements": ["celestial symbols", "temple architecture", "divine standards"],
+      "svg_needed": true
+    },
+    {
+      "id": "inanna",
+      "name": "Inanna/Ishtar",
+      "role": "Love, war, fertility, Venus",
+      "symbols": ["8-pointed star", "lion", "rosette"],
+      "geometric_association": "star_8",
+      "image_sources": [
+        {
+          "museum": "Pergamon Museum",
+          "item": "Ishtar Gate",
+          "accession": "VA Bab 2628",
+          "url": "https://www.smb.museum/en/museums-institutions/pergamonmuseum",
+          "description": "8-pointed star rosettes on blue glazed bricks"
+        },
+        {
+          "museum": "British Museum",
+          "item": "Queen of the Night relief",
+          "accession": "BM 2003,0718.1",
+          "url": "https://www.britishmuseum.org/collection/object/W_2003-0718-1",
+          "description": "Possibly Ishtar or related goddess"
+        },
+        {
+          "museum": "Louvre",
+          "item": "Ishtar cylinder seals",
+          "accession": "Various",
+          "url": "https://collections.louvre.fr",
+          "description": "8-pointed star symbols"
+        }
+      ],
+      "visual_elements": ["8-pointed star", "rosettes", "lions", "gate decorations"],
+      "svg_needed": true
+    },
+    {
+      "id": "enki",
+      "name": "Enki/Ea",
+      "role": "Water, wisdom, creation",
+      "symbols": ["flowing water", "zigzag", "goat-fish"],
+      "geometric_association": "zigzag",
+      "image_sources": [
+        {
+          "museum": "British Museum",
+          "item": "Enki cylinder seals",
+          "accession": "Various",
+          "url": "https://www.britishmuseum.org/collection",
+          "description": "Enki with flowing waters"
+        },
+        {
+          "museum": "Louvre",
+          "item": "Enki/Ea reliefs",
+          "accession": "Various",
+          "url": "https://collections.louvre.fr",
+          "description": "Water god with waves and streams"
+        }
+      ],
+      "visual_elements": ["water streams", "zigzag patterns", "goat-fish creature"],
+      "svg_needed": true
+    },
+    {
+      "id": "ningishzida",
+      "name": "Ningishzida",
+      "role": "Underworld, vegetation, serpents",
+      "symbols": ["intertwined serpents", "horned crown"],
+      "geometric_association": "spiral",
+      "image_sources": [
+        {
+          "museum": "British Museum",
+          "item": "Gudea cylinders",
+          "accession": "Various",
+          "url": "https://www.britishmuseum.org/collection",
+          "description": "References to Ningishzida"
+        },
+        {
+          "museum": "Louvre",
+          "item": "Serpent deity seals",
+          "accession": "Various",
+          "url": "https://collections.louvre.fr",
+          "description": "Intertwined serpent patterns"
+        }
+      ],
+      "visual_elements": ["double serpents", "spiral patterns", "vegetation"],
+      "svg_needed": true
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "ishtar_gate",
+      "name": "Ishtar Gate",
+      "period": "Neo-Babylonian (c. 575 BCE)",
+      "location": "Babylon",
+      "museum": "Pergamon Museum, Berlin",
+      "accession": "VA Bab 2628",
+      "description": "Monumental gate with glazed brick decoration featuring 8-pointed star rosettes",
+      "geometric_elements": ["star_8", "square", "pattern"],
+      "deity_connections": ["inanna"],
+      "url": "https://www.smb.museum/en/museums-institutions/pergamonmuseum/collection/highlights/ishtar-gate/",
+      "image_needed": true,
+      "educational_value": "Shows advanced geometry in architecture and religious symbolism"
+    },
+    {
+      "id": "code_hammurabi",
+      "name": "Code of Hammurabi Stele",
+      "period": "Old Babylonian (c. 1750 BCE)",
+      "location": "Babylon",
+      "museum": "Louvre",
+      "accession": "Sb 8",
+      "description": "Black basalt stele with law code and relief of Shamash granting laws",
+      "geometric_elements": ["circle", "triangle"],
+      "deity_connections": ["shamash"],
+      "url": "https://collections.louvre.fr/ark:/53355/cl010174908",
+      "image_needed": true,
+      "educational_value": "Demonstrates divine geometry and cosmic order in law"
+    },
+    {
+      "id": "ur_nammu_stele",
+      "name": "Stele of Ur-Nammu",
+      "period": "Ur III (c. 2100 BCE)",
+      "location": "Ur",
+      "museum": "British Museum",
+      "accession": "BM 118560",
+      "description": "Fragmentary stele showing king making offerings to gods",
+      "geometric_elements": ["crescent", "circle"],
+      "deity_connections": ["nanna"],
+      "url": "https://www.britishmuseum.org/collection/object/W_1924-0920-1",
+      "image_needed": true,
+      "educational_value": "Shows lunar symbolism and divine hierarchy"
+    },
+    {
+      "id": "standard_ur",
+      "name": "Standard of Ur",
+      "period": "Early Dynastic III (c. 2600 BCE)",
+      "location": "Ur",
+      "museum": "British Museum",
+      "accession": "BM 121201",
+      "description": "Double-sided mosaic showing war and peace scenes in geometric registers",
+      "geometric_elements": ["square", "triangle", "pattern"],
+      "deity_connections": [],
+      "url": "https://www.britishmuseum.org/collection/object/W_1928-1010-3",
+      "image_needed": true,
+      "educational_value": "Demonstrates geometric composition and narrative structure"
+    },
+    {
+      "id": "cylinder_seal_contest",
+      "name": "Cylinder Seal with Contest Scene",
+      "period": "Akkadian (c. 2300 BCE)",
+      "location": "Mesopotamia",
+      "museum": "British Museum",
+      "accession": "BM 89115",
+      "description": "Seal showing heroes fighting animals with geometric borders",
+      "geometric_elements": ["cylinder", "circle", "pattern"],
+      "deity_connections": [],
+      "url": "https://www.britishmuseum.org/collection/object/W_1895-0501-437",
+      "image_needed": true,
+      "educational_value": "Shows 3D geometry in functional objects"
+    },
+    {
+      "id": "warka_vase",
+      "name": "Warka Vase",
+      "period": "Uruk period (c. 3200 BCE)",
+      "location": "Uruk",
+      "museum": "Iraq Museum, Baghdad",
+      "accession": "IM 19606",
+      "description": "Alabaster vessel with carved registers showing offerings to Inanna",
+      "geometric_elements": ["cylinder", "circle", "pattern"],
+      "deity_connections": ["inanna"],
+      "url": "Multiple sources (looted and recovered)",
+      "image_needed": true,
+      "educational_value": "Early example of geometric registers and divine scenes"
+    },
+    {
+      "id": "ziggurat_ur",
+      "name": "Great Ziggurat of Ur",
+      "period": "Ur III (c. 2100 BCE)",
+      "location": "Ur",
+      "museum": "In situ",
+      "accession": "N/A",
+      "description": "Massive stepped pyramid temple dedicated to Nanna",
+      "geometric_elements": ["triangle", "square", "composite"],
+      "deity_connections": ["nanna"],
+      "url": "Multiple archaeological sources",
+      "image_needed": true,
+      "educational_value": "Monumental architecture using geometric principles"
+    },
+    {
+      "id": "lion_hunt_nineveh",
+      "name": "Lion Hunt of Ashurbanipal",
+      "period": "Neo-Assyrian (c. 645 BCE)",
+      "location": "Nineveh",
+      "museum": "British Museum",
+      "accession": "BM 124886",
+      "description": "Palace relief showing royal hunt with geometric composition",
+      "geometric_elements": ["square", "triangle", "pattern"],
+      "deity_connections": [],
+      "url": "https://www.britishmuseum.org/collection/object/W_1856-0909-16",
+      "image_needed": true,
+      "educational_value": "Demonstrates dynamic composition using geometric structure"
+    },
+    {
+      "id": "bull_lyre",
+      "name": "Bull-Headed Lyre from Ur",
+      "period": "Early Dynastic III (c. 2500 BCE)",
+      "location": "Ur",
+      "museum": "British Museum",
+      "accession": "BM 121198",
+      "description": "Musical instrument with gold bull's head and geometric inlays",
+      "geometric_elements": ["square", "triangle", "composite"],
+      "deity_connections": [],
+      "url": "https://www.britishmuseum.org/collection/object/W_1929-1020-513",
+      "image_needed": true,
+      "educational_value": "Shows geometric design in musical and ceremonial objects"
+    },
+    {
+      "id": "entemena_vase",
+      "name": "Silver Vase of Entemena",
+      "period": "Early Dynastic III (c. 2400 BCE)",
+      "location": "Lagash",
+      "museum": "Louvre",
+      "accession": "AO 2674",
+      "description": "Silver vessel with eagle symbol and geometric patterns",
+      "geometric_elements": ["circle", "pattern"],
+      "deity_connections": [],
+      "url": "https://collections.louvre.fr/ark:/53355/cl010176453",
+      "image_needed": true,
+      "educational_value": "Metalwork with symbolic geometry"
+    },
+    {
+      "id": "kudurru_melishipak",
+      "name": "Kudurru of Melishipak",
+      "period": "Kassite (c. 1186-1172 BCE)",
+      "location": "Babylon",
+      "museum": "Louvre",
+      "accession": "Sb 23",
+      "description": "Boundary stone with divine symbols including crescents, stars, and celestial geometry",
+      "geometric_elements": ["crescent", "star_8", "circle"],
+      "deity_connections": ["nanna", "shamash", "inanna"],
+      "url": "https://collections.louvre.fr/ark:/53355/cl010174911",
+      "image_needed": true,
+      "educational_value": "Complete cosmic geometry showing all major divine symbols"
+    },
+    {
+      "id": "naram_sin_stele",
+      "name": "Victory Stele of Naram-Sin",
+      "period": "Akkadian (c. 2254-2218 BCE)",
+      "location": "Sippar",
+      "museum": "Louvre",
+      "accession": "Sb 4",
+      "description": "Pink limestone stele showing king ascending mountain with divine stars",
+      "geometric_elements": ["triangle", "star_8", "composite"],
+      "deity_connections": ["shamash"],
+      "url": "https://collections.louvre.fr/ark:/53355/cl010174907",
+      "image_needed": true,
+      "educational_value": "Diagonal composition and divine geometry"
+    },
+    {
+      "id": "rosette_tiles",
+      "name": "Glazed Rosette Tiles",
+      "period": "Neo-Assyrian (c. 800 BCE)",
+      "location": "Nimrud",
+      "museum": "British Museum",
+      "accession": "BM 124563",
+      "description": "Colorful glazed tiles with 8-fold rosette patterns",
+      "geometric_elements": ["star_8", "circle", "pattern"],
+      "deity_connections": [],
+      "url": "https://www.britishmuseum.org/collection",
+      "image_needed": true,
+      "educational_value": "Perfect 8-fold symmetry in architectural decoration"
+    },
+    {
+      "id": "gudea_statue",
+      "name": "Statue of Gudea",
+      "period": "Neo-Sumerian (c. 2100 BCE)",
+      "location": "Lagash",
+      "museum": "Louvre",
+      "accession": "AO 3293",
+      "description": "Diorite statue of ruler with architectural plans",
+      "geometric_elements": ["square", "circle"],
+      "deity_connections": ["ningishzida"],
+      "url": "https://collections.louvre.fr/ark:/53355/cl010176457",
+      "image_needed": true,
+      "educational_value": "Shows geometric planning in architecture"
+    },
+    {
+      "id": "queen_night",
+      "name": "Queen of the Night Relief (Burney Relief)",
+      "period": "Old Babylonian (c. 1800-1750 BCE)",
+      "location": "Unknown",
+      "museum": "British Museum",
+      "accession": "BM 2003,0718.1",
+      "description": "Terracotta relief of winged goddess with geometric patterns",
+      "geometric_elements": ["star_8", "composite", "pattern"],
+      "deity_connections": ["inanna"],
+      "url": "https://www.britishmuseum.org/collection/object/W_2003-0718-1",
+      "image_needed": true,
+      "educational_value": "Divine feminine with star symbolism"
+    },
+    {
+      "id": "processional_way",
+      "name": "Processional Way, Babylon",
+      "period": "Neo-Babylonian (c. 575 BCE)",
+      "location": "Babylon",
+      "museum": "Pergamon Museum",
+      "accession": "Various",
+      "description": "Glazed brick walls with lions and geometric borders",
+      "geometric_elements": ["square", "pattern", "composite"],
+      "deity_connections": [],
+      "url": "https://www.smb.museum/en/museums-institutions/pergamonmuseum",
+      "image_needed": true,
+      "educational_value": "Urban geometry and sacred pathways"
+    },
+    {
+      "id": "tablet_enuma_elish",
+      "name": "Enuma Elish Tablet",
+      "period": "Neo-Babylonian (c. 1100 BCE copy)",
+      "location": "Nineveh",
+      "museum": "British Museum",
+      "accession": "K.3473",
+      "description": "Creation myth tablet describing cosmic order",
+      "geometric_elements": ["circle", "composite"],
+      "deity_connections": ["anu", "enlil"],
+      "url": "https://www.britishmuseum.org/collection",
+      "image_needed": true,
+      "educational_value": "Text describing cosmic geometry and divine order"
+    },
+    {
+      "id": "winged_bull",
+      "name": "Lamassu (Human-Headed Winged Bull)",
+      "period": "Neo-Assyrian (c. 700 BCE)",
+      "location": "Khorsabad",
+      "museum": "Louvre",
+      "accession": "AO 19857",
+      "description": "Monumental guardian figure with geometric composition",
+      "geometric_elements": ["square", "composite"],
+      "deity_connections": [],
+      "url": "https://collections.louvre.fr/ark:/53355/cl010184406",
+      "image_needed": true,
+      "educational_value": "Architectural sculpture using geometric forms"
+    },
+    {
+      "id": "seal_worship_scene",
+      "name": "Cylinder Seal with Worship Scene",
+      "period": "Old Babylonian (c. 1800 BCE)",
+      "location": "Mesopotamia",
+      "museum": "Metropolitan Museum",
+      "accession": "Met 1984.383",
+      "description": "Seal showing figures before enthroned deity with symbols",
+      "geometric_elements": ["cylinder", "crescent", "star_8"],
+      "deity_connections": ["nanna", "shamash"],
+      "url": "https://www.metmuseum.org/art/collection/search/329070",
+      "image_needed": true,
+      "educational_value": "Miniature art with cosmic symbols"
+    },
+    {
+      "id": "tablet_multiplication",
+      "name": "Mathematical Tablet (YBC 7289)",
+      "period": "Old Babylonian (c. 1800 BCE)",
+      "location": "Unknown",
+      "museum": "Yale Babylonian Collection",
+      "accession": "YBC 7289",
+      "description": "Clay tablet with square and diagonal showing √2 approximation",
+      "geometric_elements": ["square", "triangle"],
+      "deity_connections": [],
+      "url": "Multiple academic sources",
+      "image_needed": true,
+      "educational_value": "Pure mathematical geometry - Pythagorean theorem"
+    },
+    {
+      "id": "tablet_plimpton",
+      "name": "Plimpton 322",
+      "period": "Old Babylonian (c. 1800 BCE)",
+      "location": "Larsa",
+      "museum": "Columbia University",
+      "accession": "Plimpton 322",
+      "description": "Mathematical tablet with Pythagorean triples",
+      "geometric_elements": ["triangle"],
+      "deity_connections": [],
+      "url": "Multiple academic sources",
+      "image_needed": true,
+      "educational_value": "Advanced trigonometry and geometric calculations"
+    },
+    {
+      "id": "astrolabe",
+      "name": "Mesopotamian Astrolabe",
+      "period": "Neo-Babylonian (c. 650 BCE)",
+      "location": "Mesopotamia",
+      "museum": "British Museum",
+      "accession": "BM 86378",
+      "description": "Circular astronomical instrument showing celestial geometry",
+      "geometric_elements": ["circle", "star_12"],
+      "deity_connections": ["shamash"],
+      "url": "https://www.britishmuseum.org/collection",
+      "image_needed": true,
+      "educational_value": "Applied circular geometry for astronomy"
+    },
+    {
+      "id": "city_plan_nippur",
+      "name": "City Plan of Nippur",
+      "period": "Kassite (c. 1500 BCE)",
+      "location": "Nippur",
+      "museum": "University of Pennsylvania Museum",
+      "accession": "Ni 2282",
+      "description": "Clay tablet showing city layout with geometric grid",
+      "geometric_elements": ["square", "rectangle"],
+      "deity_connections": ["enlil"],
+      "url": "https://www.penn.museum/collections",
+      "image_needed": true,
+      "educational_value": "Urban planning and geometric surveying"
+    },
+    {
+      "id": "weights_measures",
+      "name": "Standard Weights",
+      "period": "Neo-Sumerian (c. 2100 BCE)",
+      "location": "Ur",
+      "museum": "British Museum",
+      "accession": "Various",
+      "description": "Stone weights in geometric shapes for trade",
+      "geometric_elements": ["cylinder", "cone", "sphere"],
+      "deity_connections": [],
+      "url": "https://www.britishmuseum.org/collection",
+      "image_needed": true,
+      "educational_value": "Applied geometry in commerce and standardization"
+    },
+    {
+      "id": "sundial",
+      "name": "Shadow Clock/Sundial",
+      "period": "Neo-Babylonian (c. 600 BCE)",
+      "location": "Babylon",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Time-measuring device using circular geometry",
+      "geometric_elements": ["circle"],
+      "deity_connections": ["shamash"],
+      "url": "Multiple sources",
+      "image_needed": true,
+      "educational_value": "Circular geometry for timekeeping"
+    },
+    {
+      "id": "water_clock",
+      "name": "Water Clock (Clepsydra)",
+      "period": "Neo-Babylonian (c. 600 BCE)",
+      "location": "Mesopotamia",
+      "museum": "Reconstructions in various museums",
+      "accession": "Various",
+      "description": "Cylindrical vessel for measuring time by water flow",
+      "geometric_elements": ["cylinder", "cone"],
+      "deity_connections": ["enki"],
+      "url": "Multiple sources",
+      "image_needed": true,
+      "educational_value": "3D geometry in timekeeping technology"
+    },
+    {
+      "id": "wheel_sumerian",
+      "name": "Sumerian Wheel",
+      "period": "Early Dynastic (c. 3000 BCE)",
+      "location": "Mesopotamia",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Early wheel representations and artifacts",
+      "geometric_elements": ["circle"],
+      "deity_connections": [],
+      "url": "Multiple sources",
+      "image_needed": true,
+      "educational_value": "Revolutionary application of circular geometry"
+    },
+    {
+      "id": "arch_construction",
+      "name": "Mesopotamian Arch",
+      "period": "Various",
+      "location": "Mesopotamia",
+      "museum": "In situ ruins",
+      "accession": "N/A",
+      "description": "Architectural arches showing geometric principles",
+      "geometric_elements": ["circle", "triangle"],
+      "deity_connections": [],
+      "url": "Archaeological sources",
+      "image_needed": true,
+      "educational_value": "Engineering using curved geometry"
+    },
+    {
+      "id": "cuneiform_stylus",
+      "name": "Cuneiform Stylus",
+      "period": "Various",
+      "location": "Mesopotamia",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Wedge-shaped writing tool creating geometric marks",
+      "geometric_elements": ["triangle", "cone"],
+      "deity_connections": [],
+      "url": "Multiple museum collections",
+      "image_needed": true,
+      "educational_value": "Geometric shapes in writing technology"
+    },
+    {
+      "id": "brick_mold",
+      "name": "Brick Molds",
+      "period": "Various",
+      "location": "Mesopotamia",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Rectangular molds for standardized building materials",
+      "geometric_elements": ["square", "rectangle"],
+      "deity_connections": [],
+      "url": "Multiple sources",
+      "image_needed": true,
+      "educational_value": "Standardization using geometric forms"
+    },
+    {
+      "id": "lapis_cylinder",
+      "name": "Lapis Lazuli Cylinder Seal",
+      "period": "Uruk period (c. 3100 BCE)",
+      "location": "Uruk",
+      "museum": "Louvre",
+      "accession": "AO 6620",
+      "description": "Blue stone seal with geometric and figural designs",
+      "geometric_elements": ["cylinder", "pattern"],
+      "deity_connections": [],
+      "url": "https://collections.louvre.fr",
+      "image_needed": true,
+      "educational_value": "Precious materials with geometric carving"
+    },
+    {
+      "id": "jewelry_rosette",
+      "name": "Gold Rosette Jewelry",
+      "period": "Early Dynastic (c. 2600 BCE)",
+      "location": "Ur",
+      "museum": "British Museum / Penn Museum",
+      "accession": "Various",
+      "description": "Gold ornaments with rosette patterns from Royal Cemetery",
+      "geometric_elements": ["star_8", "circle", "pattern"],
+      "deity_connections": ["inanna"],
+      "url": "Multiple sources",
+      "image_needed": true,
+      "educational_value": "Geometric design in metalwork and adornment"
+    },
+    {
+      "id": "gaming_board",
+      "name": "Royal Game of Ur",
+      "period": "Early Dynastic (c. 2600 BCE)",
+      "location": "Ur",
+      "museum": "British Museum",
+      "accession": "BM 120834",
+      "description": "Board game with geometric layout and rosette symbols",
+      "geometric_elements": ["square", "star_8", "pattern"],
+      "deity_connections": [],
+      "url": "https://www.britishmuseum.org/collection/object/W_1928-1009-378",
+      "image_needed": true,
+      "educational_value": "Geometric design in recreation and strategy"
+    },
+    {
+      "id": "astronomical_diary",
+      "name": "Astronomical Diary",
+      "period": "Neo-Babylonian (c. 400 BCE)",
+      "location": "Babylon",
+      "museum": "British Museum",
+      "accession": "Various",
+      "description": "Cuneiform tablets recording celestial observations",
+      "geometric_elements": ["circle", "star_12"],
+      "deity_connections": ["zodiac"],
+      "url": "https://www.britishmuseum.org/collection",
+      "image_needed": true,
+      "educational_value": "Scientific observation using celestial geometry"
+    },
+    {
+      "id": "demon_pazuzu",
+      "name": "Pazuzu Amulet",
+      "period": "Neo-Assyrian (c. 800 BCE)",
+      "location": "Mesopotamia",
+      "museum": "Louvre",
+      "accession": "AO 22205",
+      "description": "Bronze demon figure with geometric patterns",
+      "geometric_elements": ["composite"],
+      "deity_connections": [],
+      "url": "https://collections.louvre.fr",
+      "image_needed": true,
+      "educational_value": "Protective symbolism using geometric forms"
+    },
+    {
+      "id": "foundation_peg",
+      "name": "Foundation Peg/Cone",
+      "period": "Early Dynastic (c. 2500 BCE)",
+      "location": "Mesopotamia",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Conical clay pegs with inscriptions for temple foundations",
+      "geometric_elements": ["cone"],
+      "deity_connections": ["various"],
+      "url": "Multiple museum collections",
+      "image_needed": true,
+      "educational_value": "Conical geometry in architecture and dedication"
+    },
+    {
+      "id": "irrigation_plan",
+      "name": "Irrigation Canal Plan",
+      "period": "Old Babylonian (c. 1800 BCE)",
+      "location": "Mesopotamia",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Geometric plans for water management systems",
+      "geometric_elements": ["zigzag", "square"],
+      "deity_connections": ["enki"],
+      "url": "Archaeological reconstructions",
+      "image_needed": true,
+      "educational_value": "Applied geometry in water engineering"
+    },
+    {
+      "id": "textile_pattern",
+      "name": "Textile Patterns",
+      "period": "Various",
+      "location": "Mesopotamia",
+      "museum": "Reconstructions from art",
+      "accession": "N/A",
+      "description": "Geometric patterns in clothing depicted in art",
+      "geometric_elements": ["zigzag", "pattern", "square"],
+      "deity_connections": [],
+      "url": "From reliefs and statues",
+      "image_needed": true,
+      "educational_value": "Geometric design in textiles and fashion"
+    },
+    {
+      "id": "musical_notation",
+      "name": "Musical Notation Tablet",
+      "period": "Old Babylonian (c. 1800 BCE)",
+      "location": "Ugarit",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Early musical notation showing mathematical intervals",
+      "geometric_elements": ["pattern"],
+      "deity_connections": [],
+      "url": "Academic sources",
+      "image_needed": true,
+      "educational_value": "Mathematical ratios in music"
+    },
+    {
+      "id": "boundary_marker",
+      "name": "Field Boundary Markers",
+      "period": "Various",
+      "location": "Mesopotamia",
+      "museum": "Various",
+      "accession": "Various",
+      "description": "Geometric markers for land division",
+      "geometric_elements": ["square", "rectangle"],
+      "deity_connections": [],
+      "url": "Archaeological finds",
+      "image_needed": true,
+      "educational_value": "Practical geometry in land measurement"
+    },
+    {
+      "id": "ziggurat_etemenanki",
+      "name": "Etemenanki (Tower of Babel)",
+      "period": "Neo-Babylonian (c. 600 BCE)",
+      "location": "Babylon",
+      "museum": "Archaeological site (destroyed)",
+      "accession": "N/A",
+      "description": "Massive seven-tiered ziggurat, legendary in scale",
+      "geometric_elements": ["triangle", "square", "composite"],
+      "deity_connections": ["marduk"],
+      "url": "Historical reconstructions",
+      "image_needed": true,
+      "educational_value": "Monumental architecture using stepped geometry"
+    }
+  ],
+  "architecture": [
+    {
+      "id": "ziggurat_structure",
+      "name": "Ziggurat (General)",
+      "description": "Stepped pyramid temple structure",
+      "geometric_principles": ["triangle", "square", "proportional levels"],
+      "examples": ["Ur", "Babylon", "Uruk"],
+      "svg_needed": true,
+      "cross_sections": true
+    },
+    {
+      "id": "temple_plan",
+      "name": "Temple Floor Plan",
+      "description": "Rectangular temple with geometric layout",
+      "geometric_principles": ["square", "rectangle", "symmetry"],
+      "examples": ["Various Mesopotamian temples"],
+      "svg_needed": true,
+      "cross_sections": true
+    },
+    {
+      "id": "city_grid",
+      "name": "City Grid Layout",
+      "description": "Urban planning with geometric organization",
+      "geometric_principles": ["square", "rectangle", "grid"],
+      "examples": ["Nippur", "Babylon"],
+      "svg_needed": true,
+      "cross_sections": false
+    },
+    {
+      "id": "palace_complex",
+      "name": "Palace Complex",
+      "description": "Royal architecture with courtyards and halls",
+      "geometric_principles": ["square", "rectangle", "composite"],
+      "examples": ["Khorsabad", "Nimrud"],
+      "svg_needed": true,
+      "cross_sections": true
+    },
+    {
+      "id": "gate_structure",
+      "name": "City Gate",
+      "description": "Fortified entrance with geometric design",
+      "geometric_principles": ["square", "arch (circle)"],
+      "examples": ["Ishtar Gate"],
+      "svg_needed": true,
+      "cross_sections": true
+    }
+  ],
+  "tools_technology": [
+    {
+      "id": "wheel",
+      "name": "Wheel",
+      "description": "Circular device for transportation",
+      "geometric_principles": ["circle"],
+      "grade_level": 3,
+      "svg_needed": true
+    },
+    {
+      "id": "sundial",
+      "name": "Sundial",
+      "description": "Time-keeping using solar geometry",
+      "geometric_principles": ["circle", "angle"],
+      "grade_level": 4,
+      "svg_needed": true
+    },
+    {
+      "id": "water_clock_tool",
+      "name": "Water Clock",
+      "description": "Cylindrical time-measuring device",
+      "geometric_principles": ["cylinder"],
+      "grade_level": 4,
+      "svg_needed": true
+    },
+    {
+      "id": "cylinder_seal_tool",
+      "name": "Cylinder Seal",
+      "description": "Rolling stamp with geometric patterns",
+      "geometric_principles": ["cylinder", "pattern"],
+      "grade_level": 3,
+      "svg_needed": true
+    },
+    {
+      "id": "stylus",
+      "name": "Cuneiform Stylus",
+      "description": "Wedge-shaped writing tool",
+      "geometric_principles": ["triangle", "cone"],
+      "grade_level": 3,
+      "svg_needed": true
+    },
+    {
+      "id": "brick_mold_tool",
+      "name": "Brick Mold",
+      "description": "Rectangular standardization tool",
+      "geometric_principles": ["rectangle"],
+      "grade_level": 3,
+      "svg_needed": true
+    },
+    {
+      "id": "measuring_rod",
+      "name": "Measuring Rod",
+      "description": "Linear measurement tool",
+      "geometric_principles": ["line", "proportion"],
+      "grade_level": 3,
+      "svg_needed": true
+    },
+    {
+      "id": "compass_ancient",
+      "name": "Ancient Compass",
+      "description": "Circle-drawing tool",
+      "geometric_principles": ["circle"],
+      "grade_level": 4,
+      "svg_needed": true
+    },
+    {
+      "id": "plumb_bob",
+      "name": "Plumb Bob",
+      "description": "Vertical alignment tool",
+      "geometric_principles": ["cone", "vertical line"],
+      "grade_level": 4,
+      "svg_needed": true
+    },
+    {
+      "id": "level_tool",
+      "name": "Water Level",
+      "description": "Horizontal alignment using water",
+      "geometric_principles": ["horizontal line", "cylinder"],
+      "grade_level": 4,
+      "svg_needed": true
+    }
+  ],
+  "patterns_decorative": [
+    {
+      "id": "rosette_6",
+      "name": "6-Petal Rosette",
+      "description": "Hexagonal flower pattern",
+      "geometric_principles": ["circle", "star_6"],
+      "complexity": "medium",
+      "svg_needed": true
+    },
+    {
+      "id": "rosette_8",
+      "name": "8-Petal Rosette",
+      "description": "Octagonal flower pattern",
+      "geometric_principles": ["circle", "star_8"],
+      "complexity": "medium",
+      "svg_needed": true
+    },
+    {
+      "id": "rosette_12",
+      "name": "12-Petal Rosette",
+      "description": "Dodecagonal flower pattern",
+      "geometric_principles": ["circle", "star_12"],
+      "complexity": "complex",
+      "svg_needed": true
+    },
+    {
+      "id": "guilloche",
+      "name": "Guilloche Pattern",
+      "description": "Intertwined wavy bands",
+      "geometric_principles": ["zigzag", "wave"],
+      "complexity": "complex",
+      "svg_needed": true
+    },
+    {
+      "id": "meander",
+      "name": "Meander Pattern",
+      "description": "Continuous zigzag or spiral border",
+      "geometric_principles": ["zigzag"],
+      "complexity": "medium",
+      "svg_needed": true
+    },
+    {
+      "id": "double_serpent",
+      "name": "Intertwined Serpents",
+      "description": "Two spiraling snakes",
+      "geometric_principles": ["spiral"],
+      "complexity": "complex",
+      "svg_needed": true
+    },
+    {
+      "id": "checkerboard",
+      "name": "Checkerboard Pattern",
+      "description": "Alternating squares",
+      "geometric_principles": ["square", "grid"],
+      "complexity": "simple",
+      "svg_needed": true
+    },
+    {
+      "id": "step_pattern",
+      "name": "Step/Crenellation Pattern",
+      "description": "Stepped rectangular border",
+      "geometric_principles": ["square", "rectangle"],
+      "complexity": "simple",
+      "svg_needed": true
+    }
+  ],
+  "celestial_symbols": [
+    {
+      "id": "zodiac_wheel",
+      "name": "Mesopotamian Zodiac Wheel",
+      "description": "12 divisions for celestial calendar",
+      "geometric_principles": ["circle", "star_12"],
+      "deity_connections": ["zodiac_gods"],
+      "svg_needed": true
+    },
+    {
+      "id": "lunar_phases",
+      "name": "Moon Phase Diagram",
+      "description": "Cycle of lunar crescents",
+      "geometric_principles": ["crescent", "circle"],
+      "deity_connections": ["nanna"],
+      "svg_needed": true
+    },
+    {
+      "id": "solar_disc",
+      "name": "Solar Disc",
+      "description": "Sun symbol with rays",
+      "geometric_principles": ["circle", "rays"],
+      "deity_connections": ["shamash"],
+      "svg_needed": true
+    },
+    {
+      "id": "venus_cycle",
+      "name": "Venus Cycle Diagram",
+      "description": "8-year Venus pattern",
+      "geometric_principles": ["star_8", "circle"],
+      "deity_connections": ["inanna"],
+      "svg_needed": true
+    }
+  ],
+  "construction_diagrams": [
+    {
+      "id": "circle_compass",
+      "name": "Constructing a Circle",
+      "steps": ["Place compass point", "Rotate 360°"],
+      "grade": 3,
+      "svg_needed": true
+    },
+    {
+      "id": "equilateral_triangle",
+      "name": "Constructing Equilateral Triangle",
+      "steps": ["Draw base", "Draw two arcs", "Connect apex"],
+      "grade": 3,
+      "svg_needed": true
+    },
+    {
+      "id": "square_compass",
+      "name": "Constructing a Square",
+      "steps": ["Draw line", "Perpendiculars", "Complete square"],
+      "grade": 4,
+      "svg_needed": true
+    },
+    {
+      "id": "hexagon_construction",
+      "name": "Constructing Regular Hexagon",
+      "steps": ["Circle", "Radius marks", "Connect"],
+      "grade": 4,
+      "svg_needed": true
+    },
+    {
+      "id": "octagon_construction",
+      "name": "Constructing Regular Octagon",
+      "steps": ["Square", "Bisect angles", "Connect"],
+      "grade": 5,
+      "svg_needed": true
+    },
+    {
+      "id": "8_point_star_construction",
+      "name": "Constructing 8-Point Star",
+      "steps": ["Circle", "8 divisions", "Draw star"],
+      "grade": 4,
+      "svg_needed": true
+    },
+    {
+      "id": "rosette_construction",
+      "name": "Constructing Rosette",
+      "steps": ["Central circle", "Petal circles", "Outline"],
+      "grade": 5,
+      "svg_needed": true
+    },
+    {
+      "id": "spiral_construction",
+      "name": "Constructing Spiral",
+      "steps": ["Center point", "Gradually expand", "Smooth curve"],
+      "grade": 5,
+      "svg_needed": true
+    }
+  ],
+  "mathematical_concepts": [
+    {
+      "id": "pi_concept",
+      "name": "Pi (π) in Circles",
+      "description": "Ratio of circumference to diameter",
+      "formulas": ["C = πd", "C = 2πr"],
+      "grade": 5,
+      "visual_needed": true
+    },
+    {
+      "id": "pythagorean",
+      "name": "Pythagorean Theorem",
+      "description": "Right triangle relationship",
+      "formulas": ["a² + b² = c²"],
+      "grade": 5,
+      "visual_needed": true,
+      "artifact_connection": ["tablet_multiplication", "tablet_plimpton"]
+    },
+    {
+      "id": "area_formulas",
+      "name": "Area Calculations",
+      "description": "Various shape areas",
+      "formulas": ["Square: A=s²", "Rectangle: A=lw", "Triangle: A=½bh", "Circle: A=πr²"],
+      "grade": 4,
+      "visual_needed": true
+    },
+    {
+      "id": "perimeter",
+      "name": "Perimeter Calculations",
+      "description": "Distance around shapes",
+      "formulas": ["Square: P=4s", "Rectangle: P=2(l+w)", "Triangle: P=a+b+c"],
+      "grade": 3,
+      "visual_needed": true
+    },
+    {
+      "id": "angles",
+      "name": "Angle Measurements",
+      "description": "Degrees in shapes",
+      "formulas": ["Circle: 360°", "Triangle: 180°", "Square: 90° corners"],
+      "grade": 4,
+      "visual_needed": true
+    },
+    {
+      "id": "symmetry",
+      "name": "Symmetry and Rotation",
+      "description": "Rotational and reflective symmetry",
+      "formulas": ["n-fold symmetry: 360°/n"],
+      "grade": 4,
+      "visual_needed": true
+    },
+    {
+      "id": "volume_3d",
+      "name": "Volume of 3D Shapes",
+      "description": "Cylinder and cone volumes",
+      "formulas": ["Cylinder: V=πr²h", "Cone: V=(1/3)πr²h"],
+      "grade": 5,
+      "visual_needed": true
+    },
+    {
+      "id": "proportions",
+      "name": "Proportions and Ratios",
+      "description": "Scaling and similarity",
+      "formulas": ["a/b = c/d"],
+      "grade": 5,
+      "visual_needed": true
+    }
+  ],
+  "cross_cultural": [
+    {
+      "id": "egypt_comparison",
+      "name": "Egyptian Geometry",
+      "comparison_points": ["Pyramids vs Ziggurats", "Triangular emphasis", "Square bases"],
+      "grade": 5
+    },
+    {
+      "id": "greek_comparison",
+      "name": "Greek Geometry",
+      "comparison_points": ["Mesopotamian influence", "Mathematical proofs", "Philosophical approach"],
+      "grade": 5
+    },
+    {
+      "id": "indus_comparison",
+      "name": "Indus Valley Geometry",
+      "comparison_points": ["Grid cities", "Standardized bricks", "Urban planning"],
+      "grade": 5
+    },
+    {
+      "id": "modern_comparison",
+      "name": "Modern Applications",
+      "comparison_points": ["Computer graphics", "Architecture", "Design principles"],
+      "grade": 5
+    }
+  ]
+}

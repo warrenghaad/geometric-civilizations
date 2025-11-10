@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <polygon points="200.00,20.00 219.13,103.81 291.92,58.08 246.19,130.87 330.00,150.00 246.19,169.13 291.92,241.92 219.13,196.19 200.00,280.00 180.87,196.19 108.08,241.92 153.81,169.13 70.00,150.00 153.81,130.87 108.08,58.08 180.87,103.81" fill="#FF69B4" stroke="#C71585" stroke-width="4"/>
+  <circle cx="200" cy="150" r="60" fill="#FFB6C1" stroke="#FF1493" stroke-width="3"/>
+  <polygon points="200.00,110.00 205.74,136.14 228.28,121.72 213.86,144.26 240.00,150.00 213.86,155.74 228.28,178.28 205.74,163.86 200.00,190.00 194.26,163.86 171.72,178.28 186.14,155.74 160.00,150.00 186.14,144.26 171.72,121.72 194.26,136.14" fill="#FF1493" stroke="#C71585" stroke-width="2"/>
+  <rect x="0" y="350" width="400" height="80" fill="#FFE4E1"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#C71585">INANNA/ISHTAR</text>
+  <text x="200" y="405" text-anchor="middle" font-family="Arial" font-size="14" fill="#FF1493">Love • War • Fertility • Venus</text>
+  <text x="200" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#FF1493">8-Pointed Star • Venus Cycle</text>
+</svg>

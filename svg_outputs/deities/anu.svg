@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <rect x="80" y="80" width="240" height="240" fill="#87CEEB" stroke="#4169E1" stroke-width="4"/>
+  <line x1="120" y1="120" x2="145.00" y2="120.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="120" x2="128.49" y2="128.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="120" x2="120.00" y2="145.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="120" x2="111.51" y2="128.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="120" x2="95.00" y2="120.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="120" x2="111.51" y2="111.51" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="120" x2="120.00" y2="95.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="120" x2="128.49" y2="111.51" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="305.00" y2="120.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="288.49" y2="128.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="280.00" y2="145.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="271.51" y2="128.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="255.00" y2="120.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="271.51" y2="111.51" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="280.00" y2="95.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="120" x2="288.49" y2="111.51" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="145.00" y2="280.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="128.49" y2="288.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="120.00" y2="305.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="111.51" y2="288.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="95.00" y2="280.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="111.51" y2="271.51" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="120.00" y2="255.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="120" y1="280" x2="128.49" y2="271.51" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="305.00" y2="280.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="288.49" y2="288.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="280.00" y2="305.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="271.51" y2="288.49" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="255.00" y2="280.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="271.51" y2="271.51" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="280.00" y2="255.00" stroke="#FFD700" stroke-width="3"/>
+  <line x1="280" y1="280" x2="288.49" y2="271.51" stroke="#FFD700" stroke-width="3"/>
+  <circle cx="200" cy="200" r="60" fill="#191970" stroke="#FFD700" stroke-width="3"/>
+  <circle cx="200.00" cy="160.00" r="4" fill="#FFD700"/>
+  <circle cx="220.00" cy="165.36" r="4" fill="#FFD700"/>
+  <circle cx="234.64" cy="180.00" r="4" fill="#FFD700"/>
+  <circle cx="240.00" cy="200.00" r="4" fill="#FFD700"/>
+  <circle cx="234.64" cy="220.00" r="4" fill="#FFD700"/>
+  <circle cx="220.00" cy="234.64" r="4" fill="#FFD700"/>
+  <circle cx="200.00" cy="240.00" r="4" fill="#FFD700"/>
+  <circle cx="180.00" cy="234.64" r="4" fill="#FFD700"/>
+  <circle cx="165.36" cy="220.00" r="4" fill="#FFD700"/>
+  <circle cx="160.00" cy="200.00" r="4" fill="#FFD700"/>
+  <circle cx="165.36" cy="180.00" r="4" fill="#FFD700"/>
+  <circle cx="180.00" cy="165.36" r="4" fill="#FFD700"/>
+  <rect x="0" y="350" width="400" height="80" fill="#F0F8FF"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#191970">ANU</text>
+  <text x="200" y="405" text-anchor="middle" font-family="Arial" font-size="14" fill="#4169E1">Sky God • Supreme Deity</text>
+  <text x="200" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#4169E1">Square • Four Directions</text>
+</svg>

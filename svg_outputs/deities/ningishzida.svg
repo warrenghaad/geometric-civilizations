@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <path d="M 80,250 Q 95,120.0 120,150.0 Q 135,165.09523810663836 160,195.09523810663836 Q 175,188.9814810991922 200,218.9814810991922 Q 215,180.42465566542117 240,210.42465566542117 Q 255,143.44917051091335 280,173.44917051091335 Q 295,95.44517406172662 320,125.44517406172662 Q 335,58.98969593104886 360,88.98969593104886 Q 375,51.22831711629672 400,81.22831711629672 " fill="none" stroke="#8B008B" stroke-width="12"/>
+  <path d="M 80,250 Q 95,180.0 120,150.0 Q 135,134.90476189336164 160,104.90476189336162 Q 175,111.01851890080778 200,81.01851890080778 Q 215,119.57534433457882 240,89.57534433457882 Q 255,156.55082948908665 280,126.55082948908664 Q 295,204.55482593827338 320,174.55482593827338 Q 335,241.01030406895114 360,211.01030406895114 Q 375,248.7716828837033 400,218.7716828837033 " fill="none" stroke="#9932CC" stroke-width="12"/>
+  <circle cx="320" cy="81.23" r="12" fill="#8B008B"/>
+  <circle cx="315" cy="78.23" r="3" fill="#FF0000"/>
+  <circle cx="320" cy="218.77" r="12" fill="#9932CC"/>
+  <circle cx="315" cy="215.77" r="3" fill="#FF0000"/>
+  <rect x="0" y="350" width="400" height="80" fill="#E6D8FF"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#4B0082">NINGISHZIDA</text>
+  <text x="200" y="405" text-anchor="middle" font-family="Arial" font-size="14" fill="#8B008B">Underworld • Vegetation • Serpents</text>
+  <text x="200" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#8B008B">Intertwined Serpents • Spiral</text>
+</svg>

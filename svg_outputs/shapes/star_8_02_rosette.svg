@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <circle cx="260.00" cy="200.00" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="242.43" cy="242.43" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="200.00" cy="260.00" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="157.57" cy="242.43" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="140.00" cy="200.00" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="157.57" cy="157.57" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="200.00" cy="140.00" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="242.43" cy="157.57" r="40" fill="none" stroke="#FF6347" stroke-width="2"/>
+  <circle cx="200" cy="200" r="40" fill="#FFE4E1" stroke="#FF6347" stroke-width="3"/>
+  <polygon points="200.00,170.00 204.59,188.91 221.21,178.79 211.09,195.41 230.00,200.00 211.09,204.59 221.21,221.21 204.59,211.09 200.00,230.00 195.41,211.09 178.79,221.21 188.91,204.59 170.00,200.00 188.91,195.41 178.79,178.79 195.41,188.91" fill="#FF6347" stroke="#8B0000" stroke-width="2"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">8-Petal Rosette (Ishtar)</text>
+</svg>

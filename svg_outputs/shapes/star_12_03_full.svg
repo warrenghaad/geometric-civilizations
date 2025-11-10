@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="220" fill="none" stroke="#9370DB" stroke-width="4"/>
+  <circle cx="250" cy="250" r="200" fill="none" stroke="#9370DB" stroke-width="2"/>
+  <line x1="250" y1="250" x2="250.00" y2="50.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="294.00" y="85.79" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♈</text>
+  <line x1="250" y1="250" x2="350.00" y2="76.79" stroke="#9370DB" stroke-width="2"/>
+  <text x="370.21" y="129.79" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♉</text>
+  <line x1="250" y1="250" x2="423.21" y2="150.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="414.21" y="206.00" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♊</text>
+  <line x1="250" y1="250" x2="450.00" y2="250.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="414.21" y="294.00" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♋</text>
+  <line x1="250" y1="250" x2="423.21" y2="350.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="370.21" y="370.21" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♌</text>
+  <line x1="250" y1="250" x2="350.00" y2="423.21" stroke="#9370DB" stroke-width="2"/>
+  <text x="294.00" y="414.21" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♍</text>
+  <line x1="250" y1="250" x2="250.00" y2="450.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="206.00" y="414.21" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♎</text>
+  <line x1="250" y1="250" x2="150.00" y2="423.21" stroke="#9370DB" stroke-width="2"/>
+  <text x="129.79" y="370.21" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♏</text>
+  <line x1="250" y1="250" x2="76.79" y2="350.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="85.79" y="294.00" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♐</text>
+  <line x1="250" y1="250" x2="50.00" y2="250.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="85.79" y="206.00" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♑</text>
+  <line x1="250" y1="250" x2="76.79" y2="150.00" stroke="#9370DB" stroke-width="2"/>
+  <text x="129.79" y="129.79" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♒</text>
+  <line x1="250" y1="250" x2="150.00" y2="76.79" stroke="#9370DB" stroke-width="2"/>
+  <text x="206.00" y="85.79" text-anchor="middle" font-family="Arial" font-size="24" fill="#4B0082">♓</text>
+  <polygon points="250.00,150.00 262.94,201.70 300.00,163.40 285.36,214.64 336.60,200.00 298.30,237.06 350.00,250.00 298.30,262.94 336.60,300.00 285.36,285.36 300.00,336.60 262.94,298.30 250.00,350.00 237.06,298.30 200.00,336.60 214.64,285.36 163.40,300.00 201.70,262.94 150.00,250.00 201.70,237.06 163.40,200.00 214.64,214.64 200.00,163.40 237.06,201.70" fill="#E6E6FA" stroke="#4B0082" stroke-width="2"/>
+  <circle cx="250" cy="250" r="30" fill="#9370DB"/>
+  <text x="250" y="480" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Full Zodiac Wheel</text>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <polygon points="200,50 110,320 290,320" fill="#FFD700" stroke="#8B4513" stroke-width="2"/>
+  <line x1="153.33" y1="120" x2="246.67" y2="120" stroke="#8B4513" stroke-width="4"/>
+  <circle cx="154" cy="120" r="3" fill="#FF6347"/>
+  <circle cx="174" cy="120" r="3" fill="#FF6347"/>
+  <circle cx="194" cy="120" r="3" fill="#FF6347"/>
+  <circle cx="214" cy="120" r="3" fill="#FF6347"/>
+  <circle cx="234" cy="120" r="3" fill="#FF6347"/>
+  <line x1="120.00" y1="170" x2="280.00" y2="170" stroke="#8B4513" stroke-width="4"/>
+  <circle cx="120" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="140" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="160" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="180" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="200" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="220" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="240" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="260" cy="170" r="3" fill="#FF6347"/>
+  <circle cx="280" cy="170" r="3" fill="#FF6347"/>
+  <line x1="86.67" y1="220" x2="313.33" y2="220" stroke="#8B4513" stroke-width="4"/>
+  <circle cx="87" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="107" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="127" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="147" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="167" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="187" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="207" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="227" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="247" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="267" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="287" cy="220" r="3" fill="#FF6347"/>
+  <circle cx="307" cy="220" r="3" fill="#FF6347"/>
+  <line x1="53.33" y1="270" x2="346.67" y2="270" stroke="#8B4513" stroke-width="4"/>
+  <circle cx="54" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="74" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="94" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="114" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="134" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="154" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="174" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="194" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="214" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="234" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="254" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="274" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="294" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="314" cy="270" r="3" fill="#FF6347"/>
+  <circle cx="334" cy="270" r="3" fill="#FF6347"/>
+  <ellipse cx="200" cy="320" rx="90" ry="18" fill="#DAA520" stroke="#8B4513" stroke-width="2"/>
+  <circle cx="200" cy="50" r="8" fill="#FF6347" stroke="#8B0000" stroke-width="1"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Decorative Conical Spire</text>
+</svg>

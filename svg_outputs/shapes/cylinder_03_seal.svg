@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <ellipse cx="200" cy="90" rx="80" ry="15" fill="#CD853F" stroke="#654321" stroke-width="2"/>
+  <rect x="120" y="90" width="160" height="200" fill="#D2691E" stroke="none"/>
+  <line x1="120" y1="90" x2="120" y2="290" stroke="#654321" stroke-width="2"/>
+  <line x1="280" y1="90" x2="280" y2="290" stroke="#654321" stroke-width="2"/>
+  <circle cx="160" cy="150" r="12" fill="#654321"/>
+  <rect x="154" y="162" width="12" height="25" fill="#654321"/>
+  <circle cx="200" cy="160" r="12" fill="#654321"/>
+  <rect x="194" y="172" width="12" height="25" fill="#654321"/>
+  <circle cx="240" cy="150" r="12" fill="#654321"/>
+  <rect x="234" y="162" width="12" height="25" fill="#654321"/>
+  <line x1="130" y1="120" x2="270" y2="120" stroke="#654321" stroke-width="2"/>
+  <line x1="130" y1="210" x2="270" y2="210" stroke="#654321" stroke-width="2"/>
+  <ellipse cx="200" cy="290" rx="80" ry="15" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cylinder Seal (Carved)</text>
+</svg>

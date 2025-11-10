@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <circle cx="200" cy="200" r="100" fill="#FFD700" stroke="#DAA520" stroke-width="2"/>
+  <circle cx="225" cy="200" r="100" fill="white" stroke="none"/>
+  <polygon points="280.00,135.00 283.53,145.15 294.27,145.36 285.71,151.85 288.82,162.14 280.00,156.00 271.18,162.14 274.29,151.85 265.73,145.36 276.47,145.15" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="300.00,185.00 303.53,195.15 314.27,195.36 305.71,201.85 308.82,212.14 300.00,206.00 291.18,212.14 294.29,201.85 285.73,195.36 296.47,195.15" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <polygon points="280.00,235.00 283.53,245.15 294.27,245.36 285.71,251.85 288.82,262.14 280.00,256.00 271.18,262.14 274.29,251.85 265.73,245.36 276.47,245.15" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Crescent with Stars</text>
+</svg>

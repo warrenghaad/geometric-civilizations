@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <polygon points="200,80 120,280 280,280" fill="#FFE4B5" stroke="#D2691E" stroke-width="2"/>
+  <ellipse cx="200" cy="280" rx="80" ry="20" fill="#DEB887" stroke="#D2691E" stroke-width="2"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cone</text>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <circle cx="250.00" cy="200.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="243.30" cy="225.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="225.00" cy="243.30" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="200.00" cy="250.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="175.00" cy="243.30" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="156.70" cy="225.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="150.00" cy="200.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="156.70" cy="175.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="175.00" cy="156.70" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="200.00" cy="150.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="225.00" cy="156.70" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="243.30" cy="175.00" r="50" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  <circle cx="200" cy="200" r="50" fill="none" stroke="#DAA520" stroke-width="3"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">12-Fold Rosette</text>
+</svg>
