@@ -94,6 +94,12 @@ Bots are automated programs that help create curriculum content. Think of them a
    - Evaluates curriculum quality
    - Suggests improvements
 
+5. **Image Decomposition Bot** (`bots/image-decomposer/`) 🆕
+   - Shows how objects are made of basic shapes
+   - Perfect for grades 3-5
+   - Combines images with your curriculum outlines
+   - Creates visual learning materials
+
 ### Running Bots
 ```bash
 # Generate content for a specific civilization
@@ -104,6 +110,10 @@ npm run bot:quiz -- --topic pythagorean-theorem --questions 10
 
 # Generate visualizations
 npm run bot:visualize -- --shape hexagon --civilization islamic
+
+# Decompose images into shapes (grades 3-5)
+npm run bot:decompose -- --demo
+npm run bot:decompose -- --image photos/house.jpg --outline outlines/shapes.txt
 ```
 
 ## 🧑‍🏫 AI Tutor

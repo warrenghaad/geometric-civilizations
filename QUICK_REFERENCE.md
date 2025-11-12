@@ -58,6 +58,18 @@ npm run bot:assess -- --file curriculum/ancient-egypt/circles-lesson.json
 npm run bot:assess -- --file curriculum/quiz.json --criteria readability
 ```
 
+### Image Decomposition (NEW - Grades 3-5)
+```bash
+# Create demo lesson
+npm run bot:decompose -- --demo
+
+# Process your image
+npm run bot:decompose -- --image photos/house.jpg --outline outlines/shapes.txt
+
+# With options
+npm run bot:decompose -- --image photos/robot.jpg --outline outlines/lesson.json --grade 4 --shapes 2d
+```
+
 ## Help Commands
 
 ```bash
@@ -66,6 +78,7 @@ npm run bot:content -- --help
 npm run bot:quiz -- --help
 npm run bot:visualize -- --help
 npm run bot:assess -- --help
+npm run bot:decompose -- --help
 
 # Main project info
 npm start

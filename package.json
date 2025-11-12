@@ -10,6 +10,7 @@
     "bot:quiz": "node bots/quiz-generator/index.js",
     "bot:visualize": "node bots/visualization-generator/index.js",
     "bot:assess": "node bots/assessment/index.js",
+    "bot:decompose": "node bots/image-decomposer/index.js",
     "setup": "node scripts/setup.js",
     "test": "echo 'Tests will be implemented' && exit 0"
   },

@@ -25,17 +25,20 @@ Available Commands:
   npm run bot:quiz       - Create interactive quizzes
   npm run bot:visualize  - Generate geometric visualizations
   npm run bot:assess     - Assess content quality
+  npm run bot:decompose  - Decompose images into shapes (grades 3-5) 🆕
   npm run setup          - Run setup wizard
 
 For detailed help:
   • Run: npm run tutor
   • Read: README.md
   • Check: docs/beginner-guide.md
+  • NEW: docs/image-decomposition-guide.md
 
 Quick Examples:
   npm run bot:content -- --civilization ancient-egypt --topic circles
   npm run bot:quiz -- --topic pythagorean-theorem --questions 10
   npm run bot:visualize -- --shape hexagon --civilization islamic
+  npm run bot:decompose -- --demo  (Perfect for grades 3-5!)
 
 Get Started:
   1. Make sure you've run 'npm install'
