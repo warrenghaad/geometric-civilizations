@@ -33,12 +33,15 @@ Image Decomposition Bot - Shows how objects are made of basic geometric shapes
 
 PERFECT FOR: Teachers showing 3rd-5th graders how to see shapes in everyday objects!
 
+Works with REAL PHOTOGRAPHS of objects, symbols, buildings, toys, signs, and more!
+
 Usage:
   npm run bot:decompose -- --image <path> --outline <path> [options]
 
 Required Arguments:
-  --image          Path to image file (JPG, PNG)
-                   Example: images/house.jpg
+  --image          Path to your photo (JPG, PNG)
+                   Examples: photos/stop-sign.jpg, photos/building.jpg, photos/toy.jpg
+                   Works with real photographs, not just drawings!
   
   --outline        Path to curriculum outline file (JSON or text)
                    Example: outlines/shapes-lesson.json
@@ -58,18 +61,21 @@ Optional Arguments:
                    Options: html, json, pdf
 
 Examples:
-  # Decompose a house photo for 3rd graders
-  npm run bot:decompose -- --image photos/house.jpg --outline outlines/shapes.txt --grade 3
+  # Real photos of everyday objects
+  npm run bot:decompose -- --image photos/stop-sign.jpg --outline outlines/traffic-safety.txt --grade 3
+  npm run bot:decompose -- --image photos/building.jpg --outline outlines/architecture.txt --grade 4
+  npm run bot:decompose -- --image photos/toy-car.jpg --outline outlines/shapes.txt --grade 3
 
-  # Show 2D shapes only
-  npm run bot:decompose -- --image photos/robot.jpg --outline outlines/lesson.json --shapes 2d
+  # Cultural symbols and objects
+  npm run bot:decompose -- --image photos/peace-symbol.jpg --outline outlines/symbols.txt --shapes 2d
+  npm run bot:decompose -- --image photos/kitchen-can.jpg --outline outlines/containers.txt --shapes 3d
 
-  # Generate interactive HTML
-  npm run bot:decompose -- --image photos/building.jpg --outline outlines/architecture.txt --format html
+  # Generate interactive HTML (default)
+  npm run bot:decompose -- --image photos/any-object.jpg --outline outlines/lesson.txt --format html
 
 Quick Start (No images yet?):
   npm run bot:decompose -- --demo
-  This creates sample lessons with example images!
+  This creates sample lessons - then use YOUR photos!
 
 What You'll Get:
   ✓ Visual guide showing shapes in the image

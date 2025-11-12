@@ -157,6 +157,163 @@ npm run bot:decompose -- --image photos/house.jpg --outline outlines/lesson.txt 
 **Grade**: 5  
 **Activity**: "Research famous buildings. What shapes do architects use most often and why?"
 
+## Working with Real Objects and Symbols
+
+### Yes! The Bot Works with Real Photographs
+
+The demo uses simple drawings for clarity, but the bot is designed for **actual photographs** of real objects and symbols. This is perfect for showing students how geometry appears in their everyday world.
+
+### Great Photo Subjects
+
+**Traffic Signs:**
+- Stop sign → octagon
+- Yield sign → triangle
+- Railroad crossing → circle
+- Speed limit → rectangle
+
+**Buildings and Architecture:**
+- Windows → rectangles and squares
+- Doors → rectangles
+- Columns → cylinders
+- Roofs → triangles, cones, pyramids
+- Domes → hemispheres
+
+**Household Objects:**
+- Cans → cylinders
+- Boxes → rectangular prisms, cubes
+- Balls → spheres
+- Ice cream cone → cone + sphere
+- Books → rectangular prisms
+
+**Cultural Symbols:**
+- Peace sign → circle with lines
+- Stars → combinations of triangles
+- Hearts → circles and triangles combined
+- Religious symbols → various geometric patterns
+
+**Toys:**
+- Building blocks → cubes, rectangles
+- Balls → spheres
+- Dolls → cylinders, spheres, rectangles
+- Vehicles → combinations of rectangles, circles, cylinders
+
+### Example Lessons with Real Photos
+
+#### Traffic Signs Lesson
+```bash
+npm run bot:decompose -- --image photos/stop-sign.jpg --outline outlines/road-safety.txt --grade 3
+```
+
+**Outline content:**
+```
+Learning: Road Safety and Shapes
+
+Goals:
+- Identify shapes in traffic signs
+- Understand why different shapes are used
+- Connect shapes to safety messages
+
+Key Points:
+- Stop signs are octagons (8 sides) - unique shape grabs attention
+- Yield signs are triangles - point shows direction
+- Warning signs are often diamonds (rotated squares)
+
+Activities:
+1. Draw the traffic signs you see on your way to school
+2. Design a new traffic sign using a different shape
+3. Explain why certain shapes are used for safety
+```
+
+#### Cultural Symbols Lesson
+```bash
+npm run bot:decompose -- --image photos/peace-symbol.jpg --outline outlines/symbols.txt --grade 4
+```
+
+**Outline content:**
+```
+Lesson: Shapes in Symbols
+
+Goals:
+- Recognize geometric shapes in cultural symbols
+- Understand how shapes convey meaning
+- Create symbols using basic shapes
+
+Key Points:
+- Circles represent unity and wholeness
+- Triangles can show direction or stability
+- Symmetry creates visual balance
+
+Activities:
+1. Find symbols in your culture that use basic shapes
+2. Create a personal symbol using 3-4 basic shapes
+3. Explain what your symbol means
+```
+
+#### Household Objects Lesson
+```bash
+npm run bot:decompose -- --image photos/kitchen-items.jpg --outline outlines/everyday-shapes.txt --grade 3
+```
+
+**Outline content:**
+```
+Lesson: Shapes in the Kitchen
+
+Goals:
+- Find geometric shapes in everyday objects
+- Understand why certain shapes are practical
+- Practice shape vocabulary
+
+Key Points:
+- Cans are cylinders - good for stacking
+- Plates are circles - efficient use of space
+- Boxes are rectangular prisms - easy to pack
+
+Activities:
+1. Go on a shape hunt in your kitchen
+2. Draw three kitchen objects using only basic shapes
+3. Explain why each object has that shape
+```
+
+### Tips for Real Object Photography
+
+**Lighting:**
+- Use natural light when possible
+- Avoid harsh shadows
+- Make sure all parts are visible
+
+**Background:**
+- Use plain backgrounds (wall, paper, fabric)
+- Avoid distracting patterns
+- Contrasting colors help objects stand out
+
+**Angle:**
+- Straight-on shots work best for 2D analysis
+- Slight angles can show 3D shapes
+- Get close enough to fill the frame
+
+**Clarity:**
+- Focus on the main object
+- Reduce clutter
+- One main subject works best
+
+### Processing Multiple Related Images
+
+Create a themed series quickly:
+
+```bash
+# Traffic signs series
+npm run bot:decompose -- --image photos/stop-sign.jpg --outline outlines/signs.txt
+npm run bot:decompose -- --image photos/yield-sign.jpg --outline outlines/signs.txt
+npm run bot:decompose -- --image photos/railroad-sign.jpg --outline outlines/signs.txt
+
+# Household objects series
+npm run bot:decompose -- --image photos/can.jpg --outline outlines/containers.txt
+npm run bot:decompose -- --image photos/box.jpg --outline outlines/containers.txt
+npm run bot:decompose -- --image photos/ball.jpg --outline outlines/containers.txt
+```
+
+The same outline works for related images, making it easy to create comprehensive lesson series!
+
 ## Tips for Best Results
 
 ### Choosing Good Images
