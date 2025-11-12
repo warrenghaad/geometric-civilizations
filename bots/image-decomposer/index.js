@@ -79,8 +79,11 @@ Quick Start (No images yet?):
 
 What You'll Get:
   ✓ Visual guide showing shapes in the image
+  ✓ Mathematical formulas for each shape (area, perimeter, volume)
+  ✓ Angle measurements and properties
   ✓ Educational content matched to your outline
   ✓ Interactive exercises for students
+  ✓ Worked examples and practice problems
   ✓ Teacher notes and talking points
   ✓ Print-ready worksheets
 
@@ -316,6 +319,47 @@ async function generateDemo() {
         </div>
       </div>
 
+      <div style="background:#e8f5e9; padding:20px; margin:20px 0; border-radius:10px; border-left:4px solid #4caf50;">
+        <h3>📐 Shape Mathematics (Grades 4-5)</h3>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>🔺 Triangle Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> All triangles have 3 angles that add up to 180°</li>
+            <li><strong>This roof triangle:</strong> Has one 90° angle at top, two 45° angles at bottom</li>
+            <li><strong>Formula for area:</strong> A = ½ × base × height</li>
+            <li><strong>Perimeter:</strong> P = side₁ + side₂ + side₃</li>
+          </ul>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>🟥 Square Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> Each corner is exactly 90° (right angle)</li>
+            <li><strong>All 4 sides are equal length</strong></li>
+            <li><strong>Formula for area:</strong> A = side × side (or s²)</li>
+            <li><strong>Formula for perimeter:</strong> P = 4 × side</li>
+          </ul>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>📘 Rectangle Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> Each corner is 90°</li>
+            <li><strong>Opposite sides are equal</strong> (length = length, width = width)</li>
+            <li><strong>Formula for area:</strong> A = length × width</li>
+            <li><strong>Formula for perimeter:</strong> P = 2 × (length + width)</li>
+          </ul>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>🔵 Circle Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> A full circle = 360°</li>
+            <li><strong>No corners!</strong> Every point on edge is same distance from center</li>
+            <li><strong>Formula for area:</strong> A = π × radius² (π ≈ 3.14)</li>
+            <li><strong>Formula for circumference:</strong> C = 2 × π × radius</li>
+          </ul>
+        </div>
+        <p style="margin-top:15px;"><strong>💡 Fun Fact:</strong> Architects and engineers use these formulas every day to design buildings, bridges, and roads!</p>
+      </div>
+
       <div class="activity-box">
         <h3>✏️ Student Activity</h3>
         <p><strong>Try This:</strong> Draw your own house using only these shapes:</p>
@@ -393,6 +437,27 @@ async function generateDemo() {
           <span class="shape-icon">🔵</span>
           <span><strong>6 Circles:</strong> Eyes, antenna top, and 4 buttons</span>
         </div>
+      </div>
+
+      <div style="background:#e3f2fd; padding:20px; margin:20px 0; border-radius:10px; border-left:4px solid #2196F3;">
+        <h3>🧮 Math Challenge: Calculate the Robot!</h3>
+        <p>Let's practice using our shape formulas:</p>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>Problem 1: If the robot's head is a square with sides of 10 cm, what is its area?</h4>
+          <p><em>Use: A = side × side</em></p>
+          <p><strong>Answer:</strong> 10 × 10 = 100 cm²</p>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>Problem 2: If each eye is a circle with radius 2 cm, what is one eye's area?</h4>
+          <p><em>Use: A = π × radius² (π ≈ 3.14)</em></p>
+          <p><strong>Answer:</strong> 3.14 × 2 × 2 = 12.56 cm²</p>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>Problem 3: If the body is a rectangle 12 cm wide and 10 cm tall, what is its perimeter?</h4>
+          <p><em>Use: P = 2 × (length + width)</em></p>
+          <p><strong>Answer:</strong> 2 × (12 + 10) = 2 × 22 = 44 cm</p>
+        </div>
+        <p><strong>💪 Extra Challenge:</strong> How many total 90° angles are in this robot? (Hint: Count all the corners of squares and rectangles!)</p>
       </div>
 
       <div class="activity-box">
@@ -666,6 +731,89 @@ function generateHTML(lesson, imagePath) {
       <ul>
         ${lesson.lesson.detectedShapes['3d'].map(shape => `<li>${capitalize(shape)}</li>`).join('')}
       </ul>` : ''}
+    </div>
+    
+    <div style="background:#e8f5e9; padding:20px; border-radius:10px; margin:20px 0; border-left:4px solid #4caf50;">
+      <h2>📐 Shape Mathematics & Formulas</h2>
+      <p>Understanding the math behind the shapes helps us measure and design!</p>
+      
+      ${lesson.lesson.detectedShapes['2d'].includes('circles') ? `
+      <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+        <h3>🔵 Circle Formulas:</h3>
+        <ul>
+          <li><strong>Area:</strong> A = π × r² (where r = radius, π ≈ 3.14)</li>
+          <li><strong>Circumference:</strong> C = 2 × π × r</li>
+          <li><strong>Angles:</strong> Full circle = 360°</li>
+          <li><strong>Example:</strong> If radius = 5 cm, then Area = 3.14 × 5² = 78.5 cm²</li>
+        </ul>
+      </div>` : ''}
+      
+      ${lesson.lesson.detectedShapes['2d'].includes('triangles') ? `
+      <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+        <h3>🔺 Triangle Formulas:</h3>
+        <ul>
+          <li><strong>Area:</strong> A = ½ × base × height</li>
+          <li><strong>Perimeter:</strong> P = side₁ + side₂ + side₃</li>
+          <li><strong>Angles:</strong> All 3 angles always add up to 180°</li>
+          <li><strong>Right triangle:</strong> Has one 90° angle</li>
+          <li><strong>Example:</strong> If base = 6 cm and height = 4 cm, then Area = ½ × 6 × 4 = 12 cm²</li>
+        </ul>
+      </div>` : ''}
+      
+      ${lesson.lesson.detectedShapes['2d'].includes('rectangles') ? `
+      <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+        <h3>📘 Rectangle Formulas:</h3>
+        <ul>
+          <li><strong>Area:</strong> A = length × width</li>
+          <li><strong>Perimeter:</strong> P = 2 × (length + width)</li>
+          <li><strong>Angles:</strong> Each corner = 90° (4 right angles total)</li>
+          <li><strong>Example:</strong> If length = 8 cm and width = 3 cm, then Area = 8 × 3 = 24 cm²</li>
+        </ul>
+      </div>` : ''}
+      
+      ${lesson.lesson.detectedShapes['2d'].includes('squares') ? `
+      <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+        <h3>🟥 Square Formulas:</h3>
+        <ul>
+          <li><strong>Area:</strong> A = side × side (or s²)</li>
+          <li><strong>Perimeter:</strong> P = 4 × side</li>
+          <li><strong>Angles:</strong> Each corner = 90° (4 equal right angles)</li>
+          <li><strong>Diagonal:</strong> d = side × √2 ≈ side × 1.414</li>
+          <li><strong>Example:</strong> If side = 7 cm, then Area = 7² = 49 cm²</li>
+        </ul>
+      </div>` : ''}
+      
+      ${lesson.lesson.detectedShapes['3d'].includes('cubes') ? `
+      <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+        <h3>📦 Cube Formulas (3D):</h3>
+        <ul>
+          <li><strong>Volume:</strong> V = side × side × side (or s³)</li>
+          <li><strong>Surface Area:</strong> SA = 6 × side²</li>
+          <li><strong>Example:</strong> If side = 4 cm, then Volume = 4³ = 64 cm³</li>
+        </ul>
+      </div>` : ''}
+      
+      ${lesson.lesson.detectedShapes['3d'].includes('cylinders') ? `
+      <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+        <h3>🥫 Cylinder Formulas (3D):</h3>
+        <ul>
+          <li><strong>Volume:</strong> V = π × r² × height</li>
+          <li><strong>Surface Area:</strong> SA = 2πr² + 2πrh</li>
+          <li><strong>Example:</strong> If r = 3 cm and h = 10 cm, then Volume = 3.14 × 9 × 10 = 282.6 cm³</li>
+        </ul>
+      </div>` : ''}
+      
+      ${lesson.lesson.detectedShapes['3d'].includes('spheres') ? `
+      <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+        <h3>⚽ Sphere Formulas (3D):</h3>
+        <ul>
+          <li><strong>Volume:</strong> V = (4/3) × π × r³</li>
+          <li><strong>Surface Area:</strong> SA = 4 × π × r²</li>
+          <li><strong>Example:</strong> If radius = 5 cm, then Volume = (4/3) × 3.14 × 125 = 523.3 cm³</li>
+        </ul>
+      </div>` : ''}
+      
+      <p style="margin-top:15px;"><strong>💡 Real-World Application:</strong> Engineers, architects, and designers use these formulas every day to calculate materials, costs, and measurements!</p>
     </div>
     
     <div style="background:#f0f0f0; padding:20px; border-radius:10px; margin:20px 0;">
