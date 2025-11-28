@@ -1,0 +1,4 @@
+Total images indexed: 13655
+Output: /Users/samimajeed/Documents/Obsidian - Main Vault/05_DELIVERABLES/assets_manifest/asset_manifest.json
+CSV: /Users/samimajeed/Documents/Obsidian - Main Vault/05_DELIVERABLES/assets_manifest/asset_manifest.csv
+Symlinks: /Users/samimajeed/Documents/Obsidian - Main Vault/05_DELIVERABLES/assets_by_tag

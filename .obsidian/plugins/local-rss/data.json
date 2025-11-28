@@ -1,0 +1,16 @@
+{
+  "feeds": [],
+  "folderPath": "RSS",
+  "template": "---\ntitle: {{title}}\nlink: {{link}}\nauthor: {{author}}\npublish_date: {{publishedTime}}\nsaved_date: {{savedTime}}\nimage: {{image}}\ntags: {{#tags}}\n---\n\n![image]({{image}})\n\n{{content}}",
+  "fileNameTemplate": "{{title}}",
+  "updateInterval": 60,
+  "lastUpdateTime": 1764272938055,
+  "includeImages": true,
+  "fetchImageFromLink": false,
+  "dateFormat": "YYYY-MM-DD HH:mm:ss",
+  "imageWidth": "50%",
+  "autoDeleteEnabled": false,
+  "autoDeleteDays": 30,
+  "autoDeleteTimeUnit": "days",
+  "autoDeleteBasedOn": "saved"
+}

@@ -1,0 +1,87 @@
+image_id,section,slide,time_range,category,title,description,teaching_use
+image:98,1,2,1:30-3:30,Geography,Tigris-Euphrates River System Map,Map showing fertile crescent and river geography,"Establish geographic foundation, explain irrigation challenges"
+image:104,1,2,1:30-3:30,Geography,Mesopotamia Regional Map,"Broader context showing Sumer, Akkad, Babylonia, Assyria",Show political boundaries and cultural regions
+image:110,1,2,1:30-3:30,Geography,Historical Mesopotamia Territory,Political boundaries across different periods,Demonstrate civilization's geographic extent
+image:146,1,3,3:30-6:00,Geography,Illustrated City Map,Shows major urban centers and trade routes,Visualize interconnected city-states and trade
+image:83,2,4-5,6:00-11:30,Architecture,Ziggurat of Ur - Front View,Stepped pyramid showing mathematical proportions,"Discuss triangular profile, Pythagorean ratios"
+image:89,2,4-5,6:00-11:30,Architecture,Ziggurat of Ur - Aerial,Reveals rectangular base and geometric planning,Show tier proportions and geometric progression
+image:95,2,4,6:00-9:00,Architecture,Ziggurat Detail,Brick construction and geometric precision,Examine standardized brick modular construction
+image:85,2,6,11:30-14:30,Architecture,Ishtar Gate Reconstruction,Blue glazed brick with rosette patterns,Discuss color symbolism and geometric patterns
+image:91,2,6,11:30-14:30,Architecture,Ishtar Gate Detail,Geometric patterns and Mushhushshu dragon,Analyze rosette symmetry and animal reliefs
+image:135,2,8,16:30-18:00,Architecture,Babylon 3D City Model,Comprehensive urban planning visualization,Demonstrate city layout and geometric organization
+image:141,2,8,16:30-18:00,Architecture,Babylon Aerial View,Processional way and architectural alignment,Show ritual pathways and cardinal alignments
+image:139,2,7,14:30-16:30,Architecture,White Temple Reconstruction,Elevated platform and geometric temple design,Explain tripartite floor plan structure
+image:145,2,7,14:30-16:30,Architecture,Temple Complex Drawing,Reveals tripartite floor plan clearly,Teach cosmic three-part division concept
+image:150,2,7,14:30-16:30,Architecture,Temple Architecture Evolution,Comparative geometric styles across periods,Show architectural development over time
+image:117,3,9,18:00-21:00,Patterns,Ishtar Gate Rosettes,Six-pointed repetitive patterns,Teach 6-fold symmetry and base-60 connection
+image:123,3,9,18:00-21:00,Patterns,Temple Rosette Decoration,Geometric flower patterns in architecture,Show architectural application of rosettes
+image:129,3,9,18:00-21:00,Patterns,Rosette Design Evolution,Various styles showing mathematical symmetry,Compare different rosette constructions
+image:116,3,10,21:00-23:30,Patterns,Inanna Eight-Pointed Star,Venus goddess octagonal symbol,Connect astronomical cycles to 8-fold symmetry
+image:122,3,10,21:00-23:30,Patterns,Star of Ishtar Talisman,Octagonal sacred geometry in jewelry,Show portable religious symbol applications
+image:128,3,10,21:00-23:30,Patterns,Eight-Point Star Variations,Different artistic interpretations,Demonstrate consistent symbol across contexts
+image:100,3,11-12,23:30-28:00,Pottery,Painted Geometric Pottery,Halaf culture polychrome designs,Analyze tessellation and symmetry types
+image:106,3,11,23:30-26:00,Pottery,Mesopotamian Geometric Motifs,Seamless patterns showing repetition,Teach mathematical pattern planning
+image:112,3,11,23:30-26:00,Pottery,Sumerian Vessel,Functional form with decorative geometry,Discuss form-follows-function principle
+image:151,3,11,23:30-26:00,Pottery,Pottery Collection,Various shapes from potter's wheel,Show circular throwing technique results
+image:99,4,13,28:00-31:00,Deities,Shamash Sun God Relief,Perfect circular sun disk with rays,Teach solar geometry and justice symbolism
+image:105,4,13,28:00-31:00,Deities,Shamash Tablet,Geometric solar symbolism and authority,Show divine authority representation
+image:111,4,13,28:00-31:00,Deities,Shamash Cuneiform Context,Combines visual and written semiotics,Demonstrate multi-modal communication
+image:81,4,15,33:30-36:30,Deities,Lamassu Wall Sculpture,Winged bull with human head guardian,Analyze composite geometric forms
+image:87,4,15,33:30-36:30,Deities,Lamassu Relief Detail,Shows horned crown and protective stance,Examine five-leg optical illusion
+image:93,4,15,33:30-36:30,Deities,Neo-Assyrian Lamassu,Monumental palace guardian sculpture,Discuss liminal space protection concept
+image:155,4,16,36:30-39:00,Deities,Mushhushshu Dragon Fragment,Marduk's sacred serpent-dragon,Analyze composite creature geometry
+image:161,4,16,36:30-39:00,Deities,Mushhushshu on Ishtar Gate,Brick relief showing geometric stylization,Show divine symbol in architectural context
+image:166,4,16,36:30-39:00,Deities,Dragon Detail,Snake-headed eagle-footed composite,Examine tessellated scale patterns
+image:80,5,18-21,42:00-52:00,Seals,Three Cylinder Seals with Impressions,3D object and 2D rolled impressions,Demonstrate rolling creates infinite pattern
+image:86,5,19-21,44:30-52:00,Seals,Hunting Scene Seal,Complex narrative in miniature space,Analyze compressed narrative composition
+image:92,5,19-20,44:30-49:30,Seals,Mesopotamian Seal Impression,Fine mythological scene detail,Examine circular format composition
+image:97,5,18-20,42:00-49:30,Seals,Multiple Seal Examples,Variety of geometric compositions,Compare different seal themes and styles
+image:82,6,22-25,52:00-63:30,Mathematics,Mathematical Cuneiform Tablet,Shows numerical calculations,Teach place-value notation concept
+image:88,6,22-25,52:00-63:30,Mathematics,Cuneiform Mathematical Text,Complex mathematical problems,Show practical geometry applications
+image:94,6,22,52:00-55:00,Mathematics,Mathematical Notation,Number systems and calculations,Demonstrate base-60 system
+image:138,6,23,55:00-57:30,Writing,Writing Process,Shows stylus creating wedge impressions,Demonstrate writing technique
+image:144,6,23,55:00-57:30,Writing,Reed Stylus in Use,Writing technique demonstration,Show ergonomic tool design
+image:149,6,23,55:00-57:30,Writing,Cuneiform Stylus Tools,Various writing implements,Compare different stylus designs
+image:121,6,24,57:30-61:00,Mathematics,Plimpton 322 Tablet,Pythagorean triples 1800 BCE,Show advanced mathematical knowledge
+image:127,6,24,57:30-61:00,Mathematics,Plimpton 322 Detail,Columnar organization of numbers,Analyze mathematical table structure
+image:133,6,24,57:30-61:00,Mathematics,Mathematical Analysis,Modern interpretation of calculations,Connect ancient to modern mathematics
+image:120,6,26,63:30-66:00,Astronomy,Babylonian Astronomical Diary,Daily celestial observations,Show systematic scientific observation
+image:126,6,26,63:30-66:00,Astronomy,Astronomical Tablet Detail,Geometric diagrams of planetary motion,Teach celestial geometry concepts
+image:132,6,26,63:30-66:00,Astronomy,Mathematical Astronomy,Calculations predicting events,Show predictive mathematical modeling
+image:84,7,27,66:00-69:00,Law,Stele of Hammurabi,King receiving laws from Shamash,Analyze vertical hierarchy composition
+image:90,7,27,66:00-69:00,Law,Hammurabi Detail,"Divine above, earthly below composition",Teach bilateral symmetry representing justice
+image:96,7,27,66:00-69:00,Law,Law Code Text,Cuneiform legal inscriptions,Show written law documentation
+image:157,7,28,69:00-71:30,Law,Mesopotamian Kudurru,Divine symbols arranged geometrically,Analyze vertical celestial-terrestrial hierarchy
+image:162,7,28,69:00-71:30,Law,Kassite Kudurru,Cosmic symbols in vertical arrangement,Show multi-semiotic communication
+image:167,7,28,69:00-71:30,Law,Sacred Boundary Stone,Property markers with divine protection,Discuss permanent property rights concept
+image:103,8,30,74:00-77:00,Daily Life,Standard of Ur - War Side,Mosaic showing military organization,Analyze geometric register narration
+image:109,8,30,74:00-77:00,Daily Life,Standard of Ur - Peace Side,Banquet scene with geometric composition,Show hierarchical scale (king larger)
+image:115,8,30,74:00-77:00,Daily Life,Standard Detail,Narrative registers in horizontal bands,Teach bottom-to-top reading order
+image:152,8,31,77:00-79:30,Daily Life,Royal Tomb Excavation,Archaeological context of burial,Show geometric burial arrangement
+image:158,8,31,77:00-79:30,Daily Life,Tomb Artifacts,Gold and lapis lazuli objects,Examine geometric jewelry craftsmanship
+image:163,8,31,77:00-79:30,Daily Life,Funeral Objects Display,Geometric jewelry and vessels,Discuss material wealth hierarchy
+image:168,8,31,77:00-79:30,Daily Life,Royal Tomb Reconstruction,Ritual burial arrangement patterns,Show sacred geometry in death
+image:153,8,32,79:30-82:00,Daily Life,Bull-Headed Lyre,Geometric soundbox with animal imagery,Teach acoustic geometry principles
+image:159,8,32,79:30-82:00,Daily Life,Lyre of Ur Detail,Decorative inlay patterns,Show mathematical musical ratios
+image:164,8,32,79:30-82:00,Daily Life,Multiple Lyres,Standardized geometric instrument form,Demonstrate design standardization
+image:102,8,33,82:00-84:00,Daily Life,Gudea Statue,Sumerian ruler in meditative pose,Analyze cylindrical composition
+image:108,8,33,82:00-84:00,Daily Life,Gudea Detail,Textile patterns and inscriptions,Examine geometric drapery in stone
+image:114,8,33,82:00-84:00,Daily Life,Seated Gudea,Cylindrical form with geometric drapery,Show material thinking in sculpture
+image:118,9,34,84:00-87:00,Innovation,Shaduf Water Lift,Counterweight irrigation system,Teach lever mechanics and mechanical advantage
+image:124,9,34,84:00-87:00,Innovation,Shaduf in Use,Shows geometric lever principle,Demonstrate practical application
+image:130,9,34,84:00-87:00,Innovation,Shaduf Diagram,Mechanical advantage through geometry,Calculate geometric ratios
+image:136,9,35,87:00-89:30,Innovation,Ancient Potter's Wheel,Rotational mechanism,Teach rotational geometry concepts
+image:142,9,35,87:00-89:30,Innovation,Potter at Work,Demonstrates circular motion,Show center point and radius principles
+image:147,9,35,87:00-89:30,Innovation,Wheel Reconstruction,Technical construction details,Analyze uniform circular forms
+image:154,9,36,89:30-92:30,Innovation,Ctesiphon Arch,Massive brick vault,Teach curved geometry force redirection
+image:160,9,36,89:30-92:30,Innovation,Pitched-Brick Vault,Angled brick construction technique,Show voussoir wedge shapes
+image:165,9,36,89:30-92:30,Innovation,Vault Construction Diagram,Geometric forces explained,Analyze force vectors (downward + outward)
+image:169,9,36,89:30-92:30,Innovation,Arch Evolution,Historical architectural development,Show innovation progression over time
+image:134,9,37,92:30-94:00,Writing,Enuma Elish Tablet,Creation myth in cuneiform,Show geometric text encoding myth
+image:140,9,37,92:30-94:00,Writing,Cuneiform Tablet Close-up,Wedge precision detail,Examine standardized sign consistency
+image:101,10,38,94:00-96:00,Warfare,Assyrian Lion Hunt,King demonstrating prowess,Analyze diagonal action composition
+image:107,10,38,94:00-96:00,Warfare,Royal Hunt Detail,Geometric composition showing movement,Show hierarchical scale in relief
+image:113,10,38,94:00-96:00,Warfare,Hunting Scene,Dynamic movement in sculpture,Discuss propaganda visual communication
+image:137,10,39,96:00-98:00,Warfare,Assyrian Chariot Relief,King in ceremonial chariot,Examine wheel radial symmetry
+image:143,10,39,96:00-98:00,Warfare,War Chariot Detail,Wheel geometry and equipment,Calculate weight distribution geometry
+image:148,10,39,96:00-98:00,Warfare,Chariot Battle Scene,Multiple chariots in formation,Show military geometric tactics

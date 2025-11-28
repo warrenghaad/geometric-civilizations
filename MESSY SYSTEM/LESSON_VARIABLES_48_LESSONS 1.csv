@@ -1,0 +1,49 @@
+Lesson_ID,Grade,Lesson_Letter,Deity_Name,Geometric_Concept,Math_Standard,Artifact_Type,Measurement_Focus,Myth_Theme,Activity_Medium,Canva_Color_Scheme,Estimated_Images
+G3-1A,3,A,Shamash,Circles,Perimeter and Area,Sun disk seals,Radius and diameter,Divine perfection,Compass and paper,Gold and orange,45
+G3-1B,3,B,Sin,Crescents,Curves and Arcs,Moon god imagery,Arc measurement,Cycles of time,String and cardboard,Silver and blue,42
+G3-2A,3,A,Ishtar,8-pointed stars,Symmetry,Star seals and reliefs,Rotational symmetry,Love and war duality,Paper folding,Red and gold,48
+G3-2B,3,B,Adad,Lightning zigzags,Lines and angles,Storm god reliefs,Acute angles,Power and chaos,Ruler and protractor,Blue and white,40
+G3-3A,3,A,Marduk,Square temple bases,Rectangles,Temple foundations,Right angles,Order from chaos,Clay modeling,Blue and gold,46
+G3-3B,3,B,Nabu,Wedge shapes,Triangles,Cuneiform tablets,Triangle classification,Writing and wisdom,Stylus and clay,Brown and beige,44
+G3-4A,3,A,Ea/Enki,Wave patterns,Repeating patterns,Water vessel designs,Pattern identification,Wisdom and creation,Stamp making,Teal and green,43
+G3-4B,3,B,Ninhursag,Mountain triangles,Triangles,Mountain reliefs,Base and height,Earth mother,Paper construction,Brown and green,41
+G3-5A,3,A,Nergal,Flame patterns,Irregular shapes,Underworld imagery,Area estimation,Death and rebirth,Torn paper collage,Red and black,39
+G3-5B,3,B,Ereshkigal,Gateway rectangles,Rectangles,Gateway reliefs,Perimeter,Underworld queen,Box construction,Black and purple,42
+G3-6A,3,A,Dumuzi,Plant spirals,Spirals,Fertility symbols,Curve tracing,Seasonal cycles,String art,Green and brown,40
+G3-6B,3,B,Gula,Healing circles,Concentric circles,Medical symbols,Circle relationships,Healing goddess,Nested shapes,Green and white,44
+G3-7A,3,A,Nisaba,Grid patterns,Grids and arrays,Grain storage,Multiplication arrays,Agriculture and writing,Graph paper,Yellow and brown,38
+G3-7B,3,B,Anu,Sky vault,Hemispheres,Dome architecture,Half-circle area,Supreme sky god,Paper dome,Light blue and white,41
+G3-8A,3,A,Enlil,Wind spirals,Spirals,Storm imagery,Spiral measurement,Lord of wind,Spiral drawing,Gray and white,43
+G3-8B,3,B,Tiamat,Chaos shapes,Composite shapes,Dragon imagery,Complex area,Primordial chaos,Mixed media,Dark colors,46
+G4-1A,4,A,Shamash,Circle ratios,Fractions of circles,Sun disk designs,Diameter/radius ratio,Justice through measure,Fraction circles,Gold and orange,50
+G4-1B,4,B,Sin,Lunar phases,Fractions and decimals,Moon phase seals,Phase fractions,Time measurement,Phase wheel,Silver and blue,48
+G4-2A,4,A,Ishtar,8-fold symmetry,Rotational symmetry,Star patterns,45° angles,Sacred geometry,Protractor art,Red and gold,52
+G4-2B,4,B,Adad,Storm angles,Angle measurement,Lightning reliefs,Obtuse and acute,Power angles,Angle construction,Blue and white,46
+G4-3A,4,A,Marduk,Temple proportions,Scale and ratio,Temple models,Proportional scaling,Divine architecture,Scale modeling,Blue and gold,51
+G4-3B,4,B,Nabu,Cuneiform geometry,Angle classification,Tablet designs,Angle types,Knowledge geometry,Clay tablets,Brown and beige,47
+G4-4A,4,A,Ea/Enki,Tessellating waves,Tessellations,Water mosaics,Repeating tiles,Creation patterns,Tile design,Teal and green,49
+G4-4B,4,B,Ninhursag,Mountain ranges,Triangular patterns,Relief carvings,Triangle types,Sacred mountains,Paper mountains,Brown and green,45
+G4-5A,4,A,Nergal,Flame tessellations,Complex tessellations,Fire patterns,Irregular tessellation,Transformative fire,Escher-style design,Red and black,44
+G4-5B,4,B,Ereshkigal,Seven gates,Sequential patterns,Gateway sequence,Pattern rules,Underworld journey,Sequential art,Black and purple,48
+G4-6A,4,A,Dumuzi,Growth spirals,Fibonacci spirals,Plant designs,Golden ratio,Natural cycles,Spiral construction,Green and brown,46
+G4-6B,4,B,Gula,Healing symmetry,Bilateral symmetry,Medical imagery,Symmetry lines,Balance as healing,Symmetrical design,Green and white,50
+G4-7A,4,A,Nisaba,Grain arrays,Area models,Storage patterns,Multiplication area,Agricultural math,Area diagrams,Yellow and brown,43
+G4-7B,4,B,Anu,Celestial dome,3D hemisphere,Vault architecture,Surface area intro,Heavenly vault,3D paper model,Light blue and white,47
+G4-8A,4,A,Enlil,Vortex geometry,Rotational patterns,Storm vortex,Center of rotation,Wind power,Spinning art,Gray and white,49
+G4-8B,4,B,Tiamat,Dragon tessellation,Complex shapes,Mythical beast,Composite area,Chaos to order,Multi-shape design,Dark colors,52
+G5-1A,5,A,Shamash,Solar geometry,Coordinate planes,Sun disk math,Plotting circles,Mathematical justice,Graphing circles,Gold and orange,55
+G5-1B,5,B,Sin,Lunar coordinates,Coordinate systems,Moon phase plots,Coordinate plotting,Time and space,Moon phase graph,Silver and blue,52
+G5-2A,5,A,Ishtar,Star coordinates,Coordinate graphing,Star positioning,8-point plotting,Divine mathematics,Star plotting,Red and gold,58
+G5-2B,5,B,Adad,Vector angles,Vectors,Lightning vectors,Vector direction,Force and direction,Vector diagrams,Blue and white,50
+G5-3A,5,A,Marduk,Temple volume,Volume calculation,Temple architecture,Cubic volume,Sacred space,3D modeling,Blue and gold,56
+G5-3B,5,B,Nabu,Tablet volume,Rectangular prisms,Clay tablets,Volume of prisms,Knowledge storage,Box volume,Brown and beige,51
+G5-4A,5,A,Ea/Enki,Water volume,Liquid volume,Vessel capacity,Cylinder volume,Life-giving measure,Container math,Teal and green,54
+G5-4B,5,B,Ninhursag,Mountain volume,Pyramid volume,Ziggurat structures,Pyramid calculation,Sacred mountain,Pyramid building,Brown and green,49
+G5-5A,5,A,Nergal,Flame transformations,Transformations,Fire patterns,Translation and rotation,Transformative power,Transformation art,Red and black,48
+G5-5B,5,B,Ereshkigal,Gate sequences,Algebraic patterns,Seven gates,Pattern formulas,Journey patterns,Algebraic art,Black and purple,53
+G5-6A,5,A,Dumuzi,Spiral ratios,Ratio and proportion,Plant spirals,Golden ratio,Natural proportion,Spiral measurements,Green and brown,50
+G5-6B,5,B,Gula,Healing proportions,Scale drawings,Medical tools,Proportional scaling,Balanced healing,Scale diagrams,Green and white,55
+G5-7A,5,A,Nisaba,Agricultural plots,Area and perimeter,Field divisions,Complex area,Land mathematics,Field mapping,Yellow and brown,47
+G5-7B,5,B,Anu,Celestial coordinates,Spherical geometry,Star dome,Sphere surface,Heavenly mathematics,Dome coordinates,Light blue and white,52
+G5-8A,5,A,Enlil,Wind patterns,Data and graphing,Storm tracking,Pattern graphing,Predictive wind,Weather graphs,Gray and white,54
+G5-8B,5,B,Tiamat,Chaos to order,All geometric concepts,Creation story,Comprehensive review,Ultimate synthesis,Final project,All colors,60

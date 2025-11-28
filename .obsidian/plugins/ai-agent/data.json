@@ -1,0 +1,9 @@
+{
+  "provider": "google",
+  "model": "gemini-3-pro-preview",
+  "googleApiKey": "",
+  "rules": "",
+  "chatsFolder": "Chats",
+  "debug": false,
+  "readImages": true
+}
