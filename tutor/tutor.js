@@ -42,20 +42,24 @@ function displayWelcome() {
 ║                                                            ║
 ║        🤖 Geometric Civilizations AI Tutor 🎓             ║
 ║                                                            ║
-║        Your Interactive Learning Companion                 ║
+║        Your Personal Programming & Tech Guide              ║
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
 ${colors.reset}`);
   
-  console.log(`\n${colors.green}Welcome! I'm here to help you learn and build.${colors.reset}\n`);
+  console.log(`\n${colors.green}Welcome! I'm YOUR personal tutor - here to help YOU learn programming${colors.reset}`);
+  console.log(`${colors.green}and master this system, even if you're starting from scratch.${colors.reset}\n`);
   console.log('I can help you with:\n');
-  console.log('  📚 Understanding how this system works');
-  console.log('  💻 Learning programming concepts');
-  console.log('  🤖 Setting up and using the curriculum bots');
-  console.log('  🐛 Debugging issues and errors');
-  console.log('  ✨ Creating amazing curriculum content\n');
-  console.log(`${colors.yellow}Type 'help' for a list of commands, or just ask me anything!${colors.reset}`);
-  console.log(`${colors.yellow}Type 'exit' or 'quit' to leave the tutor.${colors.reset}\n`);
+  console.log('  💻 Learning programming from the ground up (no experience needed)');
+  console.log('  📚 Understanding how this system works step-by-step');
+  console.log('  🤖 Setting up and using all the curriculum bots');
+  console.log('  🐛 Debugging issues and errors (I explain what went wrong)');
+  console.log('  🔧 Configuration and technical setup');
+  console.log('  ✨ Creating curriculum content efficiently\n');
+  console.log(`${colors.yellow}NOTE: This tutor is for YOU, the educator/developer - not for students.${colors.reset}`);
+  console.log(`${colors.yellow}I'll explain technical concepts clearly so you can master this system.${colors.reset}\n`);
+  console.log(`Type 'help' for commands, or just ask me anything in plain English!`);
+  console.log(`Type 'exit' or 'quit' to leave.\n`);
 }
 
 /**
@@ -64,34 +68,43 @@ ${colors.reset}`);
 function displayHelp() {
   console.log(`\n${colors.bright}${colors.blue}Available Commands:${colors.reset}\n`);
   console.log('  help              - Show this help message');
-  console.log('  guide             - Show beginner\'s guide');
+  console.log('  guide             - Show beginner\'s programming guide');
+  console.log('  walkthrough       - Step-by-step setup (recommended for new users!)');
   console.log('  structure         - Explain the project structure');
   console.log('  bots              - Learn about the bot system');
+  console.log('  decompose         - Help with Image Decomposition Bot');
   console.log('  config            - Help with configuration');
   console.log('  example           - Show usage examples');
   console.log('  concept <topic>   - Explain a programming concept');
   console.log('  debug             - Help debug an issue');
   console.log('  clear             - Clear the screen');
   console.log('  exit/quit         - Exit the tutor\n');
-  console.log(`${colors.yellow}Or just type your question naturally!${colors.reset}\n`);
+  console.log(`${colors.yellow}Or just type your question in plain English - I understand natural language!${colors.reset}\n`);
 }
 
 /**
  * Show beginner's guide
  */
 function showBeginnerGuide() {
-  console.log(`\n${colors.bright}${colors.magenta}Beginner's Guide${colors.reset}\n`);
-  console.log('If you\'re new to programming, here\'s what you need to know:\n');
-  console.log('1️⃣  ${colors.bright}JavaScript${colors.reset} - The programming language we use');
-  console.log('   It runs in Node.js (JavaScript outside the browser)\n');
-  console.log('2️⃣  ${colors.bright}npm${colors.reset} - Node Package Manager');
-  console.log('   It installs tools and libraries we need');
-  console.log('   Run: npm install\n');
-  console.log('3️⃣  ${colors.bright}Bots${colors.reset} - Automated programs that help create content');
-  console.log('   They use AI to generate curriculum materials\n');
-  console.log('4️⃣  ${colors.bright}Configuration${colors.reset} - Settings for the system');
-  console.log('   Stored in config.json (create from config.example.json)\n');
-  console.log(`${colors.green}Ready to start? Try: npm install${colors.reset}\n`);
+  console.log(`\n${colors.bright}${colors.magenta}Your Personal Programming Guide${colors.reset}\n`);
+  console.log('Starting from zero? No problem! Here\'s what you need to know:\n');
+  console.log('${colors.bright}1️⃣  JavaScript${colors.reset} - The programming language we use');
+  console.log('   Don\'t worry, you don\'t need to be an expert.');
+  console.log('   The bots do the heavy lifting - you just run commands.\n');
+  console.log('${colors.bright}2️⃣  Terminal/Command Line${colors.reset}');
+  console.log('   This is where you type commands to run the bots.');
+  console.log('   On Mac: Terminal app | On Windows: Command Prompt or PowerShell\n');
+  console.log('${colors.bright}3️⃣  npm${colors.reset} - Node Package Manager');
+  console.log('   Installs tools and libraries we need.');
+  console.log('   You run: npm install (downloads everything)\n');
+  console.log('${colors.bright}4️⃣  Bots${colors.reset} - Automated programs you\'ll use');
+  console.log('   They generate curriculum content using AI.');
+  console.log('   You don\'t write code - you run commands with options.\n');
+  console.log('${colors.bright}5️⃣  Configuration${colors.reset} - One-time setup');
+  console.log('   Copy config.example.json → config.json');
+  console.log('   Add your API key and you\'re ready!\n');
+  console.log(`${colors.green}First step: Run "npm install" in your terminal${colors.reset}\n`);
+  console.log(`${colors.yellow}Type "walkthrough" for a step-by-step setup guide!${colors.reset}\n`);
 }
 
 /**
@@ -163,15 +176,95 @@ function helpWithConfig() {
  */
 function showExamples() {
   console.log(`\n${colors.bright}${colors.magenta}Usage Examples${colors.reset}\n`);
-  console.log('Here are some common tasks:\n');
-  console.log('${colors.bright}Example 1: Generate a lesson about circles in Ancient Egypt${colors.reset}');
+  console.log('Here are the most common tasks you\'ll do:\n');
+  console.log('${colors.bright}Example 1: Decompose images into shapes (your main workflow!)${colors.reset}');
+  console.log('  ${colors.green}npm run bot:decompose -- --demo${colors.reset}');
+  console.log('  ${colors.green}npm run bot:decompose -- --image photos/house.jpg --outline outlines/lesson.txt${colors.reset}\n');
+  console.log('${colors.bright}Example 2: Generate a lesson about circles${colors.reset}');
   console.log('  ${colors.green}npm run bot:content -- --civilization ancient-egypt --topic circles${colors.reset}\n');
-  console.log('${colors.bright}Example 2: Create a quiz on the Pythagorean theorem${colors.reset}');
+  console.log('${colors.bright}Example 3: Create a quiz${colors.reset}');
   console.log('  ${colors.green}npm run bot:quiz -- --topic pythagorean-theorem --questions 15${colors.reset}\n');
-  console.log('${colors.bright}Example 3: Visualize Islamic geometric patterns${colors.reset}');
+  console.log('${colors.bright}Example 4: Create visualizations${colors.reset}');
   console.log('  ${colors.green}npm run bot:visualize -- --civilization islamic --pattern star${colors.reset}\n');
-  console.log('${colors.bright}Example 4: Check the quality of a lesson${colors.reset}');
+  console.log('${colors.bright}Example 5: Assess content quality${colors.reset}');
   console.log('  ${colors.green}npm run bot:assess -- --file curriculum/ancient-egypt/circles.json${colors.reset}\n');
+}
+
+/**
+ * Step-by-step walkthrough for new users
+ */
+function showWalkthrough() {
+  console.log(`\n${colors.bright}${colors.cyan}═══════════════════════════════════════════════════════════${colors.reset}`);
+  console.log(`${colors.bright}${colors.cyan}          STEP-BY-STEP SETUP WALKTHROUGH${colors.reset}`);
+  console.log(`${colors.bright}${colors.cyan}═══════════════════════════════════════════════════════════${colors.reset}\n`);
+  
+  console.log(`${colors.bright}STEP 1: Check Node.js is installed${colors.reset}`);
+  console.log('  Open your terminal and type: ${colors.green}node --version${colors.reset}');
+  console.log('  You should see something like "v18.x.x" or higher.');
+  console.log('  ${colors.yellow}If not installed: Download from https://nodejs.org${colors.reset}\n');
+  
+  console.log(`${colors.bright}STEP 2: Install project dependencies${colors.reset}`);
+  console.log('  In your terminal, navigate to this project folder and run:');
+  console.log('  ${colors.green}npm install${colors.reset}');
+  console.log('  This downloads all the code libraries we need.\n');
+  
+  console.log(`${colors.bright}STEP 3: Set up configuration${colors.reset}`);
+  console.log('  Copy the example config file:');
+  console.log('  ${colors.green}cp config.example.json config.json${colors.reset}');
+  console.log('  Then open config.json and add your OpenAI API key.\n');
+  
+  console.log(`${colors.bright}STEP 4: Try the Image Decomposition demo${colors.reset}`);
+  console.log('  Run this command to see a working example:');
+  console.log('  ${colors.green}npm run bot:decompose -- --demo${colors.reset}');
+  console.log('  This creates a lesson showing how to decompose shapes!\n');
+  
+  console.log(`${colors.bright}STEP 5: Use your own images${colors.reset}`);
+  console.log('  Put your images in a "photos" folder, then run:');
+  console.log('  ${colors.green}npm run bot:decompose -- --image photos/yourfile.jpg --outline outlines/lesson.txt${colors.reset}\n');
+  
+  console.log(`${colors.bright}${colors.green}That\'s it! You\'re ready to create curriculum content.${colors.reset}\n`);
+  console.log(`${colors.yellow}Questions? Type 'decompose' for Image Bot help, or just ask me anything!${colors.reset}\n`);
+}
+
+/**
+ * Help specifically with Image Decomposition Bot
+ */
+function helpWithDecompose() {
+  console.log(`\n${colors.bright}${colors.magenta}Image Decomposition Bot - Your Main Tool${colors.reset}\n`);
+  console.log('This bot takes photos and shows how objects break down into shapes.\n');
+  
+  console.log('${colors.bright}Quick Start:${colors.reset}');
+  console.log('  ${colors.green}npm run bot:decompose -- --demo${colors.reset}');
+  console.log('  (Creates a sample lesson - no images needed!)\n');
+  
+  console.log('${colors.bright}With Your Images:${colors.reset}');
+  console.log('  ${colors.green}npm run bot:decompose -- --image photos/house.jpg --outline outlines/shapes.txt${colors.reset}\n');
+  
+  console.log('${colors.bright}What You Get:${colors.reset}');
+  console.log('  ✓ Visual breakdown showing shapes in the image');
+  console.log('  ✓ Mathematical formulas (area, perimeter, angles)');
+  console.log('  ✓ Worked examples with real numbers');
+  console.log('  ✓ Practice problems with solutions');
+  console.log('  ✓ Student activities matched to your outline');
+  console.log('  ✓ Teacher notes with grade differentiation');
+  console.log('  ✓ Print-ready HTML format\n');
+  
+  console.log('${colors.bright}Options:${colors.reset}');
+  console.log('  --grade 3|4|5     Target grade level');
+  console.log('  --shapes 2d|3d    Focus on 2D or 3D shapes');
+  console.log('  --format html     Output format (default: html)\n');
+  
+  console.log('${colors.bright}Example Workflow:${colors.reset}');
+  console.log('  1. Take/download photos of objects (house, signs, toys, etc.)');
+  console.log('  2. Save them in a "photos" folder');
+  console.log('  3. Create a simple outline file with your learning goals');
+  console.log('  4. Run the bot: npm run bot:decompose -- --image photos/your-image.jpg --outline outlines/your-outline.txt');
+  console.log('  5. Open the generated HTML file in any browser!\n');
+  
+  console.log('${colors.bright}Process Multiple Images:${colors.reset}');
+  console.log('  for img in photos/*.jpg; do');
+  console.log('    npm run bot:decompose -- --image "$img" --outline outlines/lesson.txt');
+  console.log('  done\n');
 }
 
 /**
@@ -203,6 +296,16 @@ function explainConcept(concept) {
       title: 'npm (Node Package Manager)',
       explanation: 'npm is like an app store for JavaScript code. It helps you install, share, and manage code libraries (called packages) that others have written.',
       example: 'npm install openai - This installs the OpenAI library so we can use AI in our bots.'
+    },
+    'terminal': {
+      title: 'Terminal / Command Line',
+      explanation: 'The terminal is a text-based interface to control your computer. Instead of clicking buttons, you type commands. It\'s faster for many tasks once you learn the basics.',
+      example: 'cd my-folder    - Navigate to a folder\nls              - List files\nnpm install     - Install project dependencies'
+    },
+    'html': {
+      title: 'HTML (HyperText Markup Language)',
+      explanation: 'HTML is the language used to create web pages. When the bots generate lessons, they output HTML files that you can open in any web browser (Chrome, Firefox, Safari, etc.).',
+      example: 'The bot creates .html files you open in your browser to see the lessons.'
     }
   };
 
@@ -214,7 +317,8 @@ function explainConcept(concept) {
     console.log(`${colors.green}Example:${colors.reset}`);
     console.log(`${c.example}\n`);
   } else {
-    console.log(`\n${colors.yellow}Concept "${concept}" not found. Try: api, json, async, function, or npm${colors.reset}\n`);
+    console.log(`\n${colors.yellow}Concept "${concept}" not found.${colors.reset}`);
+    console.log(`Try: api, json, async, function, npm, terminal, html\n`);
   }
 }
 
@@ -233,10 +337,14 @@ function processInput(input) {
     displayHelp();
   } else if (command === 'guide') {
     showBeginnerGuide();
+  } else if (command === 'walkthrough' || command === 'setup') {
+    showWalkthrough();
   } else if (command === 'structure') {
     explainStructure();
   } else if (command === 'bots') {
     explainBots();
+  } else if (command === 'decompose' || command === 'image' || command === 'images') {
+    helpWithDecompose();
   } else if (command === 'config') {
     helpWithConfig();
   } else if (command === 'example' || command === 'examples') {

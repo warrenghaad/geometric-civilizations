@@ -119,29 +119,35 @@ npm run bot:decompose -- --image photos/stop-sign.jpg --outline outlines/traffic
 npm run bot:decompose -- --image photos/building.jpg --outline outlines/architecture.txt
 ```
 
-## 🧑‍🏫 AI Tutor
+## 🧑‍🏫 AI Tutor (For YOU - The Developer/Educator)
 
 ### What Is the AI Tutor?
-An interactive assistant that:
-- Answers your questions about the code
-- Explains programming concepts in simple terms
-- Helps debug issues
-- Suggests improvements
-- Teaches you as you build
+An interactive assistant designed to help **you** learn programming and master this system.
+This is YOUR personal tutor - not for students, but for you as you learn to build and use this curriculum system.
+
+It helps you with:
+- Learning programming from scratch (no experience needed)
+- Understanding how this system works
+- Step-by-step setup guidance
+- Using all the bots effectively
+- Debugging issues and errors
+- Configuration and technical questions
 
 ### Using the Tutor
 ```bash
-# Start the tutor
+# Start your personal tutor
 npm run tutor
 
-# Ask questions like:
-# "How do I add a new civilization?"
-# "What does this code do?"
-# "How can I customize the quiz format?"
-# "I'm getting an error, can you help?"
+# Commands available:
+# "walkthrough" - Step-by-step setup guide
+# "decompose"   - Help with Image Decomposition Bot
+# "guide"       - Programming basics explained
+# "concept api" - Learn what an API is
+# "debug"       - Help fixing errors
+# Or just ask any question in plain English!
 ```
 
-The tutor remembers your conversation and adapts to your learning level!
+The tutor explains technical concepts in plain language and guides you step-by-step!
 
 ## 📁 Project Structure
 
