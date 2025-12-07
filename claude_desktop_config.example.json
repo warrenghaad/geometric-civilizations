@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "geometric-civilizations": {
+      "command": "python",
+      "args": ["-m", "mcp_server"],
+      "cwd": "/path/to/geometric-civilizations"
+    }
+  }
+}
