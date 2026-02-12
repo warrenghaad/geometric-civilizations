@@ -1,0 +1,108 @@
+---
+id: 8169
+title: Neural Link Core Capabilities
+state: OPEN
+labels:
+  - epic
+  - ai
+  - architecture
+assignees:
+  - tobiu
+createdAt: '2025-12-28T13:36:46Z'
+updatedAt: '2025-12-28T13:36:59Z'
+githubUrl: 'https://github.com/neomjs/neo/issues/8169'
+author: tobiu
+commentsCount: 0
+parentIssue: null
+subIssues:
+  - 8170
+  - 8171
+  - 8172
+  - 8016
+  - 8173
+  - 8174
+  - 8175
+  - 8176
+  - 8177
+  - 8178
+  - 8179
+  - 8180
+  - 8181
+  - 8183
+  - 8184
+  - 8185
+  - 8186
+  - 8187
+  - 8188
+  - 8189
+  - 8190
+  - 8191
+  - 8192
+  - 8193
+  - 8182
+  - 8194
+  - 8195
+subIssuesCompleted: 16
+subIssuesTotal: 27
+blockedBy: []
+blocking: []
+---
+# Neural Link Core Capabilities
+
+This epic tracks the implementation of core capabilities for the **Neural Link**, enabling AI agents to inspect and modify the running Neo.mjs application state via the `neo-neural-link` MCP server.
+
+**Goal:**
+Empower AI agents to "see" and "touch" the runtime application, moving beyond static code analysis. This is a prerequisite for advanced features like "Infinite Canvas" debugging, "Self-Healing Apps," and "Runtime Orchestration."
+
+**Scope:**
+1.  **Read/Write Primitives:** Implement the ability to retrieve component/vdom/vnode trees and get/set properties via `Neo.ai.Client`.
+2.  **Runtime Inspection Tools:** Create specialized MCP tools to inspect complex internal subsystems (Drag & Drop, Focus, etc.).
+3.  **Topology Discovery:** Enable agents to map `windowId`s to logical application parts (Main Window, Popups) with rich metadata.
+
+**Success Criteria:**
+-   An AI agent can query the current component tree (with configurable depth and serialization safety).
+-   An AI agent can read and write properties/configs of a live component.
+-   An AI agent can inspect the state of a drag operation in real-time.
+
+
+## Activity Log
+
+- 2025-12-28 @tobiu added the `epic` label
+- 2025-12-28 @tobiu added the `ai` label
+- 2025-12-28 @tobiu added the `architecture` label
+- 2025-12-28 @tobiu assigned to @tobiu
+- 2025-12-28 @tobiu added sub-issue #8170
+- 2025-12-28 @tobiu added sub-issue #8171
+- 2025-12-28 @tobiu added sub-issue #8172
+- 2025-12-28 @tobiu added sub-issue #8016
+- 2025-12-28 @tobiu added sub-issue #8173
+- 2025-12-28 @tobiu added sub-issue #8174
+- 2025-12-28 @tobiu added sub-issue #8175
+- 2025-12-28 @tobiu added sub-issue #8176
+- 2025-12-28 @tobiu added sub-issue #8177
+- 2025-12-28 @tobiu referenced in commit `21b8247` - "feat(ai): Implement Neural Link healing and standardize routing (#8169)
+
+- Refactor API: Rename windowId to sessionId for clarity (#8174)
+- Feat: Implement window connect/disconnect notifications (#8175)
+- Feat: Add state rehydration on reconnect (#8176)
+- Update Client to track lifecycle and sync topology
+- Update ConnectionService to cache window state and serve topology instantly"
+- 2025-12-28 @tobiu added sub-issue #8178
+- 2025-12-28 @tobiu added sub-issue #8179
+- 2025-12-28 @tobiu added sub-issue #8180
+- 2025-12-28 @tobiu added sub-issue #8181
+- 2025-12-28 @tobiu added sub-issue #8183
+- 2025-12-28 @tobiu added sub-issue #8184
+- 2025-12-28 @tobiu added sub-issue #8185
+- 2025-12-28 @tobiu added sub-issue #8186
+- 2025-12-28 @tobiu added sub-issue #8187
+- 2025-12-28 @tobiu added sub-issue #8188
+- 2025-12-28 @tobiu added sub-issue #8189
+- 2025-12-28 @tobiu added sub-issue #8190
+- 2025-12-28 @tobiu added sub-issue #8191
+- 2025-12-28 @tobiu added sub-issue #8192
+- 2025-12-28 @tobiu added sub-issue #8193
+- 2025-12-28 @tobiu added sub-issue #8182
+- 2025-12-28 @tobiu added sub-issue #8194
+- 2025-12-28 @tobiu added sub-issue #8195
+
