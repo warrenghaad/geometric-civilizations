@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G3-4A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G3-4A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G3-4A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Triangle in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Triangle (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Enlil &amp; Triangle</h1>
+<strong>Grade 3 Geometry Lesson</strong><strong>Lesson Code</strong>: G3-4A
+<strong>Deity</strong>: Enlil
+<strong>Geometric Element</strong>: Triangle
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe Triangle in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Triangle (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Enlil's Story</h2><h1>Enlil's Story</h1><h2>Characters</h2>
+<ul><li><strong>ENLIL</strong> (en-LEEL): Lord of the Wind and Sky, King of the Gods</li>
+<li><strong>AN</strong> (AHN): Father Sky, the eldest god</li>
+<li><strong>KI</strong> (KEE): Mother Earth</li>
+<li><strong>NARRATOR</strong>: Storyteller</li></ul><h2>Props Needed</h2>
+<ul><li>Three long sticks or poles</li>
+<li>Blue fabric for sky</li>
+<li>Brown fabric for earth</li>
+<li>Paper mountain cutout</li></ul><p>---</p><strong>NARRATOR:</strong> Long, long ago, before there were cities or schools, before there were roads or rivers as we know them, the world was very different. Sky and Earth were pressed together like two hands in prayer. Let us travel back to ancient Mesopotamia, the land between two rivers, to witness how the great god Enlil shaped our world.<em>(AN stands on a ladder holding blue fabric above. KI lies on the ground with brown fabric. They are almost touching.)</em><strong>AN:</strong> <em>(sighing)</em> So dark... so cramped... nothing can grow between us, dear Ki.<strong>KI:</strong> <em>(sadly)</em> I know, beloved An. But we cannot move apart. We are stuck together like wet clay.<strong>NARRATOR:</strong> Into this darkness, a child was born—Enlil, whose name means "Lord Wind." Even as a young god, Enlil was curious and strong.<em>(ENLIL enters, crawling between AN and KI.)</em><strong>ENLIL:</strong> Mother! Father! Why is everything so dark? Why can't I stand up straight?<strong>KI:</strong> There is no room, my son. Sky and Earth have always been together.<strong>ENLIL:</strong> But how will plants grow? How will people see? How will anything live?<strong>AN:</strong> These are good questions, young Enlil. But what can be done?<strong>ENLIL:</strong> <em>(standing up, pushing against both parents)</em> I... will... make... room!<strong>NARRATOR:</strong> Enlil pushed and pushed. His arms stretched up to Sky. His legs pressed down to Earth. Do you know what shape his body made?<em>(ENLIL stretches into a triangle shape—feet apart on the ground, arms meeting in a point above his head.)</em><strong>ENLIL:</strong> I am strong like a mountain! Mountains are the strongest shape—three sides, three points! Nothing can knock down a triangle!<strong>NARRATOR:</strong> And Enlil was right! The triangle is one of the strongest shapes in all the world. Even today, builders use triangles to make bridges and buildings sturdy.<em>(AN slowly rises higher on the ladder. KI stays on the ground. Light floods the space between them.)</em><strong>AN:</strong> <em>(amazed)</em> My son, you have done it! You have separated Sky from Earth!<strong>KI:</strong> <em>(joyfully)</em> Look! Now there is space for everything! Space for mountains, space for rivers, space for people!<strong>ENLIL:</strong> <em>(breathing heavily, still in triangle pose)</em> I shall stay here, in the middle, in the space I have created. This shall be my kingdom—the air, the wind, the storms!<strong>NARRATOR:</strong> From that day forward, Enlil ruled the space between Sky and Earth. The people of Mesopotamia built great temples called ziggurats to honor him. These ziggurats were shaped like mountains, with triangular sides reaching toward the sky.<em>(ENLIL picks up three sticks and arranges them into a triangle on the ground.)</em><strong>ENLIL:</strong> See how three sticks make the strongest shape? Push on one side...<em>(ENLIL pushes gently on the triangle—it holds firm.)</em><strong>ENLIL:</strong> ...and the other two sides hold it steady! This is the secret of the triangle. This is the secret of the mountain. This is why I could separate Heaven and Earth!<strong>AN:</strong> You are wise, my son. From now on, you shall be King of the Gods.<strong>KI:</strong> And whenever people see a triangle—in a mountain, in a roof, in a sail—they will remember your strength.<strong>ENLIL:</strong> <em>(proudly)</em> I am Enlil! My shape is the triangle! Three sides for my three great powers: the power to separate, the power to hold steady, and the power to reach the heavens!<strong>NARRATOR:</strong> And so, thanks to Enlil and the mighty triangle, our world has space for everything. The sky above, the earth below, and the air in between where birds fly, where wind blows, and where we breathe. The ancient people of Mesopotamia never forgot this story. They looked at every triangle and remembered: this is the shape that holds up the world.<strong>ALL TOGETHER:</strong> Three sides, three corners, strong and true—the triangle holds the world for me and you!<em>(All bow as the scene ends.)</em><p>---</p><strong>THE END</strong><p>---</p>
+<h2>Section 3: Ancient Art and Artifacts</h2><h1>Ancient Mesopotamian Treasures</h1><p>Long ago in ancient Mesopotamia, artists and craftspeople created beautiful objects decorated with triangular shapes. These artifacts help us understand how people honored Enlil, the powerful god of wind and storms, and how they used triangles in their daily lives.</p><h2>The Victory Stele of Naram-Sin</h2><p>One of the most famous artifacts is the Victory Stele of Naram-Sin, which you can see today at the Louvre Museum in Paris. This tall stone carving shows a king climbing a mountain, and at the very top are triangular mountain peaks reaching toward the sky. The ancient Mesopotamians believed mountains were special places where gods like Enlil lived. The triangular mountain shapes point upward like arrows, showing how the earth reaches up to touch the heavens where Enlil ruled. The artists carved this stone over 4,000 years ago, and they used triangles to show power and connection to the gods.</p><h2>Temple Ziggurats</h2><p>The ancient Mesopotamians built enormous stepped pyramids called ziggurats. While the original ziggurats have crumbled over time, we can see models and drawings of them in museums like the British Museum in London. When you look at a ziggurat from the side, you can see a giant triangular shape! The Ziggurat of Ur, built for the moon god but connected to Enlil's worship, had sides that sloped inward as they rose higher. People climbed stairs to reach the temple at the top, getting closer to Enlil's realm in the sky. These massive triangular structures could be seen from far away, reminding everyone of the gods' power.</p><h2>Clay Tablets with Cuneiform Writing</h2><p>At the Metropolitan Museum of Art in New York, you can find ancient clay tablets covered in wedge-shaped writing called cuneiform. Look closely at cuneiform writing, and you'll notice it's made up of tiny triangular marks! Scribes used pointed reed sticks to press triangles into soft clay. They wrote prayers to Enlil, recorded temple offerings, and kept track of grain supplies. Each letter was built from different combinations of triangular wedge marks. When people wanted to send messages to Enlil through priests, scribes would write these prayers using hundreds of small triangles pressed into clay.</p><h2>Cylinder Seals</h2><p>Museums around the world display small stone cylinders called cylinder seals. These amazing artifacts were carved with pictures and then rolled across wet clay to make prints. Many seals show triangular patterns representing mountains, stars, and divine symbols connected to Enlil. Some seals picture Enlil himself wearing a horned crown with triangular points, showing his status as king of the gods. Mesopotamian families used these seals like signatures on important documents. The triangular designs weren't just decorative—they connected everyday business to the divine world that Enlil ruled.</p><h2>Decorative Pottery and Jewelry</h2><p>Archaeologists have discovered pottery bowls, jars, and jewelry decorated with repeating triangular patterns. These items, found in museums worldwide, show how triangles appeared in daily Mesopotamian life. Potters painted rows of triangles around the rims of bowls used for meals. Jewelry makers created necklaces with triangular beads. These geometric patterns may have served as protective symbols, asking Enlil to guard families from storms and bring good harvests.</p><h2>Connecting Past to Present</h2><p>When we study these ancient artifacts, we discover that triangles were everywhere in Mesopotamian culture. From massive temple buildings to tiny marks in clay, triangles helped people express their beliefs about Enlil and the divine world. These shapes were both practical and sacred, appearing in writing, architecture, art, and everyday objects. Today, when we see these treasures in museums, we can still recognize the triangular shapes that connected ancient people to their powerful god of wind and sky.</p><p>---</p>
+<h2>Section 4: 5-Layer Geometric Decomposition</h2><h1>Understanding Triangles Through Five Layers</h1><p>When we look at a triangle, we might think we see something simple—just three lines meeting at three corners. But ancient Mesopotamians like the priests of Enlil knew that triangles held many secrets. Just as Enlil ruled the air between earth and sky, triangles exist in layers of understanding, each one revealing more about this powerful shape. Let's explore triangles the way ancient mathematicians did, peeling back layer after layer to discover their hidden wisdom.</p><h2>Layer 1: What Our Eyes Can See</h2><p>The first layer is the easiest—it's what anyone can spot right away when they look at a triangle. A triangle has three straight sides. These sides connect to make three corners, which mathematicians call vertices. The triangle also has three angles, which are the spaces where two sides meet at each corner.</p><p>Imagine you're a young student in ancient Mesopotamia, learning about shapes by looking at the ziggurats—the massive temple towers built to honor gods like Enlil. If you looked at the side of a ziggurat from far away, you might see a triangle shape. The base would be one side, and the two sloping edges going up to the point would be the other two sides.</p><p>When we describe what we see, we can use simple words. We might say, "This triangle is pointy at the top" or "This triangle has a flat, wide bottom." We can trace our fingers along the edges and count: one side, two sides, three sides. We can touch each corner and count: one corner, two corners, three corners. This is the foundation—knowing what makes a triangle a triangle and not a square or a circle.</p><p>In Mesopotamian art, triangles appeared everywhere. The pointed beards of kings and gods were often shaped like triangles. The decorative patterns on clay tablets sometimes used triangles arranged in rows. Even the wedge-shaped marks of cuneiform writing—the world's first writing system—were made up of tiny triangular impressions pressed into soft clay.</p><h2>Layer 2: Comparing and Sorting Triangles</h2><p>Once we understand what a triangle is, we can start noticing that not all triangles look the same. This is the second layer—learning to compare triangles and sort them into groups based on what we observe.</p><p>Some triangles have all three sides the same length. We call these equilateral triangles, and they were very special to ancient peoples because they showed perfect balance. Imagine three priests standing in a circle, each exactly the same distance from the others—they would form an equilateral triangle.</p><p>Other triangles have two sides that match and one side that's different. These are called isosceles triangles. Picture the front of a Mesopotamian temple with two walls of equal height sloping up to meet at a point in the center—that's an isosceles triangle. The ancient builders used this shape often because it felt stable and holy.</p><p>Then there are triangles where all three sides have different lengths. We call these scalene triangles. They might seem less orderly, but they appear in nature all the time. If you looked at three stars in the night sky that ancient Mesopotamian astronomers studied, they might form a scalene triangle.</p><p>We can also sort triangles by their angles. Some triangles have one very wide angle that looks like it's opening up—we call these obtuse triangles. Some have all narrow angles—these are acute triangles. And some have one perfect square corner, called a right angle, making them right triangles. Right triangles were especially important to builders because that square corner helped them make walls stand up straight and true.</p><h2>Layer 3: Measuring and Recording</h2><p>The third layer takes us deeper into how the ancient Mesopotamians actually worked with triangles. They didn't just look at shapes—they measured them carefully and wrote down what they found.</p><p>To measure a triangle, we need to know the length of each side. Ancient Mesopotamians used cubits (the length from your elbow to your fingertip) and other body-based measurements. They would stretch a rope along each side of a triangle and mark the measurements. When building ziggurats or planning irrigation canals, these measurements had to be exact.</p><p>The angles in a triangle are just as important as the sides. Here's an amazing secret the Mesopotamians discovered: if you measure all three angles in any triangle and add them together, you always get the same total. Every single triangle, no matter its shape or size, has angles that add up to 180 degrees. This is like a magic rule that never changes. Imagine if Enlil decreed that every family in a city must contribute the same total amount of grain—some might give more barley, some more wheat, but the total would always equal the same. That's how triangle angles work.</p><p>Ancient scribes recorded triangle measurements on clay tablets. They created tables showing different triangles and their properties. Some tablets that archaeologists have found show that Mesopotamian mathematicians understood very complicated triangle relationships thousands of years ago. They used this knowledge to survey land, design buildings, and even study the movements of stars and planets.</p><h2>Layer 4: Discovering Symmetry and Patterns</h2><p>Now we reach the fourth layer, where we explore the beautiful patterns hidden inside triangles. This is where mathematics starts to feel like art, and where the connection to Enlil's divine order becomes clear.</p><p>Symmetry means that one half of something matches the other half, like a reflection in water. Some triangles have symmetry and some don't. An equilateral triangle has three lines of symmetry—you could fold it three different ways and both halves would match perfectly. An isosceles triangle has one line of symmetry running from its point down to the middle of its base. A scalene triangle usually has no symmetry at all.</p><p>The ancient Mesopotamians created incredible patterns using triangles. They would arrange many triangles together to make stars, flowers, and other designs. If you place six equilateral triangles around a central point, all meeting at their corners, you create a hexagon—a six-sided shape. This pattern appears in nature in honeycombs, and ancient artists used it to decorate palace walls and temple floors.</p><p>Inside every triangle, there are special points where important lines meet. If you draw a line from each corner to the middle of the opposite side, all three lines meet at one point called the centroid. This is the triangle's perfect balance point. If you cut a triangle out of clay and tried to balance it on your finger, it would balance right at the centroid. Ancient builders understood this when they planned how to support the weight of massive structures.</p><p>Another fascinating pattern involves drawing circles with triangles. You can draw a circle that touches all three corners of any triangle. You can also draw a circle inside any triangle that just touches all three sides. These circles have special relationships with the triangle's measurements, and Mesopotamian mathematicians studied these relationships carefully.</p><h2>Layer 5: Mathematical Relationships and Construction</h2><p>The fifth and deepest layer reveals the mathematical relationships that connect different parts of a triangle. This is advanced knowledge that ancient master builders and priests would have studied for years.</p><p>When we know certain information about a triangle, we can figure out other information using mathematical rules. For example, if we know the length of all three sides, we can calculate the size of all the angles. If we know two angles, we can figure out the third angle by subtracting from 180 degrees.</p><p>For right triangles—those with one square corner—the ancient Mesopotamians discovered an incredible relationship between the sides. The two sides that form the right angle have a special mathematical connection with the longest side (called the hypotenuse). If you make a square using each side as the edge, the area of the two smaller squares added together exactly equals the area of the largest square. This is called the Pythagorean theorem, though Mesopotamians knew about it long before Pythagoras was born!</p><p>Construction of perfect triangles required special tools and techniques. To make an equilateral triangle, ancient builders would use a rope or string as a compass. They'd mark a line for the base, then measure the exact length of that line with their rope. Keeping the rope that same length, they'd swing it from each end of the base line to find where the arcs crossed above—that crossing point would be the triangle's top corner.</p><p>To construct a right triangle, builders used the 3-4-5 method. They would measure a rope with 12 equal segments marked on it. Forming this rope into a triangle with sides of 3, 4, and 5 segments always created a perfect right angle. This simple but brilliant technique helped them build walls that stood perfectly upright, just as Enlil's temples had to rise straight toward the heavens.</p><p>Understanding these five layers transforms how we see triangles. What begins as a simple three-sided shape reveals itself as a gateway to mathematics, art, construction, and even spiritual understanding. The ancient Mesopotamians saw triangles not just as shapes, but as expressions of cosmic order—the same order that Enlil maintained in the universe.</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h1>Creating Your Own Enlil Triangle Ziggurat</h1><p>Today, you'll become an ancient Mesopotamian artist! Just like the craftspeople who decorated temples for Enlil thousands of years ago, you'll create beautiful artwork using triangles. The Mesopotamians believed that Enlil, the god of wind and storms, lived high above the earth. They built massive step pyramids called ziggurats to reach closer to him. These amazing structures were covered with geometric patterns, especially triangles!</p><h2>Materials You'll Need</h2><p>Gather these simple supplies before you begin:</p><ul><li>White construction paper or cardstock (one sheet per student)</li>
+<li>Brown, tan, and gold colored paper</li>
+<li>Scissors (safety scissors work great)</li>
+<li>Glue sticks</li>
+<li>Rulers</li>
+<li>Pencils</li>
+<li>Blue markers or crayons</li>
+<li>Optional: gold or silver markers for decoration</li>
+<li>Optional: small pieces of aluminum foil</li></ul><h2>Step-by-Step Instructions</h2><strong>Step 1: Create Your Ziggurat Base (10 minutes)</strong><p>Start by cutting triangles from your brown and tan paper. You'll need triangles of different sizes. Use your ruler to help make straight edges. Cut at least 15-20 triangles. Remember, triangles have three sides and three corners! Some should be big (about as wide as your hand), some medium (about as wide as three fingers), and some small (about as wide as one finger).</p><p>The ancient Mesopotamians used mud bricks to build their ziggurats. Your triangles will represent the geometric patterns they carved and painted on these bricks.</p><strong>Step 2: Design Your Triangle Mountain (15 minutes)</strong><p>On your white paper, use a pencil to lightly draw the outline of a ziggurat. It should look like a mountain made of steps. Start with a wide rectangle at the bottom. Then draw a slightly smaller rectangle on top of it. Add one or two more rectangles, each one a little smaller than the one below. The top should be the smallest part—that's where Enlil's temple would sit!</p><p>Ancient ziggurats had anywhere from three to seven levels. Choose how many levels your ziggurat will have.</p><strong>Step 3: Add Your Triangle Patterns (20 minutes)</strong><p>Now comes the creative part! Arrange your cut triangles on each level of your ziggurat before gluing them down. The Mesopotamians loved repeating patterns. Here are some pattern ideas inspired by their art:</p><ul><li><strong>Mountain Pattern</strong>: Point all triangles upward, like little mountains reaching toward the sky where Enlil lives</li>
+<li><strong>Alternating Pattern</strong>: Point one triangle up, then one down, then one up again</li>
+<li><strong>Border Pattern</strong>: Line up small triangles along the edges of each level</li>
+<li><strong>Storm Pattern</strong>: Scatter triangles in different directions, like wind blowing during one of Enlil's storms</li></ul><p>Try different arrangements until you find one you love. Then carefully glue each triangle in place. Make sure the glue covers all three corners so your triangles stay flat.</p><strong>Step 4: Add the Sky and Wind Details (10 minutes)</strong><p>Use your blue markers or crayons to create the sky around your ziggurat. The Mesopotamians believed Enlil controlled the winds and storms. You can show this by:</p><ul><li>Drawing swirling wind patterns using curved lines</li>
+<li>Adding small triangular shapes to represent rain</li>
+<li>Creating zigzag lines for lightning bolts (zigzags are made of tiny triangles!)</li>
+<li>Drawing clouds with triangular points</li></ul><strong>Step 5: Final Decorative Touches (10 minutes)</strong><p>If you have gold or silver markers, add special details to your ziggurat. Draw:</p><ul><li>Small triangle patterns along the edges of each level</li>
+<li>A special triangular doorway at the bottom where priests would enter</li>
+<li>Stars in the sky (stars have triangle points!)</li>
+<li>If you have aluminum foil, cut tiny triangles and glue them on to make your ziggurat shine like it's covered in precious metals</li></ul><p>The ancient Mesopotamians often decorated important buildings with materials that caught the light, believing it would please the gods.</p><h2>Making It Symmetrical</h2><p>Symmetry was very important in Mesopotamian art. Symmetry means one side matches the other side, like a mirror image. Look at your ziggurat. If you drew a line down the middle, would both sides look the same? Try to make your triangle patterns symmetrical. If you put three triangles on the left side of a level, put three triangles on the right side too. This balance made the Mesopotamians feel that their buildings were perfect homes for powerful gods like Enlil.</p><h2>Reflection Questions</h2><p>When your artwork is complete, think about these questions. Share your answers with a partner or write them in your journal:</p><p>1. How many triangles did you use in your artwork? Can you count them all?</p><p>2. What patterns did you create with your triangles? Are any of your patterns symmetrical?</p><p>3. Why do you think the ancient Mesopotamians used so many geometric shapes in their buildings and art?</p><p>4. If you were building a real ziggurat for Enlil, the god of wind and storms, what other triangle patterns might you add?</p><p>5. How does your ziggurat artwork show that it reaches up toward the sky?</p><p>6. What was the most challenging part of creating triangle patterns?</p><h2>Display and Share</h2><p>Hang your Enlil Triangle Ziggurat where everyone can admire it! Look at your classmates' artwork. Notice how everyone used the same shape—triangles—but created completely different designs. This shows how one simple geometric shape can become amazing art. The ancient Mesopotamians understood this thousands of years ago, and now you do too!</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

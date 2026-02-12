@@ -1,0 +1,141 @@
+{
+  "lesson_id": "G3-1B",
+  "downloads": {
+    "meso_G3_1B-IMG-PHO_sun_bright.jpg": {
+      "status": "success",
+      "url": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=2400",
+      "url_index": 0,
+      "filepath": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_sun_bright.jpg",
+      "size_kb": 717.6884765625,
+      "dimensions": [
+        2400,
+        1526
+      ],
+      "format": "JPEG",
+      "checksum": "e5dc8bc8b196921af4ad976d63074fd6",
+      "alt_text": "Bright golden sun in clear blue sky",
+      "timestamp": "2025-11-04T13:36:18.834713"
+    },
+    "meso_G3_1B-IMG-PHO_wheel_round.jpg": {
+      "status": "success",
+      "url": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=2400",
+      "url_index": 0,
+      "filepath": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_wheel_round.jpg",
+      "size_kb": 559.7119140625,
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "format": "JPEG",
+      "checksum": "32a810ac2a817b903d360f94d63e0630",
+      "alt_text": "Round wheel showing circular shape",
+      "timestamp": "2025-11-04T13:36:19.527430"
+    },
+    "meso_G3_1B-IMG-PHO_drum_circle.jpg": {
+      "status": "success",
+      "url": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=2400",
+      "url_index": 0,
+      "filepath": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_drum_circle.jpg",
+      "size_kb": 1174.8974609375,
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "format": "JPEG",
+      "checksum": "4a3755520721e06d5f7b1be4bae219ca",
+      "alt_text": "Round drum showing circular shape",
+      "timestamp": "2025-11-04T13:36:20.230766"
+    },
+    "meso_G3_1B-IMG-ART_sun_disc_ancient.jpg": {
+      "status": "success",
+      "url": "https://images.metmuseum.org/CRDImages/an/original/DT860.jpg",
+      "url_index": 0,
+      "filepath": "meso_images/G3-1B/meso_G3_1B-IMG-ART_sun_disc_ancient.jpg",
+      "size_kb": 1698.435546875,
+      "dimensions": [
+        3811,
+        1950
+      ],
+      "format": "JPEG",
+      "checksum": "bc534214071fa9d4d342093393ad80ec",
+      "alt_text": "Ancient Mesopotamian sun disc with center dot motif",
+      "timestamp": "2025-11-04T13:36:23.218761"
+    }
+  },
+  "overlays": {
+    "meso_G3_1B-OVL-center_CENTER_Dot.png": {
+      "status": "success",
+      "base_image": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_plate_top.jpg",
+      "overlay_type": "center_dot",
+      "filepath": "meso_images/G3-1B/meso_G3_1B-OVL-center_CENTER_Dot.png",
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "timestamp": "2025-11-04T13:36:22.146244"
+    },
+    "meso_G3_1B-OVL-circle_outline.png": {
+      "status": "success",
+      "base_image": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_plate_top.jpg",
+      "overlay_type": "circle",
+      "filepath": "meso_images/G3-1B/meso_G3_1B-OVL-circle_outline.png",
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "timestamp": "2025-11-04T13:36:22.256070"
+    },
+    "meso_G3_1B-OVL-line_LINE_Half.png": {
+      "status": "success",
+      "base_image": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_plate_top.jpg",
+      "overlay_type": "halves",
+      "filepath": "meso_images/G3-1B/meso_G3_1B-OVL-line_LINE_Half.png",
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "timestamp": "2025-11-04T13:36:22.333769"
+    },
+    "meso_G3_1B-OVL-line_LINE_Quarter.png": {
+      "status": "success",
+      "base_image": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_plate_top.jpg",
+      "overlay_type": "fourths",
+      "filepath": "meso_images/G3-1B/meso_G3_1B-OVL-line_LINE_Quarter.png",
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "timestamp": "2025-11-04T13:36:22.410948"
+    },
+    "meso_G3_1B-OVL-measure_radius.png": {
+      "status": "success",
+      "base_image": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_plate_top.jpg",
+      "overlay_type": "radius",
+      "filepath": "meso_images/G3-1B/meso_G3_1B-OVL-measure_radius.png",
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "timestamp": "2025-11-04T13:36:22.487863"
+    },
+    "meso_G3_1B-OVL-measure_diameter.png": {
+      "status": "success",
+      "base_image": "meso_images/G3-1B/meso_G3_1B-IMG-PHO_plate_top.jpg",
+      "overlay_type": "diameter",
+      "filepath": "meso_images/G3-1B/meso_G3_1B-OVL-measure_diameter.png",
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "timestamp": "2025-11-04T13:36:22.565089"
+    }
+  },
+  "errors": [],
+  "timestamp": "2025-11-04T13:36:23.840487",
+  "summary": {
+    "total_downloads": 4,
+    "successful_downloads": 4,
+    "total_overlays": 6,
+    "total_errors": 0
+  }
+}

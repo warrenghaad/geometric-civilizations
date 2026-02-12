@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G4-5A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G4-5A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G4-5A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Composite Shapes in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Composite Shapes (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Enki &amp; Composite Shapes</h1>
+<strong>Grade 4 Geometry Lesson</strong><strong>Lesson Code</strong>: G4-5A
+<strong>Deity</strong>: Enki
+<strong>Geometric Element</strong>: Composite Shapes
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe Composite Shapes in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Composite Shapes (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Enki's Story</h2><h1>A Play in Three Scenes</h1><strong>CHARACTERS:</strong>
+<ul><li>ENKI, the wise god of water, crafts, and creation</li>
+<li>NINMAH, goddess of the earth</li>
+<li>NARRATOR</li>
+<li>THREE CITIZENS of the city of Eridu</li></ul><strong>PROPS:</strong> Clay tablets, drawing materials, simple building blocks or shapes<p>---</p><h2>Scene One: The Problem in Eridu</h2><strong>NARRATOR:</strong> Long ago, in ancient Mesopotamia, the people of Eridu faced a great challenge. Their city needed new buildings—temples, homes, and workshops—but no one knew how to design them properly. Our story begins in Enki's underwater palace, the Abzu, where the god of wisdom and crafts is about to receive visitors.<em>(ENKI sits at a table covered with clay tablets, drawing patterns in the clay. THREE CITIZENS enter nervously.)</em><strong>CITIZEN 1:</strong> Great Enki, lord of wisdom! We come seeking your help.<strong>ENKI:</strong> <em>(looking up warmly)</em> Welcome, children of Eridu. What troubles you?<strong>CITIZEN 2:</strong> Our city grows larger every day. We need to build new structures, but we don't know how to plan them. Every building we try to design looks wrong!<strong>CITIZEN 3:</strong> We can make simple shapes—squares and triangles and circles. But real buildings need to be more complex!<strong>ENKI:</strong> <em>(standing, eyes twinkling)</em> Ah! You have discovered an important truth. The world is not made of simple shapes alone. Let me show you something wonderful.<em>(ENKI gestures, and the stage lights shimmer like water.)</em><p>---</p><h2>Scene Two: Enki's Lesson</h2><strong>NARRATOR:</strong> Enki, being the cleverest of all the gods, knew exactly how to help. He had used this knowledge himself when creating many things in the world.<strong>ENKI:</strong> Tell me, what shapes do you know how to make?<strong>CITIZEN 1:</strong> We can make rectangles for walls.<strong>CITIZEN 2:</strong> And triangles for roofs!<strong>CITIZEN 3:</strong> And semicircles for doorways.<strong>ENKI:</strong> Excellent! Now, watch closely. <em>(He picks up clay tablets and arranges them.)</em> What if I told you that the most magnificent buildings are not made from one shape, but from many shapes joined together?<strong>NINMAH:</strong> <em>(entering)</em> Are you teaching them about composite shapes, wise Enki?<strong>ENKI:</strong> Indeed, sister! A composite shape is like a family of shapes living together in harmony. Just as our city has many people working together, these shapes work together to create something greater.<em>(ENKI begins drawing on a large clay tablet, speaking as he draws.)</em><strong>ENKI:</strong> Look here. I take a rectangle—this will be the main hall of a temple. Now I add a triangle on top—there's your roof! But wait, we're not finished.<strong>CITIZEN 2:</strong> It already looks like a building!<strong>ENKI:</strong> But a temple needs more. Watch! I add another rectangle here for a side chamber. And here, a semicircle for a grand entrance. See? Four simple shapes have become one composite shape—a complete temple!<strong>CITIZEN 3:</strong> <em>(excited)</em> It's like a puzzle! Each piece is simple, but together they make something amazing!<strong>NINMAH:</strong> Enki used this very knowledge when he helped create the world. The rivers are not simple lines—they're made of many curves joining together. Mountains are triangles and rectangles combined.<strong>ENKI:</strong> <em>(nodding)</em> Everything complex begins with simple parts. This is one of the great secrets of creation!<p>---</p><h2>Scene Three: The Gift of Knowledge</h2><strong>NARRATOR:</strong> The citizens of Eridu were amazed by what they learned. But Enki had one more important lesson to share.<strong>CITIZEN 1:</strong> Lord Enki, how do we know which shapes to combine?<strong>ENKI:</strong> Ah, the most important question of all! You must think about what you need. A house needs walls to stand in—rectangles. It needs a roof to keep rain out—triangles. It needs a door to welcome people—rectangles or arches.<strong>CITIZEN 2:</strong> So we choose shapes based on their purpose?<strong>ENKI:</strong> Exactly! Form follows function. This is the wisdom I give to you. When you combine shapes with purpose and thought, you create not just buildings, but art. Not just structures, but homes.<strong>NINMAH:</strong> And remember—you can break down any complex shape into simpler ones. If you see something complicated, look for the simple shapes hiding inside it.<strong>ENKI:</strong> <em>(placing his hands on the clay tablets)</em> Take this knowledge back to Eridu. Build your city with wisdom. Combine shapes with purpose. And know that when you create with understanding, you honor the gods and serve your people.<strong>ALL CITIZENS:</strong> <em>(bowing)</em> Thank you, wise Enki! Thank you, gracious Ninmah!<strong>NARRATOR:</strong> And so the people of Eridu returned home with Enki's gift of knowledge. They built magnificent temples, sturdy homes, and beautiful workshops—all using composite shapes. And to this day, we still use Enki's wisdom when we build and create.<em>(All characters bow as the lights fade.)</em><strong>THE END</strong><p>---</p>
+<h2>Section 3: Ancient Art and Artifacts</h2><h1>Ancient Art and Artifacts</h1><p>The ancient Mesopotamians were master artists and craftspeople who created beautiful objects decorated with composite shapes. These shapes helped them tell stories about their gods, especially Enki, the wise god of water and knowledge.</p><h2>The Standard of Ur</h2><p>One of the most famous Mesopotamian artifacts is the Standard of Ur, which you can see today at the British Museum in London. This wooden box, decorated around 2600 BCE, shows scenes of war and peace using tiny pieces of shell, red limestone, and blue lapis lazuli stone. The artists created composite shapes everywhere! Look closely and you'll find rectangles combined with triangles to show chariots, circles joined with rectangles to create wheels, and trapezoids connected to rectangles to form the bodies of people and animals. The Mesopotamians used these composite shapes to tell stories about their daily life, including celebrations where they thanked Enki for bringing water to their crops.</p><h2>Cylinder Seals of Enki</h2><p>Mesopotamian people carried small stone cylinders called cylinder seals, which they rolled across wet clay to create their personal signature. The Metropolitan Museum of Art in New York has a wonderful collection of these seals. Many show Enki sitting on his throne, with streams of water flowing from his shoulders. Artists created Enki's throne by combining rectangles and triangles. His crown was made from triangles stacked on top of rectangles. The flowing water was shown using curved shapes connected to straight lines, forming composite shapes that looked like rivers. Fish swimming in these waters were made by combining ovals with triangles for tails and fins. People used these seals on clay tablets to mark their property, sign contracts, and seal letters—similar to how we use signatures today.</p><h2>The Ram in the Thicket</h2><p>At the British Museum, you can see an incredible statue called "The Ram in the Thicket," discovered in the ancient city of Ur. This 4,500-year-old statue shows a goat standing on its back legs, reaching up to eat leaves from a tree. The artist combined many shapes to create this masterpiece. The goat's body is made from cylinders and rectangles covered in white shell. Its horns spiral upward, creating composite shapes from curved lines and triangular points. The tree uses rectangles for the trunk and branches, with flower shapes made by combining circles and triangles. This statue might have been used in temple ceremonies honoring Enki, who protected animals and plants.</p><h2>Temple Decorations and Daily Life</h2><p>The Louvre Museum in Paris displays colorful glazed bricks from Mesopotamian temples. These bricks show composite shapes forming palmette designs—decorative palm tree patterns. Artists combined semicircles, triangles, and curved shapes to create these beautiful patterns. Temples dedicated to Enki often featured water symbols made from wavy lines combined with straight geometric shapes.</p><p>In everyday life, Mesopotamian people saw composite shapes all around them. Their mud-brick houses were built using rectangles. Farmers used tools with handles (cylinders) attached to blades (rectangles and triangles). Potter's wheels created circular vessels with rectangular bases. When people wrote on clay tablets using cuneiform writing, they combined wedge shapes (triangles) in different arrangements to form words and numbers.</p><p>These ancient artifacts show us that the Mesopotamians understood how to break complex images into simple shapes and then combine them creatively. They used composite shapes not just for art, but to record information, conduct business, worship their gods, and express their ideas about the world. When we study these artifacts today, we're learning the same geometric principles that helped one of the world's first civilizations thrive thousands of years ago.</p><p>---</p>
+<h2>Section 4: 5-Layer Geometric Decomposition</h2><h1>Layer 1: What Your Eyes See First</h1><p>When you look at ancient Mesopotamian artifacts showing Enki, the god of wisdom and water, you'll notice something fascinating: the shapes aren't simple circles, squares, or triangles. Instead, they're composite shapes—combinations of multiple geometric forms working together to create something more complex and meaningful.</p><p>Imagine you're standing in a museum, looking at a clay tablet from ancient Mesopotamia. You see Enki depicted with flowing streams of water, fish swimming around him, and architectural elements from his temple. At first glance, these images might seem like random drawings, but they're actually carefully constructed composite shapes. A composite shape is like a puzzle where different geometric pieces fit together to make one complete picture.</p><p>Let's start with the most obvious composite shape in Enki's imagery: the temple facade. When ancient Mesopotamian artists carved or molded Enki's sacred temple, they combined rectangles for doorways, triangles for rooflines, and trapezoids for the stepped ziggurat levels. Your first job as a geometry detective is simply to identify these basic shapes. Can you spot the rectangle? There it is—the main doorway. Can you find the triangle? Look up at the peaked roof. Each shape is distinct, but together they create the composite form of a temple.</p><p>The flowing water that Enki controls presents another composite shape. Ancient artists showed water using curved lines that create wave patterns. These waves are made from semicircles placed side by side, sometimes overlapping. If you trace your finger along one wave, you're following a curved path that's actually part of a circle. Multiple semicircles arranged in a row create the composite shape of flowing water—a pattern you can see, count, and describe.</p><h2>Layer 2: Counting and Measuring the Parts</h2><p>Now that you've identified the basic shapes, let's dig deeper by counting and measuring. This is where geometry becomes more precise. When mathematicians study composite shapes, they don't just say "I see rectangles and triangles." They ask: How many? How big? How do they connect?</p><p>Take Enki's temple facade again. Let's measure it systematically. If the main rectangular doorway is 4 units wide and 6 units tall, we can calculate its area: 4 × 6 = 24 square units. But that's just one part of the composite shape. Above the doorway sits a triangular pediment. If the triangle's base matches the doorway width (4 units) and its height is 2 units, the triangle's area is ½ × 4 × 2 = 4 square units. </p><p>Here's where composite shapes get interesting: to find the total area of the temple's front face, you add the areas of all the individual shapes together. The doorway (24 square units) plus the triangular roof (4 square units) equals 28 square units total. This is called the additive property of composite shapes—the whole equals the sum of its parts.</p><p>But Mesopotamian artists didn't stop there. They often created composite shapes through subtraction too. Imagine a large rectangular wall that measures 10 units wide and 8 units tall, giving it an area of 80 square units. Now the artist carves out that doorway we measured earlier (24 square units). The remaining wall area is 80 – 24 = 56 square units. This is a composite shape created by removing one shape from another—a technique ancient builders used constantly.</p><p>The fish symbols surrounding Enki provide perfect counting practice. In many artifacts, you'll see exactly seven fish arranged in a pattern. Each fish is itself a composite shape: an oval body (approximately 3 units long and 2 units wide) plus a triangular tail (base 1 unit, height 1 unit). If we calculate one fish's approximate area and multiply by seven, we can determine how much space the entire fish pattern occupies in the artwork.</p><h2>Layer 3: Discovering Symmetry and Pattern</h2><p>Ancient Mesopotamian artists were masters of symmetry, and their depictions of Enki demonstrate this beautifully. Symmetry means that one half of a shape mirrors the other half. When you understand symmetry in composite shapes, you begin to see the mathematical thinking behind ancient art.</p><p>Enki's temple shows vertical line symmetry—also called reflective symmetry. If you drew an imaginary line straight down the center of the temple facade, the left side would mirror the right side almost perfectly. The doorway is centered. If there are two windows, one appears on each side at the same height and distance from the center. The triangular roof peaks exactly at the middle. This isn't accidental; it's intentional geometric design.</p><p>But here's something more sophisticated: the composite shapes in Enki's imagery often display rotational symmetry too. Look at the water symbols. Ancient artists created rosette patterns—flower-like designs where water streams radiate outward from a central point. If you could rotate this pattern 90 degrees (a quarter turn), it would look identical. Rotate it another 90 degrees, and it matches again. This four-fold rotational symmetry appears throughout Mesopotamian art.</p><p>The fish swimming around Enki demonstrate translational symmetry—a pattern that repeats by sliding in a specific direction. Imagine seven fish arranged in a curved line, each fish exactly 2 units away from the next. This creates a predictable pattern: fish, space, fish, space, fish, space. You could extend this pattern infinitely by following the same rule. Ancient artists used this principle to create borders and decorative elements.</p><p>Symmetry helps us understand composite shapes because it reveals the underlying structure. When you identify the line of symmetry in a composite shape, you only need to measure and calculate half the shape—then double your answer for the complete measurement. This mathematical shortcut is exactly what ancient builders used when planning their constructions.</p><h2>Layer 4: Understanding Geometric Relationships</h2><p>Now we're moving into more sophisticated geometric thinking. At this layer, you're not just seeing shapes and measuring them—you're understanding how they relate to each other mathematically.</p><p>In Enki's temple architecture, the ancient Mesopotamians used proportional relationships. Proportion means that shapes maintain specific size relationships with each other. For example, if the width of the doorway is always exactly half the width of the entire temple front, that's a 1:2 proportion. If the height of each ziggurat step is one-third the height of the step below it, that's a 3:1 proportion.</p><p>These proportional relationships create visual harmony—the artwork looks "right" to our eyes because the mathematics is balanced. The ancient Mesopotamians discovered that certain proportions appeared throughout nature, and they incorporated these same proportions into their sacred art and architecture.</p><p>Let's examine the composite shape of Enki's crown, often depicted as a horned headdress. The crown combines several geometric elements: a rectangular base band that circles the head, plus four curved horn shapes (like stretched semicircles) projecting upward. The relationship between these parts follows specific rules. Each horn might be exactly twice as tall as the base band is wide. The space between horns might equal the width of one horn. These mathematical relationships ensure that the crown looks balanced and proportional.</p><p>The water streams flowing from Enki's hands demonstrate angular relationships. When two streams diverge, they create an angle. If one stream flows straight down (90 degrees from horizontal) and another flows at 45 degrees, the angle between them is 45 degrees. Ancient artists carefully controlled these angles to create dynamic, flowing compositions. Multiple water streams might radiate outward at equal angles—if four streams divide a semicircle, each occupies 45 degrees of space (180 ÷ 4 = 45).</p><p>Congruence is another crucial relationship. Congruent shapes are identical in size and shape, even if they're positioned differently. In Enki imagery, the fish symbols are often congruent—each fish is the same size and shape as every other fish, though they might face different directions or be positioned in different locations. This repetition of congruent shapes within a larger composite design creates unity and rhythm.</p><h2>Layer 5: Complex Mathematical Integration</h2><p>At the deepest layer of geometric decomposition, we see how all these elements—basic shapes, measurements, symmetry, and relationships—integrate into sophisticated mathematical systems that the ancient Mesopotamians used for both artistic and practical purposes.</p><p>The complete temple complex dedicated to Enki represents an advanced composite shape requiring complex calculations. Imagine the ground plan: a rectangular outer courtyard (perhaps 50 × 40 units) containing a smaller rectangular inner sanctuary (20 × 15 units), with triangular buttresses projecting from the walls at regular intervals. To calculate the total area, you must add the courtyard area, subtract the inner sanctuary area, then add back the areas of the triangular projections. This multi-step problem requires careful organization and systematic thinking.</p><p>Ancient builders used a concept we call tessellation—covering a surface with repeated shapes that fit together without gaps or overlaps. The floor tiles in Enki's temple might use square tiles arranged in a grid, or more complex patterns combining squares and triangles. Each individual tile is a simple shape, but the overall floor pattern is a massive composite shape requiring precise calculation to determine how many tiles are needed.</p><p>The ziggurat structure itself demonstrates three-dimensional composite shapes. Each level is a rectangular prism—a three-dimensional shape with length, width, and height. The complete ziggurat is a composite of multiple rectangular prisms, each smaller than the one below, creating a stepped pyramid. To calculate the total volume of material needed to build this structure, ancient engineers had to find the volume of each level (length × width × height) and add them together.</p><p>Finally, consider the proportional scaling that allowed ancient artists to create both tiny cylinder seals and massive temple reliefs using the same designs. If a cylinder seal shows Enki's temple as 2 units wide, but the actual temple wall carving needs to be 200 units wide, every measurement must be multiplied by 100. This scaling factor maintains all the proportional relationships while changing the absolute size—a sophisticated mathematical operation that ensures the composite shape looks identical at any scale.</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h1>Creating Your Own Enki Water Temple Design</h1><p>Now it's time to become an ancient Mesopotamian artist! You'll create a beautiful composite shape artwork inspired by Enki's water temples. Just like the skilled craftspeople who decorated ziggurats and palaces thousands of years ago, you'll combine basic shapes to make complex, meaningful designs.</p><h2>Materials You'll Need</h2><p>Gather these simple materials before you begin:</p><ul><li>White construction paper or cardstock (12" x 18")</li>
+<li>Pencil and eraser</li>
+<li>Ruler</li>
+<li>Colored pencils, markers, or crayons in blues, greens, golds, and earth tones</li>
+<li>Optional: blue tissue paper scraps for water effects</li>
+<li>Optional: glue stick</li>
+<li>Optional: gold or silver markers for special details</li></ul><h2>Understanding Mesopotamian Design Elements</h2><p>Before you start creating, let's think like ancient Mesopotamian artists. They loved using patterns that told stories about their gods and the natural world. For Enki, the god of water and wisdom, artists often included:</p><ul><li><strong>Wave patterns</strong> made from repeating curved lines and semicircles</li>
+<li><strong>Fish shapes</strong> created from triangles and ovals combined together</li>
+<li><strong>Geometric borders</strong> using rectangles, squares, and triangles arranged in rows</li>
+<li><strong>Stepped designs</strong> like ziggurats, made from stacked rectangles of different sizes</li>
+<li><strong>Symmetrical layouts</strong> where both sides mirror each other perfectly</li></ul><p>These ancient artists understood that composite shapes—shapes made by combining or dividing basic shapes—could create powerful symbols and beautiful decorations.</p><h2>Step-by-Step Instructions</h2><strong>Step 1: Plan Your Temple Layout (5 minutes)</strong><p>Turn your paper horizontally (landscape orientation). Lightly sketch a large rectangle in the center of your page, leaving about two inches of space around all edges. This rectangle represents the main wall of Enki's water temple. Inside this space, you'll create your composite shape design.</p><strong>Step 2: Create the Central Enki Symbol (10 minutes)</strong><p>In the middle of your rectangle, design a special symbol for Enki using composite shapes:</p><ul><li>Draw a large hexagon (six-sided shape) in the center</li>
+<li>Inside the hexagon, add a four-pointed star by overlapping two diamonds</li>
+<li>Between the star points, draw four small semicircles pointing outward—these represent water flowing in all directions</li>
+<li>You've just created a complex composite shape from hexagons, diamonds, and semicircles!</li></ul><strong>Step 3: Add Symmetrical Water Waves (10 minutes)</strong><p>On both sides of your central Enki symbol, create matching wave patterns:</p><ul><li>Draw three wavy horizontal lines flowing from each side of the hexagon</li>
+<li>Make each wave using connected semicircles—remember, semicircles are circles cut in half</li>
+<li>Make sure the waves on the left side mirror the waves on the right side</li>
+<li>Add small triangles pointing downward beneath some waves to represent water drops</li></ul><strong>Step 4: Design the Temple Border (10 minutes)</strong><p>Ancient Mesopotamian buildings featured decorative borders. Create yours using composite shapes:</p><ul><li>Along the top edge of your main rectangle, draw a row of connected rectangles (like bricks)</li>
+<li>Below that, create a zigzag pattern using triangles placed point-to-point</li>
+<li>Along the bottom, make a pattern of squares, with each square divided diagonally into two triangles</li>
+<li>Use different colors for each triangle to create a checkerboard effect</li>
+<li>Add the same patterns to the left and right sides to frame your entire design</li></ul><strong>Step 5: Include Fish and Nature Elements (10 minutes)</strong><p>Enki was associated with rivers and the creatures living in them. Add fish using composite shapes:</p><ul><li>Draw 4-6 fish around your central design using this method: one triangle for the body, one smaller triangle for the tail, and semicircles for fins</li>
+<li>Add small circles for eyes</li>
+<li>Between the fish, draw water plants made from thin rectangles (stems) with oval leaves attached</li>
+<li>Arrange everything symmetrically so your design feels balanced</li></ul><strong>Step 6: Color Your Masterpiece (15 minutes)</strong><p>Now bring your temple design to life with color:</p><ul><li>Use different shades of blue for the water elements (waves, fish, background)</li>
+<li>Color the central Enki symbol with gold or yellow to make it stand out</li>
+<li>Use earth tones (browns, tans, oranges) for the border bricks</li>
+<li>Add green to the water plants</li>
+<li>Consider leaving some geometric shapes white to create contrast</li>
+<li>If you have tissue paper, tear small pieces and glue them over water areas for texture</li></ul><strong>Step 7: Add Final Details (5 minutes)</strong><p>Complete your artwork with special touches:</p><ul><li>Outline important shapes with a darker color or black marker</li>
+<li>Add small dots, lines, or patterns inside larger shapes</li>
+<li>Use gold or silver markers to add highlights to your central symbol</li>
+<li>Sign your name on the back like an ancient artist marking their work</li></ul><h2>Reflection Questions</h2><p>After completing your artwork, think about these questions and discuss them with a partner or write your answers in your math journal:</p><p>1. <strong>Composite Shape Discovery</strong>: How many different basic shapes can you identify in your finished artwork? Which composite shapes did you create by combining two or more basic shapes?</p><p>2. <strong>Symmetry Observation</strong>: Where did you use symmetry in your design? Why do you think ancient Mesopotamian artists valued symmetrical patterns?</p><p>3. <strong>Shape Choices</strong>: Which composite shapes were easiest to create? Which were most challenging? Why?</p><p>4. <strong>Cultural Connection</strong>: How does your artwork honor Enki and his connection to water and wisdom? What shapes did you choose to represent these ideas?</p><p>5. <strong>Pattern Recognition</strong>: If you continued your border patterns all the way around a real building, how would the shapes repeat? Can you describe the pattern using math words?</p><p>Display your Enki water temple design proudly! You've combined geometry, history, and art just like the talented craftspeople of ancient Mesopotamia.</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

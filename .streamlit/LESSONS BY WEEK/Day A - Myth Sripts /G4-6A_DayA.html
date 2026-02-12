@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G4-6A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G4-6A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G4-6A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Tessellation in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Tessellation (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Ninurta &amp; Tessellation</h1>
+<strong>Grade 4 Geometry Lesson</strong><strong>Lesson Code</strong>: G4-6A
+<strong>Deity</strong>: Ninurta
+<strong>Geometric Element</strong>: Tessellation
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe Tessellation in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Tessellation (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Ninurta's Story</h2><h1>A Play in One Act</h1><strong>CHARACTERS:</strong>
+<ul><li><strong>NINURTA</strong> (nin-OOR-tah): Mighty warrior god of Mesopotamia, protector of farmers</li>
+<li><strong>NISABA</strong> (nee-SAH-bah): Goddess of wisdom and writing</li>
+<li><strong>FARMER 1</strong>: A worried villager</li>
+<li><strong>FARMER 2</strong>: Another concerned villager</li>
+<li><strong>NARRATOR</strong>: Tells the story</li></ul><p>---</p><strong>SCENE: A village square in ancient Mesopotamia. The stage shows a cracked, dry field with broken irrigation channels. FARMER 1 and FARMER 2 stand looking at the ground, worried.</strong><strong>NARRATOR:</strong> Long ago, in the land between two great rivers, the people faced a terrible problem. Their fields were cracking and drying up. Water flowed away instead of reaching their crops. They needed help from the gods.<strong>FARMER 1:</strong> <em>(kneeling, looking at the cracked earth)</em> Our fields are breaking apart! The water runs through these cracks and disappears.<strong>FARMER 2:</strong> We've tried filling the gaps, but nothing works. Every piece we add leaves new spaces. We need Ninurta, the god who helps farmers!<strong>FARMER 1 and FARMER 2:</strong> <em>(raising hands to the sky)</em> Great Ninurta! Hear our call!<em>(Thunder sounds. NINURTA enters, wearing armor decorated with farming tools and carrying his mighty mace.)</em><strong>NINURTA:</strong> <em>(in a powerful voice)</em> I am Ninurta, warrior of the gods and friend to farmers! I have defeated dragons and monsters. What challenge do you bring me today?<strong>FARMER 2:</strong> <em>(bowing)</em> Mighty Ninurta, our fields crack and split. We cannot make the pieces fit together. Gaps remain, and our precious water escapes!<strong>NINURTA:</strong> <em>(examining the ground)</em> Hmm. I see your problem. You have tried to fill your fields with random shapes—circles here, irregular pieces there. No wonder gaps remain! This requires not just strength, but wisdom.<em>(NISABA enters, carrying a clay tablet and stylus.)</em><strong>NISABA:</strong> Did someone say wisdom? I am Nisaba, keeper of knowledge. Ninurta, even a mighty warrior needs a clever plan.<strong>NINURTA:</strong> <em>(smiling)</em> Well met, Nisaba! These farmers need fields that fit together perfectly, with no gaps for water to escape.<strong>NISABA:</strong> <em>(drawing on her tablet)</em> Then they need to understand the ancient secret of tessellation! Watch closely, everyone.<strong>NARRATOR:</strong> Tessellation is a special pattern where shapes fit together perfectly, covering a surface completely with no gaps and no overlaps.<strong>NISABA:</strong> <em>(showing her tablet to the farmers)</em> See these shapes? When we place them side by side, they fit together like a puzzle with no missing pieces.<strong>FARMER 1:</strong> But which shapes work this magic?<strong>NINURTA:</strong> <em>(drawing his mace and sketching in the dirt)</em> Observe! I'll show you with the power of three mighty shapes. First, the triangle!<em>(NINURTA draws triangles that fit together.)</em><strong>NINURTA:</strong> Triangles lock together like shields in battle formation. Six triangles meet at each point, leaving no weakness for water to escape!<strong>NISABA:</strong> Excellent! Now watch as I show you squares.<em>(NISABA draws on her tablet.)</em><strong>NISABA:</strong> Squares stack like the bricks in your city walls. Four squares meet at each corner, creating a strong, even pattern.<strong>FARMER 2:</strong> Amazing! Are there other shapes?<strong>NINURTA:</strong> <em>(drawing hexagons)</em> Yes! The hexagon—a six-sided shape. Look how they fit together like honeycomb in a bee's hive. Three hexagons meet at each point.<strong>NISABA:</strong> These three shapes—triangles, squares, and hexagons—are special. They can tessellate, covering a flat surface completely.<strong>FARMER 1:</strong> But why do only these shapes work?<strong>NISABA:</strong> <em>(drawing angles)</em> The secret lies in their corners, which we call angles. At each point where shapes meet, the angles must add up to exactly a full circle around that point.<strong>NINURTA:</strong> Think of it like warriors standing shoulder to shoulder. They must fit together perfectly to leave no gaps in the defensive line!<strong>FARMER 2:</strong> So we should shape our field sections as triangles, squares, or hexagons?<strong>NINURTA:</strong> Precisely! With these tessellating patterns, water will flow where you direct it, not escape through gaps.<strong>NISABA:</strong> The ancient builders of Mesopotamia used these patterns in their temples, palaces, and irrigation systems.<strong>NINURTA:</strong> <em>(raising his mace triumphantly)</em> Now go! Reshape your fields using tessellation. Your crops will thrive, and your civilization will flourish!<strong>FARMERS:</strong> <em>(bowing)</em> Thank you, mighty Ninurta! Thank you, wise Nisaba!<strong>NARRATOR:</strong> And so, the people learned the secret of tessellation from Ninurta and Nisaba. Their fields held water, their crops grew tall, and their knowledge passed down through generations.<em>(All characters freeze in a final tableau.)</em><strong>THE END</strong><p>---</p>
+<h2>Section 3: Ancient Art and Artifacts</h2><h1>Ancient Mesopotamian Treasures with Repeating Patterns</h1><p>When archaeologists discovered ancient Mesopotamian palaces and temples, they found incredible examples of tessellation everywhere! The people who lived between the Tigris and Euphrates rivers over 4,000 years ago were masters at creating repeating geometric patterns. Let's explore some amazing artifacts that show how they used tessellation in their art.</p><h2>The Standard of Ur</h2><p>One of the most famous Mesopotamian artifacts is the Standard of Ur, displayed at the British Museum in London. This wooden box from around 2600 BCE is decorated with thousands of tiny pieces of shell, red limestone, and blue lapis lazuli stone arranged in repeating patterns. The border features triangular tessellations that frame the entire artwork. These triangles fit together perfectly without any gaps, creating a zigzag pattern that draws your eye around the scenes of ancient Sumerian life. The artists carefully planned each piece to create this stunning mosaic tessellation.</p><h2>Ninurta's Palace Walls</h2><p>At the Metropolitan Museum of Art in New York, you can see carved stone panels from the palace of King Ashurnasirpal II at Nimrud. These panels, dating to around 870 BCE, show the god Ninurta as a powerful warrior. The artists surrounded Ninurta with tessellating rosette patterns—flower-like designs that repeat across the stone surface. These rosettes tessellate in a hexagonal arrangement, meaning each flower shape is surrounded by six others, fitting together like a honeycomb. The Mesopotamians believed Ninurta brought order to chaos, and these perfect repeating patterns symbolized his power to organize the world.</p><h2>Glazed Brick Tessellations</h2><p>The Louvre Museum in Paris houses spectacular glazed bricks from the Ishtar Gate of Babylon, built around 575 BCE. While the gate features many gods, similar brick tessellation techniques were used throughout Mesopotamian temples, including those dedicated to Ninurta. These bricks were arranged in repeating rectangular patterns, with each brick fitting precisely against its neighbors. The craftsmen created tessellations using different colored glazes—brilliant blues, yellows, and whites—to form geometric borders and divine symbols. This technique required careful planning because every brick had to be the exact same size to create a perfect tessellation.</p><h2>Cylinder Seals</h2><p>Mesopotamian cylinder seals, found in museums worldwide including the British Museum, demonstrate tessellation on a tiny scale. These small stone cylinders were carved with designs and rolled across wet clay to create repeating patterns. Many seals featured geometric borders with tessellating triangles, diamonds, or chevrons. When rolled out, these patterns would repeat endlessly across the clay surface. Merchants and officials used these seals like signatures on important documents, and the tessellating borders proved the seal was authentic.</p><h2>Daily Life Connections</h2><p>Tessellation wasn't just for temples and palaces—ordinary Mesopotamians used these patterns in daily life too. Archaeologists have discovered tessellating patterns in:</p><ul><li><strong>Floor tiles</strong> in wealthy homes, where square and triangular clay tiles fit together to create durable, beautiful floors</li>
+<li><strong>Textile designs</strong> woven into clothing and carpets, with repeating geometric shapes</li>
+<li><strong>Basket weaving</strong> patterns, where strips of reed created natural tessellations</li>
+<li><strong>Mud brick walls</strong>, where rectangular bricks tessellated to build strong structures</li></ul><p>The ancient Mesopotamians understood that tessellating shapes fit together efficiently without wasting space. This was practical for builders and beautiful for artists. When they honored Ninurta, the god of farming, hunting, and war, they often surrounded his image with perfect tessellations to show his power to bring order and organization to the world.</p><p>Today, these ancient artifacts teach us that geometry and art have been connected for thousands of years, and that people long ago were just as clever at using mathematical patterns as we are today!</p><p>---</p>
+<h2>Section 4: 5-Layer Geometric Decomposition</h2><h1>Understanding Tessellation Through Five Layers</h1><p>When ancient Mesopotamian craftspeople decorated Ninurta's temples and palaces, they created beautiful patterns that repeated perfectly across walls, floors, and ceilings. These patterns are called tessellations, and they're like puzzles where shapes fit together with no gaps and no overlaps. Let's explore tessellations by breaking them down into five layers, starting with what you can see with your own eyes and moving toward the hidden mathematical secrets that make these patterns work.</p><h2>Layer One: Observing Individual Shapes</h2><p>The first layer of understanding tessellation begins with looking at a single shape, or what we call a "tile." In Mesopotamian art connected to Ninurta, the warrior god of agriculture and hunting, craftspeople often used simple shapes that they could create with basic tools.</p><p>Imagine you're standing in front of an ancient Mesopotamian wall. The first thing you notice is that the pattern is made of repeating shapes. These shapes might be squares, triangles, or hexagons. Let's start with the square, which was very common in Mesopotamian architecture.</p><p>A single square tile has four equal sides and four right angles (90-degree corners). When you measure one side of the square, perhaps it's 4 inches long, you know that all four sides are exactly 4 inches. This is important because consistency in measurement allowed ancient builders to create thousands of identical tiles.</p><p>The Mesopotamians would often decorate each square tile with symbols related to Ninurta. They might carve or paint images of wheat sheaves (representing agriculture), weapons (representing his warrior nature), or the Thunderbird (Anzû), which Ninurta famously defeated. Each individual tile was a work of art, but it was designed to be part of something bigger.</p><p>At this first layer, you're simply identifying the basic shape and its properties. You can trace the outline with your finger, count the sides, measure the angles with a protractor, and observe any decorations. This is the foundation for understanding how tessellations work.</p><h2>Layer Two: Discovering Edge Relationships</h2><p>The second layer explores how individual tiles connect to each other. This is where tessellation truly begins, because now we're looking at how edges meet.</p><p>When you place two square tiles side by side, something important happens: their edges must match perfectly. If one tile has a 4-inch edge, the tile next to it must also have a 4-inch edge where they touch. This creates what we call an "edge-to-edge" relationship.</p><p>In Mesopotamian tessellations, craftspeople paid careful attention to these connections. They understood that if the edges didn't match exactly, gaps would appear, or tiles would overlap. Both problems would weaken a wall or floor and ruin the pattern's beauty.</p><p>Let's examine different ways edges can meet. With squares, edges meet in a straight line, creating what looks like a grid. You can see this pattern in many ancient Mesopotamian brick walls. Each horizontal line of bricks connects perfectly to the vertical edges of bricks above and below.</p><p>Now consider triangular tiles. When two equilateral triangles (triangles with all sides equal) meet, they can share an edge in different ways. They might point in the same direction, or one might flip upside down. Ancient Mesopotamian artists used both arrangements to create different visual effects in their Ninurta temple decorations.</p><p>At this layer, you're measuring not just individual shapes but also how they connect. You might measure the length where two tiles meet, check that the angles add up correctly at connection points, and verify that no space exists between tiles. This requires more careful observation and introduces the concept that tessellations follow rules about how shapes can fit together.</p><h2>Layer Three: Analyzing Vertex Points and Angle Relationships</h2><p>The third layer takes us deeper into the mathematics of tessellation by examining vertex points—the spots where tile corners meet.</p><p>In a tessellation, several tiles usually come together at each vertex point. This is where something magical happens with angles. For a tessellation to work perfectly with no gaps, the angles meeting at each vertex must add up to exactly 360 degrees—a complete circle.</p><p>Let's explore this with our square tiles. Each corner of a square is 90 degrees. When four squares meet at a single vertex point, we add up the angles: 90 + 90 + 90 + 90 = 360 degrees. Perfect! This is why squares tessellate so beautifully and why Mesopotamian builders loved using square bricks.</p><p>Triangular tessellations work differently. An equilateral triangle has three 60-degree angles. At a vertex point in a triangular tessellation, six triangles meet: 60 + 60 + 60 + 60 + 60 + 60 = 360 degrees. The ancient Mesopotamians used this pattern in decorative mosaics, sometimes placing Ninurta's symbols within alternating triangles to create dynamic, energetic designs that reflected his warrior spirit.</p><p>Hexagons present another fascinating case. Regular hexagons have 120-degree angles. At each vertex point, three hexagons meet: 120 + 120 + 120 = 360 degrees. Mesopotamian artists sometimes used hexagonal patterns in temple floors, and they might have been inspired by honeycombs, which naturally form hexagonal tessellations.</p><p>At this layer, you're not just observing shapes—you're calculating and verifying mathematical relationships. You can use a protractor to measure angles at vertex points, add them up, and confirm they equal 360 degrees. You're discovering the hidden rules that govern which shapes can tessellate and how they must be arranged.</p><h2>Layer Four: Recognizing Symmetry and Transformation Patterns</h2><p>The fourth layer reveals how tessellations create patterns through symmetry and transformations. This is where tessellations become truly sophisticated, showing us how ancient Mesopotamian artists were also mathematicians.</p><p>Symmetry means that a pattern looks the same after certain changes. In tessellations, we find several types of symmetry. Reflection symmetry means the pattern looks the same when flipped across a line, like a mirror image. Rotational symmetry means the pattern looks the same when turned around a point. Translational symmetry means the pattern repeats when you slide it in a particular direction.</p><p>Mesopotamian tessellations honoring Ninurta often combined multiple types of symmetry. Imagine a floor pattern where square tiles contain images of Ninurta's plow. If the plow images alternate direction—pointing right, then left, then right again—the pattern has reflection symmetry. If every fourth tile shows the plow rotated 90 degrees, creating a pinwheel effect, the pattern has rotational symmetry.</p><p>Transformations describe how we can move or change tiles while maintaining the tessellation. The four basic transformations are:</p><p>1. <strong>Translation</strong>: Sliding a tile without rotating or flipping it
+2. <strong>Rotation</strong>: Turning a tile around a point
+3. <strong>Reflection</strong>: Flipping a tile across a line
+4. <strong>Glide reflection</strong>: Sliding and then flipping a tile</p><p>Ancient Mesopotamian craftspeople understood these transformations intuitively, even without modern mathematical terms. They knew that by rotating a decorated tile 90 degrees, they could create a sense of movement in a static wall. By reflecting tiles, they could create balanced, harmonious designs appropriate for sacred spaces.</p><p>At this layer, you're identifying symmetry types and tracking how tiles transform across the pattern. You might use tracing paper to copy a section of tessellation, then slide, rotate, or flip it to see if it matches another section. This reveals the deep structure underlying the visual pattern.</p><h2>Layer Five: Understanding the Mathematical System</h2><p>The fifth and deepest layer examines tessellation as a complete mathematical system with rules, limitations, and infinite possibilities.</p><p>At this advanced level, we discover that not all shapes can tessellate. Only certain regular polygons (shapes with equal sides and equal angles) can tessellate by themselves: triangles, squares, and hexagons. This is because only these shapes have angles that divide evenly into 360 degrees.</p><p>However, ancient Mesopotamian artists discovered something wonderful: by combining different shapes, they could create much more complex tessellations. These are called semi-regular or demiregular tessellations. For example, they might combine squares and triangles, or hexagons and triangles, creating patterns more interesting than any single shape could produce.</p><p>The mathematical system of tessellation also includes concepts like:</p><strong>Fundamental regions</strong>: The smallest section of a pattern that, when repeated, creates the entire tessellation. In a simple square tessellation, one square is the fundamental region.<strong>Dual tessellations</strong>: For every tessellation, there's a related dual tessellation created by connecting the centers of adjacent tiles. The dual of a square tessellation is another square tessellation, but the dual of a triangular tessellation is a hexagonal one.<strong>Edge-to-edge versus non-edge-to-edge</strong>: Most Mesopotamian tessellations were edge-to-edge, meaning tile edges matched completely. But some sophisticated designs used non-edge-to-edge arrangements where tile corners touched the middle of other tiles' edges.<p>Mesopotamian mathematicians and artists working on Ninurta's temples understood these principles through practice and observation. They knew which patterns would work before creating thousands of tiles. They could look at a wall space and calculate exactly how many tiles they needed and how to arrange them.</p><p>At this final layer, you're thinking like both an ancient Mesopotamian craftsperson and a modern mathematician. You understand that tessellation isn't just about making pretty patterns—it's about discovering universal mathematical truths that govern how shapes fit together in space. These same principles appear in nature, from honeycombs to crystal structures, and in modern applications from computer graphics to architectural design.</p><p>By working through these five layers—from observing individual shapes to understanding complete mathematical systems—you've journeyed from simple observation to sophisticated geometric thinking, following in the footsteps of the ancient Mesopotamian artists who honored Ninurta through their masterful tessellations.</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h1>Creating Your Own Ninurta-Inspired Tessellation</h1><p>Now it's time to become an ancient Mesopotamian artist! Just like the craftspeople who decorated Ninurta's temples thousands of years ago, you'll create your own tessellating pattern that tells a story of strength and protection.</p><h2>Materials You'll Need</h2><p>For this activity, gather these simple supplies:</p><ul><li>White cardstock or heavy paper (one sheet per student)</li>
+<li>Scissors</li>
+<li>Pencil</li>
+<li>Ruler</li>
+<li>Colored pencils, markers, or crayons</li>
+<li>Tape</li>
+<li>Tracing paper or thin white paper (several sheets)</li>
+<li>Optional: gold and bronze markers for special details</li></ul><h2>Understanding Your Design Challenge</h2><p>Ancient Mesopotamian artists often decorated palace walls and temple floors with repeating geometric patterns. These patterns represented the order that gods like Ninurta brought to the world. Your challenge is to create a tessellation using shapes that remind us of Ninurta's symbols: thunderbolts, lions, birds, or farming tools like plows.</p><h2>Step-by-Step Instructions</h2><strong>Step 1: Create Your Tessellation Tile (15 minutes)</strong><p>Start with a square piece of cardstock, about 3 inches by 3 inches. This will be your base tile. On one side of the square, draw a simple design that connects the top corner to the bottom corner. This could be a zigzag like a thunderbolt, a curved line like a lion's back, or steps like a ziggurat. Keep it simple!</p><p>Now, carefully cut along the line you just drew. Take the piece you cut off and tape it to the opposite side of your square. Make sure the straight edges line up perfectly. You've just created a tessellation tile! When you repeat this shape over and over, it will fit together perfectly with no gaps.</p><strong>Step 2: Test Your Tile (5 minutes)</strong><p>Before decorating, let's make sure your tile tessellates properly. Place your tile on a piece of tracing paper and trace around it with pencil. Then slide your tile so it connects to your traced shape and trace it again. Keep doing this until you've traced it at least six times. Do the shapes fit together like puzzle pieces? If yes, you're ready to move on! If there are gaps, you might need to adjust your tile.</p><strong>Step 3: Plan Your Mesopotamian Design (10 minutes)</strong><p>Think about what each repeated shape in your tessellation will represent. Will each tile show a different aspect of Ninurta's power? Ancient Mesopotamian artists used specific symbols:</p><ul><li>Zigzag lines represented lightning and divine power</li>
+<li>Circles or rosettes symbolized the sun and life</li>
+<li>Triangular shapes looked like mountains where gods lived</li>
+<li>Geometric borders showed organization and control</li></ul><p>Sketch lightly in pencil how you'll decorate each tile. Remember, in a tessellation, the pattern repeats, so whatever you draw in one tile should appear in all the others.</p><strong>Step 4: Create Your Color Palette (5 minutes)</strong><p>Mesopotamian artists loved certain colors. They used deep blues (like lapis lazuli stones), rich reds (like clay bricks), golden yellows, black, and white. Choose three or four colors that work well together. Write down your color choices so you can keep them consistent throughout your tessellation.</p><strong>Step 5: Produce Your Final Tessellation (25 minutes)</strong><p>Now for the exciting part! Take a large sheet of white paper. Using your tile as a template, trace it repeatedly across the page until you've filled the entire sheet. You should be able to fit at least 12-15 repetitions.</p><p>Once you've traced all your tiles, begin decorating each one. Use your chosen colors and symbols consistently. You might put a thunderbolt symbol in the center of each tile, or create a border pattern that flows from one tile to the next. Work carefully and remember that ancient artists took great pride in their precision.</p><p>Add special details with your gold or bronze markers if you have them. The ancient Mesopotamians sometimes added actual gold leaf to their most important artworks!</p><strong>Step 6: Add a Border (10 minutes)</strong><p>Create a border around your entire tessellation using a repeating geometric pattern. This frames your work just like the decorative borders on ancient Mesopotamian palace walls. Simple triangles, diamonds, or zigzags work beautifully.</p><h2>Displaying Your Artwork</h2><p>When everyone finishes, arrange all the tessellations together on a classroom wall. Notice how each person's tessellation is unique, yet they all follow the same mathematical rules. Ancient Mesopotamian temples would have had many artists working together, each contributing their own section to a larger pattern.</p><h2>Reflection Questions</h2><p>Take a few minutes to think about and discuss these questions with a partner:</p><p>1. What was the most challenging part of creating your tessellation tile? How did you solve that problem?</p><p>2. How does your tessellation represent Ninurta's qualities of strength, order, and protection?</p><p>3. What patterns do you notice when you look at everyone's tessellations together? How are they similar? How are they different?</p><p>4. Why do you think ancient Mesopotamian artists spent so much time creating repeating patterns? What message were they trying to send?</p><p>5. Where do you see tessellations in your everyday life now that you know what to look for?</p><h2>Extension Challenge</h2><p>If you finish early or want to continue at home, try creating a three-dimensional tessellation using clay or modeling dough. Ancient Mesopotamians created raised relief patterns on their walls. Can you make tiles that tessellate and also have raised designs?</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

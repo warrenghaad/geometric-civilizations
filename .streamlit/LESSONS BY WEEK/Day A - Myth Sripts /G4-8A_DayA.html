@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G4-8A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G4-8A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G4-8A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Composite 3D in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Composite 3D (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Lamassu &amp; 3D Guardian</h1>
+<strong>Grade 4 Geometry Lesson</strong><strong>Lesson Code</strong>: G4-8A
+<strong>Deity</strong>: Lamassu
+<strong>Geometric Element</strong>: Composite 3D
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe Composite 3D in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Composite 3D (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Lamassu's Story</h2><h1>Lamassu's Story: The Guardian Who Brought the Shapes Together</h1><h2>Characters</h2>
+<ul><li><strong>LAMASSU</strong> – A mighty guardian with the body of a bull, wings of an eagle, and head of a wise king</li>
+<li><strong>ASHUR</strong> – A young sculptor's apprentice</li>
+<li><strong>ENKI</strong> – God of wisdom and crafts</li>
+<li><strong>NARRATOR</strong></li></ul><p>---</p><strong>NARRATOR:</strong> Long ago, in ancient Mesopotamia, between the great Tigris and Euphrates rivers, the gods needed powerful guardians to protect their temple gates. But no ordinary creature would do. They needed something special – something made from many shapes joined together.<em>(ENKI stands center stage, surrounded by glowing clay tablets covered in geometric drawings)</em><strong>ENKI:</strong> I have created lions with fierce teeth! I have sculpted eagles with sharp talons! I have carved bulls with powerful horns! But none are strong enough alone. <em>(scratches head thoughtfully)</em> What if... what if I combined their greatest strengths into ONE guardian?<em>(ENKI waves his hands. Lightning flashes. LAMASSU emerges slowly, looking confused at his own body)</em><strong>LAMASSU:</strong> <em>(looking at wings)</em> What am I? I have the rectangular body of a mighty bull! <em>(flexes)</em> I have triangular wings that slice through the sky like an eagle! <em>(touches face)</em> And the face of a human king, wise and watchful!<strong>ENKI:</strong> You are Lamassu! I have built you from many three-dimensional shapes, fitting together like a puzzle. Your body is made of rectangular prisms – strong boxes of muscle! Your wings are triangular pyramids – sharp and powerful! Your legs are cylinders – sturdy pillars that never tire!<strong>LAMASSU:</strong> But why am I made of so many different shapes? Why not just one?<strong>ENKI:</strong> Because, mighty Lamassu, each shape has its own strength. Together, they make you greater than any single form could be. You are a <em>composite</em> – many shapes working as one! Now go! Guard the palace gates and keep evil spirits away!<em>(LAMASSU exits. Scene changes. ASHUR enters, carrying a hammer and chisel, looking worried)</em><strong>ASHUR:</strong> <em>(to audience)</em> The king has commanded me to carve a Lamassu statue for the new palace gate. But I've never seen one before! How can I carve something I cannot imagine?<em>(LAMASSU appears behind ASHUR, enormous and glowing)</em><strong>LAMASSU:</strong> <em>(in a deep, echoing voice)</em> Young sculptor, I will help you understand my form.<strong>ASHUR:</strong> <em>(jumping, then bowing)</em> Great Lamassu! You honor me! But your shape is so... complicated!<strong>LAMASSU:</strong> Not complicated – <em>composite</em>! Let me show you. <em>(moves to one side)</em> When you look at me from the front, what do you see?<strong>ASHUR:</strong> <em>(studying carefully)</em> I see your face and chest – rectangular shapes stacked together! And your two front legs – like cylinders standing guard!<strong>LAMASSU:</strong> Good! Now walk to my side. What shapes do you see now?<strong>ASHUR:</strong> <em>(walking around)</em> Oh! From the side, I see your whole body stretched out – a long rectangular prism! And your wings – triangular pyramids reaching toward the sky! And... <em>(counts on fingers)</em> ...you have more legs from this view!<strong>LAMASSU:</strong> Yes! I have five legs total. Two you see from the front, four you see from the side. This way, I look powerful from every direction! I am not one simple shape – I am many three-dimensional forms joined together. Each part has its own job.<strong>ASHUR:</strong> Your cylinder legs support your weight! Your rectangular body holds your strength! Your triangular wings lift your spirit!<strong>LAMASSU:</strong> <em>(proudly)</em> Now you understand! A composite shape is stronger than a simple one. Just as a kingdom needs farmers AND soldiers AND priests working together, I need all my different shapes working as one.<strong>ASHUR:</strong> <em>(excited)</em> I must carve you from many angles! When people walk toward the gate, they'll see your front view. When they pass through, they'll see your side view. You'll be protecting them in THREE DIMENSIONS!<strong>LAMASSU:</strong> Exactly! Remember, young sculptor – the most powerful things in the world are often made of many parts working together. Shapes, people, kingdoms... all are stronger when they combine their different strengths.<strong>NARRATOR:</strong> And so Ashur carved the great Lamassu, understanding that this guardian was more than just stone – it was a lesson in how different shapes, like different people, become mighty when they work as one.<em>(LAMASSU and ASHUR freeze in a final pose as lights dim)</em><strong>THE END</strong><p>---</p>
+<h2>Section 3: Ancient Art and Artifacts</h2><h1>The Mighty Lamassu in Ancient Palaces</h1><p>Imagine walking through the massive gates of an ancient Mesopotamian palace over 3,000 years ago. Towering above you would be enormous stone guardians called lamassu. These incredible sculptures combined different three-dimensional shapes to create protective beings that were part human, part bull, and part bird!</p><h2>Guardian Statues at the Palace Gates</h2><p>The most famous lamassu statues once guarded the palaces of Assyrian kings in ancient Iraq. Today, you can see magnificent examples at the British Museum in London. These colossal guardians stand about 16 feet tall and weigh approximately 30 tons—that's as heavy as six elephants! The sculptors created these composite 3D figures by carving directly into massive blocks of limestone or alabaster.</p><p>Each lamassu features a human head wearing a horned crown, showing wisdom and divine power. The body is shaped like a powerful bull, representing strength and protection. Enormous wings spread from the shoulders, giving the creature the ability to fly and watch over the kingdom from above. Ancient artists carefully combined these three-dimensional geometric forms—cylinders for the legs, rectangular blocks for the body, curved surfaces for the wings, and spherical shapes for the head—into one unified sculpture.</p><h2>The Five-Legged Mystery</h2><p>Here's something fascinating: if you look at a lamassu from the front, you'll see two legs standing together. But if you walk to the side, you'll count four legs in a walking position. That means each lamassu actually has five legs total! The Metropolitan Museum of Art in New York explains that ancient sculptors designed them this way so the creatures would look correct from multiple viewing angles. This clever use of composite 3D shapes allowed the lamassu to appear both standing still (guarding) and walking forward (chasing away evil) at the same time.</p><h2>Lamassu in Daily Life</h2><p>For the people of ancient Mesopotamia, lamassu weren't just decorations—they were believed to be real protective spirits. Kings placed them at city gates, palace entrances, and temple doorways. Ordinary citizens would pass between these towering guardians every day when entering important buildings. The composite 3D design made the lamassu look powerful from every direction, reminding everyone that they were protected by divine forces.</p><p>Smaller lamassu figures also appeared on clay tablets, cylinder seals, and wall reliefs. The Louvre Museum in Paris displays beautiful examples of these smaller artifacts. Merchants would roll cylinder seals carved with lamassu images onto soft clay to mark their property. These seals combined raised and recessed three-dimensional shapes to create detailed impressions.</p><h2>Building the Guardians</h2><p>Creating a lamassu required incredible skill and planning. Sculptors first selected enormous stone blocks and roughly shaped the basic geometric forms. They carved the rectangular body, cylindrical legs, and curved wings using copper and bronze tools. The human head required the most detailed work, with sculptors carefully shaping facial features, beards, and elaborate headdresses. Finally, they carved intricate feather patterns into the wings and added cuneiform inscriptions along the base, often including the king's name and prayers for protection.</p><h2>Seeing Lamassu Today</h2><p>Besides the British Museum, Metropolitan Museum, and Louvre, you can see lamassu at the Oriental Institute in Chicago and the Iraq Museum in Baghdad. Each museum's lamassu shows slightly different composite 3D designs, as sculptors from different time periods and cities added their own artistic touches. These ancient masterpieces help us understand how people 3,000 years ago used geometric shapes to create meaningful art that protected and inspired their civilization.</p><p>---</p>
+<h2>Section 4: 5-Layer Geometric Decomposition</h2><h1>Looking at the Lamassu: From Simple Shapes to Complex Mathematics</h1><p>When you first see a Lamassu statue, you might think it's just one big sculpture. But ancient Mesopotamian artists were actually master geometers who built these guardian creatures using layers of mathematical thinking. Let's peel back these layers, like unwrapping a present, to discover how geometry makes a Lamassu come to life.</p><h2>Layer 1: The Basic Shapes We Can See</h2><p>The first layer is the easiest to spot. When you look at a Lamassu from far away, you can see it's made from basic three-dimensional shapes that you already know.</p><strong>The Body Block</strong><p>The main body of the Lamassu starts with a rectangular prism—imagine a giant box lying on its side. This prism forms the bull's body and is usually about 4 meters long, 2 meters wide, and 2 meters tall in full-sized statues. Ancient sculptors chose this shape because it's strong and stable, perfect for a guardian that needs to stand at a palace gate for thousands of years.</p><strong>The Head Cube</strong><p>The human head begins as a cube or a slightly rectangular block. This cube sits on top of the body prism at the front. If you measured a typical Lamassu head, you'd find it's roughly 1 meter on each side. The cube gives the sculptors flat surfaces to work with when carving the face, beard, and ceremonial headdress.</p><strong>The Leg Cylinders</strong><p>Each of the Lamassu's five legs (yes, five—we'll talk about why later!) starts as a cylinder. These cylinders are about 2 meters tall and 40 centimeters across. Cylinders are perfect for legs because they're round and strong, just like the columns that hold up buildings.</p><strong>The Wing Wedges</strong><p>The mighty wings begin as triangular prisms or wedge shapes attached to the sides of the body. Each wing wedge is approximately 2 meters long and fans out to about 1.5 meters at its widest point. These wedges give the Lamassu its protective, sheltering appearance.</p><p>At this first layer, you're using your observation skills to identify shapes: rectangular prisms, cubes, cylinders, and triangular prisms. These are the building blocks of composite 3D geometry.</p><h2>Layer 2: How the Shapes Connect and Combine</h2><p>Now let's look deeper at how these basic shapes join together to create the composite form. This is where the Lamassu becomes more than just separate pieces.</p><strong>Intersection Points</strong><p>The head cube doesn't just sit on top of the body—it intersects with it. Imagine pushing the cube slightly into the rectangular prism so they share some space. This intersection creates a stronger connection and makes the neck area more realistic. The intersection zone is usually about 20 centimeters deep, creating a smooth transition.</p><strong>Fusion Surfaces</strong><p>Where the wing wedges attach to the body, the surfaces fuse together. The ancient sculptors carved these areas so carefully that you can't see where one shape ends and another begins. They understood that blending the surfaces makes the whole sculpture stronger and more beautiful. The fusion zone wraps around the body for about 30 centimeters on each side.</p><strong>Leg Arrangement</strong><p>Here's where the Lamassu gets really interesting! The five legs are arranged in a special pattern. From the front, you see two legs standing together. From the side, you see four legs—it looks like the Lamassu is walking. The sculptors placed these cylinders at precise positions: the front two legs are 50 centimeters apart, while the side legs are spaced 80 centimeters from front to back. This arrangement creates an optical illusion that makes the statue look correct from multiple viewing angles.</p><strong>Composite Volume</strong><p>When you add up all the volumes of these shapes, you get the total volume of the Lamassu. But here's the tricky part: you can't just add them all separately because some parts overlap. You need to subtract the intersection volumes. A typical Lamassu has a total volume of about 16 cubic meters, which is as big as a small bedroom!</p><h2>Layer 3: Symmetry and Pattern Systems</h2><p>The third layer reveals the mathematical patterns that make the Lamassu balanced and pleasing to look at.</p><strong>Bilateral Symmetry</strong><p>If you drew an imaginary line down the center of the Lamassu from front to back, you'd find that the left and right sides are mirror images of each other. This is called bilateral symmetry. Each wing matches the other, the legs on the left mirror the legs on the right, and even the curls in the beard are symmetrical. This symmetry makes the Lamassu look powerful and orderly. The center line, called the axis of symmetry, runs exactly through the middle of the head and body.</p><strong>Radial Patterns</strong><p>Look closely at the wings. The feathers are arranged in radial patterns—they spread out from a central point like the spokes of a bicycle wheel. Each wing typically has 5 to 7 rows of feathers, with each row containing 12 to 15 individual feather shapes. These radial patterns repeat on both wings, creating visual harmony.</p><strong>Geometric Beard Patterns</strong><p>The Lamassu's beard isn't just curly hair—it's a carefully planned geometric pattern. The curls are arranged in horizontal rows, with each curl being approximately the same size: about 8 centimeters in diameter. There might be 6 rows of curls, with 4 curls in each row, creating a grid pattern of 24 total curls. This regular pattern shows the ancient artists' understanding of repetition and rhythm in design.</p><strong>Crown Symmetry</strong><p>The ceremonial headdress or crown on the Lamassu's head features tiered levels, each one slightly smaller than the one below. This creates a stepped pyramid shape. If the bottom tier is 80 centimeters wide, the next might be 70 centimeters, then 60 centimeters, and so on. This proportional reduction creates a pleasing visual rhythm.</p><h2>Layer 4: Proportional Relationships and Mathematical Ratios</h2><p>Now we're getting into the sophisticated mathematics that ancient Mesopotamian artists understood, even if they didn't write equations like we do today.</p><strong>The Golden Proportion</strong><p>Many Lamassu sculptures use proportional relationships close to what we call the golden ratio (about 1.6 to 1). For example, if the body is 4 meters long, the height to the top of the head might be 2.5 meters. When you divide 4 by 2.5, you get 1.6. This ratio appears throughout nature and creates forms that humans find naturally beautiful and balanced.</p><strong>Head-to-Body Ratios</strong><p>The human head is typically one-quarter the total height of the Lamassu. If the statue is 4 meters tall, the head is about 1 meter. This 1:4 ratio is close to actual human proportions, which makes the human features recognizable and relatable even though they're on a bull's body.</p><strong>Leg Spacing Mathematics</strong><p>Remember those five legs? Their spacing follows a mathematical pattern. If we call the space between the front legs "x," then the distance from the front legs to the middle legs is "2x," and from the middle legs to the back legs is also "2x." This creates a ratio of 1:2:2, which helps the statue look balanced from every angle.</p><strong>Wing Angles</strong><p>The wings extend from the body at specific angles. Most Lamassu wings project outward at approximately 45-degree angles from the body. This 45-degree angle is exactly half of a right angle (90 degrees), and it's strong enough to support the weight of the carved stone while still looking graceful and protective.</p><strong>Scale and Proportion Consistency</strong><p>Every feature on the Lamassu maintains consistent proportional relationships. If the eyes are 10 centimeters wide, they're placed 15 centimeters apart—a 1:1.5 ratio. If a feather is 20 centimeters long, it's 5 centimeters wide—a 4:1 ratio. These consistent ratios throughout the sculpture create visual harmony.</p><h2>Layer 5: Advanced Geometric Transformations and Spatial Reasoning</h2><p>The deepest layer reveals how ancient sculptors thought about three-dimensional space and transformations—the most complex mathematical concepts in the Lamassu's design.</p><strong>Multi-Perspective Geometry</strong><p>The five-legged design is actually a geometric transformation called a "perspective shift." The sculptors created two different views in one statue. They transformed the side view (four legs walking) and the front view (two legs standing) into a single composite form. This requires understanding how three-dimensional objects look different from different angles and combining those views—a concept that wouldn't be formally studied in mathematics until thousands of years later.</p><strong>Curved Surface Carving</strong><p>The Lamassu's muscles, especially on the legs and shoulders, are carved as curved surfaces that wrap around the underlying cylindrical and prismatic forms. Creating these curves requires understanding how to transform flat geometric surfaces into smooth, flowing shapes. Mathematicians call this "surface mapping," and it involves understanding how every point on a flat shape moves to create a curved shape.</p><strong>Compression and Relief</strong><p>Many Lamassu features use a technique called relief carving, where three-dimensional shapes are compressed into shallower versions of themselves. A feather that would naturally be 5 centimeters thick might be carved as only 2 centimeters thick. This is a geometric transformation called "scaling" in one dimension while keeping the other dimensions the same. The wing feathers, beard curls, and decorative patterns all use this technique.</p><strong>Negative Space Architecture</strong><p>The spaces between the Lamassu's legs, under its body, and around its wings are just as carefully planned as the solid parts. These negative spaces create geometric shapes of their own—rectangles between the front legs, trapezoids between the walking legs. Ancient architects knew that people and air needed to flow through these spaces, so they calculated these openings as precisely as they carved the solid stone.</p><strong>Rotational Understanding</strong><p>To create a Lamassu that looks correct from the front, side, and three-quarter views, sculptors had to imagine rotating the statue in their minds. They understood that a cylinder looks like a circle from one end and a rectangle from the side. They knew that the rectangular prism body would look different as you walked around it. This mental rotation ability is one of the highest forms of spatial reasoning.</p><p>By understanding all five layers—from simple shapes to complex transformations—you can see that the Lamassu is a masterpiece of geometric thinking, combining art, mathematics, engineering, and cultural meaning into one powerful guardian figure.</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h1>Creating Your Own Guardian Lamassu</h1><p>Now it's time to become an ancient Mesopotamian artist! You'll design and build your own protective lamassu using 3D geometric shapes. Just like the sculptors of ancient Babylon and Assyria, you'll combine different shapes to create a powerful guardian creature.</p><h2>Materials You'll Need</h2><ul><li>Construction paper in various colors (brown, tan, gold, and white work well)</li>
+<li>Scissors (safety scissors)</li>
+<li>Glue sticks or white glue</li>
+<li>Markers or crayons</li>
+<li>Ruler</li>
+<li>Pencil</li>
+<li>Optional: cardboard pieces for a sturdier base</li>
+<li>Optional: aluminum foil for decorative details</li>
+<li>Optional: yarn or string for texture</li></ul><h2>Step-by-Step Instructions</h2><strong>Step 1: Plan Your Composite Design</strong><p>Before you start cutting and gluing, sketch your lamassu on a piece of paper. Remember that a lamassu is a composite creature made of different parts:
+<ul><li>The body of a bull or lion (rectangular prism)</li>
+<li>The wings of an eagle (triangular prisms or pyramids)</li>
+<li>The head of a human (cube or sphere)</li>
+<li>Four or five legs (cylinders)</li></ul><p>Draw circles around each body part and label which 3D shape you'll use. This planning step helps you think like an engineer and an artist at the same time!</p><strong>Step 2: Build the Body</strong><p>Start with the largest part—the body. You can create a rectangular prism by:
+1. Cut out a rectangle from construction paper (about 6 inches by 4 inches)
+2. Roll it into a tube and tape the edges together, or
+3. Fold a piece of cardboard into a box shape</p><p>This body should be strong because it holds your whole lamassu together. Ancient Mesopotamian lamassu were carved from single blocks of stone weighing thousands of pounds! Your paper version will be much lighter but just as impressive.</p><strong>Step 3: Create the Legs</strong><p>Lamassu have an interesting feature—they appear to have four legs when viewed from the side but five legs when viewed from the front! For your model:
+1. Cut four strips of paper, each about 4 inches long and 1 inch wide
+2. Roll each strip into a cylinder and secure with glue
+3. Attach four cylinders to the bottom of your body—two in front and two in back
+4. Optional: add a fifth leg in the middle front for the authentic five-legged view</p><p>Make sure your lamassu can stand on its own. You might need to adjust the leg positions or add a cardboard base.</p><strong>Step 4: Add Magnificent Wings</strong><p>Wings are essential because they show the lamassu can fly and protect from above:
+1. Cut two large triangles from construction paper (each side about 5 inches long)
+2. Fold each triangle slightly down the middle to create a 3D wing shape
+3. Draw feather patterns using markers—Mesopotamian artists carved detailed feathers in rows
+4. Glue the wings to both sides of the body</p><p>The wings should angle upward and outward, showing power and readiness to take flight.</p><strong>Step 5: Construct the Human Head</strong><p>The human head shows wisdom and intelligence:
+1. Cut out a square (about 3 inches by 3 inches) and fold it into a cube shape, or
+2. Crumple paper into a ball and cover it with a smooth layer
+3. Draw a face with a long, curly beard—Mesopotamian kings and protective spirits had elaborate beards
+4. Add a tall crown or horned cap using triangular pieces
+5. Attach the head to the front of the body</p><p>Ancient lamassu had very detailed faces with large eyes and serious expressions. Your lamassu should look wise and protective!</p><strong>Step 6: Add Decorative Patterns</strong><p>Now bring your lamassu to life with geometric patterns:
+<ul><li>Draw scales or fur texture on the body using repeated curved lines</li>
+<li>Add zigzag patterns along the edges (ancient Mesopotamians loved zigzag designs)</li>
+<li>Create rosette flowers (circular patterns) on the body or wings</li>
+<li>Use aluminum foil to add shiny details that look like gold or bronze</li>
+<li>Draw cuneiform-style symbols (wedge shapes) along the base</li></ul><p>Remember, every pattern uses geometric shapes—circles, triangles, rectangles, and lines arranged in repeating, symmetrical ways.</p><strong>Step 7: Create a Display Base</strong><p>Mount your lamassu on a cardboard base:
+1. Cut a square or rectangle of cardboard
+2. Decorate it like a palace gateway with brick patterns (small rectangles)
+3. Write your name and "Guardian Lamassu" on the base
+4. Secure your lamassu to the base with glue</p><h2>Reflection Questions</h2><p>After completing your lamassu, think about these questions and discuss them with a partner or write your answers:</p><p>1. <strong>Shape Analysis</strong>: Which 3D shapes did you use the most? Why were these shapes good choices for building a strong guardian creature?</p><p>2. <strong>Symmetry Search</strong>: Where did you include symmetry in your lamassu? Are the wings symmetrical? What about the face or the patterns you drew?</p><p>3. <strong>Composite Thinking</strong>: How is your lamassu different from a creature made of just one or two shapes? What makes composite 3D shapes more interesting?</p><p>4. <strong>Cultural Connection</strong>: If you were an ancient Mesopotamian sculptor, where would you place your lamassu? Why would people want these guardians at their city gates or palace entrances?</p><p>5. <strong>Artist's Choice</strong>: What was the most challenging part of combining different shapes? What would you do differently if you made another lamassu?</p><p>6. <strong>Pattern Power</strong>: How did adding geometric patterns change the way your lamassu looks? Do patterns make it seem more powerful or protective?</p><p>Display your finished lamassu proudly! You've created a composite 3D sculpture using the same geometric principles that Mesopotamian artists used thousands of years ago. Your guardian is ready to protect your classroom!</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

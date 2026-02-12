@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G3-3A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G3-3A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G3-3A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Square in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Square (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Marduk &amp; Square</h1>
+<strong>Grade 3 Geometry Lesson</strong><strong>Lesson Code</strong>: G3-3A
+<strong>Deity</strong>: Marduk
+<strong>Geometric Element</strong>: Square
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe Square in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Square (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Marduk's Story</h2><h1>Marduk and the Four Corners of Creation</h1><strong>CHARACTERS:</strong>
+<ul><li>MARDUK, the brave young god of Babylon</li>
+<li>TIAMAT, the dragon of chaos (voice only)</li>
+<li>NARRATOR</li>
+<li>FOUR WINDS (North, South, East, West)</li></ul><strong>SETTING:</strong> The ancient sky above Mesopotamia, before the world had its proper shape.<p>---</p><strong>NARRATOR:</strong> Long ago, before cities had streets and before fields had edges, the world was mixed up like paint swirled together. The great dragon Tiamat filled everything with swirling, twisting chaos. But one young god was ready to bring order to the universe. His name was Marduk!<em>(MARDUK enters, holding a net and carrying winds at his belt)</em><strong>MARDUK:</strong> I am Marduk, son of wisdom! The elder gods have chosen me to face Tiamat and create a world with shape and order. But I cannot do this alone. <em>(Calls out)</em> Four Winds! Come to me!<em>(The FOUR WINDS rush in from different directions, spinning and whooshing)</em><strong>NORTH WIND:</strong> I blow from the north, cold and strong!<strong>SOUTH WIND:</strong> I blow from the south, warm and steady!<strong>EAST WIND:</strong> I blow from the east, where the sun rises!<strong>WEST WIND:</strong> I blow from the west, where the sun sets!<strong>MARDUK:</strong> Perfect! You each guard a direction. Today, you will help me create something the world has never seen—a shape with four equal sides, four perfect corners, and four directions to match your powers!<strong>FOUR WINDS <em>(together)</em>:</strong> We are ready, mighty Marduk!<strong>TIAMAT <em>(voice booming from everywhere)</em>:</strong> You think you can give shape to MY chaos? I am everywhere and nowhere! I have no beginning and no end! You cannot catch me, little god!<strong>NARRATOR:</strong> Tiamat's voice shook the heavens. But Marduk had a plan.<strong>MARDUK:</strong> Four Winds, take your positions! North Wind, stand HERE! <em>(Points to one spot)</em> South Wind, stand exactly opposite, the same distance away! East Wind, stand to my right! West Wind, stand to my left! Each of you must be the same distance from me!<em>(The FOUR WINDS move to their positions, forming the four corners of an invisible square)</em><strong>NORTH WIND:</strong> I'm in position!<strong>SOUTH WIND:</strong> Me too—and look! North Wind and I are exactly opposite!<strong>EAST WIND:</strong> West Wind and I are the same distance apart as North and South!<strong>WEST WIND:</strong> We've made four corners!<strong>MARDUK:</strong> Yes! And now, watch this! <em>(Stretches his net between them)</em> When I connect your four positions, we create something powerful—a SQUARE! Four equal sides! Four perfect corners! Four directions of order!<strong>TIAMAT <em>(voice angry)</em>:</strong> No! What is this shape? It traps me! It gives me boundaries!<strong>MARDUK:</strong> That's right, Tiamat! A square has four equal sides that make four corners. Each corner is a perfect, right angle—not too wide, not too narrow, but just right! Your chaos cannot escape these four walls of order!<em>(MARDUK throws his net in a square shape)</em><strong>NARRATOR:</strong> Marduk's square net flew through the chaos. The Four Winds held the corners tight. Tiamat was caught!<strong>TIAMAT:</strong> I am trapped by your four-cornered shape!<strong>MARDUK:</strong> From your chaos, I will make order! I will split you in two, and from your body, I will create the heavens above and the earth below. And everything I create will remember this square—this shape of four equal sides and four perfect corners!<strong>NARRATOR:</strong> And that's exactly what Marduk did. He used the square to organize the world.<strong>NORTH WIND:</strong> The cities of Mesopotamia were built with square walls!<strong>SOUTH WIND:</strong> The temples had square corners!<strong>EAST WIND:</strong> The fields were measured in squares!<strong>WEST WIND:</strong> Even the great ziggurats were built on square bases!<strong>MARDUK:</strong> The square brought order from chaos. It has four equal sides—each one the same length. It has four corners—each one the same perfect angle. When you see a square, remember: you're seeing the shape that helped create the world!<strong>ALL WINDS <em>(together)</em>:</strong> Four sides! Four corners! Four directions! Perfect order!<strong>NARRATOR:</strong> And from that day forward, the people of ancient Mesopotamia—the land between two rivers—used squares to build their civilization. Every time they drew four equal sides with four perfect corners, they remembered brave Marduk, who brought order to chaos with the power of the square.<em>(All characters bow as the NARRATOR gestures to the audience)</em><strong>NARRATOR:</strong> The end... or rather, the beginning!<p>---</p><strong>THE END</strong><p>---</p>
+<h2>Section 3: Ancient Art and Artifacts</h2><h1>Looking at Ancient Treasures</h1><p>Long ago in ancient Mesopotamia, artists and craftspeople created beautiful objects that showed their love for Marduk, the king of all gods. Many of these treasures still exist today in famous museums around the world. When we look closely at these ancient artifacts, we can spot squares everywhere!</p><h2>The Ishtar Gate</h2><p>One of the most amazing artifacts from ancient Mesopotamia is the Ishtar Gate, which you can visit at the Pergamon Museum in Berlin, Germany. Parts of it are also at the Metropolitan Museum of Art in New York. This enormous blue gate once stood at the entrance to the city of Babylon, where people worshipped Marduk. The entire gate is covered with square-shaped glazed bricks, each one carefully placed next to another. The bricks form a pattern of squares that repeat over and over. On these square bricks, artists painted dragons and bulls—animals sacred to Marduk. Each animal figure fits inside an invisible square frame, showing how important this shape was to Mesopotamian artists.</p><h2>Cylinder Seals</h2><p>In the British Museum in London, you can find tiny cylinder seals that people in ancient Mesopotamia used like signatures. These small stone cylinders were carved with pictures and rolled onto soft clay to make square impressions. Many seals show Marduk standing in victory over Tiamat, the chaos monster. The scenes are organized in square sections, like comic book panels. Merchants, priests, and government officials all used these seals in their daily work. When they pressed the seal into clay, it created a square mark that proved a document was real and official.</p><h2>Temple Foundation Stones</h2><p>The Louvre Museum in Paris displays special square foundation stones from Mesopotamian temples dedicated to Marduk. These square stones were buried in the ground when builders started constructing a new temple. Each stone has writing pressed into its square surface, telling the story of who built the temple and why. The square shape wasn't chosen by accident—it represented stability and strength. Just as a square sits firmly on the ground with four equal sides, these stones showed that Marduk's temple would stand strong forever.</p><h2>Boundary Stones (Kudurrus)</h2><p>Another fascinating artifact type is called a kudurru, or boundary stone. Several examples are kept at the British Museum and the Louvre. These tall stones marked the edges of land and property. The top of each kudurru shows symbols of different gods arranged in square registers, or sections. Marduk's symbol—a special dragon called a mushhushshu—often appears in the most important square at the top. Farmers and landowners used these stones to show where one person's field ended and another's began, making them very important in daily life.</p><h2>Square Tablets</h2><p>Museums around the world display thousands of clay tablets from Mesopotamia. These tablets are almost always square or rectangular in shape. Scribes wrote on them using wedge-shaped marks called cuneiform. Many tablets contain prayers to Marduk, business records from his temples, or stories about his great deeds. Students in ancient Mesopotamia practiced writing on small square practice tablets, just like you practice writing today! The square shape made the tablets easy to hold, store on shelves, and read.</p><h2>Connecting to Daily Life</h2><p>These square artifacts weren't just decorative—they were part of everyday life in ancient Mesopotamia. People walked through square gates, used square seals for their work, read from square tablets, and worshipped at temples built on square foundations. The square shape represented order, fairness, and the power of Marduk to keep the world balanced and stable. Every time ancient people saw or used a square object, they were reminded of their mighty god and the civilization he protected.</p><p>---</p>
+<h2>Section 4: 5-Layer Geometric Decomposition</h2><h1>Layer 1: What Your Eyes Can See</h1><p>When you first look at a square in ancient Mesopotamian art, your eyes notice something special right away. A square has four straight sides that are all exactly the same length. Think about the clay tablets that scribes used to write cuneiform messages to Marduk—many of these tablets were shaped like squares! The corners of a square are also special. Each corner makes a perfect right angle, just like the corner where two walls meet in a room.</p><p>The ancient people of Mesopotamia saw squares everywhere in their daily lives. The bricks they used to build ziggurats were often square-shaped. When you hold a square brick, you can feel that all four sides have the same length. If you trace your finger along one side and then another side, they feel equal. This is the first thing anyone can notice about a square: it has four equal sides and four corners that look and feel the same.</p><p>Mesopotamian artists carved squares into stone seals that people used like signatures. These cylinder seals would roll across soft clay, leaving behind patterns of squares and other shapes. When you look at these ancient squares, you don't need any special tools or knowledge. You can simply see that the shape is balanced and even. Each side mirrors the others, and no side is longer or shorter than the rest.</p><p>The squares on ancient temple walls honored Marduk, the great god of Babylon. Builders placed square tiles in careful patterns, and even without measuring, people could tell these shapes were squares because of how regular and balanced they appeared. Your eyes are excellent at noticing when something is even and fair, and a square looks perfectly even from every direction you examine it.</p><h2>Layer 2: Counting and Comparing</h2><p>Once you look more carefully at a square, you can start counting and comparing its parts. A square has exactly four sides—no more, no less. Count them: one, two, three, four. It also has exactly four corners, which mathematicians call vertices. The ancient Mesopotamians were excellent mathematicians, and they knew that counting the parts of shapes helped them understand how to use those shapes in building and art.</p><p>When Mesopotamian craftsmen made square decorations for Marduk's temples, they needed to make sure each side was equal. They would measure one side, then measure the next side, and check that both measurements were the same. Then they would measure the third side and the fourth side. All four measurements had to match perfectly. This is what makes a square different from other four-sided shapes. A rectangle also has four sides, but only opposite sides are equal in a rectangle. In a square, all four sides must be equal.</p><p>The corners of a square are also identical to each other. If you could cut out one corner and place it on top of another corner, they would match exactly. Ancient builders used this knowledge when they laid the foundations for temples. They needed to make sure each corner was exactly the same type of angle—a right angle—so the building would be strong and stable.</p><p>Mesopotamian children might have played games with square tiles, just like you might play with square blocks today. They could stack squares on top of each other because squares fit together perfectly. Two squares placed side by side create a rectangle. Four squares arranged in a pattern create a bigger square! The ancient people discovered these relationships by playing with and comparing square shapes.</p><h2>Layer 3: Finding Lines of Symmetry</h2><p>Now we reach a deeper level of understanding squares. Symmetry means that you can fold or flip a shape and it matches itself perfectly. A square has four lines of symmetry, which is more than most other shapes! This made squares very important in Mesopotamian sacred art because symmetry represented balance and perfection, qualities associated with Marduk.</p><p>The first two lines of symmetry are easy to find. Imagine drawing a line straight down through the middle of a square, from the top edge to the bottom edge. This vertical line divides the square into two identical rectangles. If you folded the square along this line, both halves would match perfectly. Now imagine drawing a horizontal line from the left edge to the right edge, straight through the middle. This creates another line of symmetry, dividing the square into two more identical rectangles.</p><p>But a square has two more lines of symmetry that are trickier to spot! These diagonal lines of symmetry go from one corner to the opposite corner. Draw a line from the top-left corner to the bottom-right corner, cutting through the center of the square. This diagonal line creates two identical triangles. Now draw another diagonal line from the top-right corner to the bottom-left corner. This creates two more identical triangles. These diagonal lines also pass through the exact center of the square where all four lines of symmetry meet.</p><p>Ancient Mesopotamian artists used these lines of symmetry when creating decorations for Marduk's temples. They would place matching designs on either side of a symmetry line. For example, they might carve a dragon on the left side of a square tile and the same dragon facing the opposite direction on the right side. The vertical line of symmetry down the middle would make the design look balanced and harmonious.</p><p>The four lines of symmetry in a square also mean you can rotate a square and it will look the same at certain positions. Turn a square one-quarter of the way around (90 degrees), and it looks identical to how it started! Turn it another quarter turn, and again it looks the same. This rotational symmetry made squares perfect for creating repeating patterns in Mesopotamian art. Craftsmen could rotate square tiles in different directions, and they would all fit together beautifully in the pattern.</p><h2>Layer 4: Measuring Angles and Diagonals</h2><p>At this level, we start to measure and calculate specific properties of squares. The ancient Mesopotamians were skilled at measuring angles, even though they didn't have protractors like we use today. They understood that each corner of a square forms a right angle, which measures exactly 90 degrees.</p><p>Why is 90 degrees special? Because four right angles add up to 360 degrees, which is the measurement of a complete circle or a full turn. The Mesopotamians divided circles into 360 parts, and this system is still used today! When you add up all four corners of a square (90 + 90 + 90 + 90), you get 360 degrees. This mathematical relationship connected squares to circles in Mesopotamian geometry.</p><p>The diagonal lines we discovered in Layer 3 have special mathematical properties too. When you draw a diagonal across a square, it creates two right triangles. These aren't just any triangles—they're special right triangles where two sides are equal (the sides of the original square) and the diagonal is longer than either side. Ancient builders used this knowledge when constructing temples for Marduk. They could measure the diagonal of a square foundation to check that all the sides were truly equal and all the corners were truly right angles.</p><p>If a square has sides that measure 4 units long, you can figure out how long the diagonal is using a special relationship. The diagonal is always longer than the sides, but not twice as long. Mesopotamian mathematicians discovered that the diagonal of a square is about 1.4 times the length of one side. So if each side measures 4 units, the diagonal measures about 5.6 units. This ratio stays the same no matter how big or small the square is!</p><h2>Layer 5: Mathematical Relationships and Area</h2><p>The deepest layer of understanding squares involves discovering mathematical relationships that aren't visible to the eye. Ancient Mesopotamian mathematicians were fascinated by these hidden patterns, and they used this knowledge in architecture, agriculture, and astronomy.</p><p>The area of a square—the amount of space inside it—has a beautiful mathematical pattern. To find the area, you multiply the length of one side by itself. If a square has sides of 3 units, its area is 3 × 3 = 9 square units. If the sides are 5 units, the area is 5 × 5 = 25 square units. Mathematicians call this "squaring a number," and that term comes from this geometric shape!</p><p>Mesopotamian farmers used square measurements to divide their fields. If a farmer had a square field with sides of 10 units, he knew the field contained 100 square units of planting area. This helped him figure out how many seeds to plant and how much harvest to expect. Priests also used square measurements when planning temple gardens dedicated to Marduk.</p><p>The perimeter of a square—the distance around its outside edge—also follows a pattern. Since all four sides are equal, you can find the perimeter by multiplying the length of one side by 4. A square with sides of 6 units has a perimeter of 24 units (6 × 4 = 24). Ancient builders used perimeter calculations when they needed to know how much material would be required to build square walls or frame square doorways.</p><p>One fascinating relationship connects the area and perimeter of squares. As a square gets bigger, its area grows much faster than its perimeter. A square with sides of 2 units has a perimeter of 8 and an area of 4. But a square with sides of 4 units (twice as big) has a perimeter of 16 (twice as much) and an area of 16 (four times as much!). Mesopotamian architects understood this principle when designing temples. They knew that doubling the size of a square room would give them four times as much floor space.</p><p>These mathematical relationships made squares powerful tools for ancient Mesopotamian civilization. From the simple observation that all sides look equal to the complex calculations of area and perimeter, squares revealed layers of mathematical truth. The priests and scholars who served Marduk saw these mathematical patterns as evidence of divine order in the universe, where simple shapes contained deep wisdom waiting to be discovered.</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h1>Creating Your Own Marduk Square Tablet</h1><p>Today, you'll become an ancient Mesopotamian artist! You're going to create a beautiful square artwork inspired by Marduk, the mighty protector god of Babylon. Just like the artists who lived thousands of years ago, you'll use squares and patterns to tell a story about this powerful deity.</p><h2>Materials You'll Need</h2><p>Gather these simple materials before you begin:</p><ul><li>One piece of thick cardboard or poster board (at least 8 inches by 8 inches)</li>
+<li>Ruler</li>
+<li>Pencil</li>
+<li>Markers or crayons (blue, gold, red, and black work especially well)</li>
+<li>Aluminum foil or gold/silver paper (optional)</li>
+<li>Glue stick</li>
+<li>Brown or tan construction paper</li>
+<li>Small sponge pieces or cotton swabs</li>
+<li>Brown and orange paint or watercolors</li></ul><h2>Step-by-Step Instructions</h2><strong>Step 1: Create Your Square Base</strong><p>Using your ruler and pencil, draw a large square on your cardboard. Each side should measure exactly 8 inches. Remember, a square has four equal sides and four right angles—just like the perfect squares you've been learning about! This square represents order and balance, which were very important to Marduk as the god who organized the universe.</p><p>Carefully cut out your square. This will be your clay tablet, just like the ones ancient Mesopotamians used to record important stories and images.</p><strong>Step 2: Make It Look Ancient</strong><p>Cover your square with brown or tan construction paper, gluing it down smoothly. Now, use your sponge pieces or cotton swabs to dab brown and orange paint around the edges. This makes your tablet look old and weathered, like it's been buried in the desert sand for thousands of years! Let this dry completely before moving to the next step.</p><strong>Step 3: Draw Your Grid</strong><p>Using your pencil and ruler, divide your square into four equal smaller squares. Draw one line straight down the middle from top to bottom. Then draw another line across the middle from left to right. Your lines should cross exactly in the center. This creates four squares, each measuring 4 inches on each side.</p><p>These four squares represent the four corners of the world that Marduk protected. Ancient Mesopotamians believed their god watched over everything in all directions.</p><strong>Step 4: Design Marduk's Symbol</strong><p>In the very center where your two lines cross, draw a small circle about the size of a quarter. This represents Marduk's all-seeing eye. Around this circle, draw eight straight lines radiating outward like sun rays or a star. This is similar to symbols ancient artists used to show Marduk's power and wisdom.</p><strong>Step 5: Add Square Patterns</strong><p>Now comes the fun part! In each of the four squares you created, draw smaller squares inside. You can stack them like boxes, or arrange them in patterns. Ancient Mesopotamian artists loved repeating geometric shapes. Try these ideas:</p><ul><li>Draw three small squares in a row</li>
+<li>Create a checkerboard pattern with tiny squares</li>
+<li>Draw squares inside squares, getting smaller as they go toward the center</li>
+<li>Make square spirals that twist inward</li></ul><p>Remember to keep your squares neat with straight lines and equal sides. Use your ruler to help!</p><strong>Step 6: Add Mesopotamian Details</strong><p>Between your squares, add small triangles pointing toward the center. Ancient Mesopotamian art often featured triangles alongside squares. You can also add zigzag lines like the waves of the Euphrates River where Marduk was worshipped. Draw small dots in groups of four around your patterns—four was a sacred number representing the four directions Marduk protected.</p><strong>Step 7: Color Your Creation</strong><p>Now bring your artwork to life with color! Ancient Mesopotamians loved blue and gold because blue represented the heavens where Marduk ruled, and gold showed his divine power. Color your central symbol gold or yellow. Use blue for some of your squares. Add red for power and black for the mysterious night sky that Marduk organized with stars.</p><p>If you have aluminum foil or metallic paper, cut small squares and glue them in some sections to make your tablet sparkle like real gold!</p><strong>Step 8: Add Finishing Touches</strong><p>Around the outer edge of your large square, draw a border of small squares or rectangles all the way around. This frames your artwork just like ancient tablets had decorated edges. You can make each small square a different color, creating a rainbow border, or alternate between two colors for a pattern.</p><h2>Reflection Questions</h2><p>When your artwork is complete and dry, think about these questions:</p><strong>About Squares:</strong> How many squares can you count in your entire artwork? Did you discover that squares can fit inside other squares perfectly? What makes squares special compared to other shapes?<strong>About Symmetry:</strong> If you folded your artwork in half, would both sides match? Where do you see symmetry in your design? How did the ancient artists use symmetry to show that Marduk brought order to the world?<strong>About Patterns:</strong> What patterns did you create using squares? How do patterns make your artwork more interesting to look at? Why do you think ancient people loved using repeating patterns in their art?<strong>About Marduk:</strong> How does your artwork show Marduk's power and importance? If you were an ancient Mesopotamian, what would you want people to understand about Marduk when they looked at your tablet?<h2>Display Your Work</h2><p>Congratulations! You've created a mathematical masterpiece that connects geometry, history, and art. Display your Marduk square tablet proudly, knowing you've used the same shapes and ideas that artists used thousands of years ago in ancient Mesopotamia!</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

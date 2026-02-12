@@ -1,0 +1,10 @@
+.learn-content {
+    // legacy support to not break external apps
+}
+
+.portal-size-large {
+    .learn-content,
+    .neo-markdown-component {
+        padding: 0 250px 0 3rem;
+    }
+}

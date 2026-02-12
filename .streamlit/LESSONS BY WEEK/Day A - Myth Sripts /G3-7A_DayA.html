@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G3-7A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G3-7A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G3-7A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Reflection Symmetry in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Reflection Symmetry (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Dumuzi &amp; Reflection Symmetry</h1>
+<strong>Grade 3 Geometry Lesson</strong><strong>Lesson Code</strong>: G3-7A
+<strong>Deity</strong>: Dumuzi
+<strong>Geometric Element</strong>: Reflection Symmetry
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe Reflection Symmetry in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Reflection Symmetry (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Dumuzi's Story</h2><h1>Dumuzi's Story: The Shepherd God and the Magic Mirror Pool</h1><strong>CHARACTERS:</strong>
+<ul><li>DUMUZI (doo-MOO-zee): The Shepherd God, kind and gentle</li>
+<li>INANNA (ih-NAH-nah): Goddess of Love, Dumuzi's beloved</li>
+<li>GESHTINANNA (gesh-tih-NAH-nah): Dumuzi's wise sister</li>
+<li>NARRATOR</li></ul><strong>SETTING:</strong> Ancient Mesopotamia, beside a perfectly still pool of water in a green meadow<p>---</p><strong>NARRATOR:</strong> Long ago, between the great Tigris and Euphrates rivers, there lived a young shepherd god named Dumuzi. He watched over the flocks and made sure the land stayed green and beautiful. But Dumuzi had a special secret—he could see magic in places where things matched perfectly on both sides.<em>(DUMUZI enters, walking slowly toward a still pool of water. He kneels beside it.)</em><strong>DUMUZI:</strong> Every morning, I come to this pool to see the magic. Look! The water is so still and smooth, like a mirror from the heavens.<em>(He points at the water, tracing an invisible line down the middle.)</em><strong>DUMUZI:</strong> See how the trees on the left side match the trees on the right side? And the clouds above match their reflection below? It's like the world is folded perfectly in half!<em>(GESHTINANNA enters, carrying a basket of grain.)</em><strong>GESHTINANNA:</strong> Brother! Why do you spend so much time staring at this pool? The sheep are waiting!<strong>DUMUZI:</strong> <em>(excitedly)</em> Sister, come look! Do you see how everything matches? If I draw a line right down the middle of the pool, one side is like a mirror of the other side. The left matches the right, and the top matches the bottom!<strong>GESHTINANNA:</strong> <em>(kneeling beside him)</em> You're right! I never noticed before. The reflection is exactly the same, just flipped!<strong>DUMUZI:</strong> I see this magic everywhere! Watch. <em>(He holds up his hands, palms facing each other.)</em> My left hand and right hand—they match! They're reflections of each other.<strong>GESHTINANNA:</strong> <em>(holding up her hands too)</em> Like looking in a mirror! One side, then the other side, perfectly balanced.<em>(INANNA enters, wearing a beautiful crown.)</em><strong>INANNA:</strong> Dumuzi! There you are. I've been searching all over the meadow for you. What are you two doing?<strong>DUMUZI:</strong> <em>(standing and bowing)</em> Great Inanna! I'm showing my sister the magic of matching sides. Look at your beautiful crown—see how the left side matches the right side perfectly?<strong>INANNA:</strong> <em>(touching her crown)</em> I never thought about it that way! You're right—if I drew a line down the middle, both sides would be the same.<strong>DUMUZI:</strong> It's called reflection, like in this pool. And I see it everywhere! In butterfly wings, in flower petals, even in the way we plant our fields in neat rows.<strong>GESHTINANNA:</strong> Dumuzi, this is wonderful! But why does this matching matter so much to you?<strong>DUMUZI:</strong> <em>(sitting by the pool, gesturing for others to join)</em> Because balance brings harmony. When things match on both sides, they feel peaceful and right. It's how nature keeps everything fair and beautiful.<strong>INANNA:</strong> <em>(sitting beside him)</em> Like how day balances with night?<strong>DUMUZI:</strong> Yes! And like how planting season balances with harvest season. Everything has its matching part.<strong>NARRATOR:</strong> Dumuzi taught everyone in Mesopotamia about the magic of reflection. The farmers used it to plant their fields in balanced rows. The artists used it to make beautiful pottery with matching patterns. The architects used it to build temples with matching columns on each side.<em>(All three stand and face the audience.)</em><strong>GESHTINANNA:</strong> So when you look in a mirror...<strong>INANNA:</strong> Or at your reflection in water...<strong>DUMUZI:</strong> You're seeing one of nature's most important patterns! A line down the middle, and both sides match perfectly.<strong>ALL TOGETHER:</strong> This is the magic of reflection!<strong>NARRATOR:</strong> And that's why, even today, we see reflection symmetry all around us—in buildings, in art, in nature, and even in our own faces. Dumuzi's discovery reminds us that balance and matching sides create beauty and harmony in our world.<em>(DUMUZI kneels one more time by the pool, drawing an invisible line down the middle with his finger. The others join him, all looking at their reflections.)</em><strong>DUMUZI:</strong> <em>(softly)</em> One line down the middle. Left matches right. That's the magic of reflection symmetry.<em>(All freeze in position as lights fade.)</em><strong>THE END</strong><p>---</p>
+<h2>Section 3: Ancient Art and Artifacts</h2><h2>Discovering Dumuzi in Ancient Mesopotamian Art</h2><p>Thousands of years ago in ancient Mesopotamia, artists created beautiful objects that showed their love for Dumuzi, the shepherd god. These artists understood reflection symmetry, even though they didn't call it by that name! When we look at artifacts in museums today, we can see how they used this special geometric pattern to honor their deity.</p><h3>The Sacred Cylinder Seal</h3><p>One of the most amazing artifacts featuring Dumuzi is a cylinder seal housed in the British Museum. Cylinder seals were small stone tubes that ancient Mesopotamians rolled across wet clay to make pictures. This particular seal from around 2100 BCE shows Dumuzi standing in the center with matching palm trees on both sides of him. If you drew a line down the middle of Dumuzi's body, you would see perfect reflection symmetry! The palm trees mirror each other exactly, and even the sheep at his feet are arranged symmetrically. People in ancient times used these seals like signatures on important documents, so they saw reflection symmetry every single day.</p><h3>The Inanna and Dumuzi Vase</h3><p>The Louvre Museum in Paris displays a stunning limestone vase that tells the story of Dumuzi and the goddess Inanna. Created around 3000 BCE, this vase shows Dumuzi's face carved with perfect reflection symmetry. His eyes, nose, and mouth are balanced on both sides of an invisible center line. The ancient artists also carved matching decorative bands around the vase, with identical patterns of wheat and barley on opposite sides. These plants were important because Dumuzi was believed to make crops grow. Farmers would have recognized this symmetry and felt comforted knowing their god brought balance to nature.</p><h3>Temple Relief Panels</h3><p>At the Metropolitan Museum of Art in New York, you can find stone relief panels from ancient Sumerian temples. These panels, dating to approximately 2500 BCE, show Dumuzi in his role as the good shepherd. The artists carved him standing straight and tall, with his arms held out equally on both sides. On his left side, there are three sheep, and on his right side, three more sheep in mirror positions. Above his head, there are matching stars arranged symmetrically. Temple visitors would have walked past these panels during religious ceremonies, seeing reflection symmetry as a sign of divine order and perfection.</p><h3>The Royal Standard of Ur</h3><p>Though not exclusively about Dumuzi, the Royal Standard of Ur at the British Museum shows how reflection symmetry was used throughout Mesopotamian art. This wooden box from 2600 BCE displays scenes of daily life with amazing symmetrical patterns. Animals, soldiers, and farmers are arranged in matching rows on opposite sides. This artifact helps us understand that ancient Mesopotamians saw symmetry everywhere in their world—in their art, their architecture, and their religious beliefs about gods like Dumuzi.</p><h3>Daily Life Connections</h3><p>Ancient Mesopotamian people didn't just save reflection symmetry for fancy temple art. They used it in pottery bowls, jewelry, and even the design of their gardens. When families baked bread or wove cloth, they often created symmetrical patterns. They believed that balance and symmetry brought good fortune, just as Dumuzi brought balance between the seasons. Children in ancient times might have played with clay toys that showed symmetrical designs, learning about this geometric concept just like you are today!</p><p>By studying these ancient artifacts, we can see that reflection symmetry wasn't just about making pretty pictures. It was a way for ancient people to show respect for their gods and to bring order and beauty into their daily lives.</p><p>---</p>
+<h2>Section 4: 5-Layer Geometric Decomposition</h2><h1>Understanding Reflection Symmetry Through Five Layers</h1><p>When ancient Mesopotamian artists created images of Dumuzi, the shepherd god who brought life to the land, they used a special kind of balance called reflection symmetry. Imagine looking at your face in a calm pool of water—what you see is a mirror image of yourself. This same idea appears in countless artifacts from ancient Mesopotamia, and we can understand it by exploring five different layers, from the simplest observations to more complex mathematical ideas.</p><h2>Layer 1: Visual Recognition – What Our Eyes See First</h2><p>The first layer of understanding reflection symmetry is the easiest because it uses only our eyes. When we look at ancient Mesopotamian cylinder seals showing Dumuzi, we notice that the left side and right side look almost like twins. If we could fold the image down the middle, one half would match up with the other half perfectly.</p><p>Let's start with a simple example. Picture a clay tablet showing Dumuzi standing between two date palm trees. If you place a mirror vertically down the center of the image, the reflection in the mirror would look exactly like what's already there on the other side. This invisible line where we place the mirror is called the <strong>line of symmetry</strong> or the <strong>line of reflection</strong>.</p><p>In Mesopotamian art, artists often placed Dumuzi in the center with matching elements on both sides. You might see:
+<ul><li>Two identical goats, one on each side of the god</li>
+<li>Two date palms with the same number of fronds</li>
+<li>Two offering vessels of the same size and shape</li>
+<li>Two worshippers in matching poses</li></ul><p>When you first look at any artifact, ask yourself: "If I drew a line down the middle, would both sides match?" If the answer is yes, you've found reflection symmetry! This is the foundation for everything else we'll discover.</p><p>The ancient artists knew that this balance made their images feel calm, organized, and important. When something has reflection symmetry, our brains recognize it quickly and find it pleasing to look at. This wasn't an accident—the artists of Mesopotamia used this geometric principle on purpose to make their images of Dumuzi powerful and memorable.</p><h2>Layer 2: The Line of Reflection – Finding the Mirror</h2><p>The second layer helps us understand exactly where the symmetry happens. Every reflection symmetry has a special line called the <strong>axis of symmetry</strong> or <strong>line of reflection</strong>. This is the invisible line that acts like a mirror.</p><p>To find this line on a Mesopotamian artifact showing Dumuzi, follow these steps:</p><p>First, look for matching pairs of objects or features. Maybe there are two identical sheep, two trees, or two decorative patterns. Second, find the space exactly halfway between these matching pairs. Third, draw an imaginary line through that middle space. This is your line of reflection!</p><p>In most Dumuzi images, the line of reflection runs vertically (up and down) right through the center of the god himself. His body often sits perfectly on this line. We call features that sit directly on the line of reflection <strong>symmetric features</strong>. Dumuzi's nose, the center of his crown, and the middle of his staff often rest right on this special line.</p><p>But here's something interesting: not everything has to be exactly on the line. Some objects appear on both sides of the line in matching positions. If a sheep stands two hand-widths to the left of the line, another identical sheep should stand two hand-widths to the right. These matching objects are called <strong>reflected pairs</strong>.</p><p>Sometimes Mesopotamian artifacts have more than one line of reflection! A decorative rosette (a flower-like pattern) carved into a palace wall might have four lines of symmetry—one vertical, one horizontal, and two diagonal lines. But in images of Dumuzi as a standing figure, we usually find just one vertical line of reflection, which creates a sense of dignity and stability.</p><h2>Layer 3: Distance and Position – The Mathematics of Matching</h2><p>Now we move into the third layer, where we start thinking about measurements and positions. This is where reflection symmetry becomes more mathematical, but don't worry—it's still something we can understand and even measure!</p><p>Here's the key rule of reflection symmetry: <strong>Every point on one side of the line of reflection must be the exact same distance from the line as its matching point on the other side.</strong><p>Let's imagine a cylinder seal showing Dumuzi with a star symbol above each shoulder. If the star on the left is 3 centimeters away from the center line and 5 centimeters up from Dumuzi's shoulder, then the star on the right must also be 3 centimeters away from the center line and 5 centimeters up from his other shoulder. The distances must match exactly!</p><p>We can practice measuring these distances on real artifacts or drawings:</p><strong>Measuring Activity:</strong> Take a drawing of a symmetrical Dumuzi image. Use a ruler to measure from the line of reflection to matching features. You might measure:
+<ul><li>The distance from the center line to the edge of each palm tree (should be equal)</li>
+<li>The distance from the center line to each goat's nose (should be equal)</li>
+<li>The height of matching decorative elements above the ground line (should be equal)</li></ul><p>Ancient Mesopotamian artists were very skilled at keeping these measurements consistent. They didn't have modern rulers, but they used measuring strings, counting methods, and careful observation to create precise reflection symmetry.</p><p>Another important idea is <strong>perpendicular distance</strong>. This means we always measure the shortest distance to the line of reflection, which creates a right angle (a square corner) with the line. If you draw a line from a point to its reflection, that connecting line will always cross the line of reflection at a perfect right angle, and the line of reflection will cut it exactly in half.</p><h2>Layer 4: Transformation and Mapping – How Shapes Move</h2><p>The fourth layer introduces us to thinking about reflection as a <strong>transformation</strong>—a mathematical word that means moving or changing the position of a shape according to specific rules.</p><p>When we reflect a shape across a line, we're not just copying it. We're performing a geometric operation that follows exact rules. Imagine you could pick up the left side of a Dumuzi image and flip it over the center line like flipping a pancake. Where it lands would be exactly where the right side already is!</p><p>Mathematicians call this process <strong>mapping</strong>. Each point on the left side maps to (connects with) exactly one point on the right side. If we label a point on the left side as Point A, its reflection on the right side would be Point A' (we say "A prime"). These two points are <strong>reflection partners</strong>.</p><p>Here's how mapping works in a Dumuzi artifact:
+<ul><li>The tip of a left-side palm frond (Point A) maps to the tip of the right-side palm frond (Point A')</li>
+<li>The left goat's tail (Point B) maps to the right goat's tail (Point B')</li>
+<li>The left edge of Dumuzi's robe (Point C) maps to the right edge of his robe (Point C')</li></ul><p>An important property of reflection is that it preserves <strong>distance</strong> and <strong>angle</strong>. This means:
+<ul><li>If two points are 4 centimeters apart on the left side, their reflections will also be 4 centimeters apart on the right side</li>
+<li>If two lines meet at a 60-degree angle on the left, their reflections will meet at a 60-degree angle on the right</li>
+<li>The shapes stay exactly the same size—reflection doesn't make things bigger or smaller</li></ul><p>However, reflection does change <strong>orientation</strong>. If you could write the word "Dumuzi" on the left side of an image, its reflection would appear backward on the right side, like mirror writing. This is why reflection is sometimes called a "flip" transformation.</p><h2>Layer 5: Symmetry as a Geometric Invariant – The Deepest Pattern</h2><p>The fifth and deepest layer helps us understand reflection symmetry as a fundamental property that doesn't change—what mathematicians call an <strong>invariant</strong>. This layer connects individual observations into a complete geometric principle.</p><p>When ancient Mesopotamian artists created symmetrical images of Dumuzi, they were working with a geometric truth that exists beyond any single artwork. Reflection symmetry is a relationship that remains constant even when we change other things about an image.</p><p>Think about it this way: Whether a Dumuzi image is carved large on a palace wall or tiny on a cylinder seal, whether it's made from stone or clay, whether it shows Dumuzi with two goats or two trees—the mathematical relationship of reflection symmetry stays the same. The principle doesn't change.</p><p>This deepest layer includes understanding <strong>symmetry operations</strong> as a set. An object with reflection symmetry has what we call a <strong>symmetry group</strong>. For a simple Dumuzi image with one vertical line of reflection, the symmetry group contains two operations: doing nothing (leaving it as is) and reflecting across the line. Both operations leave the image looking unchanged overall.</p><p>We can also understand that reflection symmetry creates <strong>congruent halves</strong>. The left and right sides of a symmetrical Dumuzi image are congruent, meaning they have exactly the same size and shape, even though they face opposite directions. If we could cut out both halves and flip one over, they would match perfectly when placed on top of each other.</p><p>Finally, this layer helps us see how reflection symmetry relates to balance and stability. The ancient Mesopotamians understood intuitively what we now know mathematically: symmetrical designs have a special kind of equilibrium. When Dumuzi appears in perfect reflection symmetry, the visual weight is evenly distributed on both sides of the center line. This creates not just beauty, but a sense of order, permanence, and divine authority—exactly what the artists wanted to communicate about this important god.</p><p>By understanding all five layers—from simple visual recognition to deep mathematical invariants—we can appreciate both the artistic skill and the geometric sophistication of ancient Mesopotamian craftspeople who created these enduring images of Dumuzi.</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h1>Creating Your Own Dumuzi Symmetry Garden</h1><p>Today you'll become an ancient Mesopotamian artist! Just like the craftspeople who created beautiful decorations for Dumuzi's temples thousands of years ago, you're going to design your own symmetrical artwork. You'll make a special garden scene that shows Dumuzi's connection to plants and growing things, using reflection symmetry to make your artwork balanced and beautiful.</p><h2>Materials You'll Need</h2><p>Gather these simple supplies before you begin:</p><ul><li>One sheet of white paper (8.5 x 11 inches)</li>
+<li>Pencil with eraser</li>
+<li>Ruler or straight edge</li>
+<li>Colored pencils, crayons, or markers</li>
+<li>Optional: small mirror to check your symmetry</li>
+<li>Optional: scissors and glue for an extra challenge</li></ul><h2>Step-by-Step Instructions</h2><strong>Step 1: Create Your Line of Symmetry</strong><p>Place your paper vertically (the long way up and down) on your desk. Use your ruler to draw a light pencil line straight down the middle of your paper from top to bottom. This is your line of symmetry, just like the center line we found in Dumuzi's ceremonial vessels. Everything you draw on one side must be reflected on the other side, like a mirror image.</p><strong>Step 2: Design the Ground</strong><p>Near the bottom of your paper, about two inches up from the edge, draw a gentle wavy line across the page. This represents the fertile ground where Dumuzi's plants grow. Make sure this line crosses your center line of symmetry. The wavy pattern on the left side of the center line should match the wavy pattern on the right side. If the line curves up on the left, it should curve up the same amount on the right.</p><strong>Step 3: Draw Dumuzi's Sacred Plants</strong><p>Ancient Mesopotamians often showed Dumuzi with date palms, grain stalks, and flowering plants. Start on one side of your center line and draw a simple plant. You might draw:</p><ul><li>A date palm tree with a straight trunk and curved fronds spreading out at the top</li>
+<li>Tall grain stalks with seed heads</li>
+<li>A flowering plant with petals arranged in a circle</li></ul><p>Once you've drawn your plant on one side, carefully draw the exact same plant on the other side of the center line. The plant should be the same distance from the center line and the same size. It should look like your plant is looking at its reflection in a mirror!</p><strong>Step 4: Add More Symmetrical Elements</strong><p>Now add more details to your garden, always remembering to create matching pairs across the center line:</p><p>Draw 2-3 more plants of different types, placing each one on both sides of the symmetry line. Perhaps add small flowers near the ground, medium-sized bushes in the middle, and taller plants toward the back.</p><p>Add geometric patterns that ancient Mesopotamians loved. Draw small triangles, diamonds, or zigzag patterns along the ground line. These patterns should match perfectly on both sides.</p><p>Include a sun or moon at the top center of your paper, right on the line of symmetry. Draw rays coming out evenly in all directions to keep the symmetry perfect.</p><strong>Step 5: Create a Border Design</strong><p>Ancient Mesopotamian art often featured decorative borders. Draw a simple border around the edges of your paper using repeating geometric shapes. You might use:</p><ul><li>A chain of connected triangles</li>
+<li>Alternating circles and squares</li>
+<li>A zigzag pattern like the mountains of Mesopotamia</li></ul><p>Remember that your border should be symmetrical too! The left side should mirror the right side.</p><strong>Step 6: Add Color Thoughtfully</strong><p>Now comes the fun part—adding color! Ancient Mesopotamians used colors from natural materials like clay, plants, and minerals. They loved earth tones like browns and ochres, rich blues from lapis lazuli, and bright greens for growing things.</p><p>As you color, maintain your symmetry. If you color the left palm tree's trunk brown, color the right palm tree's trunk brown too. If you add yellow flowers on the left side, add yellow flowers in the same spots on the right side. This careful attention to matching colors strengthens the reflection symmetry in your artwork.</p><strong>Step 7: Check Your Symmetry</strong><p>When you've finished coloring, use your mirror to check your work. Place the mirror along your center line. Does the reflection in the mirror match what you actually drew on the other side? If you spot any differences, you can make small corrections.</p><h2>Extra Challenge: Folded Symmetry Art</h2><p>If you'd like to try something extra special, create a piece using the folding technique:</p><p>1. Fold a new piece of paper in half vertically
+2. Draw half of a plant or vessel shape along the folded edge
+3. Cut out your shape while the paper is still folded
+4. Unfold to reveal perfect symmetry!
+5. Glue your cutout onto a colored background and decorate it with symmetrical patterns</p><h2>Reflection Questions</h2><p>After completing your artwork, think about these questions and discuss them with a partner or write your answers in your journal:</p><p>1. What was the most challenging part of creating symmetrical art? Why do you think ancient artists worked so hard to make things symmetrical?</p><p>2. How does symmetry make your garden scene feel balanced and peaceful? Why might this have been important for artwork about Dumuzi, the god of fertility and renewal?</p><p>3. Where else have you seen reflection symmetry in nature or in buildings around you?</p><p>4. If you could show your artwork to an ancient Mesopotamian artist, what do you think they would say about it?</p><p>Display your finished Dumuzi symmetry garden proudly! You've created art that connects you to artists who lived thousands of years ago.</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

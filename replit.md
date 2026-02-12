@@ -73,4 +73,8 @@ This is a Streamlit-based web application for mapping and visualizing the SDA Me
 - Local file system for data persistence
 - Structured directory layout: `data/` for graph data, `data/images/` for uploaded images
 
+**Mesopotamia Curriculum Database:** SQLite database at `attached_assets/meso_curriculum/` with SSOT structure (SSOT → eTextbook → Chapter → Lesson → Content Block → Asset → Specification). Contains Grade 3 pilot lessons (Shamash Circle, Sun Circle) with 48+ images, overlays, and lesson content.
+
+**Slideshow Generator:** `pages/11_🎬_Slideshow_Generator.py` generates interactive HTML slideshows from curriculum content. Features artifact slides with overlay toggles, myth sequence slides, diagram slides, and geometric overlay demos. Exports self-contained HTML files with embedded base64 images.
+
 **Note:** No external APIs, databases, or cloud services are currently integrated. All data remains local to the deployment environment.

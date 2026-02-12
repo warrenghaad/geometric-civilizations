@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G4-3A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G4-3A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G4-3A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Square in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Square (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Anu &amp; Triangle</h1>
+<strong>Grade 4 Geometry Lesson</strong><strong>Lesson Code</strong>: G4-3A
+<strong>Deity</strong>: Anu
+<strong>Geometric Element</strong>: Triangle
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe triangles in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze stability and geometric properties in triangles (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Anu's Mountain</h2><h1>Anu's Mountain</h1><strong>CHARACTERS:</strong>
+<ul><li>ANU, the Sky God (wearing a tall horned crown)</li>
+<li>ENLIL, God of Air and Storms (Anu's son, strong and powerful)</li>
+<li>KI, the Earth Goddess (gentle and wise)</li>
+<li>THREE BUILDERS (workers trying to build a house)</li>
+<li>NARRATOR</li></ul><p>---</p><strong>NARRATOR:</strong> In the beginning of time, when the world was young, Anu ruled from the highest heavens. His name means "sky" in the ancient language, and he sat upon a great mountain throne where heaven touched earth. This is the story of how Anu taught people the secret of the triangle.<em>(Stage shows a flat surface. THREE BUILDERS are trying to build a house using sticks, but it keeps falling down.)</em><strong>BUILDER 1:</strong> No, no, no! Not again! Our house keeps collapsing!<strong>BUILDER 2:</strong> We've tried building it with four walls standing straight up, but every time the wind blows, it falls over!<strong>BUILDER 3:</strong> How can we make a structure that won't fall? We need a roof that will stay up!<em>(They try again, stacking sticks in a square shape. The structure wobbles and falls. They sit down, frustrated.)</em><strong>NARRATOR:</strong> High above in the heavens, Anu looked down from his mountain throne and saw the builders struggling.<em>(ANU enters from above, wearing his magnificent horned crown, symbol of his divine power. He stands tall and observes.)</em><strong>ANU:</strong> My children below are trying to build, but they do not yet understand the secret of strength. They look at my throne mountain but do not see its true shape.<em>(KI, the Earth Goddess, enters from below.)</em><strong>KI:</strong> Great Anu, Father of the Gods, why do you not help them? They are working so hard.<strong>ANU:</strong> I will help them, dear Ki, but they must learn to see. Look at my mountain throne. What shape does it make against the sky?<strong>KI:</strong> <em>(looking thoughtful)</em> It rises from the wide earth in a point... It has three sides that meet at the top... A triangle!<strong>ANU:</strong> Yes! The triangle is the strongest shape. It cannot be pushed out of shape like a square or rectangle. Each side supports the other two. Three is the number of stability.<em>(ENLIL, the Storm God, rushes in.)</em><strong>ENLIL:</strong> Father! A great storm is coming! Those builders below will lose everything when my winds arrive!<strong>ANU:</strong> Then it is time for them to learn. Ki, will you help me show them?<strong>KI:</strong> Of course! But how?<strong>ANU:</strong> Watch. I will send them a vision.<em>(ANU raises his arms. The BUILDERS suddenly look up as if seeing something amazing.)</em><strong>BUILDER 1:</strong> Look! Do you see it? In the clouds!<strong>BUILDER 2:</strong> The shape of the sacred mountain where Anu sits!<strong>BUILDER 3:</strong> It's not round like a circle... it has straight sides that meet at a point!<strong>BUILDER 1:</strong> Three sides! Three corners! It's a triangle!<strong>NARRATOR:</strong> And in that moment, the builders understood. They quickly gathered their sticks and began building in a new way.<em>(The BUILDERS work together, creating a triangular frame.)</em><strong>BUILDER 2:</strong> If we lean two sticks together at the top like the sides of a mountain...<strong>BUILDER 3:</strong> And connect them at the bottom with a third stick...<strong>BUILDER 1:</strong> We create a triangle that won't fall down!<em>(They create a stable triangular frame that stands firm.)</em><strong>ALL BUILDERS:</strong> It works! It's stable! It doesn't wobble!<em>(ENLIL blows, representing wind. The triangle stands strong.)</em><strong>ENLIL:</strong> <em>(impressed)</em> Father, your wisdom holds even against my winds!<strong>ANU:</strong> The triangle is strong because of its three points. Three is sacred: the earth, the air between, and the sky above. When all three work together, nothing can knock them down.<strong>KI:</strong> And that is why, from this day forward, people will build their roofs in triangle shapes—pointed at the top like Anu's mountain, strong and stable, reaching toward the sky!<strong>NARRATOR:</strong> The builders built their house with a triangular roof, and it stood firm through Enlil's strongest storms. They taught others, and soon all of Mesopotamia used triangular shapes in their buildings.<strong>ANU:</strong> <em>(to the audience)</em> Whenever you see a triangle, remember: three sides, three corners, working together to create strength. Just like the three realms I oversee—the heavens above, the earth below, and the air between—the triangle brings balance and stability to all things.<strong>ALL CHARACTERS:</strong> <em>(bowing)</em> And this is why the triangle became sacred in Mesopotamia—the shape of mountains, the shape of strength, the gift of Anu!<em>(All characters bow as BUILDERS proudly display their strong triangular structure.)</em><strong>THE END</strong><p>---</p>
+<h2>Section 3: Mesopotamian Artifacts with Triangles</h2><h2>Cylinder Seals</h2><p>Ancient Mesopotamians used small stone cylinders carved with pictures and writing. When rolled across soft clay, these seals left an impression showing ownership or recording important information. Many cylinder seals featured triangular patterns in their borders—rows of small triangular shapes creating decorative bands.</p><p>Artists carved tiny mountain symbols (triangles) into these seals to represent the sacred peaks where gods lived. Some seals showed Anu's symbol—a horned crown—inside patterns of triangular shapes representing the cosmic mountain. These seals were precious objects, passed down through families for generations.</p><h2>Ziggurats</h2><p>The most impressive use of triangles in Mesopotamia was the ziggurat! These massive stepped towers were artificial mountains built to bring humans closer to the gods. From the side, a ziggurat created a triangular silhouette with its stepped layers getting smaller toward the top.</p><p>The most famous ziggurats were built in cities like Ur, Uruk, and Babylon. Each had a temple at the very top—the highest point of the triangle—where priests performed rituals. They believed Anu and other gods would descend from heaven to these mountaintop temples. Even today, if you visit Iraq, you can see the remains of ziggurats, still showing their basic triangular form thousands of years later!</p><h2>Pottery Decorations</h2><p>Mesopotamian potters loved decorating their ceramic bowls, jars, and cups with geometric patterns. Triangles were especially popular! The Ubaid culture (one of the earliest in Mesopotamia) created beautiful pottery with painted triangular designs in black against pale clay.</p><p>Common triangle patterns included:
+<ul><li>Rows of triangles pointing up and down, creating zigzag patterns</li>
+<li>Triangular sections filled with cross-hatching or dots</li>
+<li>Mountain symbols showing triangular peaks</li>
+<li>Chevron patterns (repeated V-shapes) along bowl rims</li></ul><p>These decorations weren't just pretty—they often had meaning. Triangles pointing upward represented mountains and the divine realm, while downward triangles could represent rain falling from heaven or water flowing down mountains.</p><h2>Cuneiform Writing</h2><p>Every piece of cuneiform writing is full of triangles! The ancient Mesopotamians wrote by pressing a reed stylus (a stick with a triangular tip) into soft clay tablets. Each wedge-shaped mark was a tiny triangle.</p><p>A complete cuneiform tablet might have hundreds or even thousands of these triangular wedges arranged in different combinations to make words. So when scribes wrote royal decrees, mathematical problems, or stories about the gods, they were creating complex patterns made entirely of triangular shapes!</p><p>Many cuneiform signs combined multiple triangle-shaped wedges in different directions—some pointing down, some angled to the side—to create distinct letters and syllables. Learning to write cuneiform meant mastering how to combine these triangular marks.</p><h2>Architectural Decorations</h2><p>Mesopotamian buildings, especially temples and palaces, featured intricate triangular decorations. Baked clay cones with triangular profiles were pushed into walls point-first, creating colorful mosaic patterns. These cone mosaics decorated temple facades in triangular, zigzag, and diamond patterns (which are really just two triangles put together!).</p><p>Stone carvers created relief sculptures showing gods and kings, often framing them with borders of triangular patterns. These borders directed the eye upward toward the sky—toward Anu's realm—reminding viewers that divine power came from above, just like mountains rise from earth to touch the heavens.</p><p>---</p>
+<h2>Section 4: Geometric Analysis</h2><h2>The Three-Point Rule</h2><p>One of the most important things about triangles is the "three-point rule": three points that are not in a straight line always form one flat triangle. This means triangles define a plane (a flat surface). Ancient Mesopotamian surveyors used this principle when laying out buildings and fields.</p><p>When you put down three stakes in the ground (as long as they're not in a straight line), they automatically define a flat area between them. This is why tripods (three-legged stands) are so stable—three points always touch the ground firmly, even on uneven surfaces. Mesopotamian builders understood this when creating foundations for temples.</p><h2>Angle Sum Property</h2><p>Here's a mathematical fact that ancient Mesopotamians discovered: the three angles inside any triangle always add up to the same amount! Today we measure this as 180 degrees, but Mesopotamians understood it in their own way.</p><p>They knew that if you made one angle bigger, you had to make another angle smaller to keep the triangle balanced. This helped them plan buildings and create decorative patterns. If they wanted to create a pattern that repeated perfectly, they needed to understand how the angles worked together.</p><h2>Triangular Numbers and Patterns</h2><p>Mesopotamian mathematicians (who were often priests) loved patterns. They noticed that dots arranged in triangular shapes created special numbers: 1, 3, 6, 10, 15, and so on. Each triangular number is made by adding one more row of dots.</p><p>For example:
+<ul><li>1 dot makes a tiny triangle</li>
+<li>Add 2 dots below: now you have 3 dots in a triangle</li>
+<li>Add 3 dots below that: now you have 6 dots total</li>
+<li>Add 4 dots: now 10 dots total</li></ul><p>These triangular numbers appeared in their mathematics and in decorative patterns. You can find them in cylinder seal borders and pottery designs where dots or small shapes are arranged in triangular groups!</p><h2>Right Triangles and Building</h2><p>The most practical use of triangles in Mesopotamia was the right triangle—a triangle with one perfectly square corner (90 degrees). Builders needed right angles to make sure walls were straight and corners were square.</p><p>Mesopotamian builders discovered that a triangle with sides measuring 3, 4, and 5 units always had a right angle. They would take a rope, tie knots to divide it into 12 equal segments, then use the knots to make a 3-4-5 triangle. The angle opposite the longest side (5 units) would be exactly 90 degrees!</p><p>This knowledge came thousands of years before Pythagoras (an ancient Greek mathematician) explained why it worked. Mesopotamian builders were using advanced mathematics just by working with simple triangles and ropes!</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h2>Create Your Own Mesopotamian Triangle Pattern</h2><p>Now it's your turn to be a Mesopotamian artist! You will create a decorative pattern using triangles, just like ancient craftspeople did thousands of years ago.</p><strong>Materials Needed:</strong>
+<ul><li>Paper</li>
+<li>Ruler</li>
+<li>Pencil</li>
+<li>Colored pencils, crayons, or markers</li>
+<li>Optional: compass for circles</li></ul><strong>Step 1: Plan Your Design</strong><p>Decide what kind of triangle pattern you want to make:
+<ul><li><strong>Mountain Range:</strong> A row of triangles representing sacred mountains</li>
+<li><strong>Chevron Pattern:</strong> V-shaped triangles creating zigzags</li>
+<li><strong>Star Pattern:</strong> Triangles pointing outward from a center</li>
+<li><strong>Mixed Pattern:</strong> Combine different triangular shapes</li></ul><strong>Step 2: Draw Your Base Triangles</strong><p>Using your ruler and pencil, carefully draw your triangles. Remember:
+<ul><li>An equilateral triangle has all three sides the same length</li>
+<li>An isosceles triangle has two sides the same length</li>
+<li>Try to make your lines straight and your corners pointy!</li></ul><strong>Step 3: Add Details</strong><p>Inside or around your triangles, add Mesopotamian-style decorations:
+<ul><li>Small dots in rows</li>
+<li>Cross-hatching (crossed lines)</li>
+<li>Tiny triangles inside bigger triangles</li>
+<li>Wavy lines representing water</li>
+<li>Simple mountain or sky symbols</li></ul><strong>Step 4: Color Your Work</strong><p>Ancient Mesopotamians used natural colors from clay and minerals. Use earth tones if you want to be historically accurate:
+<ul><li>Brown (from clay)</li>
+<li>Black (from soot)</li>
+<li>Red (from iron-rich clay)</li>
+<li>White (from lime)</li></ul><p>Or use any colors you like to make your pattern bright and beautiful!</p><strong>Step 5: Add a Border</strong><p>Create a border around your design using a repeating triangle pattern. This frames your work just like Mesopotamian artists framed their cylinder seal designs.</p><strong>Extension Activity:</strong><p>If you have clay or play dough, form it flat and use a triangular tool (even a plastic knife works!) to press triangular marks into the clay, creating your own "cuneiform" pattern. Let it dry to make a permanent artwork!</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

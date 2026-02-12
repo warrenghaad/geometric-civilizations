@@ -1,0 +1,92 @@
+{
+  "downloads": {
+    "shamash_tablet": {
+      "status": "failed",
+      "attempted_urls": 3,
+      "error": "All download attempts failed for shamash_tablet"
+    },
+    "ubaid_bowl": {
+      "status": "failed",
+      "attempted_urls": 3,
+      "error": "All download attempts failed for ubaid_bowl"
+    },
+    "ur_rosette": {
+      "status": "failed",
+      "attempted_urls": 3,
+      "error": "All download attempts failed for ur_rosette"
+    },
+    "stone_weight": {
+      "status": "failed",
+      "attempted_urls": 3,
+      "error": "All download attempts failed for stone_weight"
+    },
+    "cylinder_seal": {
+      "status": "failed",
+      "attempted_urls": 3,
+      "error": "All download attempts failed for cylinder_seal"
+    }
+  },
+  "overlays": {
+    "shamash_tablet_overlay1_basic": {
+      "status": "failed",
+      "error": "Failed to create overlay shamash_tablet_overlay1_basic: 'NoneType' object is not subscriptable"
+    },
+    "shamash_tablet_overlay2_rays": {
+      "status": "success",
+      "base_image": "lesson_images/shamash_tablet_placeholder.jpg",
+      "output": "lesson_images/overlays/shamash_tablet_overlay2_rays.jpg",
+      "type": "radial_rays",
+      "num_rays": 4
+    },
+    "cylinder_seal_overlay_rays": {
+      "status": "success",
+      "base_image": "lesson_images/cylinder_seal_placeholder.jpg",
+      "output": "lesson_images/overlays/cylinder_seal_overlay_rays.jpg",
+      "type": "radial_rays",
+      "num_rays": 8
+    },
+    "ubaid_bowl_overlay1_circles": {
+      "status": "success",
+      "base_image": "lesson_images/ubaid_bowl_placeholder.jpg",
+      "output": "lesson_images/overlays/ubaid_bowl_overlay1_circles.jpg",
+      "type": "concentric_circles",
+      "num_circles": 3
+    },
+    "ubaid_bowl_overlay2_rays": {
+      "status": "success",
+      "base_image": "lesson_images/ubaid_bowl_placeholder.jpg",
+      "output": "lesson_images/overlays/ubaid_bowl_overlay2_rays.jpg",
+      "type": "radial_rays",
+      "num_rays": 8
+    },
+    "ur_rosette_overlay1_structure": {
+      "status": "success",
+      "base_image": "lesson_images/ur_rosette_placeholder.jpg",
+      "output": "lesson_images/overlays/ur_rosette_overlay1_structure.jpg",
+      "type": "concentric_circles",
+      "num_circles": 3
+    },
+    "ur_rosette_overlay2_rays": {
+      "status": "success",
+      "base_image": "lesson_images/ur_rosette_placeholder.jpg",
+      "output": "lesson_images/overlays/ur_rosette_overlay2_rays.jpg",
+      "type": "radial_rays",
+      "num_rays": 8
+    },
+    "stone_weight_overlay_precision": {
+      "status": "success",
+      "base_image": "lesson_images/stone_weight_placeholder.jpg",
+      "output": "lesson_images/overlays/stone_weight_overlay_precision.jpg",
+      "type": "circle_basic"
+    }
+  },
+  "errors": [
+    "All download attempts failed for shamash_tablet",
+    "All download attempts failed for ubaid_bowl",
+    "All download attempts failed for ur_rosette",
+    "All download attempts failed for stone_weight",
+    "All download attempts failed for cylinder_seal",
+    "Failed to create overlay shamash_tablet_overlay1_basic: 'NoneType' object is not subscriptable"
+  ],
+  "timestamp": "2025-11-04 13:36:29"
+}

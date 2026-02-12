@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G4-1A Day A</title>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: #2c3e50;
+            color: white;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar h1 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34495e;
+        }
+
+        .grade-section {
+            margin-bottom: 20px;
+        }
+
+        .grade-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .lesson-link {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-link:hover {
+            background: #3498db;
+        }
+
+        .lesson-link.active {
+            background: #3498db;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .lesson-container {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lesson-container.active {
+            display: block;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lesson-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .lesson-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .spec-full {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .spec-full h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .spec-full ul {
+            margin-left: 20px;
+        }
+
+        .spec-full li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .content-section h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .content-section h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin: 25px 0 12px 0;
+        }
+
+        .content-section h3 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #34495e;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box input::placeholder {
+            color: #95a5a6;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stats div {
+            margin: 5px 0;
+        }
+/* Split override */
+.sidebar { display: none; }
+.main-content { margin-left: 0; padding: 32px; }
+.lesson-container { display: block; }
+.lesson-container.active { display: block; }
+</style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="lesson-container active" id="G4-1A-DayA">
+      <div class="lesson-header">
+<div class="lesson-code">G4-1A</div>
+<div class="lesson-title">Unknown &amp; Unknown</div>
+<div class="spec-grid">
+<div class="spec-item">
+<div class="spec-label">Deity</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Geometric Element</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Day Focus</div>
+<div class="spec-value">Unknown</div>
+</div>
+<div class="spec-item">
+<div class="spec-label">Grade Levels</div>
+<div class="spec-value"></div>
+</div>
+</div>
+</div>
+      <div class="spec-full">
+<h3>📋 Learning Objectives</h3>
+<ul>
+<li><strong>LO-01</strong>: Students will identify and describe Circle in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1; sections: 2, 3, 4)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Circle (CCSS.MATH.CONTENT.3.G.A.2; sections: 4, 5, 7)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5; sections: 5, 7)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2; sections: 1, 3, 6)</li>
+</ul>
+</div>
+      <div class="content-section">
+        
+<h1>Shamash &amp; Circle</h1>
+<strong>Grade 4 Geometry Lesson</strong><strong>Lesson Code</strong>: G4-1A
+<strong>Deity</strong>: Shamash
+<strong>Geometric Element</strong>: Circle
+<strong>Cultural Context</strong>: civ-meso<p>---</p><h2>Learning Objectives</h2><ul><li><strong>LO-01</strong>: Students will identify and describe Circle in ancient artifacts (CCSS.MATH.CONTENT.3.G.A.1)</li>
+<li><strong>LO-02</strong>: Students will analyze symmetry and geometric patterns in Circle (CCSS.MATH.CONTENT.3.G.A.2)</li>
+<li><strong>LO-03</strong>: Students will create geometric art inspired by ancient civilizations (CCSS.MATH.PRACTICE.MP5)</li>
+<li><strong>LO-04</strong>: Students will connect geometric concepts to cultural and historical contexts (NGSS.3-5-ETS1-2)</li></ul><p>---</p>
+<h2>Section 1: Shamash's Story</h2><h1>A Play: Shamash Brings Light to the World</h1><strong>CHARACTERS:</strong>
+<ul><li><strong>SHAMASH</strong> (SHAH-mash): The Sun God of ancient Mesopotamia</li>
+<li><strong>ANU</strong> (AH-noo): King of the Gods, ruler of the heavens</li>
+<li><strong>INANNA</strong> (ih-NAH-nah): Goddess of the morning and evening</li>
+<li><strong>FARMER</strong>: A worried Mesopotamian farmer</li>
+<li><strong>NARRATOR</strong>: Tells parts of the story</li></ul><strong>SETTING:</strong> The ancient land of Mesopotamia, over 4,000 years ago, when the world was new and the gods walked among the stars.<p>---</p><strong>SCENE 1: The Palace of Heaven</strong><em>[The stage is dark. Stars twinkle overhead. ANU sits on a throne made of clouds. INANNA stands beside him, looking worried.]</em><strong>NARRATOR:</strong> Long ago, in the land between two great rivers, the world had a serious problem. Darkness covered the earth, and people could not see to plant their crops or find their way home.<strong>ANU:</strong> <em>(stroking his long beard)</em> Something must be done! My people stumble in the darkness. They cannot grow food. They cannot see the beauty of the world I created.<strong>INANNA:</strong> Father Anu, I bring light twice each day—once at dawn and once at dusk. But it is not enough. The people need light that lasts longer and travels farther.<strong>ANU:</strong> You are right, dear Inanna. We need someone special. Someone who can carry light across the entire sky. <em>(He stands and raises his arms)</em> I will create a new god! His name shall be Shamash!<em>[Golden light fills the stage. SHAMASH appears, glowing brightly, his arms stretched wide.]</em><strong>SHAMASH:</strong> <em>(bowing)</em> Great Anu, I am here to serve. What is my purpose?<strong>ANU:</strong> Shamash, you will be the Sun God. Each day, you must carry light across the sky in a perfect path—a path that never ends and never has corners. You must travel in the shape of a great circle!<p>---</p><strong>SCENE 2: Shamash Learns His Path</strong><em>[SHAMASH looks confused. He walks in a square pattern across the stage.]</em><strong>SHAMASH:</strong> Like this, great Anu? <em>(He turns sharp corners)</em><strong>INANNA:</strong> <em>(giggling)</em> No, no, Shamash! A circle has no corners. It is round and smooth, like a wheel or a coin.<strong>ANU:</strong> Watch closely. <em>(He draws a circle in the air with his finger, and it glows golden)</em> A circle is the most perfect shape. Every point on its edge is exactly the same distance from its center. This is how you must travel—smoothly, perfectly, returning to where you began each day.<strong>SHAMASH:</strong> <em>(his face lighting up with understanding)</em> Ah! So I start in the east, travel high across the sky, and return to my beginning! Around and around, day after day, in an endless circle!<strong>ANU:</strong> Exactly! And because a circle is perfectly balanced, you will bring fairness and justice to the world. Just as every point on a circle is equal, you will help people treat each other equally.<p>---</p><strong>SCENE 3: The First Sunrise</strong><em>[The scene changes. A FARMER kneels on the ground, feeling the soil in the darkness.]</em><strong>FARMER:</strong> <em>(sadly)</em> How can I plant my barley when I cannot see? How can I feed my children?<strong>NARRATOR:</strong> Then, something miraculous happened. For the first time ever, the eastern horizon began to glow.<em>[SHAMASH enters from the side of the stage, holding a great golden disk above his head. Light spreads across the stage.]</em><strong>SHAMASH:</strong> <em>(in a powerful, kind voice)</em> People of Mesopotamia! I am Shamash, your Sun God! I bring you light and warmth! Each day, I will travel across the sky in a perfect circle, and you will never be lost in darkness again!<strong>FARMER:</strong> <em>(jumping up joyfully)</em> I can see! I can see my fields! I can see my hands! Thank you, mighty Shamash!<strong>SHAMASH:</strong> <em>(walking slowly across the stage in a curved path)</em> I will rise in the east each morning and set in the west each evening. My circular path will mark your days. Plant your seeds when I rise. Gather your harvest when I am high. Rest when I set. I will always return, for a circle has no end!<p>---</p><strong>SCENE 4: The Promise</strong><em>[All characters gather on stage. SHAMASH stands in the center, still glowing.]</em><strong>ANU:</strong> Shamash, you have done well. From this day forward, you will also be the god of justice and truth.<strong>SHAMASH:</strong> Just as my circular path treats all lands equally—shining on mountains and valleys, on rich and poor alike—I will help people be fair to one another.<strong>ALL:</strong> <em>(raising their arms)</em> Hail Shamash, the Sun God! Bringer of light! Traveler of the sacred circle!<strong>NARRATOR:</strong> And so, Shamash began his eternal journey across the sky, following his perfect circular path, bringing light, warmth, and justice to all the world.<em>[The lights fade as SHAMASH walks off stage, still glowing.]</em><strong>THE END</strong><p>---</p>
+<h2>Section 3: Ancient Art and Artifacts</h2><h1>Ancient Treasures Featuring Shamash and Circles</h1><p>Ancient Mesopotamian artists created beautiful objects that showed their sun god Shamash using circles and round shapes. These artifacts help us understand how people thousands of years ago saw geometry in their religious beliefs and everyday lives.</p><h2>The Sun Disk of Shamash</h2><p>One of the most famous artifacts sits in the British Museum in London. It's a large stone tablet called the "Tablet of Shamash" from around 870 BCE. At the top of this carved stone, Shamash appears sitting on a throne, and above his head floats a perfect circle representing the sun disk. This circle has wavy lines coming out from it, like rays of sunshine. The ancient artists used this circular symbol to show Shamash's power spreading across the sky. The Babylonian people who made this believed Shamash could see everything from his position in the circular sun, which is why they also considered him the god of justice and truth.</p><h2>Cylinder Seals with Circular Designs</h2><p>The Metropolitan Museum of Art in New York displays several small cylinder seals from ancient Mesopotamia. These tiny carved stones are only about two inches long, but they contain amazing circular artwork. When rolled across soft clay, they created pictures that included Shamash with his sun disk symbol. One seal from around 2300 BCE shows Shamash rising between two mountains, with a large circle behind him representing the morning sun. People in ancient times used these seals like signatures on important documents. Every time someone stamped their seal, they included these sacred circular symbols in their daily business activities.</p><h2>The Code of Hammurabi Relief</h2><p>At the Louvre Museum in Paris, visitors can see the famous Code of Hammurabi, a tall black stone from about 1750 BCE. At the very top, there's a carved scene showing King Hammurabi receiving laws from Shamash. Above Shamash's shoulders, the sculptor carved a circular sun disk with straight lines radiating outward. This circle represents Shamash's divine authority and his role as the god who ensures fairness. The ancient Babylonians placed this stone in a temple where everyone could see it, reminding them that their laws came from the sun god himself.</p><h2>Boundary Stones Called Kudurrus</h2><p>Museums around the world display special boundary stones called kudurrus that marked property lines in ancient Mesopotamia. These stones, dating from 1400 to 1100 BCE, feature rows of circular symbols at the top. The circle with radiating lines always represented Shamash watching over the land agreements. Farmers and landowners set these stones at the edges of their fields. The circular sun symbol meant that Shamash witnessed the property boundaries and would punish anyone who moved the stones to steal land.</p><h2>Temple Decorations and Daily Life</h2><p>Archaeological discoveries have revealed that circles representing Shamash appeared on temple walls, pottery, and even jewelry. People wore small circular amulets with Shamash's symbol for protection. Bakers stamped circular seals onto their bread loaves. Merchants marked their goods with round stamps showing the sun disk. These circles connected everyday activities to their powerful sun god.</p><p>The ancient Mesopotamians saw circles everywhere in nature—the sun, the moon, and the cycle of seasons. By using circular designs in their art and artifacts, they honored Shamash and brought his protective power into their homes, businesses, and communities. Today, these ancient objects teach us how geometry and religion intertwined in one of the world's first great civilizations.</p><p>---</p>
+<h2>Section 4: 5-Layer Geometric Decomposition</h2><h1>Layer 1: What We Can See with Our Eyes</h1><p>When you first look at ancient Mesopotamian images of Shamash, the sun god, you'll notice something special right away: circles are everywhere! The most obvious circle is the sun disk itself, which appears as a perfect round shape hovering above Shamash or held in his hands. This circle represents the sun as it moves across the sky each day, bringing light and warmth to the ancient land between the Tigris and Euphrates rivers.</p><p>Let's start by identifying the basic circular shapes you can spot immediately. The sun disk is typically the largest and most prominent circle in these ancient carvings and drawings. Sometimes you'll see smaller circles within the sun disk, like dots or holes that might represent stars or divine power. Around the edges of the main sun disk, artists often carved rays shooting outward, but the central shape holding everything together is always that perfect circle.</p><p>To understand what makes a circle special, try this simple observation: a circle has no corners, no straight edges, and no beginning or end. It's a continuous curved line that comes back to where it started. When ancient artists wanted to show something eternal and powerful like the sun, they chose the circle because it never stops—just like the sun rises and sets every single day without fail.</p><p>In the artifacts showing Shamash, you might also notice circular patterns in jewelry, circular decorations on clothing, or even the circular shape of a throne base. Each of these circles serves a purpose in telling us that Shamash was connected to the sun and to ideas of completeness and perfection. Count how many different circles you can find in a single image of Shamash—you might be surprised to discover five, ten, or even more!</p><h2>Layer 2: Finding the Center and Measuring Distance</h2><p>Now that we've identified the circles, let's dig deeper into how they work. Every circle has a special point right in its middle called the center. This center point is like the heart of the circle—everything about the circle depends on it. In images of Shamash's sun disk, the center often contains an important symbol, like a star or a cross, marking it as the most sacred spot.</p><p>Here's where circles become mathematical: every point on the edge of a circle is exactly the same distance from the center. This distance has a special name—we call it the radius. Imagine you're an ancient Mesopotamian artist carving a stone relief of Shamash. To make a perfect circle, you would need to keep your carving tool exactly the same distance from the center point as you moved it around. If you moved closer or farther away even a little bit, your circle wouldn't be perfect anymore!</p><p>Let's practice measuring. If a sun disk in an artifact has a radius of 5 centimeters, that means every point on the outer edge is exactly 5 centimeters from the center. If you wanted to draw this yourself, you could tie a string to a pencil, hold the other end at the center point, stretch the string to 5 centimeters, and then draw around while keeping the string tight. This is exactly how ancient peoples created perfect circles—they used a compass tool that worked just like our string method!</p><p>The diameter is another important measurement. This is the distance across the entire circle, passing through the center point. Here's a helpful rule: the diameter is always exactly twice as long as the radius. So if our sun disk has a radius of 5 centimeters, its diameter must be 10 centimeters. Ancient Mesopotamian artists understood these relationships even thousands of years ago, and they used them to create balanced, beautiful artwork.</p><h2>Layer 3: Discovering Perfect Symmetry</h2><p>Circles have a special kind of magic called symmetry, and Shamash's sun disk demonstrates this perfectly. Symmetry means that if you divide something into parts, those parts match each other. But circles have the most special symmetry of all shapes—they have infinite symmetry!</p><p>Let me explain what "infinite symmetry" means. Imagine drawing a line through the center of a circle, dividing it into two halves. No matter which direction you draw that line—straight up and down, side to side, or at any angle in between—both halves will always be exactly the same size and shape. They're perfect mirror images of each other. Try to think of another shape that can do this. A square only works in four directions. A triangle only works in three directions (if it's a special equilateral triangle). But a circle works in every single direction—that's what we mean by infinite!</p><p>In Shamash artifacts, artists used this symmetry to create powerful visual effects. They often placed rays coming out from the sun disk in symmetrical patterns. You might see eight rays evenly spaced around the circle, with each ray exactly 45 degrees apart from its neighbors. Or you might see sixteen rays, with each one 22.5 degrees from the next. The artists knew that this even spacing created a sense of balance and divine order.</p><p>Let's explore rotational symmetry too. If you could spin a sun disk with eight evenly-spaced rays, it would look exactly the same eight different times during one complete rotation. Each time you turn it 45 degrees, it matches its starting position perfectly. This is called 8-fold rotational symmetry. Ancient Mesopotamians believed this symmetry reflected the perfect order of the heavens and the reliable movement of the sun across the sky.</p><p>You can test symmetry yourself by tracing a circular Shamash design onto thin paper, then folding the paper different ways through the center. Each time you fold it, both sides should match perfectly. This hands-on activity helps you feel the mathematical perfection that made circles so important to ancient peoples.</p><h2>Layer 4: Understanding Circumference and Area</h2><p>Now we're ready to explore more advanced mathematical relationships within circles. Two important measurements help us understand how much space a circle takes up: circumference and area.</p><p>The circumference is the distance around the outside edge of the circle—like measuring the border of Shamash's sun disk. Ancient peoples discovered something amazing about circumference: no matter how big or small your circle is, the circumference is always about 3.14 times longer than the diameter. This special number, 3.14, is called pi (π), and it's one of the most famous numbers in all of mathematics!</p><p>Here's an example: if Shamash's sun disk has a diameter of 10 centimeters, we can calculate its circumference by multiplying 10 × 3.14 = 31.4 centimeters. That's how far you'd travel if you walked around the edge of the circle. Ancient Mesopotamian architects and artists used this relationship when planning temples and creating artwork, even though they might not have written it down exactly the way we do today.</p><p>The area tells us how much surface space is inside the circle—imagine you're covering the sun disk with gold leaf and need to know how much gold to use. To find area, we use this formula: multiply pi (3.14) by the radius times itself (radius × radius). If our sun disk has a radius of 5 centimeters, the area would be 3.14 × 5 × 5 = 78.5 square centimeters.</p><p>These calculations might seem complicated, but they help us understand why circles were so important in ancient art and architecture. A circle encloses the maximum possible area for any given perimeter—meaning it's the most efficient shape. When ancient peoples wanted to create something powerful and complete, the circle was the perfect choice.</p><h2>Layer 5: Construction Methods and Divine Proportions</h2><p>At the deepest level, we can explore how ancient Mesopotamian artists actually constructed these perfect circles and incorporated them into complex designs. This requires understanding both practical techniques and mathematical relationships.</p><p>Ancient craftspeople didn't have modern tools, but they were brilliant problem-solvers. To create a perfect circle in stone, they used a compass made from a wooden beam with a sharp point at one end and a carving tool at the other. By pivoting the beam around the center point, they could carve a perfect circular groove. For painted circles, they used string and pigment in the same way we described earlier.</p><p>But the most sophisticated aspect involves proportional relationships. In many Shamash artifacts, circles of different sizes relate to each other through specific ratios. You might find that a smaller inner circle has a radius that's exactly one-half or one-third the radius of the larger outer circle. These proportional relationships create visual harmony and reflected ancient beliefs about cosmic order.</p><p>Consider concentric circles—circles that share the same center point but have different radii. In Shamash imagery, you might see three concentric circles representing different aspects of the sun's power. If the innermost circle has a radius of 2 units, the middle circle might have a radius of 4 units, and the outer circle a radius of 6 units. Notice the pattern: 2, 4, 6—each radius is twice the previous one. This creates a mathematical progression that ancient peoples found beautiful and meaningful.</p><p>Advanced geometric construction also involves inscribing other shapes within circles. Ancient artists sometimes placed perfect triangles, squares, or hexagons inside the sun disk, with all corners touching the circle's edge. These inscribed shapes have special mathematical relationships with the circle—for instance, a square inscribed in a circle with radius 5 centimeters will have sides of about 7.07 centimeters long.</p><p>Understanding these five layers—from simple observation to complex mathematical relationships—helps us appreciate both the artistic skill and the geometric knowledge of ancient Mesopotamian peoples. When they created images of Shamash with his sun disk, they weren't just making pretty pictures. They were encoding deep mathematical truths about circles, symmetry, and proportion that still hold true today. The circle represented eternal perfection, and through careful geometric construction, ancient artists brought that perfection into visible form.</p><p>---</p>
+<h2>Section 5: Art Activity</h2><h1>Creating Your Own Shamash Sun Disk</h1><p>Now it's time to become an ancient Mesopotamian artist! You'll create a beautiful sun disk artwork inspired by Shamash, the sun god of ancient Mesopotamia. Just like the craftspeople who lived thousands of years ago in the lands between the Tigris and Euphrates rivers, you'll use circles and geometric patterns to capture the power and beauty of the sun.</p><h2>Materials You'll Need</h2><p>Gather these simple materials before you begin:</p><ul><li>One paper plate (any size)</li>
+<li>Yellow, orange, and gold construction paper</li>
+<li>Scissors (safety scissors work great)</li>
+<li>Glue stick or white glue</li>
+<li>Pencil</li>
+<li>Ruler</li>
+<li>Compass or circular objects to trace (cups, lids, coins)</li>
+<li>Markers or crayons in warm colors (red, orange, yellow, gold)</li>
+<li>Optional: gold or silver glitter, aluminum foil, or metallic markers</li>
+<li>Optional: hole punch and string for hanging</li></ul><h2>Step-by-Step Instructions</h2><strong>Step 1: Prepare Your Base Circle</strong><p>Start with your paper plate, which will be the foundation of your Shamash sun disk. This represents the perfect circle of the sun as it travels across the sky each day. If you don't have a paper plate, cut a large circle from cardboard or thick paper. Ancient Mesopotamians believed Shamash rode across the heavens in a chariot, bringing light and justice to the world. Your circle captures this eternal journey.</p><strong>Step 2: Create the Center Pattern</strong><p>In ancient Mesopotamian art, Shamash was often shown with a four-pointed star or cross in the center of the sun disk. This represented the four directions and Shamash's ability to see everything happening in the world. Use your ruler and pencil to lightly draw two lines across your circle: one horizontal and one vertical. They should cross exactly in the middle, dividing your circle into four equal parts. This is radial symmetry—the pattern repeats as you turn around the center point!</p><strong>Step 3: Design Your Inner Circle</strong><p>Using a compass or by tracing a smaller circular object, draw a circle in the very center of your plate, about the size of your palm. Inside this circle, create a geometric design that represents Shamash's all-seeing eye. You might draw:
+<ul><li>A smaller circle with rays extending outward</li>
+<li>A star pattern with equal points</li>
+<li>Concentric circles (circles inside circles)</li>
+<li>A geometric face with symmetrical features</li></ul><p>Remember to keep your design symmetrical! Whatever you draw on one side should mirror the other side.</p><strong>Step 4: Add the Radiating Rays</strong><p>Shamash's most important feature was his brilliant rays of sunlight. These rays brought warmth, helped crops grow, and illuminated truth and justice. Now you'll add rays extending from your center circle to the edge of your plate. </p><p>Count how many rays you want—try 8, 12, or 16 for perfect symmetry. Use your ruler to draw straight lines from the center circle outward, spacing them evenly around the disk. To make sure they're evenly spaced, you can use this trick: if you want 8 rays, place one at each of your four lines from Step 2, then add one between each of those.</p><strong>Step 5: Create Dimensional Rays</strong><p>Here's where your artwork becomes three-dimensional! Cut triangular shapes from your yellow, orange, and gold construction paper. Make them different sizes—some longer, some shorter—but keep them all the same width at the base. Ancient Mesopotamian artists loved to layer materials to create depth and catch the light.</p><p>Glue these paper triangles along the rays you drew, alternating colors to create a pattern. Let some triangles extend past the edge of your plate for a dramatic sunburst effect! You can also cut wavy rays or zigzag rays to add variety.</p><strong>Step 6: Add Decorative Details</strong><p>Mesopotamian art featured lots of geometric patterns and decorative borders. Add these finishing touches:
+<ul><li>Draw small circles, dots, or diamond shapes along your rays</li>
+<li>Create a decorative border around the outer edge using repeating geometric shapes</li>
+<li>Add patterns between the rays using triangles, squares, or zigzags</li>
+<li>If you have metallic markers or gold glitter, add sparkle to represent the sun's brilliant shine</li></ul><strong>Step 7: Color and Embellish</strong><p>Use your markers or crayons to color your sun disk in warm, bright colors. Think about how the sun looks at different times of day—golden yellow at noon, orange and red at sunset. Ancient Mesopotamians would have used natural pigments and sometimes real gold leaf for important religious artwork!</p><p>If you're using optional materials like aluminum foil, cut small pieces and glue them to add reflective surfaces, just like the polished metal and precious stones used in ancient times.</p><h2>Display Your Artwork</h2><p>Once your Shamash sun disk is complete, you can punch a hole at the top and thread string through it to hang it in a window. Watch how real sunlight interacts with your creation, just as Shamash's light filled the ancient world!</p><h2>Reflection Questions</h2><p>Take a moment to think about your artwork and write down your thoughts:</p><p>1. How many lines of symmetry does your sun disk have? Can you fold it so both sides match perfectly?</p><p>2. What geometric shapes did you use in your design? How do these shapes work together to create the feeling of the sun's power?</p><p>3. How does your artwork compare to ancient Mesopotamian art you've seen? What elements did you include that connect to their artistic style?</p><p>4. Why do you think ancient people used circles and radial symmetry to represent the sun and gods like Shamash?</p><p>5. If you could add one more element to your sun disk, what would it be and why?</p><p>---</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
