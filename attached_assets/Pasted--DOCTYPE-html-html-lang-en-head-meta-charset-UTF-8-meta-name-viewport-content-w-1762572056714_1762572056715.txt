@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Across Civilizations</title>
+  <style>
+      body {
+          font-family: 'Georgia', serif;
+          margin: 0;
+          padding: 20px;
+          background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+      
+      .timeline-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          position: relative;
+      }
+      
+      .timeline-header {
+          text-align: center;
+          margin-bottom: 40px;
+          color: #2c3e50;
+      }
+      
+      .timeline {
+          position: relative;
+          padding: 20px 0;
+      }
+      
+      .timeline::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 0;
+          bottom: 0;
+          width: 4px;
+          background: linear-gradient(to bottom, #3498db, #e74c3c);
+          transform: translateX(-50%);
+      }
+      
+      .period {
+          margin: 40px 0;
+          position: relative;
+      }
+      
+      .period-card {
+          background: white;
+          border-radius: 15px;
+          padding: 25px;
+          box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+          width: 45%;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.3s ease;
+      }
+      
+      .period-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+      }
+      
+      .period:nth-child(odd) .period-card {
+          margin-left: 0;
+      }
+      
+      .period:nth-child(even) .period-card {
+          margin-left: 55%;
+      }
+      
+      .period-date {
+          background: linear-gradient(45deg, #3498db, #2980b9);
+          color: white;
+          padding: 8px 15px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: bold;
+          display: inline-block;
+          margin-bottom: 15px;
+      }
+      
+      .period-title {
+          color: #2c3e50;
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 15px;
+      }
+      
+      .period-details {
+          display: none;
+          margin-top: 15px;
+          padding-top: 15px;
+          border-top: 2px solid #ecf0f1;
+      }
+      
+      .detail-section {
+          margin: 10px 0;
+      }
+      
+      .detail-label {
+          font-weight: bold;
+          color: #34495e;
+          font-size: 14px;
+      }
+      
+      .detail-content {
+          color: #7f8c8d;
+          font-size: 13px;
+          margin-top: 5px;
+      }
+      
+      .cultural-context {
+          background: #f8f9fa;
+          padding: 15px;
+          border-radius: 8px;
+          border-left: 4px solid #e74c3c;
+          font-style: italic;
+          margin: 15px 0;
+      }
+      
+      .lesson-ideas {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 10px;
+          margin-top: 15px;
+      }
+      
+      .lesson-grade {
+          background: #ecf0f1;
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 12px;
+      }
+      
+      .grade-label {
+          font-weight: bold;
+          color: #2980b9;
+      }
+      
+      .timeline-dot {
+          position: absolute;
+          left: 50%;
+          top: 30px;
+          width: 16px;
+          height: 16px;
+          background: #e74c3c;
+          border: 4px solid white;
+          border-radius: 50%;
+          transform: translateX(-50%);
+          z-index: 10;
+      }
+      
+      @media (max-width: 768px) {
+          .timeline::before {
+              left: 30px;
+          }
+          
+          .period-card {
+              width: calc(100% - 80px);
+              margin-left: 60px !important;
+          }
+          
+          .timeline-dot {
+              left: 30px;
+          }
+      }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+      <div class="timeline-header">
+          <h1>Geometry Across Civilizations</h1>
+          <p>An Interactive Journey Through Mathematical and Cultural Evolution</p>
+      </div>
+      
+      <div class="timeline">
+          <div class="period">
+              <div class="timeline-dot"></div>
+              <div class="period-card" onclick="toggleDetails(this)">
+                  <div class="period-date">Prehistory</div>
+                  <div class="period-title">Cave Paintings & Megaliths</div>
+                  <p>Basic shapes in cave art, rudimentary spatial awareness</p>
+                  
+                  <div class="period-details">
+                      <div class="detail-section">
+                          <div class="detail-label">Art & Symbols:</div>
+                          <div class="detail-content">Cave paintings with basic shapes, 32 signs, megaliths</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Architecture:</div>
+                          <div class="detail-content">Simple shelters, caves as dwellings</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Mathematics:</div>
+                          <div class="detail-content">Rudimentary counting, no formal geometry</div>
+                      </div>
+                      <div class="cultural-context">
+                          <strong>Cultural Context:</strong> Survival-driven simplicity where basic geometry reflects environmental necessity and spatial intuition.
+                      </div>
+                      <div class="lesson-ideas">
+                          <div class="lesson-grade">
+                              <div class="grade-label">K-2:</div>
+                              Create cave art with basic shapes, discuss survival needs
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">3-5:</div>
+                              Build simple shelters, measure dimensions
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">6-8:</div>
+                              Explore tool designs, connect shapes to survival
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="period">
+              <div class="timeline-dot"></div>
+              <div class="period-card" onclick="toggleDetails(this)">
+                  <div class="period-date">3500-2900 BCE</div>
+                  <div class="period-title">Initial Mesopotamian</div>
+                  <p>First cities, pottery with geometric motifs, organized settlements</p>
+                  
+                  <div class="period-details">
+                      <div class="detail-section">
+                          <div class="detail-label">Art & Symbols:</div>
+                          <div class="detail-content">Pottery with simple geometric motifs</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Architecture:</div>
+                          <div class="detail-content">Mud-brick homes, early temple structures</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Mathematics:</div>
+                          <div class="detail-content">Basic counting, tokens for trade</div>
+                      </div>
+                      <div class="cultural-context">
+                          <strong>Cultural Context:</strong> Dawn of organization - geometry reflects the shift from nomadic to settled life, unifying societal needs with spiritual expression.
+                      </div>
+                      <div class="lesson-ideas">
+                          <div class="lesson-grade">
+                              <div class="grade-label">K-2:</div>
+                              Decorate paper "pottery" with geometric patterns
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">3-5:</div>
+                              Design village layout with grid paper
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">6-8:</div>
+                              Research irrigation, draw geometric canal plans
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="period">
+              <div class="timeline-dot"></div>
+              <div class="period-card" onclick="toggleDetails(this)">
+                  <div class="period-date">2900-2334 BCE</div>
+                  <div class="period-title">Sumerians</div>
+                  <p>Ziggurats, cylinder seals, base-60 system, planned city grids</p>
+                  
+                  <div class="period-details">
+                      <div class="detail-section">
+                          <div class="detail-label">Art & Symbols:</div>
+                          <div class="detail-content">Cylinder seals, intricate patterned textiles</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Architecture:</div>
+                          <div class="detail-content">Ziggurats, city grids with planned layouts</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Mathematics:</div>
+                          <div class="detail-content">Base-60 system, early geometric calculations</div>
+                      </div>
+                      <div class="cultural-context">
+                          <strong>Cultural Context:</strong> Pioneering civilization where geometry underpins urban innovation, reflecting divine order and systematic progress through structured city-states.
+                      </div>
+                      <div class="lesson-ideas">
+                          <div class="lesson-grade">
+                              <div class="grade-label">K-2:</div>
+                              Build mini ziggurats with blocks, count steps
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">3-5:</div>
+                              Create city grid maps, use base-60 for time
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">6-8:</div>
+                              Study astronomy, plot star patterns geometrically
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="period">
+              <div class="timeline-dot"></div>
+              <div class="period-card" onclick="toggleDetails(this)">
+                  <div class="period-date">7th-13th Century</div>
+                  <div class="period-title">Islamic Golden Age</div>
+                  <p>Intricate patterns, complex domes, geometric algebra, symmetry groups</p>
+                  
+                  <div class="period-details">
+                      <div class="detail-section">
+                          <div class="detail-label">Art & Symbols:</div>
+                          <div class="detail-content">Intricate patterns, geometric fabrics</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Architecture:</div>
+                          <div class="detail-content">Mosques with complex domes, muqarnas</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Mathematics:</div>
+                          <div class="detail-content">Geometric algebra, symmetry groups</div>
+                      </div>
+                      <div class="cultural-context">
+                          <strong>Cultural Context:</strong> Spiritual complexity - advanced geometry integrates art, architecture, math, and science to express infinite divine order through knowledge and faith.
+                      </div>
+                      <div class="lesson-ideas">
+                          <div class="lesson-grade">
+                              <div class="grade-label">K-2:</div>
+                              Color tessellation patterns, discuss repeating shapes
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">3-5:</div>
+                              Create paper tile designs with symmetry
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">6-8:</div>
+                              Study Islamic astronomy, draw star polygons
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="period">
+              <div class="timeline-dot"></div>
+              <div class="period-card" onclick="toggleDetails(this)">
+                  <div class="period-date">21st Century</div>
+                  <div class="period-title">Contemporary Era</div>
+                  <p>Digital art, biomimetic design, computational geometry, global collaboration</p>
+                  
+                  <div class="period-details">
+                      <div class="detail-section">
+                          <div class="detail-label">Art & Symbols:</div>
+                          <div class="detail-content">Digital art, 3D-printed fashion</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Architecture:</div>
+                          <div class="detail-content">Biomimetic, parametric urban design</div>
+                      </div>
+                      <div class="detail-section">
+                          <div class="detail-label">Mathematics:</div>
+                          <div class="detail-content">Computational geometry, fractals</div>
+                      </div>
+                      <div class="cultural-context">
+                          <strong>Cultural Context:</strong> Digital interconnectedness - hyper-complex geometry integrates technology for sustainability, with historical influences reimagined in global collaboration.
+                      </div>
+                      <div class="lesson-ideas">
+                          <div class="lesson-grade">
+                              <div class="grade-label">K-2:</div>
+                              Draw nature-inspired buildings, discuss green ideas
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">3-5:</div>
+                              Create fractal patterns with paper folding
+                          </div>
+                          <div class="lesson-grade">
+                              <div class="grade-label">6-8:</div>
+                              Design smart city layout, connect to global design history
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+      function toggleDetails(card) {
+          const details = card.querySelector('.period-details');
+          const isVisible = details.style.display === 'block';
+          
+          // Hide all other details
+          document.querySelectorAll('.period-details').forEach(detail => {
+              detail.style.display = 'none';
+          });
+          
+          // Toggle current details
+          details.style.display = isVisible ? 'none' : 'block';
+      }
+  </script>
+</body>
+</html>
