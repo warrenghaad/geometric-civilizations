@@ -29,8 +29,8 @@ The project generates **PowerPoint presentations**, **e-textbooks**, and **inter
 **Key source files:**
 - `script_cross_reference.py` — Defines the full Python script dependency graph and execution order for the curriculum pipeline. Run with `python3 script_cross_reference.py validate|run-all|run <script>`.
 - `shell_script_manager.sh` — Manages Bash lesson setup scripts (`setup-G3-Lesson-*.sh`, `setup-G4-Lesson-*.sh`). Run with `bash shell_script_manager.sh status|validate|run-all|run <script>|create-missing|complete-system`.
-- `CURRICULUM_SYSTEM_ORGANIZED/01_ETEXTBOOK_PIPELINE/` — Contains Python scripts for converting PowerPoints to e-textbooks.
-- `CURRICULUM_SYSTEM_ORGANIZED/02_VISUAL_ASSETS_PIPELINE/` — Contains scripts for downloading and inserting images.
+- `CURRICULUM_SYSTEM_ORGANIZED/01_ETEXTBOOK_PIPELINE/` — Intended to contain Python scripts for converting PowerPoints to e-textbooks.
+- `CURRICULUM_SYSTEM_ORGANIZED/02_VISUAL_ASSETS_PIPELINE/` — Intended to contain scripts for downloading and inserting images.
 
 ---
 
