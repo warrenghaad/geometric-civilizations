@@ -1,0 +1,12 @@
+# Obsidian workspace-specific files (local only)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# macOS system files
+.DS_Store
+
+# Temporary files
+*.tmp
+*~
+.~*
