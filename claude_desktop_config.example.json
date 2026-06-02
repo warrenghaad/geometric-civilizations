@@ -5,7 +5,21 @@
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/Users/samimajeed/path/to/geometric-civilizations"
+        "/Users/samimajeed/Documents/geometric-civilizations"
+      ]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
       ]
     }
   }
