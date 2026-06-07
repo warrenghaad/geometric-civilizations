@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; fill: #ffffff; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; fill: #d9e2ec; }
+      .ringLabel { font-family: Arial, sans-serif; font-size: 14px; fill: #ffffff; }
+      .sectorLabel { font-family: Arial, sans-serif; font-size: 12px; fill: #f1f5f9; }
+      .note { font-family: Arial, sans-serif; font-size: 12px; fill: #d1d5db; }
+      .legend { font-family: Arial, sans-serif; font-size: 12px; fill: #e5e7eb; }
+      .strokeLight { stroke: rgba(255,255,255,0.35); stroke-width: 1; }
+      .icon { fill: none; stroke: #ffffff; stroke-width: 2; }
+    </style>
+
+    <radialGradient id="gradMandala" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <polygon points="0,0 12,6 0,12" fill="#93c5fd"/>
+    </marker>
+
+    <!-- Simple icon paths reused across sectors -->
+    <!-- Dots and lines -->
+    <g id="icon-dots">
+      <circle cx="0" cy="0" r="2" class="icon"/>
+      <circle cx="10" cy="0" r="2" class="icon"/>
+      <circle cx="20" cy="0" r="2" class="icon"/>
+    </g>
+    <g id="icon-zigzag">
+      <polyline points="0,10 8,2 16,10 24,2 32,10" class="icon"/>
+    </g>
+    <g id="icon-spiral">
+      <path d="M 10 10
+               m -6,0
+               a 6,6 0 1 1 12,0
+               a 3,3 0 1 0 -6,0
+               a 1.5,1.5 0 1 1 3,0" class="icon"/>
+    </g>
+    <g id="icon-hand">
+      <path d="M0,10 q5,-10 10,0 q5,-8 10,0" class="icon"/>
+    </g>
+    <g id="icon-grid">
+      <rect x="0" y="0" width="18" height="18" class="icon"/>
+      <line x1="6" y1="0" x2="6" y2="18" class="icon"/>
+      <line x1="12" y1="0" x2="12" y2="18" class="icon"/>
+      <line x1="0" y1="6" x2="18" y2="6" class="icon"/>
+      <line x1="0" y1="12" x2="18" y2="12" class="icon"/>
+    </g>
+    <g id="icon-star8">
+      <path d="M10,0 L12,8 L20,10 L12,12 L10,20 L8,12 L0,10 L8,8 Z" class="icon"/>
+    </g>
+    <g id="icon-rosette">
+      <circle cx="10" cy="10" r="10" class="icon"/>
+      <path d="M10,0 A10,10 0 0 0 20,10" class="icon"/>
+      <path d="M20,10 A10,10 0 0 0 10,20" class="icon"/>
+      <path d="M10,20 A10,10 0 0 0 0,10" class="icon"/>
+      <path d="M0,10 A10,10 0 0 0 10,0" class="icon"/>
+    </g>
+    <g id="icon-meander">
+      <path d="M0,0 H20 V10 H10 V20 H0" class="icon"/>
+    </g>
+    <g id="icon-anthemion">
+      <path d="M10,20 C6,12 8,6 10,2 C12,6 14,12 10,20" class="icon"/>
+      <path d="M6,18 C3,12 4,9 6,6" class="icon"/>
+      <path d="M14,18 C17,12 16,9 14,6" class="icon"/>
+    </g>
+    <g id="icon-girih">
+      <polygon points="10,0 20,10 10,20 0,10" class="icon"/>
+      <line x1="0" y1="10" x2="20" y2="10" class="icon"/>
+      <line x1="10" y1="0" x2="10" y2="20" class="icon"/>
+    </g>
+    <g id="icon-muqarnas">
+      <path d="M0,20 L10,0 L20,20 Z" class="icon"/>
+      <line x1="0" y1="20" x2="20" y2="20" class="icon"/>
+    </g>
+    <g id="icon-rosewindow">
+      <circle cx="10" cy="10" r="10" class="icon"/>
+      <line x1="10" y1="0" x2="10" y2="20" class="icon"/>
+      <line x1="0" y1="10" x2="20" y2="10" class="icon"/>
+      <line x1="3" y1="3" x2="17" y2="17" class="icon"/>
+      <line x1="17" y1="3" x2="3" y2="17" class="icon"/>
+    </g>
+    <g id="icon-perspective">
+      <path d="M0,20 L10,10 L20,20" class="icon"/>
+      <line x1="10" y1="0" x2="10" y2="10" class="icon"/>
+    </g>
+    <g id="icon-checker">
+      <rect x="0" y="0" width="12" height="12" class="icon"/>
+      <rect x="12" y="12" width="12" height="12" class="icon"/>
+    </g>
+    <g id="icon-fractal">
+      <path d="M0,20 L10,10 L20,20" class="icon"/>
+      <path d="M5,15 L10,10 L15,15" class="icon"/>
+    </g>
+    <g id="icon-thunder">
+      <path d="M0,5 L8,5 L6,0 L16,10 L8,10 L10,15 Z" class="icon"/>
+    </g>
+    <g id="icon-quatrefoil">
+      <path d="M10,2 A8,8 0 0 1 18,10 A8,8 0 0 1 10,18 A8,8 0 0 1 2,10 A8,8 0 0 1 10,2 Z" class="icon"/>
+    </g>
+    <g id="icon-stepfret">
+      <path d="M0,20 V0 H20 V10 H10 V20 Z" class="icon"/>
+    </g>
+    <g id="icon-lattice">
+      <rect x="0" y="0" width="20" height="20" class="icon"/>
+      <line x1="0" y1="10" x2="20" y2="10" class="icon"/>
+      <line x1="10" y1="0" x2="10" y2="20" class="icon"/>
+      <line x1="0" y1="0" x2="20" y2="20" class="icon"/>
+      <line x1="20" y1="0" x2="0" y2="20" class="icon"/>
+    </g>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <rect x="0" y="0" width="1200" height="1200" fill="url(#gradMandala)"/>
+
+  <!-- LAYER 2: Title and subtitle (at the top) -->
+  <text x="600" y="60" text-anchor="middle" class="title">Mandala of Pattern Development</text>
+  <text x="600" y="88" text-anchor="middle" class="subtitle">Center: Observation • Outer: Formal &amp; Generative Systems</text>
+
+  <!-- LAYER 3: Concentric rings and structural elements -->
+  <g id="rings" transform="translate(600,620)">
+    <!-- Radii for rings -->
+    <g id="ring-circles" class="strokeLight">
+      <circle r="80" fill="none"/>
+      <circle r="170" fill="none"/>
+      <circle r="260" fill="none"/>
+      <circle r="350" fill="none"/>
+      <circle r="440" fill="none"/>
+      <circle r="530" fill="none"/>
+    </g>
+  </g>
+
+  <!-- LAYER 4: Radial arrow (should be behind icons but above rings) -->
+  <g transform="translate(600,620) rotate(-135)">
+    <line x1="0" y1="0" x2="0" y2="-560" stroke="#93c5fd" stroke-width="3" marker-end="url(#arrowHead)" opacity="0.6"/>
+  </g>
+
+  <!-- LAYER 5: Icons (placed at various radii and angles) -->
+  <g id="icons-layer" transform="translate(600,620)">
+    <!-- Prehistory icons at radius 60 -->
+    <g transform="rotate(0)">
+      <g transform="translate(0,-60)">
+        <use href="#icon-dots"/>
+      </g>
+    </g>
+    <g transform="rotate(30)">
+      <g transform="translate(0,-60)">
+        <use href="#icon-zigzag"/>
+      </g>
+    </g>
+    <g transform="rotate(60)">
+      <g transform="translate(0,-60)">
+        <use href="#icon-spiral"/>
+      </g>
+    </g>
+    <g transform="rotate(90)">
+      <g transform="translate(0,-60)">
+        <use href="#icon-hand"/>
+      </g>
+    </g>
+
+    <!-- Ancient sectors with icons at multiple radii -->
+    <!-- Egypt -->
+    <g transform="rotate(-90)">
+      <g transform="translate(0,-150)"><use href="#icon-grid"/></g>
+      <g transform="translate(0,-200)"><use href="#icon-checker"/></g>
+    </g>
+
+    <!-- Mesopotamia -->
+    <g transform="rotate(-60)">
+      <g transform="translate(0,-150)"><use href="#icon-lattice"/></g>
+      <g transform="translate(0,-200)"><use href="#icon-rosette"/></g>
+    </g>
+
+    <!-- Greece -->
+    <g transform="rotate(-30)">
+      <g transform="translate(0,-150)"><use href="#icon-meander"/></g>
+      <g transform="translate(0,-200)"><use href="#icon-anthemion"/></g>
+    </g>
+
+    <!-- Indus -->
+    <g transform="rotate(0)">
+      <g transform="translate(0,-150)"><use href="#icon-grid"/></g>
+      <g transform="translate(0,-200)"><use href="#icon-rosette"/></g>
+    </g>
+
+    <!-- China -->
+    <g transform="rotate(30)">
+      <g transform="translate(0,-150)"><use href="#icon-thunder"/></g>
+      <g transform="translate(0,-200)"><use href="#icon-lattice"/></g>
+    </g>
+
+    <!-- Mesoamerica -->
+    <g transform="rotate(60)">
+      <g transform="translate(0,-150)"><use href="#icon-stepfret"/></g>
+      <g transform="translate(0,-200)"><use href="#icon-quatrefoil"/></g>
+    </g>
+
+    <!-- Medieval: Islamic -->
+    <g transform="rotate(90)">
+      <g transform="translate(0,-230)"><use href="#icon-star8"/></g>
+      <g transform="translate(0,-290)"><use href="#icon-girih"/></g>
+    </g>
+
+    <!-- Medieval: Gothic -->
+    <g transform="rotate(120)">
+      <g transform="translate(0,-230)"><use href="#icon-rosewindow"/></g>
+      <g transform="translate(0,-290)"><use href="#icon-lattice"/></g>
+    </g>
+
+    <!-- Medieval: Chinese continuity -->
+    <g transform="rotate(150)">
+      <g transform="translate(0,-230)"><use href="#icon-lattice"/></g>
+      <g transform="translate(0,-290)"><use href="#icon-thunder"/></g>
+    </g>
+
+    <!-- Renaissance -->
+    <g transform="rotate(180)">
+      <g transform="translate(0,-320)"><use href="#icon-perspective"/></g>
+      <g transform="translate(0,-380)"><use href="#icon-checker"/></g>
+    </g>
+
+    <!-- 19th Century -->
+    <g transform="rotate(210)">
+      <g transform="translate(0,-410)"><use href="#icon-lattice"/></g>
+      <g transform="translate(0,-470)"><use href="#icon-grid"/></g>
+    </g>
+
+    <!-- 20th+ -->
+    <g transform="rotate(240)">
+      <g transform="translate(0,-500)"><use href="#icon-fractal"/></g>
+      <g transform="translate(0,-560)"><use href="#icon-meander"/></g>
+    </g>
+  </g>
+
+  <!-- LAYER 6: Text labels (on top of everything) -->
+  <g id="labels-layer" transform="translate(600,620)">
+    <!-- Ring labels -->
+    <text x="0" y="-70" text-anchor="middle" class="ringLabel">Prehistory</text>
+    <text x="0" y="-160" text-anchor="middle" class="ringLabel">Ancient (Egypt • Mesopotamia • Greece • Indus • China • Mesoamerica)</text>
+    <text x="0" y="-250" text-anchor="middle" class="ringLabel">Medieval (Islamic • Gothic • Chinese continuity)</text>
+    <text x="0" y="-340" text-anchor="middle" class="ringLabel">Renaissance</text>
+    <text x="0" y="-430" text-anchor="middle" class="ringLabel">19th Century (Classification)</text>
+    <text x="0" y="-520" text-anchor="middle" class="ringLabel">20th+ (Generative/Computational)</text>
+
+    <!-- Sector labels -->
+    <!-- Egypt -->
+    <g transform="rotate(-90)">
+      <text x="0" y="-180" text-anchor="middle" class="sectorLabel">Egypt</text>
+    </g>
+
+    <!-- Mesopotamia -->
+    <g transform="rotate(-60)">
+      <text x="0" y="-180" text-anchor="middle" class="sectorLabel">Mesopotamia</text>
+    </g>
+
+    <!-- Greece -->
+    <g transform="rotate(-30)">
+      <text x="0" y="-180" text-anchor="middle" class="sectorLabel">Greece</text>
+    </g>
+
+    <!-- Indus -->
+    <g transform="rotate(0)">
+      <text x="0" y="-180" text-anchor="middle" class="sectorLabel">Indus</text>
+    </g>
+
+    <!-- China -->
+    <g transform="rotate(30)">
+      <text x="0" y="-180" text-anchor="middle" class="sectorLabel">China</text>
+    </g>
+
+    <!-- Mesoamerica -->
+    <g transform="rotate(60)">
+      <text x="0" y="-180" text-anchor="middle" class="sectorLabel">Mesoamerica</text>
+    </g>
+
+    <!-- Medieval: Islamic -->
+    <g transform="rotate(90)">
+      <text x="0" y="-270" text-anchor="middle" class="sectorLabel">Islamic</text>
+    </g>
+
+    <!-- Medieval: Gothic -->
+    <g transform="rotate(120)">
+      <text x="0" y="-270" text-anchor="middle" class="sectorLabel">Gothic</text>
+    </g>
+
+    <!-- Medieval: Chinese continuity -->
+    <g transform="rotate(150)">
+      <text x="0" y="-270" text-anchor="middle" class="sectorLabel">Chinese (continuity)</text>
+    </g>
+
+    <!-- Renaissance -->
+    <g transform="rotate(180)">
+      <text x="0" y="-360" text-anchor="middle" class="sectorLabel">Renaissance</text>
+    </g>
+
+    <!-- 19th Century -->
+    <g transform="rotate(210)">
+      <text x="0" y="-450" text-anchor="middle" class="sectorLabel">19th Century</text>
+    </g>
+
+    <!-- 20th+ -->
+    <g transform="rotate(240)">
+      <text x="0" y="-540" text-anchor="middle" class="sectorLabel">20th+ Beyond</text>
+    </g>
+  </g>
+
+  <!-- Legend and guidance -->
+  <g transform="translate(80,1040)">
+    <text class="legend">Read from center outward: patterns move from observation to rule-based and generative design.</text>
+    <text y="20" class="legend">Sectors show cultures. Rings show eras. Icons hint common motifs. Arrow indicates increasing formalization.</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="600" y="1160" text-anchor="middle" class="note">Includes Mesoamerican step-fret &amp; quatrefoil, Indus 1:2:4 &amp; rosettes, Chinese leiwen &amp; lattices.</text>
+</svg>

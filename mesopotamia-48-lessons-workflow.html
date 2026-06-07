@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>48 Mesopotamia Lessons - Team Workflow (Zoomable)</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/panzoom/9.4.3/panzoom.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #2c1810 0%, #4a2c1f 100%);
+      color: white;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 3px solid #D4AF37;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .header h1 {
+      font-size: 2em;
+      color: #D4AF37;
+      margin-bottom: 5px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .header p {
+      font-size: 1em;
+      color: #F4E4C1;
+    }
+
+    .controls {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      border-top: 3px solid #D4AF37;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #8B4513, #D4AF37);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(212, 175, 55, 0.5);
+      background: linear-gradient(45deg, #A0522D, #FFD700);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    #diagram-container {
+      position: absolute;
+      top: 90px;
+      bottom: 70px;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      background: #3d2817;
+    }
+
+    #mermaid-wrapper {
+      transform-origin: 0 0;
+      display: inline-block;
+      padding: 40px;
+    }
+
+    .mermaid {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    .stats-panel {
+      position: fixed;
+      top: 100px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      border: 3px solid #D4AF37;
+      max-width: 350px;
+      z-index: 999;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .stats-panel h3 {
+      color: #D4AF37;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+      border-bottom: 2px solid #8B4513;
+      padding-bottom: 10px;
+    }
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 0.9em;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .stat-item:last-child {
+      border-bottom: none;
+    }
+
+    .stat-label {
+      color: #F4E4C1;
+      font-weight: bold;
+    }
+
+    .stat-value {
+      color: #FFD700;
+      font-weight: bold;
+    }
+
+    .legend {
+      position: fixed;
+      top: 100px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      border: 3px solid #D4AF37;
+      max-width: 280px;
+      z-index: 999;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .legend h3 {
+      color: #D4AF37;
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 0.85em;
+    }
+
+    .legend-color {
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      margin-right: 12px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .zoom-indicator {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.9);
+      color: #FFD700;
+      padding: 15px 30px;
+      border-radius: 25px;
+      font-size: 1.4em;
+      font-weight: bold;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1001;
+      border: 2px solid #D4AF37;
+    }
+
+    .zoom-indicator.show {
+      opacity: 1;
+    }
+
+    .team-count {
+      background: linear-gradient(135deg, #8B4513, #D4AF37);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: 2px solid #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🏛️ 48 MESOPOTAMIA LESSONS - PRODUCTION WORKFLOW 🏛️</h1>
+    <p>Multi-Team Parallel Execution • 9 Specialized Teams • Complete Lesson Assembly</p>
+  </div>
+
+  <div class="legend">
+    <h3>🎨 Team Types</h3>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #fff9c4;"></div>
+      <span>Sourcing & Download</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #ffe0b2;"></div>
+      <span>Content Creation</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #f8bbd0;"></div>
+      <span>Visual Design</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #d1c4e9;"></div>
+      <span>Math & Activities</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #b2dfdb;"></div>
+      <span>Assembly</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #ffccbc;"></div>
+      <span>Quality Assurance</span>
+    </div>
+  </div>
+
+  <div class="stats-panel">
+    <h3>📊 Project Stats</h3>
+    <div class="stat-item">
+      <span class="stat-label">Total Lessons:</span>
+      <span class="stat-value">48</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Museum Artifacts:</span>
+      <span class="stat-value">144+</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Downloaded Images:</span>
+      <span class="stat-value">2,400+</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">AI Generated Images:</span>
+      <span class="stat-value">1,500+</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Myth Text Sections:</span>
+      <span class="stat-value">144</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Geometric Overlays:</span>
+      <span class="stat-value">400-600</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Math Problems:</span>
+      <span class="stat-value">240+</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Activity Sets:</span>
+      <span class="stat-value">96</span>
+    </div>
+    <div class="team-count">9 SPECIALIZED TEAMS</div>
+  </div>
+
+  <div id="diagram-container">
+    <div id="mermaid-wrapper">
+      <div class="mermaid">
+flowchart TD
+    Start([🏛️ PROJECT START<br/>48 Mesopotamia Lessons]) --> MasterTemplate[📋 Master Template Creation<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Slide designs • Branding<br/>Layout standards]
+
+    MasterTemplate --> VarSheet[📊 Variables Spreadsheet<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>48 lessons × lesson variables<br/>Gods • Artifacts • Topics<br/>Math concepts • Activities]
+
+    VarSheet --> TeamDispatch{🚀 DISPATCH TO<br/>SPECIALIZED TEAMS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Parallel execution begins}
+
+    %% SOURCING TEAM
+    TeamDispatch --> Team1[TEAM 1: SOURCING<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Find ALL artifacts<br/>144+ museum items<br/>3-5 per lesson]
+    Team1 --> Source1[🔍 Query museum APIs<br/>Met • Louvre • British<br/>Penn • Oriental Institute]
+    Source1 --> Source2[📝 Document metadata<br/>Title • Date • Museum<br/>Link • License]
+    Source2 --> Source3[💾 Create master JSON<br/>Structured database<br/>All 144+ artifacts]
+    Source3 --> SourceDone[✅ ARTIFACT_SOURCES_MASTER.json<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Complete artifact catalog]
+
+    %% DOWNLOAD TEAM
+    SourceDone --> Team2[TEAM 2: DOWNLOAD<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Get ALL images<br/>Systematic bulk download<br/>2400+ files]
+    Team2 --> DL1[📥 Parse JSON URLs<br/>Extract download links<br/>Organize by lesson]
+    DL1 --> DL2[⬇️ Download 2400+ images<br/>High-resolution<br/>Batch processing]
+    DL2 --> DL3[📁 Organize into folders<br/>lesson_01/ artifacts/<br/>lesson_02/ artifacts/<br/>etc.]
+    DL3 --> DLDone[✅ ALL ARTIFACTS DOWNLOADED<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Ready for overlay design]
+
+    %% IMAGE GENERATION TEAM
+    TeamDispatch --> Team9[TEAM 9: AI IMAGE GEN<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Generate character/concept art<br/>1500+ generated images]
+    Team9 --> Gen1[🎭 Myth characters<br/>5-8 per lesson<br/>Gods • Heroes • Creatures]
+    Gen1 --> Gen2[📐 Concept diagrams<br/>8-10 per lesson<br/>Geometric explanations]
+    Gen2 --> Gen3[✏️ Activity examples<br/>6-10 per lesson<br/>Step-by-step visuals]
+    Gen3 --> GenDone[✅ ALL GENERATED IMAGES<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Ready for integration]
+
+    %% MYTH WRITING TEAM
+    TeamDispatch --> Team3[TEAM 3: MYTH WRITERS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Write ALL myths<br/>144 text sections<br/>3 sections per lesson]
+    Team3 --> Myth1[📖 Load template<br/>Story arc structure<br/>Character intros]
+    Myth1 --> Myth2[🔄 Fill variables 48×<br/>Gods • Locations<br/>Geometric themes]
+    Myth2 --> Myth3[✍️ Write story sections<br/>Introduction<br/>Journey<br/>Resolution]
+    Myth3 --> MythDone[✅ ALL MYTHS WRITTEN<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>144 text sections complete]
+
+    %% OVERLAY TEAM
+    DLDone --> Team4[TEAM 4: OVERLAY DESIGNERS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Create geometric overlays<br/>400-600 SVG files]
+    GenDone --> Team4
+    Team4 --> Over1[📐 Trace geometry<br/>Circles • Lines<br/>Squares • Spirals]
+    Over1 --> Over2[🏷️ Add measurement labels<br/>Dimensions • Angles<br/>Ratios • Proportions]
+    Over2 --> Over3[🎨 Color-code elements<br/>By geometric type<br/>Interactive layers]
+    Over3 --> OverDone[✅ ALL OVERLAYS CREATED<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>400-600 SVG files ready]
+
+    %% VISUAL STORYTELLING
+    MythDone --> Team5[TEAM 5: VISUAL STORYTELLING<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Create slide sequences<br/>Bridge text sections]
+    OverDone --> Team5
+    Team5 --> Story1[🌉 Write myth→art bridges<br/>Connect narrative<br/>to visual analysis]
+    Story1 --> Story2[🔗 Write art→math bridges<br/>From artifact observation<br/>to geometric principles]
+    Story2 --> Story3[🎬 Create sequencing logic<br/>Slide transitions<br/>Reveal patterns]
+    Story3 --> StoryDone[✅ ALL TRANSITIONS WRITTEN<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Narrative flow complete]
+
+    %% MATH WRITING
+    TeamDispatch --> Team6[TEAM 6: MATH WRITERS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Write ALL math content<br/>Definitions • Examples • Problems]
+    Team6 --> Math1[📚 Definitions 48×<br/>Geometric concepts<br/>Clear explanations]
+    Math1 --> Math2[📝 Worked examples 48×<br/>Step-by-step solutions<br/>Visual aids]
+    Math2 --> Math3[❓ Practice problems 240+<br/>5+ per lesson<br/>Various difficulty levels]
+    Math3 --> MathDone[✅ ALL MATH CONTENT<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Complete curriculum]
+
+    %% ACTIVITY DESIGN
+    TeamDispatch --> Team7[TEAM 7: ACTIVITY DESIGNERS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Design hands-on activities<br/>96 activity sets<br/>2 per lesson]
+    Team7 --> Act1[🎨 Design activities<br/>Building • Drawing<br/>Measurement • Puzzles]
+    Act1 --> Act2[📋 Write instructions<br/>Step-by-step guides<br/>Materials lists]
+    Act2 --> Act3[🖨️ Create templates<br/>Printable worksheets<br/>Pattern templates]
+    Act3 --> ActDone[✅ ALL ACTIVITIES DESIGNED<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>96 activity sets ready]
+
+    %% ASSEMBLY
+    StoryDone --> Team8[TEAM 8: ASSEMBLY<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Combine into lessons<br/>48 complete presentations]
+    MathDone --> Team8
+    ActDone --> Team8
+    Team8 --> Asm1[📑 Load slide templates<br/>Master design system<br/>Branding guidelines]
+    Asm1 --> Asm2[✏️ Insert all content<br/>Myths • Math • Activities<br/>Transitions]
+    Asm2 --> Asm3[🖼️ Add 2400+ images<br/>Artifacts • Generated art<br/>Overlays]
+    Asm3 --> Asm4[🎨 Apply branding/design<br/>Colors • Fonts<br/>Consistency check]
+    Asm4 --> Asm5[✨ Add transitions/animations<br/>Overlay reveals<br/>Progressive disclosure]
+    Asm5 --> AsmDone[✅ 48 COMPLETE LESSONS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Ready for QA]
+
+    %% QA
+    AsmDone --> QA[🔍 QUALITY ASSURANCE<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Review all lessons]
+    QA --> QA1{📋 Check each lesson<br/>Systematic review}
+    QA1 --> QA2[👁️ Visual quality<br/>Images load<br/>Overlays align]
+    QA2 --> QA3[✔️ Content accuracy<br/>Historical facts<br/>Myth consistency]
+    QA3 --> QA4[📐 Math alignment<br/>Correct geometry<br/>Problem solutions]
+    QA4 --> QA5[🎯 Activity clarity<br/>Instructions clear<br/>Templates work]
+    QA5 --> QAPass{✅ Pass?<br/>Ready for launch?}
+    QAPass -->|❌ No| Fixes[🔧 Make corrections<br/>Document issues<br/>Iterate]
+    Fixes --> QA1
+    QAPass -->|✅ Yes| Complete([🎉 PROJECT COMPLETE<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>48 LESSONS READY<br/>3900+ total assets<br/>Ready to deploy!])
+
+    style Start fill:#e1f5ff,stroke:#0080FF,stroke-width:4px
+    style Complete fill:#c8e6c9,stroke:#00AA00,stroke-width:4px
+    style Team1 fill:#fff9c4,stroke:#FBC02D,stroke-width:3px
+    style Team2 fill:#fff9c4,stroke:#FBC02D,stroke-width:3px
+    style Team3 fill:#ffe0b2,stroke:#FF9800,stroke-width:3px
+    style Team4 fill:#ffe0b2,stroke:#FF9800,stroke-width:3px
+    style Team5 fill:#f8bbd0,stroke:#E91E63,stroke-width:3px
+    style Team6 fill:#d1c4e9,stroke:#673AB7,stroke-width:3px
+    style Team7 fill:#d1c4e9,stroke:#673AB7,stroke-width:3px
+    style Team8 fill:#b2dfdb,stroke:#009688,stroke-width:3px
+    style Team9 fill:#fff9c4,stroke:#FBC02D,stroke-width:3px
+    style QA fill:#ffccbc,stroke:#FF5722,stroke-width:3px
+    style SourceDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style DLDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style GenDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style MythDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style OverDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style StoryDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style MathDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style ActDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+    style AsmDone fill:#C8E6C9,stroke:#4CAF50,stroke-width:2px
+      </div>
+    </div>
+  </div>
+
+  <div class="zoom-indicator" id="zoomIndicator">Zoom: 100%</div>
+
+  <div class="controls">
+    <button class="btn" onclick="zoomIn()">🔍 Zoom In</button>
+    <button class="btn" onclick="zoomOut()">🔍 Zoom Out</button>
+    <button class="btn" onclick="resetZoom()">🔄 Reset View</button>
+    <button class="btn" onclick="downloadDiagram()">💾 Download PNG</button>
+    <button class="btn" onclick="exportCode()">📤 Export Code</button>
+    <button class="btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+  </div>
+
+  <script>
+    // Initialize Mermaid
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default',
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true,
+        curve: 'basis'
+      }
+    });
+
+    // Initialize PanZoom
+    let panzoomInstance;
+    let currentZoom = 1;
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const elem = document.getElementById('mermaid-wrapper');
+      panzoomInstance = panzoom(elem, {
+        maxZoom: 3,
+        minZoom: 0.3,
+        bounds: true,
+        boundsPadding: 0.1,
+        zoomDoubleClickSpeed: 1,
+        onTouch: function(e) {
+          return false;
+        }
+      });
+
+      panzoomInstance.on('zoom', function(e) {
+        currentZoom = e.getTransform().scale;
+        showZoomIndicator();
+      });
+    });
+
+    function showZoomIndicator() {
+      const indicator = document.getElementById('zoomIndicator');
+      indicator.textContent = `Zoom: ${Math.round(currentZoom * 100)}%`;
+      indicator.classList.add('show');
+
+      setTimeout(() => {
+        indicator.classList.remove('show');
+      }, 1000);
+    }
+
+    function zoomIn() {
+      panzoomInstance.smoothZoom(0, 0, 1.2);
+    }
+
+    function zoomOut() {
+      panzoomInstance.smoothZoom(0, 0, 0.8);
+    }
+
+    function resetZoom() {
+      panzoomInstance.moveTo(0, 0);
+      panzoomInstance.zoomAbs(0, 0, 1);
+      currentZoom = 1;
+      showZoomIndicator();
+    }
+
+    function downloadDiagram() {
+      const svg = document.querySelector('.mermaid svg');
+      if (!svg) {
+        alert('Diagram not loaded yet. Please wait a moment and try again.');
+        return;
+      }
+
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const svgData = new XMLSerializer().serializeToString(svg);
+      const img = new Image();
+
+      img.onload = function() {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+
+        const link = document.createElement('a');
+        link.download = 'mesopotamia-48-lessons-workflow.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      };
+
+      img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+    }
+
+    function exportCode() {
+      const mermaidCode = document.querySelector('.mermaid').textContent;
+      const blob = new Blob([mermaidCode], { type: 'text/plain' });
+      const link = document.createElement('a');
+      link.download = 'mesopotamia-workflow.mmd';
+      link.href = URL.createObjectURL(blob);
+      link.click();
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        zoomIn();
+      } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        zoomOut();
+      } else if (e.key === '0') {
+        e.preventDefault();
+        resetZoom();
+      } else if (e.key === 'f' || e.key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
+      }
+    });
+
+    document.getElementById('diagram-container').addEventListener('wheel', function(e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
