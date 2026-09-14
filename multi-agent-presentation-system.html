@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Agent Presentation System - Architecture</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/panzoom/9.4.3/panzoom.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: white;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .header {
+      background: rgba(0, 0, 0, 0.95);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #0f3460;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .header h1 {
+      font-size: 2.2em;
+      color: #e94560;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .header p {
+      font-size: 1.1em;
+      color: #a8dadc;
+    }
+
+    .controls {
+      background: rgba(0, 0, 0, 0.95);
+      padding: 12px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      border-top: 3px solid #0f3460;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #e94560, #0f3460);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(233, 69, 96, 0.6);
+      background: linear-gradient(45deg, #ff6b7a, #1a4d7a);
+    }
+
+    #diagram-container {
+      position: absolute;
+      top: 110px;
+      bottom: 80px;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      background: #1a1a2e;
+    }
+
+    #mermaid-wrapper {
+      transform-origin: 0 0;
+      display: inline-block;
+      padding: 50px;
+    }
+
+    .mermaid {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .stats-panel {
+      position: fixed;
+      top: 120px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.95);
+      padding: 25px;
+      border-radius: 12px;
+      border: 3px solid #e94560;
+      max-width: 380px;
+      z-index: 999;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    }
+
+    .stats-panel h3 {
+      color: #e94560;
+      margin-bottom: 18px;
+      font-size: 1.4em;
+      border-bottom: 2px solid #0f3460;
+      padding-bottom: 12px;
+    }
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 0.95em;
+      border-bottom: 1px solid rgba(233, 69, 96, 0.2);
+    }
+
+    .stat-label {
+      color: #a8dadc;
+      font-weight: bold;
+    }
+
+    .stat-value {
+      color: #f1faee;
+      font-weight: bold;
+    }
+
+    .legend {
+      position: fixed;
+      top: 120px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.95);
+      padding: 25px;
+      border-radius: 12px;
+      border: 3px solid #e94560;
+      max-width: 320px;
+      z-index: 999;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    }
+
+    .legend h3 {
+      color: #e94560;
+      margin-bottom: 18px;
+      font-size: 1.3em;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+      font-size: 0.9em;
+    }
+
+    .legend-color {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      margin-right: 14px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .zoom-indicator {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.95);
+      color: #e94560;
+      padding: 18px 35px;
+      border-radius: 30px;
+      font-size: 1.5em;
+      font-weight: bold;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1001;
+      border: 3px solid #e94560;
+    }
+
+    .zoom-indicator.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 MULTI-AGENT PRESENTATION SYSTEM 🤖</h1>
+    <p>Orchestrated Agent Architecture • 6 Main Agents • 23 Sub-Agents • Complete Automation</p>
+  </div>
+
+  <div class="legend">
+    <h3>🎯 Agent Types</h3>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #e94560;"></div>
+      <span>Master Orchestrator</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #0f3460;"></div>
+      <span>Main Agents</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #a8dadc;"></div>
+      <span>Sub-Agents</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #f1faee;"></div>
+      <span>Data Artifacts</span>
+    </div>
+  </div>
+
+  <div class="stats-panel">
+    <h3>📊 System Architecture</h3>
+    <div class="stat-item">
+      <span class="stat-label">Master Agent:</span>
+      <span class="stat-value">1</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Main Agents:</span>
+      <span class="stat-value">6</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Sub-Agents:</span>
+      <span class="stat-value">23</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Data Artifacts:</span>
+      <span class="stat-value">10</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Total Nodes:</span>
+      <span class="stat-value">40</span>
+    </div>
+  </div>
+
+  <div id="diagram-container">
+    <div id="mermaid-wrapper">
+      <div class="mermaid">
+flowchart TD
+    %% Core Orchestration
+    ORCH[[🎯 Project Orchestrator<br/>Master Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Coordinates all agents<br/>Manages dependencies<br/>Tracks progress]]
+
+    PLAN[📋 Planning & Scheduling<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Timeline management<br/>Resource allocation]
+    ORCH --> PLAN
+
+    %% Research / Sources
+    RESA[🔍 Source & Research<br/>Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Content discovery<br/>Source validation]
+    ORCH --> RESA
+    SCOPE[📊 Topic Scoper<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Define boundaries<br/>Identify key themes]
+    COLLECT[📚 Source Collector<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Gather materials<br/>Museum/academic sources]
+    CITE[📖 Citation & Compliance<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Proper attribution<br/>Legal compliance]
+    RESA --> SCOPE
+    RESA --> COLLECT
+    RESA --> CITE
+
+    %% Writing
+    WRITE[✍️ Content Writing<br/>Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Text generation<br/>Narrative construction]
+    ORCH --> WRITE
+    OUTLINE[📝 Outline Builder<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Structure slides<br/>Logical flow]
+    DRAFT[📄 Section Drafting<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Write content<br/>Per-slide text]
+    STYLE[🎨 Style & Tone<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Voice consistency<br/>Target audience]
+    FACT[✅ Fact-check & Accuracy<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Verify claims<br/>Cross-reference]
+    WRITE --> OUTLINE
+    WRITE --> DRAFT
+    WRITE --> STYLE
+    WRITE --> FACT
+
+    %% Visuals
+    VIS[🖼️ Visual Assets<br/>Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Image acquisition<br/>Chart creation]
+    ORCH --> VIS
+    FINDIMG[🔎 Image Discovery<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Search museums<br/>Find relevant images]
+    RIGHTS[⚖️ Licensing & Rights<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Check permissions<br/>Open access validation]
+    DLIMG[⬇️ Image Download & Optimization<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Bulk download<br/>Resize/compress]
+    CHART[📊 Diagram/Chart Generator<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Create visualizations<br/>SVG diagrams]
+    VIS --> FINDIMG
+    VIS --> RIGHTS
+    VIS --> DLIMG
+    VIS --> CHART
+
+    %% Slide Assembly
+    SLIDE[🎞️ Slide Assembly<br/>Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Build presentation<br/>Integrate content]
+    ORCH --> SLIDE
+    LAYOUT[📐 Layout & Template<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Design system<br/>Consistent formatting]
+    INTEGRATE[🔧 Slide Content Integrator<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Text + images<br/>Positioning]
+    CONSIST[✨ Consistency & Formatting<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Style alignment<br/>Brand compliance]
+    A11Y[♿ Accessibility & Alt-Text<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Screen reader support<br/>WCAG compliance]
+    SLIDE --> LAYOUT
+    SLIDE --> INTEGRATE
+    SLIDE --> CONSIST
+    SLIDE --> A11Y
+
+    %% QA & Review
+    QA[🔍 QA & Review<br/>Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Quality assurance<br/>Final validation]
+    ORCH --> QA
+    CHECK[✓ Completeness Checklist<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>All slides present<br/>Requirements met]
+    PLAG[🚫 Anti-plagiarism & Attribution<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Original content<br/>Proper citations]
+    EDIT[📝 Copyedit & Proof<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Grammar/spelling<br/>Clarity]
+    RUNTHRU[⏱️ Live Run-through & Timing<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Presentation flow<br/>Duration check]
+    QA --> CHECK
+    QA --> PLAG
+    QA --> EDIT
+    QA --> RUNTHRU
+
+    %% Delivery
+    DELIV[📦 Export & Delivery<br/>Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Final packaging<br/>Distribution]
+    ORCH --> DELIV
+    EXPORT[💾 Export Profiles<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>PPTX • PDF • Keynote<br/>Multiple formats]
+    PKG[📦 Packaging & Versioning<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Version control<br/>Archive creation]
+    HANDOFF[🤝 Stakeholder Handoff<br/>Sub-Agent<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Delivery documentation<br/>Usage guide]
+    DELIV --> EXPORT
+    DELIV --> PKG
+    DELIV --> HANDOFF
+
+    %% Data Artifacts
+    subgraph Data_Artifacts[💾 Data Artifacts & Hand-offs]
+        SOURCES[📚 Curated Sources<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>JSON database<br/>Museum collections]
+        NOTES[📋 Research Notes<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Key findings<br/>Topic summaries]
+        CITED[📖 Citations & BibTeX<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Bibliography<br/>Attributions]
+        OUT[📝 Outline<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Slide structure<br/>Flow logic]
+        DRAFTS[📄 Draft Sections<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Text content<br/>Per-slide copy]
+        IMGLIST[🖼️ Image Candidates<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>URLs + metadata<br/>License info]
+        ASSETS[📁 Optimized Images/Charts<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Downloaded files<br/>SVG diagrams]
+        SLIDES[🎞️ Slide Deck<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Assembled presentation<br/>Pre-QA version]
+        QA_REPORT[📊 QA Report<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Issues found<br/>Corrections needed]
+        RELEASE[🎁 Release Package<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Final deliverable<br/>All formats]
+    end
+
+    %% Flows from agents to artifacts
+    SCOPE --> NOTES
+    COLLECT --> SOURCES
+    CITE --> CITED
+
+    OUTLINE --> OUT
+    DRAFT --> DRAFTS
+    FACT --> DRAFTS
+    STYLE --> DRAFTS
+
+    FINDIMG --> IMGLIST
+    RIGHTS --> IMGLIST
+    DLIMG --> ASSETS
+    CHART --> ASSETS
+
+    LAYOUT --> SLIDES
+    INTEGRATE --> SLIDES
+    CONSIST --> SLIDES
+    A11Y --> SLIDES
+
+    CHECK --> QA_REPORT
+    PLAG --> QA_REPORT
+    EDIT --> QA_REPORT
+    RUNTHRU --> QA_REPORT
+
+    EXPORT --> RELEASE
+    PKG --> RELEASE
+    HANDOFF --> RELEASE
+
+    %% Coordination & Dependencies
+    NOTES -.informs.-> OUT
+    SOURCES -.informs.-> OUT
+    OUT --> DRAFTS
+    IMGLIST -.selection.-> ASSETS
+    DRAFTS --> INTEGRATE
+    ASSETS --> INTEGRATE
+    SLIDES --> QA
+    QA_REPORT --> SLIDE
+    SLIDES --> DELIV
+
+    %% Styling
+    classDef orchestrator fill:#e94560,stroke:#8b1538,stroke-width:4px,color:#fff
+    classDef mainAgent fill:#0f3460,stroke:#082140,stroke-width:3px,color:#fff
+    classDef subAgent fill:#a8dadc,stroke:#6d9ea1,stroke-width:2px,color:#000
+    classDef artifact fill:#f1faee,stroke:#bdc3c2,stroke-width:2px,color:#000
+
+    class ORCH orchestrator
+    class RESA,WRITE,VIS,SLIDE,QA,DELIV mainAgent
+    class PLAN,SCOPE,COLLECT,CITE,OUTLINE,DRAFT,STYLE,FACT,FINDIMG,RIGHTS,DLIMG,CHART,LAYOUT,INTEGRATE,CONSIST,A11Y,CHECK,PLAG,EDIT,RUNTHRU,EXPORT,PKG,HANDOFF subAgent
+    class SOURCES,NOTES,CITED,OUT,DRAFTS,IMGLIST,ASSETS,SLIDES,QA_REPORT,RELEASE artifact
+      </div>
+    </div>
+  </div>
+
+  <div class="zoom-indicator" id="zoomIndicator">Zoom: 100%</div>
+
+  <div class="controls">
+    <button class="btn" onclick="zoomIn()">🔍 Zoom In</button>
+    <button class="btn" onclick="zoomOut()">🔍 Zoom Out</button>
+    <button class="btn" onclick="resetZoom()">🔄 Reset View</button>
+    <button class="btn" onclick="downloadDiagram()">💾 Download PNG</button>
+    <button class="btn" onclick="exportCode()">📤 Export Code</button>
+    <button class="btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default',
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true,
+        curve: 'basis'
+      }
+    });
+
+    let panzoomInstance;
+    let currentZoom = 1;
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const elem = document.getElementById('mermaid-wrapper');
+      panzoomInstance = panzoom(elem, {
+        maxZoom: 3,
+        minZoom: 0.3,
+        bounds: true,
+        boundsPadding: 0.1,
+        zoomDoubleClickSpeed: 1
+      });
+
+      panzoomInstance.on('zoom', function(e) {
+        currentZoom = e.getTransform().scale;
+        showZoomIndicator();
+      });
+    });
+
+    function showZoomIndicator() {
+      const indicator = document.getElementById('zoomIndicator');
+      indicator.textContent = `Zoom: ${Math.round(currentZoom * 100)}%`;
+      indicator.classList.add('show');
+      setTimeout(() => indicator.classList.remove('show'), 1000);
+    }
+
+    function zoomIn() { panzoomInstance.smoothZoom(0, 0, 1.2); }
+    function zoomOut() { panzoomInstance.smoothZoom(0, 0, 0.8); }
+    function resetZoom() {
+      panzoomInstance.moveTo(0, 0);
+      panzoomInstance.zoomAbs(0, 0, 1);
+      currentZoom = 1;
+      showZoomIndicator();
+    }
+
+    function downloadDiagram() {
+      const svg = document.querySelector('.mermaid svg');
+      if (!svg) { alert('Diagram loading...'); return; }
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const svgData = new XMLSerializer().serializeToString(svg);
+      const img = new Image();
+      img.onload = function() {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        const link = document.createElement('a');
+        link.download = 'multi-agent-presentation-system.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      };
+      img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+    }
+
+    function exportCode() {
+      const mermaidCode = document.querySelector('.mermaid').textContent;
+      const blob = new Blob([mermaidCode], { type: 'text/plain' });
+      const link = document.createElement('a');
+      link.download = 'multi-agent-system.mmd';
+      link.href = URL.createObjectURL(blob);
+      link.click();
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === '+' || e.key === '=') { e.preventDefault(); zoomIn(); }
+      else if (e.key === '-' || e.key === '_') { e.preventDefault(); zoomOut(); }
+      else if (e.key === '0') { e.preventDefault(); resetZoom(); }
+      else if (e.key === 'f' || e.key === 'F') { e.preventDefault(); toggleFullscreen(); }
+    });
+  </script>
+</body>
+</html>

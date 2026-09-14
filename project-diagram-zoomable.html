@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometric Civilizations - Project Diagram (Zoomable)</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/panzoom/9.4.3/panzoom.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+      color: white;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 2px solid #FFD700;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .header h1 {
+      font-size: 1.8em;
+      color: #FFD700;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      font-size: 0.9em;
+      color: #87CEEB;
+    }
+
+    .controls {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      border-top: 2px solid #FFD700;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9em;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    #diagram-container {
+      position: absolute;
+      top: 80px;
+      bottom: 70px;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      background: #1a1f3a;
+    }
+
+    #mermaid-wrapper {
+      transform-origin: 0 0;
+      display: inline-block;
+      padding: 40px;
+    }
+
+    .mermaid {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-panel {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #FFD700;
+      max-width: 300px;
+      z-index: 999;
+    }
+
+    .info-panel h3 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .info-panel ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-panel li {
+      padding: 5px 0;
+      font-size: 0.85em;
+      color: #E0E0E0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .info-panel li:last-child {
+      border-bottom: none;
+    }
+
+    .legend {
+      position: fixed;
+      top: 80px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #87CEEB;
+      max-width: 250px;
+      z-index: 999;
+    }
+
+    .legend h3 {
+      color: #87CEEB;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+      font-size: 0.85em;
+    }
+
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      margin-right: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .zoom-indicator {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: #FFD700;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1001;
+    }
+
+    .zoom-indicator.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🔺 GEOMETRIC CIVILIZATIONS PROJECT 🔺</h1>
+    <p>Comprehensive System Diagram - Team Handoff Document</p>
+  </div>
+
+  <div class="legend">
+    <h3>📊 Legend</h3>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFE5B4;"></div>
+      <span>Time Periods</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #B4D4FF;"></div>
+      <span>Civilizations</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #D4FFB4;"></div>
+      <span>Patterns</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFB4E5;"></div>
+      <span>Shape Types</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFD4B4;"></div>
+      <span>Cognitive Tools</span>
+    </div>
+  </div>
+
+  <div class="info-panel">
+    <h3>📋 Quick Navigation</h3>
+    <ul>
+      <li>🖱️ <strong>Drag</strong> to pan</li>
+      <li>🔍 <strong>Scroll</strong> to zoom</li>
+      <li>🎯 <strong>Click nodes</strong> for details</li>
+      <li>🔄 <strong>Reset</strong> restores view</li>
+      <li>💾 <strong>Download</strong> as PNG</li>
+      <li>📤 <strong>Export</strong> diagram code</li>
+    </ul>
+  </div>
+
+  <div id="diagram-container">
+    <div id="mermaid-wrapper">
+      <div class="mermaid">
+graph TB
+    %% Root Node
+    ROOT[🌍 GEOMETRIC THINKING<br/>THROUGH CIVILIZATIONS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Shape Evolution Project]
+
+    %% Four Main Evolution Stages
+    ROOT --> OBSERVATIONAL[🔍 STAGE 1: OBSERVATIONAL<br/>75,000 BCE - 3000 BCE<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Direct Perception<br/>Mark-Making<br/>Natural Patterns]
+    ROOT --> RULEBASED[📐 STAGE 2: RULE-BASED<br/>3000 BCE - 1500 CE<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Mathematical Systems<br/>Algorithms<br/>Tessellations]
+    ROOT --> SYMBOLIC[🕉️ STAGE 3: SYMBOLIC<br/>500 BCE - 1700 CE<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Spiritual Meaning<br/>Cosmological Order<br/>Sacred Geometry]
+    ROOT --> PERSONALIZED[🎨 STAGE 4: PERSONALIZED<br/>1900 CE - Present<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Individual Expression<br/>Metaphor Assemblage<br/>Abstract Symbolism]
+
+    %% OBSERVATIONAL Branch
+    OBSERVATIONAL --> BLOMBOS[Blombos Cave<br/>75,000-100,000 BCE<br/>━━━━━━━━━━━━━━━━<br/>Cross-hatch patterns<br/>Parallel lines<br/>Earliest drawing]
+    OBSERVATIONAL --> CHAUVET[Chauvet Cave<br/>30,000 BCE<br/>━━━━━━━━━━━━━━━━<br/>Red dot clusters<br/>Grids<br/>Hand stencils]
+    OBSERVATIONAL --> LASCAUX[Lascaux Cave<br/>17,000 BCE<br/>━━━━━━━━━━━━━━━━<br/>Checker patterns<br/>13 sign types<br/>Quadrangles]
+
+    BLOMBOS --> OBS_PATTERNS[32 Geometric Signs<br/>━━━━━━━━━━━━━━━━<br/>Dots • Lines<br/>Circles • Triangles<br/>Spirals • Grids]
+    CHAUVET --> OBS_PATTERNS
+    LASCAUX --> OBS_PATTERNS
+
+    %% RULE-BASED Branch
+    RULEBASED --> ISLAMIC[Islamic Geometry<br/>700 CE - 1500 CE<br/>━━━━━━━━━━━━━━━━<br/>17 Crystallographic Groups<br/>Girih Tiles<br/>Quasicrystals]
+    RULEBASED --> GREEK[Greek Mathematics<br/>600 BCE - 300 CE<br/>━━━━━━━━━━━━━━━━<br/>Geometric Proofs<br/>Golden Ratio<br/>Meander Patterns]
+    RULEBASED --> CHINESE[Chinese Patterns<br/>1500 BCE - Present<br/>━━━━━━━━━━━━━━━━<br/>Leiwen Spirals<br/>Thunder Patterns<br/>Lattice Systems]
+
+    ISLAMIC --> ALHAMBRA[Alhambra Palace<br/>━━━━━━━━━━━━━━━━<br/>25+ Tessellations<br/>All 17 Groups<br/>Infinite Patterns]
+    ISLAMIC --> TOPKAPI[Topkapı Scroll<br/>━━━━━━━━━━━━━━━━<br/>114 Patterns<br/>29.5m Scroll<br/>Construction Rules]
+
+    GREEK --> PYTHAGORAS[Pythagorean<br/>Geometry<br/>━━━━━━━━━━━━━━━━<br/>Theorems<br/>Proofs<br/>Ratios]
+
+    %% SYMBOLIC Branch
+    SYMBOLIC --> MANDALA[Tibetan Mandalas<br/>800 CE - Present<br/>━━━━━━━━━━━━━━━━<br/>Cosmic Maps<br/>Spiritual Paths<br/>Meditation Tools]
+    SYMBOLIC --> YANTRA[Hindu Yantras<br/>━━━━━━━━━━━━━━━━<br/>Sri Yantra<br/>Divine Geometry<br/>Energy Patterns]
+    SYMBOLIC --> SACRED[Sacred Geometry<br/>━━━━━━━━━━━━━━━━<br/>Flower of Life<br/>Platonic Solids<br/>Vesica Piscis]
+
+    MANDALA --> MAND_STRUCT[Mandala Structure<br/>━━━━━━━━━━━━━━━━<br/>Center: Divine Point<br/>Circles: Consciousness<br/>Square: Physical World]
+
+    %% PERSONALIZED Branch
+    PERSONALIZED --> HILMA[Hilma af Klint<br/>1862-1944<br/>━━━━━━━━━━━━━━━━<br/>First Abstract Artist<br/>Spiritual Geometry<br/>Personal Symbolism]
+    PERSONALIZED --> KANDINSKY[Wassily Kandinsky<br/>1866-1944<br/>━━━━━━━━━━━━━━━━<br/>Inner Necessity<br/>Synesthesia<br/>Bauhaus Theory]
+    PERSONALIZED --> STELLA[Frank Stella<br/>1936-2024<br/>━━━━━━━━━━━━━━━━<br/>Minimalism Evolution<br/>3D Assemblage<br/>Postmodern Space]
+
+    HILMA --> HILMA_SYMBOLS[Personal System<br/>━━━━━━━━━━━━━━━━<br/>Spirals = Growth<br/>Circles = Unity<br/>Grids = Order]
+    KANDINSKY --> KAND_SYMBOLS[Geometric Language<br/>━━━━━━━━━━━━━━━━<br/>Triangles = Energy<br/>Circles = Harmony<br/>Colors = Vibrations]
+    STELLA --> STELLA_EVOL[Evolution<br/>━━━━━━━━━━━━━━━━<br/>Flat → 3D<br/>Minimal → Baroque<br/>Paint → Assemblage]
+
+    %% Shape Throughlines
+    ROOT --> SHAPES[SHAPE THROUGHLINES<br/>━━━━━━━━━━━━━━━━━━━━━━]
+    SHAPES --> CIRCLE[🔵 CIRCLE<br/>━━━━━━━━━━━━━━━━<br/>Wheels • Orbits<br/>Harmony • Networks<br/>Infinity]
+    SHAPES --> LINE[📏 LINE<br/>━━━━━━━━━━━━━━━━<br/>Writing • Perspective<br/>Connection • Fractals<br/>Sequence]
+    SHAPES --> SQUARE[⬜ SQUARE<br/>━━━━━━━━━━━━━━━━<br/>Grids • Architecture<br/>Order • Pixels<br/>Modularity]
+    SHAPES --> SPIRAL[🌀 SPIRAL<br/>━━━━━━━━━━━━━━━━<br/>Growth • Cycles<br/>Evolution • Recursion<br/>Time]
+
+    %% Cognitive Tools
+    ROOT --> COGNITIVE[COGNITIVE TOOLS<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>Mental Frameworks]
+    COGNITIVE --> COG1[Spatial Reasoning<br/>━━━━━━━━━━━━━━━━<br/>Architecture<br/>Navigation<br/>Planning]
+    COGNITIVE --> COG2[Pattern Recognition<br/>━━━━━━━━━━━━━━━━<br/>Classification<br/>Prediction<br/>Analysis]
+    COGNITIVE --> COG3[Abstract Thinking<br/>━━━━━━━━━━━━━━━━<br/>Symbolism<br/>Mathematics<br/>Philosophy]
+    COGNITIVE --> COG4[Creative Synthesis<br/>━━━━━━━━━━━━━━━━<br/>Innovation<br/>Art<br/>Design]
+
+    %% Civilizations
+    ROOT --> CIVS[CIVILIZATIONS<br/>━━━━━━━━━━━━━━━━━━━━━━]
+    CIVS --> MESOP[Mesopotamia<br/>━━━━━━━━━━━━━━━━<br/>Wheel<br/>Rosettes<br/>Lattices]
+    CIVS --> EGYPT[Egypt<br/>━━━━━━━━━━━━━━━━<br/>Grids<br/>Pyramids<br/>Sacred Geometry]
+    CIVS --> INDUS[Indus Valley<br/>━━━━━━━━━━━━━━━━<br/>1:2:4 Ratios<br/>Seals<br/>Urban Planning]
+    CIVS --> MESO[Mesoamerica<br/>━━━━━━━━━━━━━━━━<br/>Step-fret<br/>Quatrefoil<br/>Calendar Systems]
+
+    %% Project Components
+    ROOT --> DELIVERABLES[PROJECT DELIVERABLES<br/>━━━━━━━━━━━━━━━━━━━━━━]
+    DELIVERABLES --> VIZ[Mandala Visualization<br/>━━━━━━━━━━━━━━━━<br/>SVG Diagram<br/>Interactive Viewer<br/>Layered Design]
+    DELIVERABLES --> IMAGES[Image Research<br/>━━━━━━━━━━━━━━━━<br/>High-Res Sources<br/>Museum Collections<br/>Open Access]
+    DELIVERABLES --> PRESENTATIONS[Presentations<br/>━━━━━━━━━━━━━━━━<br/>Master Overview<br/>Shape Throughlines<br/>Civilization Focus]
+    DELIVERABLES --> INTERACTIVE[Interactive Elements<br/>━━━━━━━━━━━━━━━━<br/>Puzzles<br/>Quizzes<br/>Games]
+
+    %% Team Assignments
+    ROOT --> TEAMS[TEAM ASSIGNMENTS<br/>━━━━━━━━━━━━━━━━━━━━━━]
+    TEAMS --> RESEARCH[Research Team<br/>━━━━━━━━━━━━━━━━<br/>Image Acquisition<br/>Source Documentation<br/>Historical Context]
+    TEAMS --> DESIGN[Design Team<br/>━━━━━━━━━━━━━━━━<br/>Visual Assets<br/>UI/UX<br/>Branding]
+    TEAMS --> DEV[Development Team<br/>━━━━━━━━━━━━━━━━<br/>Interactive Features<br/>Responsive Design<br/>Optimization]
+    TEAMS --> CONTENT[Content Team<br/>━━━━━━━━━━━━━━━━<br/>Copy Writing<br/>Educational Material<br/>Assessments]
+
+    %% Image Sources
+    IMAGES --> MET[Met Museum<br/>━━━━━━━━━━━━━━━━<br/>Open Access<br/>400K+ Images<br/>FREE Commercial Use]
+    IMAGES --> SMITH[Smithsonian<br/>━━━━━━━━━━━━━━━━<br/>Asian Art<br/>IIIF Format<br/>High Resolution]
+    IMAGES --> GETTY[Getty Publications<br/>━━━━━━━━━━━━━━━━<br/>Topkapı Scroll<br/>Digital Library<br/>Academic Resources]
+    IMAGES --> GUGGEN[Guggenheim<br/>━━━━━━━━━━━━━━━━<br/>Modern Art<br/>Kandinsky<br/>Hilma af Klint]
+
+    %% Styling
+    classDef observational fill:#FFF4E0,stroke:#FF8C00,stroke-width:3px,color:#000
+    classDef rulebased fill:#E0F4FF,stroke:#0080FF,stroke-width:3px,color:#000
+    classDef symbolic fill:#F0FFE0,stroke:#00AA00,stroke-width:3px,color:#000
+    classDef personalized fill:#FFE0F4,stroke:#FF00AA,stroke-width:3px,color:#000
+    classDef shapes fill:#FFE5E5,stroke:#FF6B6B,stroke-width:2px,color:#000
+    classDef cognitive fill:#FFE5CC,stroke:#FF9944,stroke-width:2px,color:#000
+    classDef civs fill:#E0E0FF,stroke:#6B6BFF,stroke-width:2px,color:#000
+    classDef deliverables fill:#E0FFE0,stroke:#44AA44,stroke-width:2px,color:#000
+    classDef teams fill:#FFE0E0,stroke:#FF4444,stroke-width:2px,color:#000
+    classDef root fill:#FFD700,stroke:#FF6B00,stroke-width:4px,color:#000
+
+    class ROOT root
+    class OBSERVATIONAL,BLOMBOS,CHAUVET,LASCAUX,OBS_PATTERNS observational
+    class RULEBASED,ISLAMIC,GREEK,CHINESE,ALHAMBRA,TOPKAPI,PYTHAGORAS rulebased
+    class SYMBOLIC,MANDALA,YANTRA,SACRED,MAND_STRUCT symbolic
+    class PERSONALIZED,HILMA,KANDINSKY,STELLA,HILMA_SYMBOLS,KAND_SYMBOLS,STELLA_EVOL personalized
+    class SHAPES,CIRCLE,LINE,SQUARE,SPIRAL shapes
+    class COGNITIVE,COG1,COG2,COG3,COG4 cognitive
+    class CIVS,MESOP,EGYPT,INDUS,MESO civs
+    class DELIVERABLES,VIZ,IMAGES,PRESENTATIONS,INTERACTIVE deliverables
+    class TEAMS,RESEARCH,DESIGN,DEV,CONTENT teams
+      </div>
+    </div>
+  </div>
+
+  <div class="zoom-indicator" id="zoomIndicator">Zoom: 100%</div>
+
+  <div class="controls">
+    <button class="btn" onclick="zoomIn()">🔍 Zoom In</button>
+    <button class="btn" onclick="zoomOut()">🔍 Zoom Out</button>
+    <button class="btn" onclick="resetZoom()">🔄 Reset View</button>
+    <button class="btn" onclick="downloadDiagram()">💾 Download PNG</button>
+    <button class="btn" onclick="exportCode()">📤 Export Code</button>
+    <button class="btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+    <button class="btn" onclick="window.location.href='Geometric Civilizations - Interactive Home Page (1).html'">🏠 Home</button>
+  </div>
+
+  <script>
+    // Initialize Mermaid
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default',
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true,
+        curve: 'basis'
+      }
+    });
+
+    // Initialize PanZoom
+    let panzoomInstance;
+    let currentZoom = 1;
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const elem = document.getElementById('mermaid-wrapper');
+      panzoomInstance = panzoom(elem, {
+        maxZoom: 3,
+        minZoom: 0.3,
+        bounds: true,
+        boundsPadding: 0.1,
+        zoomDoubleClickSpeed: 1,
+        onTouch: function(e) {
+          return false; // Allow touch events
+        }
+      });
+
+      // Listen to zoom events
+      panzoomInstance.on('zoom', function(e) {
+        currentZoom = e.getTransform().scale;
+        showZoomIndicator();
+      });
+
+      // Listen to pan events
+      panzoomInstance.on('pan', function(e) {
+        // Optional: add pan feedback
+      });
+    });
+
+    function showZoomIndicator() {
+      const indicator = document.getElementById('zoomIndicator');
+      indicator.textContent = `Zoom: ${Math.round(currentZoom * 100)}%`;
+      indicator.classList.add('show');
+
+      setTimeout(() => {
+        indicator.classList.remove('show');
+      }, 1000);
+    }
+
+    function zoomIn() {
+      panzoomInstance.smoothZoom(0, 0, 1.2);
+    }
+
+    function zoomOut() {
+      panzoomInstance.smoothZoom(0, 0, 0.8);
+    }
+
+    function resetZoom() {
+      panzoomInstance.moveTo(0, 0);
+      panzoomInstance.zoomAbs(0, 0, 1);
+      currentZoom = 1;
+      showZoomIndicator();
+    }
+
+    function downloadDiagram() {
+      const svg = document.querySelector('.mermaid svg');
+      if (!svg) {
+        alert('Diagram not loaded yet. Please wait a moment and try again.');
+        return;
+      }
+
+      // Create canvas
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const svgData = new XMLSerializer().serializeToString(svg);
+      const img = new Image();
+
+      img.onload = function() {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+
+        // Download
+        const link = document.createElement('a');
+        link.download = 'geometric-civilizations-diagram.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      };
+
+      img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+    }
+
+    function exportCode() {
+      const mermaidCode = document.querySelector('.mermaid').textContent;
+      const blob = new Blob([mermaidCode], { type: 'text/plain' });
+      const link = document.createElement('a');
+      link.download = 'diagram-code.mmd';
+      link.href = URL.createObjectURL(blob);
+      link.click();
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        zoomIn();
+      } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        zoomOut();
+      } else if (e.key === '0') {
+        e.preventDefault();
+        resetZoom();
+      } else if (e.key === 'f' || e.key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
+      }
+    });
+
+    // Mouse wheel zoom
+    document.getElementById('diagram-container').addEventListener('wheel', function(e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
