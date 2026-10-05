@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "topic": "",
+    "civilization": "general",
+    "difficulty": "intermediate",
+    "questionCount": 10,
+    "generatedDate": "",
+    "version": "1.0"
+  },
+  "quiz": {
+    "title": "",
+    "instructions": "Answer all questions to test your understanding.",
+    "timeLimit": 20,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "difficulty": "intermediate",
+        "points": 2,
+        "question": "",
+        "options": ["A", "B", "C", "D"],
+        "correctAnswer": "A",
+        "explanation": ""
+      }
+    ]
+  }
+}

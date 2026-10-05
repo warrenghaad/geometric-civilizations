@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape Decomposition Demo - Grades 3-5</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', 'Arial', sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    h1 {
+      color: #764ba2;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #667eea;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .lesson-section {
+      margin: 30px 0;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 15px;
+      border-left: 5px solid #667eea;
+    }
+    .image-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .image-box {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .image-title {
+      font-weight: bold;
+      color: #764ba2;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+    }
+    .shape-list {
+      margin-top: 15px;
+      padding: 15px;
+      background: #e3f2fd;
+      border-radius: 8px;
+    }
+    .shape-item {
+      padding: 8px;
+      margin: 5px 0;
+      background: white;
+      border-radius: 5px;
+      border-left: 3px solid #2196F3;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .shape-icon {
+      font-size: 1.5em;
+    }
+    .activity-box {
+      background: #fff3e0;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      border: 2px dashed #ff9800;
+    }
+    .teacher-notes {
+      background: #e8f5e9;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 10px;
+      border-left: 4px solid #4caf50;
+    }
+    .btn {
+      background: #667eea;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 5px;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .interactive-controls {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔷 Finding Shapes Around Us! 🔷</h1>
+    <div class="subtitle">A Shape Decomposition Lesson for Grades 3-5</div>
+
+    <div class="lesson-section">
+      <h2>📚 Learning Goal</h2>
+      <p>Students will learn to identify and name basic 2D and 3D shapes in everyday objects.</p>
+      <p><strong>Key Concept:</strong> All objects around us are made up of simple geometric shapes!</p>
+    </div>
+
+    <div class="lesson-section">
+      <h2>🏠 Example 1: A Simple House</h2>
+      <div class="image-container">
+        <div class="image-box">
+          <div class="image-title">Original Image</div>
+          <svg viewBox="0 0 300 300">
+            <!-- House body (square) -->
+            <rect x="75" y="150" width="150" height="120" fill="#e8b4a0" stroke="#333" stroke-width="3"/>
+            <!-- Roof (triangle) -->
+            <polygon points="150,80 50,150 250,150" fill="#d2691e" stroke="#333" stroke-width="3"/>
+            <!-- Door (rectangle) -->
+            <rect x="125" y="200" width="50" height="70" fill="#8b4513" stroke="#333" stroke-width="2"/>
+            <!-- Window (square) -->
+            <rect x="160" y="170" width="40" height="40" fill="#87ceeb" stroke="#333" stroke-width="2"/>
+            <!-- Window panes -->
+            <line x1="180" y1="170" x2="180" y2="210" stroke="#333" stroke-width="1"/>
+            <line x1="160" y1="190" x2="200" y2="190" stroke="#333" stroke-width="1"/>
+            <!-- Sun (circle) -->
+            <circle cx="250" cy="100" r="25" fill="#ffd700" stroke="#333" stroke-width="2"/>
+          </svg>
+        </div>
+        
+        <div class="image-box">
+          <div class="image-title">Shapes Highlighted</div>
+          <svg viewBox="0 0 300 300">
+            <!-- House body with label -->
+            <rect x="75" y="150" width="150" height="120" fill="rgba(255,0,0,0.3)" stroke="red" stroke-width="4"/>
+            <text x="150" y="210" text-anchor="middle" fill="red" font-weight="bold" font-size="16">SQUARE</text>
+            
+            <!-- Roof with label -->
+            <polygon points="150,80 50,150 250,150" fill="rgba(0,255,0,0.3)" stroke="green" stroke-width="4"/>
+            <text x="150" y="120" text-anchor="middle" fill="green" font-weight="bold" font-size="16">TRIANGLE</text>
+            
+            <!-- Door -->
+            <rect x="125" y="200" width="50" height="70" fill="rgba(0,0,255,0.3)" stroke="blue" stroke-width="3"/>
+            <text x="150" y="235" text-anchor="middle" fill="blue" font-weight="bold" font-size="12">RECTANGLE</text>
+            
+            <!-- Window -->
+            <rect x="160" y="170" width="40" height="40" fill="rgba(255,165,0,0.3)" stroke="orange" stroke-width="3"/>
+            <text x="180" y="165" text-anchor="middle" fill="orange" font-weight="bold" font-size="12">SQUARE</text>
+            
+            <!-- Sun -->
+            <circle cx="250" cy="100" r="25" fill="rgba(255,215,0,0.3)" stroke="gold" stroke-width="3"/>
+            <text x="250" y="145" text-anchor="middle" fill="#ff8c00" font-weight="bold" font-size="12">CIRCLE</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="shape-list">
+        <strong>🔍 Shapes We Found:</strong>
+        <div class="shape-item">
+          <span class="shape-icon">🟥</span>
+          <span><strong>2 Squares:</strong> House body and window</span>
+        </div>
+        <div class="shape-item">
+          <span class="shape-icon">🔺</span>
+          <span><strong>1 Triangle:</strong> Roof</span>
+        </div>
+        <div class="shape-item">
+          <span class="shape-icon">📘</span>
+          <span><strong>1 Rectangle:</strong> Door</span>
+        </div>
+        <div class="shape-item">
+          <span class="shape-icon">🔵</span>
+          <span><strong>1 Circle:</strong> Sun</span>
+        </div>
+      </div>
+
+      <div style="background:#e8f5e9; padding:20px; margin:20px 0; border-radius:10px; border-left:4px solid #4caf50;">
+        <h3>📐 Shape Mathematics (Grades 4-5)</h3>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>🔺 Triangle Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> All triangles have 3 angles that add up to 180°</li>
+            <li><strong>This roof triangle:</strong> Has one 90° angle at top, two 45° angles at bottom</li>
+            <li><strong>Formula for area:</strong> A = ½ × base × height</li>
+            <li><strong>Perimeter:</strong> P = side₁ + side₂ + side₃</li>
+          </ul>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>🟥 Square Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> Each corner is exactly 90° (right angle)</li>
+            <li><strong>All 4 sides are equal length</strong></li>
+            <li><strong>Formula for area:</strong> A = side × side (or s²)</li>
+            <li><strong>Formula for perimeter:</strong> P = 4 × side</li>
+          </ul>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>📘 Rectangle Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> Each corner is 90°</li>
+            <li><strong>Opposite sides are equal</strong> (length = length, width = width)</li>
+            <li><strong>Formula for area:</strong> A = length × width</li>
+            <li><strong>Formula for perimeter:</strong> P = 2 × (length + width)</li>
+          </ul>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>🔵 Circle Properties:</h4>
+          <ul>
+            <li><strong>Angles:</strong> A full circle = 360°</li>
+            <li><strong>No corners!</strong> Every point on edge is same distance from center</li>
+            <li><strong>Formula for area:</strong> A = π × radius² (π ≈ 3.14)</li>
+            <li><strong>Formula for circumference:</strong> C = 2 × π × radius</li>
+          </ul>
+        </div>
+        <p style="margin-top:15px;"><strong>💡 Fun Fact:</strong> Architects and engineers use these formulas every day to design buildings, bridges, and roads!</p>
+      </div>
+
+      <div class="activity-box">
+        <h3>✏️ Student Activity</h3>
+        <p><strong>Try This:</strong> Draw your own house using only these shapes:</p>
+        <ul>
+          <li>At least 1 triangle</li>
+          <li>At least 2 rectangles or squares</li>
+          <li>At least 1 circle</li>
+        </ul>
+        <p><strong>Challenge:</strong> Can you use MORE shapes? Try adding a garden, a chimney, or clouds!</p>
+      </div>
+    </div>
+
+    <div class="lesson-section">
+      <h2>🤖 Example 2: A Robot</h2>
+      <div class="image-container">
+        <div class="image-box">
+          <div class="image-title">Original Image</div>
+          <svg viewBox="0 0 300 300">
+            <!-- Robot head (square) -->
+            <rect x="100" y="50" width="100" height="100" fill="#c0c0c0" stroke="#333" stroke-width="3"/>
+            <!-- Eyes (circles) -->
+            <circle cx="130" cy="90" r="15" fill="#000" stroke="#333" stroke-width="2"/>
+            <circle cx="170" cy="90" r="15" fill="#000" stroke="#333" stroke-width="2"/>
+            <!-- Antenna (line + circle) -->
+            <line x1="150" y1="50" x2="150" y2="20" stroke="#333" stroke-width="3"/>
+            <circle cx="150" cy="20" r="8" fill="red" stroke="#333" stroke-width="2"/>
+            <!-- Mouth (rectangle) -->
+            <rect x="120" y="120" width="60" height="15" fill="#000" stroke="#333" stroke-width="2"/>
+            <!-- Body (rectangle) -->
+            <rect x="90" y="160" width="120" height="100" fill="#a9a9a9" stroke="#333" stroke-width="3"/>
+            <!-- Control panel (square) -->
+            <rect x="130" y="190" width="40" height="40" fill="#4169e1" stroke="#333" stroke-width="2"/>
+            <!-- Buttons (small circles) -->
+            <circle cx="140" cy="200" r="5" fill="red"/>
+            <circle cx="160" cy="200" r="5" fill="green"/>
+            <circle cx="140" cy="220" r="5" fill="yellow"/>
+            <circle cx="160" cy="220" r="5" fill="blue"/>
+          </svg>
+        </div>
+        
+        <div class="image-box">
+          <div class="image-title">Shapes Highlighted</div>
+          <svg viewBox="0 0 300 300">
+            <!-- Head -->
+            <rect x="100" y="50" width="100" height="100" fill="rgba(255,0,0,0.3)" stroke="red" stroke-width="4"/>
+            <text x="150" y="45" text-anchor="middle" fill="red" font-weight="bold" font-size="14">SQUARE</text>
+            
+            <!-- Eyes -->
+            <circle cx="130" cy="90" r="15" fill="rgba(0,0,255,0.3)" stroke="blue" stroke-width="3"/>
+            <circle cx="170" cy="90" r="15" fill="rgba(0,0,255,0.3)" stroke="blue" stroke-width="3"/>
+            <text x="150" y="75" text-anchor="middle" fill="blue" font-weight="bold" font-size="12">CIRCLES</text>
+            
+            <!-- Body -->
+            <rect x="90" y="160" width="120" height="100" fill="rgba(0,255,0,0.3)" stroke="green" stroke-width="4"/>
+            <text x="150" y="275" text-anchor="middle" fill="green" font-weight="bold" font-size="14">RECTANGLE</text>
+            
+            <!-- Control panel -->
+            <rect x="130" y="190" width="40" height="40" fill="rgba(255,165,0,0.3)" stroke="orange" stroke-width="3"/>
+            <text x="150" y="185" text-anchor="middle" fill="orange" font-weight="bold" font-size="10">SQUARE</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="shape-list">
+        <strong>🔍 Shapes We Found:</strong>
+        <div class="shape-item">
+          <span class="shape-icon">🟥</span>
+          <span><strong>2 Squares:</strong> Head and control panel</span>
+        </div>
+        <div class="shape-item">
+          <span class="shape-icon">📘</span>
+          <span><strong>2 Rectangles:</strong> Body and mouth</span>
+        </div>
+        <div class="shape-item">
+          <span class="shape-icon">🔵</span>
+          <span><strong>6 Circles:</strong> Eyes, antenna top, and 4 buttons</span>
+        </div>
+      </div>
+
+      <div style="background:#e3f2fd; padding:20px; margin:20px 0; border-radius:10px; border-left:4px solid #2196F3;">
+        <h3>🧮 Math Challenge: Calculate the Robot!</h3>
+        <p>Let's practice using our shape formulas:</p>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>Problem 1: If the robot's head is a square with sides of 10 cm, what is its area?</h4>
+          <p><em>Use: A = side × side</em></p>
+          <p><strong>Answer:</strong> 10 × 10 = 100 cm²</p>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>Problem 2: If each eye is a circle with radius 2 cm, what is one eye's area?</h4>
+          <p><em>Use: A = π × radius² (π ≈ 3.14)</em></p>
+          <p><strong>Answer:</strong> 3.14 × 2 × 2 = 12.56 cm²</p>
+        </div>
+        <div style="background:white; padding:15px; margin:10px 0; border-radius:5px;">
+          <h4>Problem 3: If the body is a rectangle 12 cm wide and 10 cm tall, what is its perimeter?</h4>
+          <p><em>Use: P = 2 × (length + width)</em></p>
+          <p><strong>Answer:</strong> 2 × (12 + 10) = 2 × 22 = 44 cm</p>
+        </div>
+        <p><strong>💪 Extra Challenge:</strong> How many total 90° angles are in this robot? (Hint: Count all the corners of squares and rectangles!)</p>
+      </div>
+
+      <div class="activity-box">
+        <h3>✏️ Student Activity</h3>
+        <p><strong>Design Your Robot:</strong> Create a robot using basic shapes!</p>
+        <ul>
+          <li>Use squares or rectangles for the body</li>
+          <li>Add circles for eyes, buttons, or wheels</li>
+          <li>Get creative with triangles for ears or feet!</li>
+        </ul>
+        <p><strong>Bonus:</strong> Name your robot and describe what it can do!</p>
+      </div>
+    </div>
+
+    <div class="teacher-notes">
+      <h3>👩‍🏫 Teacher Notes</h3>
+      <p><strong>Time:</strong> 30-45 minutes</p>
+      <p><strong>Materials Needed:</strong> Paper, pencils, colored pencils or crayons, rulers (optional)</p>
+      <p><strong>Learning Standards:</strong> Identifies and describes 2D shapes (squares, rectangles, triangles, circles)</p>
+      <p><strong>Differentiation:</strong></p>
+      <ul>
+        <li><strong>Grade 3:</strong> Focus on identifying shapes in simple images</li>
+        <li><strong>Grade 4:</strong> Count shapes and describe their properties (sides, corners)</li>
+        <li><strong>Grade 5:</strong> Introduce 3D shapes (cubes, spheres) and how 2D shapes can form 3D objects</li>
+      </ul>
+      <p><strong>Discussion Questions:</strong></p>
+      <ul>
+        <li>What shapes do you see in your classroom?</li>
+        <li>Can you find shapes in your clothes or backpack?</li>
+        <li>Why do you think architects use these basic shapes?</li>
+      </ul>
+    </div>
+
+    <div class="interactive-controls">
+      <h3>🎯 Ready to Use This Lesson?</h3>
+      <button class="btn" onclick="window.print()">🖨️ Print Worksheet</button>
+      <button class="btn" onclick="alert('Use npm run bot:decompose with your own images!')">📸 Add Your Images</button>
+    </div>
+
+    <div class="lesson-section">
+      <h2>📖 Next Steps</h2>
+      <p>Now that you have a demo, here's how to use YOUR images:</p>
+      <ol>
+        <li><strong>Prepare your images:</strong> Save them as JPG or PNG files</li>
+        <li><strong>Create an outline:</strong> Write what you want to teach (can be a simple text file)</li>
+        <li><strong>Run the bot:</strong> 
+          <code style="background:#f5f5f5; padding:5px; border-radius:3px; display:block; margin:10px 0;">
+            npm run bot:decompose -- --image photos/your-image.jpg --outline outlines/your-lesson.txt
+          </code>
+        </li>
+      </ol>
+      <p><strong>Need help?</strong> Run <code>npm run tutor</code> and ask: "How do I use the image decomposition bot?"</p>
+    </div>
+  </div>
+</body>
+</html>

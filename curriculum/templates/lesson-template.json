@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "civilization": "",
+    "topic": "",
+    "difficulty": "intermediate",
+    "generatedDate": "",
+    "version": "1.0",
+    "author": ""
+  },
+  "lesson": {
+    "title": "",
+    "introduction": "",
+    "learningObjectives": [
+      "Objective 1",
+      "Objective 2",
+      "Objective 3"
+    ],
+    "sections": [
+      {
+        "title": "Historical Context",
+        "content": "",
+        "activities": []
+      },
+      {
+        "title": "Geometric Concepts",
+        "content": "",
+        "keyPoints": []
+      },
+      {
+        "title": "Interactive Activities",
+        "content": "",
+        "activities": []
+      }
+    ],
+    "assessment": {
+      "formative": [],
+      "summative": []
+    },
+    "resources": {
+      "teacherNotes": "",
+      "studentMaterials": [],
+      "extensions": []
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "topic": "pythagorean-theorem",
+    "civilization": "ancient-greece",
+    "difficulty": "intermediate",
+    "questionCount": 5,
+    "generatedDate": "2024-01-01T00:00:00.000Z",
+    "version": "1.0"
+  },
+  "quiz": {
+    "title": "Pythagorean Theorem Quiz",
+    "instructions": "Answer all questions to test your understanding. Some questions may have multiple parts. Show your work where applicable.",
+    "timeLimit": 10,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "difficulty": "beginner",
+        "points": 2,
+        "question": "Who is credited with discovering the Pythagorean theorem?",
+        "options": [
+          "Pythagoras of Samos",
+          "Euclid",
+          "Archimedes",
+          "Plato"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Pythagoras of Samos (c. 570-495 BCE) is traditionally credited with discovering this theorem, though evidence suggests the relationship was known to earlier civilizations."
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "difficulty": "intermediate",
+        "points": 2,
+        "question": "In a right triangle with legs of length 3 and 4, what is the length of the hypotenuse?",
+        "options": [
+          "5",
+          "7",
+          "12",
+          "25"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Using the Pythagorean theorem: a² + b² = c². So 3² + 4² = 9 + 16 = 25, and √25 = 5."
+      },
+      {
+        "id": 3,
+        "type": "true-false",
+        "difficulty": "intermediate",
+        "points": 2,
+        "question": "The Pythagorean theorem only works for right triangles.",
+        "correctAnswer": true,
+        "explanation": "True. The Pythagorean theorem specifically applies to right triangles (triangles with one 90-degree angle). It describes the relationship between the sides of right triangles only."
+      },
+      {
+        "id": 4,
+        "type": "multiple-choice",
+        "difficulty": "intermediate",
+        "points": 2,
+        "question": "If one leg of a right triangle is 6 units and the hypotenuse is 10 units, what is the length of the other leg?",
+        "options": [
+          "4 units",
+          "8 units",
+          "16 units",
+          "64 units"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Using a² + b² = c²: 6² + b² = 10². So 36 + b² = 100, which means b² = 64, and b = 8."
+      },
+      {
+        "id": 5,
+        "type": "short-answer",
+        "difficulty": "advanced",
+        "points": 5,
+        "question": "Explain why the Pythagorean theorem was important to ancient Greek mathematics and provide at least one practical application they might have used it for.",
+        "sampleAnswer": "The Pythagorean theorem was fundamental to Greek mathematics because it provided a precise relationship between the sides of right triangles, enabling accurate calculations in geometry and measurement. Ancient Greeks used it for practical applications such as: surveying land boundaries, constructing buildings with right angles, calculating distances that couldn't be measured directly, and in astronomy for calculating celestial distances. It also had philosophical importance to the Pythagoreans, who believed that numbers and mathematical relationships were the foundation of reality.",
+        "rubric": [
+          "Explains theoretical importance to Greek mathematics (2 points)",
+          "Provides at least one practical application with detail (2 points)",
+          "Uses correct terminology and demonstrates understanding (1 point)"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "topic": "circles",
+    "civilization": "ancient-egypt",
+    "difficulty": "intermediate",
+    "questionCount": 5,
+    "generatedDate": "2025-11-10T14:43:48.750Z",
+    "version": "1.0"
+  },
+  "quiz": {
+    "title": "Circles Quiz",
+    "instructions": "Answer all questions to test your understanding. Some questions may have multiple parts.",
+    "timeLimit": 10,
+    "questions": [
+      {
+        "id": 1,
+        "type": "short-answer",
+        "difficulty": "intermediate",
+        "points": 5,
+        "question": "Explain a concept related to circles",
+        "sampleAnswer": "Sample answer showing expected response.",
+        "rubric": [
+          "Clear explanation (2 points)",
+          "Use of examples (2 points)",
+          "Correct terminology (1 point)"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "difficulty": "intermediate",
+        "points": 2,
+        "question": "Question 2 about circles?",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Explanation of why this answer is correct."
+      },
+      {
+        "id": 3,
+        "type": "short-answer",
+        "difficulty": "intermediate",
+        "points": 5,
+        "question": "Explain a concept related to circles",
+        "sampleAnswer": "Sample answer showing expected response.",
+        "rubric": [
+          "Clear explanation (2 points)",
+          "Use of examples (2 points)",
+          "Correct terminology (1 point)"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "multiple-choice",
+        "difficulty": "intermediate",
+        "points": 2,
+        "question": "Question 4 about circles?",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Explanation of why this answer is correct."
+      },
+      {
+        "id": 5,
+        "type": "true-false",
+        "difficulty": "intermediate",
+        "points": 2,
+        "question": "Statement about circles",
+        "correctAnswer": true,
+        "explanation": "Explanation of the concept."
+      }
+    ]
+  }
+}

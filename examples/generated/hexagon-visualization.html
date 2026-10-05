@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hexagon Visualization - islamic-golden-age</title>
+  <style>
+    body { 
+      margin: 0; 
+      padding: 20px; 
+      font-family: Arial, sans-serif; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: white;
+    }
+    h1 { margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    canvas { 
+      background: white; 
+      border-radius: 10px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+    .controls {
+      margin-top: 20px;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+  <h1>Hexagon - islamic-golden-age</h1>
+  <canvas id="canvas" width="600" height="600"></canvas>
+  
+  <div class="controls">
+    <button onclick="rotate()">Rotate</button>
+    <button onclick="scale()">Scale</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let rotation = 0;
+    let scaleValue = 1;
+    
+    function drawShape() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.save();
+      ctx.translate(canvas.width / 2, canvas.height / 2);
+      ctx.rotate(rotation);
+      ctx.scale(scaleValue, scaleValue);
+      
+      ctx.beginPath();
+      ctx.strokeStyle = '#2196F3';
+      ctx.lineWidth = 3;
+      ctx.fillStyle = 'rgba(33, 150, 243, 0.3)';
+      
+      // Draw hexagon
+      const sides = 6;
+      const radius = 150;
+      for (let i = 0; i <= sides; i++) {
+        const angle = (i * 2 * Math.PI) / sides - Math.PI / 2;
+        const x = radius * Math.cos(angle);
+        const y = radius * Math.sin(angle);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      ctx.restore();
+    }
+    
+    function rotate() {
+      rotation += Math.PI / 6;
+      drawShape();
+    }
+    
+    function scale() {
+      scaleValue = scaleValue === 1 ? 1.5 : 1;
+      drawShape();
+    }
+    
+    function reset() {
+      rotation = 0;
+      scaleValue = 1;
+      drawShape();
+    }
+    
+    
+    canvas.addEventListener('click', rotate);
+    
+    
+    drawShape();
+  </script>
+</body>
+</html>
