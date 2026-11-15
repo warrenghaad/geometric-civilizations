@@ -1,0 +1,96 @@
+# Provider Configuration for Multi-Provider AI Image Generation
+
+providers:
+  openai:
+    model: "dall-e-3"
+    max_concurrent: 5
+    rate_limit: 50  # requests per minute
+    cost_per_image: 0.04  # USD
+    quality: "standard"  # or "hd" for higher quality (costs more)
+    size: "1792x1024"  # landscape format for presentations
+    timeout: 120  # seconds
+    retry_attempts: 3
+    retry_delay: 2  # seconds between retries
+
+  gemini:
+    model: "gemini-1.5-pro"
+    max_concurrent: 10
+    rate_limit: 60  # requests per minute
+    cost_per_image: 0.02  # USD (estimated)
+    timeout: 60  # seconds
+    retry_attempts: 3
+    retry_delay: 1  # seconds
+
+  vision:
+    # Google Vision API for image analysis
+    max_concurrent: 20
+    rate_limit: 100  # requests per minute
+    cost_per_request: 0.001  # USD
+    features:
+      - LABEL_DETECTION
+      - OBJECT_LOCALIZATION
+      - TEXT_DETECTION
+      - DOCUMENT_TEXT_DETECTION
+    timeout: 30  # seconds
+
+  cloud_vision:
+    # Google Cloud Vision for image processing/optimization
+    max_concurrent: 20
+    rate_limit: 100  # requests per minute
+    cost_per_operation: 0.001  # USD
+    timeout: 30  # seconds
+
+# Provider selection rules (image type → preferred provider)
+provider_selection:
+  photorealistic_scenes:
+    provider: "openai"
+    reason: "Highest quality, realistic artifacts, historical accuracy"
+
+  educational_diagrams:
+    provider: "gemini"
+    reason: "Fast, technical precision, good for physics diagrams"
+
+  character_art:
+    provider: "openai"
+    reason: "Better at human figures, gods, heroes"
+
+  technical_illustrations:
+    provider: "gemini"
+    reason: "Clean diagrams, force vectors, measurements"
+
+  artifact_analysis:
+    provider: "vision"
+    reason: "Analyzes existing museum photos, extracts geometry"
+
+  image_optimization:
+    provider: "cloud_vision"
+    reason: "Enhances images, adjusts quality, composites"
+
+  sacred_geometry:
+    provider: "gemini"
+    reason: "Precise geometric constructions, mathematical accuracy"
+
+  cultural_backgrounds:
+    provider: "openai"
+    reason: "Rich textures, atmospheric environments"
+
+# Batch processing settings
+batch_processing:
+  max_parallel_requests: 10
+  batch_size: 20  # images per batch
+  progress_update_interval: 5  # seconds
+  checkpoint_interval: 10  # save progress every N images
+
+# Error handling
+error_handling:
+  max_retries: 3
+  backoff_multiplier: 2  # exponential backoff: 2s, 4s, 8s, 16s
+  continue_on_error: true  # continue processing remaining images if one fails
+  save_failed_prompts: true  # save failed prompts to retry later
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_file: "automation/logs/batch_processing.log"
+  log_api_requests: true
+  log_costs: true

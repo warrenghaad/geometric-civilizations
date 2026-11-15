@@ -1,0 +1,150 @@
+# Image Quality and Format Settings
+
+# Output resolutions for different use cases
+resolutions:
+  presentation:
+    width: 1920
+    height: 1080
+    description: "Standard presentation slide resolution (16:9)"
+
+  presentation_wide:
+    width: 2560
+    height: 1440
+    description: "High-resolution presentation (16:9)"
+
+  web:
+    width: 1280
+    height: 720
+    description: "Web-optimized resolution"
+
+  thumbnail:
+    width: 320
+    height: 240
+    description: "Thumbnail for gallery views"
+
+  print:
+    width: 3000
+    height: 2000
+    description: "Print-quality resolution (300 DPI equivalent)"
+
+# Format selection rules
+formats:
+  diagrams:
+    format: "svg"
+    reason: "Scalable, small file size, editable"
+    fallback: "png"
+
+  photos:
+    format: "jpg"
+    reason: "Optimized for photographic content"
+    quality: 90
+
+  overlays:
+    format: "png"
+    reason: "Supports transparency for layering"
+
+  interactive:
+    format: "html"
+    reason: "Canvas-based interactivity"
+
+  animations:
+    format: "gif"
+    reason: "Simple animations"
+    fallback: "mp4"
+
+# Optimization settings
+optimization:
+  max_file_size: 524288  # 512 KB in bytes
+  compression_quality: 85  # JPEG quality (1-100)
+  png_compression: 9  # PNG compression level (0-9)
+  remove_metadata: true  # Strip EXIF data to reduce file size
+  optimize_palette: true  # Optimize color palette for PNGs
+
+# Format-specific settings
+svg:
+  precision: 2  # Decimal places for coordinates
+  optimize: true  # Run SVGO optimization
+  remove_comments: true
+  remove_hidden: true
+
+png:
+  interlace: false  # Progressive rendering
+  bit_depth: 8  # 8 or 16 bits per channel
+  color_type: 6  # RGBA (6) or RGB (2)
+
+jpg:
+  progressive: true  # Progressive JPEG
+  optimize_coding: true
+  strip_metadata: true
+
+# Grade-level visual adaptations
+grade_adaptations:
+  K-1:
+    brightness_boost: 10  # percent
+    saturation_boost: 20  # percent
+    contrast: "high"
+    font_size_multiplier: 1.5
+    simplify_details: true
+    max_colors: 8  # Limit color palette
+
+  2-3:
+    brightness_boost: 5
+    saturation_boost: 10
+    contrast: "medium-high"
+    font_size_multiplier: 1.3
+    simplify_details: true
+    max_colors: 12
+
+  4-5:
+    brightness_boost: 0
+    saturation_boost: 5
+    contrast: "medium"
+    font_size_multiplier: 1.1
+    simplify_details: false
+    max_colors: 16
+
+  6-8:
+    brightness_boost: 0
+    saturation_boost: 0
+    contrast: "medium"
+    font_size_multiplier: 1.0
+    simplify_details: false
+    max_colors: 24  # Full palette
+
+# Accessibility settings (WCAG AA compliance)
+accessibility:
+  min_contrast_ratio: 4.5  # For normal text
+  min_contrast_ratio_large: 3.0  # For large text (18pt+)
+  ensure_color_blind_safe: true
+  add_alt_text: true
+  add_aria_labels: true
+
+# Output directory structure
+output:
+  base_dir: "visualizations"
+  organize_by: "type"  # "type", "grade", "civilization", "date"
+  subdirectories:
+    basic_shapes: "basic_shapes"
+    intermediate_shapes: "intermediate_shapes"
+    advanced_patterns: "advanced_patterns"
+    cultural_motifs: "cultural_motifs"
+    sacred_geometry: "sacred_geometry"
+    physics_diagrams: "physics_diagrams"
+    interactive_demos: "interactive_demos"
+    artifact_composites: "artifact_composites"
+
+# Naming conventions
+naming:
+  pattern: "{element}_{type}_{grade}_{civilization}.{ext}"
+  # Example: triangle_force_distribution_6-8_egypt.png
+  sanitize_names: true  # Remove special characters
+  lowercase: true
+  max_length: 100  # characters
+
+# Watermarking (optional)
+watermark:
+  enabled: false
+  text: "Geometric Civilizations © 2026"
+  position: "bottom-right"
+  opacity: 0.3
+  font_size: 12
